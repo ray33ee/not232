@@ -4,8 +4,8 @@
 
 # Pinout
 
-![pinout](https://github.com/ray33ee/not232/tree/main/doc/pinout.png)
-
+![pinout](https://github.com/ray33ee/not232/blob/main/doc/pinout.png?raw=true)
+		  
 # Todo
 
 - Get SPI working
