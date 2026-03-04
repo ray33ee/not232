@@ -1,0 +1,576 @@
+
+;; Function reads_registers (reads_registers, funcdef_no=29, decl_uid=4679, cgraph_uid=29, symbol_order=29)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+Edge 4->7 redirected to 11
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 50 from 10 to 11.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+Removing jump 43.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (reg/v/f:SI 81 [ program ])
+        (reg:SI 10 a0 [ program ])) "../User/VMIOX/src/opcodes.c":3 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 82 [ len ])
+        (reg:SI 11 a1 [ len ])) "../User/VMIOX/src/opcodes.c":3 -1
+     (nil))
+(note 4 3 10 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 10 4 11 2 (debug_marker) "../User/VMIOX/src/opcodes.c":4 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../User/VMIOX/src/opcodes.c":4 -1
+     (nil))
+(debug_insn 12 11 5 2 (var_location:SI i (const_int 0 [0])) "../User/VMIOX/src/opcodes.c":4 -1
+     (nil))
+(insn 5 12 13 2 (set (reg/v:SI 73 [ i ])
+        (const_int 0 [0])) "../User/VMIOX/src/opcodes.c":4 -1
+     (nil))
+(jump_insn 13 5 14 2 (set (pc)
+        (label_ref 35)) "../User/VMIOX/src/opcodes.c":4 -1
+     (nil)
+ -> 35)
+(barrier 14 13 39)
+(code_label 39 14 15 4 5 (nil) [1 uses])
+(note 15 39 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 16 15 17 4 (debug_marker) "../User/VMIOX/src/opcodes.c":5 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:SI 83)
+        (plus:SI (reg/v/f:SI 81 [ program ])
+            (reg:SI 79 [ _20 ]))) "../User/VMIOX/src/opcodes.c":5 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:SI 72 [ _2 ])
+        (zero_extend:SI (mem:QI (reg:SI 83) [0 MEM[base: _11, offset: 0B]+0 S1 A8]))) "../User/VMIOX/src/opcodes.c":5 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:SI 84)
+        (const_int 31 [0x1f])) "../User/VMIOX/src/opcodes.c":5 -1
+     (nil))
+(jump_insn 20 19 21 4 (set (pc)
+        (if_then_else (gtu (reg:SI 72 [ _2 ])
+                (reg:SI 84))
+            (label_ref 31)
+            (pc))) "../User/VMIOX/src/opcodes.c":5 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 31)
+(note 21 20 22 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 5 (set (reg:SI 87)
+        (const_int -2122313728 [0xffffffff81801000])) "../User/VMIOX/src/opcodes.c":5 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:SI 86)
+        (plus:SI (reg:SI 87)
+            (const_int 16 [0x10]))) "../User/VMIOX/src/opcodes.c":5 -1
+     (expr_list:REG_EQUAL (const_int -2122313712 [0xffffffff81801010])
+        (nil)))
+(insn 24 23 25 5 (set (reg:SI 85)
+        (lshiftrt:SI (reg:SI 86)
+            (subreg:QI (reg:SI 72 [ _2 ]) 0))) "../User/VMIOX/src/opcodes.c":5 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:SI 88)
+        (not:SI (reg:SI 85))) "../User/VMIOX/src/opcodes.c":5 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:QI 89)
+        (subreg:QI (reg:SI 88) 0)) "../User/VMIOX/src/opcodes.c":5 -1
+     (nil))
+(insn 27 26 28 5 (set (reg:SI 90)
+        (and:SI (subreg:SI (reg:QI 89) 0)
+            (const_int 1 [0x1]))) "../User/VMIOX/src/opcodes.c":5 -1
+     (nil))
+(insn 28 27 29 5 (set (reg:QI 91)
+        (subreg:QI (reg:SI 90) 0)) "../User/VMIOX/src/opcodes.c":5 -1
+     (nil))
+(insn 29 28 30 5 (set (reg:SI 92)
+        (zero_extend:SI (reg:QI 91))) "../User/VMIOX/src/opcodes.c":5 -1
+     (nil))
+(jump_insn 30 29 31 5 (set (pc)
+        (if_then_else (eq (reg:SI 92)
+                (const_int 0 [0]))
+            (label_ref:SI 53)
+            (pc))) "../User/VMIOX/src/opcodes.c":5 180 {*branchsi}
+     (int_list:REG_BR_PROB 81037132 (nil))
+ -> 53)
+(code_label 31 30 32 6 3 (nil) [1 uses])
+(note 32 31 33 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 33 32 34 6 (set (reg/v:SI 73 [ i ])
+        (plus:SI (reg/v:SI 73 [ i ])
+            (const_int 3 [0x3]))) "../User/VMIOX/src/opcodes.c":4 -1
+     (nil))
+(debug_insn 34 33 35 6 (var_location:SI i (reg/v:SI 73 [ i ])) "../User/VMIOX/src/opcodes.c":4 -1
+     (nil))
+(code_label 35 34 36 7 2 (nil) [1 uses])
+(note 36 35 37 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 37 36 38 7 (var_location:SI i (reg/v:SI 73 [ i ])) -1
+     (nil))
+(insn 38 37 40 7 (set (reg:SI 79 [ _20 ])
+        (reg/v:SI 73 [ i ])) -1
+     (nil))
+(jump_insn 40 38 49 7 (set (pc)
+        (if_then_else (gtu (reg/v:SI 82 [ len ])
+                (reg:SI 79 [ _20 ]))
+            (label_ref 39)
+            (pc))) "../User/VMIOX/src/opcodes.c":4 -1
+     (int_list:REG_BR_PROB 1052266988 (nil))
+ -> 39)
+(note 49 40 7 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 7 49 50 8 (set (reg:SI 80 [ <retval> ])
+        (const_int 0 [0])) "../User/VMIOX/src/opcodes.c":15 -1
+     (nil))
+(jump_insn 50 7 51 8 (set (pc)
+        (label_ref:SI 45)) 250 {jump}
+     (nil)
+ -> 45)
+(barrier 51 50 53)
+(code_label 53 51 52 9 6 (nil) [1 uses])
+(note 52 53 6 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 6 52 45 9 (set (reg:SI 80 [ <retval> ])
+        (const_int 1 [0x1])) "../User/VMIOX/src/opcodes.c":11 -1
+     (nil))
+(code_label 45 6 48 11 1 (nil) [1 uses])
+(note 48 45 46 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 46 48 47 11 (set (reg/i:SI 10 a0)
+        (reg:SI 80 [ <retval> ])) "../User/VMIOX/src/opcodes.c":16 -1
+     (nil))
+(insn 47 46 0 11 (use (reg/i:SI 10 a0)) "../User/VMIOX/src/opcodes.c":16 -1
+     (nil))
+
+;; Function writes_registers (writes_registers, funcdef_no=30, decl_uid=4682, cgraph_uid=30, symbol_order=30)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+Edge 4->7 redirected to 11
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 50 from 10 to 11.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+Removing jump 43.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (reg/v/f:SI 81 [ program ])
+        (reg:SI 10 a0 [ program ])) "../User/VMIOX/src/opcodes.c":18 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 82 [ len ])
+        (reg:SI 11 a1 [ len ])) "../User/VMIOX/src/opcodes.c":18 -1
+     (nil))
+(note 4 3 10 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 10 4 11 2 (debug_marker) "../User/VMIOX/src/opcodes.c":19 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../User/VMIOX/src/opcodes.c":19 -1
+     (nil))
+(debug_insn 12 11 5 2 (var_location:SI i (const_int 0 [0])) "../User/VMIOX/src/opcodes.c":19 -1
+     (nil))
+(insn 5 12 13 2 (set (reg/v:SI 73 [ i ])
+        (const_int 0 [0])) "../User/VMIOX/src/opcodes.c":19 -1
+     (nil))
+(jump_insn 13 5 14 2 (set (pc)
+        (label_ref 35)) "../User/VMIOX/src/opcodes.c":19 -1
+     (nil)
+ -> 35)
+(barrier 14 13 39)
+(code_label 39 14 15 4 11 (nil) [1 uses])
+(note 15 39 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 16 15 17 4 (debug_marker) "../User/VMIOX/src/opcodes.c":20 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:SI 83)
+        (plus:SI (reg/v/f:SI 81 [ program ])
+            (reg:SI 79 [ _18 ]))) "../User/VMIOX/src/opcodes.c":20 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:SI 72 [ _2 ])
+        (zero_extend:SI (mem:QI (reg:SI 83) [0 MEM[base: _13, offset: 0B]+0 S1 A8]))) "../User/VMIOX/src/opcodes.c":20 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:SI 84)
+        (const_int 31 [0x1f])) "../User/VMIOX/src/opcodes.c":20 -1
+     (nil))
+(jump_insn 20 19 21 4 (set (pc)
+        (if_then_else (gtu (reg:SI 72 [ _2 ])
+                (reg:SI 84))
+            (label_ref 31)
+            (pc))) "../User/VMIOX/src/opcodes.c":20 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 31)
+(note 21 20 22 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 5 (set (reg:SI 87)
+        (const_int -2147426304 [0xffffffff8000e000])) "../User/VMIOX/src/opcodes.c":20 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:SI 86)
+        (plus:SI (reg:SI 87)
+            (const_int 8 [0x8]))) "../User/VMIOX/src/opcodes.c":20 -1
+     (expr_list:REG_EQUAL (const_int -2147426296 [0xffffffff8000e008])
+        (nil)))
+(insn 24 23 25 5 (set (reg:SI 85)
+        (lshiftrt:SI (reg:SI 86)
+            (subreg:QI (reg:SI 72 [ _2 ]) 0))) "../User/VMIOX/src/opcodes.c":20 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:SI 88)
+        (not:SI (reg:SI 85))) "../User/VMIOX/src/opcodes.c":20 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:QI 89)
+        (subreg:QI (reg:SI 88) 0)) "../User/VMIOX/src/opcodes.c":20 -1
+     (nil))
+(insn 27 26 28 5 (set (reg:SI 90)
+        (and:SI (subreg:SI (reg:QI 89) 0)
+            (const_int 1 [0x1]))) "../User/VMIOX/src/opcodes.c":20 -1
+     (nil))
+(insn 28 27 29 5 (set (reg:QI 91)
+        (subreg:QI (reg:SI 90) 0)) "../User/VMIOX/src/opcodes.c":20 -1
+     (nil))
+(insn 29 28 30 5 (set (reg:SI 92)
+        (zero_extend:SI (reg:QI 91))) "../User/VMIOX/src/opcodes.c":20 -1
+     (nil))
+(jump_insn 30 29 31 5 (set (pc)
+        (if_then_else (eq (reg:SI 92)
+                (const_int 0 [0]))
+            (label_ref:SI 53)
+            (pc))) "../User/VMIOX/src/opcodes.c":20 180 {*branchsi}
+     (int_list:REG_BR_PROB 81037132 (nil))
+ -> 53)
+(code_label 31 30 32 6 9 (nil) [1 uses])
+(note 32 31 33 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 33 32 34 6 (set (reg/v:SI 73 [ i ])
+        (plus:SI (reg/v:SI 73 [ i ])
+            (const_int 4 [0x4]))) "../User/VMIOX/src/opcodes.c":19 -1
+     (nil))
+(debug_insn 34 33 35 6 (var_location:SI i (reg/v:SI 73 [ i ])) "../User/VMIOX/src/opcodes.c":19 -1
+     (nil))
+(code_label 35 34 36 7 8 (nil) [1 uses])
+(note 36 35 37 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 37 36 38 7 (var_location:SI i (reg/v:SI 73 [ i ])) -1
+     (nil))
+(insn 38 37 40 7 (set (reg:SI 79 [ _18 ])
+        (reg/v:SI 73 [ i ])) -1
+     (nil))
+(jump_insn 40 38 49 7 (set (pc)
+        (if_then_else (gtu (reg/v:SI 82 [ len ])
+                (reg:SI 79 [ _18 ]))
+            (label_ref 39)
+            (pc))) "../User/VMIOX/src/opcodes.c":19 -1
+     (int_list:REG_BR_PROB 1052266988 (nil))
+ -> 39)
+(note 49 40 7 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 7 49 50 8 (set (reg:SI 80 [ <retval> ])
+        (const_int 0 [0])) "../User/VMIOX/src/opcodes.c":30 -1
+     (nil))
+(jump_insn 50 7 51 8 (set (pc)
+        (label_ref:SI 45)) 250 {jump}
+     (nil)
+ -> 45)
+(barrier 51 50 53)
+(code_label 53 51 52 9 12 (nil) [1 uses])
+(note 52 53 6 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 6 52 45 9 (set (reg:SI 80 [ <retval> ])
+        (const_int 1 [0x1])) "../User/VMIOX/src/opcodes.c":26 -1
+     (nil))
+(code_label 45 6 48 11 7 (nil) [1 uses])
+(note 48 45 46 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 46 48 47 11 (set (reg/i:SI 10 a0)
+        (reg:SI 80 [ <retval> ])) "../User/VMIOX/src/opcodes.c":31 -1
+     (nil))
+(insn 47 46 0 11 (use (reg/i:SI 10 a0)) "../User/VMIOX/src/opcodes.c":31 -1
+     (nil))
+
+;; Function reads_pile (reads_pile, funcdef_no=31, decl_uid=4685, cgraph_uid=31, symbol_order=31)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+Edge 3->6 redirected to 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 41 from 9 to 10.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+Removing jump 34.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (reg/v/f:SI 78 [ program ])
+        (reg:SI 10 a0 [ program ])) "../User/VMIOX/src/opcodes.c":33 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 79 [ len ])
+        (reg:SI 11 a1 [ len ])) "../User/VMIOX/src/opcodes.c":33 -1
+     (nil))
+(note 4 3 10 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 10 4 11 2 (debug_marker) "../User/VMIOX/src/opcodes.c":34 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../User/VMIOX/src/opcodes.c":34 -1
+     (nil))
+(debug_insn 12 11 5 2 (var_location:SI i (const_int 0 [0])) "../User/VMIOX/src/opcodes.c":34 -1
+     (nil))
+(insn 5 12 13 2 (set (reg/v:SI 74 [ i ])
+        (const_int 0 [0])) "../User/VMIOX/src/opcodes.c":34 -1
+     (nil))
+(jump_insn 13 5 14 2 (set (pc)
+        (label_ref 26)) "../User/VMIOX/src/opcodes.c":34 -1
+     (nil)
+ -> 26)
+(barrier 14 13 30)
+(code_label 30 14 15 4 16 (nil) [1 uses])
+(note 15 30 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 16 15 17 4 (debug_marker) "../User/VMIOX/src/opcodes.c":35 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:SI 80)
+        (plus:SI (reg/v/f:SI 78 [ program ])
+            (reg:SI 75 [ _11 ]))) "../User/VMIOX/src/opcodes.c":35 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:QI 81)
+        (mem:QI (reg:SI 80) [0 MEM[base: _13, offset: 0B]+0 S1 A8])) "../User/VMIOX/src/opcodes.c":35 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:SI 82)
+        (plus:SI (subreg:SI (reg:QI 81) 0)
+            (const_int -34 [0xffffffffffffffde]))) "../User/VMIOX/src/opcodes.c":35 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:SI 83)
+        (zero_extend:SI (subreg:QI (reg:SI 82) 0))) "../User/VMIOX/src/opcodes.c":35 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:SI 84)
+        (const_int 1 [0x1])) "../User/VMIOX/src/opcodes.c":35 -1
+     (nil))
+(jump_insn 22 21 23 4 (set (pc)
+        (if_then_else (leu (reg:SI 83)
+                (reg:SI 84))
+            (label_ref:SI 44)
+            (pc))) "../User/VMIOX/src/opcodes.c":35 180 {*branchsi}
+     (int_list:REG_BR_PROB 59055804 (nil))
+ -> 44)
+(note 23 22 24 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 5 (set (reg/v:SI 74 [ i ])
+        (plus:SI (reg/v:SI 74 [ i ])
+            (const_int 3 [0x3]))) "../User/VMIOX/src/opcodes.c":34 -1
+     (nil))
+(debug_insn 25 24 26 5 (var_location:SI i (reg/v:SI 74 [ i ])) "../User/VMIOX/src/opcodes.c":34 -1
+     (nil))
+(code_label 26 25 27 6 14 (nil) [1 uses])
+(note 27 26 28 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 28 27 29 6 (var_location:SI i (reg/v:SI 74 [ i ])) -1
+     (nil))
+(insn 29 28 31 6 (set (reg:SI 75 [ _11 ])
+        (reg/v:SI 74 [ i ])) -1
+     (nil))
+(jump_insn 31 29 40 6 (set (pc)
+        (if_then_else (gtu (reg/v:SI 79 [ len ])
+                (reg:SI 75 [ _11 ]))
+            (label_ref 30)
+            (pc))) "../User/VMIOX/src/opcodes.c":34 -1
+     (int_list:REG_BR_PROB 1014686028 (nil))
+ -> 30)
+(note 40 31 7 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 7 40 41 7 (set (reg:SI 77 [ <retval> ])
+        (const_int 0 [0])) "../User/VMIOX/src/opcodes.c":40 -1
+     (nil))
+(jump_insn 41 7 42 7 (set (pc)
+        (label_ref:SI 36)) 250 {jump}
+     (nil)
+ -> 36)
+(barrier 42 41 44)
+(code_label 44 42 43 8 17 (nil) [1 uses])
+(note 43 44 6 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 6 43 36 8 (set (reg:SI 77 [ <retval> ])
+        (const_int 1 [0x1])) "../User/VMIOX/src/opcodes.c":36 -1
+     (nil))
+(code_label 36 6 39 10 13 (nil) [1 uses])
+(note 39 36 37 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 37 39 38 10 (set (reg/i:SI 10 a0)
+        (reg:SI 77 [ <retval> ])) "../User/VMIOX/src/opcodes.c":41 -1
+     (nil))
+(insn 38 37 0 10 (use (reg/i:SI 10 a0)) "../User/VMIOX/src/opcodes.c":41 -1
+     (nil))
+
+;; Function writes_pile (writes_pile, funcdef_no=32, decl_uid=4688, cgraph_uid=32, symbol_order=32)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+Edge 3->6 redirected to 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 41 from 9 to 10.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+Removing jump 34.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (reg/v/f:SI 78 [ program ])
+        (reg:SI 10 a0 [ program ])) "../User/VMIOX/src/opcodes.c":43 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 79 [ len ])
+        (reg:SI 11 a1 [ len ])) "../User/VMIOX/src/opcodes.c":43 -1
+     (nil))
+(note 4 3 10 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 10 4 11 2 (debug_marker) "../User/VMIOX/src/opcodes.c":44 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../User/VMIOX/src/opcodes.c":44 -1
+     (nil))
+(debug_insn 12 11 5 2 (var_location:SI i (const_int 0 [0])) "../User/VMIOX/src/opcodes.c":44 -1
+     (nil))
+(insn 5 12 13 2 (set (reg/v:SI 74 [ i ])
+        (const_int 0 [0])) "../User/VMIOX/src/opcodes.c":44 -1
+     (nil))
+(jump_insn 13 5 14 2 (set (pc)
+        (label_ref 26)) "../User/VMIOX/src/opcodes.c":44 -1
+     (nil)
+ -> 26)
+(barrier 14 13 30)
+(code_label 30 14 15 4 21 (nil) [1 uses])
+(note 15 30 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 16 15 17 4 (debug_marker) "../User/VMIOX/src/opcodes.c":45 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:SI 80)
+        (plus:SI (reg/v/f:SI 78 [ program ])
+            (reg:SI 75 [ _11 ]))) "../User/VMIOX/src/opcodes.c":45 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:QI 81)
+        (mem:QI (reg:SI 80) [0 MEM[base: _13, offset: 0B]+0 S1 A8])) "../User/VMIOX/src/opcodes.c":45 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:SI 82)
+        (plus:SI (subreg:SI (reg:QI 81) 0)
+            (const_int -32 [0xffffffffffffffe0]))) "../User/VMIOX/src/opcodes.c":45 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:SI 83)
+        (zero_extend:SI (subreg:QI (reg:SI 82) 0))) "../User/VMIOX/src/opcodes.c":45 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:SI 84)
+        (const_int 1 [0x1])) "../User/VMIOX/src/opcodes.c":45 -1
+     (nil))
+(jump_insn 22 21 23 4 (set (pc)
+        (if_then_else (leu (reg:SI 83)
+                (reg:SI 84))
+            (label_ref:SI 44)
+            (pc))) "../User/VMIOX/src/opcodes.c":45 180 {*branchsi}
+     (int_list:REG_BR_PROB 59055804 (nil))
+ -> 44)
+(note 23 22 24 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 5 (set (reg/v:SI 74 [ i ])
+        (plus:SI (reg/v:SI 74 [ i ])
+            (const_int 3 [0x3]))) "../User/VMIOX/src/opcodes.c":44 -1
+     (nil))
+(debug_insn 25 24 26 5 (var_location:SI i (reg/v:SI 74 [ i ])) "../User/VMIOX/src/opcodes.c":44 -1
+     (nil))
+(code_label 26 25 27 6 19 (nil) [1 uses])
+(note 27 26 28 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 28 27 29 6 (var_location:SI i (reg/v:SI 74 [ i ])) -1
+     (nil))
+(insn 29 28 31 6 (set (reg:SI 75 [ _11 ])
+        (reg/v:SI 74 [ i ])) -1
+     (nil))
+(jump_insn 31 29 40 6 (set (pc)
+        (if_then_else (gtu (reg/v:SI 79 [ len ])
+                (reg:SI 75 [ _11 ]))
+            (label_ref 30)
+            (pc))) "../User/VMIOX/src/opcodes.c":44 -1
+     (int_list:REG_BR_PROB 1014686028 (nil))
+ -> 30)
+(note 40 31 7 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 7 40 41 7 (set (reg:SI 77 [ <retval> ])
+        (const_int 0 [0])) "../User/VMIOX/src/opcodes.c":50 -1
+     (nil))
+(jump_insn 41 7 42 7 (set (pc)
+        (label_ref:SI 36)) 250 {jump}
+     (nil)
+ -> 36)
+(barrier 42 41 44)
+(code_label 44 42 43 8 22 (nil) [1 uses])
+(note 43 44 6 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 6 43 36 8 (set (reg:SI 77 [ <retval> ])
+        (const_int 1 [0x1])) "../User/VMIOX/src/opcodes.c":46 -1
+     (nil))
+(code_label 36 6 39 10 18 (nil) [1 uses])
+(note 39 36 37 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 37 39 38 10 (set (reg/i:SI 10 a0)
+        (reg:SI 77 [ <retval> ])) "../User/VMIOX/src/opcodes.c":51 -1
+     (nil))
+(insn 38 37 0 10 (use (reg/i:SI 10 a0)) "../User/VMIOX/src/opcodes.c":51 -1
+     (nil))

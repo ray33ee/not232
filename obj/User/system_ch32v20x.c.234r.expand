@@ -1,0 +1,1022 @@
+
+;; Function SystemInit (SystemInit, funcdef_no=29, decl_uid=1832, cgraph_uid=29, symbol_order=31)
+
+Partition 1: size 4 align 4
+	HSEStatus
+Partition 0: size 4 align 4
+	StartUpCounter
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 9->14 redirected to 15
+Forwarding edge 13->14 to 15 failed.
+Deleted label in block 14.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 13->14 to 15 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../User/system_ch32v20x.c":113 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 111)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":113 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (reg/f:SI 111) [2 MEM[(struct RCC_TypeDef *)1073876992B].CTLR+0 S4 A128])) "../User/system_ch32v20x.c":113 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 73 [ _2 ])
+        (ior:SI (reg:SI 72 [ _1 ])
+            (const_int 1 [0x1]))) "../User/system_ch32v20x.c":113 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 112)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":113 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/v:SI (reg/f:SI 112) [2 MEM[(struct RCC_TypeDef *)1073876992B].CTLR+0 S4 A128])
+        (reg:SI 73 [ _2 ])) "../User/system_ch32v20x.c":113 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../User/system_ch32v20x.c":114 -1
+     (nil))
+(insn 12 11 13 2 (set (reg/f:SI 113)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":114 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 74 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 113)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])) "../User/system_ch32v20x.c":114 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 114)
+        (const_int -251723776 [0xfffffffff0ff0000])) "../User/system_ch32v20x.c":114 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 75 [ _4 ])
+        (and:SI (reg:SI 74 [ _3 ])
+            (reg:SI 114))) "../User/system_ch32v20x.c":114 -1
+     (nil))
+(insn 16 15 17 2 (set (reg/f:SI 115)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":114 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])
+        (reg:SI 75 [ _4 ])) "../User/system_ch32v20x.c":114 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "../User/system_ch32v20x.c":115 -1
+     (nil))
+(insn 19 18 20 2 (set (reg/f:SI 116)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":115 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 76 [ _5 ])
+        (mem/v:SI (reg/f:SI 116) [2 MEM[(struct RCC_TypeDef *)1073876992B].CTLR+0 S4 A128])) "../User/system_ch32v20x.c":115 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 118)
+        (const_int -17367040 [0xfffffffffef70000])) "../User/system_ch32v20x.c":115 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 117)
+        (plus:SI (reg:SI 118)
+            (const_int -1 [0xffffffffffffffff]))) "../User/system_ch32v20x.c":115 -1
+     (expr_list:REG_EQUAL (const_int -17367041 [0xfffffffffef6ffff])
+        (nil)))
+(insn 23 22 24 2 (set (reg:SI 77 [ _6 ])
+        (and:SI (reg:SI 76 [ _5 ])
+            (reg:SI 117))) "../User/system_ch32v20x.c":115 -1
+     (nil))
+(insn 24 23 25 2 (set (reg/f:SI 119)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":115 -1
+     (nil))
+(insn 25 24 26 2 (set (mem/v:SI (reg/f:SI 119) [2 MEM[(struct RCC_TypeDef *)1073876992B].CTLR+0 S4 A128])
+        (reg:SI 77 [ _6 ])) "../User/system_ch32v20x.c":115 -1
+     (nil))
+(debug_insn 26 25 27 2 (debug_marker) "../User/system_ch32v20x.c":116 -1
+     (nil))
+(insn 27 26 28 2 (set (reg/f:SI 120)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":116 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 78 [ _7 ])
+        (mem/v:SI (reg/f:SI 120) [2 MEM[(struct RCC_TypeDef *)1073876992B].CTLR+0 S4 A128])) "../User/system_ch32v20x.c":116 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:SI 122)
+        (const_int -262144 [0xfffffffffffc0000])) "../User/system_ch32v20x.c":116 -1
+     (nil))
+(insn 30 29 31 2 (set (reg:SI 121)
+        (plus:SI (reg:SI 122)
+            (const_int -1 [0xffffffffffffffff]))) "../User/system_ch32v20x.c":116 -1
+     (expr_list:REG_EQUAL (const_int -262145 [0xfffffffffffbffff])
+        (nil)))
+(insn 31 30 32 2 (set (reg:SI 79 [ _8 ])
+        (and:SI (reg:SI 78 [ _7 ])
+            (reg:SI 121))) "../User/system_ch32v20x.c":116 -1
+     (nil))
+(insn 32 31 33 2 (set (reg/f:SI 123)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":116 -1
+     (nil))
+(insn 33 32 34 2 (set (mem/v:SI (reg/f:SI 123) [2 MEM[(struct RCC_TypeDef *)1073876992B].CTLR+0 S4 A128])
+        (reg:SI 79 [ _8 ])) "../User/system_ch32v20x.c":116 -1
+     (nil))
+(debug_insn 34 33 35 2 (debug_marker) "../User/system_ch32v20x.c":117 -1
+     (nil))
+(insn 35 34 36 2 (set (reg/f:SI 124)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":117 -1
+     (nil))
+(insn 36 35 37 2 (set (reg:SI 80 [ _9 ])
+        (mem/v:SI (plus:SI (reg/f:SI 124)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])) "../User/system_ch32v20x.c":117 -1
+     (nil))
+(insn 37 36 38 2 (set (reg:SI 126)
+        (const_int -16711680 [0xffffffffff010000])) "../User/system_ch32v20x.c":117 -1
+     (nil))
+(insn 38 37 39 2 (set (reg:SI 125)
+        (plus:SI (reg:SI 126)
+            (const_int -1 [0xffffffffffffffff]))) "../User/system_ch32v20x.c":117 -1
+     (expr_list:REG_EQUAL (const_int -16711681 [0xffffffffff00ffff])
+        (nil)))
+(insn 39 38 40 2 (set (reg:SI 81 [ _10 ])
+        (and:SI (reg:SI 80 [ _9 ])
+            (reg:SI 125))) "../User/system_ch32v20x.c":117 -1
+     (nil))
+(insn 40 39 41 2 (set (reg/f:SI 127)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":117 -1
+     (nil))
+(insn 41 40 42 2 (set (mem/v:SI (plus:SI (reg/f:SI 127)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])
+        (reg:SI 81 [ _10 ])) "../User/system_ch32v20x.c":117 -1
+     (nil))
+(debug_insn 42 41 43 2 (debug_marker) "../User/system_ch32v20x.c":118 -1
+     (nil))
+(insn 43 42 44 2 (set (reg/f:SI 128)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":118 -1
+     (nil))
+(insn 44 43 45 2 (set (reg:SI 129)
+        (const_int 10420224 [0x9f0000])) "../User/system_ch32v20x.c":118 -1
+     (nil))
+(insn 45 44 46 2 (set (mem/v:SI (plus:SI (reg/f:SI 128)
+                (const_int 8 [0x8])) [2 MEM[(struct RCC_TypeDef *)1073876992B].INTR+0 S4 A64])
+        (reg:SI 129)) "../User/system_ch32v20x.c":118 -1
+     (nil))
+(debug_insn 46 45 47 2 (debug_marker) "../User/system_ch32v20x.c":119 -1
+     (nil))
+(debug_insn 47 46 48 2 (debug_marker) "../User/system_ch32v20x.c":222 -1
+     (nil))
+(debug_insn 48 47 49 2 (debug_marker) "../User/system_ch32v20x.c":683 -1
+     (nil))
+(insn 49 48 50 2 (set (mem/v/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 StartUpCounter+0 S4 A64])
+        (const_int 0 [0])) "../User/system_ch32v20x.c":683 -1
+     (nil))
+(insn 50 49 51 2 (set (mem/v/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 HSEStatus+0 S4 A32])
+        (const_int 0 [0])) "../User/system_ch32v20x.c":683 -1
+     (nil))
+(debug_insn 51 50 52 2 (debug_marker) "../User/system_ch32v20x.c":685 -1
+     (nil))
+(insn 52 51 53 2 (set (reg/f:SI 130)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":685 -1
+     (nil))
+(insn 53 52 54 2 (set (reg:SI 82 [ _19 ])
+        (mem/v:SI (reg/f:SI 130) [2 MEM[(struct RCC_TypeDef *)1073876992B].CTLR+0 S4 A128])) "../User/system_ch32v20x.c":685 -1
+     (nil))
+(insn 54 53 55 2 (set (reg:SI 131)
+        (const_int 65536 [0x10000])) "../User/system_ch32v20x.c":685 -1
+     (nil))
+(insn 55 54 56 2 (set (reg:SI 83 [ _20 ])
+        (ior:SI (reg:SI 82 [ _19 ])
+            (reg:SI 131))) "../User/system_ch32v20x.c":685 -1
+     (nil))
+(insn 56 55 57 2 (set (reg/f:SI 132)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":685 -1
+     (nil))
+(insn 57 56 74 2 (set (mem/v:SI (reg/f:SI 132) [2 MEM[(struct RCC_TypeDef *)1073876992B].CTLR+0 S4 A128])
+        (reg:SI 83 [ _20 ])) "../User/system_ch32v20x.c":685 -1
+     (nil))
+(code_label 74 57 58 4 3 (nil) [1 uses])
+(note 58 74 59 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 59 58 60 4 (debug_marker) "../User/system_ch32v20x.c":688 -1
+     (nil))
+(debug_insn 60 59 61 4 (debug_marker) "../User/system_ch32v20x.c":690 -1
+     (nil))
+(insn 61 60 62 4 (set (reg/f:SI 133)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":690 -1
+     (nil))
+(insn 62 61 63 4 (set (reg:SI 84 [ _21 ])
+        (mem/v:SI (reg/f:SI 133) [2 MEM[(struct RCC_TypeDef *)1073876992B].CTLR+0 S4 A128])) "../User/system_ch32v20x.c":690 -1
+     (nil))
+(insn 63 62 64 4 (set (reg:SI 134)
+        (const_int 131072 [0x20000])) "../User/system_ch32v20x.c":690 -1
+     (nil))
+(insn 64 63 65 4 (set (reg:SI 85 [ _22 ])
+        (and:SI (reg:SI 84 [ _21 ])
+            (reg:SI 134))) "../User/system_ch32v20x.c":690 -1
+     (nil))
+(insn 65 64 66 4 (set (mem/v/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 HSEStatus+0 S4 A32])
+        (reg:SI 85 [ _22 ])) "../User/system_ch32v20x.c":690 -1
+     (nil))
+(debug_insn 66 65 67 4 (debug_marker) "../User/system_ch32v20x.c":691 -1
+     (nil))
+(insn 67 66 68 4 (set (reg:SI 86 [ StartUpCounter.0_23 ])
+        (mem/v/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 StartUpCounter+0 S4 A64])) "../User/system_ch32v20x.c":691 -1
+     (nil))
+(insn 68 67 69 4 (set (reg:SI 87 [ _24 ])
+        (plus:SI (reg:SI 86 [ StartUpCounter.0_23 ])
+            (const_int 1 [0x1]))) "../User/system_ch32v20x.c":691 -1
+     (nil))
+(insn 69 68 70 4 (set (mem/v/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 StartUpCounter+0 S4 A64])
+        (reg:SI 87 [ _24 ])) "../User/system_ch32v20x.c":691 -1
+     (nil))
+(insn 70 69 71 4 (set (reg:SI 88 [ HSEStatus.1_25 ])
+        (mem/v/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 HSEStatus+0 S4 A32])) "../User/system_ch32v20x.c":692 -1
+     (nil))
+(jump_insn 71 70 72 4 (set (pc)
+        (if_then_else (ne (reg:SI 88 [ HSEStatus.1_25 ])
+                (const_int 0 [0]))
+            (label_ref 77)
+            (pc))) "../User/system_ch32v20x.c":692 -1
+     (int_list:REG_BR_PROB 59055804 (nil))
+ -> 77)
+(note 72 71 73 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 73 72 75 5 (set (reg:SI 89 [ StartUpCounter.2_26 ])
+        (mem/v/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 StartUpCounter+0 S4 A64])) "../User/system_ch32v20x.c":692 -1
+     (nil))
+(insn 75 73 76 5 (set (reg:SI 135)
+        (const_int 4096 [0x1000])) "../User/system_ch32v20x.c":692 -1
+     (nil))
+(jump_insn 76 75 77 5 (set (pc)
+        (if_then_else (ne (reg:SI 89 [ StartUpCounter.2_26 ])
+                (reg:SI 135))
+            (label_ref 74)
+            (pc))) "../User/system_ch32v20x.c":692 -1
+     (int_list:REG_BR_PROB 1014686028 (nil))
+ -> 74)
+(code_label 77 76 78 6 2 (nil) [1 uses])
+(note 78 77 79 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 79 78 80 6 (debug_marker) "../User/system_ch32v20x.c":694 -1
+     (nil))
+(insn 80 79 81 6 (set (reg/f:SI 136)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":694 -1
+     (nil))
+(insn 81 80 82 6 (set (reg:SI 90 [ _27 ])
+        (mem/v:SI (reg/f:SI 136) [2 MEM[(struct RCC_TypeDef *)1073876992B].CTLR+0 S4 A128])) "../User/system_ch32v20x.c":694 -1
+     (nil))
+(insn 82 81 83 6 (set (reg:SI 137)
+        (const_int 131072 [0x20000])) "../User/system_ch32v20x.c":694 -1
+     (nil))
+(insn 83 82 84 6 (set (reg:SI 138)
+        (and:SI (reg:SI 90 [ _27 ])
+            (reg:SI 137))) "../User/system_ch32v20x.c":694 -1
+     (nil))
+(jump_insn 84 83 85 6 (set (pc)
+        (if_then_else (eq (reg:SI 138)
+                (const_int 0 [0]))
+            (label_ref 91)
+            (pc))) "../User/system_ch32v20x.c":694 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 91)
+(note 85 84 86 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 86 85 87 7 (debug_marker) "../User/system_ch32v20x.c":696 -1
+     (nil))
+(insn 87 86 88 7 (set (reg:SI 139)
+        (const_int 1 [0x1])) "../User/system_ch32v20x.c":696 -1
+     (nil))
+(insn 88 87 89 7 (set (mem/v/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 HSEStatus+0 S4 A32])
+        (reg:SI 139)) "../User/system_ch32v20x.c":696 -1
+     (nil))
+(jump_insn 89 88 90 7 (set (pc)
+        (label_ref 95)) "../User/system_ch32v20x.c":696 -1
+     (nil)
+ -> 95)
+(barrier 90 89 91)
+(code_label 91 90 92 8 4 (nil) [1 uses])
+(note 92 91 93 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 93 92 94 8 (debug_marker) "../User/system_ch32v20x.c":700 -1
+     (nil))
+(insn 94 93 95 8 (set (mem/v/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 HSEStatus+0 S4 A32])
+        (const_int 0 [0])) "../User/system_ch32v20x.c":700 -1
+     (nil))
+(code_label 95 94 96 9 5 (nil) [1 uses])
+(note 96 95 97 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 97 96 98 9 (debug_marker) "../User/system_ch32v20x.c":703 -1
+     (nil))
+(insn 98 97 99 9 (set (reg:SI 92 [ HSEStatus.3_29 ])
+        (mem/v/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 HSEStatus+0 S4 A32])) "../User/system_ch32v20x.c":703 -1
+     (nil))
+(insn 99 98 100 9 (set (reg:SI 140)
+        (const_int 1 [0x1])) "../User/system_ch32v20x.c":703 -1
+     (nil))
+(jump_insn 100 99 101 9 (set (pc)
+        (if_then_else (ne (reg:SI 92 [ HSEStatus.3_29 ])
+                (reg:SI 140))
+            (label_ref:SI 176)
+            (pc))) "../User/system_ch32v20x.c":703 180 {*branchsi}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 176)
+(note 101 100 102 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 102 101 103 10 (debug_marker) "../User/system_ch32v20x.c":706 -1
+     (nil))
+(insn 103 102 104 10 (set (reg/f:SI 141)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":706 -1
+     (nil))
+(insn 104 103 105 10 (set (reg:SI 93 [ _30 ])
+        (mem/v:SI (plus:SI (reg/f:SI 141)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])) "../User/system_ch32v20x.c":706 -1
+     (nil))
+(insn 105 104 106 10 (set (reg/f:SI 142)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":706 -1
+     (nil))
+(insn 106 105 107 10 (set (mem/v:SI (plus:SI (reg/f:SI 142)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])
+        (reg:SI 93 [ _30 ])) "../User/system_ch32v20x.c":706 -1
+     (nil))
+(debug_insn 107 106 108 10 (debug_marker) "../User/system_ch32v20x.c":708 -1
+     (nil))
+(insn 108 107 109 10 (set (reg/f:SI 143)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":708 -1
+     (nil))
+(insn 109 108 110 10 (set (reg:SI 94 [ _31 ])
+        (mem/v:SI (plus:SI (reg/f:SI 143)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])) "../User/system_ch32v20x.c":708 -1
+     (nil))
+(insn 110 109 111 10 (set (reg/f:SI 144)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":708 -1
+     (nil))
+(insn 111 110 112 10 (set (mem/v:SI (plus:SI (reg/f:SI 144)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])
+        (reg:SI 94 [ _31 ])) "../User/system_ch32v20x.c":708 -1
+     (nil))
+(debug_insn 112 111 113 10 (debug_marker) "../User/system_ch32v20x.c":710 -1
+     (nil))
+(insn 113 112 114 10 (set (reg/f:SI 145)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":710 -1
+     (nil))
+(insn 114 113 115 10 (set (reg:SI 95 [ _32 ])
+        (mem/v:SI (plus:SI (reg/f:SI 145)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])) "../User/system_ch32v20x.c":710 -1
+     (nil))
+(insn 115 114 116 10 (set (reg:SI 96 [ _33 ])
+        (ior:SI (reg:SI 95 [ _32 ])
+            (const_int 1024 [0x400]))) "../User/system_ch32v20x.c":710 -1
+     (nil))
+(insn 116 115 117 10 (set (reg/f:SI 146)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":710 -1
+     (nil))
+(insn 117 116 118 10 (set (mem/v:SI (plus:SI (reg/f:SI 146)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])
+        (reg:SI 96 [ _33 ])) "../User/system_ch32v20x.c":710 -1
+     (nil))
+(debug_insn 118 117 119 10 (debug_marker) "../User/system_ch32v20x.c":716 -1
+     (nil))
+(insn 119 118 120 10 (set (reg/f:SI 147)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":716 -1
+     (nil))
+(insn 120 119 121 10 (set (reg:SI 97 [ _34 ])
+        (mem/v:SI (plus:SI (reg/f:SI 147)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])) "../User/system_ch32v20x.c":716 -1
+     (nil))
+(insn 121 120 122 10 (set (reg:SI 149)
+        (const_int -4128768 [0xffffffffffc10000])) "../User/system_ch32v20x.c":716 -1
+     (nil))
+(insn 122 121 123 10 (set (reg:SI 148)
+        (plus:SI (reg:SI 149)
+            (const_int -1 [0xffffffffffffffff]))) "../User/system_ch32v20x.c":716 -1
+     (expr_list:REG_EQUAL (const_int -4128769 [0xffffffffffc0ffff])
+        (nil)))
+(insn 123 122 124 10 (set (reg:SI 98 [ _35 ])
+        (and:SI (reg:SI 97 [ _34 ])
+            (reg:SI 148))) "../User/system_ch32v20x.c":716 -1
+     (nil))
+(insn 124 123 125 10 (set (reg/f:SI 150)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":716 -1
+     (nil))
+(insn 125 124 126 10 (set (mem/v:SI (plus:SI (reg/f:SI 150)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])
+        (reg:SI 98 [ _35 ])) "../User/system_ch32v20x.c":716 -1
+     (nil))
+(debug_insn 126 125 127 10 (debug_marker) "../User/system_ch32v20x.c":719 -1
+     (nil))
+(insn 127 126 128 10 (set (reg/f:SI 151)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":719 -1
+     (nil))
+(insn 128 127 129 10 (set (reg:SI 99 [ _36 ])
+        (mem/v:SI (plus:SI (reg/f:SI 151)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])) "../User/system_ch32v20x.c":719 -1
+     (nil))
+(insn 129 128 130 10 (set (reg:SI 152)
+        (const_int 3997696 [0x3d0000])) "../User/system_ch32v20x.c":719 -1
+     (nil))
+(insn 130 129 131 10 (set (reg:SI 100 [ _37 ])
+        (ior:SI (reg:SI 99 [ _36 ])
+            (reg:SI 152))) "../User/system_ch32v20x.c":719 -1
+     (nil))
+(insn 131 130 132 10 (set (reg/f:SI 153)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":719 -1
+     (nil))
+(insn 132 131 133 10 (set (mem/v:SI (plus:SI (reg/f:SI 153)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])
+        (reg:SI 100 [ _37 ])) "../User/system_ch32v20x.c":719 -1
+     (nil))
+(debug_insn 133 132 134 10 (debug_marker) "../User/system_ch32v20x.c":722 -1
+     (nil))
+(insn 134 133 135 10 (set (reg/f:SI 154)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":722 -1
+     (nil))
+(insn 135 134 136 10 (set (reg:SI 101 [ _38 ])
+        (mem/v:SI (reg/f:SI 154) [2 MEM[(struct RCC_TypeDef *)1073876992B].CTLR+0 S4 A128])) "../User/system_ch32v20x.c":722 -1
+     (nil))
+(insn 136 135 137 10 (set (reg:SI 155)
+        (const_int 16777216 [0x1000000])) "../User/system_ch32v20x.c":722 -1
+     (nil))
+(insn 137 136 138 10 (set (reg:SI 102 [ _39 ])
+        (ior:SI (reg:SI 101 [ _38 ])
+            (reg:SI 155))) "../User/system_ch32v20x.c":722 -1
+     (nil))
+(insn 138 137 139 10 (set (reg/f:SI 156)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":722 -1
+     (nil))
+(insn 139 138 140 10 (set (mem/v:SI (reg/f:SI 156) [2 MEM[(struct RCC_TypeDef *)1073876992B].CTLR+0 S4 A128])
+        (reg:SI 102 [ _39 ])) "../User/system_ch32v20x.c":722 -1
+     (nil))
+(debug_insn 140 139 145 10 (debug_marker) "../User/system_ch32v20x.c":724 -1
+     (nil))
+(code_label 145 140 141 11 7 (nil) [1 uses])
+(note 141 145 142 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 142 141 143 11 (debug_marker) "../User/system_ch32v20x.c":726 -1
+     (nil))
+(insn 143 142 144 11 (set (reg/f:SI 157)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":724 -1
+     (nil))
+(insn 144 143 146 11 (set (reg:SI 103 [ _40 ])
+        (mem/v:SI (reg/f:SI 157) [2 MEM[(struct RCC_TypeDef *)1073876992B].CTLR+0 S4 A128])) "../User/system_ch32v20x.c":724 -1
+     (nil))
+(insn 146 144 147 11 (set (reg:SI 158)
+        (const_int 33554432 [0x2000000])) "../User/system_ch32v20x.c":724 -1
+     (nil))
+(insn 147 146 148 11 (set (reg:SI 159)
+        (and:SI (reg:SI 103 [ _40 ])
+            (reg:SI 158))) "../User/system_ch32v20x.c":724 -1
+     (nil))
+(jump_insn 148 147 149 11 (set (pc)
+        (if_then_else (eq (reg:SI 159)
+                (const_int 0 [0]))
+            (label_ref 145)
+            (pc))) "../User/system_ch32v20x.c":724 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 145)
+(note 149 148 150 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 150 149 151 12 (debug_marker) "../User/system_ch32v20x.c":728 -1
+     (nil))
+(insn 151 150 152 12 (set (reg/f:SI 160)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":728 -1
+     (nil))
+(insn 152 151 153 12 (set (reg:SI 105 [ _42 ])
+        (mem/v:SI (plus:SI (reg/f:SI 160)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])) "../User/system_ch32v20x.c":728 -1
+     (nil))
+(insn 153 152 154 12 (set (reg:SI 106 [ _43 ])
+        (and:SI (reg:SI 105 [ _42 ])
+            (const_int -4 [0xfffffffffffffffc]))) "../User/system_ch32v20x.c":728 -1
+     (nil))
+(insn 154 153 155 12 (set (reg/f:SI 161)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":728 -1
+     (nil))
+(insn 155 154 156 12 (set (mem/v:SI (plus:SI (reg/f:SI 161)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])
+        (reg:SI 106 [ _43 ])) "../User/system_ch32v20x.c":728 -1
+     (nil))
+(debug_insn 156 155 157 12 (debug_marker) "../User/system_ch32v20x.c":729 -1
+     (nil))
+(insn 157 156 158 12 (set (reg/f:SI 162)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":729 -1
+     (nil))
+(insn 158 157 159 12 (set (reg:SI 107 [ _44 ])
+        (mem/v:SI (plus:SI (reg/f:SI 162)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])) "../User/system_ch32v20x.c":729 -1
+     (nil))
+(insn 159 158 160 12 (set (reg:SI 108 [ _45 ])
+        (ior:SI (reg:SI 107 [ _44 ])
+            (const_int 2 [0x2]))) "../User/system_ch32v20x.c":729 -1
+     (nil))
+(insn 160 159 161 12 (set (reg/f:SI 163)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":729 -1
+     (nil))
+(insn 161 160 162 12 (set (mem/v:SI (plus:SI (reg/f:SI 163)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])
+        (reg:SI 108 [ _45 ])) "../User/system_ch32v20x.c":729 -1
+     (nil))
+(debug_insn 162 161 167 12 (debug_marker) "../User/system_ch32v20x.c":731 -1
+     (nil))
+(code_label 167 162 163 13 8 (nil) [1 uses])
+(note 163 167 164 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 164 163 165 13 (debug_marker) "../User/system_ch32v20x.c":733 -1
+     (nil))
+(insn 165 164 166 13 (set (reg/f:SI 164)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":731 -1
+     (nil))
+(insn 166 165 168 13 (set (reg:SI 109 [ _46 ])
+        (mem/v:SI (plus:SI (reg/f:SI 164)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])) "../User/system_ch32v20x.c":731 -1
+     (nil))
+(insn 168 166 169 13 (set (reg:SI 165)
+        (and:SI (reg:SI 109 [ _46 ])
+            (const_int 12 [0xc]))) "../User/system_ch32v20x.c":731 -1
+     (nil))
+(insn 169 168 170 13 (set (reg:SI 166)
+        (const_int 8 [0x8])) "../User/system_ch32v20x.c":731 -1
+     (nil))
+(jump_insn 170 169 172 13 (set (pc)
+        (if_then_else (ne (reg:SI 165)
+                (reg:SI 166))
+            (label_ref 167)
+            (pc))) "../User/system_ch32v20x.c":731 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 167)
+(note 172 170 173 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 173 172 174 14 (debug_marker) "../User/system_ch32v20x.c":741 -1
+     (nil))
+(debug_insn 174 173 175 14 (var_location:SI HSEStatus (clobber (const_int 0 [0]))) "../User/system_ch32v20x.c":222 -1
+     (nil))
+(debug_insn 175 174 176 14 (var_location:SI StartUpCounter (clobber (const_int 0 [0]))) "../User/system_ch32v20x.c":222 -1
+     (nil))
+(code_label 176 175 177 15 1 (nil) [1 uses])
+(note 177 176 0 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+
+;; Function SystemCoreClockUpdate (SystemCoreClockUpdate, funcdef_no=30, decl_uid=1834, cgraph_uid=30, symbol_order=32)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 16 into block 15...
+Merged blocks 15 and 16.
+Merged 15 and 16 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 2 7 2 (debug_marker) "../User/system_ch32v20x.c":132 -1
+     (nil))
+(debug_insn 7 6 8 2 (var_location:SI tmp (const_int 0 [0])) "../User/system_ch32v20x.c":132 -1
+     (nil))
+(debug_insn 8 7 9 2 (var_location:SI pllmull (const_int 0 [0])) "../User/system_ch32v20x.c":132 -1
+     (nil))
+(debug_insn 9 8 10 2 (var_location:SI pllsource (const_int 0 [0])) "../User/system_ch32v20x.c":132 -1
+     (nil))
+(debug_insn 10 9 11 2 (var_location:SI Pll_6_5 (const_int 0 [0])) "../User/system_ch32v20x.c":132 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../User/system_ch32v20x.c":134 -1
+     (nil))
+(insn 12 11 13 2 (set (reg/f:SI 95)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":134 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 95)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])) "../User/system_ch32v20x.c":134 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/v:SI 92 [ tmp ])
+        (and:SI (reg:SI 72 [ _1 ])
+            (const_int 12 [0xc]))) "../User/system_ch32v20x.c":134 -1
+     (nil))
+(debug_insn 15 14 16 2 (var_location:SI tmp (reg/v:SI 92 [ tmp ])) "../User/system_ch32v20x.c":134 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "../User/system_ch32v20x.c":136 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 96)
+        (const_int 4 [0x4])) -1
+     (nil))
+(jump_insn 18 17 19 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 92 [ tmp ])
+                (reg:SI 96))
+            (label_ref 22)
+            (pc))) -1
+     (int_list:REG_BR_PROB 402653188 (nil))
+ -> 22)
+(note 19 18 20 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 21 4 (set (reg:SI 97)
+        (const_int 8 [0x8])) -1
+     (nil))
+(jump_insn 21 20 22 4 (set (pc)
+        (if_then_else (eq (reg/v:SI 92 [ tmp ])
+                (reg:SI 97))
+            (label_ref 33)
+            (pc))) -1
+     (int_list:REG_BR_PROB 268435460 (nil))
+ -> 33)
+(code_label 22 21 23 5 15 (nil) [1 uses])
+(note 23 22 24 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 24 23 25 5 (debug_marker) "../User/system_ch32v20x.c":139 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:SI 99)
+        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/system_ch32v20x.c":139 -1
+     (nil))
+(insn 26 25 27 5 (set (reg/f:SI 98)
+        (lo_sum:SI (reg:SI 99)
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/system_ch32v20x.c":139 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 27 26 28 5 (set (reg:SI 101)
+        (const_int 7999488 [0x7a1000])) "../User/system_ch32v20x.c":139 -1
+     (nil))
+(insn 28 27 29 5 (set (reg:SI 100)
+        (plus:SI (reg:SI 101)
+            (const_int 512 [0x200]))) "../User/system_ch32v20x.c":139 -1
+     (expr_list:REG_EQUAL (const_int 8000000 [0x7a1200])
+        (nil)))
+(insn 29 28 30 5 (set (mem/c:SI (reg/f:SI 98) [2 SystemCoreClock+0 S4 A32])
+        (reg:SI 100)) "../User/system_ch32v20x.c":139 -1
+     (nil))
+(debug_insn 30 29 31 5 (debug_marker) "../User/system_ch32v20x.c":140 -1
+     (nil))
+(jump_insn 31 30 32 5 (set (pc)
+        (label_ref 114)) "../User/system_ch32v20x.c":140 -1
+     (nil)
+ -> 114)
+(barrier 32 31 33)
+(code_label 33 32 34 6 16 (nil) [1 uses])
+(note 34 33 35 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 35 34 36 6 (debug_marker) "../User/system_ch32v20x.c":145 -1
+     (nil))
+(insn 36 35 37 6 (set (reg/f:SI 102)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":145 -1
+     (nil))
+(insn 37 36 38 6 (set (reg:SI 73 [ _2 ])
+        (mem/v:SI (plus:SI (reg/f:SI 102)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])) "../User/system_ch32v20x.c":145 -1
+     (nil))
+(debug_insn 38 37 39 6 (var_location:SI pllmull (and:SI (reg:SI 73 [ _2 ])
+        (const_int 3932160 [0x3c0000]))) "../User/system_ch32v20x.c":145 -1
+     (nil))
+(debug_insn 39 38 40 6 (debug_marker) "../User/system_ch32v20x.c":146 -1
+     (nil))
+(insn 40 39 41 6 (set (reg/f:SI 103)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":146 -1
+     (nil))
+(insn 41 40 42 6 (set (reg:SI 74 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 103)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])) "../User/system_ch32v20x.c":146 -1
+     (nil))
+(insn 42 41 43 6 (set (reg:SI 104)
+        (const_int 65536 [0x10000])) "../User/system_ch32v20x.c":146 -1
+     (nil))
+(insn 43 42 44 6 (set (reg/v:SI 93 [ pllsource ])
+        (and:SI (reg:SI 74 [ _3 ])
+            (reg:SI 104))) "../User/system_ch32v20x.c":146 -1
+     (nil))
+(debug_insn 44 43 45 6 (var_location:SI pllsource (reg/v:SI 93 [ pllsource ])) "../User/system_ch32v20x.c":146 -1
+     (nil))
+(debug_insn 45 44 46 6 (debug_marker) "../User/system_ch32v20x.c":147 -1
+     (nil))
+(insn 46 45 47 6 (set (reg:SI 105)
+        (lshiftrt:SI (reg:SI 73 [ _2 ])
+            (const_int 18 [0x12]))) "../User/system_ch32v20x.c":147 -1
+     (nil))
+(insn 47 46 48 6 (set (reg:SI 106)
+        (and:SI (reg:SI 105)
+            (const_int 15 [0xf]))) "../User/system_ch32v20x.c":147 -1
+     (nil))
+(insn 48 47 49 6 (set (reg/v:SI 91 [ pllmull ])
+        (plus:SI (reg:SI 106)
+            (const_int 2 [0x2]))) "../User/system_ch32v20x.c":147 -1
+     (nil))
+(debug_insn 49 48 50 6 (var_location:SI pllmull (reg/v:SI 91 [ pllmull ])) "../User/system_ch32v20x.c":147 -1
+     (nil))
+(debug_insn 50 49 51 6 (debug_marker) "../User/system_ch32v20x.c":149 -1
+     (nil))
+(insn 51 50 52 6 (set (reg:SI 107)
+        (const_int 17 [0x11])) "../User/system_ch32v20x.c":149 -1
+     (nil))
+(jump_insn 52 51 53 6 (set (pc)
+        (if_then_else (ne (reg/v:SI 91 [ pllmull ])
+                (reg:SI 107))
+            (label_ref 54)
+            (pc))) "../User/system_ch32v20x.c":149 -1
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 54)
+(note 53 52 3 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 3 53 54 7 (set (reg/v:SI 91 [ pllmull ])
+        (const_int 18 [0x12])) "../User/system_ch32v20x.c":149 -1
+     (nil))
+(code_label 54 3 55 8 18 (nil) [1 uses])
+(note 55 54 56 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 56 55 57 8 (var_location:SI pllmull (reg/v:SI 91 [ pllmull ])) -1
+     (nil))
+(debug_insn 57 56 58 8 (debug_marker) "../User/system_ch32v20x.c":151 -1
+     (nil))
+(jump_insn 58 57 59 8 (set (pc)
+        (if_then_else (ne (reg/v:SI 93 [ pllsource ])
+                (const_int 0 [0]))
+            (label_ref 87)
+            (pc))) "../User/system_ch32v20x.c":151 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 87)
+(note 59 58 60 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 60 59 61 9 (debug_marker) "../User/system_ch32v20x.c":153 -1
+     (nil))
+(insn 61 60 62 9 (set (reg:SI 109)
+        (const_int 1073889280 [0x40024000])) "../User/system_ch32v20x.c":153 -1
+     (nil))
+(insn 62 61 63 9 (set (reg/f:SI 108)
+        (plus:SI (reg:SI 109)
+            (const_int -2048 [0xfffffffffffff800]))) "../User/system_ch32v20x.c":153 -1
+     (expr_list:REG_EQUAL (const_int 1073887232 [0x40023800])
+        (nil)))
+(insn 63 62 64 9 (set (reg:SI 76 [ _5 ])
+        (mem/v:SI (reg/f:SI 108) [2 MEM[(struct EXTEN_TypeDef *)1073887232B].EXTEN_CTR+0 S4 A128])) "../User/system_ch32v20x.c":153 -1
+     (nil))
+(insn 64 63 65 9 (set (reg:SI 110)
+        (and:SI (reg:SI 76 [ _5 ])
+            (const_int 16 [0x10]))) "../User/system_ch32v20x.c":153 -1
+     (nil))
+(jump_insn 65 64 66 9 (set (pc)
+        (if_then_else (eq (reg:SI 110)
+                (const_int 0 [0]))
+            (label_ref 76)
+            (pc))) "../User/system_ch32v20x.c":153 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 76)
+(note 66 65 67 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 67 66 68 10 (debug_marker) "../User/system_ch32v20x.c":154 -1
+     (nil))
+(insn 68 67 69 10 (set (reg:SI 112)
+        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/system_ch32v20x.c":154 -1
+     (nil))
+(insn 69 68 70 10 (set (reg/f:SI 111)
+        (lo_sum:SI (reg:SI 112)
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/system_ch32v20x.c":154 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 70 69 71 10 (set (reg:SI 115)
+        (const_int 7999488 [0x7a1000])) "../User/system_ch32v20x.c":154 -1
+     (nil))
+(insn 71 70 72 10 (set (reg:SI 114)
+        (plus:SI (reg:SI 115)
+            (const_int 512 [0x200]))) "../User/system_ch32v20x.c":154 -1
+     (expr_list:REG_EQUAL (const_int 8000000 [0x7a1200])
+        (nil)))
+(insn 72 71 73 10 (set (reg:SI 113)
+        (mult:SI (reg/v:SI 91 [ pllmull ])
+            (reg:SI 114))) "../User/system_ch32v20x.c":154 -1
+     (nil))
+(insn 73 72 74 10 (set (mem/c:SI (reg/f:SI 111) [2 SystemCoreClock+0 S4 A32])
+        (reg:SI 113)) "../User/system_ch32v20x.c":154 -1
+     (nil))
+(jump_insn 74 73 75 10 (set (pc)
+        (label_ref 114)) -1
+     (nil)
+ -> 114)
+(barrier 75 74 76)
+(code_label 76 75 77 11 20 (nil) [1 uses])
+(note 77 76 78 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 78 77 79 11 (debug_marker) "../User/system_ch32v20x.c":157 -1
+     (nil))
+(insn 79 78 80 11 (set (reg:SI 117)
+        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/system_ch32v20x.c":157 -1
+     (nil))
+(insn 80 79 81 11 (set (reg/f:SI 116)
+        (lo_sum:SI (reg:SI 117)
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/system_ch32v20x.c":157 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 81 80 82 11 (set (reg:SI 120)
+        (const_int 4001792 [0x3d1000])) "../User/system_ch32v20x.c":157 -1
+     (nil))
+(insn 82 81 83 11 (set (reg:SI 119)
+        (plus:SI (reg:SI 120)
+            (const_int -1792 [0xfffffffffffff900]))) "../User/system_ch32v20x.c":157 -1
+     (expr_list:REG_EQUAL (const_int 4000000 [0x3d0900])
+        (nil)))
+(insn 83 82 84 11 (set (reg:SI 118)
+        (mult:SI (reg/v:SI 91 [ pllmull ])
+            (reg:SI 119))) "../User/system_ch32v20x.c":157 -1
+     (nil))
+(insn 84 83 85 11 (set (mem/c:SI (reg/f:SI 116) [2 SystemCoreClock+0 S4 A32])
+        (reg:SI 118)) "../User/system_ch32v20x.c":157 -1
+     (nil))
+(jump_insn 85 84 86 11 (set (pc)
+        (label_ref 114)) "../User/system_ch32v20x.c":157 -1
+     (nil)
+ -> 114)
+(barrier 86 85 87)
+(code_label 87 86 88 12 19 (nil) [1 uses])
+(note 88 87 89 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 89 88 90 12 (debug_marker) "../User/system_ch32v20x.c":169 -1
+     (nil))
+(insn 90 89 91 12 (set (reg/f:SI 121)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":169 -1
+     (nil))
+(insn 91 90 92 12 (set (reg:SI 80 [ _9 ])
+        (mem/v:SI (plus:SI (reg/f:SI 121)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])) "../User/system_ch32v20x.c":169 -1
+     (nil))
+(insn 92 91 93 12 (set (reg:SI 122)
+        (const_int 131072 [0x20000])) "../User/system_ch32v20x.c":169 -1
+     (nil))
+(insn 93 92 94 12 (set (reg:SI 123)
+        (and:SI (reg:SI 80 [ _9 ])
+            (reg:SI 122))) "../User/system_ch32v20x.c":169 -1
+     (nil))
+(jump_insn 94 93 95 12 (set (pc)
+        (if_then_else (eq (reg:SI 123)
+                (const_int 0 [0]))
+            (label_ref 105)
+            (pc))) "../User/system_ch32v20x.c":169 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 105)
+(note 95 94 96 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 96 95 97 13 (debug_marker) "../User/system_ch32v20x.c":174 -1
+     (nil))
+(insn 97 96 98 13 (set (reg:SI 125)
+        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/system_ch32v20x.c":174 -1
+     (nil))
+(insn 98 97 99 13 (set (reg/f:SI 124)
+        (lo_sum:SI (reg:SI 125)
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/system_ch32v20x.c":174 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 99 98 100 13 (set (reg:SI 128)
+        (const_int 4001792 [0x3d1000])) "../User/system_ch32v20x.c":174 -1
+     (nil))
+(insn 100 99 101 13 (set (reg:SI 127)
+        (plus:SI (reg:SI 128)
+            (const_int -1792 [0xfffffffffffff900]))) "../User/system_ch32v20x.c":174 -1
+     (expr_list:REG_EQUAL (const_int 4000000 [0x3d0900])
+        (nil)))
+(insn 101 100 102 13 (set (reg:SI 126)
+        (mult:SI (reg/v:SI 91 [ pllmull ])
+            (reg:SI 127))) "../User/system_ch32v20x.c":174 -1
+     (nil))
+(insn 102 101 103 13 (set (mem/c:SI (reg/f:SI 124) [2 SystemCoreClock+0 S4 A32])
+        (reg:SI 126)) "../User/system_ch32v20x.c":174 -1
+     (nil))
+(jump_insn 103 102 104 13 (set (pc)
+        (label_ref 114)) -1
+     (nil)
+ -> 114)
+(barrier 104 103 105)
+(code_label 105 104 106 14 21 (nil) [1 uses])
+(note 106 105 107 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 107 106 108 14 (debug_marker) "../User/system_ch32v20x.c":182 -1
+     (nil))
+(insn 108 107 109 14 (set (reg:SI 130)
+        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/system_ch32v20x.c":182 -1
+     (nil))
+(insn 109 108 110 14 (set (reg/f:SI 129)
+        (lo_sum:SI (reg:SI 130)
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/system_ch32v20x.c":182 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 110 109 111 14 (set (reg:SI 133)
+        (const_int 7999488 [0x7a1000])) "../User/system_ch32v20x.c":182 -1
+     (nil))
+(insn 111 110 112 14 (set (reg:SI 132)
+        (plus:SI (reg:SI 133)
+            (const_int 512 [0x200]))) "../User/system_ch32v20x.c":182 -1
+     (expr_list:REG_EQUAL (const_int 8000000 [0x7a1200])
+        (nil)))
+(insn 112 111 113 14 (set (reg:SI 131)
+        (mult:SI (reg/v:SI 91 [ pllmull ])
+            (reg:SI 132))) "../User/system_ch32v20x.c":182 -1
+     (nil))
+(insn 113 112 114 14 (set (mem/c:SI (reg/f:SI 129) [2 SystemCoreClock+0 S4 A32])
+        (reg:SI 131)) "../User/system_ch32v20x.c":182 -1
+     (nil))
+(code_label 114 113 115 15 17 (nil) [4 uses])
+(note 115 114 116 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 116 115 117 15 (debug_marker) "../User/system_ch32v20x.c":195 -1
+     (nil))
+(insn 117 116 118 15 (set (reg/f:SI 134)
+        (const_int 1073876992 [0x40021000])) "../User/system_ch32v20x.c":195 -1
+     (nil))
+(insn 118 117 119 15 (set (reg:SI 85 [ _14 ])
+        (mem/v:SI (plus:SI (reg/f:SI 134)
+                (const_int 4 [0x4])) [2 MEM[(struct RCC_TypeDef *)1073876992B].CFGR0+0 S4 A32])) "../User/system_ch32v20x.c":195 -1
+     (nil))
+(insn 119 118 120 15 (set (reg:SI 135)
+        (lshiftrt:SI (reg:SI 85 [ _14 ])
+            (const_int 4 [0x4]))) "../User/system_ch32v20x.c":195 -1
+     (nil))
+(insn 120 119 121 15 (set (reg:SI 87 [ _16 ])
+        (and:SI (reg:SI 135)
+            (const_int 15 [0xf]))) "../User/system_ch32v20x.c":195 -1
+     (nil))
+(insn 121 120 122 15 (set (reg:SI 137)
+        (high:SI (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/system_ch32v20x.c":195 -1
+     (nil))
+(insn 122 121 123 15 (set (reg/f:SI 136)
+        (lo_sum:SI (reg:SI 137)
+            (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/system_ch32v20x.c":195 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])
+        (nil)))
+(insn 123 122 124 15 (set (reg/f:SI 138)
+        (plus:SI (reg/f:SI 136)
+            (reg:SI 87 [ _16 ]))) "../User/system_ch32v20x.c":195 -1
+     (nil))
+(insn 124 123 125 15 (set (reg:QI 139)
+        (mem/v/j:QI (reg/f:SI 138) [0 AHBPrescTable S1 A8])) "../User/system_ch32v20x.c":195 -1
+     (nil))
+(insn 125 124 126 15 (set (reg:SI 88 [ _17 ])
+        (zero_extend:SI (reg:QI 139))) "../User/system_ch32v20x.c":195 -1
+     (nil))
+(debug_insn 126 125 127 15 (var_location:SI tmp (zero_extend:SI (subreg:QI (reg:SI 88 [ _17 ]) 0))) "../User/system_ch32v20x.c":195 -1
+     (nil))
+(debug_insn 127 126 128 15 (debug_marker) "../User/system_ch32v20x.c":196 -1
+     (nil))
+(insn 128 127 129 15 (set (reg:SI 141)
+        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/system_ch32v20x.c":196 -1
+     (nil))
+(insn 129 128 130 15 (set (reg/f:SI 140)
+        (lo_sum:SI (reg:SI 141)
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/system_ch32v20x.c":196 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 130 129 131 15 (set (reg:SI 143)
+        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/system_ch32v20x.c":196 -1
+     (nil))
+(insn 131 130 132 15 (set (reg/f:SI 142)
+        (lo_sum:SI (reg:SI 143)
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/system_ch32v20x.c":196 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 132 131 133 15 (set (reg:SI 145)
+        (mem/c:SI (reg/f:SI 142) [2 SystemCoreClock+0 S4 A32])) "../User/system_ch32v20x.c":196 -1
+     (nil))
+(insn 133 132 134 15 (set (reg:SI 144)
+        (lshiftrt:SI (reg:SI 145)
+            (subreg:QI (reg:SI 88 [ _17 ]) 0))) "../User/system_ch32v20x.c":196 -1
+     (nil))
+(insn 134 133 0 15 (set (mem/c:SI (reg/f:SI 140) [2 SystemCoreClock+0 S4 A32])
+        (reg:SI 144)) "../User/system_ch32v20x.c":196 -1
+     (nil))
