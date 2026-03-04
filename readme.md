@@ -4,7 +4,7 @@
 
 # Pinout
 
-![pinout](https://github.com/ray33ee/not232/blob/master/doc/pinout.png)
+![pinout](https://github.com/ray33ee/not232/tree/main/doc/pinout.png)
 
 # Todo
 
