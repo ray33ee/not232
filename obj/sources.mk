@@ -34,4 +34,5 @@ Startup \
 User \
 User/USB_Serial/src \
 User/VMIOX/src \
+User/bitbang/src \
 User/comms/src \

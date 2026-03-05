@@ -8,7 +8,7 @@
 		  
 # Todo
 
-- Get SPI working
+- Get UART working
 - Get FLASH working
 - Get CAN working
 - Get Touch key working
@@ -18,3 +18,6 @@
 - Disable interrupts in critical sections
 - Add extra information to the device id (i.e. the information received by an 'identity' request) such as
 	- git commit id for firmware
+- Read the [Circuit Python](https://docs.circuitpython.org/en/latest/docs/index.html) API (NOT BLINKA) to get detailed explanations of the functions, and make sure our code conforms
+- COnvert the i2c delay to work the same way as spi delay - so it can be used to create custom frequencies
+- Move the neopixel, one-wire and spi code out of comms.c and into the bitbang folder

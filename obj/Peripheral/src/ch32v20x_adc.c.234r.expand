@@ -65,11 +65,11 @@ try_optimize_cfg iteration 2
         (const_int 512 [0x200])) "../Peripheral/src/ch32v20x_adc.c":124 -1
      (nil))
 (call_insn 14 13 15 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064f0690 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 06626690 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_adc.c":124 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064f0690 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 06626690 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -83,11 +83,11 @@ try_optimize_cfg iteration 2
         (const_int 512 [0x200])) "../Peripheral/src/ch32v20x_adc.c":125 -1
      (nil))
 (call_insn 18 17 19 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064f0690 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 06626690 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_adc.c":125 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064f0690 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 06626690 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -126,11 +126,11 @@ try_optimize_cfg iteration 2
         (const_int 1024 [0x400])) "../Peripheral/src/ch32v20x_adc.c":129 -1
      (nil))
 (call_insn 31 30 32 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064f0690 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 06626690 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_adc.c":129 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064f0690 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 06626690 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -144,11 +144,11 @@ try_optimize_cfg iteration 2
         (const_int 1024 [0x400])) "../Peripheral/src/ch32v20x_adc.c":130 -1
      (nil))
 (call_insn 35 34 38 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064f0690 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 06626690 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_adc.c":130 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064f0690 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 06626690 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -4025,11 +4025,11 @@ Forwarding edge 25->26 to 30 failed.
      (nil))
 (call_insn 24 23 25 5 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("ADC_GetResetCalibrationStatus") [flags 0x3] <function_decl 06608c30 ADC_GetResetCalibrationStatus>) [0 ADC_GetResetCalibrationStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("ADC_GetResetCalibrationStatus") [flags 0x3] <function_decl 066e4c30 ADC_GetResetCalibrationStatus>) [0 ADC_GetResetCalibrationStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_adc.c":1155 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetResetCalibrationStatus") [flags 0x3] <function_decl 06608c30 ADC_GetResetCalibrationStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetResetCalibrationStatus") [flags 0x3] <function_decl 066e4c30 ADC_GetResetCalibrationStatus>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4072,11 +4072,11 @@ Forwarding edge 25->26 to 30 failed.
      (nil))
 (call_insn 38 37 39 7 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("ADC_GetCalibrationStatus") [flags 0x3] <function_decl 06608d20 ADC_GetCalibrationStatus>) [0 ADC_GetCalibrationStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("ADC_GetCalibrationStatus") [flags 0x3] <function_decl 066e4d20 ADC_GetCalibrationStatus>) [0 ADC_GetCalibrationStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_adc.c":1157 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetCalibrationStatus") [flags 0x3] <function_decl 06608d20 ADC_GetCalibrationStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetCalibrationStatus") [flags 0x3] <function_decl 066e4d20 ADC_GetCalibrationStatus>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))

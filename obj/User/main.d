@@ -34,6 +34,7 @@ User/main.o: ../User/main.c \
  e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/opcodes.h \
  e:/Software\ Projects/moun_projects/not232/User/ch32v20x_it.h \
  e:/Software\ Projects/moun_projects/not232/User/constants.h \
+ e:/Software\ Projects/moun_projects/not232/User/bitbang/inc/i2c.h \
  ../User/VMIOX/inc/opcodes.h \
  ../User/USB_Serial/inc/ch32v20x_usbfs_device.h \
  ../User/USB_Serial/inc/usb_desc.h ../User/USB_Serial/inc/ch32v20x_usb.h \
@@ -110,6 +111,8 @@ e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/opcodes.h:
 e:/Software\ Projects/moun_projects/not232/User/ch32v20x_it.h:
 
 e:/Software\ Projects/moun_projects/not232/User/constants.h:
+
+e:/Software\ Projects/moun_projects/not232/User/bitbang/inc/i2c.h:
 
 ../User/VMIOX/inc/opcodes.h:
 

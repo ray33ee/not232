@@ -1,5 +1,5 @@
 
-;; Function GPIO_Init_Small (GPIO_Init_Small, funcdef_no=29, decl_uid=4680, cgraph_uid=29, symbol_order=29)
+;; Function GPIO_Init_Small (GPIO_Init_Small, funcdef_no=29, decl_uid=4720, cgraph_uid=29, symbol_order=29)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -288,7 +288,7 @@ try_optimize_cfg iteration 2
 (code_label 98 95 99 12 1 (nil) [1 uses])
 (note 99 98 0 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
 
-;; Function run (run, funcdef_no=30, decl_uid=4688, cgraph_uid=30, symbol_order=30)
+;; Function run (run, funcdef_no=30, decl_uid=4728, cgraph_uid=30, symbol_order=30)
 
 Partition 0: size 64 align 4
 	stack
@@ -1076,11 +1076,11 @@ Forwarding edge 81->82 to 80 failed.
         (reg:SI 414)) "../User/VMIOX/src/execute.c":113 -1
      (nil))
 (call_insn 182 181 183 48 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 0660d2d0 GPIO_Init_Small>) [0 GPIO_Init_Small S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 06691780 GPIO_Init_Small>) [0 GPIO_Init_Small S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":113 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 0660d2d0 GPIO_Init_Small>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 06691780 GPIO_Init_Small>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1129,11 +1129,11 @@ Forwarding edge 81->82 to 80 failed.
         (reg:SI 417)) "../User/VMIOX/src/execute.c":123 -1
      (nil))
 (call_insn 199 198 200 49 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 0660d2d0 GPIO_Init_Small>) [0 GPIO_Init_Small S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 06691780 GPIO_Init_Small>) [0 GPIO_Init_Small S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":123 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 0660d2d0 GPIO_Init_Small>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 06691780 GPIO_Init_Small>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1182,11 +1182,11 @@ Forwarding edge 81->82 to 80 failed.
         (reg:SI 420)) "../User/VMIOX/src/execute.c":133 -1
      (nil))
 (call_insn 216 215 217 50 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 0660d2d0 GPIO_Init_Small>) [0 GPIO_Init_Small S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 06691780 GPIO_Init_Small>) [0 GPIO_Init_Small S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":133 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 0660d2d0 GPIO_Init_Small>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 06691780 GPIO_Init_Small>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1235,11 +1235,11 @@ Forwarding edge 81->82 to 80 failed.
         (reg:SI 423)) "../User/VMIOX/src/execute.c":143 -1
      (nil))
 (call_insn 233 232 234 51 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 0660d2d0 GPIO_Init_Small>) [0 GPIO_Init_Small S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 06691780 GPIO_Init_Small>) [0 GPIO_Init_Small S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":143 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 0660d2d0 GPIO_Init_Small>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 06691780 GPIO_Init_Small>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1288,11 +1288,11 @@ Forwarding edge 81->82 to 80 failed.
         (reg:SI 426)) "../User/VMIOX/src/execute.c":153 -1
      (nil))
 (call_insn 250 249 251 52 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 0660d2d0 GPIO_Init_Small>) [0 GPIO_Init_Small S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 06691780 GPIO_Init_Small>) [0 GPIO_Init_Small S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":153 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 0660d2d0 GPIO_Init_Small>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init_Small") [flags 0x3] <function_decl 06691780 GPIO_Init_Small>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1437,11 +1437,11 @@ Forwarding edge 81->82 to 80 failed.
         (reg:SI 435)) "../User/VMIOX/src/execute.c":190 -1
      (nil))
 (call_insn 301 300 302 55 (parallel [
-            (call (mem:SI (symbol_ref:SI ("start_timer_us_u8") [flags 0x41] <function_decl 06600e88 start_timer_us_u8>) [0 start_timer_us_u8 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("start_timer_us_u8") [flags 0x41] <function_decl 06691168 start_timer_us_u8>) [0 start_timer_us_u8 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":190 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("start_timer_us_u8") [flags 0x41] <function_decl 06600e88 start_timer_us_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("start_timer_us_u8") [flags 0x41] <function_decl 06691168 start_timer_us_u8>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (nil)))
@@ -1492,11 +1492,11 @@ Forwarding edge 81->82 to 80 failed.
 (note 316 315 317 58 [bb 58] NOTE_INSN_BASIC_BLOCK)
 (call_insn 317 316 318 58 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 06600f00 has_timer_timeout>) [0 has_timer_timeout S4 A32])
+                (call (mem:SI (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 066911e0 has_timer_timeout>) [0 has_timer_timeout S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":191 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 06600f00 has_timer_timeout>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 066911e0 has_timer_timeout>)
         (nil))
     (nil))
 (insn 318 317 320 58 (set (reg:SI 104 [ _36 ])
@@ -1547,11 +1547,11 @@ Forwarding edge 81->82 to 80 failed.
 (debug_insn 334 333 335 61 (debug_marker) "../User/VMIOX/src/execute.c":193 -1
      (nil))
 (call_insn 335 334 336 61 (parallel [
-            (call (mem:SI (symbol_ref:SI ("reset_timer") [flags 0x41] <function_decl 06600f78 reset_timer>) [0 reset_timer S4 A32])
+            (call (mem:SI (symbol_ref:SI ("reset_timer") [flags 0x41] <function_decl 06691258 reset_timer>) [0 reset_timer S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":193 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("reset_timer") [flags 0x41] <function_decl 06600f78 reset_timer>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("reset_timer") [flags 0x41] <function_decl 06691258 reset_timer>)
         (nil))
     (nil))
 (debug_insn 336 335 337 61 (debug_marker) "../User/VMIOX/src/execute.c":194 -1
@@ -1573,11 +1573,11 @@ Forwarding edge 81->82 to 80 failed.
 (note 343 342 344 62 [bb 62] NOTE_INSN_BASIC_BLOCK)
 (call_insn 344 343 345 62 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 06600f00 has_timer_timeout>) [0 has_timer_timeout S4 A32])
+                (call (mem:SI (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 066911e0 has_timer_timeout>) [0 has_timer_timeout S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":192 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 06600f00 has_timer_timeout>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 066911e0 has_timer_timeout>)
         (nil))
     (nil))
 (insn 345 344 346 62 (set (reg:SI 108 [ _43 ])
@@ -1630,11 +1630,11 @@ Forwarding edge 81->82 to 80 failed.
         (reg:SI 445)) "../User/VMIOX/src/execute.c":206 -1
      (nil))
 (call_insn 363 362 364 64 (parallel [
-            (call (mem:SI (symbol_ref:SI ("start_timer_us_u8") [flags 0x41] <function_decl 06600e88 start_timer_us_u8>) [0 start_timer_us_u8 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("start_timer_us_u8") [flags 0x41] <function_decl 06691168 start_timer_us_u8>) [0 start_timer_us_u8 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":206 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("start_timer_us_u8") [flags 0x41] <function_decl 06600e88 start_timer_us_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("start_timer_us_u8") [flags 0x41] <function_decl 06691168 start_timer_us_u8>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (nil)))
@@ -1685,11 +1685,11 @@ Forwarding edge 81->82 to 80 failed.
 (note 378 377 379 67 [bb 67] NOTE_INSN_BASIC_BLOCK)
 (call_insn 379 378 380 67 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 06600f00 has_timer_timeout>) [0 has_timer_timeout S4 A32])
+                (call (mem:SI (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 066911e0 has_timer_timeout>) [0 has_timer_timeout S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":207 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 06600f00 has_timer_timeout>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 066911e0 has_timer_timeout>)
         (nil))
     (nil))
 (insn 380 379 382 67 (set (reg:SI 118 [ _54 ])
@@ -1740,11 +1740,11 @@ Forwarding edge 81->82 to 80 failed.
 (debug_insn 396 395 397 70 (debug_marker) "../User/VMIOX/src/execute.c":209 -1
      (nil))
 (call_insn 397 396 398 70 (parallel [
-            (call (mem:SI (symbol_ref:SI ("reset_timer") [flags 0x41] <function_decl 06600f78 reset_timer>) [0 reset_timer S4 A32])
+            (call (mem:SI (symbol_ref:SI ("reset_timer") [flags 0x41] <function_decl 06691258 reset_timer>) [0 reset_timer S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":209 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("reset_timer") [flags 0x41] <function_decl 06600f78 reset_timer>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("reset_timer") [flags 0x41] <function_decl 06691258 reset_timer>)
         (nil))
     (nil))
 (debug_insn 398 397 399 70 (debug_marker) "../User/VMIOX/src/execute.c":210 -1
@@ -1766,11 +1766,11 @@ Forwarding edge 81->82 to 80 failed.
 (note 405 404 406 71 [bb 71] NOTE_INSN_BASIC_BLOCK)
 (call_insn 406 405 407 71 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 06600f00 has_timer_timeout>) [0 has_timer_timeout S4 A32])
+                (call (mem:SI (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 066911e0 has_timer_timeout>) [0 has_timer_timeout S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":208 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 06600f00 has_timer_timeout>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 066911e0 has_timer_timeout>)
         (nil))
     (nil))
 (insn 407 406 408 71 (set (reg:SI 121 [ _61 ])
@@ -1823,11 +1823,11 @@ Forwarding edge 81->82 to 80 failed.
         (reg:SI 455)) "../User/VMIOX/src/execute.c":222 -1
      (nil))
 (call_insn 425 424 426 73 (parallel [
-            (call (mem:SI (symbol_ref:SI ("start_timer_us_u8") [flags 0x41] <function_decl 06600e88 start_timer_us_u8>) [0 start_timer_us_u8 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("start_timer_us_u8") [flags 0x41] <function_decl 06691168 start_timer_us_u8>) [0 start_timer_us_u8 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":222 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("start_timer_us_u8") [flags 0x41] <function_decl 06600e88 start_timer_us_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("start_timer_us_u8") [flags 0x41] <function_decl 06691168 start_timer_us_u8>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (nil)))
@@ -1872,11 +1872,11 @@ Forwarding edge 81->82 to 80 failed.
 (debug_insn 437 436 438 75 (debug_marker) "../User/VMIOX/src/execute.c":224 -1
      (nil))
 (call_insn 438 437 439 75 (parallel [
-            (call (mem:SI (symbol_ref:SI ("reset_timer") [flags 0x41] <function_decl 06600f78 reset_timer>) [0 reset_timer S4 A32])
+            (call (mem:SI (symbol_ref:SI ("reset_timer") [flags 0x41] <function_decl 06691258 reset_timer>) [0 reset_timer S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":224 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("reset_timer") [flags 0x41] <function_decl 06600f78 reset_timer>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("reset_timer") [flags 0x41] <function_decl 06691258 reset_timer>)
         (nil))
     (nil))
 (debug_insn 439 438 440 75 (debug_marker) "../User/VMIOX/src/execute.c":225 -1
@@ -1898,11 +1898,11 @@ Forwarding edge 81->82 to 80 failed.
 (note 446 445 447 76 [bb 76] NOTE_INSN_BASIC_BLOCK)
 (call_insn 447 446 448 76 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 06600f00 has_timer_timeout>) [0 has_timer_timeout S4 A32])
+                (call (mem:SI (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 066911e0 has_timer_timeout>) [0 has_timer_timeout S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":223 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 06600f00 has_timer_timeout>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 066911e0 has_timer_timeout>)
         (nil))
     (nil))
 (insn 448 447 450 76 (set (reg:SI 131 [ _72 ])
@@ -1955,11 +1955,11 @@ Forwarding edge 81->82 to 80 failed.
         (reg:SI 462)) "../User/VMIOX/src/execute.c":237 -1
      (nil))
 (call_insn 467 466 468 78 (parallel [
-            (call (mem:SI (symbol_ref:SI ("start_timer_us_u8") [flags 0x41] <function_decl 06600e88 start_timer_us_u8>) [0 start_timer_us_u8 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("start_timer_us_u8") [flags 0x41] <function_decl 06691168 start_timer_us_u8>) [0 start_timer_us_u8 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":237 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("start_timer_us_u8") [flags 0x41] <function_decl 06600e88 start_timer_us_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("start_timer_us_u8") [flags 0x41] <function_decl 06691168 start_timer_us_u8>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (nil)))
@@ -2004,11 +2004,11 @@ Forwarding edge 81->82 to 80 failed.
 (debug_insn 479 478 480 80 (debug_marker) "../User/VMIOX/src/execute.c":239 -1
      (nil))
 (call_insn 480 479 481 80 (parallel [
-            (call (mem:SI (symbol_ref:SI ("reset_timer") [flags 0x41] <function_decl 06600f78 reset_timer>) [0 reset_timer S4 A32])
+            (call (mem:SI (symbol_ref:SI ("reset_timer") [flags 0x41] <function_decl 06691258 reset_timer>) [0 reset_timer S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":239 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("reset_timer") [flags 0x41] <function_decl 06600f78 reset_timer>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("reset_timer") [flags 0x41] <function_decl 06691258 reset_timer>)
         (nil))
     (nil))
 (debug_insn 481 480 482 80 (debug_marker) "../User/VMIOX/src/execute.c":240 -1
@@ -2030,11 +2030,11 @@ Forwarding edge 81->82 to 80 failed.
 (note 488 487 489 81 [bb 81] NOTE_INSN_BASIC_BLOCK)
 (call_insn 489 488 490 81 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 06600f00 has_timer_timeout>) [0 has_timer_timeout S4 A32])
+                (call (mem:SI (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 066911e0 has_timer_timeout>) [0 has_timer_timeout S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":238 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 06600f00 has_timer_timeout>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("has_timer_timeout") [flags 0x41] <function_decl 066911e0 has_timer_timeout>)
         (nil))
     (nil))
 (insn 490 489 492 81 (set (reg:SI 141 [ _83 ])
@@ -2885,11 +2885,11 @@ Forwarding edge 81->82 to 80 failed.
         (reg:SI 553)) "../User/VMIOX/src/execute.c":384 -1
      (nil))
 (call_insn 779 778 780 101 (parallel [
-            (call (mem:SI (symbol_ref:SI ("Delay_Ticks") [flags 0x41] <function_decl 06600ca8 Delay_Ticks>) [0 Delay_Ticks S4 A32])
+            (call (mem:SI (symbol_ref:SI ("Delay_Ticks") [flags 0x41] <function_decl 06680f78 Delay_Ticks>) [0 Delay_Ticks S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":384 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Ticks") [flags 0x41] <function_decl 06600ca8 Delay_Ticks>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Ticks") [flags 0x41] <function_decl 06680f78 Delay_Ticks>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -2930,11 +2930,11 @@ Forwarding edge 81->82 to 80 failed.
         (reg:SI 555)) "../User/VMIOX/src/execute.c":396 -1
      (nil))
 (call_insn 794 793 795 102 (parallel [
-            (call (mem:SI (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 06600bb8 Delay_Us>) [0 Delay_Us S4 A32])
+            (call (mem:SI (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 06680e88 Delay_Us>) [0 Delay_Us S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":396 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 06600bb8 Delay_Us>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 06680e88 Delay_Us>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -2975,11 +2975,11 @@ Forwarding edge 81->82 to 80 failed.
         (reg:SI 557)) "../User/VMIOX/src/execute.c":406 -1
      (nil))
 (call_insn 809 808 810 103 (parallel [
-            (call (mem:SI (symbol_ref:SI ("Delay_Ms") [flags 0x41] <function_decl 06600c30 Delay_Ms>) [0 Delay_Ms S4 A32])
+            (call (mem:SI (symbol_ref:SI ("Delay_Ms") [flags 0x41] <function_decl 06680f00 Delay_Ms>) [0 Delay_Ms S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/VMIOX/src/execute.c":406 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Ms") [flags 0x41] <function_decl 06600c30 Delay_Ms>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Ms") [flags 0x41] <function_decl 06680f00 Delay_Ms>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))

@@ -3,6 +3,7 @@
 #include <string.h>
 
 #include "comms/inc/comms.h"
+#include "debug.h"
 
 /* CDC endpoints per usb_desc.c:
    EP2 OUT  (0x02) bulk OUT
@@ -92,6 +93,12 @@ uint8_t usbSerial_read(void)
     return b;
 }
 
+uint8_t usbSerial_blocking_read_u8(void)
+{
+    while (!usbSerial_available());
+    return usbSerial_read();
+}
+
 uint16_t usbSerial_writeP(const uint8_t *data, uint16_t len)
 {
     uint16_t written = 0;
@@ -113,12 +120,52 @@ uint16_t usbSerial_writeP(const uint8_t *data, uint16_t len)
     return written;
 }
 
+void usbSerial_blocking_writeP(const uint8_t *data, uint16_t len) {
+    usbSerial_writeP(data, len);
+    while (usbSerial_tx_pending() > 0) {
+        usbSerial_flush();
+        Delay_Us(100);
+    }
+
+    /* When len is exact multiple of 64, last packet is full-size; host needs ZLP to know transfer is done. */
+    if (len > 0 && (len % 64u) == 0u) {
+        usbSerial_send_zlp();
+    }
+}
+
+uint32_t usbSerial_blocking_read_u32(void) {
+    uint8_t b1 = usbSerial_blocking_read_u8();
+    uint8_t b2 = usbSerial_blocking_read_u8();
+    uint8_t b3 = usbSerial_blocking_read_u8();
+    uint8_t b4 = usbSerial_blocking_read_u8();
+    return b1 | b2 << 8 | b3 << 16 | b4 << 24;
+}
+
+void usbSerial_blocking_writeP_u32(uint32_t value) {
+    usbSerial_blocking_writeP((unsigned char*)&value, 4);
+}
+
 void usbSerial_flush(void)
 {
-    /* Non-blocking flush: keep kicking once.
-       Your main loop already delays, so this is enough.
-    */
     tx_kick();
+}
+
+uint16_t usbSerial_tx_pending(void)
+{
+    return ring_count(tx_head, tx_tail, TX_RING_SIZE);
+}
+
+void usbSerial_send_zlp(void)
+{
+    /* USB bulk: when last packet is exactly 64 bytes, host waits for ZLP to know transfer is done. */
+    uint32_t wait = 0;
+    while (USBFS_Endp_Busy[DEF_UEP3] && wait < 50000u) {
+        Delay_Us(10);
+        wait++;
+    }
+    if (!USBFS_Endp_Busy[DEF_UEP3]) {
+        (void)USBFS_Endp_DataUp(DEF_UEP3, USBFS_EP3_Buf, 0, DEF_UEP_CPY_LOAD);
+    }
 }
 
 void usbSerial_println_s(const char *s)

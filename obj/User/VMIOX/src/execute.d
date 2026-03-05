@@ -33,7 +33,8 @@ User/VMIOX/src/execute.o: ../User/VMIOX/src/execute.c \
  e:/Software\ Projects/moun_projects/not232/Peripheral/inc/ch32v20x_misc.h \
  e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/opcodes.h \
  e:/Software\ Projects/moun_projects/not232/User/ch32v20x_it.h \
- e:/Software\ Projects/moun_projects/not232/User/constants.h
+ e:/Software\ Projects/moun_projects/not232/User/constants.h \
+ e:/Software\ Projects/moun_projects/not232/User/bitbang/inc/i2c.h
 
 e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/execute.h:
 
@@ -104,3 +105,5 @@ e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/opcodes.h:
 e:/Software\ Projects/moun_projects/not232/User/ch32v20x_it.h:
 
 e:/Software\ Projects/moun_projects/not232/User/constants.h:
+
+e:/Software\ Projects/moun_projects/not232/User/bitbang/inc/i2c.h:

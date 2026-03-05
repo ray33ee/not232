@@ -39,11 +39,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073743872 [0x40000800])
         (nil)))
 (call_insn 9 8 10 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_SetCounter") [flags 0x41] <function_decl 06652a50 TIM_SetCounter>) [0 TIM_SetCounter S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_SetCounter") [flags 0x41] <function_decl 06653a50 TIM_SetCounter>) [0 TIM_SetCounter S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":31 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetCounter") [flags 0x41] <function_decl 06652a50 TIM_SetCounter>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetCounter") [flags 0x41] <function_decl 06653a50 TIM_SetCounter>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -62,11 +62,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073743872 [0x40000800])
         (nil)))
 (call_insn 14 13 15 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_ClearFlag") [flags 0x41] <function_decl 066552d0 TIM_ClearFlag>) [0 TIM_ClearFlag S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_ClearFlag") [flags 0x41] <function_decl 066562d0 TIM_ClearFlag>) [0 TIM_ClearFlag S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":32 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_ClearFlag") [flags 0x41] <function_decl 066552d0 TIM_ClearFlag>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_ClearFlag") [flags 0x41] <function_decl 066562d0 TIM_ClearFlag>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -85,11 +85,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073743872 [0x40000800])
         (nil)))
 (call_insn 19 18 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 0664a168 TIM_Cmd>) [0 TIM_Cmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 0664b168 TIM_Cmd>) [0 TIM_Cmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":34 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 0664a168 TIM_Cmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 0664b168 TIM_Cmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -155,11 +155,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073743872 [0x40000800])
         (nil)))
 (call_insn 16 15 17 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 0664a168 TIM_Cmd>) [0 TIM_Cmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 0664b168 TIM_Cmd>) [0 TIM_Cmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":41 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 0664a168 TIM_Cmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 0664b168 TIM_Cmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -340,11 +340,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 14 13 15 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("TIM4_pulseio_stop") [flags 0x3] <function_decl 06660ac8 TIM4_pulseio_stop>) [0 TIM4_pulseio_stop S4 A32])
+                (call (mem:SI (symbol_ref:SI ("TIM4_pulseio_stop") [flags 0x3] <function_decl 06661ac8 TIM4_pulseio_stop>) [0 TIM4_pulseio_stop S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":77 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM4_pulseio_stop") [flags 0x3] <function_decl 06660ac8 TIM4_pulseio_stop>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM4_pulseio_stop") [flags 0x3] <function_decl 06661ac8 TIM4_pulseio_stop>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -370,7 +370,7 @@ try_optimize_cfg iteration 2
         (mem/c:SI (reg/f:SI 81) [1 pio_head+0 S4 A32])) "../User/ch32v20x_it.c":79 -1
      (nil))
 (insn 22 21 23 4 (set (reg:SI 83)
-        (high:SI (symbol_ref:SI ("pio_buffer") [flags 0x82] <var_decl 0663d840 pio_buffer>))) "../User/ch32v20x_it.c":79 -1
+        (high:SI (symbol_ref:SI ("pio_buffer") [flags 0x82] <var_decl 0663c840 pio_buffer>))) "../User/ch32v20x_it.c":79 -1
      (nil))
 (insn 23 22 24 4 (set (reg:SI 84)
         (ashift:SI (reg:SI 74 [ pio_head.0_8 ])
@@ -378,7 +378,7 @@ try_optimize_cfg iteration 2
      (nil))
 (insn 24 23 25 4 (set (reg:SI 86)
         (lo_sum:SI (reg:SI 83)
-            (symbol_ref:SI ("pio_buffer") [flags 0x82] <var_decl 0663d840 pio_buffer>))) "../User/ch32v20x_it.c":79 -1
+            (symbol_ref:SI ("pio_buffer") [flags 0x82] <var_decl 0663c840 pio_buffer>))) "../User/ch32v20x_it.c":79 -1
      (nil))
 (insn 25 24 26 4 (set (reg/f:SI 85)
         (plus:SI (reg:SI 84)
@@ -481,11 +481,11 @@ try_optimize_cfg iteration 2
 (debug_insn 53 52 54 6 (debug_marker) "../User/ch32v20x_it.c":89 -1
      (nil))
 (call_insn 54 53 57 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM4_pulseio_start") [flags 0x3] <function_decl 06660a50 TIM4_pulseio_start>) [0 TIM4_pulseio_start S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM4_pulseio_start") [flags 0x3] <function_decl 06661a50 TIM4_pulseio_start>) [0 TIM4_pulseio_start S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":89 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM4_pulseio_start") [flags 0x3] <function_decl 06660a50 TIM4_pulseio_start>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM4_pulseio_start") [flags 0x3] <function_decl 06661a50 TIM4_pulseio_start>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -524,11 +524,11 @@ try_optimize_cfg iteration 2
         (const_int 1 [0x1])) "../User/ch32v20x_it.c":95 -1
      (nil))
 (call_insn 7 6 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>) [0 capture_pulse S4 A32])
+            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>) [0 capture_pulse S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":95 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -566,11 +566,11 @@ try_optimize_cfg iteration 2
         (const_int 2 [0x2])) "../User/ch32v20x_it.c":100 -1
      (nil))
 (call_insn 7 6 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>) [0 capture_pulse S4 A32])
+            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>) [0 capture_pulse S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":100 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -608,11 +608,11 @@ try_optimize_cfg iteration 2
         (const_int 4 [0x4])) "../User/ch32v20x_it.c":105 -1
      (nil))
 (call_insn 7 6 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>) [0 capture_pulse S4 A32])
+            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>) [0 capture_pulse S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":105 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -650,11 +650,11 @@ try_optimize_cfg iteration 2
         (const_int 8 [0x8])) "../User/ch32v20x_it.c":110 -1
      (nil))
 (call_insn 7 6 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>) [0 capture_pulse S4 A32])
+            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>) [0 capture_pulse S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":110 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -692,11 +692,11 @@ try_optimize_cfg iteration 2
         (const_int 16 [0x10])) "../User/ch32v20x_it.c":115 -1
      (nil))
 (call_insn 7 6 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>) [0 capture_pulse S4 A32])
+            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>) [0 capture_pulse S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":115 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -734,11 +734,11 @@ try_optimize_cfg iteration 2
         (const_int 32 [0x20])) "../User/ch32v20x_it.c":119 -1
      (nil))
 (call_insn 7 6 8 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>) [0 capture_pulse S4 A32])
+            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>) [0 capture_pulse S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":119 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -749,11 +749,11 @@ try_optimize_cfg iteration 2
         (const_int 64 [0x40])) "../User/ch32v20x_it.c":120 -1
      (nil))
 (call_insn 10 9 11 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>) [0 capture_pulse S4 A32])
+            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>) [0 capture_pulse S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":120 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -764,11 +764,11 @@ try_optimize_cfg iteration 2
         (const_int 128 [0x80])) "../User/ch32v20x_it.c":121 -1
      (nil))
 (call_insn 13 12 14 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>) [0 capture_pulse S4 A32])
+            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>) [0 capture_pulse S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":121 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -779,11 +779,11 @@ try_optimize_cfg iteration 2
         (const_int 256 [0x100])) "../User/ch32v20x_it.c":122 -1
      (nil))
 (call_insn 16 15 17 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>) [0 capture_pulse S4 A32])
+            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>) [0 capture_pulse S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":122 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -794,11 +794,11 @@ try_optimize_cfg iteration 2
         (const_int 512 [0x200])) "../User/ch32v20x_it.c":123 -1
      (nil))
 (call_insn 19 18 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>) [0 capture_pulse S4 A32])
+            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>) [0 capture_pulse S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":123 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -836,11 +836,11 @@ try_optimize_cfg iteration 2
         (const_int 1024 [0x400])) "../User/ch32v20x_it.c":127 -1
      (nil))
 (call_insn 7 6 8 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>) [0 capture_pulse S4 A32])
+            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>) [0 capture_pulse S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":127 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -856,11 +856,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 2048 [0x800])
         (nil)))
 (call_insn 11 10 12 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>) [0 capture_pulse S4 A32])
+            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>) [0 capture_pulse S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":128 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -871,11 +871,11 @@ try_optimize_cfg iteration 2
         (const_int 4096 [0x1000])) "../User/ch32v20x_it.c":129 -1
      (nil))
 (call_insn 14 13 15 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>) [0 capture_pulse S4 A32])
+            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>) [0 capture_pulse S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":129 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -886,11 +886,11 @@ try_optimize_cfg iteration 2
         (const_int 8192 [0x2000])) "../User/ch32v20x_it.c":130 -1
      (nil))
 (call_insn 17 16 18 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>) [0 capture_pulse S4 A32])
+            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>) [0 capture_pulse S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":130 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -901,11 +901,11 @@ try_optimize_cfg iteration 2
         (const_int 16384 [0x4000])) "../User/ch32v20x_it.c":131 -1
      (nil))
 (call_insn 20 19 21 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>) [0 capture_pulse S4 A32])
+            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>) [0 capture_pulse S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":131 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -916,11 +916,11 @@ try_optimize_cfg iteration 2
         (const_int 32768 [0x8000])) "../User/ch32v20x_it.c":132 -1
      (nil))
 (call_insn 23 22 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>) [0 capture_pulse S4 A32])
+            (call (mem:SI (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>) [0 capture_pulse S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/ch32v20x_it.c":132 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06660f78 capture_pulse>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("capture_pulse") [flags 0x3] <function_decl 06661f78 capture_pulse>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))

@@ -75,11 +75,11 @@ try_optimize_cfg iteration 2
         (const_int 4 [0x4])) "../Peripheral/src/ch32v20x_gpio.c":41 -1
      (nil))
 (call_insn 14 13 15 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":41 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -93,11 +93,11 @@ try_optimize_cfg iteration 2
         (const_int 4 [0x4])) "../Peripheral/src/ch32v20x_gpio.c":42 -1
      (nil))
 (call_insn 18 17 19 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":42 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -136,11 +136,11 @@ try_optimize_cfg iteration 2
         (const_int 8 [0x8])) "../Peripheral/src/ch32v20x_gpio.c":46 -1
      (nil))
 (call_insn 31 30 32 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":46 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -154,11 +154,11 @@ try_optimize_cfg iteration 2
         (const_int 8 [0x8])) "../Peripheral/src/ch32v20x_gpio.c":47 -1
      (nil))
 (call_insn 35 34 36 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":47 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -192,11 +192,11 @@ try_optimize_cfg iteration 2
         (const_int 16 [0x10])) "../Peripheral/src/ch32v20x_gpio.c":51 -1
      (nil))
 (call_insn 47 46 48 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":51 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -210,11 +210,11 @@ try_optimize_cfg iteration 2
         (const_int 16 [0x10])) "../Peripheral/src/ch32v20x_gpio.c":52 -1
      (nil))
 (call_insn 51 50 52 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":52 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -253,11 +253,11 @@ try_optimize_cfg iteration 2
         (const_int 32 [0x20])) "../Peripheral/src/ch32v20x_gpio.c":56 -1
      (nil))
 (call_insn 64 63 65 10 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":56 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -271,11 +271,11 @@ try_optimize_cfg iteration 2
         (const_int 32 [0x20])) "../Peripheral/src/ch32v20x_gpio.c":57 -1
      (nil))
 (call_insn 68 67 71 10 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":57 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -318,11 +318,11 @@ try_optimize_cfg iteration 2
         (const_int 1 [0x1])) "../Peripheral/src/ch32v20x_gpio.c":71 -1
      (nil))
 (call_insn 8 7 9 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":71 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -336,11 +336,11 @@ try_optimize_cfg iteration 2
         (const_int 1 [0x1])) "../Peripheral/src/ch32v20x_gpio.c":72 -1
      (nil))
 (call_insn 12 11 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":72 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0652d000 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065ad000 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -3307,11 +3307,11 @@ Forwarding edge 17->18 to 27 failed.
         (const_int 61 [0x3d])) "../Peripheral/src/ch32v20x_gpio.c":658 -1
      (nil))
 (call_insn 14 13 15 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 06588f00 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 06608f00 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":658 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 06588f00 RCC_APB2PeriphClockCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 06608f00 RCC_APB2PeriphClockCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -3598,11 +3598,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073809408 [0x40010800])
         (nil)))
 (call_insn 98 97 99 19 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":669 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -3644,11 +3644,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
         (nil)))
 (call_insn 110 109 111 19 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":678 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -3685,11 +3685,11 @@ Forwarding edge 17->18 to 27 failed.
         (const_int 1073811456 [0x40011000])) "../Peripheral/src/ch32v20x_gpio.c":688 -1
      (nil))
 (call_insn 121 120 122 19 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":688 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -3731,11 +3731,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073812480 [0x40011400])
         (nil)))
 (call_insn 133 132 134 19 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":693 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -3759,11 +3759,11 @@ Forwarding edge 17->18 to 27 failed.
         (const_int 32768 [0x8000])) "../Peripheral/src/ch32v20x_gpio.c":698 -1
      (nil))
 (call_insn 142 141 143 20 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x3] <function_decl 0664d960 GPIO_PinRemapConfig>) [0 GPIO_PinRemapConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x3] <function_decl 066ce960 GPIO_PinRemapConfig>) [0 GPIO_PinRemapConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":698 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x3] <function_decl 0664d960 GPIO_PinRemapConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x3] <function_decl 066ce960 GPIO_PinRemapConfig>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -3810,11 +3810,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073809408 [0x40010800])
         (nil)))
 (call_insn 155 154 156 20 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":702 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -3856,11 +3856,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
         (nil)))
 (call_insn 167 166 168 20 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":705 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -3907,11 +3907,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
         (nil)))
 (call_insn 180 179 181 20 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":712 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -3948,11 +3948,11 @@ Forwarding edge 17->18 to 27 failed.
         (const_int 1073811456 [0x40011000])) "../Peripheral/src/ch32v20x_gpio.c":722 -1
      (nil))
 (call_insn 191 190 192 20 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":722 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -3994,11 +3994,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073812480 [0x40011400])
         (nil)))
 (call_insn 203 202 204 20 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":727 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4022,11 +4022,11 @@ Forwarding edge 17->18 to 27 failed.
         (const_int 32768 [0x8000])) "../Peripheral/src/ch32v20x_gpio.c":732 -1
      (nil))
 (call_insn 212 211 213 21 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x3] <function_decl 0664d960 GPIO_PinRemapConfig>) [0 GPIO_PinRemapConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x3] <function_decl 066ce960 GPIO_PinRemapConfig>) [0 GPIO_PinRemapConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":732 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x3] <function_decl 0664d960 GPIO_PinRemapConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x3] <function_decl 066ce960 GPIO_PinRemapConfig>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4068,11 +4068,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073809408 [0x40010800])
         (nil)))
 (call_insn 224 223 225 21 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":735 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4114,11 +4114,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
         (nil)))
 (call_insn 236 235 237 21 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":738 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4165,11 +4165,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
         (nil)))
 (call_insn 249 248 250 21 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":745 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4206,11 +4206,11 @@ Forwarding edge 17->18 to 27 failed.
         (const_int 1073811456 [0x40011000])) "../Peripheral/src/ch32v20x_gpio.c":755 -1
      (nil))
 (call_insn 260 259 261 21 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":755 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4252,11 +4252,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073812480 [0x40011400])
         (nil)))
 (call_insn 272 271 273 21 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":760 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4307,11 +4307,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073809408 [0x40010800])
         (nil)))
 (call_insn 289 288 290 22 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":767 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4353,11 +4353,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
         (nil)))
 (call_insn 301 300 302 22 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":770 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4399,11 +4399,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
         (nil)))
 (call_insn 313 312 314 22 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":776 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4440,11 +4440,11 @@ Forwarding edge 17->18 to 27 failed.
         (const_int 1073811456 [0x40011000])) "../Peripheral/src/ch32v20x_gpio.c":786 -1
      (nil))
 (call_insn 324 323 325 22 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":786 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4486,11 +4486,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073812480 [0x40011400])
         (nil)))
 (call_insn 336 335 337 22 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":791 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4514,11 +4514,11 @@ Forwarding edge 17->18 to 27 failed.
         (const_int 32768 [0x8000])) "../Peripheral/src/ch32v20x_gpio.c":796 -1
      (nil))
 (call_insn 345 344 346 23 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x3] <function_decl 0664d960 GPIO_PinRemapConfig>) [0 GPIO_PinRemapConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x3] <function_decl 066ce960 GPIO_PinRemapConfig>) [0 GPIO_PinRemapConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":796 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x3] <function_decl 0664d960 GPIO_PinRemapConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x3] <function_decl 066ce960 GPIO_PinRemapConfig>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4560,11 +4560,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073809408 [0x40010800])
         (nil)))
 (call_insn 357 356 358 23 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":799 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4606,11 +4606,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
         (nil)))
 (call_insn 369 368 370 23 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":802 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4652,11 +4652,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
         (nil)))
 (call_insn 381 380 382 23 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":806 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4693,11 +4693,11 @@ Forwarding edge 17->18 to 27 failed.
         (const_int 1073811456 [0x40011000])) "../Peripheral/src/ch32v20x_gpio.c":816 -1
      (nil))
 (call_insn 392 391 393 23 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":816 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4739,11 +4739,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073812480 [0x40011400])
         (nil)))
 (call_insn 404 403 405 23 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":821 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4794,11 +4794,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
         (nil)))
 (call_insn 421 420 422 24 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":828 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4840,11 +4840,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
         (nil)))
 (call_insn 433 432 434 24 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":834 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4881,11 +4881,11 @@ Forwarding edge 17->18 to 27 failed.
         (const_int 1073811456 [0x40011000])) "../Peripheral/src/ch32v20x_gpio.c":844 -1
      (nil))
 (call_insn 444 443 445 24 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":844 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4927,11 +4927,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073812480 [0x40011400])
         (nil)))
 (call_insn 456 455 457 24 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":849 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4982,11 +4982,11 @@ Forwarding edge 17->18 to 27 failed.
         (const_int 1073811456 [0x40011000])) "../Peripheral/src/ch32v20x_gpio.c":862 -1
      (nil))
 (call_insn 473 472 474 25 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":862 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -5028,11 +5028,11 @@ Forwarding edge 17->18 to 27 failed.
      (expr_list:REG_EQUAL (const_int 1073812480 [0x40011400])
         (nil)))
 (call_insn 485 484 486 25 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_gpio.c":867 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 0664d348 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 066ce348 GPIO_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))

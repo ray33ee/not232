@@ -574,11 +574,11 @@ try_optimize_cfg iteration 2
 (debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v20x_rtc.c":116 -1
      (nil))
 (call_insn 7 6 8 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 0667c528 RTC_EnterConfigMode>) [0 RTC_EnterConfigMode S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 06698528 RTC_EnterConfigMode>) [0 RTC_EnterConfigMode S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_rtc.c":116 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 0667c528 RTC_EnterConfigMode>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 06698528 RTC_EnterConfigMode>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -623,11 +623,11 @@ try_optimize_cfg iteration 2
 (debug_insn 19 18 20 2 (debug_marker) "../Peripheral/src/ch32v20x_rtc.c":119 -1
      (nil))
 (call_insn 20 19 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 0667c5a0 RTC_ExitConfigMode>) [0 RTC_ExitConfigMode S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066985a0 RTC_ExitConfigMode>) [0 RTC_ExitConfigMode S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_rtc.c":119 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 0667c5a0 RTC_ExitConfigMode>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066985a0 RTC_ExitConfigMode>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -664,11 +664,11 @@ try_optimize_cfg iteration 2
 (debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v20x_rtc.c":133 -1
      (nil))
 (call_insn 7 6 8 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 0667c528 RTC_EnterConfigMode>) [0 RTC_EnterConfigMode S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 06698528 RTC_EnterConfigMode>) [0 RTC_EnterConfigMode S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_rtc.c":133 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 0667c528 RTC_EnterConfigMode>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 06698528 RTC_EnterConfigMode>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -720,11 +720,11 @@ try_optimize_cfg iteration 2
 (debug_insn 21 20 22 2 (debug_marker) "../Peripheral/src/ch32v20x_rtc.c":136 -1
      (nil))
 (call_insn 22 21 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 0667c5a0 RTC_ExitConfigMode>) [0 RTC_ExitConfigMode S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066985a0 RTC_ExitConfigMode>) [0 RTC_ExitConfigMode S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_rtc.c":136 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 0667c5a0 RTC_ExitConfigMode>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066985a0 RTC_ExitConfigMode>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -761,11 +761,11 @@ try_optimize_cfg iteration 2
 (debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v20x_rtc.c":150 -1
      (nil))
 (call_insn 7 6 8 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 0667c528 RTC_EnterConfigMode>) [0 RTC_EnterConfigMode S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 06698528 RTC_EnterConfigMode>) [0 RTC_EnterConfigMode S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_rtc.c":150 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 0667c528 RTC_EnterConfigMode>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 06698528 RTC_EnterConfigMode>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -810,11 +810,11 @@ try_optimize_cfg iteration 2
 (debug_insn 19 18 20 2 (debug_marker) "../Peripheral/src/ch32v20x_rtc.c":153 -1
      (nil))
 (call_insn 20 19 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 0667c5a0 RTC_ExitConfigMode>) [0 RTC_ExitConfigMode S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066985a0 RTC_ExitConfigMode>) [0 RTC_ExitConfigMode S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_rtc.c":153 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 0667c5a0 RTC_ExitConfigMode>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066985a0 RTC_ExitConfigMode>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -1602,11 +1602,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 72 [ RTC_IT ])) -1
      (nil))
 (call_insn 7 6 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RTC_ClearFlag") [flags 0x3] <function_decl 0667c9d8 RTC_ClearFlag>) [0 RTC_ClearFlag S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RTC_ClearFlag") [flags 0x3] <function_decl 066989d8 RTC_ClearFlag>) [0 RTC_ClearFlag S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_ClearFlag") [flags 0x3] <function_decl 0667c9d8 RTC_ClearFlag>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_ClearFlag") [flags 0x3] <function_decl 066989d8 RTC_ClearFlag>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))

@@ -33,7 +33,8 @@ User/comms/src/comms.o: ../User/comms/src/comms.c \
  e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/opcodes.h \
  e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/opcodes.h \
  e:/Software\ Projects/moun_projects/not232/User/ch32v20x_it.h \
- e:/Software\ Projects/moun_projects/not232/User/constants.h
+ e:/Software\ Projects/moun_projects/not232/User/constants.h \
+ e:/Software\ Projects/moun_projects/not232/User/bitbang/inc/i2c.h
 
 e:/Software\ Projects/moun_projects/not232/User/comms/inc/comms.h:
 
@@ -104,3 +105,5 @@ e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/opcodes.h:
 e:/Software\ Projects/moun_projects/not232/User/ch32v20x_it.h:
 
 e:/Software\ Projects/moun_projects/not232/User/constants.h:
+
+e:/Software\ Projects/moun_projects/not232/User/bitbang/inc/i2c.h:

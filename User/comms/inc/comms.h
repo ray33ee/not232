@@ -3,12 +3,13 @@
 
 #include "stdint.h"
 #include "USB_Serial/inc/usb_serial.h"
-#include "stdint.h"
 #include "debug.h"
 #include "VMIOX/inc/execute.h"
 #include "VMIOX/inc/opcodes.h"
 #include "ch32v20x_it.h"
 #include "constants.h"
+
+#include "bitbang/inc/i2c.h"
 
 extern uint32_t pio_head;
 extern uint32_t pio_count;

@@ -31,11 +31,11 @@ try_optimize_cfg iteration 2
         (const_int 1 [0x1])) "../Peripheral/src/ch32v20x_bkp.c":30 -1
      (nil))
 (call_insn 7 6 8 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_BackupResetCmd") [flags 0x41] <function_decl 065fc438 RCC_BackupResetCmd>) [0 RCC_BackupResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_BackupResetCmd") [flags 0x41] <function_decl 065d2438 RCC_BackupResetCmd>) [0 RCC_BackupResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_bkp.c":30 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_BackupResetCmd") [flags 0x41] <function_decl 065fc438 RCC_BackupResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_BackupResetCmd") [flags 0x41] <function_decl 065d2438 RCC_BackupResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -45,11 +45,11 @@ try_optimize_cfg iteration 2
         (const_int 0 [0])) "../Peripheral/src/ch32v20x_bkp.c":31 -1
      (nil))
 (call_insn 10 9 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_BackupResetCmd") [flags 0x41] <function_decl 065fc438 RCC_BackupResetCmd>) [0 RCC_BackupResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_BackupResetCmd") [flags 0x41] <function_decl 065d2438 RCC_BackupResetCmd>) [0 RCC_BackupResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_bkp.c":31 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_BackupResetCmd") [flags 0x41] <function_decl 065fc438 RCC_BackupResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_BackupResetCmd") [flags 0x41] <function_decl 065d2438 RCC_BackupResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))

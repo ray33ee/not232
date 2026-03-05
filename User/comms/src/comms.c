@@ -1,22 +1,5 @@
 #include "comms/inc/comms.h"
 
-uint32_t get_le_u32() {
-    while (!usbSerial_available());
-    uint8_t b1 = usbSerial_read();
-    while (!usbSerial_available());
-    uint8_t b2 = usbSerial_read();
-    while (!usbSerial_available());
-    uint8_t b3 = usbSerial_read();
-    while (!usbSerial_available());
-    uint8_t b4 = usbSerial_read();
-    return b1 | b2 << 8 | b3 << 16 | b4 << 24;
-}
-
-void set_le_u32(uint32_t value) {
-    usbSerial_writeP((unsigned char*)&value, 4);
-    usbSerial_flush();
-}
-
 uint16_t ADC1_ReadChannel(uint8_t adc_channel)
 {
     ADC_RegularChannelConfig(ADC1, adc_channel, 1, ADC_SampleTime_55Cycles5);
@@ -31,99 +14,6 @@ uint16_t ADC1_ReadChannel(uint8_t adc_channel)
 
     return v;
 }
-
-static inline void i2c_delay() {
-    Delay_Us(1);
-}
-
-static inline void i2c_start(uint16_t sda_pin, uint16_t scl_pin) {
-    GPIOA->BSHR = 1 << sda_pin;
-    i2c_delay();
-    GPIOA->BSHR = 1 << scl_pin;
-    i2c_delay();
-    GPIOA->BCR = 1 << sda_pin;
-    i2c_delay();
-    GPIOA->BCR = 1 << scl_pin;
-    i2c_delay();
-}
-
-static inline void i2c_send_bit(uint16_t sda_pin, uint16_t scl_pin, int bit) {
-    if (bit) {
-        GPIOA->BSHR = 1 << sda_pin;
-    } else {
-        GPIOA->BCR = 1 << sda_pin;
-    }
-    i2c_delay();
-    GPIOA->BSHR = 1 << scl_pin;
-    i2c_delay();
-    GPIOA->BCR = 1 << scl_pin;
-    i2c_delay();
-}
-
-static inline uint8_t i2c_send_byte(uint16_t sda_pin, uint16_t scl_pin, uint8_t byte) {
-    uint8_t ack = 1;
-    for (int i = 7; i >= 0; i--) {
-        i2c_send_bit(sda_pin, scl_pin, byte & (1 << i));
-    }
-
-    GPIOA->BSHR = 1 << sda_pin; //Release the SDA line
-    i2c_delay();
-    GPIOA->BSHR = 1 << scl_pin; //Clock the SCL
-    i2c_delay();
-    ack = (GPIOA->INDR & (1 << sda_pin)) == Bit_RESET; //Read the SDA line for the 9th bit - ACK
-    i2c_delay();
-    GPIOA->BCR = 1 << scl_pin;
-    i2c_delay();
-    GPIOA->BSHR = 1 << sda_pin; //Pull SDA back up
-    i2c_delay();
-
-    return ack;
-}
-
-static inline uint8_t i2c_recv_bit(uint16_t sda_pin, uint16_t scl_pin) {
-    uint8_t bit = 0;
-    
-    
-    GPIOA->BSHR = 1 << sda_pin; //Release the SDA line
-    i2c_delay();
-    GPIOA->BSHR = 1 << scl_pin;
-    i2c_delay();
-    bit = (GPIOA->INDR & (1 << sda_pin)) != Bit_RESET;
-    i2c_delay();
-    GPIOA->BCR = 1 << scl_pin;
-    i2c_delay();
-
-    return bit;
-
-}
-
-static inline void i2c_recv_byte(uint16_t sda_pin, uint16_t scl_pin, uint8_t* buffer, uint8_t ack) {
-    *buffer = 0;
-    for (int i = 7; i >= 0; i--) {
-        *buffer |= i2c_recv_bit(sda_pin, scl_pin) << i;
-    }
-
-    //Clock the 9th bit
-    GPIOA->BSHR = 1 << sda_pin; //Release the SDA line
-    i2c_delay();
-    GPIOA->BCR = (ack != 0) << sda_pin;
-    i2c_delay();
-    GPIOA->BSHR = 1 << scl_pin;
-    i2c_delay();
-    GPIOA->BCR = 1 << scl_pin;
-    i2c_delay();
-    GPIOA->BSHR = (ack != 0) << sda_pin;
-    i2c_delay();
-}
-
-static inline void i2c_stop(uint16_t sda_pin, uint16_t scl_pin) {
-    GPIOA->BSHR = 1 << scl_pin;
-    i2c_delay();
-    GPIOA->BSHR = 1 << sda_pin;
-    i2c_delay();
-}
-
-
 
 void EXTI_INIT(uint16_t pin)
 {
@@ -243,16 +133,96 @@ void ow_delay(uint32_t delay) {
     Delay_Us(delay);
 }
 
+static inline void gpio_write_fast(uint16_t mask, uint8_t level)
+{
+    if (level) GPIOA->BSHR = mask;
+    else       GPIOA->BCR  = mask;
+}
+
+static inline uint8_t gpio_read_fast(uint16_t mask)
+{
+    return (GPIOA->INDR & mask) ? 1u : 0u;
+}
+
+static inline void spi_delay_nops(uint32_t n)
+{
+    while (n--) __NOP();
+}
+
+uint8_t spi_xfer_byte_bb_ch32(uint8_t sck_pin,
+                              uint8_t mosi_pin,
+                              uint8_t miso_pin,
+                              uint8_t out,
+                              uint8_t mode,
+                              uint32_t edge_delay_nops)
+{
+
+    uint8_t cpha = mode & 1;
+    uint8_t cpol = mode >> 1;
+
+    const uint16_t sck_mask  = (uint16_t)(1u << sck_pin);
+    const uint16_t mosi_mask = (uint16_t)(1u << mosi_pin);
+    const uint16_t miso_mask = (uint16_t)(1u << miso_pin);
+
+    const uint8_t idle   = (cpol != 0u) ? 1u : 0u;
+    const uint8_t active = (uint8_t)(idle ^ 1u);
+
+    uint8_t in = 0;
+
+    // Start at idle and hold for half-cycle (helps consistent first pulse width)
+    gpio_write_fast(sck_mask, idle);
+    spi_delay_nops(edge_delay_nops);
+
+    if (cpha == 0u) {
+        // CPHA=0: set MOSI before leading edge, sample on leading edge
+        for (uint8_t i = 0u; i < 8u; i++) {
+            // Drive MOSI bit
+            gpio_write_fast(mosi_mask, (out & 0x80u) ? 1u : 0u);
+            out <<= 1;
+
+            // Leading edge -> active
+            gpio_write_fast(sck_mask, active);
+            spi_delay_nops(edge_delay_nops);
+
+            // Sample MISO
+            in = (uint8_t)((in << 1) | gpio_read_fast(miso_mask));
+
+            // Trailing edge -> idle
+            gpio_write_fast(sck_mask, idle);
+            spi_delay_nops(edge_delay_nops);
+        }
+    } else {
+        // CPHA=1: leading edge first, sample on trailing edge
+        for (uint8_t i = 0u; i < 8u; i++) {
+            // Leading edge -> active
+            gpio_write_fast(sck_mask, active);
+            spi_delay_nops(edge_delay_nops);
+
+            // Drive MOSI bit (changes during active phase)
+            gpio_write_fast(mosi_mask, (out & 0x80u) ? 1u : 0u);
+            out <<= 1;
+
+            // Trailing edge -> idle (sample edge)
+            gpio_write_fast(sck_mask, idle);
+            spi_delay_nops(edge_delay_nops);
+
+            // Sample MISO
+            in = (uint8_t)((in << 1) | gpio_read_fast(miso_mask));
+        }
+    }
+
+    return in;
+}
+
 void get_packet() {
-    while (!usbSerial_available());
-    uint8_t code = usbSerial_read();
+    uint8_t code = usbSerial_blocking_read_u8();
 
     switch (code) {
         case RECV_PING:
             /*
                 Ping
             */
-            set_le_u32(SEND_OK);
+            usbSerial_blocking_writeP_u32(SEND_OK);
             break;
         case RECV_IDENTIFY:
             /*
@@ -264,20 +234,16 @@ void get_packet() {
 
             char s[] = "TLL_N232";
 
-            set_le_u32(uids[0]);
-            set_le_u32(uids[1]);
-            set_le_u32(uids[2]);
+            usbSerial_blocking_writeP_u32(uids[0]);
+            usbSerial_blocking_writeP_u32(uids[1]);
+            usbSerial_blocking_writeP_u32(uids[2]);
 
-            //usbSerial_writeP((uint8_t*)ESIG_REGISTER_BASE, 12);
-
-            usbSerial_writeP((uint8_t*)s, 8);
-            usbSerial_flush();
+            usbSerial_blocking_writeP((uint8_t*)s, 8);
             break;}
         case RECV_OUT_PP:
             {
                 
-            while (!usbSerial_available());
-            uint8_t pin_number = usbSerial_read();
+            uint8_t pin_number = usbSerial_blocking_read_u8();
 
             GPIO_Init_Small(pin_number, GPIO_Mode_Out_PP);
 
@@ -285,17 +251,15 @@ void get_packet() {
         case RECV_OUT_OD:
             {
                 
-            while (!usbSerial_available());
-            uint8_t pin_number = usbSerial_read();
+            uint8_t pin_number = usbSerial_blocking_read_u8();
 
             GPIO_Init_Small(pin_number, GPIO_Mode_Out_OD);
 
             break;}
         case RECV_IN_FLOATING:
             {
-                
-            while (!usbSerial_available());
-            uint8_t pin_number = usbSerial_read();
+            
+            uint8_t pin_number = usbSerial_blocking_read_u8();
 
             GPIO_Init_Small(pin_number, GPIO_Mode_IN_FLOATING);
 
@@ -303,8 +267,7 @@ void get_packet() {
         case RECV_IN_PU:
             {
                 
-            while (!usbSerial_available());
-            uint8_t pin_number = usbSerial_read();
+            uint8_t pin_number = usbSerial_blocking_read_u8();
 
             GPIO_Init_Small(pin_number, GPIO_Mode_IPU);
 
@@ -312,8 +275,7 @@ void get_packet() {
         case RECV_IN_PD:
             {
                 
-            while (!usbSerial_available());
-            uint8_t pin_number = usbSerial_read();
+            uint8_t pin_number = usbSerial_blocking_read_u8();
 
             GPIO_Init_Small(pin_number, GPIO_Mode_IPD);
 
@@ -321,8 +283,7 @@ void get_packet() {
         case RECV_SET_PIN:
             {
                 
-            while (!usbSerial_available());
-            uint8_t pin_number = usbSerial_read();
+            uint8_t pin_number = usbSerial_blocking_read_u8();
 
             GPIOA->BSHR = 1 << pin_number;
 
@@ -330,21 +291,18 @@ void get_packet() {
         case RECV_CLEAR_PIN:
             {
                 
-            while (!usbSerial_available());
-            uint8_t pin_number = usbSerial_read();
+            uint8_t pin_number = usbSerial_blocking_read_u8();
 
             GPIOA->BCR = 1 << pin_number;
 
             break;}
         case RECV_READ_PIN:
             {
-            while (!usbSerial_available());
-            uint8_t pin_number = usbSerial_read();
+            uint8_t pin_number = usbSerial_blocking_read_u8();
 
             uint32_t bit = (GPIOA->INDR & (1 << pin_number)) != (uint32_t)Bit_RESET;
 
-            usbSerial_writeP((uint8_t*)&bit, 1);
-            usbSerial_flush();
+            usbSerial_blocking_writeP((uint8_t*)&bit, 1);
             break;}
             
         case RECV_RUN:
@@ -361,13 +319,12 @@ void get_packet() {
             uint32_t rp = 0;
             
             //Get the first u32 which contains the program size
-            uint32_t program_size = get_le_u32();
+            uint32_t program_size = usbSerial_blocking_read_u32();
 
             //Get the program
             for (int i = 0; i < program_size; i++) {
                 
-                while (!usbSerial_available());
-                uint16_t b = usbSerial_read();
+                uint16_t b = usbSerial_blocking_read_u8();
 
                 program[i] = b;
             }
@@ -383,19 +340,17 @@ void get_packet() {
             if (reads_registers(program, program_size)) {
                 //printf("Read regs\r\n");
                 for (int i = 0; i < REGISTER_COUNT; i++) {
-                    while (!usbSerial_available());
-                    registers[i] = usbSerial_read();
+                    registers[i] = usbSerial_blocking_read_u8();
                 }
             }
 
             // If the program contains any instructions that read from the pile_t pile, then we need to load pile_t from the host
             if (reads_pile(program, program_size)) {
 
-                tp = get_le_u32();
+                tp = usbSerial_blocking_read_u32();
 
                 for (int i = 0; i < PILE_SIZE; i++) {
-                    while (!usbSerial_available());
-                    pile_t[i] = usbSerial_read();
+                    pile_t[i] = usbSerial_blocking_read_u8();
                 }
             }
 
@@ -421,21 +376,19 @@ void get_packet() {
             }
 
             // Send response
-            set_le_u32(response_len);
-            set_le_u32(SEND_MACHINE_STATE); //Response 
+            usbSerial_blocking_writeP_u32(response_len);
+            usbSerial_blocking_writeP_u32(SEND_MACHINE_STATE); //Response 
 
             //If the program has written to registers, send them back to host
             if (writes_registers(program, program_size)) {
-                usbSerial_writeP(registers, REGISTER_COUNT);
-                usbSerial_flush();
+                usbSerial_blocking_writeP(registers, REGISTER_COUNT);
             }
 
             //If the program has written to the r pile, send it back to host (along with the rp value)
             if (writes_pile(program, program_size)) {
-                set_le_u32(rp);
+                usbSerial_blocking_writeP_u32(rp);
 
-                usbSerial_writeP(pile_r, PILE_SIZE);
-                usbSerial_flush();
+                usbSerial_blocking_writeP(pile_r, PILE_SIZE);
             }
 
             
@@ -443,26 +396,24 @@ void get_packet() {
         case RECV_PWM_INIT:
 
             {
-            while (!usbSerial_available());
-            uint32_t pin_number = usbSerial_read();
+            uint32_t pin_number = usbSerial_blocking_read_u8();
 
             GPIO_Init_Small(pin_number, GPIO_Mode_AF_PP);
             
             break;}
         case RECV_PWM_DUTY:
             {
-            while (!usbSerial_available());
-            uint32_t pin_number = usbSerial_read();
-            while (!usbSerial_available());
-            uint32_t duty = usbSerial_read();
+                
+            uint32_t pin_number = usbSerial_blocking_read_u8();
+            
+            uint32_t duty = usbSerial_blocking_read_u8();
 
             set_duty(pin_number, duty);
 
             break;}
         case RECV_ADC_INIT:
             {
-                while (!usbSerial_available());
-                uint32_t pin_number = usbSerial_read();
+                uint32_t pin_number = usbSerial_blocking_read_u8();
 
                 GPIO_Init_Small(pin_number, GPIO_Mode_AIN);
  
@@ -470,20 +421,19 @@ void get_packet() {
             break;}
         case RECV_ADC_READ:
             {
-            while (!usbSerial_available());
-            uint32_t pin_number = usbSerial_read();
+            uint32_t pin_number = usbSerial_blocking_read_u8();
 
             uint32_t val = (uint32_t)ADC1_ReadChannel(pin_number);
 
-            set_le_u32(val);
+            usbSerial_blocking_writeP_u32(val);
 
             break;}
         case RECV_I2C_INIT:
             {
-            while (!usbSerial_available());
-            uint32_t sda_pin_number = usbSerial_read();
-            while (!usbSerial_available());
-            uint32_t scl_pin_number = usbSerial_read();
+                
+            uint32_t sda_pin_number = usbSerial_blocking_read_u8();
+            
+            uint32_t scl_pin_number = usbSerial_blocking_read_u8();
 
             GPIO_Init_Small(sda_pin_number, GPIO_Mode_Out_OD);
             GPIO_Init_Small(scl_pin_number, GPIO_Mode_Out_OD);
@@ -491,26 +441,21 @@ void get_packet() {
             break;}
         case RECV_I2C_SCAN:
             {
-            while (!usbSerial_available());
-            uint32_t sda_pin_number = usbSerial_read();
-            while (!usbSerial_available());
-            uint32_t scl_pin_number = usbSerial_read();
+                
+            uint32_t sda_pin_number = usbSerial_blocking_read_u8();
+
+            uint32_t scl_pin_number = usbSerial_blocking_read_u8();
 
             for (int i = 1; i < 0x80; i++) {
 
-                i2c_start(sda_pin_number, scl_pin_number);
-                uint8_t ack = i2c_send_byte(sda_pin_number, scl_pin_number, i << 1);
-                i2c_stop(sda_pin_number, scl_pin_number);
-                
-                if (ack) {
+                if (i2c_scan_address(sda_pin_number, scl_pin_number, i)) {
                     uint8_t addr = i;
-                    usbSerial_writeP(&addr, 1);
+                    usbSerial_blocking_writeP(&addr, 1);
                 }
             }
 
             uint8_t terminal = 0x00;
-            usbSerial_writeP(&terminal, 1);
-            usbSerial_flush();
+            usbSerial_blocking_writeP(&terminal, 1);
 
             break;}
         case RECV_I2C_WRITE:
@@ -518,83 +463,51 @@ void get_packet() {
             uint8_t write_buffer[I2C_WRITE_BUFFER_MAX];
 
             // SDA and SCL (2 bytes)
-            while (!usbSerial_available());
-            uint8_t sda_pin = usbSerial_read();
-            while (!usbSerial_available());
-            uint8_t scl_pin = usbSerial_read();
+            
+            uint8_t sda_pin = usbSerial_blocking_read_u8();
+            
+            uint8_t scl_pin = usbSerial_blocking_read_u8();
 
             // I2C address (1 byte)
-            while (!usbSerial_available());
-            uint8_t address = usbSerial_read() << 1;
+            uint8_t address = usbSerial_blocking_read_u8() << 1;
             
             // Number of bytes to write to device (4 bytes)
-            uint32_t write_data_len = get_le_u32();
+            uint32_t write_data_len = usbSerial_blocking_read_u32();
 
             // Get bytes to write (N bytes)
             for (int i = 0; i < write_data_len; i++) {
-                while (!usbSerial_available());
-                write_buffer[i] = usbSerial_read();
+                write_buffer[i] = usbSerial_blocking_read_u8();
             }
 
             // Stop condition (1 byte)
-            while (!usbSerial_available());
-            uint8_t stop = usbSerial_read();
+            uint8_t stop = usbSerial_blocking_read_u8();
 
-            i2c_start(sda_pin, scl_pin);
+            i2c_send_bytes(sda_pin, scl_pin, address, write_buffer, write_data_len, stop);
 
-            i2c_send_byte(sda_pin, scl_pin, address);
-
-            for (int i = 0; i < write_data_len; i++) {
-                i2c_send_byte(sda_pin, scl_pin, write_buffer[i]);
-            }
-
-            
-            if (stop) {
-                i2c_stop(sda_pin, scl_pin);
-            }
-
-
-
-
-            
             break;}
         case RECV_I2C_READ:
             {
             uint8_t read_buffer[I2C_READ_BUFFER_MAX];
 
             // SDA and SCL (2 bytes)
-            while (!usbSerial_available());
-            uint8_t sda_pin = usbSerial_read();
-            while (!usbSerial_available());
-            uint8_t scl_pin = usbSerial_read();
+            
+            uint8_t sda_pin = usbSerial_blocking_read_u8();
+            
+            uint8_t scl_pin = usbSerial_blocking_read_u8();
 
             // I2C address (1 byte)
-            while (!usbSerial_available());
-            uint8_t address = usbSerial_read() << 1;
+            uint8_t address = usbSerial_blocking_read_u8() << 1;
 
             // Get number of bytes to read (4 bytes)
-            uint32_t bytes_to_read = get_le_u32();
+            uint32_t bytes_to_read = usbSerial_blocking_read_u32();
 
             // Stop condition (1 byte)
-            while (!usbSerial_available());
-            uint8_t stop = usbSerial_read();
+            uint8_t stop = usbSerial_blocking_read_u8();
 
-            i2c_start(sda_pin, scl_pin);
-
-            i2c_send_byte(sda_pin, scl_pin, address | 1);
-
-            
-            for (int i = 0; i < bytes_to_read; i++) {
-                i2c_recv_byte(sda_pin, scl_pin, read_buffer + i, i < bytes_to_read-1); 
-            }
-
-            if (stop) {
-                i2c_stop(sda_pin, scl_pin);
-            }
+            i2c_recv_bytes(sda_pin, scl_pin, address, read_buffer, bytes_to_read, stop);
 
             // Send buffer (M bytes)
-            usbSerial_writeP(read_buffer, bytes_to_read);
-            usbSerial_flush();
+            usbSerial_blocking_writeP(read_buffer, bytes_to_read);
 
             break;}
         case RECV_I2C_WRITE_READ:
@@ -603,63 +516,39 @@ void get_packet() {
             uint8_t read_buffer[I2C_READ_BUFFER_MAX];
 
             // SDA and SCL (2 bytes)
-            while (!usbSerial_available());
-            uint8_t sda_pin = usbSerial_read();
-            while (!usbSerial_available());
-            uint8_t scl_pin = usbSerial_read();
+            
+            uint8_t sda_pin = usbSerial_blocking_read_u8();
+            
+            uint8_t scl_pin = usbSerial_blocking_read_u8();
 
             // I2C address (1 byte)
-            while (!usbSerial_available());
-            uint8_t address = usbSerial_read() << 1;
+            uint8_t address = usbSerial_blocking_read_u8() << 1;
             
             // Number of bytes to write to device (4 bytes)
-            uint32_t write_data_len = get_le_u32();
+            uint32_t write_data_len = usbSerial_blocking_read_u32();
 
             // Get bytes to write (N bytes)
             for (int i = 0; i < write_data_len; i++) {
-                while (!usbSerial_available());
-                write_buffer[i] = usbSerial_read();
+                write_buffer[i] = usbSerial_blocking_read_u8();
             }
 
             // Get number of bytes to read (4 bytes)
-            uint32_t bytes_to_read = get_le_u32();
+            uint32_t bytes_to_read = usbSerial_blocking_read_u32();
 
             // Stop condition (1 byte)
-            while (!usbSerial_available());
-            uint8_t stop = usbSerial_read();
+            uint8_t stop = usbSerial_blocking_read_u8();
 
-            //Start I2C transaction
-            i2c_start(sda_pin, scl_pin);
-
-            i2c_send_byte(sda_pin, scl_pin, address);
-
-            for (int i = 0; i < write_data_len; i++) {
-                i2c_send_byte(sda_pin, scl_pin, write_buffer[i]);
-            }
-
-            i2c_start(sda_pin, scl_pin);
-
-            i2c_send_byte(sda_pin, scl_pin, address | 1);
-
-            for (int i = 0; i < bytes_to_read; i++) {
-                i2c_recv_byte(sda_pin, scl_pin, read_buffer + i, i < bytes_to_read-1); 
-            }
-
-            if (stop) {
-                i2c_stop(sda_pin, scl_pin);
-            }
+            i2c_send_recv_bytes(sda_pin, scl_pin, address, write_buffer, write_data_len, read_buffer, bytes_to_read, stop);
 
             // Send buffer (M bytes)
-            usbSerial_writeP(read_buffer, bytes_to_read);
-            usbSerial_flush();
+            usbSerial_blocking_writeP(read_buffer, bytes_to_read);
             
             break;}
         case RECV_PULSEIO_RESUME:
             {
-            while (!usbSerial_available());
-            uint8_t pin = usbSerial_read();
+            uint8_t pin = usbSerial_blocking_read_u8();
             
-            uint16_t trigger_duration = (uint16_t)get_le_u32();
+            uint16_t trigger_duration = (uint16_t)usbSerial_blocking_read_u32();
 
             if (trigger_duration != 0) {
 
@@ -693,8 +582,7 @@ void get_packet() {
             break;}
         case RECV_PULSEIO_STOP:
             {
-            while (!usbSerial_available());
-            uint8_t pin = usbSerial_read();
+            uint8_t pin = usbSerial_blocking_read_u8();
 
             EXTI_DEINIT(pin);
 
@@ -710,7 +598,7 @@ void get_packet() {
             __enable_irq();
 
 
-            set_le_u32(pio_count_copy);
+            usbSerial_blocking_writeP_u32(pio_count_copy);
 
             break;}
         case RECV_PULSEIO_POPLEFT:
@@ -728,13 +616,13 @@ void get_packet() {
 
             uint16_t val = pio_buffer[tail];
 
-            set_le_u32(val);
+            usbSerial_blocking_writeP_u32(val);
 
 
             break;}
         case RECV_PULSEIO_READ:
             {
-            uint32_t pulse_count = get_le_u32(); //Number of pulses to read
+            uint32_t pulse_count = usbSerial_blocking_read_u32(); //Number of pulses to read
 
             __disable_irq();
 
@@ -751,33 +639,29 @@ void get_packet() {
                 modified_count = pulse_count;
             }
 
-            printf("actual: %i, pulse: %i\r\n", pio_count_copy, pulse_count);
-            set_le_u32(modified_count);
-
-            printf("actual: %i\r\n", modified_count);
+            usbSerial_blocking_writeP_u32(modified_count);
 
             uint32_t tail = (pio_head_copy + PIO_RING_SIZE - modified_count) % PIO_RING_SIZE;
 
             for (int i = 0; i < modified_count; i++) {
                 uint16_t value = pio_buffer[(tail + i) % PIO_RING_SIZE];
-                set_le_u32(value);
+                usbSerial_blocking_writeP_u32(value);
             }
 
             break;}
         case RECV_PULSEIO_OUT:
             {
             
-            while (!usbSerial_available());
-            uint32_t pin_number = usbSerial_read();
+            uint32_t pin_number = usbSerial_blocking_read_u8();
             
-            uint32_t duty = get_le_u32();
+            uint32_t duty = usbSerial_blocking_read_u32();
             
-            uint32_t pulse_count = get_le_u32();
+            uint32_t pulse_count = usbSerial_blocking_read_u32();
 
             uint16_t pulses[PIO_PULSES_SIZE];
 
             for (int i = 0; i < pulse_count; i++) {
-                pulses[i] = (uint16_t)get_le_u32();
+                pulses[i] = (uint16_t)usbSerial_blocking_read_u32();
             }
 
             for (int i = 0; i < pulse_count; i++) {
@@ -799,15 +683,13 @@ void get_packet() {
 
             uint8_t colors[NEOPIXEL_COLOR_MAX];
             
-            while (!usbSerial_available());
-            uint32_t pin_number = usbSerial_read();
+            uint32_t pin_number = usbSerial_blocking_read_u8();
 
-            uint32_t color_count = get_le_u32();
+            uint32_t color_count = usbSerial_blocking_read_u32();
 
             for (int i = 0; i < color_count; i++) {
-                while (!usbSerial_available());
 
-                colors[i] = usbSerial_read();
+                colors[i] = usbSerial_blocking_read_u8();
             }
 
             uint16_t pin_mask = 1 << pin_number;
@@ -828,8 +710,7 @@ void get_packet() {
         case RECV_OW_RESET:
             {
             
-            while (!usbSerial_available());
-            uint32_t pin_number = usbSerial_read();
+            uint32_t pin_number = usbSerial_blocking_read_u8();
 
             uint32_t mask = 1 << pin_number;
             
@@ -843,14 +724,13 @@ void get_packet() {
             result = (GPIOA->INDR & mask) == (uint32_t)Bit_RESET;
             ow_delay(OW_DELAY_J);
 
-            set_le_u32(result);
+            usbSerial_blocking_writeP_u32(result);
 
             break;}
         case RECV_OW_WRITE_0:
             {
             
-            while (!usbSerial_available());
-            uint32_t pin_number = usbSerial_read();
+            uint32_t pin_number = usbSerial_blocking_read_u8();
 
             uint32_t mask = 1 << pin_number;
 
@@ -863,8 +743,7 @@ void get_packet() {
         case RECV_OW_WRITE_1:
             {
             
-            while (!usbSerial_available());
-            uint32_t pin_number = usbSerial_read();
+            uint32_t pin_number = usbSerial_blocking_read_u8();
 
             uint32_t mask = 1 << pin_number;
 
@@ -877,8 +756,7 @@ void get_packet() {
         case RECV_OW_READ:
             {
             
-            while (!usbSerial_available());
-            uint32_t pin_number = usbSerial_read();
+            uint32_t pin_number = usbSerial_blocking_read_u8();
 
             uint32_t mask = 1 << pin_number;
             
@@ -891,33 +769,111 @@ void get_packet() {
             result = (GPIOA->INDR & mask) != (uint32_t)Bit_RESET;
             ow_delay(OW_DELAY_F);
 
-            set_le_u32(result);
+            usbSerial_blocking_writeP_u32(result);
             
             break;}
         case RECV_SPI_INIT:
             {
             
-            while (!usbSerial_available());
-            uint32_t clock_pin = usbSerial_read();
+            uint32_t clock_pin = usbSerial_blocking_read_u8();
             
-            while (!usbSerial_available());
-            uint32_t mosi_pin = usbSerial_read();
+            uint32_t mosi_pin = usbSerial_blocking_read_u8();
             
-            while (!usbSerial_available());
-            uint32_t miso_pin = usbSerial_read();
+            uint32_t miso_pin = usbSerial_blocking_read_u8();
 
+            GPIO_Init_Small(clock_pin, GPIO_Mode_Out_PP);
+            GPIO_Init_Small(mosi_pin, GPIO_Mode_Out_PP);
+            GPIO_Init_Small(miso_pin, GPIO_Mode_IN_FLOATING);
             
             break;}
         case RECV_SPI_READ:
             {
             
+            uint32_t clock_pin = usbSerial_blocking_read_u8();
+            
+            uint32_t mosi_pin = usbSerial_blocking_read_u8();
+            
+            uint32_t miso_pin = usbSerial_blocking_read_u8();
+            
+            uint32_t mode = usbSerial_blocking_read_u8();
+            
+            uint32_t write_value = usbSerial_blocking_read_u8();
+
+            uint32_t delay = usbSerial_blocking_read_u32();
+
+            uint32_t len = usbSerial_blocking_read_u32();
+
+            uint8_t read_buff[1000];
+
+            for (int i = 0; i < len; i++) {
+                read_buff[i] = spi_xfer_byte_bb_ch32(clock_pin, mosi_pin, miso_pin, write_value, mode, delay);
+            }
+
+            usbSerial_blocking_writeP(read_buff, len);
+
+            
+
             break;}
         case RECV_SPI_WRITE:
             {
             
+            uint32_t clock_pin = usbSerial_blocking_read_u8();
+            
+            uint32_t mosi_pin = usbSerial_blocking_read_u8();
+            
+            uint32_t miso_pin = usbSerial_blocking_read_u8();
+            
+            uint32_t mode = usbSerial_blocking_read_u8();
+
+            uint32_t delay = usbSerial_blocking_read_u32();
+
+            uint32_t len = usbSerial_blocking_read_u32();
+
+            uint8_t write_buff[1000];
+
+            for (int i = 0; i < len; i++) {
+                
+                write_buff[i] = usbSerial_blocking_read_u8();
+            }
+
+            for (int i = 0; i < len; i++) {
+                spi_xfer_byte_bb_ch32(clock_pin, mosi_pin, miso_pin, write_buff[i], mode, delay);
+            }
+            
+            
             break;}
         case RECV_SPI_WRITE_READ:
             {
+            
+            uint32_t clock_pin = usbSerial_blocking_read_u8();
+            
+            uint32_t mosi_pin = usbSerial_blocking_read_u8();
+            
+            uint32_t miso_pin = usbSerial_blocking_read_u8();
+            
+            uint32_t mode = usbSerial_blocking_read_u8();
+
+            uint32_t delay = usbSerial_blocking_read_u32();
+
+            uint32_t len = usbSerial_blocking_read_u32();
+
+            uint8_t read_buff[1000];
+            uint8_t write_buff[1000];
+
+            for (int i = 0; i < len; i++) {
+                
+                write_buff[i] = usbSerial_blocking_read_u8();
+            }
+
+            for (int i = 0; i < len; i++) {
+                read_buff[i] = spi_xfer_byte_bb_ch32(clock_pin, mosi_pin, miso_pin, write_buff[i], mode, delay);
+            }
+
+
+            usbSerial_blocking_writeP(read_buff, len);
+
+
+
             
             break;}
             
