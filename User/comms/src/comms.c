@@ -1,219 +1,5 @@
 #include "comms/inc/comms.h"
 
-uint16_t ADC1_ReadChannel(uint8_t adc_channel)
-{
-    ADC_RegularChannelConfig(ADC1, adc_channel, 1, ADC_SampleTime_55Cycles5);
-
-    ADC_SoftwareStartConvCmd(ADC1, ENABLE);
-
-    while (ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC) == RESET);
-
-    uint16_t v = ADC_GetConversionValue(ADC1);
-
-    ADC_ClearFlag(ADC1, ADC_FLAG_EOC);
-
-    return v;
-}
-
-void EXTI_INIT(uint16_t pin)
-{
-    EXTI_InitTypeDef EXTI_InitStructure = {0};
-    NVIC_InitTypeDef NVIC_InitStructure = {0};
-
-    /* Map Px<pin> -> EXTI line <pin> */
-    GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, pin);
-
-    /* EXTI line mask: EXTI_Line0 << pin */
-    uint32_t line = (uint32_t)(1u << pin);
-
-    EXTI_InitStructure.EXTI_Line    = 1 << pin;
-    EXTI_InitStructure.EXTI_Mode    = EXTI_Mode_Interrupt;
-    EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising_Falling;
-    EXTI_InitStructure.EXTI_LineCmd = ENABLE;
-    EXTI_Init(&EXTI_InitStructure);
-
-    /* Clear any pending flag to avoid immediate interrupt */
-    EXTI_ClearITPendingBit(line);
-
-    /* Select NVIC IRQ for this EXTI line */
-    IRQn_Type irqn;
-    if (pin <= 4u) {
-        irqn = (IRQn_Type)(EXTI0_IRQn + pin);   /* EXTI0..EXTI4 */
-    } else if (pin <= 9u) {
-        irqn = EXTI9_5_IRQn;                    /* EXTI5..EXTI9 shared */
-    } else {
-        irqn = EXTI15_10_IRQn;                  /* EXTI10..EXTI15 shared */
-    }
-
-    NVIC_InitStructure.NVIC_IRQChannel                   = irqn;
-    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
-    NVIC_InitStructure.NVIC_IRQChannelSubPriority        = 2;
-    NVIC_InitStructure.NVIC_IRQChannelCmd                = ENABLE;
-    NVIC_Init(&NVIC_InitStructure);
-}
-
-/*
- * Disable EXTI interrupt on Px<pin> (pin 0..15)
- */
-void EXTI_DEINIT(uint8_t pin)
-{
-    uint32_t line = (uint32_t)(1u << pin);
-
-    /* Disable EXTI line */
-    EXTI_InitTypeDef EXTI_InitStructure = {0};
-    EXTI_InitStructure.EXTI_Line    = line;
-    EXTI_InitStructure.EXTI_Mode    = EXTI_Mode_Interrupt;
-    EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising_Falling;
-    EXTI_InitStructure.EXTI_LineCmd = DISABLE;
-    EXTI_Init(&EXTI_InitStructure);
-
-    /* Clear pending bit */
-    EXTI_ClearITPendingBit(line);
-
-}
-
-void set_duty(uint16_t pin_number, uint16_t duty) {
-    if (pin_number == 0) {
-        TIM2->CH1CVR = duty;
-    } else if (pin_number == 1) {
-        TIM2->CH2CVR = duty;
-    } else if (pin_number == 2) {
-        TIM2->CH3CVR = duty;
-    } else if (pin_number == 3) {
-        TIM2->CH4CVR = duty;
-    } else if (pin_number == 6) {
-        TIM3->CH1CVR = duty;
-    } else if (pin_number == 7) {
-        TIM3->CH2CVR = duty;
-    } else if (pin_number == 8) {
-        TIM1->CH1CVR = duty;
-    } else if (pin_number == 9) {
-        TIM1->CH2CVR = duty;
-    } else if (pin_number == 10) {
-        TIM1->CH3CVR = duty;
-    } else if (pin_number == 11) {
-        TIM1->CH4CVR = duty;
-    }
-}
-
-void neopixel_send_0(uint16_t pin_mask) {
-    GPIOA->BSHR = pin_mask;
-    for (int i = 0; i < 11; i++) __NOP();
-    GPIOA->BCR = pin_mask;
-    for (int i = 0; i < 31; i++) __NOP();
-}
-
-void neopixel_send_1(uint16_t pin_mask) {
-    GPIOA->BSHR = pin_mask;
-    for (int i = 0; i < 24; i++) __NOP();
-    GPIOA->BCR = pin_mask;
-    for (int i = 0; i < 18; i++) __NOP();
-}
-
-void neopixel_send_bit(uint16_t pin_mask, uint32_t bit) {
-    if (bit) {
-        neopixel_send_1(pin_mask);
-    } else {
-        neopixel_send_0(pin_mask);
-    }
-}
-
-void neopixel_send_byte(uint16_t pin_mask, uint8_t byte) {
-    neopixel_send_bit(pin_mask, byte & 0x80);
-    neopixel_send_bit(pin_mask, byte & 0x40);
-    neopixel_send_bit(pin_mask, byte & 0x20);
-    neopixel_send_bit(pin_mask, byte & 0x10);
-    neopixel_send_bit(pin_mask, byte & 0x08);
-    neopixel_send_bit(pin_mask, byte & 0x04);
-    neopixel_send_bit(pin_mask, byte & 0x02);
-    neopixel_send_bit(pin_mask, byte & 0x01);
-}
-
-void ow_delay(uint32_t delay) {
-    Delay_Us(delay);
-}
-
-static inline void gpio_write_fast(uint16_t mask, uint8_t level)
-{
-    if (level) GPIOA->BSHR = mask;
-    else       GPIOA->BCR  = mask;
-}
-
-static inline uint8_t gpio_read_fast(uint16_t mask)
-{
-    return (GPIOA->INDR & mask) ? 1u : 0u;
-}
-
-static inline void spi_delay_nops(uint32_t n)
-{
-    while (n--) __NOP();
-}
-
-uint8_t spi_xfer_byte_bb_ch32(uint8_t sck_pin,
-                              uint8_t mosi_pin,
-                              uint8_t miso_pin,
-                              uint8_t out,
-                              uint8_t mode,
-                              uint32_t edge_delay_nops)
-{
-
-    uint8_t cpha = mode & 1;
-    uint8_t cpol = mode >> 1;
-
-    const uint16_t sck_mask  = (uint16_t)(1u << sck_pin);
-    const uint16_t mosi_mask = (uint16_t)(1u << mosi_pin);
-    const uint16_t miso_mask = (uint16_t)(1u << miso_pin);
-
-    const uint8_t idle   = (cpol != 0u) ? 1u : 0u;
-    const uint8_t active = (uint8_t)(idle ^ 1u);
-
-    uint8_t in = 0;
-
-    // Start at idle and hold for half-cycle (helps consistent first pulse width)
-    gpio_write_fast(sck_mask, idle);
-    spi_delay_nops(edge_delay_nops);
-
-    if (cpha == 0u) {
-        // CPHA=0: set MOSI before leading edge, sample on leading edge
-        for (uint8_t i = 0u; i < 8u; i++) {
-            // Drive MOSI bit
-            gpio_write_fast(mosi_mask, (out & 0x80u) ? 1u : 0u);
-            out <<= 1;
-
-            // Leading edge -> active
-            gpio_write_fast(sck_mask, active);
-            spi_delay_nops(edge_delay_nops);
-
-            // Sample MISO
-            in = (uint8_t)((in << 1) | gpio_read_fast(miso_mask));
-
-            // Trailing edge -> idle
-            gpio_write_fast(sck_mask, idle);
-            spi_delay_nops(edge_delay_nops);
-        }
-    } else {
-        // CPHA=1: leading edge first, sample on trailing edge
-        for (uint8_t i = 0u; i < 8u; i++) {
-            // Leading edge -> active
-            gpio_write_fast(sck_mask, active);
-            spi_delay_nops(edge_delay_nops);
-
-            // Drive MOSI bit (changes during active phase)
-            gpio_write_fast(mosi_mask, (out & 0x80u) ? 1u : 0u);
-            out <<= 1;
-
-            // Trailing edge -> idle (sample edge)
-            gpio_write_fast(sck_mask, idle);
-            spi_delay_nops(edge_delay_nops);
-
-            // Sample MISO
-            in = (uint8_t)((in << 1) | gpio_read_fast(miso_mask));
-        }
-    }
-
-    return in;
-}
-
 void get_packet() {
     uint8_t code = usbSerial_blocking_read_u8();
 
@@ -245,7 +31,7 @@ void get_packet() {
                 
             uint8_t pin_number = usbSerial_blocking_read_u8();
 
-            GPIO_Init_Small(pin_number, GPIO_Mode_Out_PP);
+            gpio_init_adf_pins(pin_number, GPIO_Mode_Out_PP);
 
             break;}
         case RECV_OUT_OD:
@@ -253,7 +39,7 @@ void get_packet() {
                 
             uint8_t pin_number = usbSerial_blocking_read_u8();
 
-            GPIO_Init_Small(pin_number, GPIO_Mode_Out_OD);
+            gpio_init_adf_pins(pin_number, GPIO_Mode_Out_OD);
 
             break;}
         case RECV_IN_FLOATING:
@@ -261,7 +47,7 @@ void get_packet() {
             
             uint8_t pin_number = usbSerial_blocking_read_u8();
 
-            GPIO_Init_Small(pin_number, GPIO_Mode_IN_FLOATING);
+            gpio_init_adf_pins(pin_number, GPIO_Mode_IN_FLOATING);
 
             break;}
         case RECV_IN_PU:
@@ -269,7 +55,7 @@ void get_packet() {
                 
             uint8_t pin_number = usbSerial_blocking_read_u8();
 
-            GPIO_Init_Small(pin_number, GPIO_Mode_IPU);
+            gpio_init_adf_pins(pin_number, GPIO_Mode_IPU);
 
             break;}
         case RECV_IN_PD:
@@ -277,7 +63,7 @@ void get_packet() {
                 
             uint8_t pin_number = usbSerial_blocking_read_u8();
 
-            GPIO_Init_Small(pin_number, GPIO_Mode_IPD);
+            gpio_init_adf_pins(pin_number, GPIO_Mode_IPD);
 
             break;}
         case RECV_SET_PIN:
@@ -285,7 +71,7 @@ void get_packet() {
                 
             uint8_t pin_number = usbSerial_blocking_read_u8();
 
-            GPIOA->BSHR = 1 << pin_number;
+            gpio_set_adf_pin(pin_number);
 
             break;}
         case RECV_CLEAR_PIN:
@@ -293,14 +79,14 @@ void get_packet() {
                 
             uint8_t pin_number = usbSerial_blocking_read_u8();
 
-            GPIOA->BCR = 1 << pin_number;
+            gpio_clear_adf_pin(pin_number);
 
             break;}
         case RECV_READ_PIN:
             {
             uint8_t pin_number = usbSerial_blocking_read_u8();
 
-            uint32_t bit = (GPIOA->INDR & (1 << pin_number)) != (uint32_t)Bit_RESET;
+            uint32_t bit = gpio_read_adf_pin(pin_number);
 
             usbSerial_blocking_writeP((uint8_t*)&bit, 1);
             break;}
@@ -398,7 +184,7 @@ void get_packet() {
             {
             uint32_t pin_number = usbSerial_blocking_read_u8();
 
-            GPIO_Init_Small(pin_number, GPIO_Mode_AF_PP);
+            gpio_init_adf_pins(pin_number, GPIO_Mode_AF_PP);
             
             break;}
         case RECV_PWM_DUTY:
@@ -408,14 +194,14 @@ void get_packet() {
             
             uint32_t duty = usbSerial_blocking_read_u8();
 
-            set_duty(pin_number, duty);
+            pwm_set_duty(pin_number, duty);
 
             break;}
         case RECV_ADC_INIT:
             {
                 uint32_t pin_number = usbSerial_blocking_read_u8();
 
-                GPIO_Init_Small(pin_number, GPIO_Mode_AIN);
+                gpio_init_adf_pins(pin_number, GPIO_Mode_AIN);
  
             
             break;}
@@ -423,10 +209,18 @@ void get_packet() {
             {
             uint32_t pin_number = usbSerial_blocking_read_u8();
 
-            uint32_t val = (uint32_t)ADC1_ReadChannel(pin_number);
+            uint32_t val = (uint32_t)adc_read(pin_number);
 
             usbSerial_blocking_writeP_u32(val);
 
+            break;}
+        case RECV_ADC_TKEY_READ:
+            {   
+            uint32_t pin_number = usbSerial_blocking_read_u8();
+
+            uint32_t val = (uint32_t)tkey_read(pin_number);
+
+            usbSerial_blocking_writeP_u32(val);
             break;}
         case RECV_I2C_INIT:
             {
@@ -435,8 +229,8 @@ void get_packet() {
             
             uint32_t scl_pin_number = usbSerial_blocking_read_u8();
 
-            GPIO_Init_Small(sda_pin_number, GPIO_Mode_Out_OD);
-            GPIO_Init_Small(scl_pin_number, GPIO_Mode_Out_OD);
+            gpio_init_ad_pins(sda_pin_number, GPIO_Mode_Out_OD);
+            gpio_init_ad_pins(scl_pin_number, GPIO_Mode_Out_OD);
             
             break;}
         case RECV_I2C_SCAN:
@@ -544,52 +338,29 @@ void get_packet() {
             usbSerial_blocking_writeP(read_buffer, bytes_to_read);
             
             break;}
-        case RECV_PULSEIO_RESUME:
+        case RECV_PULSEIO_IN_RESUME:
             {
             uint8_t pin = usbSerial_blocking_read_u8();
             
             uint16_t trigger_duration = (uint16_t)usbSerial_blocking_read_u32();
 
-            if (trigger_duration != 0) {
-
-                GPIO_Init_Small(pin, GPIO_Mode_Out_OD);
-
-                GPIOA->BCR = 1 << pin;
-
-                Delay_Us(trigger_duration);
-                
-                GPIOA->BSHR = 1 << pin;
-            }
-
-
-            GPIO_Init_Small(pin, GPIO_Mode_IN_FLOATING);
-
-            //Setup the EXTI on the pin
-            EXTI_INIT(pin);
-
-            //Start timer
-            TIM4_pulseio_start();
+            pulseio_in_resume(pin, trigger_duration);
 
             break;}
-        case RECV_PULSEIO_CLEAR:
+        case RECV_PULSEIO_IN_CLEAR:
             {
             
-            __disable_irq();
-            pio_head = 0;
-            pio_count = 0;
-            __enable_irq();
+            pulseio_in_clear();
 
             break;}
-        case RECV_PULSEIO_STOP:
+        case RECV_PULSEIO_IN_STOP:
             {
             uint8_t pin = usbSerial_blocking_read_u8();
 
-            EXTI_DEINIT(pin);
-
-            TIM4_pulseio_stop();
+            pulseio_in_stop(pin);
             
             break;}
-        case RECV_PULSEIO_LENGTH:
+        case RECV_PULSEIO_IN_LENGTH:
 
             {__disable_irq();
 
@@ -601,7 +372,7 @@ void get_packet() {
             usbSerial_blocking_writeP_u32(pio_count_copy);
 
             break;}
-        case RECV_PULSEIO_POPLEFT:
+        case RECV_PULSEIO_IN_POPLEFT:
 
             {__disable_irq();
 
@@ -620,36 +391,14 @@ void get_packet() {
 
 
             break;}
-        case RECV_PULSEIO_READ:
+        case RECV_PULSEIO_IN_READ:
             {
             uint32_t pulse_count = usbSerial_blocking_read_u32(); //Number of pulses to read
 
-            __disable_irq();
-
-            uint32_t pio_head_copy = pio_head;
-            uint32_t pio_count_copy = pio_count;
-
-            __enable_irq();
-            
-            uint32_t modified_count;
-
-            if (pio_count_copy < pulse_count) {
-                modified_count = pio_count_copy;
-            } else {
-                modified_count = pulse_count;
-            }
-
-            usbSerial_blocking_writeP_u32(modified_count);
-
-            uint32_t tail = (pio_head_copy + PIO_RING_SIZE - modified_count) % PIO_RING_SIZE;
-
-            for (int i = 0; i < modified_count; i++) {
-                uint16_t value = pio_buffer[(tail + i) % PIO_RING_SIZE];
-                usbSerial_blocking_writeP_u32(value);
-            }
+            pulseio_in_read(pulse_count);
 
             break;}
-        case RECV_PULSEIO_OUT:
+        case RECV_PULSEIO_OUT_SEND:
             {
             
             uint32_t pin_number = usbSerial_blocking_read_u8();
@@ -660,22 +409,7 @@ void get_packet() {
 
             uint16_t pulses[PIO_PULSES_SIZE];
 
-            for (int i = 0; i < pulse_count; i++) {
-                pulses[i] = (uint16_t)usbSerial_blocking_read_u32();
-            }
-
-            for (int i = 0; i < pulse_count; i++) {
-                if (i & 1) {
-                    //Odd index => duty = 0
-                    set_duty(pin_number, 0);
-                } else {
-                    //Even index => duty = duty
-                    set_duty(pin_number, duty);
-                }
-                Delay_Us(pulses[i]);
-            }
-
-            set_duty(pin_number, 0);
+            pulseio_out_send(pin_number, duty, pulses, pulse_count);
 
             break;}
         case RECV_NEOPIXEL_WRITE:
@@ -694,35 +428,15 @@ void get_packet() {
 
             uint16_t pin_mask = 1 << pin_number;
 
-            for (int i = 0; i < color_count; i+=3) {
-                uint8_t b0 = colors[i];
-                uint8_t b1 = colors[i+1];
-                uint8_t b2 = colors[i+2];
-
-                neopixel_send_byte(pin_mask, b0);
-                neopixel_send_byte(pin_mask, b1);
-                neopixel_send_byte(pin_mask, b2);
-
-                Delay_Us(200);
-            }
+            neopixel_send_buffer(pin_mask, colors, color_count);
             
             break;}
         case RECV_OW_RESET:
             {
             
             uint32_t pin_number = usbSerial_blocking_read_u8();
-
-            uint32_t mask = 1 << pin_number;
             
-            uint32_t result;
-
-            ow_delay(OW_DELAY_G);
-            GPIOA->BCR = mask;
-            ow_delay(OW_DELAY_H);
-            GPIOA->BSHR = mask;
-            ow_delay(OW_DELAY_I);
-            result = (GPIOA->INDR & mask) == (uint32_t)Bit_RESET;
-            ow_delay(OW_DELAY_J);
+            uint32_t result = one_wire_reset(1 << pin_number);
 
             usbSerial_blocking_writeP_u32(result);
 
@@ -732,12 +446,7 @@ void get_packet() {
             
             uint32_t pin_number = usbSerial_blocking_read_u8();
 
-            uint32_t mask = 1 << pin_number;
-
-            GPIOA->BCR = mask;
-            ow_delay(OW_DELAY_C);
-            GPIOA->BSHR = mask;
-            ow_delay(OW_DELAY_D);
+            one_wire_write0(1 << pin_number);
 
             break;}
         case RECV_OW_WRITE_1:
@@ -745,29 +454,15 @@ void get_packet() {
             
             uint32_t pin_number = usbSerial_blocking_read_u8();
 
-            uint32_t mask = 1 << pin_number;
-
-            GPIOA->BCR = mask;
-            ow_delay(OW_DELAY_A);
-            GPIOA->BSHR = mask;
-            ow_delay(OW_DELAY_B);
+            one_wire_write1(1 << pin_number);
             
             break;}
         case RECV_OW_READ:
             {
             
             uint32_t pin_number = usbSerial_blocking_read_u8();
-
-            uint32_t mask = 1 << pin_number;
             
-            uint32_t result;
-
-            GPIOA->BCR = mask;
-            ow_delay(OW_DELAY_A);
-            GPIOA->BSHR = mask;
-            ow_delay(OW_DELAY_E);
-            result = (GPIOA->INDR & mask) != (uint32_t)Bit_RESET;
-            ow_delay(OW_DELAY_F);
+            uint32_t result = one_wire_read(1 << pin_number);
 
             usbSerial_blocking_writeP_u32(result);
             
@@ -781,9 +476,7 @@ void get_packet() {
             
             uint32_t miso_pin = usbSerial_blocking_read_u8();
 
-            GPIO_Init_Small(clock_pin, GPIO_Mode_Out_PP);
-            GPIO_Init_Small(mosi_pin, GPIO_Mode_Out_PP);
-            GPIO_Init_Small(miso_pin, GPIO_Mode_IN_FLOATING);
+            spi_init(clock_pin, mosi_pin, miso_pin);
             
             break;}
         case RECV_SPI_READ:
@@ -805,9 +498,7 @@ void get_packet() {
 
             uint8_t read_buff[1000];
 
-            for (int i = 0; i < len; i++) {
-                read_buff[i] = spi_xfer_byte_bb_ch32(clock_pin, mosi_pin, miso_pin, write_value, mode, delay);
-            }
+            spi_read(clock_pin, mosi_pin, miso_pin, mode, write_value, delay, read_buff, len);
 
             usbSerial_blocking_writeP(read_buff, len);
 
@@ -832,14 +523,10 @@ void get_packet() {
             uint8_t write_buff[1000];
 
             for (int i = 0; i < len; i++) {
-                
                 write_buff[i] = usbSerial_blocking_read_u8();
             }
-
-            for (int i = 0; i < len; i++) {
-                spi_xfer_byte_bb_ch32(clock_pin, mosi_pin, miso_pin, write_buff[i], mode, delay);
-            }
             
+            spi_write(clock_pin, mosi_pin, miso_pin, mode, delay, write_buff, len);
             
             break;}
         case RECV_SPI_WRITE_READ:
@@ -865,9 +552,8 @@ void get_packet() {
                 write_buff[i] = usbSerial_blocking_read_u8();
             }
 
-            for (int i = 0; i < len; i++) {
-                read_buff[i] = spi_xfer_byte_bb_ch32(clock_pin, mosi_pin, miso_pin, write_buff[i], mode, delay);
-            }
+            
+            spi_write_read(clock_pin, mosi_pin, miso_pin, mode, delay, write_buff, read_buff, len);
 
 
             usbSerial_blocking_writeP(read_buff, len);

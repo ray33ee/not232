@@ -1,5 +1,5 @@
 
-;; Function DMA_DeInit (DMA_DeInit, funcdef_no=29, decl_uid=4614, cgraph_uid=29, symbol_order=29)
+;; Function DMA_DeInit (DMA_DeInit, funcdef_no=29, decl_uid=4661, cgraph_uid=29, symbol_order=29)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -487,7 +487,7 @@ try_optimize_cfg iteration 2
 (code_label 144 141 145 20 1 (nil) [8 uses])
 (note 145 144 0 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
 
-;; Function DMA_Init (DMA_Init, funcdef_no=30, decl_uid=4617, cgraph_uid=30, symbol_order=30)
+;; Function DMA_Init (DMA_Init, funcdef_no=30, decl_uid=4664, cgraph_uid=30, symbol_order=30)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -649,7 +649,7 @@ try_optimize_cfg iteration 2
         (reg:SI 89 [ _18 ])) "../Peripheral/src/ch32v20x_dma.c":110 -1
      (nil))
 
-;; Function DMA_StructInit (DMA_StructInit, funcdef_no=31, decl_uid=4619, cgraph_uid=31, symbol_order=31)
+;; Function DMA_StructInit (DMA_StructInit, funcdef_no=31, decl_uid=4666, cgraph_uid=31, symbol_order=31)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -744,7 +744,7 @@ try_optimize_cfg iteration 2
         (const_int 0 [0])) "../Peripheral/src/ch32v20x_dma.c":137 -1
      (nil))
 
-;; Function DMA_Cmd (DMA_Cmd, funcdef_no=32, decl_uid=4622, cgraph_uid=32, symbol_order=32)
+;; Function DMA_Cmd (DMA_Cmd, funcdef_no=32, decl_uid=4669, cgraph_uid=32, symbol_order=32)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -835,7 +835,7 @@ try_optimize_cfg iteration 2
 (code_label 26 23 27 7 15 (nil) [1 uses])
 (note 27 26 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function DMA_ITConfig (DMA_ITConfig, funcdef_no=33, decl_uid=4626, cgraph_uid=33, symbol_order=33)
+;; Function DMA_ITConfig (DMA_ITConfig, funcdef_no=33, decl_uid=4673, cgraph_uid=33, symbol_order=33)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -924,7 +924,7 @@ try_optimize_cfg iteration 2
 (code_label 26 23 27 7 19 (nil) [1 uses])
 (note 27 26 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function DMA_SetCurrDataCounter (DMA_SetCurrDataCounter, funcdef_no=34, decl_uid=4629, cgraph_uid=34, symbol_order=34)
+;; Function DMA_SetCurrDataCounter (DMA_SetCurrDataCounter, funcdef_no=34, decl_uid=4676, cgraph_uid=34, symbol_order=34)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -966,7 +966,7 @@ try_optimize_cfg iteration 2
         (reg:SI 72 [ _1 ])) "../Peripheral/src/ch32v20x_dma.c":205 -1
      (nil))
 
-;; Function DMA_GetCurrDataCounter (DMA_GetCurrDataCounter, funcdef_no=35, decl_uid=4631, cgraph_uid=35, symbol_order=35)
+;; Function DMA_GetCurrDataCounter (DMA_GetCurrDataCounter, funcdef_no=35, decl_uid=4678, cgraph_uid=35, symbol_order=35)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1017,7 +1017,7 @@ try_optimize_cfg iteration 2
 (insn 15 14 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_dma.c":223 -1
      (nil))
 
-;; Function DMA_GetFlagStatus (DMA_GetFlagStatus, funcdef_no=36, decl_uid=4633, cgraph_uid=36, symbol_order=36)
+;; Function DMA_GetFlagStatus (DMA_GetFlagStatus, funcdef_no=36, decl_uid=4680, cgraph_uid=36, symbol_order=36)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1090,7 +1090,7 @@ try_optimize_cfg iteration 2
 (insn 24 23 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_dma.c":283 -1
      (nil))
 
-;; Function DMA_ClearFlag (DMA_ClearFlag, funcdef_no=37, decl_uid=4635, cgraph_uid=37, symbol_order=37)
+;; Function DMA_ClearFlag (DMA_ClearFlag, funcdef_no=37, decl_uid=4682, cgraph_uid=37, symbol_order=37)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1129,7 +1129,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 72 [ DMAy_FLAG ])) "../Peripheral/src/ch32v20x_dma.c":327 -1
      (nil))
 
-;; Function DMA_GetITStatus (DMA_GetITStatus, funcdef_no=41, decl_uid=4637, cgraph_uid=38, symbol_order=38)
+;; Function DMA_GetITStatus (DMA_GetITStatus, funcdef_no=41, decl_uid=4684, cgraph_uid=38, symbol_order=38)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1164,11 +1164,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 7 6 8 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("DMA_GetFlagStatus") [flags 0x3] <function_decl 06709960 DMA_GetFlagStatus>) [0 DMA_GetFlagStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("DMA_GetFlagStatus") [flags 0x3] <function_decl 06669348 DMA_GetFlagStatus>) [0 DMA_GetFlagStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("DMA_GetFlagStatus") [flags 0x3] <function_decl 06709960 DMA_GetFlagStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("DMA_GetFlagStatus") [flags 0x3] <function_decl 06669348 DMA_GetFlagStatus>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -1182,7 +1182,7 @@ try_optimize_cfg iteration 2
 (insn 13 12 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_dma.c":371 -1
      (nil))
 
-;; Function DMA_ClearITPendingBit (DMA_ClearITPendingBit, funcdef_no=43, decl_uid=4639, cgraph_uid=39, symbol_order=39)
+;; Function DMA_ClearITPendingBit (DMA_ClearITPendingBit, funcdef_no=43, decl_uid=4686, cgraph_uid=39, symbol_order=39)
 
 
 ;; Generating RTL for gimple basic block 2

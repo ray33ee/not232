@@ -1,5 +1,5 @@
 
-;; Function CRC_ResetDR (CRC_ResetDR, funcdef_no=29, decl_uid=4628, cgraph_uid=29, symbol_order=29)
+;; Function CRC_ResetDR (CRC_ResetDR, funcdef_no=29, decl_uid=4675, cgraph_uid=29, symbol_order=29)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -38,7 +38,7 @@ try_optimize_cfg iteration 2
         (reg:SI 73)) "../Peripheral/src/ch32v20x_crc.c":23 -1
      (nil))
 
-;; Function CRC_CalcCRC (CRC_CalcCRC, funcdef_no=30, decl_uid=4630, cgraph_uid=30, symbol_order=30)
+;; Function CRC_CalcCRC (CRC_CalcCRC, funcdef_no=30, decl_uid=4677, cgraph_uid=30, symbol_order=30)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -90,7 +90,7 @@ try_optimize_cfg iteration 2
 (insn 16 15 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_crc.c":40 -1
      (nil))
 
-;; Function CRC_CalcBlockCRC (CRC_CalcBlockCRC, funcdef_no=31, decl_uid=4633, cgraph_uid=31, symbol_order=31)
+;; Function CRC_CalcBlockCRC (CRC_CalcBlockCRC, funcdef_no=31, decl_uid=4680, cgraph_uid=31, symbol_order=31)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -198,7 +198,7 @@ try_optimize_cfg iteration 2
 (insn 36 35 0 6 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_crc.c":61 -1
      (nil))
 
-;; Function CRC_GetCRC (CRC_GetCRC, funcdef_no=32, decl_uid=4635, cgraph_uid=32, symbol_order=32)
+;; Function CRC_GetCRC (CRC_GetCRC, funcdef_no=32, decl_uid=4682, cgraph_uid=32, symbol_order=32)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -239,7 +239,7 @@ try_optimize_cfg iteration 2
 (insn 12 11 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_crc.c":73 -1
      (nil))
 
-;; Function CRC_SetIDRegister (CRC_SetIDRegister, funcdef_no=33, decl_uid=4637, cgraph_uid=33, symbol_order=33)
+;; Function CRC_SetIDRegister (CRC_SetIDRegister, funcdef_no=33, decl_uid=4684, cgraph_uid=33, symbol_order=33)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -278,7 +278,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:QI (reg/v:SI 72 [ IDValue ]) 0)) "../Peripheral/src/ch32v20x_crc.c":86 -1
      (nil))
 
-;; Function CRC_GetIDRegister (CRC_GetIDRegister, funcdef_no=34, decl_uid=4639, cgraph_uid=34, symbol_order=34)
+;; Function CRC_GetIDRegister (CRC_GetIDRegister, funcdef_no=34, decl_uid=4686, cgraph_uid=34, symbol_order=34)
 
 
 ;; Generating RTL for gimple basic block 2

@@ -1,5 +1,5 @@
 
-;; Function TI1_Config (TI1_Config, funcdef_no=116, decl_uid=4644, cgraph_uid=116, symbol_order=116)
+;; Function TI1_Config (TI1_Config, funcdef_no=116, decl_uid=4691, cgraph_uid=116, symbol_order=116)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -164,7 +164,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 82 [ tmpccer ]) 0)) "../Peripheral/src/ch32v20x_tim.c":2208 -1
      (nil))
 
-;; Function TI2_Config (TI2_Config, funcdef_no=117, decl_uid=4649, cgraph_uid=117, symbol_order=117)
+;; Function TI2_Config (TI2_Config, funcdef_no=117, decl_uid=4696, cgraph_uid=117, symbol_order=117)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -364,7 +364,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 83 [ tmpccer ]) 0)) "../Peripheral/src/ch32v20x_tim.c":2249 -1
      (nil))
 
-;; Function TIM_DeInit (TIM_DeInit, funcdef_no=29, decl_uid=4375, cgraph_uid=29, symbol_order=29)
+;; Function TIM_DeInit (TIM_DeInit, funcdef_no=29, decl_uid=4422, cgraph_uid=29, symbol_order=29)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -450,11 +450,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 2048 [0x800])
         (nil)))
 (call_insn 15 14 16 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0656b8e8 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065fb8e8 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":44 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0656b8e8 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065fb8e8 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -473,11 +473,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 2048 [0x800])
         (nil)))
 (call_insn 20 19 21 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0656b8e8 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065fb8e8 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":45 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0656b8e8 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065fb8e8 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -511,11 +511,11 @@ try_optimize_cfg iteration 2
         (const_int 1 [0x1])) "../Peripheral/src/ch32v20x_tim.c":49 -1
      (nil))
 (call_insn 32 31 33 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0656b960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 065fb960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":49 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0656b960 RCC_APB1PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 065fb960 RCC_APB1PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -529,11 +529,11 @@ try_optimize_cfg iteration 2
         (const_int 1 [0x1])) "../Peripheral/src/ch32v20x_tim.c":50 -1
      (nil))
 (call_insn 36 35 37 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0656b960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 065fb960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":50 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0656b960 RCC_APB1PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 065fb960 RCC_APB1PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -572,11 +572,11 @@ try_optimize_cfg iteration 2
         (const_int 2 [0x2])) "../Peripheral/src/ch32v20x_tim.c":54 -1
      (nil))
 (call_insn 49 48 50 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0656b960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 065fb960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":54 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0656b960 RCC_APB1PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 065fb960 RCC_APB1PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -590,11 +590,11 @@ try_optimize_cfg iteration 2
         (const_int 2 [0x2])) "../Peripheral/src/ch32v20x_tim.c":55 -1
      (nil))
 (call_insn 53 52 54 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0656b960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 065fb960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":55 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0656b960 RCC_APB1PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 065fb960 RCC_APB1PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -633,11 +633,11 @@ try_optimize_cfg iteration 2
         (const_int 4 [0x4])) "../Peripheral/src/ch32v20x_tim.c":59 -1
      (nil))
 (call_insn 66 65 67 10 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0656b960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 065fb960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":59 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0656b960 RCC_APB1PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 065fb960 RCC_APB1PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -651,11 +651,11 @@ try_optimize_cfg iteration 2
         (const_int 4 [0x4])) "../Peripheral/src/ch32v20x_tim.c":60 -1
      (nil))
 (call_insn 70 69 71 10 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0656b960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 065fb960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":60 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0656b960 RCC_APB1PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 065fb960 RCC_APB1PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -694,11 +694,11 @@ try_optimize_cfg iteration 2
         (const_int 8 [0x8])) "../Peripheral/src/ch32v20x_tim.c":64 -1
      (nil))
 (call_insn 83 82 84 12 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0656b960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 065fb960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":64 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0656b960 RCC_APB1PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 065fb960 RCC_APB1PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -712,11 +712,11 @@ try_optimize_cfg iteration 2
         (const_int 8 [0x8])) "../Peripheral/src/ch32v20x_tim.c":65 -1
      (nil))
 (call_insn 87 86 90 12 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0656b960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 065fb960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":65 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0656b960 RCC_APB1PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 065fb960 RCC_APB1PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -724,7 +724,7 @@ try_optimize_cfg iteration 2
 (code_label 90 87 91 14 3 (nil) [5 uses])
 (note 91 90 0 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
 
-;; Function TIM_TimeBaseInit (TIM_TimeBaseInit, funcdef_no=30, decl_uid=4378, cgraph_uid=30, symbol_order=30)
+;; Function TIM_TimeBaseInit (TIM_TimeBaseInit, funcdef_no=30, decl_uid=4425, cgraph_uid=30, symbol_order=30)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -977,7 +977,7 @@ try_optimize_cfg iteration 2
         (reg:HI 103)) "../Peripheral/src/ch32v20x_tim.c":105 -1
      (nil))
 
-;; Function TIM_OC1Init (TIM_OC1Init, funcdef_no=31, decl_uid=4381, cgraph_uid=31, symbol_order=31)
+;; Function TIM_OC1Init (TIM_OC1Init, funcdef_no=31, decl_uid=4428, cgraph_uid=31, symbol_order=31)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1300,7 +1300,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 82 [ tmpccer ]) 0)) "../Peripheral/src/ch32v20x_tim.c":152 -1
      (nil))
 
-;; Function TIM_OC2Init (TIM_OC2Init, funcdef_no=32, decl_uid=4384, cgraph_uid=32, symbol_order=32)
+;; Function TIM_OC2Init (TIM_OC2Init, funcdef_no=32, decl_uid=4431, cgraph_uid=32, symbol_order=32)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1690,7 +1690,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 89 [ tmpccer ]) 0)) "../Peripheral/src/ch32v20x_tim.c":197 -1
      (nil))
 
-;; Function TIM_OC3Init (TIM_OC3Init, funcdef_no=33, decl_uid=4387, cgraph_uid=33, symbol_order=33)
+;; Function TIM_OC3Init (TIM_OC3Init, funcdef_no=33, decl_uid=4434, cgraph_uid=33, symbol_order=33)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2073,7 +2073,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 88 [ tmpccer ]) 0)) "../Peripheral/src/ch32v20x_tim.c":241 -1
      (nil))
 
-;; Function TIM_OC4Init (TIM_OC4Init, funcdef_no=34, decl_uid=4390, cgraph_uid=34, symbol_order=34)
+;; Function TIM_OC4Init (TIM_OC4Init, funcdef_no=34, decl_uid=4437, cgraph_uid=34, symbol_order=34)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2381,7 +2381,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 89 [ tmpccer ]) 0)) "../Peripheral/src/ch32v20x_tim.c":279 -1
      (nil))
 
-;; Function TIM_BDTRConfig (TIM_BDTRConfig, funcdef_no=37, decl_uid=4399, cgraph_uid=37, symbol_order=37)
+;; Function TIM_BDTRConfig (TIM_BDTRConfig, funcdef_no=37, decl_uid=4446, cgraph_uid=37, symbol_order=37)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2489,7 +2489,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 84 [ _13 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":390 -1
      (nil))
 
-;; Function TIM_TimeBaseStructInit (TIM_TimeBaseStructInit, funcdef_no=38, decl_uid=4401, cgraph_uid=38, symbol_order=38)
+;; Function TIM_TimeBaseStructInit (TIM_TimeBaseStructInit, funcdef_no=38, decl_uid=4448, cgraph_uid=38, symbol_order=38)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2551,7 +2551,7 @@ try_optimize_cfg iteration 2
         (const_int 0 [0])) "../Peripheral/src/ch32v20x_tim.c":411 -1
      (nil))
 
-;; Function TIM_OCStructInit (TIM_OCStructInit, funcdef_no=39, decl_uid=4403, cgraph_uid=39, symbol_order=39)
+;; Function TIM_OCStructInit (TIM_OCStructInit, funcdef_no=39, decl_uid=4450, cgraph_uid=39, symbol_order=39)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2628,7 +2628,7 @@ try_optimize_cfg iteration 2
         (const_int 0 [0])) "../Peripheral/src/ch32v20x_tim.c":432 -1
      (nil))
 
-;; Function TIM_ICStructInit (TIM_ICStructInit, funcdef_no=40, decl_uid=4405, cgraph_uid=40, symbol_order=40)
+;; Function TIM_ICStructInit (TIM_ICStructInit, funcdef_no=40, decl_uid=4452, cgraph_uid=40, symbol_order=40)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2690,7 +2690,7 @@ try_optimize_cfg iteration 2
         (const_int 0 [0])) "../Peripheral/src/ch32v20x_tim.c":450 -1
      (nil))
 
-;; Function TIM_BDTRStructInit (TIM_BDTRStructInit, funcdef_no=41, decl_uid=4407, cgraph_uid=41, symbol_order=41)
+;; Function TIM_BDTRStructInit (TIM_BDTRStructInit, funcdef_no=41, decl_uid=4454, cgraph_uid=41, symbol_order=41)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2761,7 +2761,7 @@ try_optimize_cfg iteration 2
         (const_int 0 [0])) "../Peripheral/src/ch32v20x_tim.c":470 -1
      (nil))
 
-;; Function TIM_Cmd (TIM_Cmd, funcdef_no=42, decl_uid=4410, cgraph_uid=42, symbol_order=42)
+;; Function TIM_Cmd (TIM_Cmd, funcdef_no=42, decl_uid=4457, cgraph_uid=42, symbol_order=42)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2856,7 +2856,7 @@ try_optimize_cfg iteration 2
 (code_label 28 25 29 7 28 (nil) [1 uses])
 (note 29 28 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function TIM_CtrlPWMOutputs (TIM_CtrlPWMOutputs, funcdef_no=43, decl_uid=4413, cgraph_uid=43, symbol_order=43)
+;; Function TIM_CtrlPWMOutputs (TIM_CtrlPWMOutputs, funcdef_no=43, decl_uid=4460, cgraph_uid=43, symbol_order=43)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2966,7 +2966,7 @@ try_optimize_cfg iteration 2
 (code_label 33 30 34 7 32 (nil) [1 uses])
 (note 34 33 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function TIM_ITConfig (TIM_ITConfig, funcdef_no=44, decl_uid=4417, cgraph_uid=44, symbol_order=44)
+;; Function TIM_ITConfig (TIM_ITConfig, funcdef_no=44, decl_uid=4464, cgraph_uid=44, symbol_order=44)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3074,7 +3074,7 @@ try_optimize_cfg iteration 2
 (code_label 33 30 34 7 36 (nil) [1 uses])
 (note 34 33 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function TIM_GenerateEvent (TIM_GenerateEvent, funcdef_no=45, decl_uid=4420, cgraph_uid=45, symbol_order=45)
+;; Function TIM_GenerateEvent (TIM_GenerateEvent, funcdef_no=45, decl_uid=4467, cgraph_uid=45, symbol_order=45)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3113,7 +3113,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 73 [ TIM_EventSource ]) 0)) "../Peripheral/src/ch32v20x_tim.c":568 -1
      (nil))
 
-;; Function TIM_DMAConfig (TIM_DMAConfig, funcdef_no=46, decl_uid=4424, cgraph_uid=46, symbol_order=46)
+;; Function TIM_DMAConfig (TIM_DMAConfig, funcdef_no=46, decl_uid=4471, cgraph_uid=46, symbol_order=46)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3162,7 +3162,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 72 [ _1 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":603 -1
      (nil))
 
-;; Function TIM_DMACmd (TIM_DMACmd, funcdef_no=121, decl_uid=4428, cgraph_uid=47, symbol_order=47)
+;; Function TIM_DMACmd (TIM_DMACmd, funcdef_no=121, decl_uid=4475, cgraph_uid=47, symbol_order=47)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3207,11 +3207,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 72 [ TIMx ])) -1
      (nil))
 (call_insn 11 10 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_ITConfig") [flags 0x3] <function_decl 06626960 TIM_ITConfig>) [0 TIM_ITConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_ITConfig") [flags 0x3] <function_decl 066e5348 TIM_ITConfig>) [0 TIM_ITConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_ITConfig") [flags 0x3] <function_decl 06626960 TIM_ITConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_ITConfig") [flags 0x3] <function_decl 066e5348 TIM_ITConfig>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -3219,7 +3219,7 @@ try_optimize_cfg iteration 2
             (expr_list:SI (use (reg:SI 12 a2))
                 (nil)))))
 
-;; Function TIM_InternalClockConfig (TIM_InternalClockConfig, funcdef_no=48, decl_uid=4430, cgraph_uid=48, symbol_order=48)
+;; Function TIM_InternalClockConfig (TIM_InternalClockConfig, funcdef_no=48, decl_uid=4477, cgraph_uid=48, symbol_order=48)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3269,7 +3269,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 73 [ _2 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":647 -1
      (nil))
 
-;; Function TIM_ITRxExternalClockConfig (TIM_ITRxExternalClockConfig, funcdef_no=49, decl_uid=4433, cgraph_uid=49, symbol_order=49)
+;; Function TIM_ITRxExternalClockConfig (TIM_ITRxExternalClockConfig, funcdef_no=49, decl_uid=4480, cgraph_uid=49, symbol_order=49)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3377,7 +3377,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 73 [ _2 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":667 -1
      (nil))
 
-;; Function TIM_TIxExternalClockConfig (TIM_TIxExternalClockConfig, funcdef_no=50, decl_uid=4438, cgraph_uid=50, symbol_order=50)
+;; Function TIM_TIxExternalClockConfig (TIM_TIxExternalClockConfig, funcdef_no=50, decl_uid=4485, cgraph_uid=50, symbol_order=50)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3449,11 +3449,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 77 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":693 -1
      (nil))
 (call_insn 18 17 19 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TI2_Config") [flags 0x3] <function_decl 0665abb8 TI2_Config>) [0 TI2_Config S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TI2_Config") [flags 0x3] <function_decl 066ef5a0 TI2_Config>) [0 TI2_Config S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":693 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TI2_Config") [flags 0x3] <function_decl 0665abb8 TI2_Config>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TI2_Config") [flags 0x3] <function_decl 066ef5a0 TI2_Config>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -3483,11 +3483,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 77 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":697 -1
      (nil))
 (call_insn 28 27 29 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TI1_Config") [flags 0x3] <function_decl 0665ab40 TI1_Config>) [0 TI1_Config S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TI1_Config") [flags 0x3] <function_decl 066ef528 TI1_Config>) [0 TI1_Config S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":697 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TI1_Config") [flags 0x3] <function_decl 0665ab40 TI1_Config>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TI1_Config") [flags 0x3] <function_decl 066ef528 TI1_Config>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -3573,7 +3573,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 73 [ _2 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":701 -1
      (nil))
 
-;; Function TIM_ETRConfig (TIM_ETRConfig, funcdef_no=53, decl_uid=4453, cgraph_uid=53, symbol_order=53)
+;; Function TIM_ETRConfig (TIM_ETRConfig, funcdef_no=53, decl_uid=4500, cgraph_uid=53, symbol_order=53)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3676,7 +3676,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 76 [ tmpsmcr ]) 0)) "../Peripheral/src/ch32v20x_tim.c":790 -1
      (nil))
 
-;; Function TIM_ETRClockMode1Config (TIM_ETRClockMode1Config, funcdef_no=51, decl_uid=4443, cgraph_uid=51, symbol_order=51)
+;; Function TIM_ETRClockMode1Config (TIM_ETRClockMode1Config, funcdef_no=51, decl_uid=4490, cgraph_uid=51, symbol_order=51)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3733,11 +3733,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 75 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":728 -1
      (nil))
 (call_insn 16 15 17 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_ETRConfig") [flags 0x3] <function_decl 06626d98 TIM_ETRConfig>) [0 TIM_ETRConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_ETRConfig") [flags 0x3] <function_decl 066e5780 TIM_ETRConfig>) [0 TIM_ETRConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":728 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_ETRConfig") [flags 0x3] <function_decl 06626d98 TIM_ETRConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_ETRConfig") [flags 0x3] <function_decl 066e5780 TIM_ETRConfig>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -3798,7 +3798,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 74 [ tmpsmcr ]) 0)) "../Peripheral/src/ch32v20x_tim.c":734 -1
      (nil))
 
-;; Function TIM_ETRClockMode2Config (TIM_ETRClockMode2Config, funcdef_no=52, decl_uid=4448, cgraph_uid=52, symbol_order=52)
+;; Function TIM_ETRClockMode2Config (TIM_ETRClockMode2Config, funcdef_no=52, decl_uid=4495, cgraph_uid=52, symbol_order=52)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3851,11 +3851,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 74 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":759 -1
      (nil))
 (call_insn 14 13 15 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_ETRConfig") [flags 0x3] <function_decl 06626d98 TIM_ETRConfig>) [0 TIM_ETRConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_ETRConfig") [flags 0x3] <function_decl 066e5780 TIM_ETRConfig>) [0 TIM_ETRConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":759 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_ETRConfig") [flags 0x3] <function_decl 06626d98 TIM_ETRConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_ETRConfig") [flags 0x3] <function_decl 066e5780 TIM_ETRConfig>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -3887,7 +3887,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 73 [ _2 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":760 -1
      (nil))
 
-;; Function TIM_PrescalerConfig (TIM_PrescalerConfig, funcdef_no=54, decl_uid=4457, cgraph_uid=54, symbol_order=54)
+;; Function TIM_PrescalerConfig (TIM_PrescalerConfig, funcdef_no=54, decl_uid=4504, cgraph_uid=54, symbol_order=54)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3935,7 +3935,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 74 [ TIM_PSCReloadMode ]) 0)) "../Peripheral/src/ch32v20x_tim.c":810 -1
      (nil))
 
-;; Function TIM_CounterModeConfig (TIM_CounterModeConfig, funcdef_no=55, decl_uid=4460, cgraph_uid=55, symbol_order=55)
+;; Function TIM_CounterModeConfig (TIM_CounterModeConfig, funcdef_no=55, decl_uid=4507, cgraph_uid=55, symbol_order=55)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -4009,7 +4009,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 74 [ tmpcr1 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":835 -1
      (nil))
 
-;; Function TIM_SelectInputTrigger (TIM_SelectInputTrigger, funcdef_no=56, decl_uid=4463, cgraph_uid=56, symbol_order=56)
+;; Function TIM_SelectInputTrigger (TIM_SelectInputTrigger, funcdef_no=56, decl_uid=4510, cgraph_uid=56, symbol_order=56)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -4085,7 +4085,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 74 [ tmpsmcr ]) 0)) "../Peripheral/src/ch32v20x_tim.c":863 -1
      (nil))
 
-;; Function TIM_EncoderInterfaceConfig (TIM_EncoderInterfaceConfig, funcdef_no=57, decl_uid=4468, cgraph_uid=57, symbol_order=57)
+;; Function TIM_EncoderInterfaceConfig (TIM_EncoderInterfaceConfig, funcdef_no=57, decl_uid=4515, cgraph_uid=57, symbol_order=57)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -4267,7 +4267,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 82 [ tmpccer ]) 0)) "../Peripheral/src/ch32v20x_tim.c":906 -1
      (nil))
 
-;; Function TIM_ForcedOC1Config (TIM_ForcedOC1Config, funcdef_no=58, decl_uid=4471, cgraph_uid=58, symbol_order=58)
+;; Function TIM_ForcedOC1Config (TIM_ForcedOC1Config, funcdef_no=58, decl_uid=4518, cgraph_uid=58, symbol_order=58)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -4343,7 +4343,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 74 [ tmpccmr1 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":929 -1
      (nil))
 
-;; Function TIM_ForcedOC2Config (TIM_ForcedOC2Config, funcdef_no=59, decl_uid=4474, cgraph_uid=59, symbol_order=59)
+;; Function TIM_ForcedOC2Config (TIM_ForcedOC2Config, funcdef_no=59, decl_uid=4521, cgraph_uid=59, symbol_order=59)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -4434,7 +4434,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 75 [ tmpccmr1 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":952 -1
      (nil))
 
-;; Function TIM_ForcedOC3Config (TIM_ForcedOC3Config, funcdef_no=60, decl_uid=4477, cgraph_uid=60, symbol_order=60)
+;; Function TIM_ForcedOC3Config (TIM_ForcedOC3Config, funcdef_no=60, decl_uid=4524, cgraph_uid=60, symbol_order=60)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -4510,7 +4510,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 74 [ tmpccmr2 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":975 -1
      (nil))
 
-;; Function TIM_ForcedOC4Config (TIM_ForcedOC4Config, funcdef_no=61, decl_uid=4480, cgraph_uid=61, symbol_order=61)
+;; Function TIM_ForcedOC4Config (TIM_ForcedOC4Config, funcdef_no=61, decl_uid=4527, cgraph_uid=61, symbol_order=61)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -4601,7 +4601,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 75 [ tmpccmr2 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":998 -1
      (nil))
 
-;; Function TIM_ARRPreloadConfig (TIM_ARRPreloadConfig, funcdef_no=62, decl_uid=4483, cgraph_uid=62, symbol_order=62)
+;; Function TIM_ARRPreloadConfig (TIM_ARRPreloadConfig, funcdef_no=62, decl_uid=4530, cgraph_uid=62, symbol_order=62)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -4696,7 +4696,7 @@ try_optimize_cfg iteration 2
 (code_label 28 25 29 7 63 (nil) [1 uses])
 (note 29 28 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function TIM_SelectCOM (TIM_SelectCOM, funcdef_no=63, decl_uid=4486, cgraph_uid=63, symbol_order=63)
+;; Function TIM_SelectCOM (TIM_SelectCOM, funcdef_no=63, decl_uid=4533, cgraph_uid=63, symbol_order=63)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -4795,7 +4795,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 67 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function TIM_SelectCCDMA (TIM_SelectCCDMA, funcdef_no=64, decl_uid=4489, cgraph_uid=64, symbol_order=64)
+;; Function TIM_SelectCCDMA (TIM_SelectCCDMA, funcdef_no=64, decl_uid=4536, cgraph_uid=64, symbol_order=64)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -4894,7 +4894,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 71 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function TIM_CCPreloadControl (TIM_CCPreloadControl, funcdef_no=65, decl_uid=4492, cgraph_uid=65, symbol_order=65)
+;; Function TIM_CCPreloadControl (TIM_CCPreloadControl, funcdef_no=65, decl_uid=4539, cgraph_uid=65, symbol_order=65)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -4993,7 +4993,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 75 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function TIM_OC1PreloadConfig (TIM_OC1PreloadConfig, funcdef_no=66, decl_uid=4495, cgraph_uid=66, symbol_order=66)
+;; Function TIM_OC1PreloadConfig (TIM_OC1PreloadConfig, funcdef_no=66, decl_uid=4542, cgraph_uid=66, symbol_order=66)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5069,7 +5069,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 74 [ tmpccmr1 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1108 -1
      (nil))
 
-;; Function TIM_OC2PreloadConfig (TIM_OC2PreloadConfig, funcdef_no=67, decl_uid=4498, cgraph_uid=67, symbol_order=67)
+;; Function TIM_OC2PreloadConfig (TIM_OC2PreloadConfig, funcdef_no=67, decl_uid=4545, cgraph_uid=67, symbol_order=67)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5160,7 +5160,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 75 [ tmpccmr1 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1130 -1
      (nil))
 
-;; Function TIM_OC3PreloadConfig (TIM_OC3PreloadConfig, funcdef_no=68, decl_uid=4501, cgraph_uid=68, symbol_order=68)
+;; Function TIM_OC3PreloadConfig (TIM_OC3PreloadConfig, funcdef_no=68, decl_uid=4548, cgraph_uid=68, symbol_order=68)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5236,7 +5236,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 74 [ tmpccmr2 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1152 -1
      (nil))
 
-;; Function TIM_OC4PreloadConfig (TIM_OC4PreloadConfig, funcdef_no=69, decl_uid=4504, cgraph_uid=69, symbol_order=69)
+;; Function TIM_OC4PreloadConfig (TIM_OC4PreloadConfig, funcdef_no=69, decl_uid=4551, cgraph_uid=69, symbol_order=69)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5327,7 +5327,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 75 [ tmpccmr2 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1174 -1
      (nil))
 
-;; Function TIM_OC1FastConfig (TIM_OC1FastConfig, funcdef_no=70, decl_uid=4507, cgraph_uid=70, symbol_order=70)
+;; Function TIM_OC1FastConfig (TIM_OC1FastConfig, funcdef_no=70, decl_uid=4554, cgraph_uid=70, symbol_order=70)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5403,7 +5403,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 74 [ tmpccmr1 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1196 -1
      (nil))
 
-;; Function TIM_OC2FastConfig (TIM_OC2FastConfig, funcdef_no=71, decl_uid=4510, cgraph_uid=71, symbol_order=71)
+;; Function TIM_OC2FastConfig (TIM_OC2FastConfig, funcdef_no=71, decl_uid=4557, cgraph_uid=71, symbol_order=71)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5486,7 +5486,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 75 [ tmpccmr1 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1218 -1
      (nil))
 
-;; Function TIM_OC3FastConfig (TIM_OC3FastConfig, funcdef_no=72, decl_uid=4513, cgraph_uid=72, symbol_order=72)
+;; Function TIM_OC3FastConfig (TIM_OC3FastConfig, funcdef_no=72, decl_uid=4560, cgraph_uid=72, symbol_order=72)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5562,7 +5562,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 74 [ tmpccmr2 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1240 -1
      (nil))
 
-;; Function TIM_OC4FastConfig (TIM_OC4FastConfig, funcdef_no=73, decl_uid=4516, cgraph_uid=73, symbol_order=73)
+;; Function TIM_OC4FastConfig (TIM_OC4FastConfig, funcdef_no=73, decl_uid=4563, cgraph_uid=73, symbol_order=73)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5645,7 +5645,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 75 [ tmpccmr2 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1262 -1
      (nil))
 
-;; Function TIM_ClearOC1Ref (TIM_ClearOC1Ref, funcdef_no=74, decl_uid=4519, cgraph_uid=74, symbol_order=74)
+;; Function TIM_ClearOC1Ref (TIM_ClearOC1Ref, funcdef_no=74, decl_uid=4566, cgraph_uid=74, symbol_order=74)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5721,7 +5721,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 74 [ tmpccmr1 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1284 -1
      (nil))
 
-;; Function TIM_ClearOC2Ref (TIM_ClearOC2Ref, funcdef_no=75, decl_uid=4522, cgraph_uid=75, symbol_order=75)
+;; Function TIM_ClearOC2Ref (TIM_ClearOC2Ref, funcdef_no=75, decl_uid=4569, cgraph_uid=75, symbol_order=75)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5812,7 +5812,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 75 [ tmpccmr1 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1306 -1
      (nil))
 
-;; Function TIM_ClearOC3Ref (TIM_ClearOC3Ref, funcdef_no=76, decl_uid=4525, cgraph_uid=76, symbol_order=76)
+;; Function TIM_ClearOC3Ref (TIM_ClearOC3Ref, funcdef_no=76, decl_uid=4572, cgraph_uid=76, symbol_order=76)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5888,7 +5888,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 74 [ tmpccmr2 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1328 -1
      (nil))
 
-;; Function TIM_ClearOC4Ref (TIM_ClearOC4Ref, funcdef_no=77, decl_uid=4528, cgraph_uid=77, symbol_order=77)
+;; Function TIM_ClearOC4Ref (TIM_ClearOC4Ref, funcdef_no=77, decl_uid=4575, cgraph_uid=77, symbol_order=77)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5979,7 +5979,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 75 [ tmpccmr2 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1350 -1
      (nil))
 
-;; Function TIM_OC1PolarityConfig (TIM_OC1PolarityConfig, funcdef_no=78, decl_uid=4531, cgraph_uid=78, symbol_order=78)
+;; Function TIM_OC1PolarityConfig (TIM_OC1PolarityConfig, funcdef_no=78, decl_uid=4578, cgraph_uid=78, symbol_order=78)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -6055,7 +6055,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 74 [ tmpccer ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1372 -1
      (nil))
 
-;; Function TIM_OC1NPolarityConfig (TIM_OC1NPolarityConfig, funcdef_no=79, decl_uid=4534, cgraph_uid=79, symbol_order=79)
+;; Function TIM_OC1NPolarityConfig (TIM_OC1NPolarityConfig, funcdef_no=79, decl_uid=4581, cgraph_uid=79, symbol_order=79)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -6131,7 +6131,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 74 [ tmpccer ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1394 -1
      (nil))
 
-;; Function TIM_OC2PolarityConfig (TIM_OC2PolarityConfig, funcdef_no=80, decl_uid=4537, cgraph_uid=80, symbol_order=80)
+;; Function TIM_OC2PolarityConfig (TIM_OC2PolarityConfig, funcdef_no=80, decl_uid=4584, cgraph_uid=80, symbol_order=80)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -6214,7 +6214,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 75 [ tmpccer ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1416 -1
      (nil))
 
-;; Function TIM_OC2NPolarityConfig (TIM_OC2NPolarityConfig, funcdef_no=81, decl_uid=4540, cgraph_uid=81, symbol_order=81)
+;; Function TIM_OC2NPolarityConfig (TIM_OC2NPolarityConfig, funcdef_no=81, decl_uid=4587, cgraph_uid=81, symbol_order=81)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -6297,7 +6297,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 75 [ tmpccer ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1438 -1
      (nil))
 
-;; Function TIM_OC3PolarityConfig (TIM_OC3PolarityConfig, funcdef_no=82, decl_uid=4543, cgraph_uid=82, symbol_order=82)
+;; Function TIM_OC3PolarityConfig (TIM_OC3PolarityConfig, funcdef_no=82, decl_uid=4590, cgraph_uid=82, symbol_order=82)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -6380,7 +6380,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 75 [ tmpccer ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1460 -1
      (nil))
 
-;; Function TIM_OC3NPolarityConfig (TIM_OC3NPolarityConfig, funcdef_no=83, decl_uid=4546, cgraph_uid=83, symbol_order=83)
+;; Function TIM_OC3NPolarityConfig (TIM_OC3NPolarityConfig, funcdef_no=83, decl_uid=4593, cgraph_uid=83, symbol_order=83)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -6471,7 +6471,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 75 [ tmpccer ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1482 -1
      (nil))
 
-;; Function TIM_OC4PolarityConfig (TIM_OC4PolarityConfig, funcdef_no=84, decl_uid=4549, cgraph_uid=84, symbol_order=84)
+;; Function TIM_OC4PolarityConfig (TIM_OC4PolarityConfig, funcdef_no=84, decl_uid=4596, cgraph_uid=84, symbol_order=84)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -6562,7 +6562,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 75 [ tmpccer ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1504 -1
      (nil))
 
-;; Function TIM_CCxCmd (TIM_CCxCmd, funcdef_no=85, decl_uid=4553, cgraph_uid=85, symbol_order=85)
+;; Function TIM_CCxCmd (TIM_CCxCmd, funcdef_no=85, decl_uid=4600, cgraph_uid=85, symbol_order=85)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -6701,7 +6701,7 @@ try_optimize_cfg iteration 2
 (code_label 44 41 45 7 98 (nil) [1 uses])
 (note 45 44 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function TIM_CCxNCmd (TIM_CCxNCmd, funcdef_no=86, decl_uid=4557, cgraph_uid=86, symbol_order=86)
+;; Function TIM_CCxNCmd (TIM_CCxNCmd, funcdef_no=86, decl_uid=4604, cgraph_uid=86, symbol_order=86)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -6840,7 +6840,7 @@ try_optimize_cfg iteration 2
 (code_label 44 41 45 7 102 (nil) [1 uses])
 (note 45 44 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function TIM_SelectOCxM (TIM_SelectOCxM, funcdef_no=87, decl_uid=4561, cgraph_uid=87, symbol_order=87)
+;; Function TIM_SelectOCxM (TIM_SelectOCxM, funcdef_no=87, decl_uid=4608, cgraph_uid=87, symbol_order=87)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -7083,7 +7083,7 @@ try_optimize_cfg iteration 2
 (code_label 77 73 78 7 106 (nil) [1 uses])
 (note 78 77 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function TIM_UpdateDisableConfig (TIM_UpdateDisableConfig, funcdef_no=88, decl_uid=4564, cgraph_uid=88, symbol_order=88)
+;; Function TIM_UpdateDisableConfig (TIM_UpdateDisableConfig, funcdef_no=88, decl_uid=4611, cgraph_uid=88, symbol_order=88)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -7178,7 +7178,7 @@ try_optimize_cfg iteration 2
 (code_label 28 25 29 7 110 (nil) [1 uses])
 (note 29 28 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function TIM_UpdateRequestConfig (TIM_UpdateRequestConfig, funcdef_no=89, decl_uid=4567, cgraph_uid=89, symbol_order=89)
+;; Function TIM_UpdateRequestConfig (TIM_UpdateRequestConfig, funcdef_no=89, decl_uid=4614, cgraph_uid=89, symbol_order=89)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -7273,7 +7273,7 @@ try_optimize_cfg iteration 2
 (code_label 28 25 29 7 114 (nil) [1 uses])
 (note 29 28 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function TIM_SelectHallSensor (TIM_SelectHallSensor, funcdef_no=90, decl_uid=4570, cgraph_uid=90, symbol_order=90)
+;; Function TIM_SelectHallSensor (TIM_SelectHallSensor, funcdef_no=90, decl_uid=4617, cgraph_uid=90, symbol_order=90)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -7372,7 +7372,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 118 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function TIM_SelectOnePulseMode (TIM_SelectOnePulseMode, funcdef_no=91, decl_uid=4573, cgraph_uid=91, symbol_order=91)
+;; Function TIM_SelectOnePulseMode (TIM_SelectOnePulseMode, funcdef_no=91, decl_uid=4620, cgraph_uid=91, symbol_order=91)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -7441,7 +7441,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 75 [ _4 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1699 -1
      (nil))
 
-;; Function TIM_SelectOutputTrigger (TIM_SelectOutputTrigger, funcdef_no=92, decl_uid=4576, cgraph_uid=92, symbol_order=92)
+;; Function TIM_SelectOutputTrigger (TIM_SelectOutputTrigger, funcdef_no=92, decl_uid=4623, cgraph_uid=92, symbol_order=92)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -7514,7 +7514,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 75 [ _4 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1727 -1
      (nil))
 
-;; Function TIM_SelectSlaveMode (TIM_SelectSlaveMode, funcdef_no=93, decl_uid=4579, cgraph_uid=93, symbol_order=93)
+;; Function TIM_SelectSlaveMode (TIM_SelectSlaveMode, funcdef_no=93, decl_uid=4626, cgraph_uid=93, symbol_order=93)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -7587,7 +7587,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 75 [ _4 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1751 -1
      (nil))
 
-;; Function TIM_SelectMasterSlaveMode (TIM_SelectMasterSlaveMode, funcdef_no=94, decl_uid=4582, cgraph_uid=94, symbol_order=94)
+;; Function TIM_SelectMasterSlaveMode (TIM_SelectMasterSlaveMode, funcdef_no=94, decl_uid=4629, cgraph_uid=94, symbol_order=94)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -7660,7 +7660,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 75 [ _4 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1770 -1
      (nil))
 
-;; Function TIM_SetCounter (TIM_SetCounter, funcdef_no=95, decl_uid=4585, cgraph_uid=95, symbol_order=95)
+;; Function TIM_SetCounter (TIM_SetCounter, funcdef_no=95, decl_uid=4632, cgraph_uid=95, symbol_order=95)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -7699,7 +7699,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 73 [ Counter ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1785 -1
      (nil))
 
-;; Function TIM_SetAutoreload (TIM_SetAutoreload, funcdef_no=96, decl_uid=4588, cgraph_uid=96, symbol_order=96)
+;; Function TIM_SetAutoreload (TIM_SetAutoreload, funcdef_no=96, decl_uid=4635, cgraph_uid=96, symbol_order=96)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -7738,7 +7738,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 73 [ Autoreload ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1800 -1
      (nil))
 
-;; Function TIM_SetCompare1 (TIM_SetCompare1, funcdef_no=97, decl_uid=4591, cgraph_uid=97, symbol_order=97)
+;; Function TIM_SetCompare1 (TIM_SetCompare1, funcdef_no=97, decl_uid=4638, cgraph_uid=97, symbol_order=97)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -7777,7 +7777,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 73 [ Compare1 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1815 -1
      (nil))
 
-;; Function TIM_SetCompare2 (TIM_SetCompare2, funcdef_no=98, decl_uid=4594, cgraph_uid=98, symbol_order=98)
+;; Function TIM_SetCompare2 (TIM_SetCompare2, funcdef_no=98, decl_uid=4641, cgraph_uid=98, symbol_order=98)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -7816,7 +7816,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 73 [ Compare2 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1830 -1
      (nil))
 
-;; Function TIM_SetCompare3 (TIM_SetCompare3, funcdef_no=99, decl_uid=4597, cgraph_uid=99, symbol_order=99)
+;; Function TIM_SetCompare3 (TIM_SetCompare3, funcdef_no=99, decl_uid=4644, cgraph_uid=99, symbol_order=99)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -7855,7 +7855,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 73 [ Compare3 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1845 -1
      (nil))
 
-;; Function TIM_SetCompare4 (TIM_SetCompare4, funcdef_no=100, decl_uid=4600, cgraph_uid=100, symbol_order=100)
+;; Function TIM_SetCompare4 (TIM_SetCompare4, funcdef_no=100, decl_uid=4647, cgraph_uid=100, symbol_order=100)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -7894,7 +7894,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 73 [ Compare4 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1860 -1
      (nil))
 
-;; Function TIM_SetIC1Prescaler (TIM_SetIC1Prescaler, funcdef_no=101, decl_uid=4603, cgraph_uid=101, symbol_order=101)
+;; Function TIM_SetIC1Prescaler (TIM_SetIC1Prescaler, funcdef_no=101, decl_uid=4650, cgraph_uid=101, symbol_order=101)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -7967,7 +7967,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 75 [ _4 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1880 -1
      (nil))
 
-;; Function TIM_SetIC2Prescaler (TIM_SetIC2Prescaler, funcdef_no=102, decl_uid=4606, cgraph_uid=102, symbol_order=102)
+;; Function TIM_SetIC2Prescaler (TIM_SetIC2Prescaler, funcdef_no=102, decl_uid=4653, cgraph_uid=102, symbol_order=102)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -8055,7 +8055,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 76 [ _5 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1900 -1
      (nil))
 
-;; Function TIM_PWMIConfig (TIM_PWMIConfig, funcdef_no=36, decl_uid=4396, cgraph_uid=36, symbol_order=36)
+;; Function TIM_PWMIConfig (TIM_PWMIConfig, funcdef_no=36, decl_uid=4443, cgraph_uid=36, symbol_order=36)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -8209,11 +8209,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 84 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":361 -1
      (nil))
 (call_insn 40 39 41 10 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TI1_Config") [flags 0x3] <function_decl 0665ab40 TI1_Config>) [0 TI1_Config S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TI1_Config") [flags 0x3] <function_decl 066ef528 TI1_Config>) [0 TI1_Config S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":361 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TI1_Config") [flags 0x3] <function_decl 0665ab40 TI1_Config>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TI1_Config") [flags 0x3] <function_decl 066ef528 TI1_Config>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -8234,11 +8234,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 84 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":363 -1
      (nil))
 (call_insn 45 44 46 10 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_SetIC1Prescaler") [flags 0x3] <function_decl 0665a438 TIM_SetIC1Prescaler>) [0 TIM_SetIC1Prescaler S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_SetIC1Prescaler") [flags 0x3] <function_decl 066eae10 TIM_SetIC1Prescaler>) [0 TIM_SetIC1Prescaler S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":363 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetIC1Prescaler") [flags 0x3] <function_decl 0665a438 TIM_SetIC1Prescaler>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetIC1Prescaler") [flags 0x3] <function_decl 066eae10 TIM_SetIC1Prescaler>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -8263,11 +8263,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 84 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":364 -1
      (nil))
 (call_insn 52 51 53 10 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TI2_Config") [flags 0x3] <function_decl 0665abb8 TI2_Config>) [0 TI2_Config S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TI2_Config") [flags 0x3] <function_decl 066ef5a0 TI2_Config>) [0 TI2_Config S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":364 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TI2_Config") [flags 0x3] <function_decl 0665abb8 TI2_Config>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TI2_Config") [flags 0x3] <function_decl 066ef5a0 TI2_Config>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -8288,11 +8288,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 84 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":365 -1
      (nil))
 (call_insn 57 56 58 10 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_SetIC2Prescaler") [flags 0x3] <function_decl 0665a4b0 TIM_SetIC2Prescaler>) [0 TIM_SetIC2Prescaler S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_SetIC2Prescaler") [flags 0x3] <function_decl 066eae88 TIM_SetIC2Prescaler>) [0 TIM_SetIC2Prescaler S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":365 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetIC2Prescaler") [flags 0x3] <function_decl 0665a4b0 TIM_SetIC2Prescaler>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetIC2Prescaler") [flags 0x3] <function_decl 066eae88 TIM_SetIC2Prescaler>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -8320,11 +8320,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 84 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":369 -1
      (nil))
 (call_insn 67 66 68 11 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TI2_Config") [flags 0x3] <function_decl 0665abb8 TI2_Config>) [0 TI2_Config S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TI2_Config") [flags 0x3] <function_decl 066ef5a0 TI2_Config>) [0 TI2_Config S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":369 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TI2_Config") [flags 0x3] <function_decl 0665abb8 TI2_Config>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TI2_Config") [flags 0x3] <function_decl 066ef5a0 TI2_Config>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -8345,11 +8345,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 84 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":371 -1
      (nil))
 (call_insn 72 71 73 11 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_SetIC2Prescaler") [flags 0x3] <function_decl 0665a4b0 TIM_SetIC2Prescaler>) [0 TIM_SetIC2Prescaler S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_SetIC2Prescaler") [flags 0x3] <function_decl 066eae88 TIM_SetIC2Prescaler>) [0 TIM_SetIC2Prescaler S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":371 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetIC2Prescaler") [flags 0x3] <function_decl 0665a4b0 TIM_SetIC2Prescaler>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetIC2Prescaler") [flags 0x3] <function_decl 066eae88 TIM_SetIC2Prescaler>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -8374,11 +8374,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 84 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":372 -1
      (nil))
 (call_insn 79 78 80 11 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TI1_Config") [flags 0x3] <function_decl 0665ab40 TI1_Config>) [0 TI1_Config S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TI1_Config") [flags 0x3] <function_decl 066ef528 TI1_Config>) [0 TI1_Config S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":372 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TI1_Config") [flags 0x3] <function_decl 0665ab40 TI1_Config>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TI1_Config") [flags 0x3] <function_decl 066ef528 TI1_Config>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -8399,11 +8399,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 84 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":373 -1
      (nil))
 (call_insn 84 83 87 11 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_SetIC1Prescaler") [flags 0x3] <function_decl 0665a438 TIM_SetIC1Prescaler>) [0 TIM_SetIC1Prescaler S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_SetIC1Prescaler") [flags 0x3] <function_decl 066eae10 TIM_SetIC1Prescaler>) [0 TIM_SetIC1Prescaler S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":373 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetIC1Prescaler") [flags 0x3] <function_decl 0665a438 TIM_SetIC1Prescaler>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetIC1Prescaler") [flags 0x3] <function_decl 066eae10 TIM_SetIC1Prescaler>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -8412,7 +8412,7 @@ try_optimize_cfg iteration 2
 (code_label 87 84 88 13 134 (nil) [1 uses])
 (note 88 87 0 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
 
-;; Function TIM_SetIC3Prescaler (TIM_SetIC3Prescaler, funcdef_no=103, decl_uid=4609, cgraph_uid=103, symbol_order=103)
+;; Function TIM_SetIC3Prescaler (TIM_SetIC3Prescaler, funcdef_no=103, decl_uid=4656, cgraph_uid=103, symbol_order=103)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -8485,7 +8485,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 75 [ _4 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1920 -1
      (nil))
 
-;; Function TIM_SetIC4Prescaler (TIM_SetIC4Prescaler, funcdef_no=104, decl_uid=4612, cgraph_uid=104, symbol_order=104)
+;; Function TIM_SetIC4Prescaler (TIM_SetIC4Prescaler, funcdef_no=104, decl_uid=4659, cgraph_uid=104, symbol_order=104)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -8573,7 +8573,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 76 [ _5 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1940 -1
      (nil))
 
-;; Function TIM_ICInit (TIM_ICInit, funcdef_no=35, decl_uid=4393, cgraph_uid=35, symbol_order=35)
+;; Function TIM_ICInit (TIM_ICInit, funcdef_no=35, decl_uid=4440, cgraph_uid=35, symbol_order=35)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -8662,11 +8662,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 104 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":296 -1
      (nil))
 (call_insn 19 18 20 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TI1_Config") [flags 0x3] <function_decl 0665ab40 TI1_Config>) [0 TI1_Config S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TI1_Config") [flags 0x3] <function_decl 066ef528 TI1_Config>) [0 TI1_Config S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":296 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TI1_Config") [flags 0x3] <function_decl 0665ab40 TI1_Config>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TI1_Config") [flags 0x3] <function_decl 066ef528 TI1_Config>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -8687,11 +8687,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 104 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":299 -1
      (nil))
 (call_insn 24 23 25 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_SetIC1Prescaler") [flags 0x3] <function_decl 0665a438 TIM_SetIC1Prescaler>) [0 TIM_SetIC1Prescaler S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_SetIC1Prescaler") [flags 0x3] <function_decl 066eae10 TIM_SetIC1Prescaler>) [0 TIM_SetIC1Prescaler S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":299 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetIC1Prescaler") [flags 0x3] <function_decl 0665a438 TIM_SetIC1Prescaler>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetIC1Prescaler") [flags 0x3] <function_decl 066eae10 TIM_SetIC1Prescaler>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -8732,11 +8732,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 104 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":303 -1
      (nil))
 (call_insn 38 37 39 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TI2_Config") [flags 0x3] <function_decl 0665abb8 TI2_Config>) [0 TI2_Config S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TI2_Config") [flags 0x3] <function_decl 066ef5a0 TI2_Config>) [0 TI2_Config S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":303 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TI2_Config") [flags 0x3] <function_decl 0665abb8 TI2_Config>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TI2_Config") [flags 0x3] <function_decl 066ef5a0 TI2_Config>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -8757,11 +8757,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 104 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":306 -1
      (nil))
 (call_insn 43 42 44 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_SetIC2Prescaler") [flags 0x3] <function_decl 0665a4b0 TIM_SetIC2Prescaler>) [0 TIM_SetIC2Prescaler S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_SetIC2Prescaler") [flags 0x3] <function_decl 066eae88 TIM_SetIC2Prescaler>) [0 TIM_SetIC2Prescaler S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":306 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetIC2Prescaler") [flags 0x3] <function_decl 0665a4b0 TIM_SetIC2Prescaler>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetIC2Prescaler") [flags 0x3] <function_decl 066eae88 TIM_SetIC2Prescaler>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -8974,11 +8974,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 104 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":313 -1
      (nil))
 (call_insn 122 121 123 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_SetIC3Prescaler") [flags 0x3] <function_decl 0665a528 TIM_SetIC3Prescaler>) [0 TIM_SetIC3Prescaler S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_SetIC3Prescaler") [flags 0x3] <function_decl 066eaf00 TIM_SetIC3Prescaler>) [0 TIM_SetIC3Prescaler S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":313 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetIC3Prescaler") [flags 0x3] <function_decl 0665a528 TIM_SetIC3Prescaler>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetIC3Prescaler") [flags 0x3] <function_decl 066eaf00 TIM_SetIC3Prescaler>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -9213,11 +9213,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 104 [ TIMx ])) "../Peripheral/src/ch32v20x_tim.c":320 -1
      (nil))
 (call_insn 207 206 210 9 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_SetIC4Prescaler") [flags 0x3] <function_decl 0665a5a0 TIM_SetIC4Prescaler>) [0 TIM_SetIC4Prescaler S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_SetIC4Prescaler") [flags 0x3] <function_decl 066eaf78 TIM_SetIC4Prescaler>) [0 TIM_SetIC4Prescaler S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_tim.c":320 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetIC4Prescaler") [flags 0x3] <function_decl 0665a5a0 TIM_SetIC4Prescaler>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetIC4Prescaler") [flags 0x3] <function_decl 066eaf78 TIM_SetIC4Prescaler>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -9226,7 +9226,7 @@ try_optimize_cfg iteration 2
 (code_label 210 207 211 11 145 (nil) [3 uses])
 (note 211 210 0 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
 
-;; Function TIM_SetClockDivision (TIM_SetClockDivision, funcdef_no=105, decl_uid=4615, cgraph_uid=105, symbol_order=105)
+;; Function TIM_SetClockDivision (TIM_SetClockDivision, funcdef_no=105, decl_uid=4662, cgraph_uid=105, symbol_order=105)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -9295,7 +9295,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 75 [ _4 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":1959 -1
      (nil))
 
-;; Function TIM_GetCapture1 (TIM_GetCapture1, funcdef_no=106, decl_uid=4617, cgraph_uid=106, symbol_order=106)
+;; Function TIM_GetCapture1 (TIM_GetCapture1, funcdef_no=106, decl_uid=4664, cgraph_uid=106, symbol_order=106)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -9343,7 +9343,7 @@ try_optimize_cfg iteration 2
 (insn 15 14 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_tim.c":1974 -1
      (nil))
 
-;; Function TIM_GetCapture2 (TIM_GetCapture2, funcdef_no=107, decl_uid=4619, cgraph_uid=107, symbol_order=107)
+;; Function TIM_GetCapture2 (TIM_GetCapture2, funcdef_no=107, decl_uid=4666, cgraph_uid=107, symbol_order=107)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -9391,7 +9391,7 @@ try_optimize_cfg iteration 2
 (insn 15 14 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_tim.c":1988 -1
      (nil))
 
-;; Function TIM_GetCapture3 (TIM_GetCapture3, funcdef_no=108, decl_uid=4621, cgraph_uid=108, symbol_order=108)
+;; Function TIM_GetCapture3 (TIM_GetCapture3, funcdef_no=108, decl_uid=4668, cgraph_uid=108, symbol_order=108)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -9439,7 +9439,7 @@ try_optimize_cfg iteration 2
 (insn 15 14 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_tim.c":2002 -1
      (nil))
 
-;; Function TIM_GetCapture4 (TIM_GetCapture4, funcdef_no=109, decl_uid=4623, cgraph_uid=109, symbol_order=109)
+;; Function TIM_GetCapture4 (TIM_GetCapture4, funcdef_no=109, decl_uid=4670, cgraph_uid=109, symbol_order=109)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -9487,7 +9487,7 @@ try_optimize_cfg iteration 2
 (insn 15 14 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_tim.c":2016 -1
      (nil))
 
-;; Function TIM_GetCounter (TIM_GetCounter, funcdef_no=110, decl_uid=4625, cgraph_uid=110, symbol_order=110)
+;; Function TIM_GetCounter (TIM_GetCounter, funcdef_no=110, decl_uid=4672, cgraph_uid=110, symbol_order=110)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -9535,7 +9535,7 @@ try_optimize_cfg iteration 2
 (insn 15 14 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_tim.c":2030 -1
      (nil))
 
-;; Function TIM_GetPrescaler (TIM_GetPrescaler, funcdef_no=111, decl_uid=4627, cgraph_uid=111, symbol_order=111)
+;; Function TIM_GetPrescaler (TIM_GetPrescaler, funcdef_no=111, decl_uid=4674, cgraph_uid=111, symbol_order=111)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -9583,7 +9583,7 @@ try_optimize_cfg iteration 2
 (insn 15 14 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_tim.c":2044 -1
      (nil))
 
-;; Function TIM_GetFlagStatus (TIM_GetFlagStatus, funcdef_no=112, decl_uid=4630, cgraph_uid=112, symbol_order=112)
+;; Function TIM_GetFlagStatus (TIM_GetFlagStatus, funcdef_no=112, decl_uid=4677, cgraph_uid=112, symbol_order=112)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -9655,7 +9655,7 @@ try_optimize_cfg iteration 2
 (insn 23 22 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_tim.c":2082 -1
      (nil))
 
-;; Function TIM_ClearFlag (TIM_ClearFlag, funcdef_no=113, decl_uid=4633, cgraph_uid=113, symbol_order=113)
+;; Function TIM_ClearFlag (TIM_ClearFlag, funcdef_no=113, decl_uid=4680, cgraph_uid=113, symbol_order=113)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -9700,7 +9700,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 72 [ _1 ]) 0)) "../Peripheral/src/ch32v20x_tim.c":2108 -1
      (nil))
 
-;; Function TIM_GetITStatus (TIM_GetITStatus, funcdef_no=114, decl_uid=4636, cgraph_uid=114, symbol_order=114)
+;; Function TIM_GetITStatus (TIM_GetITStatus, funcdef_no=114, decl_uid=4683, cgraph_uid=114, symbol_order=114)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -9829,7 +9829,7 @@ try_optimize_cfg iteration 2
 (insn 41 40 0 7 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_tim.c":2147 -1
      (nil))
 
-;; Function TIM_ClearITPendingBit (TIM_ClearITPendingBit, funcdef_no=123, decl_uid=4639, cgraph_uid=115, symbol_order=115)
+;; Function TIM_ClearITPendingBit (TIM_ClearITPendingBit, funcdef_no=123, decl_uid=4686, cgraph_uid=115, symbol_order=115)
 
 
 ;; Generating RTL for gimple basic block 2

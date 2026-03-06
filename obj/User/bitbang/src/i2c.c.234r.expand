@@ -31,11 +31,11 @@ try_optimize_cfg iteration 2
         (const_int 1 [0x1])) "../User/bitbang/src/i2c.c":5 -1
      (nil))
 (call_insn 7 6 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 06628d98 Delay_Us>) [0 Delay_Us S4 A32])
+            (call (mem:SI (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 0664ed98 Delay_Us>) [0 Delay_Us S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":5 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 06628d98 Delay_Us>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 0664ed98 Delay_Us>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -96,11 +96,11 @@ try_optimize_cfg iteration 2
 (debug_insn 13 12 14 2 (debug_marker) "../User/bitbang/src/i2c.c":10 -1
      (nil))
 (call_insn 14 13 15 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":10 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -128,11 +128,11 @@ try_optimize_cfg iteration 2
 (debug_insn 21 20 22 2 (debug_marker) "../User/bitbang/src/i2c.c":12 -1
      (nil))
 (call_insn 22 21 23 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":12 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -153,11 +153,11 @@ try_optimize_cfg iteration 2
 (debug_insn 27 26 28 2 (debug_marker) "../User/bitbang/src/i2c.c":14 -1
      (nil))
 (call_insn 28 27 29 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":14 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -178,11 +178,11 @@ try_optimize_cfg iteration 2
 (debug_insn 33 32 34 2 (debug_marker) "../User/bitbang/src/i2c.c":16 -1
      (nil))
 (call_insn 34 33 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":16 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -337,11 +337,11 @@ try_optimize_cfg iteration 2
 (debug_insn 45 44 46 7 (debug_marker) "../User/bitbang/src/i2c.c":25 -1
      (nil))
 (call_insn 46 45 47 7 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":25 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -362,11 +362,11 @@ try_optimize_cfg iteration 2
 (debug_insn 51 50 52 7 (debug_marker) "../User/bitbang/src/i2c.c":27 -1
      (nil))
 (call_insn 52 51 53 7 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":27 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -387,11 +387,11 @@ try_optimize_cfg iteration 2
 (debug_insn 57 56 58 7 (debug_marker) "../User/bitbang/src/i2c.c":29 -1
      (nil))
 (call_insn 58 57 59 7 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":29 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -437,11 +437,11 @@ try_optimize_cfg iteration 2
 (debug_insn 73 72 74 8 (debug_marker) "../User/bitbang/src/i2c.c":39 -1
      (nil))
 (call_insn 74 73 75 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":39 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -462,11 +462,11 @@ try_optimize_cfg iteration 2
 (debug_insn 79 78 80 8 (debug_marker) "../User/bitbang/src/i2c.c":41 -1
      (nil))
 (call_insn 80 79 81 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":41 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -491,11 +491,11 @@ try_optimize_cfg iteration 2
 (debug_insn 86 85 87 8 (debug_marker) "../User/bitbang/src/i2c.c":43 -1
      (nil))
 (call_insn 87 86 88 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":43 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -516,11 +516,11 @@ try_optimize_cfg iteration 2
 (debug_insn 92 91 93 8 (debug_marker) "../User/bitbang/src/i2c.c":45 -1
      (nil))
 (call_insn 93 92 94 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":45 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -541,11 +541,11 @@ try_optimize_cfg iteration 2
 (debug_insn 98 97 99 8 (debug_marker) "../User/bitbang/src/i2c.c":47 -1
      (nil))
 (call_insn 99 98 100 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":47 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -630,11 +630,11 @@ try_optimize_cfg iteration 2
 (debug_insn 13 12 14 2 (debug_marker) "../User/bitbang/src/i2c.c":90 -1
      (nil))
 (call_insn 14 13 15 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":90 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -662,11 +662,11 @@ try_optimize_cfg iteration 2
 (debug_insn 21 20 22 2 (debug_marker) "../User/bitbang/src/i2c.c":92 -1
      (nil))
 (call_insn 22 21 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":92 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -777,11 +777,11 @@ try_optimize_cfg iteration 2
 (debug_insn 32 31 33 4 (debug_marker) "../User/bitbang/src/i2c.c":57 -1
      (nil))
 (call_insn 33 32 34 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":57 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -802,11 +802,11 @@ try_optimize_cfg iteration 2
 (debug_insn 38 37 39 4 (debug_marker) "../User/bitbang/src/i2c.c":59 -1
      (nil))
 (call_insn 39 38 40 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":59 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -831,11 +831,11 @@ try_optimize_cfg iteration 2
 (debug_insn 45 44 46 4 (debug_marker) "../User/bitbang/src/i2c.c":61 -1
      (nil))
 (call_insn 46 45 47 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":61 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -856,11 +856,11 @@ try_optimize_cfg iteration 2
 (debug_insn 51 50 52 4 (debug_marker) "../User/bitbang/src/i2c.c":63 -1
      (nil))
 (call_insn 52 51 53 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":63 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -933,11 +933,11 @@ try_optimize_cfg iteration 2
 (debug_insn 75 74 76 5 (debug_marker) "../User/bitbang/src/i2c.c":77 -1
      (nil))
 (call_insn 76 75 77 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":77 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -962,11 +962,11 @@ try_optimize_cfg iteration 2
 (debug_insn 82 81 83 5 (debug_marker) "../User/bitbang/src/i2c.c":79 -1
      (nil))
 (call_insn 83 82 84 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":79 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -987,11 +987,11 @@ try_optimize_cfg iteration 2
 (debug_insn 88 87 89 5 (debug_marker) "../User/bitbang/src/i2c.c":81 -1
      (nil))
 (call_insn 89 88 90 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":81 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -1012,11 +1012,11 @@ try_optimize_cfg iteration 2
 (debug_insn 94 93 95 5 (debug_marker) "../User/bitbang/src/i2c.c":83 -1
      (nil))
 (call_insn 95 94 96 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":83 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -1037,11 +1037,11 @@ try_optimize_cfg iteration 2
 (debug_insn 100 99 101 5 (debug_marker) "../User/bitbang/src/i2c.c":85 -1
      (nil))
 (call_insn 101 100 0 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>) [0 i2c_delay S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>) [0 i2c_delay S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":85 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066374b0 i2c_delay>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_delay") [flags 0x3] <function_decl 066574b0 i2c_delay>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -1091,11 +1091,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 74 [ sda_pin ])) "../User/bitbang/src/i2c.c":96 -1
      (nil))
 (call_insn 11 10 12 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06637528 i2c_start>) [0 i2c_start S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06657528 i2c_start>) [0 i2c_start S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":96 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06637528 i2c_start>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06657528 i2c_start>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1121,11 +1121,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 18 17 19 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06637618 i2c_send_byte>) [0 i2c_send_byte S4 A32])
+                (call (mem:SI (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06657618 i2c_send_byte>) [0 i2c_send_byte S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":97 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06637618 i2c_send_byte>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06657618 i2c_send_byte>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1149,11 +1149,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 74 [ sda_pin ])) "../User/bitbang/src/i2c.c":98 -1
      (nil))
 (call_insn 25 24 26 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_stop") [flags 0x3] <function_decl 06637780 i2c_stop>) [0 i2c_stop S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_stop") [flags 0x3] <function_decl 06657780 i2c_stop>) [0 i2c_stop S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":98 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_stop") [flags 0x3] <function_decl 06637780 i2c_stop>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_stop") [flags 0x3] <function_decl 06657780 i2c_stop>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1234,11 +1234,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 76 [ sda_pin ])) "../User/bitbang/src/i2c.c":104 -1
      (nil))
 (call_insn 14 13 15 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06637528 i2c_start>) [0 i2c_start S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06657528 i2c_start>) [0 i2c_start S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":104 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06637528 i2c_start>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06657528 i2c_start>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1257,11 +1257,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 19 18 20 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06637618 i2c_send_byte>) [0 i2c_send_byte S4 A32])
+                (call (mem:SI (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06657618 i2c_send_byte>) [0 i2c_send_byte S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":106 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06637618 i2c_send_byte>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06657618 i2c_send_byte>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1304,11 +1304,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 33 32 34 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06637618 i2c_send_byte>) [0 i2c_send_byte S4 A32])
+                (call (mem:SI (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06657618 i2c_send_byte>) [0 i2c_send_byte S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":109 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06637618 i2c_send_byte>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06657618 i2c_send_byte>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1355,11 +1355,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 76 [ sda_pin ])) "../User/bitbang/src/i2c.c":113 -1
      (nil))
 (call_insn 48 47 51 7 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_stop") [flags 0x3] <function_decl 06637780 i2c_stop>) [0 i2c_stop S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_stop") [flags 0x3] <function_decl 06657780 i2c_stop>) [0 i2c_stop S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":113 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_stop") [flags 0x3] <function_decl 06637780 i2c_stop>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_stop") [flags 0x3] <function_decl 06657780 i2c_stop>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1432,11 +1432,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 82 [ sda_pin ])) "../User/bitbang/src/i2c.c":118 -1
      (nil))
 (call_insn 15 14 16 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06637528 i2c_start>) [0 i2c_start S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06657528 i2c_start>) [0 i2c_start S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":118 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06637528 i2c_start>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06657528 i2c_start>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1462,11 +1462,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 22 21 23 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06637618 i2c_send_byte>) [0 i2c_send_byte S4 A32])
+                (call (mem:SI (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06657618 i2c_send_byte>) [0 i2c_send_byte S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":120 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06637618 i2c_send_byte>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06657618 i2c_send_byte>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1528,11 +1528,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 82 [ sda_pin ])) "../User/bitbang/src/i2c.c":124 -1
      (nil))
 (call_insn 41 40 42 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_recv_byte") [flags 0x3] <function_decl 06637708 i2c_recv_byte>) [0 i2c_recv_byte S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_recv_byte") [flags 0x3] <function_decl 06657708 i2c_recv_byte>) [0 i2c_recv_byte S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":124 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_recv_byte") [flags 0x3] <function_decl 06637708 i2c_recv_byte>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_recv_byte") [flags 0x3] <function_decl 06657708 i2c_recv_byte>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1577,11 +1577,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 82 [ sda_pin ])) "../User/bitbang/src/i2c.c":128 -1
      (nil))
 (call_insn 56 55 59 7 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_stop") [flags 0x3] <function_decl 06637780 i2c_stop>) [0 i2c_stop S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_stop") [flags 0x3] <function_decl 06657780 i2c_stop>) [0 i2c_stop S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":128 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_stop") [flags 0x3] <function_decl 06637780 i2c_stop>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_stop") [flags 0x3] <function_decl 06657780 i2c_stop>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1666,11 +1666,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 86 [ sda_pin ])) "../User/bitbang/src/i2c.c":133 -1
      (nil))
 (call_insn 17 16 18 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06637528 i2c_start>) [0 i2c_start S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06657528 i2c_start>) [0 i2c_start S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":133 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06637528 i2c_start>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06657528 i2c_start>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1689,11 +1689,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 22 21 23 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06637618 i2c_send_byte>) [0 i2c_send_byte S4 A32])
+                (call (mem:SI (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06657618 i2c_send_byte>) [0 i2c_send_byte S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":135 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06637618 i2c_send_byte>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06657618 i2c_send_byte>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1736,11 +1736,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 36 35 37 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06637618 i2c_send_byte>) [0 i2c_send_byte S4 A32])
+                (call (mem:SI (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06657618 i2c_send_byte>) [0 i2c_send_byte S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":138 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06637618 i2c_send_byte>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06657618 i2c_send_byte>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1777,11 +1777,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 86 [ sda_pin ])) "../User/bitbang/src/i2c.c":141 -1
      (nil))
 (call_insn 48 47 49 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06637528 i2c_start>) [0 i2c_start S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06657528 i2c_start>) [0 i2c_start S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":141 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06637528 i2c_start>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_start") [flags 0x3] <function_decl 06657528 i2c_start>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1807,11 +1807,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 55 54 56 6 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06637618 i2c_send_byte>) [0 i2c_send_byte S4 A32])
+                (call (mem:SI (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06657618 i2c_send_byte>) [0 i2c_send_byte S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":143 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06637618 i2c_send_byte>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_byte") [flags 0x3] <function_decl 06657618 i2c_send_byte>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1873,11 +1873,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 86 [ sda_pin ])) "../User/bitbang/src/i2c.c":146 -1
      (nil))
 (call_insn 74 73 75 7 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_recv_byte") [flags 0x3] <function_decl 06637708 i2c_recv_byte>) [0 i2c_recv_byte S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_recv_byte") [flags 0x3] <function_decl 06657708 i2c_recv_byte>) [0 i2c_recv_byte S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":146 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_recv_byte") [flags 0x3] <function_decl 06637708 i2c_recv_byte>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_recv_byte") [flags 0x3] <function_decl 06657708 i2c_recv_byte>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1922,11 +1922,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 86 [ sda_pin ])) "../User/bitbang/src/i2c.c":150 -1
      (nil))
 (call_insn 89 88 92 10 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_stop") [flags 0x3] <function_decl 06637780 i2c_stop>) [0 i2c_stop S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_stop") [flags 0x3] <function_decl 06657780 i2c_stop>) [0 i2c_stop S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/bitbang/src/i2c.c":150 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_stop") [flags 0x3] <function_decl 06637780 i2c_stop>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_stop") [flags 0x3] <function_decl 06657780 i2c_stop>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))

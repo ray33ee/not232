@@ -1,5 +1,5 @@
 
-;; Function SPI_I2S_DeInit (SPI_I2S_DeInit, funcdef_no=29, decl_uid=4576, cgraph_uid=29, symbol_order=29)
+;; Function SPI_I2S_DeInit (SPI_I2S_DeInit, funcdef_no=29, decl_uid=4623, cgraph_uid=29, symbol_order=29)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -60,11 +60,11 @@ try_optimize_cfg iteration 2
         (const_int 4096 [0x1000])) "../Peripheral/src/ch32v20x_spi.c":62 -1
      (nil))
 (call_insn 13 12 14 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0655f8e8 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065308e8 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_spi.c":62 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0655f8e8 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065308e8 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -78,11 +78,11 @@ try_optimize_cfg iteration 2
         (const_int 4096 [0x1000])) "../Peripheral/src/ch32v20x_spi.c":63 -1
      (nil))
 (call_insn 17 16 18 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0655f8e8 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065308e8 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_spi.c":63 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 0655f8e8 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065308e8 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -121,11 +121,11 @@ try_optimize_cfg iteration 2
         (const_int 16384 [0x4000])) "../Peripheral/src/ch32v20x_spi.c":67 -1
      (nil))
 (call_insn 30 29 31 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0655f960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 06530960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_spi.c":67 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0655f960 RCC_APB1PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 06530960 RCC_APB1PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -139,11 +139,11 @@ try_optimize_cfg iteration 2
         (const_int 16384 [0x4000])) "../Peripheral/src/ch32v20x_spi.c":68 -1
      (nil))
 (call_insn 34 33 37 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0655f960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 06530960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_spi.c":68 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 0655f960 RCC_APB1PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 06530960 RCC_APB1PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -151,7 +151,7 @@ try_optimize_cfg iteration 2
 (code_label 37 34 38 8 1 (nil) [2 uses])
 (note 38 37 0 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
 
-;; Function SPI_Init (SPI_Init, funcdef_no=30, decl_uid=4579, cgraph_uid=30, symbol_order=30)
+;; Function SPI_Init (SPI_Init, funcdef_no=30, decl_uid=4626, cgraph_uid=30, symbol_order=30)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -351,7 +351,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 89 [ _18 ]) 0)) "../Peripheral/src/ch32v20x_spi.c":97 -1
      (nil))
 
-;; Function I2S_Init (I2S_Init, funcdef_no=31, decl_uid=4582, cgraph_uid=31, symbol_order=31)
+;; Function I2S_Init (I2S_Init, funcdef_no=31, decl_uid=4629, cgraph_uid=31, symbol_order=31)
 
 Partition 0: size 20 align 4
 	RCC_Clocks
@@ -532,11 +532,11 @@ try_optimize_cfg iteration 2
         (reg:SI 130)) "../Peripheral/src/ch32v20x_spi.c":150 -1
      (nil))
 (call_insn 54 53 55 7 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_GetClocksFreq") [flags 0x41] <function_decl 0655f708 RCC_GetClocksFreq>) [0 RCC_GetClocksFreq S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_GetClocksFreq") [flags 0x41] <function_decl 06530708 RCC_GetClocksFreq>) [0 RCC_GetClocksFreq S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_spi.c":150 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_GetClocksFreq") [flags 0x41] <function_decl 0655f708 RCC_GetClocksFreq>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_GetClocksFreq") [flags 0x41] <function_decl 06530708 RCC_GetClocksFreq>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -836,7 +836,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 111 [ tmpreg ]) 0)) "../Peripheral/src/ch32v20x_spi.c":179 -1
      (nil))
 
-;; Function SPI_StructInit (SPI_StructInit, funcdef_no=32, decl_uid=4584, cgraph_uid=32, symbol_order=32)
+;; Function SPI_StructInit (SPI_StructInit, funcdef_no=32, decl_uid=4631, cgraph_uid=32, symbol_order=32)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -916,7 +916,7 @@ try_optimize_cfg iteration 2
         (reg:HI 73)) "../Peripheral/src/ch32v20x_spi.c":201 -1
      (nil))
 
-;; Function I2S_StructInit (I2S_StructInit, funcdef_no=33, decl_uid=4586, cgraph_uid=33, symbol_order=33)
+;; Function I2S_StructInit (I2S_StructInit, funcdef_no=33, decl_uid=4633, cgraph_uid=33, symbol_order=33)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -976,7 +976,7 @@ try_optimize_cfg iteration 2
         (const_int 0 [0])) "../Peripheral/src/ch32v20x_spi.c":221 -1
      (nil))
 
-;; Function SPI_Cmd (SPI_Cmd, funcdef_no=34, decl_uid=4589, cgraph_uid=34, symbol_order=34)
+;; Function SPI_Cmd (SPI_Cmd, funcdef_no=34, decl_uid=4636, cgraph_uid=34, symbol_order=34)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1071,7 +1071,7 @@ try_optimize_cfg iteration 2
 (code_label 28 25 29 7 17 (nil) [1 uses])
 (note 29 28 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function I2S_Cmd (I2S_Cmd, funcdef_no=35, decl_uid=4592, cgraph_uid=35, symbol_order=35)
+;; Function I2S_Cmd (I2S_Cmd, funcdef_no=35, decl_uid=4639, cgraph_uid=35, symbol_order=35)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1170,7 +1170,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 21 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function SPI_I2S_ITConfig (SPI_I2S_ITConfig, funcdef_no=36, decl_uid=4596, cgraph_uid=36, symbol_order=36)
+;; Function SPI_I2S_ITConfig (SPI_I2S_ITConfig, funcdef_no=36, decl_uid=4643, cgraph_uid=36, symbol_order=36)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1310,7 +1310,7 @@ try_optimize_cfg iteration 2
 (code_label 45 42 46 7 25 (nil) [1 uses])
 (note 46 45 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function SPI_I2S_DMACmd (SPI_I2S_DMACmd, funcdef_no=37, decl_uid=4600, cgraph_uid=37, symbol_order=37)
+;; Function SPI_I2S_DMACmd (SPI_I2S_DMACmd, funcdef_no=37, decl_uid=4647, cgraph_uid=37, symbol_order=37)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1418,7 +1418,7 @@ try_optimize_cfg iteration 2
 (code_label 33 30 34 7 29 (nil) [1 uses])
 (note 34 33 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function SPI_I2S_SendData (SPI_I2S_SendData, funcdef_no=38, decl_uid=4603, cgraph_uid=38, symbol_order=38)
+;; Function SPI_I2S_SendData (SPI_I2S_SendData, funcdef_no=38, decl_uid=4650, cgraph_uid=38, symbol_order=38)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1457,7 +1457,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg/v:SI 73 [ Data ]) 0)) "../Peripheral/src/ch32v20x_spi.c":343 -1
      (nil))
 
-;; Function SPI_I2S_ReceiveData (SPI_I2S_ReceiveData, funcdef_no=39, decl_uid=4605, cgraph_uid=39, symbol_order=39)
+;; Function SPI_I2S_ReceiveData (SPI_I2S_ReceiveData, funcdef_no=39, decl_uid=4652, cgraph_uid=39, symbol_order=39)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1505,7 +1505,7 @@ try_optimize_cfg iteration 2
 (insn 15 14 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_spi.c":361 -1
      (nil))
 
-;; Function SPI_NSSInternalSoftwareConfig (SPI_NSSInternalSoftwareConfig, funcdef_no=40, decl_uid=4608, cgraph_uid=40, symbol_order=40)
+;; Function SPI_NSSInternalSoftwareConfig (SPI_NSSInternalSoftwareConfig, funcdef_no=40, decl_uid=4655, cgraph_uid=40, symbol_order=40)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1608,7 +1608,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 35 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function SPI_SSOutputCmd (SPI_SSOutputCmd, funcdef_no=41, decl_uid=4611, cgraph_uid=41, symbol_order=41)
+;; Function SPI_SSOutputCmd (SPI_SSOutputCmd, funcdef_no=41, decl_uid=4658, cgraph_uid=41, symbol_order=41)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1707,7 +1707,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 39 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function SPI_DataSizeConfig (SPI_DataSizeConfig, funcdef_no=42, decl_uid=4614, cgraph_uid=42, symbol_order=42)
+;; Function SPI_DataSizeConfig (SPI_DataSizeConfig, funcdef_no=42, decl_uid=4661, cgraph_uid=42, symbol_order=42)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1784,7 +1784,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 75 [ _4 ]) 0)) "../Peripheral/src/ch32v20x_spi.c":424 -1
      (nil))
 
-;; Function SPI_TransmitCRC (SPI_TransmitCRC, funcdef_no=43, decl_uid=4616, cgraph_uid=43, symbol_order=43)
+;; Function SPI_TransmitCRC (SPI_TransmitCRC, funcdef_no=43, decl_uid=4663, cgraph_uid=43, symbol_order=43)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1835,7 +1835,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 73 [ _2 ]) 0)) "../Peripheral/src/ch32v20x_spi.c":438 -1
      (nil))
 
-;; Function SPI_CalculateCRC (SPI_CalculateCRC, funcdef_no=44, decl_uid=4619, cgraph_uid=44, symbol_order=44)
+;; Function SPI_CalculateCRC (SPI_CalculateCRC, funcdef_no=44, decl_uid=4666, cgraph_uid=44, symbol_order=44)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1941,7 +1941,7 @@ try_optimize_cfg iteration 2
 (code_label 31 28 32 7 45 (nil) [1 uses])
 (note 32 31 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function SPI_GetCRC (SPI_GetCRC, funcdef_no=45, decl_uid=4622, cgraph_uid=45, symbol_order=45)
+;; Function SPI_GetCRC (SPI_GetCRC, funcdef_no=45, decl_uid=4669, cgraph_uid=45, symbol_order=45)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2041,7 +2041,7 @@ try_optimize_cfg iteration 2
 (insn 36 35 0 6 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_spi.c":489 -1
      (nil))
 
-;; Function SPI_GetCRCPolynomial (SPI_GetCRCPolynomial, funcdef_no=46, decl_uid=4624, cgraph_uid=46, symbol_order=46)
+;; Function SPI_GetCRCPolynomial (SPI_GetCRCPolynomial, funcdef_no=46, decl_uid=4671, cgraph_uid=46, symbol_order=46)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2089,7 +2089,7 @@ try_optimize_cfg iteration 2
 (insn 15 14 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_spi.c":503 -1
      (nil))
 
-;; Function SPI_BiDirectionalLineConfig (SPI_BiDirectionalLineConfig, funcdef_no=47, decl_uid=4627, cgraph_uid=47, symbol_order=47)
+;; Function SPI_BiDirectionalLineConfig (SPI_BiDirectionalLineConfig, funcdef_no=47, decl_uid=4674, cgraph_uid=47, symbol_order=47)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2198,7 +2198,7 @@ try_optimize_cfg iteration 2
 (code_label 32 29 33 7 54 (nil) [1 uses])
 (note 33 32 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function SPI_I2S_GetFlagStatus (SPI_I2S_GetFlagStatus, funcdef_no=48, decl_uid=4630, cgraph_uid=48, symbol_order=48)
+;; Function SPI_I2S_GetFlagStatus (SPI_I2S_GetFlagStatus, funcdef_no=48, decl_uid=4677, cgraph_uid=48, symbol_order=48)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2270,7 +2270,7 @@ try_optimize_cfg iteration 2
 (insn 23 22 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_spi.c":565 -1
      (nil))
 
-;; Function SPI_I2S_ClearFlag (SPI_I2S_ClearFlag, funcdef_no=49, decl_uid=4633, cgraph_uid=49, symbol_order=49)
+;; Function SPI_I2S_ClearFlag (SPI_I2S_ClearFlag, funcdef_no=49, decl_uid=4680, cgraph_uid=49, symbol_order=49)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2315,7 +2315,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 72 [ _1 ]) 0)) "../Peripheral/src/ch32v20x_spi.c":590 -1
      (nil))
 
-;; Function SPI_I2S_GetITStatus (SPI_I2S_GetITStatus, funcdef_no=50, decl_uid=4636, cgraph_uid=50, symbol_order=50)
+;; Function SPI_I2S_GetITStatus (SPI_I2S_GetITStatus, funcdef_no=50, decl_uid=4683, cgraph_uid=50, symbol_order=50)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2501,7 +2501,7 @@ try_optimize_cfg iteration 2
 (insn 61 60 0 7 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_spi.c":631 -1
      (nil))
 
-;; Function SPI_I2S_ClearITPendingBit (SPI_I2S_ClearITPendingBit, funcdef_no=51, decl_uid=4639, cgraph_uid=51, symbol_order=51)
+;; Function SPI_I2S_ClearITPendingBit (SPI_I2S_ClearITPendingBit, funcdef_no=51, decl_uid=4686, cgraph_uid=51, symbol_order=51)
 
 
 ;; Generating RTL for gimple basic block 2

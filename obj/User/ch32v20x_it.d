@@ -25,7 +25,8 @@ User/ch32v20x_it.o: ../User/ch32v20x_it.c ../User/ch32v20x_it.h \
  e:/Software\ Projects/moun_projects/not232/Peripheral/inc/ch32v20x_wwdg.h \
  e:/Software\ Projects/moun_projects/not232/User/ch32v20x_it.h \
  e:/Software\ Projects/moun_projects/not232/Peripheral/inc/ch32v20x_misc.h \
- ../User/constants.h
+ ../User/constants.h ../User/Features/inc/pulse_in.h \
+ e:/Software\ Projects/moun_projects/not232/User/USB_Serial/inc/usb_serial.h
 
 ../User/ch32v20x_it.h:
 
@@ -82,3 +83,7 @@ e:/Software\ Projects/moun_projects/not232/User/ch32v20x_it.h:
 e:/Software\ Projects/moun_projects/not232/Peripheral/inc/ch32v20x_misc.h:
 
 ../User/constants.h:
+
+../User/Features/inc/pulse_in.h:
+
+e:/Software\ Projects/moun_projects/not232/User/USB_Serial/inc/usb_serial.h:

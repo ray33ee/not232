@@ -1,23 +1,25 @@
 # Issues
 
-- Sending large (300 ish) bytes over usb back to hose seems to create some issues. Doing this with a dht via pulse io (which sends 81 pulses or 324 bytes) is a good way to eventually reproduce the error
+- Sending large (300 ish) bytes over usb back to hose seems to create some issues. Doing this with a dht via pulse io (which sends 81 pulses or 324 bytes) is a good way to eventually reproduce the error.
+	- I think this is fixed? TBD
 
 # Pinout
 
-![pinout](https://github.com/ray33ee/not232/blob/main/doc/pinout.png?raw=true)
+![pinout](https://github.com/ray33ee/not232/blob/main/doc/pinout.png)
 		  
 # Todo
 
-- Get UART working
+- COnvert the i2c delay to work the same way as spi delay - so it can be used to create custom frequencies
+- Read the [Circuit Python](https://docs.circuitpython.org/en/latest/docs/index.html) API (NOT BLINKA) to get detailed explanations of the functions, and make sure our code conforms
+- Get UART working (use interrupts for RXNE, good luck)
 - Get FLASH working
 - Get CAN working
-- Get Touch key working
 - Get op amps working
-- Get F0-F3 (TX, RX, Sw and LED) working as regular GPIO
-- Get F0 and F1 working as PWM and ADC
 - Disable interrupts in critical sections
-- Add extra information to the device id (i.e. the information received by an 'identity' request) such as
-	- git commit id for firmware
-- Read the [Circuit Python](https://docs.circuitpython.org/en/latest/docs/index.html) API (NOT BLINKA) to get detailed explanations of the functions, and make sure our code conforms
-- COnvert the i2c delay to work the same way as spi delay - so it can be used to create custom frequencies
-- Move the neopixel, one-wire and spi code out of comms.c and into the bitbang folder
+- Create a tool to download the not232 repo, modify the code to include the repo version, compile this, then upload the hex to a Not232 device
+	- Add extra information to the device id (i.e. the information received by an 'identity' request) such as
+		- git commit id for firmware
+- Error handling
+	- Operation timeouts
+	- Buffer overflows
+	- Check the right pins are used (host and device)

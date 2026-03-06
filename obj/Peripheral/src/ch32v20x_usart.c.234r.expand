@@ -1,5 +1,5 @@
 
-;; Function USART_DeInit (USART_DeInit, funcdef_no=29, decl_uid=4563, cgraph_uid=29, symbol_order=29)
+;; Function USART_DeInit (USART_DeInit, funcdef_no=29, decl_uid=4610, cgraph_uid=29, symbol_order=29)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -75,11 +75,11 @@ try_optimize_cfg iteration 2
         (const_int 16384 [0x4000])) "../Peripheral/src/ch32v20x_usart.c":66 -1
      (nil))
 (call_insn 14 13 15 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064cc8e8 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065328e8 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_usart.c":66 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064cc8e8 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065328e8 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -93,11 +93,11 @@ try_optimize_cfg iteration 2
         (const_int 16384 [0x4000])) "../Peripheral/src/ch32v20x_usart.c":67 -1
      (nil))
 (call_insn 18 17 19 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064cc8e8 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065328e8 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_usart.c":67 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064cc8e8 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 065328e8 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -136,11 +136,11 @@ try_optimize_cfg iteration 2
         (const_int 131072 [0x20000])) "../Peripheral/src/ch32v20x_usart.c":71 -1
      (nil))
 (call_insn 31 30 32 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 064cc960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 06532960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_usart.c":71 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 064cc960 RCC_APB1PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 06532960 RCC_APB1PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -154,11 +154,11 @@ try_optimize_cfg iteration 2
         (const_int 131072 [0x20000])) "../Peripheral/src/ch32v20x_usart.c":72 -1
      (nil))
 (call_insn 35 34 36 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 064cc960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 06532960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_usart.c":72 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 064cc960 RCC_APB1PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 06532960 RCC_APB1PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -197,11 +197,11 @@ try_optimize_cfg iteration 2
         (const_int 262144 [0x40000])) "../Peripheral/src/ch32v20x_usart.c":76 -1
      (nil))
 (call_insn 48 47 49 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 064cc960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 06532960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_usart.c":76 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 064cc960 RCC_APB1PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 06532960 RCC_APB1PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -215,11 +215,11 @@ try_optimize_cfg iteration 2
         (const_int 262144 [0x40000])) "../Peripheral/src/ch32v20x_usart.c":77 -1
      (nil))
 (call_insn 52 51 53 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 064cc960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 06532960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_usart.c":77 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 064cc960 RCC_APB1PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 06532960 RCC_APB1PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -258,11 +258,11 @@ try_optimize_cfg iteration 2
         (const_int 524288 [0x80000])) "../Peripheral/src/ch32v20x_usart.c":81 -1
      (nil))
 (call_insn 65 64 66 10 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 064cc960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 06532960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_usart.c":81 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 064cc960 RCC_APB1PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 06532960 RCC_APB1PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -276,11 +276,11 @@ try_optimize_cfg iteration 2
         (const_int 524288 [0x80000])) "../Peripheral/src/ch32v20x_usart.c":82 -1
      (nil))
 (call_insn 69 68 72 10 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 064cc960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 06532960 RCC_APB1PeriphResetCmd>) [0 RCC_APB1PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_usart.c":82 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 064cc960 RCC_APB1PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphResetCmd") [flags 0x41] <function_decl 06532960 RCC_APB1PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -288,7 +288,7 @@ try_optimize_cfg iteration 2
 (code_label 72 69 73 12 1 (nil) [4 uses])
 (note 73 72 0 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
 
-;; Function USART_Init (USART_Init, funcdef_no=30, decl_uid=4566, cgraph_uid=30, symbol_order=30)
+;; Function USART_Init (USART_Init, funcdef_no=30, decl_uid=4613, cgraph_uid=30, symbol_order=30)
 
 Partition 0: size 20 align 4
 	RCC_ClocksStatus
@@ -538,11 +538,11 @@ try_optimize_cfg iteration 2
         (reg:SI 140)) "../Peripheral/src/ch32v20x_usart.c":124 -1
      (nil))
 (call_insn 80 79 81 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_GetClocksFreq") [flags 0x41] <function_decl 064cc708 RCC_GetClocksFreq>) [0 RCC_GetClocksFreq S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_GetClocksFreq") [flags 0x41] <function_decl 06532708 RCC_GetClocksFreq>) [0 RCC_GetClocksFreq S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_usart.c":124 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_GetClocksFreq") [flags 0x41] <function_decl 064cc708 RCC_GetClocksFreq>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_GetClocksFreq") [flags 0x41] <function_decl 06532708 RCC_GetClocksFreq>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -850,7 +850,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 96 [ _25 ]) 0)) "../Peripheral/src/ch32v20x_usart.c":147 -1
      (nil))
 
-;; Function USART_StructInit (USART_StructInit, funcdef_no=31, decl_uid=4568, cgraph_uid=31, symbol_order=31)
+;; Function USART_StructInit (USART_StructInit, funcdef_no=31, decl_uid=4615, cgraph_uid=31, symbol_order=31)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -918,7 +918,7 @@ try_optimize_cfg iteration 2
         (const_int 0 [0])) "../Peripheral/src/ch32v20x_usart.c":167 -1
      (nil))
 
-;; Function USART_ClockInit (USART_ClockInit, funcdef_no=32, decl_uid=4571, cgraph_uid=32, symbol_order=32)
+;; Function USART_ClockInit (USART_ClockInit, funcdef_no=32, decl_uid=4618, cgraph_uid=32, symbol_order=32)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1039,7 +1039,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 81 [ _14 ]) 0)) "../Peripheral/src/ch32v20x_usart.c":191 -1
      (nil))
 
-;; Function USART_ClockStructInit (USART_ClockStructInit, funcdef_no=33, decl_uid=4573, cgraph_uid=33, symbol_order=33)
+;; Function USART_ClockStructInit (USART_ClockStructInit, funcdef_no=33, decl_uid=4620, cgraph_uid=33, symbol_order=33)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1092,7 +1092,7 @@ try_optimize_cfg iteration 2
         (const_int 0 [0])) "../Peripheral/src/ch32v20x_usart.c":209 -1
      (nil))
 
-;; Function USART_Cmd (USART_Cmd, funcdef_no=34, decl_uid=4576, cgraph_uid=34, symbol_order=34)
+;; Function USART_Cmd (USART_Cmd, funcdef_no=34, decl_uid=4623, cgraph_uid=34, symbol_order=34)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1202,7 +1202,7 @@ try_optimize_cfg iteration 2
 (code_label 33 30 34 7 17 (nil) [1 uses])
 (note 34 33 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function USART_ITConfig (USART_ITConfig, funcdef_no=35, decl_uid=4580, cgraph_uid=35, symbol_order=35)
+;; Function USART_ITConfig (USART_ITConfig, funcdef_no=35, decl_uid=4627, cgraph_uid=35, symbol_order=35)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1428,7 +1428,7 @@ try_optimize_cfg iteration 2
 (code_label 77 74 78 12 21 (nil) [1 uses])
 (note 78 77 0 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
 
-;; Function USART_DMACmd (USART_DMACmd, funcdef_no=36, decl_uid=4584, cgraph_uid=36, symbol_order=36)
+;; Function USART_DMACmd (USART_DMACmd, funcdef_no=36, decl_uid=4631, cgraph_uid=36, symbol_order=36)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1536,7 +1536,7 @@ try_optimize_cfg iteration 2
 (code_label 33 30 34 7 28 (nil) [1 uses])
 (note 34 33 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function USART_SetAddress (USART_SetAddress, funcdef_no=37, decl_uid=4587, cgraph_uid=37, symbol_order=37)
+;; Function USART_SetAddress (USART_SetAddress, funcdef_no=37, decl_uid=4634, cgraph_uid=37, symbol_order=37)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1612,7 +1612,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 76 [ _5 ]) 0)) "../Peripheral/src/ch32v20x_usart.c":326 -1
      (nil))
 
-;; Function USART_WakeUpConfig (USART_WakeUpConfig, funcdef_no=38, decl_uid=4590, cgraph_uid=38, symbol_order=38)
+;; Function USART_WakeUpConfig (USART_WakeUpConfig, funcdef_no=38, decl_uid=4637, cgraph_uid=38, symbol_order=38)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1693,7 +1693,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 75 [ _4 ]) 0)) "../Peripheral/src/ch32v20x_usart.c":344 -1
      (nil))
 
-;; Function USART_ReceiverWakeUpCmd (USART_ReceiverWakeUpCmd, funcdef_no=39, decl_uid=4593, cgraph_uid=39, symbol_order=39)
+;; Function USART_ReceiverWakeUpCmd (USART_ReceiverWakeUpCmd, funcdef_no=39, decl_uid=4640, cgraph_uid=39, symbol_order=39)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1792,7 +1792,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 34 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function USART_LINBreakDetectLengthConfig (USART_LINBreakDetectLengthConfig, funcdef_no=40, decl_uid=4596, cgraph_uid=40, symbol_order=40)
+;; Function USART_LINBreakDetectLengthConfig (USART_LINBreakDetectLengthConfig, funcdef_no=40, decl_uid=4643, cgraph_uid=40, symbol_order=40)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1865,7 +1865,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 75 [ _4 ]) 0)) "../Peripheral/src/ch32v20x_usart.c":384 -1
      (nil))
 
-;; Function USART_LINCmd (USART_LINCmd, funcdef_no=41, decl_uid=4599, cgraph_uid=41, symbol_order=41)
+;; Function USART_LINCmd (USART_LINCmd, funcdef_no=41, decl_uid=4646, cgraph_uid=41, symbol_order=41)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1975,7 +1975,7 @@ try_optimize_cfg iteration 2
 (code_label 33 30 34 7 39 (nil) [1 uses])
 (note 34 33 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function USART_SendData (USART_SendData, funcdef_no=42, decl_uid=4602, cgraph_uid=42, symbol_order=42)
+;; Function USART_SendData (USART_SendData, funcdef_no=42, decl_uid=4649, cgraph_uid=42, symbol_order=42)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2021,7 +2021,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 72 [ _1 ]) 0)) "../Peripheral/src/ch32v20x_usart.c":421 -1
      (nil))
 
-;; Function USART_ReceiveData (USART_ReceiveData, funcdef_no=43, decl_uid=4604, cgraph_uid=43, symbol_order=43)
+;; Function USART_ReceiveData (USART_ReceiveData, funcdef_no=43, decl_uid=4651, cgraph_uid=43, symbol_order=43)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2076,7 +2076,7 @@ try_optimize_cfg iteration 2
 (insn 17 16 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_usart.c":436 -1
      (nil))
 
-;; Function USART_SendBreak (USART_SendBreak, funcdef_no=44, decl_uid=4606, cgraph_uid=44, symbol_order=44)
+;; Function USART_SendBreak (USART_SendBreak, funcdef_no=44, decl_uid=4653, cgraph_uid=44, symbol_order=44)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2126,7 +2126,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 73 [ _2 ]) 0)) "../Peripheral/src/ch32v20x_usart.c":449 -1
      (nil))
 
-;; Function USART_SetGuardTime (USART_SetGuardTime, funcdef_no=45, decl_uid=4609, cgraph_uid=45, symbol_order=45)
+;; Function USART_SetGuardTime (USART_SetGuardTime, funcdef_no=45, decl_uid=4656, cgraph_uid=45, symbol_order=45)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2209,7 +2209,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 77 [ _6 ]) 0)) "../Peripheral/src/ch32v20x_usart.c":465 -1
      (nil))
 
-;; Function USART_SetPrescaler (USART_SetPrescaler, funcdef_no=46, decl_uid=4612, cgraph_uid=46, symbol_order=46)
+;; Function USART_SetPrescaler (USART_SetPrescaler, funcdef_no=46, decl_uid=4659, cgraph_uid=46, symbol_order=46)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2285,7 +2285,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 76 [ _5 ]) 0)) "../Peripheral/src/ch32v20x_usart.c":481 -1
      (nil))
 
-;; Function USART_SmartCardCmd (USART_SmartCardCmd, funcdef_no=47, decl_uid=4615, cgraph_uid=47, symbol_order=47)
+;; Function USART_SmartCardCmd (USART_SmartCardCmd, funcdef_no=47, decl_uid=4662, cgraph_uid=47, symbol_order=47)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2384,7 +2384,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 48 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function USART_SmartCardNACKCmd (USART_SmartCardNACKCmd, funcdef_no=48, decl_uid=4618, cgraph_uid=48, symbol_order=48)
+;; Function USART_SmartCardNACKCmd (USART_SmartCardNACKCmd, funcdef_no=48, decl_uid=4665, cgraph_uid=48, symbol_order=48)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2483,7 +2483,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 52 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function USART_HalfDuplexCmd (USART_HalfDuplexCmd, funcdef_no=49, decl_uid=4621, cgraph_uid=49, symbol_order=49)
+;; Function USART_HalfDuplexCmd (USART_HalfDuplexCmd, funcdef_no=49, decl_uid=4668, cgraph_uid=49, symbol_order=49)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2582,7 +2582,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 56 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function USART_IrDAConfig (USART_IrDAConfig, funcdef_no=50, decl_uid=4624, cgraph_uid=50, symbol_order=50)
+;; Function USART_IrDAConfig (USART_IrDAConfig, funcdef_no=50, decl_uid=4671, cgraph_uid=50, symbol_order=50)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2655,7 +2655,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 75 [ _4 ]) 0)) "../Peripheral/src/ch32v20x_usart.c":565 -1
      (nil))
 
-;; Function USART_IrDACmd (USART_IrDACmd, funcdef_no=51, decl_uid=4627, cgraph_uid=51, symbol_order=51)
+;; Function USART_IrDACmd (USART_IrDACmd, funcdef_no=51, decl_uid=4674, cgraph_uid=51, symbol_order=51)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2754,7 +2754,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 61 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function USART_GetFlagStatus (USART_GetFlagStatus, funcdef_no=52, decl_uid=4630, cgraph_uid=52, symbol_order=52)
+;; Function USART_GetFlagStatus (USART_GetFlagStatus, funcdef_no=52, decl_uid=4677, cgraph_uid=52, symbol_order=52)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2825,7 +2825,7 @@ try_optimize_cfg iteration 2
 (insn 22 21 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_usart.c":623 -1
      (nil))
 
-;; Function USART_ClearFlag (USART_ClearFlag, funcdef_no=53, decl_uid=4633, cgraph_uid=53, symbol_order=53)
+;; Function USART_ClearFlag (USART_ClearFlag, funcdef_no=53, decl_uid=4680, cgraph_uid=53, symbol_order=53)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2869,7 +2869,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 72 [ _1 ]) 0)) "../Peripheral/src/ch32v20x_usart.c":652 -1
      (nil))
 
-;; Function USART_GetITStatus (USART_GetITStatus, funcdef_no=54, decl_uid=4636, cgraph_uid=54, symbol_order=54)
+;; Function USART_GetITStatus (USART_GetITStatus, funcdef_no=54, decl_uid=4683, cgraph_uid=54, symbol_order=54)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3141,7 +3141,7 @@ try_optimize_cfg iteration 2
 (insn 94 93 0 12 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_usart.c":711 -1
      (nil))
 
-;; Function USART_ClearITPendingBit (USART_ClearITPendingBit, funcdef_no=55, decl_uid=4639, cgraph_uid=55, symbol_order=55)
+;; Function USART_ClearITPendingBit (USART_ClearITPendingBit, funcdef_no=55, decl_uid=4686, cgraph_uid=55, symbol_order=55)
 
 
 ;; Generating RTL for gimple basic block 2

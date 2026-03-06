@@ -1,5 +1,5 @@
 
-;; Function RCC_DeInit (RCC_DeInit, funcdef_no=29, decl_uid=4567, cgraph_uid=29, symbol_order=31)
+;; Function RCC_DeInit (RCC_DeInit, funcdef_no=29, decl_uid=4614, cgraph_uid=29, symbol_order=31)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -159,7 +159,7 @@ try_optimize_cfg iteration 2
         (reg:SI 100)) "../Peripheral/src/ch32v20x_rcc.c":89 -1
      (nil))
 
-;; Function RCC_HSEConfig (RCC_HSEConfig, funcdef_no=30, decl_uid=4569, cgraph_uid=30, symbol_order=32)
+;; Function RCC_HSEConfig (RCC_HSEConfig, funcdef_no=30, decl_uid=4616, cgraph_uid=30, symbol_order=32)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -339,7 +339,7 @@ Forwarding edge 4->5 to 9 failed.
 (code_label 55 52 56 9 2 (nil) [2 uses])
 (note 56 55 0 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RCC_AdjustHSICalibrationValue (RCC_AdjustHSICalibrationValue, funcdef_no=32, decl_uid=4573, cgraph_uid=32, symbol_order=34)
+;; Function RCC_AdjustHSICalibrationValue (RCC_AdjustHSICalibrationValue, funcdef_no=32, decl_uid=4620, cgraph_uid=32, symbol_order=34)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -411,7 +411,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 76 [ tmpreg ])) "../Peripheral/src/ch32v20x_rcc.c":175 -1
      (nil))
 
-;; Function RCC_HSICmd (RCC_HSICmd, funcdef_no=33, decl_uid=4575, cgraph_uid=33, symbol_order=35)
+;; Function RCC_HSICmd (RCC_HSICmd, funcdef_no=33, decl_uid=4622, cgraph_uid=33, symbol_order=35)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -503,7 +503,7 @@ try_optimize_cfg iteration 2
 (code_label 27 24 28 7 8 (nil) [1 uses])
 (note 28 27 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RCC_PLLConfig (RCC_PLLConfig, funcdef_no=34, decl_uid=4578, cgraph_uid=34, symbol_order=36)
+;; Function RCC_PLLConfig (RCC_PLLConfig, funcdef_no=34, decl_uid=4625, cgraph_uid=34, symbol_order=36)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -589,7 +589,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 74 [ tmpreg ])) "../Peripheral/src/ch32v20x_rcc.c":237 -1
      (nil))
 
-;; Function RCC_PLLCmd (RCC_PLLCmd, funcdef_no=35, decl_uid=4580, cgraph_uid=35, symbol_order=37)
+;; Function RCC_PLLCmd (RCC_PLLCmd, funcdef_no=35, decl_uid=4627, cgraph_uid=35, symbol_order=37)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -692,7 +692,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 13 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RCC_SYSCLKConfig (RCC_SYSCLKConfig, funcdef_no=36, decl_uid=4582, cgraph_uid=36, symbol_order=38)
+;; Function RCC_SYSCLKConfig (RCC_SYSCLKConfig, funcdef_no=36, decl_uid=4629, cgraph_uid=36, symbol_order=38)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -762,7 +762,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 74 [ tmpreg ])) "../Peripheral/src/ch32v20x_rcc.c":281 -1
      (nil))
 
-;; Function RCC_GetSYSCLKSource (RCC_GetSYSCLKSource, funcdef_no=37, decl_uid=4584, cgraph_uid=37, symbol_order=39)
+;; Function RCC_GetSYSCLKSource (RCC_GetSYSCLKSource, funcdef_no=37, decl_uid=4631, cgraph_uid=37, symbol_order=39)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -817,7 +817,7 @@ try_optimize_cfg iteration 2
 (insn 16 15 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_rcc.c":296 -1
      (nil))
 
-;; Function RCC_HCLKConfig (RCC_HCLKConfig, funcdef_no=38, decl_uid=4586, cgraph_uid=38, symbol_order=40)
+;; Function RCC_HCLKConfig (RCC_HCLKConfig, funcdef_no=38, decl_uid=4633, cgraph_uid=38, symbol_order=40)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -887,7 +887,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 74 [ tmpreg ])) "../Peripheral/src/ch32v20x_rcc.c":324 -1
      (nil))
 
-;; Function RCC_PCLK1Config (RCC_PCLK1Config, funcdef_no=39, decl_uid=4588, cgraph_uid=39, symbol_order=41)
+;; Function RCC_PCLK1Config (RCC_PCLK1Config, funcdef_no=39, decl_uid=4635, cgraph_uid=39, symbol_order=41)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -957,7 +957,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 74 [ tmpreg ])) "../Peripheral/src/ch32v20x_rcc.c":349 -1
      (nil))
 
-;; Function RCC_PCLK2Config (RCC_PCLK2Config, funcdef_no=40, decl_uid=4590, cgraph_uid=40, symbol_order=42)
+;; Function RCC_PCLK2Config (RCC_PCLK2Config, funcdef_no=40, decl_uid=4637, cgraph_uid=40, symbol_order=42)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1039,7 +1039,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 75 [ tmpreg ])) "../Peripheral/src/ch32v20x_rcc.c":373 -1
      (nil))
 
-;; Function RCC_ITConfig (RCC_ITConfig, funcdef_no=41, decl_uid=4593, cgraph_uid=41, symbol_order=43)
+;; Function RCC_ITConfig (RCC_ITConfig, funcdef_no=41, decl_uid=4640, cgraph_uid=41, symbol_order=43)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1172,7 +1172,7 @@ try_optimize_cfg iteration 2
 (code_label 38 35 39 7 21 (nil) [1 uses])
 (note 39 38 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RCC_USBCLKConfig (RCC_USBCLKConfig, funcdef_no=42, decl_uid=4595, cgraph_uid=42, symbol_order=44)
+;; Function RCC_USBCLKConfig (RCC_USBCLKConfig, funcdef_no=42, decl_uid=4642, cgraph_uid=42, symbol_order=44)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1254,7 +1254,7 @@ try_optimize_cfg iteration 2
         (reg:SI 76 [ _5 ])) "../Peripheral/src/ch32v20x_rcc.c":420 -1
      (nil))
 
-;; Function RCC_ADCCLKConfig (RCC_ADCCLKConfig, funcdef_no=43, decl_uid=4597, cgraph_uid=43, symbol_order=45)
+;; Function RCC_ADCCLKConfig (RCC_ADCCLKConfig, funcdef_no=43, decl_uid=4644, cgraph_uid=43, symbol_order=45)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1332,7 +1332,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 74 [ tmpreg ])) "../Peripheral/src/ch32v20x_rcc.c":444 -1
      (nil))
 
-;; Function RCC_LSEConfig (RCC_LSEConfig, funcdef_no=44, decl_uid=4599, cgraph_uid=44, symbol_order=46)
+;; Function RCC_LSEConfig (RCC_LSEConfig, funcdef_no=44, decl_uid=4646, cgraph_uid=44, symbol_order=46)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1476,7 +1476,7 @@ Forwarding edge 4->5 to 9 failed.
 (code_label 43 40 44 9 27 (nil) [2 uses])
 (note 44 43 0 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RCC_LSICmd (RCC_LSICmd, funcdef_no=45, decl_uid=4601, cgraph_uid=45, symbol_order=47)
+;; Function RCC_LSICmd (RCC_LSICmd, funcdef_no=45, decl_uid=4648, cgraph_uid=45, symbol_order=47)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1572,7 +1572,7 @@ try_optimize_cfg iteration 2
 (code_label 27 24 28 7 31 (nil) [1 uses])
 (note 28 27 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RCC_RTCCLKConfig (RCC_RTCCLKConfig, funcdef_no=46, decl_uid=4603, cgraph_uid=46, symbol_order=48)
+;; Function RCC_RTCCLKConfig (RCC_RTCCLKConfig, funcdef_no=46, decl_uid=4650, cgraph_uid=46, symbol_order=48)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1622,7 +1622,7 @@ try_optimize_cfg iteration 2
         (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v20x_rcc.c":517 -1
      (nil))
 
-;; Function RCC_RTCCLKCmd (RCC_RTCCLKCmd, funcdef_no=47, decl_uid=4605, cgraph_uid=47, symbol_order=49)
+;; Function RCC_RTCCLKCmd (RCC_RTCCLKCmd, funcdef_no=47, decl_uid=4652, cgraph_uid=47, symbol_order=49)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1729,7 +1729,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 36 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RCC_GetClocksFreq (RCC_GetClocksFreq, funcdef_no=48, decl_uid=4607, cgraph_uid=48, symbol_order=50)
+;; Function RCC_GetClocksFreq (RCC_GetClocksFreq, funcdef_no=48, decl_uid=4654, cgraph_uid=48, symbol_order=50)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2298,7 +2298,7 @@ try_optimize_cfg iteration 2
         (reg:SI 169)) "../Peripheral/src/ch32v20x_rcc.c":636 -1
      (nil))
 
-;; Function RCC_AHBPeriphClockCmd (RCC_AHBPeriphClockCmd, funcdef_no=49, decl_uid=4610, cgraph_uid=49, symbol_order=51)
+;; Function RCC_AHBPeriphClockCmd (RCC_AHBPeriphClockCmd, funcdef_no=49, decl_uid=4657, cgraph_uid=49, symbol_order=51)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2400,7 +2400,7 @@ try_optimize_cfg iteration 2
 (code_label 29 26 30 7 50 (nil) [1 uses])
 (note 30 29 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RCC_APB2PeriphClockCmd (RCC_APB2PeriphClockCmd, funcdef_no=50, decl_uid=4613, cgraph_uid=50, symbol_order=52)
+;; Function RCC_APB2PeriphClockCmd (RCC_APB2PeriphClockCmd, funcdef_no=50, decl_uid=4660, cgraph_uid=50, symbol_order=52)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2502,7 +2502,7 @@ try_optimize_cfg iteration 2
 (code_label 29 26 30 7 53 (nil) [1 uses])
 (note 30 29 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RCC_APB1PeriphClockCmd (RCC_APB1PeriphClockCmd, funcdef_no=51, decl_uid=4616, cgraph_uid=51, symbol_order=53)
+;; Function RCC_APB1PeriphClockCmd (RCC_APB1PeriphClockCmd, funcdef_no=51, decl_uid=4663, cgraph_uid=51, symbol_order=53)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2604,7 +2604,7 @@ try_optimize_cfg iteration 2
 (code_label 29 26 30 7 56 (nil) [1 uses])
 (note 30 29 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RCC_APB2PeriphResetCmd (RCC_APB2PeriphResetCmd, funcdef_no=52, decl_uid=4619, cgraph_uid=52, symbol_order=54)
+;; Function RCC_APB2PeriphResetCmd (RCC_APB2PeriphResetCmd, funcdef_no=52, decl_uid=4666, cgraph_uid=52, symbol_order=54)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2706,7 +2706,7 @@ try_optimize_cfg iteration 2
 (code_label 29 26 30 7 59 (nil) [1 uses])
 (note 30 29 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RCC_APB1PeriphResetCmd (RCC_APB1PeriphResetCmd, funcdef_no=53, decl_uid=4622, cgraph_uid=53, symbol_order=55)
+;; Function RCC_APB1PeriphResetCmd (RCC_APB1PeriphResetCmd, funcdef_no=53, decl_uid=4669, cgraph_uid=53, symbol_order=55)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2808,7 +2808,7 @@ try_optimize_cfg iteration 2
 (code_label 29 26 30 7 62 (nil) [1 uses])
 (note 30 29 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RCC_BackupResetCmd (RCC_BackupResetCmd, funcdef_no=54, decl_uid=4624, cgraph_uid=54, symbol_order=56)
+;; Function RCC_BackupResetCmd (RCC_BackupResetCmd, funcdef_no=54, decl_uid=4671, cgraph_uid=54, symbol_order=56)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2915,7 +2915,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 65 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RCC_ClockSecuritySystemCmd (RCC_ClockSecuritySystemCmd, funcdef_no=55, decl_uid=4626, cgraph_uid=55, symbol_order=57)
+;; Function RCC_ClockSecuritySystemCmd (RCC_ClockSecuritySystemCmd, funcdef_no=55, decl_uid=4673, cgraph_uid=55, symbol_order=57)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3018,7 +3018,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 68 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RCC_MCOConfig (RCC_MCOConfig, funcdef_no=56, decl_uid=4628, cgraph_uid=56, symbol_order=58)
+;; Function RCC_MCOConfig (RCC_MCOConfig, funcdef_no=56, decl_uid=4675, cgraph_uid=56, symbol_order=58)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3061,7 +3061,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:QI (reg/v:SI 72 [ RCC_MCO ]) 0)) "../Peripheral/src/ch32v20x_rcc.c":859 -1
      (nil))
 
-;; Function RCC_GetFlagStatus (RCC_GetFlagStatus, funcdef_no=57, decl_uid=4630, cgraph_uid=57, symbol_order=59)
+;; Function RCC_GetFlagStatus (RCC_GetFlagStatus, funcdef_no=57, decl_uid=4677, cgraph_uid=57, symbol_order=59)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3240,7 +3240,7 @@ try_optimize_cfg iteration 2
 (insn 62 61 0 8 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_rcc.c":917 -1
      (nil))
 
-;; Function RCC_WaitForHSEStartUp (RCC_WaitForHSEStartUp, funcdef_no=31, decl_uid=4571, cgraph_uid=31, symbol_order=33)
+;; Function RCC_WaitForHSEStartUp (RCC_WaitForHSEStartUp, funcdef_no=31, decl_uid=4618, cgraph_uid=31, symbol_order=33)
 
 Partition 0: size 4 align 4
 	StartUpCounter
@@ -3300,11 +3300,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 15 14 16 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("RCC_GetFlagStatus") [flags 0x3] <function_decl 0671f870 RCC_GetFlagStatus>) [0 RCC_GetFlagStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("RCC_GetFlagStatus") [flags 0x3] <function_decl 06628258 RCC_GetFlagStatus>) [0 RCC_GetFlagStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_rcc.c":142 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_GetFlagStatus") [flags 0x3] <function_decl 0671f870 RCC_GetFlagStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_GetFlagStatus") [flags 0x3] <function_decl 06628258 RCC_GetFlagStatus>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:QI (use (reg:SI 10 a0))
@@ -3359,11 +3359,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 32 31 33 6 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("RCC_GetFlagStatus") [flags 0x3] <function_decl 0671f870 RCC_GetFlagStatus>) [0 RCC_GetFlagStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("RCC_GetFlagStatus") [flags 0x3] <function_decl 06628258 RCC_GetFlagStatus>) [0 RCC_GetFlagStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_rcc.c":146 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_GetFlagStatus") [flags 0x3] <function_decl 0671f870 RCC_GetFlagStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_GetFlagStatus") [flags 0x3] <function_decl 06628258 RCC_GetFlagStatus>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:QI (use (reg:SI 10 a0))
@@ -3389,7 +3389,7 @@ try_optimize_cfg iteration 2
 (insn 42 41 0 6 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_rcc.c":156 -1
      (nil))
 
-;; Function RCC_ClearFlag (RCC_ClearFlag, funcdef_no=58, decl_uid=4632, cgraph_uid=58, symbol_order=60)
+;; Function RCC_ClearFlag (RCC_ClearFlag, funcdef_no=58, decl_uid=4679, cgraph_uid=58, symbol_order=60)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3439,7 +3439,7 @@ try_optimize_cfg iteration 2
         (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v20x_rcc.c":930 -1
      (nil))
 
-;; Function RCC_GetITStatus (RCC_GetITStatus, funcdef_no=59, decl_uid=4634, cgraph_uid=59, symbol_order=61)
+;; Function RCC_GetITStatus (RCC_GetITStatus, funcdef_no=59, decl_uid=4681, cgraph_uid=59, symbol_order=61)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3507,7 +3507,7 @@ try_optimize_cfg iteration 2
 (insn 21 20 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_rcc.c":965 -1
      (nil))
 
-;; Function RCC_ClearITPendingBit (RCC_ClearITPendingBit, funcdef_no=60, decl_uid=4636, cgraph_uid=60, symbol_order=62)
+;; Function RCC_ClearITPendingBit (RCC_ClearITPendingBit, funcdef_no=60, decl_uid=4683, cgraph_uid=60, symbol_order=62)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3550,7 +3550,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:QI (reg/v:SI 72 [ RCC_IT ]) 0)) "../Peripheral/src/ch32v20x_rcc.c":986 -1
      (nil))
 
-;; Function RCC_ADCCLKADJcmd (RCC_ADCCLKADJcmd, funcdef_no=61, decl_uid=4638, cgraph_uid=61, symbol_order=63)
+;; Function RCC_ADCCLKADJcmd (RCC_ADCCLKADJcmd, funcdef_no=61, decl_uid=4685, cgraph_uid=61, symbol_order=63)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3657,7 +3657,7 @@ try_optimize_cfg iteration 2
 (code_label 30 27 31 7 85 (nil) [1 uses])
 (note 31 30 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RCC_ETHDIVConfig (RCC_ETHDIVConfig, funcdef_no=62, decl_uid=4782, cgraph_uid=62, symbol_order=64)
+;; Function RCC_ETHDIVConfig (RCC_ETHDIVConfig, funcdef_no=62, decl_uid=4829, cgraph_uid=62, symbol_order=64)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3739,7 +3739,7 @@ try_optimize_cfg iteration 2
         (reg:SI 76 [ _5 ])) "../Peripheral/src/ch32v20x_rcc.c":1024 -1
      (nil))
 
-;; Function RCC_USB5PRE_JUDGE (RCC_USB5PRE_JUDGE, funcdef_no=63, decl_uid=4639, cgraph_uid=63, symbol_order=65)
+;; Function RCC_USB5PRE_JUDGE (RCC_USB5PRE_JUDGE, funcdef_no=63, decl_uid=4686, cgraph_uid=63, symbol_order=65)
 
 
 ;; Generating RTL for gimple basic block 2

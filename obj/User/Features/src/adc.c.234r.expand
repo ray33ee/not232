@@ -1,0 +1,621 @@
+
+;; Function adc_init (adc_init, funcdef_no=29, decl_uid=4688, cgraph_uid=29, symbol_order=29)
+
+Partition 0: size 32 align 4
+	ADC_InitStructure
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../User/Features/src/adc.c":6 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 74)
+        (plus:SI (reg/f:SI 67 virtual-stack-vars)
+            (const_int -32 [0xffffffffffffffe0]))) "../User/Features/src/adc.c":6 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 75)
+        (const_int 32 [0x20])) "../User/Features/src/adc.c":6 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 12 a2)
+        (reg:SI 75)) "../User/Features/src/adc.c":6 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 11 a1)
+        (const_int 0 [0])) "../User/Features/src/adc.c":6 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 10 a0)
+        (reg:SI 74)) "../User/Features/src/adc.c":6 -1
+     (nil))
+(call_insn 11 10 12 2 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("memset") [flags 0x41] <function_decl 062fd078 __builtin_memset>) [0 __builtin_memset S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":6 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memset") [flags 0x41] <function_decl 062fd078 __builtin_memset>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (set (reg:SI 10 a0)
+            (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 10 a0))
+            (expr_list:SI (use (reg:SI 11 a1))
+                (expr_list:SI (use (reg:SI 12 a2))
+                    (nil))))))
+(insn 12 11 13 2 (set (reg:SI 76)
+        (reg:SI 10 a0)) "../User/Features/src/adc.c":6 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../User/Features/src/adc.c":9 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 10 a0)
+        (const_int 49152 [0xc000])) "../User/Features/src/adc.c":9 -1
+     (nil))
+(call_insn 15 14 16 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("RCC_ADCCLKConfig") [flags 0x41] <function_decl 065054b0 RCC_ADCCLKConfig>) [0 RCC_ADCCLKConfig S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_ADCCLKConfig") [flags 0x41] <function_decl 065054b0 RCC_ADCCLKConfig>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (nil)))
+(debug_insn 16 15 17 2 (debug_marker) "../User/Features/src/adc.c":10 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 77)
+        (const_int 1073815552 [0x40012000])) "../User/Features/src/adc.c":10 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 77)
+            (const_int 1024 [0x400]))) "../User/Features/src/adc.c":10 -1
+     (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
+        (nil)))
+(call_insn 19 18 20 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ADC_DeInit") [flags 0x41] <function_decl 063f9ac8 ADC_DeInit>) [0 ADC_DeInit S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":10 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_DeInit") [flags 0x41] <function_decl 063f9ac8 ADC_DeInit>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (nil)))
+(debug_insn 20 19 21 2 (debug_marker) "../User/Features/src/adc.c":12 -1
+     (nil))
+(insn 21 20 22 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 ADC_InitStructure.ADC_Mode+0 S4 A64])
+        (const_int 0 [0])) "../User/Features/src/adc.c":12 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "../User/Features/src/adc.c":13 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [3 ADC_InitStructure.ADC_ScanConvMode+0 S4 A32])
+        (const_int 0 [0])) "../User/Features/src/adc.c":13 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker) "../User/Features/src/adc.c":14 -1
+     (nil))
+(insn 25 24 26 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 ADC_InitStructure.ADC_ContinuousConvMode+0 S4 A64])
+        (const_int 0 [0])) "../User/Features/src/adc.c":14 -1
+     (nil))
+(debug_insn 26 25 27 2 (debug_marker) "../User/Features/src/adc.c":15 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:SI 78)
+        (const_int 917504 [0xe0000])) "../User/Features/src/adc.c":15 -1
+     (nil))
+(insn 28 27 29 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 ADC_InitStructure.ADC_ExternalTrigConv+0 S4 A32])
+        (reg:SI 78)) "../User/Features/src/adc.c":15 -1
+     (nil))
+(debug_insn 29 28 30 2 (debug_marker) "../User/Features/src/adc.c":16 -1
+     (nil))
+(insn 30 29 31 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 ADC_InitStructure.ADC_DataAlign+0 S4 A64])
+        (const_int 0 [0])) "../User/Features/src/adc.c":16 -1
+     (nil))
+(debug_insn 31 30 32 2 (debug_marker) "../User/Features/src/adc.c":17 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:QI 79)
+        (const_int 1 [0x1])) "../User/Features/src/adc.c":17 -1
+     (nil))
+(insn 33 32 34 2 (set (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 ADC_InitStructure.ADC_NbrOfChannel+0 S1 A32])
+        (reg:QI 79)) "../User/Features/src/adc.c":17 -1
+     (nil))
+(debug_insn 34 33 35 2 (debug_marker) "../User/Features/src/adc.c":19 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:SI 80)
+        (plus:SI (reg/f:SI 67 virtual-stack-vars)
+            (const_int -32 [0xffffffffffffffe0]))) "../User/Features/src/adc.c":19 -1
+     (nil))
+(insn 36 35 37 2 (set (reg:SI 11 a1)
+        (reg:SI 80)) "../User/Features/src/adc.c":19 -1
+     (nil))
+(insn 37 36 38 2 (set (reg:SI 81)
+        (const_int 1073815552 [0x40012000])) "../User/Features/src/adc.c":19 -1
+     (nil))
+(insn 38 37 39 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 81)
+            (const_int 1024 [0x400]))) "../User/Features/src/adc.c":19 -1
+     (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
+        (nil)))
+(call_insn 39 38 40 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ADC_Init") [flags 0x41] <function_decl 063f9b40 ADC_Init>) [0 ADC_Init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":19 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_Init") [flags 0x41] <function_decl 063f9b40 ADC_Init>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(debug_insn 40 39 41 2 (debug_marker) "../User/Features/src/adc.c":22 -1
+     (nil))
+(insn 41 40 42 2 (set (reg:SI 11 a1)
+        (const_int 0 [0])) "../User/Features/src/adc.c":22 -1
+     (nil))
+(insn 42 41 43 2 (set (reg:SI 82)
+        (const_int 1073815552 [0x40012000])) "../User/Features/src/adc.c":22 -1
+     (nil))
+(insn 43 42 44 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 82)
+            (const_int 1024 [0x400]))) "../User/Features/src/adc.c":22 -1
+     (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
+        (nil)))
+(call_insn 44 43 45 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ADC_InjectedDiscModeCmd") [flags 0x41] <function_decl 065233c0 ADC_InjectedDiscModeCmd>) [0 ADC_InjectedDiscModeCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":22 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_InjectedDiscModeCmd") [flags 0x41] <function_decl 065233c0 ADC_InjectedDiscModeCmd>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(debug_insn 45 44 46 2 (debug_marker) "../User/Features/src/adc.c":23 -1
+     (nil))
+(insn 46 45 47 2 (set (reg:SI 11 a1)
+        (const_int 0 [0])) "../User/Features/src/adc.c":23 -1
+     (nil))
+(insn 47 46 48 2 (set (reg:SI 83)
+        (const_int 1073815552 [0x40012000])) "../User/Features/src/adc.c":23 -1
+     (nil))
+(insn 48 47 49 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 83)
+            (const_int 1024 [0x400]))) "../User/Features/src/adc.c":23 -1
+     (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
+        (nil)))
+(call_insn 49 48 50 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ADC_ExternalTrigInjectedConvCmd") [flags 0x41] <function_decl 065234b0 ADC_ExternalTrigInjectedConvCmd>) [0 ADC_ExternalTrigInjectedConvCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":23 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_ExternalTrigInjectedConvCmd") [flags 0x41] <function_decl 065234b0 ADC_ExternalTrigInjectedConvCmd>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(debug_insn 50 49 51 2 (debug_marker) "../User/Features/src/adc.c":25 -1
+     (nil))
+(insn 51 50 52 2 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../User/Features/src/adc.c":25 -1
+     (nil))
+(insn 52 51 53 2 (set (reg:SI 84)
+        (const_int 1073815552 [0x40012000])) "../User/Features/src/adc.c":25 -1
+     (nil))
+(insn 53 52 54 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 84)
+            (const_int 1024 [0x400]))) "../User/Features/src/adc.c":25 -1
+     (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
+        (nil)))
+(call_insn 54 53 55 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ADC_Cmd") [flags 0x41] <function_decl 063f9c30 ADC_Cmd>) [0 ADC_Cmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":25 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_Cmd") [flags 0x41] <function_decl 063f9c30 ADC_Cmd>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(debug_insn 55 54 56 2 (debug_marker) "../User/Features/src/adc.c":28 -1
+     (nil))
+(insn 56 55 57 2 (set (reg:SI 11 a1)
+        (const_int 0 [0])) "../User/Features/src/adc.c":28 -1
+     (nil))
+(insn 57 56 58 2 (set (reg:SI 85)
+        (const_int 1073815552 [0x40012000])) "../User/Features/src/adc.c":28 -1
+     (nil))
+(insn 58 57 59 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 85)
+            (const_int 1024 [0x400]))) "../User/Features/src/adc.c":28 -1
+     (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
+        (nil)))
+(call_insn 59 58 60 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ADC_BufferCmd") [flags 0x41] <function_decl 06523c30 ADC_BufferCmd>) [0 ADC_BufferCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":28 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_BufferCmd") [flags 0x41] <function_decl 06523c30 ADC_BufferCmd>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(debug_insn 60 59 61 2 (debug_marker) "../User/Features/src/adc.c":29 -1
+     (nil))
+(insn 61 60 62 2 (set (reg:SI 86)
+        (const_int 1073815552 [0x40012000])) "../User/Features/src/adc.c":29 -1
+     (nil))
+(insn 62 61 63 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 86)
+            (const_int 1024 [0x400]))) "../User/Features/src/adc.c":29 -1
+     (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
+        (nil)))
+(call_insn 63 62 64 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ADC_ResetCalibration") [flags 0x41] <function_decl 063f9d98 ADC_ResetCalibration>) [0 ADC_ResetCalibration S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":29 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_ResetCalibration") [flags 0x41] <function_decl 063f9d98 ADC_ResetCalibration>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (nil)))
+(debug_insn 64 63 71 2 (debug_marker) "../User/Features/src/adc.c":30 -1
+     (nil))
+(code_label 71 64 65 4 2 (nil) [1 uses])
+(note 65 71 66 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 66 65 67 4 (debug_marker) "../User/Features/src/adc.c":30 -1
+     (nil))
+(insn 67 66 68 4 (set (reg:SI 87)
+        (const_int 1073815552 [0x40012000])) "../User/Features/src/adc.c":30 -1
+     (nil))
+(insn 68 67 69 4 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 87)
+            (const_int 1024 [0x400]))) "../User/Features/src/adc.c":30 -1
+     (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
+        (nil)))
+(call_insn 69 68 70 4 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("ADC_GetResetCalibrationStatus") [flags 0x41] <function_decl 063f9e10 ADC_GetResetCalibrationStatus>) [0 ADC_GetResetCalibrationStatus S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":30 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetResetCalibrationStatus") [flags 0x41] <function_decl 063f9e10 ADC_GetResetCalibrationStatus>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (nil)))
+(insn 70 69 72 4 (set (reg:SI 72 [ _1 ])
+        (reg:SI 10 a0)) "../User/Features/src/adc.c":30 -1
+     (nil))
+(jump_insn 72 70 73 4 (set (pc)
+        (if_then_else (ne (reg:SI 72 [ _1 ])
+                (const_int 0 [0]))
+            (label_ref 71)
+            (pc))) "../User/Features/src/adc.c":30 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 71)
+(note 73 72 74 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 74 73 75 5 (debug_marker) "../User/Features/src/adc.c":31 -1
+     (nil))
+(insn 75 74 76 5 (set (reg:SI 88)
+        (const_int 1073815552 [0x40012000])) "../User/Features/src/adc.c":31 -1
+     (nil))
+(insn 76 75 77 5 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 88)
+            (const_int 1024 [0x400]))) "../User/Features/src/adc.c":31 -1
+     (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
+        (nil)))
+(call_insn 77 76 78 5 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ADC_StartCalibration") [flags 0x41] <function_decl 063f9e88 ADC_StartCalibration>) [0 ADC_StartCalibration S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":31 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_StartCalibration") [flags 0x41] <function_decl 063f9e88 ADC_StartCalibration>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (nil)))
+(debug_insn 78 77 85 5 (debug_marker) "../User/Features/src/adc.c":32 -1
+     (nil))
+(code_label 85 78 79 6 3 (nil) [1 uses])
+(note 79 85 80 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 80 79 81 6 (debug_marker) "../User/Features/src/adc.c":32 -1
+     (nil))
+(insn 81 80 82 6 (set (reg:SI 89)
+        (const_int 1073815552 [0x40012000])) "../User/Features/src/adc.c":32 -1
+     (nil))
+(insn 82 81 83 6 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 89)
+            (const_int 1024 [0x400]))) "../User/Features/src/adc.c":32 -1
+     (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
+        (nil)))
+(call_insn 83 82 84 6 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("ADC_GetCalibrationStatus") [flags 0x41] <function_decl 063f9f00 ADC_GetCalibrationStatus>) [0 ADC_GetCalibrationStatus S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":32 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetCalibrationStatus") [flags 0x41] <function_decl 063f9f00 ADC_GetCalibrationStatus>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (nil)))
+(insn 84 83 86 6 (set (reg:SI 73 [ _2 ])
+        (reg:SI 10 a0)) "../User/Features/src/adc.c":32 -1
+     (nil))
+(jump_insn 86 84 87 6 (set (pc)
+        (if_then_else (ne (reg:SI 73 [ _2 ])
+                (const_int 0 [0]))
+            (label_ref 85)
+            (pc))) "../User/Features/src/adc.c":32 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 85)
+(note 87 86 88 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 88 87 89 7 (debug_marker) "../User/Features/src/adc.c":33 -1
+     (nil))
+(insn 89 88 90 7 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../User/Features/src/adc.c":33 -1
+     (nil))
+(insn 90 89 91 7 (set (reg:SI 90)
+        (const_int 1073815552 [0x40012000])) "../User/Features/src/adc.c":33 -1
+     (nil))
+(insn 91 90 92 7 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 90)
+            (const_int 1024 [0x400]))) "../User/Features/src/adc.c":33 -1
+     (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
+        (nil)))
+(call_insn 92 91 0 7 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ADC_BufferCmd") [flags 0x41] <function_decl 06523c30 ADC_BufferCmd>) [0 ADC_BufferCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":33 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_BufferCmd") [flags 0x41] <function_decl 06523c30 ADC_BufferCmd>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+
+;; Function adc_read (adc_read, funcdef_no=30, decl_uid=4690, cgraph_uid=30, symbol_order=30)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 55.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 74 [ pin_number ])
+        (reg:SI 10 a0 [ pin_number ])) "../User/Features/src/adc.c":39 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/adc.c":40 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "../User/Features/src/adc.c":42 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 75)
+        (const_int 7 [0x7])) "../User/Features/src/adc.c":42 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (leu (reg/v:SI 74 [ pin_number ])
+                (reg:SI 75))
+            (label_ref 15)
+            (pc))) "../User/Features/src/adc.c":42 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 15)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 11 10 12 4 (debug_marker) "../User/Features/src/adc.c":45 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:SI 76)
+        (plus:SI (reg/v:SI 74 [ pin_number ])
+            (const_int -8 [0xfffffffffffffff8]))) "../User/Features/src/adc.c":45 -1
+     (nil))
+(insn 13 12 14 4 (set (reg/v:SI 74 [ pin_number ])
+        (zero_extend:SI (subreg:QI (reg:SI 76) 0))) "../User/Features/src/adc.c":45 -1
+     (nil))
+(debug_insn 14 13 15 4 (var_location:QI adc_channel (subreg:QI (reg/v:SI 74 [ pin_number ]) 0)) "../User/Features/src/adc.c":45 -1
+     (nil))
+(code_label 15 14 16 5 8 (nil) [1 uses])
+(note 16 15 17 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 17 16 18 5 (var_location:QI adc_channel (subreg:QI (reg/v:SI 74 [ pin_number ]) 0)) -1
+     (nil))
+(debug_insn 18 17 19 5 (debug_marker) "../User/Features/src/adc.c":48 -1
+     (nil))
+(insn 19 18 20 5 (set (reg:SI 13 a3)
+        (const_int 5 [0x5])) "../User/Features/src/adc.c":48 -1
+     (nil))
+(insn 20 19 21 5 (set (reg:SI 12 a2)
+        (const_int 1 [0x1])) "../User/Features/src/adc.c":48 -1
+     (nil))
+(insn 21 20 22 5 (set (reg:SI 11 a1)
+        (reg/v:SI 74 [ pin_number ])) "../User/Features/src/adc.c":48 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:SI 77)
+        (const_int 1073815552 [0x40012000])) "../User/Features/src/adc.c":48 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 77)
+            (const_int 1024 [0x400]))) "../User/Features/src/adc.c":48 -1
+     (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
+        (nil)))
+(call_insn 24 23 25 5 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ADC_RegularChannelConfig") [flags 0x41] <function_decl 06523168 ADC_RegularChannelConfig>) [0 ADC_RegularChannelConfig S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":48 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_RegularChannelConfig") [flags 0x41] <function_decl 06523168 ADC_RegularChannelConfig>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:QI (use (reg:SI 11 a1))
+            (expr_list:QI (use (reg:SI 12 a2))
+                (expr_list:QI (use (reg:SI 13 a3))
+                    (nil))))))
+(debug_insn 25 24 26 5 (debug_marker) "../User/Features/src/adc.c":50 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../User/Features/src/adc.c":50 -1
+     (nil))
+(insn 27 26 28 5 (set (reg:SI 78)
+        (const_int 1073815552 [0x40012000])) "../User/Features/src/adc.c":50 -1
+     (nil))
+(insn 28 27 29 5 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 78)
+            (const_int 1024 [0x400]))) "../User/Features/src/adc.c":50 -1
+     (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
+        (nil)))
+(call_insn 29 28 30 5 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ADC_SoftwareStartConvCmd") [flags 0x41] <function_decl 063f9f78 ADC_SoftwareStartConvCmd>) [0 ADC_SoftwareStartConvCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":50 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_SoftwareStartConvCmd") [flags 0x41] <function_decl 063f9f78 ADC_SoftwareStartConvCmd>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(debug_insn 30 29 38 5 (debug_marker) "../User/Features/src/adc.c":52 -1
+     (nil))
+(code_label 38 30 31 6 9 (nil) [1 uses])
+(note 31 38 32 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 32 31 33 6 (debug_marker) "../User/Features/src/adc.c":52 -1
+     (nil))
+(insn 33 32 34 6 (set (reg:SI 11 a1)
+        (const_int 2 [0x2])) "../User/Features/src/adc.c":52 -1
+     (nil))
+(insn 34 33 35 6 (set (reg:SI 79)
+        (const_int 1073815552 [0x40012000])) "../User/Features/src/adc.c":52 -1
+     (nil))
+(insn 35 34 36 6 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 79)
+            (const_int 1024 [0x400]))) "../User/Features/src/adc.c":52 -1
+     (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
+        (nil)))
+(call_insn 36 35 37 6 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("ADC_GetFlagStatus") [flags 0x41] <function_decl 065239d8 ADC_GetFlagStatus>) [0 ADC_GetFlagStatus S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":52 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetFlagStatus") [flags 0x41] <function_decl 065239d8 ADC_GetFlagStatus>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:QI (use (reg:SI 11 a1))
+            (nil))))
+(insn 37 36 39 6 (set (reg:SI 72 [ _1 ])
+        (reg:SI 10 a0)) "../User/Features/src/adc.c":52 -1
+     (nil))
+(jump_insn 39 37 40 6 (set (pc)
+        (if_then_else (eq (reg:SI 72 [ _1 ])
+                (const_int 0 [0]))
+            (label_ref 38)
+            (pc))) "../User/Features/src/adc.c":52 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 38)
+(note 40 39 41 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 41 40 42 7 (debug_marker) "../User/Features/src/adc.c":54 -1
+     (nil))
+(insn 42 41 43 7 (set (reg:SI 80)
+        (const_int 1073815552 [0x40012000])) "../User/Features/src/adc.c":54 -1
+     (nil))
+(insn 43 42 44 7 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 80)
+            (const_int 1024 [0x400]))) "../User/Features/src/adc.c":54 -1
+     (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
+        (nil)))
+(call_insn 44 43 45 7 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("ADC_GetConversionValue") [flags 0x41] <function_decl 06523258 ADC_GetConversionValue>) [0 ADC_GetConversionValue S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":54 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetConversionValue") [flags 0x41] <function_decl 06523258 ADC_GetConversionValue>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (nil)))
+(insn 45 44 46 7 (set (reg:SI 81)
+        (reg:SI 10 a0)) "../User/Features/src/adc.c":54 -1
+     (nil))
+(insn 46 45 47 7 (set (reg/v:SI 73 [ <retval> ])
+        (reg:SI 81)) "../User/Features/src/adc.c":54 -1
+     (nil))
+(debug_insn 47 46 48 7 (var_location:HI v (subreg:HI (reg/v:SI 73 [ <retval> ]) 0)) "../User/Features/src/adc.c":54 -1
+     (nil))
+(debug_insn 48 47 49 7 (debug_marker) "../User/Features/src/adc.c":56 -1
+     (nil))
+(insn 49 48 50 7 (set (reg:SI 11 a1)
+        (const_int 2 [0x2])) "../User/Features/src/adc.c":56 -1
+     (nil))
+(insn 50 49 51 7 (set (reg:SI 82)
+        (const_int 1073815552 [0x40012000])) "../User/Features/src/adc.c":56 -1
+     (nil))
+(insn 51 50 52 7 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 82)
+            (const_int 1024 [0x400]))) "../User/Features/src/adc.c":56 -1
+     (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
+        (nil)))
+(call_insn 52 51 53 7 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ADC_ClearFlag") [flags 0x41] <function_decl 06523a50 ADC_ClearFlag>) [0 ADC_ClearFlag S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/adc.c":56 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_ClearFlag") [flags 0x41] <function_decl 06523a50 ADC_ClearFlag>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:QI (use (reg:SI 11 a1))
+            (nil))))
+(debug_insn 53 52 54 7 (debug_marker) "../User/Features/src/adc.c":58 -1
+     (nil))
+(insn 54 53 58 7 (set (reg/v:SI 73 [ <retval> ])
+        (reg/v:SI 73 [ <retval> ])) "../User/Features/src/adc.c":58 -1
+     (nil))
+(insn 58 54 59 7 (set (reg/i:SI 10 a0)
+        (reg/v:SI 73 [ <retval> ])) "../User/Features/src/adc.c":59 -1
+     (nil))
+(insn 59 58 0 7 (use (reg/i:SI 10 a0)) "../User/Features/src/adc.c":59 -1
+     (nil))

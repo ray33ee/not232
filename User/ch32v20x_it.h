@@ -14,10 +14,7 @@
 
 #include "debug.h"
 #include "constants.h"
-
-void TIM4_pulseio_start(void);
-
-uint16_t TIM4_pulseio_stop(void);
+#include "Features/inc/pulse_in.h"
 
 #endif /* __CH32V20x_IT_H */
 

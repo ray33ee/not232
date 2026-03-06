@@ -1,5 +1,5 @@
 
-;; Function DBGMCU_GetREVID (DBGMCU_GetREVID, funcdef_no=29, decl_uid=4628, cgraph_uid=29, symbol_order=29)
+;; Function DBGMCU_GetREVID (DBGMCU_GetREVID, funcdef_no=29, decl_uid=4675, cgraph_uid=29, symbol_order=29)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -60,7 +60,7 @@ try_optimize_cfg iteration 2
 (insn 17 16 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_dbgmcu.c":26 -1
      (nil))
 
-;; Function DBGMCU_GetDEVID (DBGMCU_GetDEVID, funcdef_no=30, decl_uid=4630, cgraph_uid=30, symbol_order=30)
+;; Function DBGMCU_GetDEVID (DBGMCU_GetDEVID, funcdef_no=30, decl_uid=4677, cgraph_uid=30, symbol_order=30)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -113,7 +113,7 @@ try_optimize_cfg iteration 2
 (insn 15 14 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_dbgmcu.c":38 -1
      (nil))
 
-;; Function __get_DEBUG_CR (__get_DEBUG_CR, funcdef_no=31, decl_uid=4632, cgraph_uid=31, symbol_order=31)
+;; Function __get_DEBUG_CR (__get_DEBUG_CR, funcdef_no=31, decl_uid=4679, cgraph_uid=31, symbol_order=31)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -162,7 +162,7 @@ try_optimize_cfg iteration 2
 (insn 15 14 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_dbgmcu.c":53 -1
      (nil))
 
-;; Function __set_DEBUG_CR (__set_DEBUG_CR, funcdef_no=32, decl_uid=4634, cgraph_uid=32, symbol_order=32)
+;; Function __set_DEBUG_CR (__set_DEBUG_CR, funcdef_no=32, decl_uid=4681, cgraph_uid=32, symbol_order=32)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -202,7 +202,7 @@ try_optimize_cfg iteration 2
          [] ../Peripheral/src/ch32v20x_dbgmcu.c:66) "../Peripheral/src/ch32v20x_dbgmcu.c":66 -1
      (nil))
 
-;; Function DBGMCU_Config (DBGMCU_Config, funcdef_no=33, decl_uid=4637, cgraph_uid=33, symbol_order=33)
+;; Function DBGMCU_Config (DBGMCU_Config, funcdef_no=33, decl_uid=4684, cgraph_uid=33, symbol_order=33)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -326,7 +326,7 @@ try_optimize_cfg iteration 2
 (code_label 38 35 39 7 5 (nil) [1 uses])
 (note 39 38 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function DBGMCU_GetCHIPID (DBGMCU_GetCHIPID, funcdef_no=34, decl_uid=4639, cgraph_uid=34, symbol_order=34)
+;; Function DBGMCU_GetCHIPID (DBGMCU_GetCHIPID, funcdef_no=34, decl_uid=4686, cgraph_uid=34, symbol_order=34)
 
 
 ;; Generating RTL for gimple basic block 2

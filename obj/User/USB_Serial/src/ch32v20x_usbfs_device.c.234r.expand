@@ -1,5 +1,5 @@
 
-;; Function USBFS_RCC_Init (USBFS_RCC_Init, funcdef_no=30, decl_uid=4977, cgraph_uid=30, symbol_order=45)
+;; Function USBFS_RCC_Init (USBFS_RCC_Init, funcdef_no=30, decl_uid=5024, cgraph_uid=30, symbol_order=45)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -31,11 +31,11 @@ try_optimize_cfg iteration 2
         (const_int 2 [0x2])) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":54 -1
      (nil))
 (call_insn 7 6 8 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_USBCLKConfig") [flags 0x41] <function_decl 066cc000 RCC_USBCLKConfig>) [0 RCC_USBCLKConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_USBCLKConfig") [flags 0x41] <function_decl 066b9000 RCC_USBCLKConfig>) [0 RCC_USBCLKConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":54 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_USBCLKConfig") [flags 0x41] <function_decl 066cc000 RCC_USBCLKConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_USBCLKConfig") [flags 0x41] <function_decl 066b9000 RCC_USBCLKConfig>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -48,17 +48,17 @@ try_optimize_cfg iteration 2
         (const_int 4096 [0x1000])) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":55 -1
      (nil))
 (call_insn 11 10 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_AHBPeriphClockCmd") [flags 0x41] <function_decl 066cc348 RCC_AHBPeriphClockCmd>) [0 RCC_AHBPeriphClockCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_AHBPeriphClockCmd") [flags 0x41] <function_decl 066b9348 RCC_AHBPeriphClockCmd>) [0 RCC_AHBPeriphClockCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":55 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_AHBPeriphClockCmd") [flags 0x41] <function_decl 066cc348 RCC_AHBPeriphClockCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_AHBPeriphClockCmd") [flags 0x41] <function_decl 066b9348 RCC_AHBPeriphClockCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (nil))))
 
-;; Function USBFS_Device_Endp_Init (USBFS_Device_Endp_Init, funcdef_no=31, decl_uid=4975, cgraph_uid=31, symbol_order=47)
+;; Function USBFS_Device_Endp_Init (USBFS_Device_Endp_Init, funcdef_no=31, decl_uid=5022, cgraph_uid=31, symbol_order=47)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -428,7 +428,7 @@ try_optimize_cfg iteration 2
 (debug_insn 120 119 0 2 (var_location:QI i (const_int 8 [0x8])) -1
      (nil))
 
-;; Function USBFS_Device_Init (USBFS_Device_Init, funcdef_no=32, decl_uid=4973, cgraph_uid=32, symbol_order=48)
+;; Function USBFS_Device_Init (USBFS_Device_Init, funcdef_no=32, decl_uid=5020, cgraph_uid=32, symbol_order=48)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -491,11 +491,11 @@ try_optimize_cfg iteration 2
         (const_int 10 [0xa])) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":115 -1
      (nil))
 (call_insn 15 14 16 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 06705708 Delay_Us>) [0 Delay_Us S4 A32])
+            (call (mem:SI (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 066f70f0 Delay_Us>) [0 Delay_Us S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":115 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 06705708 Delay_Us>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 066f70f0 Delay_Us>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -533,11 +533,11 @@ try_optimize_cfg iteration 2
 (debug_insn 27 26 28 4 (debug_marker) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":119 -1
      (nil))
 (call_insn 28 27 29 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("USBFS_Device_Endp_Init") [flags 0x3] <function_decl 06710bb8 USBFS_Device_Endp_Init>) [0 USBFS_Device_Endp_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("USBFS_Device_Endp_Init") [flags 0x3] <function_decl 067243c0 USBFS_Device_Endp_Init>) [0 USBFS_Device_Endp_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":119 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("USBFS_Device_Endp_Init") [flags 0x3] <function_decl 06710bb8 USBFS_Device_Endp_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("USBFS_Device_Endp_Init") [flags 0x3] <function_decl 067243c0 USBFS_Device_Endp_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -593,11 +593,11 @@ try_optimize_cfg iteration 2
         (const_int 10 [0xa])) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":126 -1
      (nil))
 (call_insn 49 48 50 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 06705708 Delay_Us>) [0 Delay_Us S4 A32])
+            (call (mem:SI (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 066f70f0 Delay_Us>) [0 Delay_Us S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":126 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 06705708 Delay_Us>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 066f70f0 Delay_Us>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -635,7 +635,7 @@ try_optimize_cfg iteration 2
 (code_label 63 60 64 7 4 (nil) [1 uses])
 (note 64 63 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function USBFS_Endp_DataUp (USBFS_Endp_DataUp, funcdef_no=33, decl_uid=4986, cgraph_uid=33, symbol_order=49)
+;; Function USBFS_Endp_DataUp (USBFS_Endp_DataUp, funcdef_no=33, decl_uid=5033, cgraph_uid=33, symbol_order=49)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1108,11 +1108,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 144 143 145 18 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063d3d98 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
+                (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063b3d98 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":208 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063d3d98 __builtin_memcpy>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063b3d98 __builtin_memcpy>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (set (reg:SI 10 a0)
@@ -1205,11 +1205,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 176 175 177 21 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063d3d98 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
+                (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063b3d98 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":203 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063d3d98 __builtin_memcpy>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063b3d98 __builtin_memcpy>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (set (reg:SI 10 a0)
@@ -1318,7 +1318,7 @@ try_optimize_cfg iteration 2
 (insn 203 202 0 26 (use (reg/i:SI 10 a0)) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":228 -1
      (nil))
 
-;; Function USBFS_IRQHandler (USBFS_IRQHandler, funcdef_no=34, decl_uid=5037, cgraph_uid=34, symbol_order=50)
+;; Function USBFS_IRQHandler (USBFS_IRQHandler, funcdef_no=34, decl_uid=5050, cgraph_uid=34, symbol_order=50)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1994,11 +1994,11 @@ Forwarding edge 126->127 to 129 failed.
      (nil))
 (call_insn 147 146 148 20 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063d3d98 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
+                (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063b3d98 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":271 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063d3d98 __builtin_memcpy>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063b3d98 __builtin_memcpy>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (set (reg:SI 10 a0)
@@ -2331,11 +2331,11 @@ Forwarding edge 126->127 to 129 failed.
 (debug_insn 258 257 259 23 (debug_marker) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":301 -1
      (nil))
 (call_insn 259 258 260 23 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_on_ep3_in_done") [flags 0x41] <function_decl 06521348 usbSerial_on_ep3_in_done>) [0 usbSerial_on_ep3_in_done S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_on_ep3_in_done") [flags 0x41] <function_decl 066f1bb8 usbSerial_on_ep3_in_done>) [0 usbSerial_on_ep3_in_done S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":301 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_on_ep3_in_done") [flags 0x41] <function_decl 06521348 usbSerial_on_ep3_in_done>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_on_ep3_in_done") [flags 0x41] <function_decl 066f1bb8 usbSerial_on_ep3_in_done>)
         (nil))
     (nil))
 (debug_insn 260 259 261 23 (debug_marker) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":302 -1
@@ -2652,11 +2652,11 @@ Forwarding edge 126->127 to 129 failed.
         (reg:SI 382)) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":353 -1
      (nil))
 (call_insn 365 364 366 34 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_on_ep2_out") [flags 0x41] <function_decl 065212d0 usbSerial_on_ep2_out>) [0 usbSerial_on_ep2_out S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_on_ep2_out") [flags 0x41] <function_decl 066f1b40 usbSerial_on_ep2_out>) [0 usbSerial_on_ep2_out S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":353 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_on_ep2_out") [flags 0x41] <function_decl 065212d0 usbSerial_on_ep2_out>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_on_ep2_out") [flags 0x41] <function_decl 066f1b40 usbSerial_on_ep2_out>)
         (nil))
     (expr_list:HI (use (reg:SI 10 a0))
         (nil)))
@@ -3202,11 +3202,11 @@ Forwarding edge 126->127 to 129 failed.
      (nil))
 (call_insn 529 528 530 50 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063d3d98 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
+                (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063b3d98 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":416 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063d3d98 __builtin_memcpy>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063b3d98 __builtin_memcpy>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (set (reg:SI 10 a0)
@@ -3384,12 +3384,12 @@ Forwarding edge 126->127 to 129 failed.
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR8") [flags 0x182])
         (nil)))
 (insn 579 578 580 56 (set (reg:SI 483)
-        (high:SI (symbol_ref:SI ("MyDevDescr") [flags 0xc0] <var_decl 066e0898 MyDevDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":430 -1
+        (high:SI (symbol_ref:SI ("MyDevDescr") [flags 0xc0] <var_decl 066ce9a0 MyDevDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":430 -1
      (nil))
 (insn 580 579 581 56 (set (reg/f:SI 482)
         (lo_sum:SI (reg:SI 483)
-            (symbol_ref:SI ("MyDevDescr") [flags 0xc0] <var_decl 066e0898 MyDevDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":430 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("MyDevDescr") [flags 0xc0] <var_decl 066e0898 MyDevDescr>)
+            (symbol_ref:SI ("MyDevDescr") [flags 0xc0] <var_decl 066ce9a0 MyDevDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":430 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("MyDevDescr") [flags 0xc0] <var_decl 066ce9a0 MyDevDescr>)
         (nil)))
 (insn 581 580 582 56 (set (mem/f/c:SI (reg/f:SI 480) [4 pUSBFS_Descr+0 S4 A32])
         (reg/f:SI 482)) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":430 -1
@@ -3397,11 +3397,11 @@ Forwarding edge 126->127 to 129 failed.
 (debug_insn 582 581 583 56 (debug_marker) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":431 -1
      (nil))
 (insn 583 582 584 56 (set (reg:SI 484)
-        (high:SI (symbol_ref:SI ("MyDevDescr") [flags 0xc0] <var_decl 066e0898 MyDevDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":431 -1
+        (high:SI (symbol_ref:SI ("MyDevDescr") [flags 0xc0] <var_decl 066ce9a0 MyDevDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":431 -1
      (nil))
 (insn 584 583 585 56 (set (reg:HI 485)
         (zero_extend:HI (mem/u/j:QI (lo_sum:SI (reg:SI 484)
-                    (symbol_ref:SI ("MyDevDescr") [flags 0xc0] <var_decl 066e0898 MyDevDescr>)) [0 MyDevDescr+0 S1 A8]))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":431 -1
+                    (symbol_ref:SI ("MyDevDescr") [flags 0xc0] <var_decl 066ce9a0 MyDevDescr>)) [0 MyDevDescr+0 S1 A8]))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":431 -1
      (nil))
 (insn 585 584 586 56 (set (reg/v:SI 227 [ len ])
         (zero_extend:SI (reg:HI 485))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":431 -1
@@ -3431,12 +3431,12 @@ Forwarding edge 126->127 to 129 failed.
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR8") [flags 0x182])
         (nil)))
 (insn 595 594 596 57 (set (reg:SI 489)
-        (high:SI (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066e08f0 MyCfgDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":436 -1
+        (high:SI (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066ce9f8 MyCfgDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":436 -1
      (nil))
 (insn 596 595 597 57 (set (reg/f:SI 488)
         (lo_sum:SI (reg:SI 489)
-            (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066e08f0 MyCfgDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":436 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066e08f0 MyCfgDescr>)
+            (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066ce9f8 MyCfgDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":436 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066ce9f8 MyCfgDescr>)
         (nil)))
 (insn 597 596 598 57 (set (mem/f/c:SI (reg/f:SI 486) [4 pUSBFS_Descr+0 S4 A32])
         (reg/f:SI 488)) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":436 -1
@@ -3444,11 +3444,11 @@ Forwarding edge 126->127 to 129 failed.
 (debug_insn 598 597 599 57 (debug_marker) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":437 -1
      (nil))
 (insn 599 598 600 57 (set (reg:SI 490)
-        (high:SI (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066e08f0 MyCfgDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":437 -1
+        (high:SI (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066ce9f8 MyCfgDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":437 -1
      (nil))
 (insn 600 599 601 57 (set (reg/f:SI 491)
         (lo_sum:SI (reg:SI 490)
-            (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066e08f0 MyCfgDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":437 -1
+            (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066ce9f8 MyCfgDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":437 -1
      (nil))
 (insn 601 600 602 57 (set (reg:HI 492)
         (zero_extend:HI (mem/u/j:QI (plus:SI (reg/f:SI 491)
@@ -3459,11 +3459,11 @@ Forwarding edge 126->127 to 129 failed.
             (const_int 8 [0x8]))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":437 -1
      (nil))
 (insn 603 602 604 57 (set (reg:SI 494)
-        (high:SI (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066e08f0 MyCfgDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":437 -1
+        (high:SI (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066ce9f8 MyCfgDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":437 -1
      (nil))
 (insn 604 603 605 57 (set (reg/f:SI 495)
         (lo_sum:SI (reg:SI 494)
-            (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066e08f0 MyCfgDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":437 -1
+            (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066ce9f8 MyCfgDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":437 -1
      (nil))
 (insn 605 604 606 57 (set (reg:HI 496)
         (zero_extend:HI (mem/u/j:QI (plus:SI (reg/f:SI 495)
@@ -3580,12 +3580,12 @@ Forwarding edge 126->127 to 129 failed.
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR8") [flags 0x182])
         (nil)))
 (insn 640 639 641 63 (set (reg:SI 509)
-        (high:SI (symbol_ref:SI ("MyLangDescr") [flags 0xc0] <var_decl 066e0948 MyLangDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":446 -1
+        (high:SI (symbol_ref:SI ("MyLangDescr") [flags 0xc0] <var_decl 066cea50 MyLangDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":446 -1
      (nil))
 (insn 641 640 642 63 (set (reg/f:SI 508)
         (lo_sum:SI (reg:SI 509)
-            (symbol_ref:SI ("MyLangDescr") [flags 0xc0] <var_decl 066e0948 MyLangDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":446 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("MyLangDescr") [flags 0xc0] <var_decl 066e0948 MyLangDescr>)
+            (symbol_ref:SI ("MyLangDescr") [flags 0xc0] <var_decl 066cea50 MyLangDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":446 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("MyLangDescr") [flags 0xc0] <var_decl 066cea50 MyLangDescr>)
         (nil)))
 (insn 642 641 643 63 (set (mem/f/c:SI (reg/f:SI 506) [4 pUSBFS_Descr+0 S4 A32])
         (reg/f:SI 508)) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":446 -1
@@ -3593,11 +3593,11 @@ Forwarding edge 126->127 to 129 failed.
 (debug_insn 643 642 644 63 (debug_marker) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":447 -1
      (nil))
 (insn 644 643 645 63 (set (reg:SI 510)
-        (high:SI (symbol_ref:SI ("MyLangDescr") [flags 0xc0] <var_decl 066e0948 MyLangDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":447 -1
+        (high:SI (symbol_ref:SI ("MyLangDescr") [flags 0xc0] <var_decl 066cea50 MyLangDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":447 -1
      (nil))
 (insn 645 644 646 63 (set (reg:HI 511)
         (zero_extend:HI (mem/u/j:QI (lo_sum:SI (reg:SI 510)
-                    (symbol_ref:SI ("MyLangDescr") [flags 0xc0] <var_decl 066e0948 MyLangDescr>)) [0 MyLangDescr+0 S1 A8]))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":447 -1
+                    (symbol_ref:SI ("MyLangDescr") [flags 0xc0] <var_decl 066cea50 MyLangDescr>)) [0 MyLangDescr+0 S1 A8]))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":447 -1
      (nil))
 (insn 646 645 647 63 (set (reg/v:SI 227 [ len ])
         (zero_extend:SI (reg:HI 511))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":447 -1
@@ -3627,12 +3627,12 @@ Forwarding edge 126->127 to 129 failed.
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR8") [flags 0x182])
         (nil)))
 (insn 656 655 657 64 (set (reg:SI 515)
-        (high:SI (symbol_ref:SI ("MyManuInfo") [flags 0xc0] <var_decl 066e09a0 MyManuInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":452 -1
+        (high:SI (symbol_ref:SI ("MyManuInfo") [flags 0xc0] <var_decl 066ceaa8 MyManuInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":452 -1
      (nil))
 (insn 657 656 658 64 (set (reg/f:SI 514)
         (lo_sum:SI (reg:SI 515)
-            (symbol_ref:SI ("MyManuInfo") [flags 0xc0] <var_decl 066e09a0 MyManuInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":452 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("MyManuInfo") [flags 0xc0] <var_decl 066e09a0 MyManuInfo>)
+            (symbol_ref:SI ("MyManuInfo") [flags 0xc0] <var_decl 066ceaa8 MyManuInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":452 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("MyManuInfo") [flags 0xc0] <var_decl 066ceaa8 MyManuInfo>)
         (nil)))
 (insn 658 657 659 64 (set (mem/f/c:SI (reg/f:SI 512) [4 pUSBFS_Descr+0 S4 A32])
         (reg/f:SI 514)) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":452 -1
@@ -3640,11 +3640,11 @@ Forwarding edge 126->127 to 129 failed.
 (debug_insn 659 658 660 64 (debug_marker) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":453 -1
      (nil))
 (insn 660 659 661 64 (set (reg:SI 516)
-        (high:SI (symbol_ref:SI ("MyManuInfo") [flags 0xc0] <var_decl 066e09a0 MyManuInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":453 -1
+        (high:SI (symbol_ref:SI ("MyManuInfo") [flags 0xc0] <var_decl 066ceaa8 MyManuInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":453 -1
      (nil))
 (insn 661 660 662 64 (set (reg:HI 517)
         (zero_extend:HI (mem/u/j:QI (lo_sum:SI (reg:SI 516)
-                    (symbol_ref:SI ("MyManuInfo") [flags 0xc0] <var_decl 066e09a0 MyManuInfo>)) [0 MyManuInfo+0 S1 A8]))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":453 -1
+                    (symbol_ref:SI ("MyManuInfo") [flags 0xc0] <var_decl 066ceaa8 MyManuInfo>)) [0 MyManuInfo+0 S1 A8]))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":453 -1
      (nil))
 (insn 662 661 663 64 (set (reg/v:SI 227 [ len ])
         (zero_extend:SI (reg:HI 517))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":453 -1
@@ -3674,12 +3674,12 @@ Forwarding edge 126->127 to 129 failed.
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR8") [flags 0x182])
         (nil)))
 (insn 672 671 673 65 (set (reg:SI 521)
-        (high:SI (symbol_ref:SI ("MyProdInfo") [flags 0xc0] <var_decl 066e09f8 MyProdInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":458 -1
+        (high:SI (symbol_ref:SI ("MyProdInfo") [flags 0xc0] <var_decl 066ceb00 MyProdInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":458 -1
      (nil))
 (insn 673 672 674 65 (set (reg/f:SI 520)
         (lo_sum:SI (reg:SI 521)
-            (symbol_ref:SI ("MyProdInfo") [flags 0xc0] <var_decl 066e09f8 MyProdInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":458 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("MyProdInfo") [flags 0xc0] <var_decl 066e09f8 MyProdInfo>)
+            (symbol_ref:SI ("MyProdInfo") [flags 0xc0] <var_decl 066ceb00 MyProdInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":458 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("MyProdInfo") [flags 0xc0] <var_decl 066ceb00 MyProdInfo>)
         (nil)))
 (insn 674 673 675 65 (set (mem/f/c:SI (reg/f:SI 518) [4 pUSBFS_Descr+0 S4 A32])
         (reg/f:SI 520)) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":458 -1
@@ -3687,11 +3687,11 @@ Forwarding edge 126->127 to 129 failed.
 (debug_insn 675 674 676 65 (debug_marker) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":459 -1
      (nil))
 (insn 676 675 677 65 (set (reg:SI 522)
-        (high:SI (symbol_ref:SI ("MyProdInfo") [flags 0xc0] <var_decl 066e09f8 MyProdInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":459 -1
+        (high:SI (symbol_ref:SI ("MyProdInfo") [flags 0xc0] <var_decl 066ceb00 MyProdInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":459 -1
      (nil))
 (insn 677 676 678 65 (set (reg:HI 523)
         (zero_extend:HI (mem/u/j:QI (lo_sum:SI (reg:SI 522)
-                    (symbol_ref:SI ("MyProdInfo") [flags 0xc0] <var_decl 066e09f8 MyProdInfo>)) [0 MyProdInfo+0 S1 A8]))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":459 -1
+                    (symbol_ref:SI ("MyProdInfo") [flags 0xc0] <var_decl 066ceb00 MyProdInfo>)) [0 MyProdInfo+0 S1 A8]))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":459 -1
      (nil))
 (insn 678 677 679 65 (set (reg/v:SI 227 [ len ])
         (zero_extend:SI (reg:HI 523))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":459 -1
@@ -3721,12 +3721,12 @@ Forwarding edge 126->127 to 129 failed.
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR8") [flags 0x182])
         (nil)))
 (insn 688 687 689 66 (set (reg:SI 527)
-        (high:SI (symbol_ref:SI ("MySerNumInfo") [flags 0xc0] <var_decl 066e0a50 MySerNumInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":464 -1
+        (high:SI (symbol_ref:SI ("MySerNumInfo") [flags 0xc0] <var_decl 066ceb58 MySerNumInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":464 -1
      (nil))
 (insn 689 688 690 66 (set (reg/f:SI 526)
         (lo_sum:SI (reg:SI 527)
-            (symbol_ref:SI ("MySerNumInfo") [flags 0xc0] <var_decl 066e0a50 MySerNumInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":464 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("MySerNumInfo") [flags 0xc0] <var_decl 066e0a50 MySerNumInfo>)
+            (symbol_ref:SI ("MySerNumInfo") [flags 0xc0] <var_decl 066ceb58 MySerNumInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":464 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("MySerNumInfo") [flags 0xc0] <var_decl 066ceb58 MySerNumInfo>)
         (nil)))
 (insn 690 689 691 66 (set (mem/f/c:SI (reg/f:SI 524) [4 pUSBFS_Descr+0 S4 A32])
         (reg/f:SI 526)) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":464 -1
@@ -3734,11 +3734,11 @@ Forwarding edge 126->127 to 129 failed.
 (debug_insn 691 690 692 66 (debug_marker) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":465 -1
      (nil))
 (insn 692 691 693 66 (set (reg:SI 528)
-        (high:SI (symbol_ref:SI ("MySerNumInfo") [flags 0xc0] <var_decl 066e0a50 MySerNumInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":465 -1
+        (high:SI (symbol_ref:SI ("MySerNumInfo") [flags 0xc0] <var_decl 066ceb58 MySerNumInfo>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":465 -1
      (nil))
 (insn 693 692 694 66 (set (reg:HI 529)
         (zero_extend:HI (mem/u/j:QI (lo_sum:SI (reg:SI 528)
-                    (symbol_ref:SI ("MySerNumInfo") [flags 0xc0] <var_decl 066e0a50 MySerNumInfo>)) [0 MySerNumInfo+0 S1 A8]))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":465 -1
+                    (symbol_ref:SI ("MySerNumInfo") [flags 0xc0] <var_decl 066ceb58 MySerNumInfo>)) [0 MySerNumInfo+0 S1 A8]))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":465 -1
      (nil))
 (insn 694 693 695 66 (set (reg/v:SI 227 [ len ])
         (zero_extend:SI (reg:HI 529))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":465 -1
@@ -3907,11 +3907,11 @@ Forwarding edge 126->127 to 129 failed.
      (nil))
 (call_insn 742 741 743 73 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063d3d98 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
+                (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063b3d98 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":485 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063d3d98 __builtin_memcpy>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063b3d98 __builtin_memcpy>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (set (reg:SI 10 a0)
@@ -4517,11 +4517,11 @@ Forwarding edge 126->127 to 129 failed.
 (debug_insn 952 951 953 94 (debug_marker) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":565 -1
      (nil))
 (insn 953 952 954 94 (set (reg:SI 628)
-        (high:SI (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066e08f0 MyCfgDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":565 -1
+        (high:SI (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066ce9f8 MyCfgDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":565 -1
      (nil))
 (insn 954 953 955 94 (set (reg/f:SI 629)
         (lo_sum:SI (reg:SI 628)
-            (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066e08f0 MyCfgDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":565 -1
+            (symbol_ref:SI ("MyCfgDescr") [flags 0xc0] <var_decl 066ce9f8 MyCfgDescr>))) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":565 -1
      (nil))
 (insn 955 954 956 94 (set (reg:QI 630)
         (mem/u/j:QI (plus:SI (reg/f:SI 629)
@@ -5625,11 +5625,11 @@ Forwarding edge 126->127 to 129 failed.
 (debug_insn 1316 1315 1317 139 (debug_marker) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":736 -1
      (nil))
 (call_insn 1317 1316 1318 139 (parallel [
-            (call (mem:SI (symbol_ref:SI ("USBFS_Device_Endp_Init") [flags 0x3] <function_decl 06710bb8 USBFS_Device_Endp_Init>) [0 USBFS_Device_Endp_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("USBFS_Device_Endp_Init") [flags 0x3] <function_decl 067243c0 USBFS_Device_Endp_Init>) [0 USBFS_Device_Endp_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/USB_Serial/src/ch32v20x_usbfs_device.c":736 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("USBFS_Device_Endp_Init") [flags 0x3] <function_decl 06710bb8 USBFS_Device_Endp_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("USBFS_Device_Endp_Init") [flags 0x3] <function_decl 067243c0 USBFS_Device_Endp_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -5828,7 +5828,7 @@ Forwarding edge 126->127 to 129 failed.
 (code_label 1387 1384 1388 147 31 (nil) [3 uses])
 (note 1388 1387 0 147 [bb 147] NOTE_INSN_BASIC_BLOCK)
 
-;; Function USBFS_Send_Resume (USBFS_Send_Resume, funcdef_no=35, decl_uid=4979, cgraph_uid=35, symbol_order=51)
+;; Function USBFS_Send_Resume (USBFS_Send_Resume, funcdef_no=35, decl_uid=5026, cgraph_uid=35, symbol_order=51)
 
 
 ;; Generating RTL for gimple basic block 2

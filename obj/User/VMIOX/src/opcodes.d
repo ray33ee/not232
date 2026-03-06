@@ -28,13 +28,22 @@ User/VMIOX/src/opcodes.o: ../User/VMIOX/src/opcodes.c \
  e:/Software\ Projects/moun_projects/not232/Peripheral/inc/ch32v20x_wwdg.h \
  e:/Software\ Projects/moun_projects/not232/User/ch32v20x_it.h \
  e:/Software\ Projects/moun_projects/not232/User/constants.h \
+ e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_in.h \
  e:/Software\ Projects/moun_projects/not232/Peripheral/inc/ch32v20x_misc.h \
  e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/execute.h \
  e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/state.h \
  e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/opcodes.h \
- e:/Software\ Projects/moun_projects/not232/User/ch32v20x_it.h \
+ e:/Software\ Projects/moun_projects/not232/User/Features/inc/gpio.h \
  e:/Software\ Projects/moun_projects/not232/User/constants.h \
- e:/Software\ Projects/moun_projects/not232/User/bitbang/inc/i2c.h
+ e:/Software\ Projects/moun_projects/not232/User/Features/inc/i2c.h \
+ e:/Software\ Projects/moun_projects/not232/User/Features/inc/neopixel.h \
+ e:/Software\ Projects/moun_projects/not232/User/Features/inc/one_wire.h \
+ e:/Software\ Projects/moun_projects/not232/User/Features/inc/spi.h \
+ e:/Software\ Projects/moun_projects/not232/User/Features/inc/pwm.h \
+ e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_in.h \
+ e:/Software\ Projects/moun_projects/not232/User/Features/inc/adc.h \
+ e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_out.h \
+ e:/Software\ Projects/moun_projects/not232/User/Features/inc/touchkey.h
 
 e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/opcodes.h:
 
@@ -94,6 +103,8 @@ e:/Software\ Projects/moun_projects/not232/User/ch32v20x_it.h:
 
 e:/Software\ Projects/moun_projects/not232/User/constants.h:
 
+e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_in.h:
+
 e:/Software\ Projects/moun_projects/not232/Peripheral/inc/ch32v20x_misc.h:
 
 e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/execute.h:
@@ -102,8 +113,24 @@ e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/state.h:
 
 e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/opcodes.h:
 
-e:/Software\ Projects/moun_projects/not232/User/ch32v20x_it.h:
+e:/Software\ Projects/moun_projects/not232/User/Features/inc/gpio.h:
 
 e:/Software\ Projects/moun_projects/not232/User/constants.h:
 
-e:/Software\ Projects/moun_projects/not232/User/bitbang/inc/i2c.h:
+e:/Software\ Projects/moun_projects/not232/User/Features/inc/i2c.h:
+
+e:/Software\ Projects/moun_projects/not232/User/Features/inc/neopixel.h:
+
+e:/Software\ Projects/moun_projects/not232/User/Features/inc/one_wire.h:
+
+e:/Software\ Projects/moun_projects/not232/User/Features/inc/spi.h:
+
+e:/Software\ Projects/moun_projects/not232/User/Features/inc/pwm.h:
+
+e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_in.h:
+
+e:/Software\ Projects/moun_projects/not232/User/Features/inc/adc.h:
+
+e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_out.h:
+
+e:/Software\ Projects/moun_projects/not232/User/Features/inc/touchkey.h:

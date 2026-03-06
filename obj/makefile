@@ -1,5 +1,5 @@
 ################################################################################
-# MRS Version: 2.3.0
+# MRS Version: 2.4.0
 # Automatically-generated file. Do not edit!
 ################################################################################
 -include ../makefile.init
@@ -9,9 +9,9 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include User/comms/src/subdir.mk
--include User/bitbang/src/subdir.mk
 -include User/VMIOX/src/subdir.mk
 -include User/USB_Serial/src/subdir.mk
+-include User/Features/src/subdir.mk
 -include User/subdir.mk
 -include Startup/subdir.mk
 -include Peripheral/src/subdir.mk
@@ -59,7 +59,7 @@ main-build: not232.elf secondary-outputs
 
 # Tool invocations
 not232.elf: $(OBJS) $(USER_OBJS_ESCAPE)
-	@	riscv-none-embed-gcc -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -fmax-errors=20 -fdump-rtl-expand -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -g -T "e:/Software Projects/moun_projects/not232/Ld/Link.ld" -nostartfiles -Xlinker --gc-sections -Xlinker --print-memory-usage -Wl,-Map,"not232.map" --specs=nano.specs --specs=nosys.specs -o "not232.elf" $(OBJS) $(LIBS)
+	@	riscv-none-embed-gcc -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -fmax-errors=20 -fdump-rtl-expand -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -g -T "e:\Software Projects\moun_projects\not232\Ld\Link.ld" -nostartfiles -Xlinker --gc-sections -Xlinker --print-memory-usage -Wl,-Map,"not232.map" --specs=nano.specs --specs=nosys.specs -o "not232.elf" $(OBJS) $(LIBS)
 not232.hex: not232.elf
 	@	riscv-none-embed-objcopy -O ihex "not232.elf" "not232.hex"
 not232.lst: not232.elf

@@ -1,17 +1,26 @@
 ################################################################################
-# MRS Version: 2.3.0
+# MRS Version: 2.4.0
 # Automatically-generated file. Do not edit!
 ################################################################################
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../User/bitbang/src/i2c.c 
+../User/bitbang/src/i2c.c \
+../User/bitbang/src/neopixel.c \
+../User/bitbang/src/one_wire.c \
+../User/bitbang/src/spi.c 
 
 C_DEPS += \
-./User/bitbang/src/i2c.d 
+./User/bitbang/src/i2c.d \
+./User/bitbang/src/neopixel.d \
+./User/bitbang/src/one_wire.d \
+./User/bitbang/src/spi.d 
 
 OBJS += \
-./User/bitbang/src/i2c.o 
+./User/bitbang/src/i2c.o \
+./User/bitbang/src/neopixel.o \
+./User/bitbang/src/one_wire.o \
+./User/bitbang/src/spi.o 
 
 DIR_OBJS += \
 ./User/bitbang/src/*.o \

@@ -25,22 +25,6 @@ void EXTI4_IRQHandler(void) __attribute__((interrupt("WCH-Interrupt-fast")));
 void EXTI9_5_IRQHandler(void) __attribute__((interrupt("WCH-Interrupt-fast")));
 void EXTI15_10_IRQHandler(void) __attribute__((interrupt("WCH-Interrupt-fast")));
 
-void TIM4_pulseio_start(void)
-{
-    /* Reset counter and clear any pending flags before starting */
-    TIM_SetCounter(TIM4, 0u);
-    TIM_ClearFlag(TIM4, TIM_FLAG_Update | TIM_FLAG_CC1 | TIM_FLAG_CC2 | TIM_FLAG_CC3 | TIM_FLAG_CC4);
-
-    TIM_Cmd(TIM4, ENABLE);
-}
-
-uint16_t TIM4_pulseio_stop(void)
-{
-    /* Read current counter value first, then stop the timer */
-    uint16_t cnt = (uint16_t)TIM4->CNT;
-    TIM_Cmd(TIM4, DISABLE);
-    return cnt;
-}
 
 /*********************************************************************
  * @fn      NMI_Handler
@@ -71,10 +55,10 @@ void HardFault_Handler(void)
   }
 }
 
-void capture_pulse(uint32_t ext_line) {
+static inline void capture_pulse(uint32_t ext_line) {
 	if(EXTI_GetITStatus(ext_line)!=RESET) {
 
-		uint16_t duration = TIM4_pulseio_stop();
+		uint16_t duration = pulseio_in_tim4_stop();
 
 		pio_buffer[pio_head] = duration;
 
@@ -86,7 +70,7 @@ void capture_pulse(uint32_t ext_line) {
 
 		EXTI_ClearITPendingBit(ext_line);
 
-		TIM4_pulseio_start();
+		pulseio_in_tim4_start();
 	}
 }
 

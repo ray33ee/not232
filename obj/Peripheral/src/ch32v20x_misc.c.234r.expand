@@ -1,5 +1,5 @@
 
-;; Function NVIC_PriorityGroupConfig (NVIC_PriorityGroupConfig, funcdef_no=29, decl_uid=4637, cgraph_uid=29, symbol_order=30)
+;; Function NVIC_PriorityGroupConfig (NVIC_PriorityGroupConfig, funcdef_no=29, decl_uid=4684, cgraph_uid=29, symbol_order=30)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -42,7 +42,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 72 [ NVIC_PriorityGroup ])) "../Peripheral/src/ch32v20x_misc.c":31 -1
      (nil))
 
-;; Function NVIC_Init (NVIC_Init, funcdef_no=30, decl_uid=4639, cgraph_uid=30, symbol_order=31)
+;; Function NVIC_Init (NVIC_Init, funcdef_no=30, decl_uid=4686, cgraph_uid=30, symbol_order=31)
 
 
 ;; Generating RTL for gimple basic block 2

@@ -1,5 +1,5 @@
 
-;; Function RTC_ITConfig (RTC_ITConfig, funcdef_no=29, decl_uid=4613, cgraph_uid=29, symbol_order=29)
+;; Function RTC_ITConfig (RTC_ITConfig, funcdef_no=29, decl_uid=4660, cgraph_uid=29, symbol_order=29)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -132,7 +132,7 @@ try_optimize_cfg iteration 2
 (code_label 38 35 39 7 1 (nil) [1 uses])
 (note 39 38 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RTC_EnterConfigMode (RTC_EnterConfigMode, funcdef_no=30, decl_uid=4615, cgraph_uid=30, symbol_order=30)
+;; Function RTC_EnterConfigMode (RTC_EnterConfigMode, funcdef_no=30, decl_uid=4662, cgraph_uid=30, symbol_order=30)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -195,7 +195,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 73 [ _2 ]) 0)) "../Peripheral/src/ch32v20x_rtc.c":51 -1
      (nil))
 
-;; Function RTC_ExitConfigMode (RTC_ExitConfigMode, funcdef_no=31, decl_uid=4617, cgraph_uid=31, symbol_order=31)
+;; Function RTC_ExitConfigMode (RTC_ExitConfigMode, funcdef_no=31, decl_uid=4664, cgraph_uid=31, symbol_order=31)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -258,7 +258,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 73 [ _2 ]) 0)) "../Peripheral/src/ch32v20x_rtc.c":63 -1
      (nil))
 
-;; Function RTC_GetCounter (RTC_GetCounter, funcdef_no=32, decl_uid=4619, cgraph_uid=32, symbol_order=32)
+;; Function RTC_GetCounter (RTC_GetCounter, funcdef_no=32, decl_uid=4666, cgraph_uid=32, symbol_order=32)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -542,7 +542,7 @@ try_optimize_cfg iteration 2
 (insn 99 98 0 9 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_rtc.c":102 -1
      (nil))
 
-;; Function RTC_SetCounter (RTC_SetCounter, funcdef_no=33, decl_uid=4621, cgraph_uid=33, symbol_order=33)
+;; Function RTC_SetCounter (RTC_SetCounter, funcdef_no=33, decl_uid=4668, cgraph_uid=33, symbol_order=33)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -574,11 +574,11 @@ try_optimize_cfg iteration 2
 (debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v20x_rtc.c":116 -1
      (nil))
 (call_insn 7 6 8 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 06698528 RTC_EnterConfigMode>) [0 RTC_EnterConfigMode S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 066aff00 RTC_EnterConfigMode>) [0 RTC_EnterConfigMode S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_rtc.c":116 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 06698528 RTC_EnterConfigMode>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 066aff00 RTC_EnterConfigMode>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -623,16 +623,16 @@ try_optimize_cfg iteration 2
 (debug_insn 19 18 20 2 (debug_marker) "../Peripheral/src/ch32v20x_rtc.c":119 -1
      (nil))
 (call_insn 20 19 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066985a0 RTC_ExitConfigMode>) [0 RTC_ExitConfigMode S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066aff78 RTC_ExitConfigMode>) [0 RTC_ExitConfigMode S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_rtc.c":119 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066985a0 RTC_ExitConfigMode>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066aff78 RTC_ExitConfigMode>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
 
-;; Function RTC_SetPrescaler (RTC_SetPrescaler, funcdef_no=34, decl_uid=4623, cgraph_uid=34, symbol_order=34)
+;; Function RTC_SetPrescaler (RTC_SetPrescaler, funcdef_no=34, decl_uid=4670, cgraph_uid=34, symbol_order=34)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -664,11 +664,11 @@ try_optimize_cfg iteration 2
 (debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v20x_rtc.c":133 -1
      (nil))
 (call_insn 7 6 8 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 06698528 RTC_EnterConfigMode>) [0 RTC_EnterConfigMode S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 066aff00 RTC_EnterConfigMode>) [0 RTC_EnterConfigMode S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_rtc.c":133 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 06698528 RTC_EnterConfigMode>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 066aff00 RTC_EnterConfigMode>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -720,16 +720,16 @@ try_optimize_cfg iteration 2
 (debug_insn 21 20 22 2 (debug_marker) "../Peripheral/src/ch32v20x_rtc.c":136 -1
      (nil))
 (call_insn 22 21 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066985a0 RTC_ExitConfigMode>) [0 RTC_ExitConfigMode S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066aff78 RTC_ExitConfigMode>) [0 RTC_ExitConfigMode S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_rtc.c":136 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066985a0 RTC_ExitConfigMode>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066aff78 RTC_ExitConfigMode>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
 
-;; Function RTC_SetAlarm (RTC_SetAlarm, funcdef_no=35, decl_uid=4625, cgraph_uid=35, symbol_order=35)
+;; Function RTC_SetAlarm (RTC_SetAlarm, funcdef_no=35, decl_uid=4672, cgraph_uid=35, symbol_order=35)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -761,11 +761,11 @@ try_optimize_cfg iteration 2
 (debug_insn 6 3 7 2 (debug_marker) "../Peripheral/src/ch32v20x_rtc.c":150 -1
      (nil))
 (call_insn 7 6 8 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 06698528 RTC_EnterConfigMode>) [0 RTC_EnterConfigMode S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 066aff00 RTC_EnterConfigMode>) [0 RTC_EnterConfigMode S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_rtc.c":150 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 06698528 RTC_EnterConfigMode>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_EnterConfigMode") [flags 0x3] <function_decl 066aff00 RTC_EnterConfigMode>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -810,16 +810,16 @@ try_optimize_cfg iteration 2
 (debug_insn 19 18 20 2 (debug_marker) "../Peripheral/src/ch32v20x_rtc.c":153 -1
      (nil))
 (call_insn 20 19 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066985a0 RTC_ExitConfigMode>) [0 RTC_ExitConfigMode S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066aff78 RTC_ExitConfigMode>) [0 RTC_ExitConfigMode S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_rtc.c":153 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066985a0 RTC_ExitConfigMode>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_ExitConfigMode") [flags 0x3] <function_decl 066aff78 RTC_ExitConfigMode>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
 
-;; Function RTC_GetDivider (RTC_GetDivider, funcdef_no=36, decl_uid=4627, cgraph_uid=36, symbol_order=36)
+;; Function RTC_GetDivider (RTC_GetDivider, funcdef_no=36, decl_uid=4674, cgraph_uid=36, symbol_order=36)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1110,7 +1110,7 @@ try_optimize_cfg iteration 2
 (insn 101 100 0 9 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_rtc.c":192 -1
      (nil))
 
-;; Function RTC_WaitForLastTask (RTC_WaitForLastTask, funcdef_no=37, decl_uid=4629, cgraph_uid=37, symbol_order=37)
+;; Function RTC_WaitForLastTask (RTC_WaitForLastTask, funcdef_no=37, decl_uid=4676, cgraph_uid=37, symbol_order=37)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1181,7 +1181,7 @@ try_optimize_cfg iteration 2
  -> 13)
 (note 18 17 0 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RTC_WaitForSynchro (RTC_WaitForSynchro, funcdef_no=38, decl_uid=4631, cgraph_uid=38, symbol_order=38)
+;; Function RTC_WaitForSynchro (RTC_WaitForSynchro, funcdef_no=38, decl_uid=4678, cgraph_uid=38, symbol_order=38)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1288,7 +1288,7 @@ try_optimize_cfg iteration 2
  -> 24)
 (note 29 28 0 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
 
-;; Function RTC_GetFlagStatus (RTC_GetFlagStatus, funcdef_no=39, decl_uid=4633, cgraph_uid=39, symbol_order=39)
+;; Function RTC_GetFlagStatus (RTC_GetFlagStatus, funcdef_no=39, decl_uid=4680, cgraph_uid=39, symbol_order=39)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1365,7 +1365,7 @@ try_optimize_cfg iteration 2
 (insn 24 23 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_rtc.c":253 -1
      (nil))
 
-;; Function RTC_ClearFlag (RTC_ClearFlag, funcdef_no=40, decl_uid=4635, cgraph_uid=40, symbol_order=40)
+;; Function RTC_ClearFlag (RTC_ClearFlag, funcdef_no=40, decl_uid=4682, cgraph_uid=40, symbol_order=40)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1437,7 +1437,7 @@ try_optimize_cfg iteration 2
         (subreg/s/v:HI (reg:SI 74 [ _3 ]) 0)) "../Peripheral/src/ch32v20x_rtc.c":270 -1
      (nil))
 
-;; Function RTC_GetITStatus (RTC_GetITStatus, funcdef_no=41, decl_uid=4637, cgraph_uid=41, symbol_order=41)
+;; Function RTC_GetITStatus (RTC_GetITStatus, funcdef_no=41, decl_uid=4684, cgraph_uid=41, symbol_order=41)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1569,7 +1569,7 @@ try_optimize_cfg iteration 2
 (insn 39 38 0 7 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_rtc.c":299 -1
      (nil))
 
-;; Function RTC_ClearITPendingBit (RTC_ClearITPendingBit, funcdef_no=44, decl_uid=4639, cgraph_uid=42, symbol_order=42)
+;; Function RTC_ClearITPendingBit (RTC_ClearITPendingBit, funcdef_no=44, decl_uid=4686, cgraph_uid=42, symbol_order=42)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1602,11 +1602,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 72 [ RTC_IT ])) -1
      (nil))
 (call_insn 7 6 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RTC_ClearFlag") [flags 0x3] <function_decl 066989d8 RTC_ClearFlag>) [0 RTC_ClearFlag S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RTC_ClearFlag") [flags 0x3] <function_decl 066c03c0 RTC_ClearFlag>) [0 RTC_ClearFlag S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_ClearFlag") [flags 0x3] <function_decl 066989d8 RTC_ClearFlag>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RTC_ClearFlag") [flags 0x3] <function_decl 066c03c0 RTC_ClearFlag>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))

@@ -6,14 +6,18 @@
 #include "debug.h"
 #include "VMIOX/inc/execute.h"
 #include "VMIOX/inc/opcodes.h"
-#include "ch32v20x_it.h"
+#include "ch32v20x.h"
 #include "constants.h"
 
-#include "bitbang/inc/i2c.h"
-
-extern uint32_t pio_head;
-extern uint32_t pio_count;
-extern uint16_t pio_buffer[PIO_RING_SIZE];
+#include "Features/inc/i2c.h"
+#include "Features/inc/neopixel.h"
+#include "Features/inc/one_wire.h"
+#include "Features/inc/spi.h"
+#include "Features/inc/pwm.h"
+#include "Features/inc/pulse_in.h"
+#include "Features/inc/adc.h"
+#include "Features/inc/pulse_out.h"
+#include "Features/inc/touchkey.h"
 
 #define REGISTER_COUNT          (32)
 #define PILE_SIZE               (256)
@@ -28,17 +32,6 @@ extern uint16_t pio_buffer[PIO_RING_SIZE];
 #define I2C_WRITE_BUFFER_MAX    (1024)
 #define I2C_READ_BUFFER_MAX     (1024)
 
-// Standard speed one wire delays as per https://www.analog.com/en/resources/technical-articles/1wire-communication-through-software.html
-#define OW_DELAY_A              (6)
-#define OW_DELAY_B              (64)
-#define OW_DELAY_C              (60)
-#define OW_DELAY_D              (10)
-#define OW_DELAY_E              (9)
-#define OW_DELAY_F              (55)
-#define OW_DELAY_G              (0)
-#define OW_DELAY_H              (480)
-#define OW_DELAY_I              (70)
-#define OW_DELAY_J              (410)
 
 #define ESIG_REGISTER_BASE      ((uint32_t*)0x1FFFF7E8)
 
@@ -61,6 +54,7 @@ extern uint16_t pio_buffer[PIO_RING_SIZE];
 
 #define RECV_ADC_INIT           ((uint8_t)121)
 #define RECV_ADC_READ           ((uint8_t)122)
+#define RECV_ADC_TKEY_READ      ((uint8_t)123)
 
 #define RECV_I2C_INIT           ((uint8_t)140)
 #define RECV_I2C_SCAN           ((uint8_t)141)
@@ -68,14 +62,14 @@ extern uint16_t pio_buffer[PIO_RING_SIZE];
 #define RECV_I2C_WRITE          ((uint8_t)143)
 #define RECV_I2C_WRITE_READ     ((uint8_t)144)
 
-#define RECV_PULSEIO_CLEAR      ((uint8_t)151)
-#define RECV_PULSEIO_STOP       ((uint8_t)152)
-#define RECV_PULSEIO_RESUME     ((uint8_t)153)
-#define RECV_PULSEIO_READ       ((uint8_t)154)
-#define RECV_PULSEIO_POPLEFT    ((uint8_t)155)
-#define RECV_PULSEIO_LENGTH     ((uint8_t)156)
+#define RECV_PULSEIO_IN_CLEAR      ((uint8_t)151)
+#define RECV_PULSEIO_IN_STOP       ((uint8_t)152)
+#define RECV_PULSEIO_IN_RESUME     ((uint8_t)153)
+#define RECV_PULSEIO_IN_READ       ((uint8_t)154)
+#define RECV_PULSEIO_IN_POPLEFT    ((uint8_t)155)
+#define RECV_PULSEIO_IN_LENGTH     ((uint8_t)156)
 
-#define RECV_PULSEIO_OUT        ((uint8_t)160)
+#define RECV_PULSEIO_OUT_SEND      ((uint8_t)160)
 
 #define RECV_NEOPIXEL_WRITE     ((uint8_t)170)
 
@@ -95,7 +89,6 @@ extern uint16_t pio_buffer[PIO_RING_SIZE];
 #define SEND_ADC_READ           (5)
 #define SEND_FAILURE            (0xFFFFFFFF)
 
-uint32_t get_le_u32();
 void get_packet();
 
 #endif

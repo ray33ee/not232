@@ -1,5 +1,5 @@
 
-;; Function ROM_ERASE (ROM_ERASE, funcdef_no=61, decl_uid=4874, cgraph_uid=61, symbol_order=61)
+;; Function ROM_ERASE (ROM_ERASE, funcdef_no=61, decl_uid=4921, cgraph_uid=61, symbol_order=61)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -428,7 +428,7 @@ try_optimize_cfg iteration 2
  -> 130)
 (note 132 131 0 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
 
-;; Function FLASH_Unlock (FLASH_Unlock, funcdef_no=29, decl_uid=4565, cgraph_uid=29, symbol_order=29)
+;; Function FLASH_Unlock (FLASH_Unlock, funcdef_no=29, decl_uid=4612, cgraph_uid=29, symbol_order=29)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -489,7 +489,7 @@ try_optimize_cfg iteration 2
         (reg:SI 76)) "../Peripheral/src/ch32v20x_flash.c":90 -1
      (nil))
 
-;; Function FLASH_UnlockBank1 (FLASH_UnlockBank1, funcdef_no=66, decl_uid=4624, cgraph_uid=30, symbol_order=30)
+;; Function FLASH_UnlockBank1 (FLASH_UnlockBank1, funcdef_no=66, decl_uid=4671, cgraph_uid=30, symbol_order=30)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -516,16 +516,16 @@ try_optimize_cfg iteration 2
 (note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
 (note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
 (call_insn 5 2 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("FLASH_Unlock") [flags 0x3] <function_decl 06627ca8 FLASH_Unlock>) [0 FLASH_Unlock S4 A32])
+            (call (mem:SI (symbol_ref:SI ("FLASH_Unlock") [flags 0x3] <function_decl 066515a0 FLASH_Unlock>) [0 FLASH_Unlock S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Unlock") [flags 0x3] <function_decl 06627ca8 FLASH_Unlock>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Unlock") [flags 0x3] <function_decl 066515a0 FLASH_Unlock>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
 
-;; Function FLASH_Lock (FLASH_Lock, funcdef_no=31, decl_uid=4567, cgraph_uid=31, symbol_order=31)
+;; Function FLASH_Lock (FLASH_Lock, funcdef_no=31, decl_uid=4614, cgraph_uid=31, symbol_order=31)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -572,7 +572,7 @@ try_optimize_cfg iteration 2
         (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v20x_flash.c":116 -1
      (nil))
 
-;; Function FLASH_LockBank1 (FLASH_LockBank1, funcdef_no=68, decl_uid=4626, cgraph_uid=32, symbol_order=32)
+;; Function FLASH_LockBank1 (FLASH_LockBank1, funcdef_no=68, decl_uid=4673, cgraph_uid=32, symbol_order=32)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -599,16 +599,16 @@ try_optimize_cfg iteration 2
 (note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
 (note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
 (call_insn 5 2 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("FLASH_Lock") [flags 0x3] <function_decl 06627d20 FLASH_Lock>) [0 FLASH_Lock S4 A32])
+            (call (mem:SI (symbol_ref:SI ("FLASH_Lock") [flags 0x3] <function_decl 06651618 FLASH_Lock>) [0 FLASH_Lock S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Lock") [flags 0x3] <function_decl 06627d20 FLASH_Lock>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Lock") [flags 0x3] <function_decl 06651618 FLASH_Lock>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
 
-;; Function FLASH_GetUserOptionByte (FLASH_GetUserOptionByte, funcdef_no=43, decl_uid=4592, cgraph_uid=43, symbol_order=43)
+;; Function FLASH_GetUserOptionByte (FLASH_GetUserOptionByte, funcdef_no=43, decl_uid=4639, cgraph_uid=43, symbol_order=43)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -657,7 +657,7 @@ try_optimize_cfg iteration 2
 (insn 14 13 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":580 -1
      (nil))
 
-;; Function FLASH_GetWriteProtectionOptionByte (FLASH_GetWriteProtectionOptionByte, funcdef_no=44, decl_uid=4594, cgraph_uid=44, symbol_order=44)
+;; Function FLASH_GetWriteProtectionOptionByte (FLASH_GetWriteProtectionOptionByte, funcdef_no=44, decl_uid=4641, cgraph_uid=44, symbol_order=44)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -699,7 +699,7 @@ try_optimize_cfg iteration 2
 (insn 12 11 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":592 -1
      (nil))
 
-;; Function FLASH_GetReadOutProtectionStatus (FLASH_GetReadOutProtectionStatus, funcdef_no=45, decl_uid=4596, cgraph_uid=45, symbol_order=45)
+;; Function FLASH_GetReadOutProtectionStatus (FLASH_GetReadOutProtectionStatus, funcdef_no=45, decl_uid=4643, cgraph_uid=45, symbol_order=45)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -762,7 +762,7 @@ try_optimize_cfg iteration 2
 (insn 19 18 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":613 -1
      (nil))
 
-;; Function FLASH_ITConfig (FLASH_ITConfig, funcdef_no=46, decl_uid=4599, cgraph_uid=46, symbol_order=46)
+;; Function FLASH_ITConfig (FLASH_ITConfig, funcdef_no=46, decl_uid=4646, cgraph_uid=46, symbol_order=46)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -864,7 +864,7 @@ try_optimize_cfg iteration 2
 (code_label 29 26 30 7 23 (nil) [1 uses])
 (note 30 29 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function FLASH_GetFlagStatus (FLASH_GetFlagStatus, funcdef_no=47, decl_uid=4601, cgraph_uid=47, symbol_order=47)
+;; Function FLASH_GetFlagStatus (FLASH_GetFlagStatus, funcdef_no=47, decl_uid=4648, cgraph_uid=47, symbol_order=47)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -975,7 +975,7 @@ try_optimize_cfg iteration 2
 (insn 35 34 0 7 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":679 -1
      (nil))
 
-;; Function FLASH_ClearFlag (FLASH_ClearFlag, funcdef_no=48, decl_uid=4603, cgraph_uid=48, symbol_order=48)
+;; Function FLASH_ClearFlag (FLASH_ClearFlag, funcdef_no=48, decl_uid=4650, cgraph_uid=48, symbol_order=48)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1014,7 +1014,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 72 [ FLASH_FLAG ])) "../Peripheral/src/ch32v20x_flash.c":694 -1
      (nil))
 
-;; Function FLASH_GetStatus (FLASH_GetStatus, funcdef_no=49, decl_uid=4605, cgraph_uid=49, symbol_order=49)
+;; Function FLASH_GetStatus (FLASH_GetStatus, funcdef_no=49, decl_uid=4652, cgraph_uid=49, symbol_order=49)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1132,7 +1132,7 @@ try_optimize_cfg iteration 2
 (insn 30 29 0 9 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":725 -1
      (nil))
 
-;; Function FLASH_GetBank1Status (FLASH_GetBank1Status, funcdef_no=50, decl_uid=4630, cgraph_uid=50, symbol_order=50)
+;; Function FLASH_GetBank1Status (FLASH_GetBank1Status, funcdef_no=50, decl_uid=4677, cgraph_uid=50, symbol_order=50)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1250,7 +1250,7 @@ try_optimize_cfg iteration 2
 (insn 30 29 0 9 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":755 -1
      (nil))
 
-;; Function FLASH_WaitForLastOperation (FLASH_WaitForLastOperation, funcdef_no=51, decl_uid=4607, cgraph_uid=51, symbol_order=51)
+;; Function FLASH_WaitForLastOperation (FLASH_WaitForLastOperation, funcdef_no=51, decl_uid=4654, cgraph_uid=51, symbol_order=51)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1305,11 +1305,11 @@ Forwarding edge 8->9 to 12 failed.
      (nil))
 (call_insn 11 10 12 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_GetBank1Status") [flags 0x3] <function_decl 06660960 FLASH_GetBank1Status>) [0 FLASH_GetBank1Status S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_GetBank1Status") [flags 0x3] <function_decl 06684348 FLASH_GetBank1Status>) [0 FLASH_GetBank1Status S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":771 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_GetBank1Status") [flags 0x3] <function_decl 06660960 FLASH_GetBank1Status>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_GetBank1Status") [flags 0x3] <function_decl 06684348 FLASH_GetBank1Status>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -1331,11 +1331,11 @@ Forwarding edge 8->9 to 12 failed.
      (nil))
 (call_insn 19 18 20 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_GetBank1Status") [flags 0x3] <function_decl 06660960 FLASH_GetBank1Status>) [0 FLASH_GetBank1Status S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_GetBank1Status") [flags 0x3] <function_decl 06684348 FLASH_GetBank1Status>) [0 FLASH_GetBank1Status S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":774 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_GetBank1Status") [flags 0x3] <function_decl 06660960 FLASH_GetBank1Status>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_GetBank1Status") [flags 0x3] <function_decl 06684348 FLASH_GetBank1Status>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -1419,7 +1419,7 @@ Forwarding edge 8->9 to 12 failed.
 (insn 50 49 0 12 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":782 -1
      (nil))
 
-;; Function FLASH_ErasePage (FLASH_ErasePage, funcdef_no=33, decl_uid=4569, cgraph_uid=33, symbol_order=33)
+;; Function FLASH_ErasePage (FLASH_ErasePage, funcdef_no=33, decl_uid=4616, cgraph_uid=33, symbol_order=33)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1465,11 +1465,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 10 9 11 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":145 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -1548,11 +1548,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 34 33 35 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":153 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -1594,7 +1594,7 @@ try_optimize_cfg iteration 2
 (insn 51 50 0 6 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":159 -1
      (nil))
 
-;; Function FLASH_EraseAllPages (FLASH_EraseAllPages, funcdef_no=34, decl_uid=4571, cgraph_uid=34, symbol_order=34)
+;; Function FLASH_EraseAllPages (FLASH_EraseAllPages, funcdef_no=34, decl_uid=4618, cgraph_uid=34, symbol_order=34)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1641,11 +1641,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 11 10 12 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":173 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -1715,11 +1715,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 32 31 33 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":179 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -1808,7 +1808,7 @@ try_optimize_cfg iteration 2
 (insn 64 63 0 7 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":189 -1
      (nil))
 
-;; Function FLASH_EraseAllBank1Pages (FLASH_EraseAllBank1Pages, funcdef_no=70, decl_uid=4628, cgraph_uid=35, symbol_order=35)
+;; Function FLASH_EraseAllBank1Pages (FLASH_EraseAllBank1Pages, funcdef_no=70, decl_uid=4675, cgraph_uid=35, symbol_order=35)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1837,11 +1837,11 @@ try_optimize_cfg iteration 2
 (note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
 (call_insn 5 2 6 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_EraseAllPages") [flags 0x3] <function_decl 06627e10 FLASH_EraseAllPages>) [0 FLASH_EraseAllPages S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_EraseAllPages") [flags 0x3] <function_decl 06651708 FLASH_EraseAllPages>) [0 FLASH_EraseAllPages S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_EraseAllPages") [flags 0x3] <function_decl 06627e10 FLASH_EraseAllPages>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_EraseAllPages") [flags 0x3] <function_decl 06651708 FLASH_EraseAllPages>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -1854,7 +1854,7 @@ try_optimize_cfg iteration 2
 (insn 11 10 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":199 -1
      (nil))
 
-;; Function FLASH_EraseOptionBytes (FLASH_EraseOptionBytes, funcdef_no=36, decl_uid=4573, cgraph_uid=36, symbol_order=36)
+;; Function FLASH_EraseOptionBytes (FLASH_EraseOptionBytes, funcdef_no=36, decl_uid=4620, cgraph_uid=36, symbol_order=36)
 
 Partition 0: size 1 align 1
 	i
@@ -1931,11 +1931,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 15 14 16 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_GetReadOutProtectionStatus") [flags 0x3] <function_decl 066601e0 FLASH_GetReadOutProtectionStatus>) [0 FLASH_GetReadOutProtectionStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_GetReadOutProtectionStatus") [flags 0x3] <function_decl 06651bb8 FLASH_GetReadOutProtectionStatus>) [0 FLASH_GetReadOutProtectionStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":236 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_GetReadOutProtectionStatus") [flags 0x3] <function_decl 066601e0 FLASH_GetReadOutProtectionStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_GetReadOutProtectionStatus") [flags 0x3] <function_decl 06651bb8 FLASH_GetReadOutProtectionStatus>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -1974,11 +1974,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 24 23 25 6 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":240 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -2082,11 +2082,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 55 54 56 7 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":248 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -2169,11 +2169,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 80 79 81 8 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":255 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -2415,7 +2415,7 @@ try_optimize_cfg iteration 2
 (insn 168 167 0 19 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":281 -1
      (nil))
 
-;; Function FLASH_ProgramWord (FLASH_ProgramWord, funcdef_no=37, decl_uid=4576, cgraph_uid=37, symbol_order=37)
+;; Function FLASH_ProgramWord (FLASH_ProgramWord, funcdef_no=37, decl_uid=4623, cgraph_uid=37, symbol_order=37)
 
 Partition 0: size 4 align 4
 	tmp
@@ -2477,11 +2477,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 13 12 14 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":299 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -2542,11 +2542,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 32 31 33 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":306 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -2605,11 +2605,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 50 49 51 5 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":312 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -2678,7 +2678,7 @@ try_optimize_cfg iteration 2
 (insn 77 76 0 8 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":322 -1
      (nil))
 
-;; Function FLASH_ProgramHalfWord (FLASH_ProgramHalfWord, funcdef_no=38, decl_uid=4579, cgraph_uid=38, symbol_order=38)
+;; Function FLASH_ProgramHalfWord (FLASH_ProgramHalfWord, funcdef_no=38, decl_uid=4626, cgraph_uid=38, symbol_order=38)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2727,11 +2727,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 11 10 12 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":339 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -2789,11 +2789,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 29 28 30 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":345 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -2835,7 +2835,7 @@ try_optimize_cfg iteration 2
 (insn 46 45 0 6 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":350 -1
      (nil))
 
-;; Function FLASH_ProgramOptionByteData (FLASH_ProgramOptionByteData, funcdef_no=39, decl_uid=4582, cgraph_uid=39, symbol_order=39)
+;; Function FLASH_ProgramOptionByteData (FLASH_ProgramOptionByteData, funcdef_no=39, decl_uid=4629, cgraph_uid=39, symbol_order=39)
 
 Partition 1: size 16 align 4
 	pbuf
@@ -2916,11 +2916,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 15 14 16 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":370 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -3378,7 +3378,7 @@ try_optimize_cfg iteration 2
 (insn 170 169 0 16 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":401 -1
      (nil))
 
-;; Function FLASH_EnableWriteProtection (FLASH_EnableWriteProtection, funcdef_no=40, decl_uid=4584, cgraph_uid=40, symbol_order=40)
+;; Function FLASH_EnableWriteProtection (FLASH_EnableWriteProtection, funcdef_no=40, decl_uid=4631, cgraph_uid=40, symbol_order=40)
 
 Partition 1: size 16 align 4
 	pbuf
@@ -3506,11 +3506,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 36 35 37 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":427 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -3975,7 +3975,7 @@ try_optimize_cfg iteration 2
 (insn 194 193 0 16 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":459 -1
      (nil))
 
-;; Function FLASH_ReadOutProtection (FLASH_ReadOutProtection, funcdef_no=41, decl_uid=4586, cgraph_uid=41, symbol_order=41)
+;; Function FLASH_ReadOutProtection (FLASH_ReadOutProtection, funcdef_no=41, decl_uid=4633, cgraph_uid=41, symbol_order=41)
 
 Partition 1: size 16 align 4
 	pbuf
@@ -4058,11 +4058,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 17 16 18 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":478 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4501,7 +4501,7 @@ try_optimize_cfg iteration 2
 (insn 163 162 0 19 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":509 -1
      (nil))
 
-;; Function FLASH_UserOptionByteConfig (FLASH_UserOptionByteConfig, funcdef_no=42, decl_uid=4590, cgraph_uid=42, symbol_order=42)
+;; Function FLASH_UserOptionByteConfig (FLASH_UserOptionByteConfig, funcdef_no=42, decl_uid=4637, cgraph_uid=42, symbol_order=42)
 
 Partition 1: size 16 align 4
 	pbuf
@@ -4621,11 +4621,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 27 26 28 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":539 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -5035,7 +5035,7 @@ try_optimize_cfg iteration 2
 (insn 169 168 0 16 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":567 -1
      (nil))
 
-;; Function FLASH_WaitForLastBank1Operation (FLASH_WaitForLastBank1Operation, funcdef_no=72, decl_uid=4632, cgraph_uid=52, symbol_order=52)
+;; Function FLASH_WaitForLastBank1Operation (FLASH_WaitForLastBank1Operation, funcdef_no=72, decl_uid=4679, cgraph_uid=52, symbol_order=52)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5070,11 +5070,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 7 6 8 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>) [0 FLASH_WaitForLastOperation S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06660438 FLASH_WaitForLastOperation>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_WaitForLastOperation") [flags 0x3] <function_decl 06651e10 FLASH_WaitForLastOperation>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -5088,7 +5088,7 @@ try_optimize_cfg iteration 2
 (insn 13 12 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":794 -1
      (nil))
 
-;; Function FLASH_Unlock_Fast (FLASH_Unlock_Fast, funcdef_no=53, decl_uid=4609, cgraph_uid=53, symbol_order=53)
+;; Function FLASH_Unlock_Fast (FLASH_Unlock_Fast, funcdef_no=53, decl_uid=4656, cgraph_uid=53, symbol_order=53)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5183,7 +5183,7 @@ try_optimize_cfg iteration 2
         (reg:SI 82)) "../Peripheral/src/ch32v20x_flash.c":826 -1
      (nil))
 
-;; Function FLASH_Lock_Fast (FLASH_Lock_Fast, funcdef_no=54, decl_uid=4611, cgraph_uid=54, symbol_order=54)
+;; Function FLASH_Lock_Fast (FLASH_Lock_Fast, funcdef_no=54, decl_uid=4658, cgraph_uid=54, symbol_order=54)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5233,7 +5233,7 @@ try_optimize_cfg iteration 2
         (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v20x_flash.c":838 -1
      (nil))
 
-;; Function FLASH_ErasePage_Fast (FLASH_ErasePage_Fast, funcdef_no=55, decl_uid=4613, cgraph_uid=55, symbol_order=55)
+;; Function FLASH_ErasePage_Fast (FLASH_ErasePage_Fast, funcdef_no=55, decl_uid=4660, cgraph_uid=55, symbol_order=55)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5380,7 +5380,7 @@ try_optimize_cfg iteration 2
         (reg:SI 79 [ _8 ])) "../Peripheral/src/ch32v20x_flash.c":858 -1
      (nil))
 
-;; Function FLASH_EraseBlock_32K_Fast (FLASH_EraseBlock_32K_Fast, funcdef_no=56, decl_uid=4615, cgraph_uid=56, symbol_order=56)
+;; Function FLASH_EraseBlock_32K_Fast (FLASH_EraseBlock_32K_Fast, funcdef_no=56, decl_uid=4662, cgraph_uid=56, symbol_order=56)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5530,7 +5530,7 @@ try_optimize_cfg iteration 2
         (reg:SI 79 [ _8 ])) "../Peripheral/src/ch32v20x_flash.c":878 -1
      (nil))
 
-;; Function FLASH_ProgramPage_Fast (FLASH_ProgramPage_Fast, funcdef_no=57, decl_uid=4618, cgraph_uid=57, symbol_order=57)
+;; Function FLASH_ProgramPage_Fast (FLASH_ProgramPage_Fast, funcdef_no=57, decl_uid=4665, cgraph_uid=57, symbol_order=57)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5832,7 +5832,7 @@ try_optimize_cfg iteration 2
         (reg:SI 86 [ _16 ])) "../Peripheral/src/ch32v20x_flash.c":911 -1
      (nil))
 
-;; Function FLASH_Access_Clock_Cfg (FLASH_Access_Clock_Cfg, funcdef_no=58, decl_uid=4620, cgraph_uid=58, symbol_order=58)
+;; Function FLASH_Access_Clock_Cfg (FLASH_Access_Clock_Cfg, funcdef_no=58, decl_uid=4667, cgraph_uid=58, symbol_order=58)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -5910,7 +5910,7 @@ try_optimize_cfg iteration 2
         (reg:SI 75 [ _4 ])) "../Peripheral/src/ch32v20x_flash.c":928 -1
      (nil))
 
-;; Function FLASH_Enhance_Mode (FLASH_Enhance_Mode, funcdef_no=59, decl_uid=4622, cgraph_uid=59, symbol_order=59)
+;; Function FLASH_Enhance_Mode (FLASH_Enhance_Mode, funcdef_no=59, decl_uid=4669, cgraph_uid=59, symbol_order=59)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -6040,7 +6040,7 @@ try_optimize_cfg iteration 2
 (code_label 37 34 38 7 146 (nil) [1 uses])
 (note 38 37 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function FLASH_GetMACAddress (FLASH_GetMACAddress, funcdef_no=60, decl_uid=4868, cgraph_uid=60, symbol_order=60)
+;; Function FLASH_GetMACAddress (FLASH_GetMACAddress, funcdef_no=60, decl_uid=4915, cgraph_uid=60, symbol_order=60)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -6153,7 +6153,7 @@ try_optimize_cfg iteration 2
         (subreg:QI (reg:SI 92) 0)) "../Peripheral/src/ch32v20x_flash.c":974 -1
      (nil))
 
-;; Function FLASH_ROM_ERASE (FLASH_ROM_ERASE, funcdef_no=62, decl_uid=4635, cgraph_uid=62, symbol_order=62)
+;; Function FLASH_ROM_ERASE (FLASH_ROM_ERASE, funcdef_no=62, decl_uid=4682, cgraph_uid=62, symbol_order=62)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -6614,11 +6614,11 @@ Forwarding edge 16->17 to 19 failed.
         (reg/v:SI 106 [ StartAddr ])) "../Peripheral/src/ch32v20x_flash.c":1100 -1
      (nil))
 (call_insn 148 147 149 14 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06660c30 ROM_ERASE>) [0 ROM_ERASE S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06684960 ROM_ERASE>) [0 ROM_ERASE S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":1100 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06660c30 ROM_ERASE>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06684960 ROM_ERASE>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -6762,11 +6762,11 @@ Forwarding edge 16->17 to 19 failed.
         (reg/v:SI 95 [ Addr1 ])) "../Peripheral/src/ch32v20x_flash.c":1118 -1
      (nil))
 (call_insn 191 190 7 22 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06660c30 ROM_ERASE>) [0 ROM_ERASE S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06684960 ROM_ERASE>) [0 ROM_ERASE S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":1118 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06660c30 ROM_ERASE>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06684960 ROM_ERASE>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -6886,11 +6886,11 @@ Forwarding edge 16->17 to 19 failed.
         (reg:SI 154)) "../Peripheral/src/ch32v20x_flash.c":1134 -1
      (nil))
 (call_insn 222 221 13 28 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06660c30 ROM_ERASE>) [0 ROM_ERASE S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06684960 ROM_ERASE>) [0 ROM_ERASE S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":1134 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06660c30 ROM_ERASE>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06684960 ROM_ERASE>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -7015,11 +7015,11 @@ Forwarding edge 16->17 to 19 failed.
         (reg/v:SI 95 [ Addr1 ])) "../Peripheral/src/ch32v20x_flash.c":1152 -1
      (nil))
 (call_insn 257 256 18 34 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06660c30 ROM_ERASE>) [0 ROM_ERASE S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06684960 ROM_ERASE>) [0 ROM_ERASE S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":1152 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06660c30 ROM_ERASE>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06684960 ROM_ERASE>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -7064,11 +7064,11 @@ Forwarding edge 16->17 to 19 failed.
         (reg/v:SI 106 [ StartAddr ])) "../Peripheral/src/ch32v20x_flash.c":1158 -1
      (nil))
 (call_insn 270 269 271 36 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06660c30 ROM_ERASE>) [0 ROM_ERASE S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06684960 ROM_ERASE>) [0 ROM_ERASE S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":1158 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06660c30 ROM_ERASE>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06684960 ROM_ERASE>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -7103,11 +7103,11 @@ Forwarding edge 16->17 to 19 failed.
         (reg/v:SI 95 [ Addr1 ])) "../Peripheral/src/ch32v20x_flash.c":1163 -1
      (nil))
 (call_insn 281 280 282 38 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06660c30 ROM_ERASE>) [0 ROM_ERASE S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06684960 ROM_ERASE>) [0 ROM_ERASE S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_flash.c":1163 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06660c30 ROM_ERASE>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ROM_ERASE") [flags 0x3] <function_decl 06684960 ROM_ERASE>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -7212,7 +7212,7 @@ Forwarding edge 16->17 to 19 failed.
 (insn 304 303 0 45 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_flash.c":1170 -1
      (nil))
 
-;; Function FLASH_ROM_WRITE (FLASH_ROM_WRITE, funcdef_no=63, decl_uid=4639, cgraph_uid=63, symbol_order=63)
+;; Function FLASH_ROM_WRITE (FLASH_ROM_WRITE, funcdef_no=63, decl_uid=4686, cgraph_uid=63, symbol_order=63)
 
 
 ;; Generating RTL for gimple basic block 2

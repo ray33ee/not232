@@ -1,38 +1,6 @@
 
 #include "VMIOX/inc/execute.h"
 
-void GPIO_Init_Small(uint16_t pin, GPIOMode_TypeDef mode)
-{
-    uint16_t mask = 1 << pin;
-    uint32_t currentmode = 0x00, pos = 0x00;
-    uint32_t tmpreg = 0x00, pinmask = 0x00;
-
-    currentmode = ((uint32_t)mode) & ((uint32_t)0x0F);
-
-    if((((uint32_t)mode) & ((uint32_t)0x10)) != 0x00)
-    {
-        currentmode |= (uint32_t)GPIO_Speed_50MHz;
-    }
-
-    if(mask > 0x00FF) {
-        tmpreg = GPIOA->CFGHR;
-        pos = (pin - 8) << 2;
-    } else {
-        tmpreg = GPIOA->CFGLR;
-        pos = pin << 2;
-    }
-
-    pinmask = ((uint32_t)0x0F) << pos;
-    tmpreg &= ~pinmask;
-    tmpreg |= (currentmode << pos);
-
-    if (mask > 0x00FF) {
-        GPIOA->CFGHR = tmpreg;
-    } else {
-        GPIOA->CFGLR = tmpreg;
-    }
-}
-
 void run(uint8_t* opcodes, uint8_t* registers, uint32_t len, uint8_t* pile_t, uint8_t* pile_r, uint32_t* tp, uint32_t* rp) {
 
     /*
@@ -110,7 +78,7 @@ void run(uint8_t* opcodes, uint8_t* registers, uint32_t len, uint8_t* pile_t, ui
                     Sets up pin X as a GPIO_Mode_IN_FLOATING
                 */
                 {uint8_t pin_number = opcodes[pc+2];
-                GPIO_Init_Small(pin_number, GPIO_Mode_IN_FLOATING);
+                gpio_init_ad_pins(pin_number, GPIO_Mode_IN_FLOATING);
                 pc+=BYTES_PER_INSTRUCTION;
                 break;}
             case INPUT_PULL_DOWN:
@@ -120,7 +88,7 @@ void run(uint8_t* opcodes, uint8_t* registers, uint32_t len, uint8_t* pile_t, ui
                     Sets up pin X as a GPIO_Mode_IPD
                 */
                 {uint8_t pin_number = opcodes[pc+2];
-                GPIO_Init_Small(pin_number, GPIO_Mode_IPD);
+                gpio_init_ad_pins(pin_number, GPIO_Mode_IPD);
                 pc+=BYTES_PER_INSTRUCTION;
                 break;}
             case INPUT_PULL_UP:
@@ -130,7 +98,7 @@ void run(uint8_t* opcodes, uint8_t* registers, uint32_t len, uint8_t* pile_t, ui
                     Sets up pin X as a GPIO_Mode_IPU
                 */
                 {uint8_t pin_number = opcodes[pc+2];
-                GPIO_Init_Small(pin_number, GPIO_Mode_IPU);
+                gpio_init_ad_pins(pin_number, GPIO_Mode_IPU);
                 pc+=BYTES_PER_INSTRUCTION;
                 break;}
             case OUTPUT_PP:
@@ -140,7 +108,7 @@ void run(uint8_t* opcodes, uint8_t* registers, uint32_t len, uint8_t* pile_t, ui
                     Sets up pin X as a GPIO_Mode_Out_PP
                 */
                 {uint8_t pin_number = opcodes[pc+2];
-                GPIO_Init_Small(pin_number, GPIO_Mode_Out_PP);
+                gpio_init_ad_pins(pin_number, GPIO_Mode_Out_PP);
                 pc+=BYTES_PER_INSTRUCTION;
                 break;}
             case OUTPUT_OD:
@@ -150,7 +118,7 @@ void run(uint8_t* opcodes, uint8_t* registers, uint32_t len, uint8_t* pile_t, ui
                     Sets up pin X as a GPIO_Mode_Out_OD
                 */
                 {uint8_t pin_number = opcodes[pc+2];
-                GPIO_Init_Small(pin_number, GPIO_Mode_Out_OD);
+                gpio_init_ad_pins(pin_number, GPIO_Mode_Out_OD);
                 pc+=BYTES_PER_INSTRUCTION;
                 break;}
             /* Set/Clear */

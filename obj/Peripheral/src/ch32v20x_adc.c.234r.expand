@@ -1,5 +1,5 @@
 
-;; Function ADC_DeInit (ADC_DeInit, funcdef_no=29, decl_uid=4530, cgraph_uid=29, symbol_order=29)
+;; Function ADC_DeInit (ADC_DeInit, funcdef_no=29, decl_uid=4577, cgraph_uid=29, symbol_order=29)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -65,11 +65,11 @@ try_optimize_cfg iteration 2
         (const_int 512 [0x200])) "../Peripheral/src/ch32v20x_adc.c":124 -1
      (nil))
 (call_insn 14 13 15 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 06626690 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064af690 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_adc.c":124 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 06626690 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064af690 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -83,11 +83,11 @@ try_optimize_cfg iteration 2
         (const_int 512 [0x200])) "../Peripheral/src/ch32v20x_adc.c":125 -1
      (nil))
 (call_insn 18 17 19 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 06626690 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064af690 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_adc.c":125 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 06626690 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064af690 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -126,11 +126,11 @@ try_optimize_cfg iteration 2
         (const_int 1024 [0x400])) "../Peripheral/src/ch32v20x_adc.c":129 -1
      (nil))
 (call_insn 31 30 32 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 06626690 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064af690 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_adc.c":129 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 06626690 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064af690 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -144,11 +144,11 @@ try_optimize_cfg iteration 2
         (const_int 1024 [0x400])) "../Peripheral/src/ch32v20x_adc.c":130 -1
      (nil))
 (call_insn 35 34 38 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 06626690 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064af690 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_adc.c":130 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 06626690 RCC_APB2PeriphResetCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 064af690 RCC_APB2PeriphResetCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -156,7 +156,7 @@ try_optimize_cfg iteration 2
 (code_label 38 35 39 8 1 (nil) [2 uses])
 (note 39 38 0 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
 
-;; Function ADC_Init (ADC_Init, funcdef_no=30, decl_uid=4533, cgraph_uid=30, symbol_order=30)
+;; Function ADC_Init (ADC_Init, funcdef_no=30, decl_uid=4580, cgraph_uid=30, symbol_order=30)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -387,7 +387,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 98 [ tmpreg1 ])) "../Peripheral/src/ch32v20x_adc.c":168 -1
      (nil))
 
-;; Function ADC_StructInit (ADC_StructInit, funcdef_no=31, decl_uid=4535, cgraph_uid=31, symbol_order=31)
+;; Function ADC_StructInit (ADC_StructInit, funcdef_no=31, decl_uid=4582, cgraph_uid=31, symbol_order=31)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -455,7 +455,7 @@ try_optimize_cfg iteration 2
         (reg:QI 73)) "../Peripheral/src/ch32v20x_adc.c":189 -1
      (nil))
 
-;; Function ADC_Cmd (ADC_Cmd, funcdef_no=32, decl_uid=4538, cgraph_uid=32, symbol_order=32)
+;; Function ADC_Cmd (ADC_Cmd, funcdef_no=32, decl_uid=4585, cgraph_uid=32, symbol_order=32)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -542,7 +542,7 @@ try_optimize_cfg iteration 2
 (code_label 24 21 25 7 8 (nil) [1 uses])
 (note 25 24 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function ADC_DMACmd (ADC_DMACmd, funcdef_no=33, decl_uid=4541, cgraph_uid=33, symbol_order=33)
+;; Function ADC_DMACmd (ADC_DMACmd, funcdef_no=33, decl_uid=4588, cgraph_uid=33, symbol_order=33)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -629,7 +629,7 @@ try_optimize_cfg iteration 2
 (code_label 24 21 25 7 12 (nil) [1 uses])
 (note 25 24 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function ADC_ITConfig (ADC_ITConfig, funcdef_no=34, decl_uid=4545, cgraph_uid=34, symbol_order=34)
+;; Function ADC_ITConfig (ADC_ITConfig, funcdef_no=34, decl_uid=4592, cgraph_uid=34, symbol_order=34)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -733,7 +733,7 @@ try_optimize_cfg iteration 2
 (code_label 31 28 32 7 16 (nil) [1 uses])
 (note 32 31 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function ADC_ResetCalibration (ADC_ResetCalibration, funcdef_no=35, decl_uid=4547, cgraph_uid=35, symbol_order=35)
+;; Function ADC_ResetCalibration (ADC_ResetCalibration, funcdef_no=35, decl_uid=4594, cgraph_uid=35, symbol_order=35)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -777,7 +777,7 @@ try_optimize_cfg iteration 2
         (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v20x_adc.c":277 -1
      (nil))
 
-;; Function ADC_GetResetCalibrationStatus (ADC_GetResetCalibrationStatus, funcdef_no=36, decl_uid=4549, cgraph_uid=36, symbol_order=36)
+;; Function ADC_GetResetCalibrationStatus (ADC_GetResetCalibrationStatus, funcdef_no=36, decl_uid=4596, cgraph_uid=36, symbol_order=36)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -840,7 +840,7 @@ try_optimize_cfg iteration 2
 (insn 19 18 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_adc.c":303 -1
      (nil))
 
-;; Function ADC_StartCalibration (ADC_StartCalibration, funcdef_no=37, decl_uid=4551, cgraph_uid=37, symbol_order=37)
+;; Function ADC_StartCalibration (ADC_StartCalibration, funcdef_no=37, decl_uid=4598, cgraph_uid=37, symbol_order=37)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -884,7 +884,7 @@ try_optimize_cfg iteration 2
         (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v20x_adc.c":316 -1
      (nil))
 
-;; Function ADC_GetCalibrationStatus (ADC_GetCalibrationStatus, funcdef_no=38, decl_uid=4553, cgraph_uid=38, symbol_order=38)
+;; Function ADC_GetCalibrationStatus (ADC_GetCalibrationStatus, funcdef_no=38, decl_uid=4600, cgraph_uid=38, symbol_order=38)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -947,7 +947,7 @@ try_optimize_cfg iteration 2
 (insn 19 18 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_adc.c":342 -1
      (nil))
 
-;; Function ADC_SoftwareStartConvCmd (ADC_SoftwareStartConvCmd, funcdef_no=39, decl_uid=4556, cgraph_uid=39, symbol_order=39)
+;; Function ADC_SoftwareStartConvCmd (ADC_SoftwareStartConvCmd, funcdef_no=39, decl_uid=4603, cgraph_uid=39, symbol_order=39)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1045,7 +1045,7 @@ try_optimize_cfg iteration 2
 (code_label 27 24 28 7 24 (nil) [1 uses])
 (note 28 27 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function ADC_GetSoftwareStartConvStatus (ADC_GetSoftwareStartConvStatus, funcdef_no=40, decl_uid=4558, cgraph_uid=40, symbol_order=40)
+;; Function ADC_GetSoftwareStartConvStatus (ADC_GetSoftwareStartConvStatus, funcdef_no=40, decl_uid=4605, cgraph_uid=40, symbol_order=40)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1108,7 +1108,7 @@ try_optimize_cfg iteration 2
 (insn 19 18 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_adc.c":390 -1
      (nil))
 
-;; Function ADC_DiscModeChannelCountConfig (ADC_DiscModeChannelCountConfig, funcdef_no=41, decl_uid=4561, cgraph_uid=41, symbol_order=41)
+;; Function ADC_DiscModeChannelCountConfig (ADC_DiscModeChannelCountConfig, funcdef_no=41, decl_uid=4608, cgraph_uid=41, symbol_order=41)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1200,7 +1200,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 78 [ tmpreg1 ])) "../Peripheral/src/ch32v20x_adc.c":413 -1
      (nil))
 
-;; Function ADC_DiscModeCmd (ADC_DiscModeCmd, funcdef_no=42, decl_uid=4564, cgraph_uid=42, symbol_order=42)
+;; Function ADC_DiscModeCmd (ADC_DiscModeCmd, funcdef_no=42, decl_uid=4611, cgraph_uid=42, symbol_order=42)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1303,7 +1303,7 @@ try_optimize_cfg iteration 2
 (code_label 28 25 29 7 30 (nil) [1 uses])
 (note 29 28 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function ADC_RegularChannelConfig (ADC_RegularChannelConfig, funcdef_no=43, decl_uid=4569, cgraph_uid=43, symbol_order=43)
+;; Function ADC_RegularChannelConfig (ADC_RegularChannelConfig, funcdef_no=43, decl_uid=4616, cgraph_uid=43, symbol_order=43)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1763,7 +1763,7 @@ try_optimize_cfg iteration 2
 (code_label 153 150 154 12 34 (nil) [2 uses])
 (note 154 153 0 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
 
-;; Function ADC_ExternalTrigConvCmd (ADC_ExternalTrigConvCmd, funcdef_no=44, decl_uid=4572, cgraph_uid=44, symbol_order=44)
+;; Function ADC_ExternalTrigConvCmd (ADC_ExternalTrigConvCmd, funcdef_no=44, decl_uid=4619, cgraph_uid=44, symbol_order=44)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1861,7 +1861,7 @@ try_optimize_cfg iteration 2
 (code_label 27 24 28 7 40 (nil) [1 uses])
 (note 28 27 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function ADC_GetConversionValue (ADC_GetConversionValue, funcdef_no=45, decl_uid=4574, cgraph_uid=45, symbol_order=45)
+;; Function ADC_GetConversionValue (ADC_GetConversionValue, funcdef_no=45, decl_uid=4621, cgraph_uid=45, symbol_order=45)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1912,7 +1912,7 @@ try_optimize_cfg iteration 2
 (insn 15 14 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_adc.c":565 -1
      (nil))
 
-;; Function ADC_GetDualModeConversionValue (ADC_GetDualModeConversionValue, funcdef_no=46, decl_uid=4576, cgraph_uid=46, symbol_order=46)
+;; Function ADC_GetDualModeConversionValue (ADC_GetDualModeConversionValue, funcdef_no=46, decl_uid=4623, cgraph_uid=46, symbol_order=46)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1958,7 +1958,7 @@ try_optimize_cfg iteration 2
 (insn 13 12 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_adc.c":577 -1
      (nil))
 
-;; Function ADC_AutoInjectedConvCmd (ADC_AutoInjectedConvCmd, funcdef_no=47, decl_uid=4579, cgraph_uid=47, symbol_order=47)
+;; Function ADC_AutoInjectedConvCmd (ADC_AutoInjectedConvCmd, funcdef_no=47, decl_uid=4626, cgraph_uid=47, symbol_order=47)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2045,7 +2045,7 @@ try_optimize_cfg iteration 2
 (code_label 24 21 25 7 46 (nil) [1 uses])
 (note 25 24 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function ADC_InjectedDiscModeCmd (ADC_InjectedDiscModeCmd, funcdef_no=48, decl_uid=4582, cgraph_uid=48, symbol_order=48)
+;; Function ADC_InjectedDiscModeCmd (ADC_InjectedDiscModeCmd, funcdef_no=48, decl_uid=4629, cgraph_uid=48, symbol_order=48)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2143,7 +2143,7 @@ try_optimize_cfg iteration 2
 (code_label 27 24 28 7 50 (nil) [1 uses])
 (note 28 27 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function ADC_ExternalTrigInjectedConvConfig (ADC_ExternalTrigInjectedConvConfig, funcdef_no=49, decl_uid=4585, cgraph_uid=49, symbol_order=49)
+;; Function ADC_ExternalTrigInjectedConvConfig (ADC_ExternalTrigInjectedConvConfig, funcdef_no=49, decl_uid=4632, cgraph_uid=49, symbol_order=49)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2218,7 +2218,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 74 [ tmpreg ])) "../Peripheral/src/ch32v20x_adc.c":653 -1
      (nil))
 
-;; Function ADC_ExternalTrigInjectedConvCmd (ADC_ExternalTrigInjectedConvCmd, funcdef_no=50, decl_uid=4588, cgraph_uid=50, symbol_order=50)
+;; Function ADC_ExternalTrigInjectedConvCmd (ADC_ExternalTrigInjectedConvCmd, funcdef_no=50, decl_uid=4635, cgraph_uid=50, symbol_order=50)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2316,7 +2316,7 @@ try_optimize_cfg iteration 2
 (code_label 27 24 28 7 55 (nil) [1 uses])
 (note 28 27 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function ADC_SoftwareStartInjectedConvCmd (ADC_SoftwareStartInjectedConvCmd, funcdef_no=51, decl_uid=4591, cgraph_uid=51, symbol_order=51)
+;; Function ADC_SoftwareStartInjectedConvCmd (ADC_SoftwareStartInjectedConvCmd, funcdef_no=51, decl_uid=4638, cgraph_uid=51, symbol_order=51)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2414,7 +2414,7 @@ try_optimize_cfg iteration 2
 (code_label 27 24 28 7 59 (nil) [1 uses])
 (note 28 27 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function ADC_GetSoftwareStartInjectedConvCmdStatus (ADC_GetSoftwareStartInjectedConvCmdStatus, funcdef_no=52, decl_uid=4593, cgraph_uid=52, symbol_order=52)
+;; Function ADC_GetSoftwareStartInjectedConvCmdStatus (ADC_GetSoftwareStartInjectedConvCmdStatus, funcdef_no=52, decl_uid=4640, cgraph_uid=52, symbol_order=52)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2477,7 +2477,7 @@ try_optimize_cfg iteration 2
 (insn 19 18 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_adc.c":725 -1
      (nil))
 
-;; Function ADC_InjectedChannelConfig (ADC_InjectedChannelConfig, funcdef_no=53, decl_uid=4598, cgraph_uid=53, symbol_order=53)
+;; Function ADC_InjectedChannelConfig (ADC_InjectedChannelConfig, funcdef_no=53, decl_uid=4645, cgraph_uid=53, symbol_order=53)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2776,7 +2776,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 100 [ tmpreg1 ])) "../Peripheral/src/ch32v20x_adc.c":796 -1
      (nil))
 
-;; Function ADC_InjectedSequencerLengthConfig (ADC_InjectedSequencerLengthConfig, funcdef_no=54, decl_uid=4601, cgraph_uid=54, symbol_order=54)
+;; Function ADC_InjectedSequencerLengthConfig (ADC_InjectedSequencerLengthConfig, funcdef_no=54, decl_uid=4648, cgraph_uid=54, symbol_order=54)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2868,7 +2868,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 78 [ tmpreg1 ])) "../Peripheral/src/ch32v20x_adc.c":819 -1
      (nil))
 
-;; Function ADC_SetInjectedOffset (ADC_SetInjectedOffset, funcdef_no=55, decl_uid=4605, cgraph_uid=55, symbol_order=55)
+;; Function ADC_SetInjectedOffset (ADC_SetInjectedOffset, funcdef_no=55, decl_uid=4652, cgraph_uid=55, symbol_order=55)
 
 Partition 0: size 4 align 4
 	tmp
@@ -2950,7 +2950,7 @@ try_optimize_cfg iteration 2
         (reg:SI 78 [ _7 ])) "../Peripheral/src/ch32v20x_adc.c":845 -1
      (nil))
 
-;; Function ADC_GetInjectedConversionValue (ADC_GetInjectedConversionValue, funcdef_no=56, decl_uid=4608, cgraph_uid=56, symbol_order=56)
+;; Function ADC_GetInjectedConversionValue (ADC_GetInjectedConversionValue, funcdef_no=56, decl_uid=4655, cgraph_uid=56, symbol_order=56)
 
 Partition 0: size 4 align 4
 	tmp
@@ -3045,7 +3045,7 @@ try_optimize_cfg iteration 2
 (insn 28 27 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_adc.c":870 -1
      (nil))
 
-;; Function ADC_AnalogWatchdogCmd (ADC_AnalogWatchdogCmd, funcdef_no=57, decl_uid=4611, cgraph_uid=57, symbol_order=57)
+;; Function ADC_AnalogWatchdogCmd (ADC_AnalogWatchdogCmd, funcdef_no=57, decl_uid=4658, cgraph_uid=57, symbol_order=57)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3120,7 +3120,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 74 [ tmpreg ])) "../Peripheral/src/ch32v20x_adc.c":904 -1
      (nil))
 
-;; Function ADC_AnalogWatchdogThresholdsConfig (ADC_AnalogWatchdogThresholdsConfig, funcdef_no=58, decl_uid=4615, cgraph_uid=58, symbol_order=58)
+;; Function ADC_AnalogWatchdogThresholdsConfig (ADC_AnalogWatchdogThresholdsConfig, funcdef_no=58, decl_uid=4662, cgraph_uid=58, symbol_order=58)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3174,7 +3174,7 @@ try_optimize_cfg iteration 2
         (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v20x_adc.c":924 -1
      (nil))
 
-;; Function ADC_AnalogWatchdogSingleChannelConfig (ADC_AnalogWatchdogSingleChannelConfig, funcdef_no=59, decl_uid=4618, cgraph_uid=59, symbol_order=59)
+;; Function ADC_AnalogWatchdogSingleChannelConfig (ADC_AnalogWatchdogSingleChannelConfig, funcdef_no=59, decl_uid=4665, cgraph_uid=59, symbol_order=59)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3241,7 +3241,7 @@ try_optimize_cfg iteration 2
         (reg/v:SI 75 [ tmpreg ])) "../Peripheral/src/ch32v20x_adc.c":962 -1
      (nil))
 
-;; Function ADC_TempSensorVrefintCmd (ADC_TempSensorVrefintCmd, funcdef_no=60, decl_uid=4620, cgraph_uid=60, symbol_order=60)
+;; Function ADC_TempSensorVrefintCmd (ADC_TempSensorVrefintCmd, funcdef_no=60, decl_uid=4667, cgraph_uid=60, symbol_order=60)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3368,7 +3368,7 @@ try_optimize_cfg iteration 2
 (code_label 34 31 35 7 75 (nil) [1 uses])
 (note 35 34 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function ADC_GetFlagStatus (ADC_GetFlagStatus, funcdef_no=61, decl_uid=4623, cgraph_uid=61, symbol_order=61)
+;; Function ADC_GetFlagStatus (ADC_GetFlagStatus, funcdef_no=61, decl_uid=4670, cgraph_uid=61, symbol_order=61)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3435,7 +3435,7 @@ try_optimize_cfg iteration 2
 (insn 21 20 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_adc.c":1015 -1
      (nil))
 
-;; Function ADC_ClearFlag (ADC_ClearFlag, funcdef_no=62, decl_uid=4626, cgraph_uid=62, symbol_order=62)
+;; Function ADC_ClearFlag (ADC_ClearFlag, funcdef_no=62, decl_uid=4673, cgraph_uid=62, symbol_order=62)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3476,7 +3476,7 @@ try_optimize_cfg iteration 2
         (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v20x_adc.c":1034 -1
      (nil))
 
-;; Function ADC_GetITStatus (ADC_GetITStatus, funcdef_no=63, decl_uid=4629, cgraph_uid=63, symbol_order=63)
+;; Function ADC_GetITStatus (ADC_GetITStatus, funcdef_no=63, decl_uid=4676, cgraph_uid=63, symbol_order=63)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3603,7 +3603,7 @@ try_optimize_cfg iteration 2
 (insn 39 38 0 7 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_adc.c":1068 -1
      (nil))
 
-;; Function ADC_ClearITPendingBit (ADC_ClearITPendingBit, funcdef_no=64, decl_uid=4632, cgraph_uid=64, symbol_order=64)
+;; Function ADC_ClearITPendingBit (ADC_ClearITPendingBit, funcdef_no=64, decl_uid=4679, cgraph_uid=64, symbol_order=64)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3660,7 +3660,7 @@ try_optimize_cfg iteration 2
         (reg:SI 74 [ _3 ])) "../Peripheral/src/ch32v20x_adc.c":1088 -1
      (nil))
 
-;; Function TempSensor_Volt_To_Temper (TempSensor_Volt_To_Temper, funcdef_no=65, decl_uid=4634, cgraph_uid=65, symbol_order=65)
+;; Function TempSensor_Volt_To_Temper (TempSensor_Volt_To_Temper, funcdef_no=65, decl_uid=4681, cgraph_uid=65, symbol_order=65)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3783,7 +3783,7 @@ try_optimize_cfg iteration 2
 (insn 36 35 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v20x_adc.c":1111 -1
      (nil))
 
-;; Function ADC_BufferCmd (ADC_BufferCmd, funcdef_no=66, decl_uid=4637, cgraph_uid=66, symbol_order=66)
+;; Function ADC_BufferCmd (ADC_BufferCmd, funcdef_no=66, decl_uid=4684, cgraph_uid=66, symbol_order=66)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -3881,7 +3881,7 @@ try_optimize_cfg iteration 2
 (code_label 27 24 28 7 86 (nil) [1 uses])
 (note 28 27 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 
-;; Function Get_CalibrationValue (Get_CalibrationValue, funcdef_no=67, decl_uid=4639, cgraph_uid=67, symbol_order=67)
+;; Function Get_CalibrationValue (Get_CalibrationValue, funcdef_no=67, decl_uid=4686, cgraph_uid=67, symbol_order=67)
 
 Partition 2: size 20 align 4
 	buf
@@ -4025,11 +4025,11 @@ Forwarding edge 25->26 to 30 failed.
      (nil))
 (call_insn 24 23 25 5 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("ADC_GetResetCalibrationStatus") [flags 0x3] <function_decl 066e4c30 ADC_GetResetCalibrationStatus>) [0 ADC_GetResetCalibrationStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("ADC_GetResetCalibrationStatus") [flags 0x3] <function_decl 065d5618 ADC_GetResetCalibrationStatus>) [0 ADC_GetResetCalibrationStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_adc.c":1155 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetResetCalibrationStatus") [flags 0x3] <function_decl 066e4c30 ADC_GetResetCalibrationStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetResetCalibrationStatus") [flags 0x3] <function_decl 065d5618 ADC_GetResetCalibrationStatus>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -4072,11 +4072,11 @@ Forwarding edge 25->26 to 30 failed.
      (nil))
 (call_insn 38 37 39 7 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("ADC_GetCalibrationStatus") [flags 0x3] <function_decl 066e4d20 ADC_GetCalibrationStatus>) [0 ADC_GetCalibrationStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("ADC_GetCalibrationStatus") [flags 0x3] <function_decl 065d5708 ADC_GetCalibrationStatus>) [0 ADC_GetCalibrationStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Peripheral/src/ch32v20x_adc.c":1157 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetCalibrationStatus") [flags 0x3] <function_decl 066e4d20 ADC_GetCalibrationStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetCalibrationStatus") [flags 0x3] <function_decl 065d5708 ADC_GetCalibrationStatus>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))

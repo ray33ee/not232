@@ -1,5 +1,5 @@
 
-;; Function Delay_Init (Delay_Init, funcdef_no=29, decl_uid=4623, cgraph_uid=29, symbol_order=31)
+;; Function Delay_Init (Delay_Init, funcdef_no=29, decl_uid=4670, cgraph_uid=29, symbol_order=31)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -28,11 +28,11 @@ try_optimize_cfg iteration 2
 (debug_insn 5 2 6 2 (debug_marker) "../Debug/debug.c":30 -1
      (nil))
 (insn 6 5 7 2 (set (reg:SI 77)
-        (high:SI (symbol_ref:SI ("SystemCoreClock") [flags 0xc4] <var_decl 06501cb8 SystemCoreClock>))) "../Debug/debug.c":30 -1
+        (high:SI (symbol_ref:SI ("SystemCoreClock") [flags 0xc4] <var_decl 064b0cb8 SystemCoreClock>))) "../Debug/debug.c":30 -1
      (nil))
 (insn 7 6 8 2 (set (reg:SI 79)
         (mem/c:SI (lo_sum:SI (reg:SI 77)
-                (symbol_ref:SI ("SystemCoreClock") [flags 0xc4] <var_decl 06501cb8 SystemCoreClock>)) [2 SystemCoreClock+0 S4 A32])) "../Debug/debug.c":30 -1
+                (symbol_ref:SI ("SystemCoreClock") [flags 0xc4] <var_decl 064b0cb8 SystemCoreClock>)) [2 SystemCoreClock+0 S4 A32])) "../Debug/debug.c":30 -1
      (nil))
 (insn 8 7 9 2 (set (reg:SI 82)
         (const_int 7999488 [0x7a1000])) "../Debug/debug.c":30 -1
@@ -84,7 +84,7 @@ try_optimize_cfg iteration 2
         (subreg:HI (reg:SI 89) 0)) "../Debug/debug.c":31 -1
      (nil))
 
-;; Function Delay_Us (Delay_Us, funcdef_no=30, decl_uid=4625, cgraph_uid=30, symbol_order=32)
+;; Function Delay_Us (Delay_Us, funcdef_no=30, decl_uid=4672, cgraph_uid=30, symbol_order=32)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -141,7 +141,7 @@ try_optimize_cfg iteration 2
      (nil))
 (debug_insn 13 12 14 2 (debug_marker) "../Debug/debug.c":48 -1
      (nil))
-(debug_insn 14 13 15 2 (var_location:SI i (mult:SI (zero_extend:SI (mem/c:QI (symbol_ref:SI ("p_us") [flags 0x82] <var_decl 06686790 p_us>) [0 p_us+0 S1 A8]))
+(debug_insn 14 13 15 2 (var_location:SI i (mult:SI (zero_extend:SI (mem/c:QI (symbol_ref:SI ("p_us") [flags 0x82] <var_decl 06642898 p_us>) [0 p_us+0 S1 A8]))
         (reg/v:SI 86 [ n ]))) "../Debug/debug.c":48 -1
      (nil))
 (debug_insn 15 14 16 2 (debug_marker) "../Debug/debug.c":50 -1
@@ -254,7 +254,7 @@ try_optimize_cfg iteration 2
         (reg:SI 84 [ _13 ])) "../Debug/debug.c":55 -1
      (nil))
 
-;; Function Delay_Ms (Delay_Ms, funcdef_no=31, decl_uid=4627, cgraph_uid=31, symbol_order=33)
+;; Function Delay_Ms (Delay_Ms, funcdef_no=31, decl_uid=4674, cgraph_uid=31, symbol_order=33)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -311,7 +311,7 @@ try_optimize_cfg iteration 2
      (nil))
 (debug_insn 13 12 14 2 (debug_marker) "../Debug/debug.c":72 -1
      (nil))
-(debug_insn 14 13 15 2 (var_location:SI i (mult:SI (zero_extend:SI (mem/c:HI (symbol_ref:SI ("p_ms") [flags 0x82] <var_decl 066867e8 p_ms>) [4 p_ms+0 S2 A16]))
+(debug_insn 14 13 15 2 (var_location:SI i (mult:SI (zero_extend:SI (mem/c:HI (symbol_ref:SI ("p_ms") [flags 0x82] <var_decl 066428f0 p_ms>) [4 p_ms+0 S2 A16]))
         (reg/v:SI 86 [ n ]))) "../Debug/debug.c":72 -1
      (nil))
 (debug_insn 15 14 16 2 (debug_marker) "../Debug/debug.c":74 -1
@@ -424,7 +424,7 @@ try_optimize_cfg iteration 2
         (reg:SI 84 [ _13 ])) "../Debug/debug.c":79 -1
      (nil))
 
-;; Function Delay_Ticks (Delay_Ticks, funcdef_no=32, decl_uid=4629, cgraph_uid=32, symbol_order=34)
+;; Function Delay_Ticks (Delay_Ticks, funcdef_no=32, decl_uid=4676, cgraph_uid=32, symbol_order=34)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -578,7 +578,7 @@ try_optimize_cfg iteration 2
         (reg:SI 82 [ _11 ])) "../Debug/debug.c":94 -1
      (nil))
 
-;; Function start_timer_us_u32 (start_timer_us_u32, funcdef_no=33, decl_uid=4635, cgraph_uid=33, symbol_order=35)
+;; Function start_timer_us_u32 (start_timer_us_u32, funcdef_no=33, decl_uid=4682, cgraph_uid=33, symbol_order=35)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -631,7 +631,7 @@ try_optimize_cfg iteration 2
      (nil))
 (debug_insn 13 12 14 2 (debug_marker) "../Debug/debug.c":101 -1
      (nil))
-(debug_insn 14 13 15 2 (var_location:SI i (mult:SI (zero_extend:SI (mem/c:QI (symbol_ref:SI ("p_us") [flags 0x82] <var_decl 06686790 p_us>) [0 p_us+0 S1 A8]))
+(debug_insn 14 13 15 2 (var_location:SI i (mult:SI (zero_extend:SI (mem/c:QI (symbol_ref:SI ("p_us") [flags 0x82] <var_decl 06642898 p_us>) [0 p_us+0 S1 A8]))
         (reg/v:SI 82 [ duration ]))) "../Debug/debug.c":101 -1
      (nil))
 (debug_insn 15 14 16 2 (debug_marker) "../Debug/debug.c":103 -1
@@ -701,7 +701,7 @@ try_optimize_cfg iteration 2
         (reg:SI 80 [ _9 ])) "../Debug/debug.c":105 -1
      (nil))
 
-;; Function start_timer_us_u8 (start_timer_us_u8, funcdef_no=34, decl_uid=4637, cgraph_uid=34, symbol_order=36)
+;; Function start_timer_us_u8 (start_timer_us_u8, funcdef_no=34, decl_uid=4684, cgraph_uid=34, symbol_order=36)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -743,17 +743,17 @@ try_optimize_cfg iteration 2
         (reg:SI 76)) "../Debug/debug.c":110 -1
      (nil))
 (call_insn 10 9 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("start_timer_us_u32") [flags 0x3] <function_decl 066ba960 start_timer_us_u32>) [0 start_timer_us_u32 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("start_timer_us_u32") [flags 0x3] <function_decl 06673348 start_timer_us_u32>) [0 start_timer_us_u32 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Debug/debug.c":110 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("start_timer_us_u32") [flags 0x3] <function_decl 066ba960 start_timer_us_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("start_timer_us_u32") [flags 0x3] <function_decl 06673348 start_timer_us_u32>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
 
-;; Function has_timer_timeout (has_timer_timeout, funcdef_no=35, decl_uid=4638, cgraph_uid=35, symbol_order=37)
+;; Function has_timer_timeout (has_timer_timeout, funcdef_no=35, decl_uid=4685, cgraph_uid=35, symbol_order=37)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -802,7 +802,7 @@ try_optimize_cfg iteration 2
 (insn 14 13 0 2 (use (reg/i:SI 10 a0)) "../Debug/debug.c":119 -1
      (nil))
 
-;; Function reset_timer (reset_timer, funcdef_no=36, decl_uid=4639, cgraph_uid=36, symbol_order=38)
+;; Function reset_timer (reset_timer, funcdef_no=36, decl_uid=4686, cgraph_uid=36, symbol_order=38)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -847,7 +847,7 @@ try_optimize_cfg iteration 2
         (reg:SI 73 [ _2 ])) "../Debug/debug.c":122 -1
      (nil))
 
-;; Function USART_Printf_Init (USART_Printf_Init, funcdef_no=37, decl_uid=4631, cgraph_uid=37, symbol_order=39)
+;; Function USART_Printf_Init (USART_Printf_Init, funcdef_no=37, decl_uid=4678, cgraph_uid=37, symbol_order=39)
 
 Partition 1: size 16 align 4
 	USART_InitStructure
@@ -893,11 +893,11 @@ try_optimize_cfg iteration 2
         (const_int 524288 [0x80000])) "../Debug/debug.c":166 -1
      (nil))
 (call_insn 11 10 12 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 06672438 RCC_APB1PeriphClockCmd>) [0 RCC_APB1PeriphClockCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 0662e438 RCC_APB1PeriphClockCmd>) [0 RCC_APB1PeriphClockCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Debug/debug.c":166 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 06672438 RCC_APB1PeriphClockCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 0662e438 RCC_APB1PeriphClockCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -911,11 +911,11 @@ try_optimize_cfg iteration 2
         (const_int 8 [0x8])) "../Debug/debug.c":167 -1
      (nil))
 (call_insn 15 14 16 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 066723c0 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 0662e3c0 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Debug/debug.c":167 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 066723c0 RCC_APB2PeriphClockCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 0662e3c0 RCC_APB2PeriphClockCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -965,11 +965,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
         (nil)))
 (call_insn 30 29 31 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 066488e8 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 066078e8 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Debug/debug.c":172 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 066488e8 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 066078e8 GPIO_Init>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1023,11 +1023,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073761280 [0x40004c00])
         (nil)))
 (call_insn 47 46 48 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("USART_Init") [flags 0x41] <function_decl 066a64b0 USART_Init>) [0 USART_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("USART_Init") [flags 0x41] <function_decl 066624b0 USART_Init>) [0 USART_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Debug/debug.c":196 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("USART_Init") [flags 0x41] <function_decl 066a64b0 USART_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("USART_Init") [flags 0x41] <function_decl 066624b0 USART_Init>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1046,17 +1046,17 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073761280 [0x40004c00])
         (nil)))
 (call_insn 52 51 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("USART_Cmd") [flags 0x41] <function_decl 066a6690 USART_Cmd>) [0 USART_Cmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("USART_Cmd") [flags 0x41] <function_decl 06662690 USART_Cmd>) [0 USART_Cmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Debug/debug.c":197 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("USART_Cmd") [flags 0x41] <function_decl 066a6690 USART_Cmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("USART_Cmd") [flags 0x41] <function_decl 06662690 USART_Cmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (nil))))
 
-;; Function SDI_Printf_Enable (SDI_Printf_Enable, funcdef_no=38, decl_uid=4633, cgraph_uid=38, symbol_order=40)
+;; Function SDI_Printf_Enable (SDI_Printf_Enable, funcdef_no=38, decl_uid=4680, cgraph_uid=38, symbol_order=40)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1098,11 +1098,11 @@ try_optimize_cfg iteration 2
 (debug_insn 9 8 10 2 (debug_marker) "../Debug/debug.c":214 -1
      (nil))
 (call_insn 10 9 11 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("Delay_Init") [flags 0x3] <function_decl 066ba690 Delay_Init>) [0 Delay_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("Delay_Init") [flags 0x3] <function_decl 06673078 Delay_Init>) [0 Delay_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Debug/debug.c":214 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Init") [flags 0x3] <function_decl 066ba690 Delay_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Init") [flags 0x3] <function_decl 06673078 Delay_Init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -1112,17 +1112,17 @@ try_optimize_cfg iteration 2
         (const_int 1 [0x1])) "../Debug/debug.c":215 -1
      (nil))
 (call_insn 13 12 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("Delay_Ms") [flags 0x3] <function_decl 066ba780 Delay_Ms>) [0 Delay_Ms S4 A32])
+            (call (mem:SI (symbol_ref:SI ("Delay_Ms") [flags 0x3] <function_decl 06673168 Delay_Ms>) [0 Delay_Ms S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Debug/debug.c":215 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Ms") [flags 0x3] <function_decl 066ba780 Delay_Ms>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Ms") [flags 0x3] <function_decl 06673168 Delay_Ms>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
 
-;; Function _write (_write, funcdef_no=39, decl_uid=4688, cgraph_uid=39, symbol_order=41)
+;; Function _write (_write, funcdef_no=39, decl_uid=4735, cgraph_uid=39, symbol_order=41)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1199,11 +1199,11 @@ try_optimize_cfg iteration 2
         (nil)))
 (call_insn 20 19 21 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("USART_GetFlagStatus") [flags 0x41] <function_decl 066a6f00 USART_GetFlagStatus>) [0 USART_GetFlagStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("USART_GetFlagStatus") [flags 0x41] <function_decl 06662f00 USART_GetFlagStatus>) [0 USART_GetFlagStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../Debug/debug.c":280 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("USART_GetFlagStatus") [flags 0x41] <function_decl 066a6f00 USART_GetFlagStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("USART_GetFlagStatus") [flags 0x41] <function_decl 06662f00 USART_GetFlagStatus>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -1247,11 +1247,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073761280 [0x40004c00])
         (nil)))
 (call_insn 33 32 34 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("USART_SendData") [flags 0x41] <function_decl 066a6a50 USART_SendData>) [0 USART_SendData S4 A32])
+            (call (mem:SI (symbol_ref:SI ("USART_SendData") [flags 0x41] <function_decl 06662a50 USART_SendData>) [0 USART_SendData S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../Debug/debug.c":281 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("USART_SendData") [flags 0x41] <function_decl 066a6a50 USART_SendData>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("USART_SendData") [flags 0x41] <function_decl 06662a50 USART_SendData>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -1288,7 +1288,7 @@ try_optimize_cfg iteration 2
 (insn 48 47 0 7 (use (reg/i:SI 10 a0)) "../Debug/debug.c":286 -1
      (nil))
 
-;; Function _sbrk (_sbrk, funcdef_no=40, decl_uid=4698, cgraph_uid=40, symbol_order=43)
+;; Function _sbrk (_sbrk, funcdef_no=40, decl_uid=4745, cgraph_uid=40, symbol_order=43)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1352,12 +1352,12 @@ try_optimize_cfg iteration 2
             (reg/v:SI 75 [ incr ]))) "../Debug/debug.c":302 -1
      (nil))
 (insn 16 15 17 2 (set (reg:SI 79)
-        (high:SI (symbol_ref:SI ("_end") [flags 0xc0] <var_decl 06686ec8 _end>))) "../Debug/debug.c":302 -1
+        (high:SI (symbol_ref:SI ("_end") [flags 0xc0] <var_decl 0669f000 _end>))) "../Debug/debug.c":302 -1
      (nil))
 (insn 17 16 18 2 (set (reg/f:SI 78)
         (lo_sum:SI (reg:SI 79)
-            (symbol_ref:SI ("_end") [flags 0xc0] <var_decl 06686ec8 _end>))) "../Debug/debug.c":302 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("_end") [flags 0xc0] <var_decl 06686ec8 _end>)
+            (symbol_ref:SI ("_end") [flags 0xc0] <var_decl 0669f000 _end>))) "../Debug/debug.c":302 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("_end") [flags 0xc0] <var_decl 0669f000 _end>)
         (nil)))
 (jump_insn 18 17 19 2 (set (pc)
         (if_then_else (ltu (reg/f:SI 73 [ _3 ])
@@ -1368,12 +1368,12 @@ try_optimize_cfg iteration 2
  -> 40)
 (note 19 18 20 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
 (insn 20 19 21 4 (set (reg:SI 81)
-        (high:SI (symbol_ref:SI ("_heap_end") [flags 0xc0] <var_decl 06686f20 _heap_end>))) "../Debug/debug.c":302 -1
+        (high:SI (symbol_ref:SI ("_heap_end") [flags 0xc0] <var_decl 0669f058 _heap_end>))) "../Debug/debug.c":302 -1
      (nil))
 (insn 21 20 22 4 (set (reg/f:SI 80)
         (lo_sum:SI (reg:SI 81)
-            (symbol_ref:SI ("_heap_end") [flags 0xc0] <var_decl 06686f20 _heap_end>))) "../Debug/debug.c":302 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("_heap_end") [flags 0xc0] <var_decl 06686f20 _heap_end>)
+            (symbol_ref:SI ("_heap_end") [flags 0xc0] <var_decl 0669f058 _heap_end>))) "../Debug/debug.c":302 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("_heap_end") [flags 0xc0] <var_decl 0669f058 _heap_end>)
         (nil)))
 (jump_insn 22 21 23 4 (set (pc)
         (if_then_else (gtu (reg/f:SI 73 [ _3 ])

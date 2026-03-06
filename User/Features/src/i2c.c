@@ -1,11 +1,11 @@
-#include "bitbang/inc/i2c.h"
+#include "Features/inc/i2c.h"
 
 
 static inline void i2c_delay() {
     Delay_Us(1);
 }
 
-static inline void i2c_start(uint16_t sda_pin, uint16_t scl_pin) {
+static inline void i2c_start(uint8_t sda_pin, uint8_t scl_pin) {
     GPIOA->BSHR = 1 << sda_pin;
     i2c_delay();
     GPIOA->BSHR = 1 << scl_pin;
@@ -16,7 +16,7 @@ static inline void i2c_start(uint16_t sda_pin, uint16_t scl_pin) {
     i2c_delay();
 }
 
-static inline void i2c_send_bit(uint16_t sda_pin, uint16_t scl_pin, int bit) {
+static inline void i2c_send_bit(uint8_t sda_pin, uint8_t scl_pin, int bit) {
     if (bit) {
         GPIOA->BSHR = 1 << sda_pin;
     } else {
@@ -29,7 +29,7 @@ static inline void i2c_send_bit(uint16_t sda_pin, uint16_t scl_pin, int bit) {
     i2c_delay();
 }
 
-static inline uint8_t i2c_send_byte(uint16_t sda_pin, uint16_t scl_pin, uint8_t byte) {
+static inline uint8_t i2c_send_byte(uint8_t sda_pin, uint8_t scl_pin, uint8_t byte) {
     uint8_t ack = 1;
     for (int i = 7; i >= 0; i--) {
         i2c_send_bit(sda_pin, scl_pin, byte & (1 << i));
@@ -49,7 +49,7 @@ static inline uint8_t i2c_send_byte(uint16_t sda_pin, uint16_t scl_pin, uint8_t 
     return ack;
 }
 
-static inline uint8_t i2c_recv_bit(uint16_t sda_pin, uint16_t scl_pin) {
+static inline uint8_t i2c_recv_bit(uint8_t sda_pin, uint8_t scl_pin) {
     uint8_t bit = 0;
     
     
@@ -66,7 +66,7 @@ static inline uint8_t i2c_recv_bit(uint16_t sda_pin, uint16_t scl_pin) {
 
 }
 
-static inline void i2c_recv_byte(uint16_t sda_pin, uint16_t scl_pin, uint8_t* buffer, uint8_t ack) {
+static inline void i2c_recv_byte(uint8_t sda_pin, uint8_t scl_pin, uint8_t* buffer, uint8_t ack) {
     *buffer = 0;
     for (int i = 7; i >= 0; i--) {
         *buffer |= i2c_recv_bit(sda_pin, scl_pin) << i;
@@ -85,14 +85,14 @@ static inline void i2c_recv_byte(uint16_t sda_pin, uint16_t scl_pin, uint8_t* bu
     i2c_delay();
 }
 
-static inline void i2c_stop(uint16_t sda_pin, uint16_t scl_pin) {
+static inline void i2c_stop(uint8_t sda_pin, uint8_t scl_pin) {
     GPIOA->BSHR = 1 << scl_pin;
     i2c_delay();
     GPIOA->BSHR = 1 << sda_pin;
     i2c_delay();
 }
 
-uint8_t i2c_scan_address(uint16_t sda_pin, uint16_t scl_pin, uint8_t address) {
+uint8_t i2c_scan_address(uint8_t sda_pin, uint8_t scl_pin, uint8_t address) {
     i2c_start(sda_pin, scl_pin);
     uint8_t ack = i2c_send_byte(sda_pin, scl_pin, address << 1);
     i2c_stop(sda_pin, scl_pin);
@@ -100,7 +100,7 @@ uint8_t i2c_scan_address(uint16_t sda_pin, uint16_t scl_pin, uint8_t address) {
     return ack;
 }
 
-void i2c_send_bytes(uint16_t sda_pin, uint16_t scl_pin, uint8_t address, uint8_t* buffer, uint32_t len, int stop) {
+void i2c_send_bytes(uint8_t sda_pin, uint8_t scl_pin, uint8_t address, uint8_t* buffer, uint32_t len, int stop) {
     i2c_start(sda_pin, scl_pin);
 
     i2c_send_byte(sda_pin, scl_pin, address);
@@ -114,7 +114,7 @@ void i2c_send_bytes(uint16_t sda_pin, uint16_t scl_pin, uint8_t address, uint8_t
     }
 }
 
-void i2c_recv_bytes(uint16_t sda_pin, uint16_t scl_pin, uint8_t address, uint8_t* buffer, uint32_t len, int stop) {
+void i2c_recv_bytes(uint8_t sda_pin, uint8_t scl_pin, uint8_t address, uint8_t* buffer, uint32_t len, int stop) {
     i2c_start(sda_pin, scl_pin);
 
     i2c_send_byte(sda_pin, scl_pin, address | 1);
@@ -129,7 +129,7 @@ void i2c_recv_bytes(uint16_t sda_pin, uint16_t scl_pin, uint8_t address, uint8_t
     }
 }
 
-void i2c_send_recv_bytes(uint16_t sda_pin, uint16_t scl_pin, uint8_t address, uint8_t* out_buffer, uint32_t out_len, uint8_t* in_buffer, uint32_t in_len, int stop) {
+void i2c_send_recv_bytes(uint8_t sda_pin, uint8_t scl_pin, uint8_t address, uint8_t* out_buffer, uint32_t out_len, uint8_t* in_buffer, uint32_t in_len, int stop) {
     i2c_start(sda_pin, scl_pin);
 
     i2c_send_byte(sda_pin, scl_pin, address);
