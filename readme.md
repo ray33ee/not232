@@ -9,8 +9,8 @@
 		  
 # Todo
 
-- COnvert the i2c delay to work the same way as spi delay - so it can be used to create custom frequencies
 - Read the [Circuit Python](https://docs.circuitpython.org/en/latest/docs/index.html) API (NOT BLINKA) to get detailed explanations of the functions, and make sure our code conforms
+- Turn the python code into a working python package
 - Get UART working (use interrupts for RXNE, good luck)
 - Get FLASH working
 - Get CAN working

@@ -156,11 +156,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
         (nil)))
 (call_insn 40 39 41 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ADC_RegularChannelConfig") [flags 0x41] <function_decl 06523168 ADC_RegularChannelConfig>) [0 ADC_RegularChannelConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ADC_RegularChannelConfig") [flags 0x41] <function_decl 06603168 ADC_RegularChannelConfig>) [0 ADC_RegularChannelConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/touchkey.c":30 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_RegularChannelConfig") [flags 0x41] <function_decl 06523168 ADC_RegularChannelConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_RegularChannelConfig") [flags 0x41] <function_decl 06603168 ADC_RegularChannelConfig>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -220,11 +220,11 @@ try_optimize_cfg iteration 2
         (nil)))
 (call_insn 57 56 58 9 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("ADC_GetFlagStatus") [flags 0x41] <function_decl 065239d8 ADC_GetFlagStatus>) [0 ADC_GetFlagStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("ADC_GetFlagStatus") [flags 0x41] <function_decl 066039d8 ADC_GetFlagStatus>) [0 ADC_GetFlagStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/touchkey.c":34 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetFlagStatus") [flags 0x41] <function_decl 065239d8 ADC_GetFlagStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetFlagStatus") [flags 0x41] <function_decl 066039d8 ADC_GetFlagStatus>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))

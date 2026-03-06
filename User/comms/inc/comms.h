@@ -66,8 +66,6 @@
 #define RECV_PULSEIO_IN_STOP       ((uint8_t)152)
 #define RECV_PULSEIO_IN_RESUME     ((uint8_t)153)
 #define RECV_PULSEIO_IN_READ       ((uint8_t)154)
-#define RECV_PULSEIO_IN_POPLEFT    ((uint8_t)155)
-#define RECV_PULSEIO_IN_LENGTH     ((uint8_t)156)
 
 #define RECV_PULSEIO_OUT_SEND      ((uint8_t)160)
 
