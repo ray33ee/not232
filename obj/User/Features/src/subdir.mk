@@ -6,6 +6,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../User/Features/src/adc.c \
+../User/Features/src/fs.c \
 ../User/Features/src/gpio.c \
 ../User/Features/src/i2c.c \
 ../User/Features/src/neopixel.c \
@@ -18,6 +19,7 @@ C_SRCS += \
 
 C_DEPS += \
 ./User/Features/src/adc.d \
+./User/Features/src/fs.d \
 ./User/Features/src/gpio.d \
 ./User/Features/src/i2c.d \
 ./User/Features/src/neopixel.d \
@@ -30,6 +32,7 @@ C_DEPS += \
 
 OBJS += \
 ./User/Features/src/adc.o \
+./User/Features/src/fs.o \
 ./User/Features/src/gpio.o \
 ./User/Features/src/i2c.o \
 ./User/Features/src/neopixel.o \

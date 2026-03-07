@@ -12,6 +12,7 @@ RM := rm -rf
 -include User/VMIOX/src/subdir.mk
 -include User/USB_Serial/src/subdir.mk
 -include User/Features/src/subdir.mk
+-include User/FAT/src/subdir.mk
 -include User/subdir.mk
 -include Startup/subdir.mk
 -include Peripheral/src/subdir.mk

@@ -32,6 +32,7 @@ Debug \
 Peripheral/src \
 Startup \
 User \
+User/FAT/src \
 User/Features/src \
 User/USB_Serial/src \
 User/VMIOX/src \

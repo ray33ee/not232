@@ -1,5 +1,5 @@
-User/main.o: ../User/main.c \
- e:/Software\ Projects/moun_projects/not232/Debug/debug.h \
+User/Features/src/fs.o: ../User/Features/src/fs.c \
+ e:/Software\ Projects/moun_projects/not232/User/Features/inc/fs.h \
  e:/Software\ Projects/moun_projects/not232/Peripheral/inc/ch32v20x.h \
  e:/Software\ Projects/moun_projects/not232/Core/core_riscv.h \
  e:/Software\ Projects/moun_projects/not232/User/system_ch32v20x.h \
@@ -24,37 +24,15 @@ User/main.o: ../User/main.c \
  e:/Software\ Projects/moun_projects/not232/Peripheral/inc/ch32v20x_usart.h \
  e:/Software\ Projects/moun_projects/not232/Peripheral/inc/ch32v20x_wwdg.h \
  e:/Software\ Projects/moun_projects/not232/User/ch32v20x_it.h \
+ e:/Software\ Projects/moun_projects/not232/Debug/debug.h \
  e:/Software\ Projects/moun_projects/not232/User/constants.h \
  e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_in.h \
  e:/Software\ Projects/moun_projects/not232/User/USB_Serial/inc/usb_serial.h \
  e:/Software\ Projects/moun_projects/not232/Peripheral/inc/ch32v20x_misc.h \
- ../User/VMIOX/inc/execute.h ../User/VMIOX/inc/state.h \
- ../User/VMIOX/inc/opcodes.h \
- e:/Software\ Projects/moun_projects/not232/User/comms/inc/comms.h \
- e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/execute.h \
- e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/opcodes.h \
- e:/Software\ Projects/moun_projects/not232/User/constants.h \
- e:/Software\ Projects/moun_projects/not232/User/Features/inc/i2c.h \
- e:/Software\ Projects/moun_projects/not232/User/Features/inc/neopixel.h \
- e:/Software\ Projects/moun_projects/not232/User/Features/inc/one_wire.h \
- e:/Software\ Projects/moun_projects/not232/User/Features/inc/spi.h \
- e:/Software\ Projects/moun_projects/not232/User/Features/inc/gpio.h \
- e:/Software\ Projects/moun_projects/not232/User/Features/inc/pwm.h \
- e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_in.h \
- e:/Software\ Projects/moun_projects/not232/User/Features/inc/adc.h \
- e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_out.h \
- e:/Software\ Projects/moun_projects/not232/User/Features/inc/touchkey.h \
- ../User/VMIOX/inc/opcodes.h \
- ../User/USB_Serial/inc/ch32v20x_usbfs_device.h \
- ../User/USB_Serial/inc/usb_desc.h ../User/USB_Serial/inc/ch32v20x_usb.h \
- ../User/comms/inc/comms.h ../User/Features/inc/pwm.h \
- ../User/Features/inc/adc.h ../User/Features/inc/pulse_in.h \
- ../User/FAT/inc/lfs.h \
- e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs_util.h \
- ../User/Features/inc/fs.h \
- e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs.h
+ e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs.h \
+ e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs_util.h
 
-e:/Software\ Projects/moun_projects/not232/Debug/debug.h:
+e:/Software\ Projects/moun_projects/not232/User/Features/inc/fs.h:
 
 e:/Software\ Projects/moun_projects/not232/Peripheral/inc/ch32v20x.h:
 
@@ -104,6 +82,8 @@ e:/Software\ Projects/moun_projects/not232/Peripheral/inc/ch32v20x_wwdg.h:
 
 e:/Software\ Projects/moun_projects/not232/User/ch32v20x_it.h:
 
+e:/Software\ Projects/moun_projects/not232/Debug/debug.h:
+
 e:/Software\ Projects/moun_projects/not232/User/constants.h:
 
 e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_in.h:
@@ -112,60 +92,6 @@ e:/Software\ Projects/moun_projects/not232/User/USB_Serial/inc/usb_serial.h:
 
 e:/Software\ Projects/moun_projects/not232/Peripheral/inc/ch32v20x_misc.h:
 
-../User/VMIOX/inc/execute.h:
-
-../User/VMIOX/inc/state.h:
-
-../User/VMIOX/inc/opcodes.h:
-
-e:/Software\ Projects/moun_projects/not232/User/comms/inc/comms.h:
-
-e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/execute.h:
-
-e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/opcodes.h:
-
-e:/Software\ Projects/moun_projects/not232/User/constants.h:
-
-e:/Software\ Projects/moun_projects/not232/User/Features/inc/i2c.h:
-
-e:/Software\ Projects/moun_projects/not232/User/Features/inc/neopixel.h:
-
-e:/Software\ Projects/moun_projects/not232/User/Features/inc/one_wire.h:
-
-e:/Software\ Projects/moun_projects/not232/User/Features/inc/spi.h:
-
-e:/Software\ Projects/moun_projects/not232/User/Features/inc/gpio.h:
-
-e:/Software\ Projects/moun_projects/not232/User/Features/inc/pwm.h:
-
-e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_in.h:
-
-e:/Software\ Projects/moun_projects/not232/User/Features/inc/adc.h:
-
-e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_out.h:
-
-e:/Software\ Projects/moun_projects/not232/User/Features/inc/touchkey.h:
-
-../User/VMIOX/inc/opcodes.h:
-
-../User/USB_Serial/inc/ch32v20x_usbfs_device.h:
-
-../User/USB_Serial/inc/usb_desc.h:
-
-../User/USB_Serial/inc/ch32v20x_usb.h:
-
-../User/comms/inc/comms.h:
-
-../User/Features/inc/pwm.h:
-
-../User/Features/inc/adc.h:
-
-../User/Features/inc/pulse_in.h:
-
-../User/FAT/inc/lfs.h:
+e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs.h:
 
 e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs_util.h:
-
-../User/Features/inc/fs.h:
-
-e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs.h:

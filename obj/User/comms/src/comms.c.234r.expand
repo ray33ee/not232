@@ -341,11 +341,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 19 18 20 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":4 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 20 19 21 2 (set (reg:SI 244)
@@ -900,11 +900,11 @@ Forwarding edge 53->54 to 134 failed.
         (const_int 0 [0])) "../User/comms/src/comms.c":11 -1
      (nil))
 (call_insn 191 190 192 55 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":11 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -931,14 +931,14 @@ Forwarding edge 53->54 to 134 failed.
             (reg:SI 288))) "../User/comms/src/comms.c":21 -1
      (nil))
 (insn 202 201 203 56 (set (reg:SI 290)
-        (high:SI (symbol_ref/f:SI ("*.LC0") [flags 0x82] <var_decl 067c0c08 *.LC0>))) "../User/comms/src/comms.c":21 -1
+        (high:SI (symbol_ref/f:SI ("*.LC0") [flags 0x82] <var_decl 0684fc08 *.LC0>))) "../User/comms/src/comms.c":21 -1
      (nil))
 (insn 203 202 204 56 (set (reg:SI 291)
         (reg/f:SI 289)) "../User/comms/src/comms.c":21 -1
      (nil))
 (insn 204 203 205 56 (set (reg:SI 292)
         (lo_sum:SI (reg:SI 290)
-            (symbol_ref/f:SI ("*.LC0") [flags 0x82] <var_decl 067c0c08 *.LC0>))) "../User/comms/src/comms.c":21 -1
+            (symbol_ref/f:SI ("*.LC0") [flags 0x82] <var_decl 0684fc08 *.LC0>))) "../User/comms/src/comms.c":21 -1
      (nil))
 (insn 205 204 206 56 (set (reg:SI 293)
         (const_int 9 [0x9])) "../User/comms/src/comms.c":21 -1
@@ -954,11 +954,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 209 208 210 56 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 04d5fd98 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
+                (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063bfd98 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":21 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 04d5fd98 __builtin_memcpy>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063bfd98 __builtin_memcpy>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (set (reg:SI 10 a0)
@@ -987,11 +987,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 297)) "../User/comms/src/comms.c":23 -1
      (nil))
 (call_insn 216 215 217 56 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":23 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -1012,11 +1012,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 300)) "../User/comms/src/comms.c":24 -1
      (nil))
 (call_insn 222 221 223 56 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":24 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -1037,11 +1037,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 303)) "../User/comms/src/comms.c":25 -1
      (nil))
 (call_insn 228 227 229 56 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":25 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -1061,11 +1061,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 305)) "../User/comms/src/comms.c":27 -1
      (nil))
 (call_insn 234 233 235 56 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":27 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -1083,11 +1083,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 241 240 242 57 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":32 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 242 241 243 57 (set (reg:SI 306)
@@ -1107,11 +1107,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 138 [ pin_number ])) "../User/comms/src/comms.c":34 -1
      (nil))
 (call_insn 248 247 249 57 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06678870 gpio_init_adf_pins>) [0 gpio_init_adf_pins S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06700870 gpio_init_adf_pins>) [0 gpio_init_adf_pins S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":34 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06678870 gpio_init_adf_pins>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06700870 gpio_init_adf_pins>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1129,11 +1129,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 255 254 256 58 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":40 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 256 255 257 58 (set (reg:SI 307)
@@ -1153,11 +1153,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 139 [ pin_number ])) "../User/comms/src/comms.c":42 -1
      (nil))
 (call_insn 262 261 263 58 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06678870 gpio_init_adf_pins>) [0 gpio_init_adf_pins S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06700870 gpio_init_adf_pins>) [0 gpio_init_adf_pins S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":42 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06678870 gpio_init_adf_pins>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06700870 gpio_init_adf_pins>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1175,11 +1175,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 269 268 270 59 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":48 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 270 269 271 59 (set (reg:SI 308)
@@ -1199,11 +1199,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 140 [ pin_number ])) "../User/comms/src/comms.c":50 -1
      (nil))
 (call_insn 276 275 277 59 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06678870 gpio_init_adf_pins>) [0 gpio_init_adf_pins S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06700870 gpio_init_adf_pins>) [0 gpio_init_adf_pins S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":50 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06678870 gpio_init_adf_pins>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06700870 gpio_init_adf_pins>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1221,11 +1221,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 283 282 284 60 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":56 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 284 283 285 60 (set (reg:SI 309)
@@ -1245,11 +1245,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 141 [ pin_number ])) "../User/comms/src/comms.c":58 -1
      (nil))
 (call_insn 290 289 291 60 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06678870 gpio_init_adf_pins>) [0 gpio_init_adf_pins S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06700870 gpio_init_adf_pins>) [0 gpio_init_adf_pins S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":58 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06678870 gpio_init_adf_pins>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06700870 gpio_init_adf_pins>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1267,11 +1267,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 297 296 298 61 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":64 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 298 297 299 61 (set (reg:SI 310)
@@ -1291,11 +1291,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 142 [ pin_number ])) "../User/comms/src/comms.c":66 -1
      (nil))
 (call_insn 304 303 305 61 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06678870 gpio_init_adf_pins>) [0 gpio_init_adf_pins S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06700870 gpio_init_adf_pins>) [0 gpio_init_adf_pins S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":66 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06678870 gpio_init_adf_pins>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06700870 gpio_init_adf_pins>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1313,11 +1313,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 311 310 312 62 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":72 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 312 311 313 62 (set (reg:SI 311)
@@ -1334,11 +1334,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 143 [ pin_number ])) "../User/comms/src/comms.c":74 -1
      (nil))
 (call_insn 317 316 318 62 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_set_adf_pin") [flags 0x41] <function_decl 06678960 gpio_set_adf_pin>) [0 gpio_set_adf_pin S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_set_adf_pin") [flags 0x41] <function_decl 06700960 gpio_set_adf_pin>) [0 gpio_set_adf_pin S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":74 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_set_adf_pin") [flags 0x41] <function_decl 06678960 gpio_set_adf_pin>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_set_adf_pin") [flags 0x41] <function_decl 06700960 gpio_set_adf_pin>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (nil)))
@@ -1355,11 +1355,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 324 323 325 63 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":80 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 325 324 326 63 (set (reg:SI 312)
@@ -1376,11 +1376,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 144 [ pin_number ])) "../User/comms/src/comms.c":82 -1
      (nil))
 (call_insn 330 329 331 63 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_clear_adf_pin") [flags 0x41] <function_decl 066789d8 gpio_clear_adf_pin>) [0 gpio_clear_adf_pin S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_clear_adf_pin") [flags 0x41] <function_decl 067009d8 gpio_clear_adf_pin>) [0 gpio_clear_adf_pin S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":82 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_clear_adf_pin") [flags 0x41] <function_decl 066789d8 gpio_clear_adf_pin>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_clear_adf_pin") [flags 0x41] <function_decl 067009d8 gpio_clear_adf_pin>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (nil)))
@@ -1397,11 +1397,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 337 336 338 64 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":87 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 338 337 339 64 (set (reg:SI 313)
@@ -1419,11 +1419,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 343 342 344 64 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("gpio_read_adf_pin") [flags 0x41] <function_decl 066788e8 gpio_read_adf_pin>) [0 gpio_read_adf_pin S4 A32])
+                (call (mem:SI (symbol_ref:SI ("gpio_read_adf_pin") [flags 0x41] <function_decl 067008e8 gpio_read_adf_pin>) [0 gpio_read_adf_pin S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":89 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_read_adf_pin") [flags 0x41] <function_decl 066788e8 gpio_read_adf_pin>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_read_adf_pin") [flags 0x41] <function_decl 067008e8 gpio_read_adf_pin>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (nil)))
@@ -1456,11 +1456,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 317)) "../User/comms/src/comms.c":91 -1
      (nil))
 (call_insn 353 352 354 64 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":91 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -1512,11 +1512,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 372 371 373 65 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":108 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 373 372 374 65 (set (reg/v:SI 146 [ program_size ])
@@ -1547,11 +1547,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 383 382 384 66 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":113 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 384 383 385 66 (set (reg:SI 322)
@@ -1613,11 +1613,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 405 404 406 68 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("writes_registers") [flags 0x41] <function_decl 066785a0 writes_registers>) [0 writes_registers S4 A32])
+                (call (mem:SI (symbol_ref:SI ("writes_registers") [flags 0x41] <function_decl 067005a0 writes_registers>) [0 writes_registers S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":119 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("writes_registers") [flags 0x41] <function_decl 066785a0 writes_registers>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("writes_registers") [flags 0x41] <function_decl 067005a0 writes_registers>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1698,11 +1698,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 429 428 430 71 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("reads_registers") [flags 0x41] <function_decl 06678528 reads_registers>) [0 reads_registers S4 A32])
+                (call (mem:SI (symbol_ref:SI ("reads_registers") [flags 0x41] <function_decl 06700528 reads_registers>) [0 reads_registers S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":126 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("reads_registers") [flags 0x41] <function_decl 06678528 reads_registers>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("reads_registers") [flags 0x41] <function_decl 06700528 reads_registers>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1729,11 +1729,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 435 434 436 73 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":129 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 436 435 437 73 (set (reg:SI 335)
@@ -1798,11 +1798,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 456 455 457 74 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("reads_pile") [flags 0x41] <function_decl 06678618 reads_pile>) [0 reads_pile S4 A32])
+                (call (mem:SI (symbol_ref:SI ("reads_pile") [flags 0x41] <function_decl 06700618 reads_pile>) [0 reads_pile S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":134 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("reads_pile") [flags 0x41] <function_decl 06678618 reads_pile>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("reads_pile") [flags 0x41] <function_decl 06700618 reads_pile>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1822,11 +1822,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 461 460 462 75 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":136 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 462 461 463 75 (set (reg:SI 81 [ _11 ])
@@ -1862,11 +1862,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 473 472 474 76 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":139 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 474 473 475 76 (set (reg:SI 345)
@@ -1931,11 +1931,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 494 493 495 77 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("writes_pile") [flags 0x41] <function_decl 06678690 writes_pile>) [0 writes_pile S4 A32])
+                (call (mem:SI (symbol_ref:SI ("writes_pile") [flags 0x41] <function_decl 06700690 writes_pile>) [0 writes_pile S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":144 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("writes_pile") [flags 0x41] <function_decl 06678690 writes_pile>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("writes_pile") [flags 0x41] <function_decl 06700690 writes_pile>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2090,11 +2090,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 374)) "../User/comms/src/comms.c":151 -1
      (nil))
 (call_insn 538 537 539 80 (parallel [
-            (call (mem:SI (symbol_ref:SI ("run") [flags 0x41] <function_decl 06678a50 run>) [0 run S4 A32])
+            (call (mem:SI (symbol_ref:SI ("run") [flags 0x41] <function_decl 06700a50 run>) [0 run S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":151 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("run") [flags 0x41] <function_decl 06678a50 run>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("run") [flags 0x41] <function_decl 06700a50 run>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2125,11 +2125,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 546 545 547 80 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("writes_registers") [flags 0x41] <function_decl 066785a0 writes_registers>) [0 writes_registers S4 A32])
+                (call (mem:SI (symbol_ref:SI ("writes_registers") [flags 0x41] <function_decl 067005a0 writes_registers>) [0 writes_registers S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":156 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("writes_registers") [flags 0x41] <function_decl 066785a0 writes_registers>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("writes_registers") [flags 0x41] <function_decl 067005a0 writes_registers>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2179,11 +2179,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 558 557 559 83 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("writes_pile") [flags 0x41] <function_decl 06678690 writes_pile>) [0 writes_pile S4 A32])
+                (call (mem:SI (symbol_ref:SI ("writes_pile") [flags 0x41] <function_decl 06700690 writes_pile>) [0 writes_pile S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":160 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("writes_pile") [flags 0x41] <function_decl 06678690 writes_pile>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("writes_pile") [flags 0x41] <function_decl 06700690 writes_pile>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2217,11 +2217,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 126 [ response_len ])) "../User/comms/src/comms.c":165 -1
      (nil))
 (call_insn 570 569 571 85 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":165 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -2231,11 +2231,11 @@ Forwarding edge 53->54 to 134 failed.
         (const_int 2 [0x2])) "../User/comms/src/comms.c":166 -1
      (nil))
 (call_insn 573 572 574 85 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":166 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -2256,11 +2256,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 579 578 580 85 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("writes_registers") [flags 0x41] <function_decl 066785a0 writes_registers>) [0 writes_registers S4 A32])
+                (call (mem:SI (symbol_ref:SI ("writes_registers") [flags 0x41] <function_decl 067005a0 writes_registers>) [0 writes_registers S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":169 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("writes_registers") [flags 0x41] <function_decl 066785a0 writes_registers>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("writes_registers") [flags 0x41] <function_decl 067005a0 writes_registers>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2297,11 +2297,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 381)) "../User/comms/src/comms.c":170 -1
      (nil))
 (call_insn 589 588 590 86 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":170 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -2325,11 +2325,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 597 596 598 87 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("writes_pile") [flags 0x41] <function_decl 06678690 writes_pile>) [0 writes_pile S4 A32])
+                (call (mem:SI (symbol_ref:SI ("writes_pile") [flags 0x41] <function_decl 06700690 writes_pile>) [0 writes_pile S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":174 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("writes_pile") [flags 0x41] <function_decl 06678690 writes_pile>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("writes_pile") [flags 0x41] <function_decl 06700690 writes_pile>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2362,11 +2362,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 388)) "../User/comms/src/comms.c":175 -1
      (nil))
 (call_insn 606 605 607 88 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":175 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -2391,11 +2391,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 389)) "../User/comms/src/comms.c":177 -1
      (nil))
 (call_insn 613 612 616 88 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":177 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -2413,11 +2413,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 622 621 623 90 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":185 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 623 622 624 90 (set (reg:SI 392)
@@ -2437,11 +2437,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 151 [ pin_number ])) "../User/comms/src/comms.c":187 -1
      (nil))
 (call_insn 629 628 630 90 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06678870 gpio_init_adf_pins>) [0 gpio_init_adf_pins S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06700870 gpio_init_adf_pins>) [0 gpio_init_adf_pins S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":187 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06678870 gpio_init_adf_pins>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06700870 gpio_init_adf_pins>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2459,11 +2459,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 636 635 637 91 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":193 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 637 636 638 91 (set (reg:SI 393)
@@ -2478,11 +2478,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 641 640 642 91 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":195 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 642 641 643 91 (set (reg:SI 394)
@@ -2502,11 +2502,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 152 [ pin_number ])) "../User/comms/src/comms.c":197 -1
      (nil))
 (call_insn 648 647 649 91 (parallel [
-            (call (mem:SI (symbol_ref:SI ("pwm_set_duty") [flags 0x41] <function_decl 066a2168 pwm_set_duty>) [0 pwm_set_duty S4 A32])
+            (call (mem:SI (symbol_ref:SI ("pwm_set_duty") [flags 0x41] <function_decl 0672a168 pwm_set_duty>) [0 pwm_set_duty S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":197 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pwm_set_duty") [flags 0x41] <function_decl 066a2168 pwm_set_duty>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pwm_set_duty") [flags 0x41] <function_decl 0672a168 pwm_set_duty>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -2524,11 +2524,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 655 654 656 92 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":202 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 656 655 657 92 (set (reg:SI 395)
@@ -2548,11 +2548,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 154 [ pin_number ])) "../User/comms/src/comms.c":204 -1
      (nil))
 (call_insn 662 661 663 92 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06678870 gpio_init_adf_pins>) [0 gpio_init_adf_pins S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06700870 gpio_init_adf_pins>) [0 gpio_init_adf_pins S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":204 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06678870 gpio_init_adf_pins>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_adf_pins") [flags 0x41] <function_decl 06700870 gpio_init_adf_pins>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2570,11 +2570,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 669 668 670 93 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":210 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 670 669 671 93 (set (reg:SI 396)
@@ -2592,11 +2592,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 675 674 676 93 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("adc_read") [flags 0x41] <function_decl 066a2258 adc_read>) [0 adc_read S4 A32])
+                (call (mem:SI (symbol_ref:SI ("adc_read") [flags 0x41] <function_decl 0672a258 adc_read>) [0 adc_read S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":212 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("adc_read") [flags 0x41] <function_decl 066a2258 adc_read>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("adc_read") [flags 0x41] <function_decl 0672a258 adc_read>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (nil)))
@@ -2614,11 +2614,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 89 [ _19 ])) "../User/comms/src/comms.c":214 -1
      (nil))
 (call_insn 681 680 682 93 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":214 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -2635,11 +2635,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 688 687 689 94 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":219 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 689 688 690 94 (set (reg:SI 398)
@@ -2657,11 +2657,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 694 693 695 94 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("tkey_read") [flags 0x41] <function_decl 066a2348 tkey_read>) [0 tkey_read S4 A32])
+                (call (mem:SI (symbol_ref:SI ("tkey_read") [flags 0x41] <function_decl 0672a348 tkey_read>) [0 tkey_read S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":221 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("tkey_read") [flags 0x41] <function_decl 066a2348 tkey_read>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("tkey_read") [flags 0x41] <function_decl 0672a348 tkey_read>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (nil)))
@@ -2679,11 +2679,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 90 [ _20 ])) "../User/comms/src/comms.c":223 -1
      (nil))
 (call_insn 700 699 701 94 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":223 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -2700,11 +2700,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 707 706 708 95 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":228 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 708 707 709 95 (set (reg:SI 400)
@@ -2719,11 +2719,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 712 711 713 95 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":230 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 713 712 714 95 (set (reg:SI 401)
@@ -2743,11 +2743,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 159 [ sda_pin_number ])) "../User/comms/src/comms.c":232 -1
      (nil))
 (call_insn 719 718 720 95 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06678780 gpio_init_ad_pins>) [0 gpio_init_ad_pins S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06700780 gpio_init_ad_pins>) [0 gpio_init_ad_pins S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":232 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06678780 gpio_init_ad_pins>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06700780 gpio_init_ad_pins>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2761,11 +2761,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 160 [ scl_pin_number ])) "../User/comms/src/comms.c":233 -1
      (nil))
 (call_insn 723 722 724 95 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06678780 gpio_init_ad_pins>) [0 gpio_init_ad_pins S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06700780 gpio_init_ad_pins>) [0 gpio_init_ad_pins S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":233 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06678780 gpio_init_ad_pins>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06700780 gpio_init_ad_pins>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2783,11 +2783,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 730 729 731 96 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":239 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 731 730 732 96 (set (reg:SI 402)
@@ -2802,11 +2802,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 735 734 736 96 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":241 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 736 735 737 96 (set (reg:SI 403)
@@ -2821,11 +2821,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 740 739 741 96 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":243 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 741 740 742 96 (set (reg/v:SI 163 [ delay ])
@@ -2867,11 +2867,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 755 754 756 97 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_scan_address") [flags 0x41] <function_decl 06678ac8 i2c_scan_address>) [0 i2c_scan_address S4 A32])
+                (call (mem:SI (symbol_ref:SI ("i2c_scan_address") [flags 0x41] <function_decl 06700ac8 i2c_scan_address>) [0 i2c_scan_address S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":247 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_scan_address") [flags 0x41] <function_decl 06678ac8 i2c_scan_address>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_scan_address") [flags 0x41] <function_decl 06700ac8 i2c_scan_address>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -2920,11 +2920,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 408)) "../User/comms/src/comms.c":249 -1
      (nil))
 (call_insn 769 768 770 98 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":249 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -2978,11 +2978,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 413)) "../User/comms/src/comms.c":254 -1
      (nil))
 (call_insn 788 787 789 100 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":254 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -3002,11 +3002,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 796 795 797 101 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":263 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 797 796 798 101 (set (reg:SI 414)
@@ -3021,11 +3021,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 801 800 802 101 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":265 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 802 801 803 101 (set (reg:SI 415)
@@ -3040,11 +3040,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 806 805 807 101 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":268 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 807 806 808 101 (set (reg:SI 416)
@@ -3066,11 +3066,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 813 812 814 101 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":271 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 814 813 815 101 (set (reg/v:SI 168 [ write_data_len ])
@@ -3101,11 +3101,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 824 823 825 102 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":275 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 825 824 826 102 (set (reg:SI 418)
@@ -3150,11 +3150,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 840 839 841 104 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":279 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 841 840 842 104 (set (reg:SI 422)
@@ -3169,11 +3169,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 845 844 846 104 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":281 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 846 845 847 104 (set (reg/v:SI 170 [ delay ])
@@ -3212,11 +3212,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 165 [ sda_pin ])) "../User/comms/src/comms.c":283 -1
      (nil))
 (call_insn 858 857 859 104 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_send_bytes") [flags 0x41] <function_decl 06678b40 i2c_send_bytes>) [0 i2c_send_bytes S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_send_bytes") [flags 0x41] <function_decl 06700b40 i2c_send_bytes>) [0 i2c_send_bytes S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":283 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_bytes") [flags 0x41] <function_decl 06678b40 i2c_send_bytes>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_bytes") [flags 0x41] <function_decl 06700b40 i2c_send_bytes>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -3241,11 +3241,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 866 865 867 105 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":292 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 867 866 868 105 (set (reg:SI 425)
@@ -3260,11 +3260,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 871 870 872 105 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":294 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 872 871 873 105 (set (reg:SI 426)
@@ -3279,11 +3279,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 876 875 877 105 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":297 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 877 876 878 105 (set (reg:SI 427)
@@ -3299,11 +3299,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 881 880 882 105 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":300 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 882 881 883 105 (set (reg/v:SI 174 [ bytes_to_read ])
@@ -3315,11 +3315,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 885 884 886 105 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":303 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 886 885 887 105 (set (reg:SI 428)
@@ -3334,11 +3334,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 890 889 891 105 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":305 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 891 890 892 105 (set (reg/v:SI 176 [ delay ])
@@ -3384,11 +3384,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 171 [ sda_pin ])) "../User/comms/src/comms.c":307 -1
      (nil))
 (call_insn 905 904 906 105 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_recv_bytes") [flags 0x41] <function_decl 06678bb8 i2c_recv_bytes>) [0 i2c_recv_bytes S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_recv_bytes") [flags 0x41] <function_decl 06700bb8 i2c_recv_bytes>) [0 i2c_recv_bytes S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":307 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_recv_bytes") [flags 0x41] <function_decl 06678bb8 i2c_recv_bytes>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_recv_bytes") [flags 0x41] <function_decl 06700bb8 i2c_recv_bytes>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -3417,11 +3417,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 435)) "../User/comms/src/comms.c":310 -1
      (nil))
 (call_insn 912 911 913 105 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":310 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -3443,11 +3443,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 921 920 922 106 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":320 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 922 921 923 106 (set (reg:SI 436)
@@ -3462,11 +3462,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 926 925 927 106 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":322 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 927 926 928 106 (set (reg:SI 437)
@@ -3481,11 +3481,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 931 930 932 106 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":325 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 932 931 933 106 (set (reg:SI 438)
@@ -3507,11 +3507,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 938 937 939 106 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":328 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 939 938 940 106 (set (reg/v:SI 180 [ write_data_len ])
@@ -3542,11 +3542,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 949 948 950 107 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":332 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 950 949 951 107 (set (reg:SI 440)
@@ -3596,11 +3596,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 966 965 967 109 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":336 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 967 966 968 109 (set (reg/v:SI 181 [ bytes_to_read ])
@@ -3612,11 +3612,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 970 969 971 109 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":339 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 971 970 972 109 (set (reg:SI 445)
@@ -3631,11 +3631,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 975 974 976 109 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":341 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 976 975 977 109 (set (reg/v:SI 183 [ delay ])
@@ -3692,11 +3692,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 177 [ sda_pin ])) "../User/comms/src/comms.c":343 -1
      (nil))
 (call_insn 993 992 994 109 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_send_recv_bytes") [flags 0x41] <function_decl 06678c30 i2c_send_recv_bytes>) [0 i2c_send_recv_bytes S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_send_recv_bytes") [flags 0x41] <function_decl 06700c30 i2c_send_recv_bytes>) [0 i2c_send_recv_bytes S4 A32])
                 (const_int 8 [0x8]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":343 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_recv_bytes") [flags 0x41] <function_decl 06678c30 i2c_send_recv_bytes>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_send_recv_bytes") [flags 0x41] <function_decl 06700c30 i2c_send_recv_bytes>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -3727,11 +3727,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 453)) "../User/comms/src/comms.c":346 -1
      (nil))
 (call_insn 1000 999 1001 109 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":346 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -3749,11 +3749,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1007 1006 1008 110 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":351 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1008 1007 1009 110 (set (reg:SI 454)
@@ -3768,11 +3768,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1012 1011 1013 110 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":353 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 1013 1012 1014 110 (set (reg:SI 102 [ _35 ])
@@ -3801,11 +3801,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 184 [ pin ])) "../User/comms/src/comms.c":355 -1
      (nil))
 (call_insn 1021 1020 1022 110 (parallel [
-            (call (mem:SI (symbol_ref:SI ("pulseio_in_resume") [flags 0x41] <function_decl 06670ca8 pulseio_in_resume>) [0 pulseio_in_resume S4 A32])
+            (call (mem:SI (symbol_ref:SI ("pulseio_in_resume") [flags 0x41] <function_decl 066ecca8 pulseio_in_resume>) [0 pulseio_in_resume S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":355 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pulseio_in_resume") [flags 0x41] <function_decl 06670ca8 pulseio_in_resume>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pulseio_in_resume") [flags 0x41] <function_decl 066ecca8 pulseio_in_resume>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -3822,11 +3822,11 @@ Forwarding edge 53->54 to 134 failed.
 (debug_insn 1027 1026 1028 111 (debug_marker) "../User/comms/src/comms.c":361 -1
      (nil))
 (call_insn 1028 1027 1029 111 (parallel [
-            (call (mem:SI (symbol_ref:SI ("pulseio_in_clear") [flags 0x41] <function_decl 06670d20 pulseio_in_clear>) [0 pulseio_in_clear S4 A32])
+            (call (mem:SI (symbol_ref:SI ("pulseio_in_clear") [flags 0x41] <function_decl 066ecd20 pulseio_in_clear>) [0 pulseio_in_clear S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":361 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pulseio_in_clear") [flags 0x41] <function_decl 06670d20 pulseio_in_clear>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pulseio_in_clear") [flags 0x41] <function_decl 066ecd20 pulseio_in_clear>)
         (nil))
     (nil))
 (debug_insn 1029 1028 1030 111 (debug_marker) "../User/comms/src/comms.c":363 -1
@@ -3842,11 +3842,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1035 1034 1036 112 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":366 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1036 1035 1037 112 (set (reg:SI 458)
@@ -3863,11 +3863,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 185 [ pin ])) "../User/comms/src/comms.c":368 -1
      (nil))
 (call_insn 1041 1040 1042 112 (parallel [
-            (call (mem:SI (symbol_ref:SI ("pulseio_in_stop") [flags 0x41] <function_decl 06670d98 pulseio_in_stop>) [0 pulseio_in_stop S4 A32])
+            (call (mem:SI (symbol_ref:SI ("pulseio_in_stop") [flags 0x41] <function_decl 066ecd98 pulseio_in_stop>) [0 pulseio_in_stop S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":368 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pulseio_in_stop") [flags 0x41] <function_decl 06670d98 pulseio_in_stop>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pulseio_in_stop") [flags 0x41] <function_decl 066ecd98 pulseio_in_stop>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (nil)))
@@ -3884,11 +3884,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1048 1047 1049 113 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":373 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 1049 1048 1050 113 (set (reg/v:SI 186 [ pulse_count ])
@@ -3902,11 +3902,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 186 [ pulse_count ])) "../User/comms/src/comms.c":375 -1
      (nil))
 (call_insn 1053 1052 1054 113 (parallel [
-            (call (mem:SI (symbol_ref:SI ("pulseio_in_read") [flags 0x41] <function_decl 06670e10 pulseio_in_read>) [0 pulseio_in_read S4 A32])
+            (call (mem:SI (symbol_ref:SI ("pulseio_in_read") [flags 0x41] <function_decl 066ece10 pulseio_in_read>) [0 pulseio_in_read S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":375 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pulseio_in_read") [flags 0x41] <function_decl 06670e10 pulseio_in_read>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pulseio_in_read") [flags 0x41] <function_decl 066ece10 pulseio_in_read>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -3923,11 +3923,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1060 1059 1061 114 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":381 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1061 1060 1062 114 (set (reg:SI 459)
@@ -3942,11 +3942,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1065 1064 1066 114 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":383 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 1066 1065 1067 114 (set (reg/v:SI 188 [ duty ])
@@ -3958,11 +3958,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1069 1068 1070 114 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":385 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 1070 1069 1071 114 (set (reg/v:SI 189 [ pulse_count ])
@@ -3997,11 +3997,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 187 [ pin_number ])) "../User/comms/src/comms.c":389 -1
      (nil))
 (call_insn 1081 1080 1082 114 (parallel [
-            (call (mem:SI (symbol_ref:SI ("pulseio_out_send") [flags 0x41] <function_decl 066a22d0 pulseio_out_send>) [0 pulseio_out_send S4 A32])
+            (call (mem:SI (symbol_ref:SI ("pulseio_out_send") [flags 0x41] <function_decl 0672a2d0 pulseio_out_send>) [0 pulseio_out_send S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":389 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pulseio_out_send") [flags 0x41] <function_decl 066a22d0 pulseio_out_send>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pulseio_out_send") [flags 0x41] <function_decl 0672a2d0 pulseio_out_send>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -4023,11 +4023,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1089 1088 1090 115 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":397 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1090 1089 1091 115 (set (reg:SI 463)
@@ -4042,11 +4042,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1094 1093 1095 115 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":399 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 1095 1094 1096 115 (set (reg/v:SI 191 [ color_count ])
@@ -4077,11 +4077,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1105 1104 1106 116 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":403 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1106 1105 1107 116 (set (reg:SI 464)
@@ -4156,11 +4156,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 472)) "../User/comms/src/comms.c":408 -1
      (nil))
 (call_insn 1131 1130 1132 118 (parallel [
-            (call (mem:SI (symbol_ref:SI ("neopixel_send_buffer") [flags 0x41] <function_decl 06678ca8 neopixel_send_buffer>) [0 neopixel_send_buffer S4 A32])
+            (call (mem:SI (symbol_ref:SI ("neopixel_send_buffer") [flags 0x41] <function_decl 06700ca8 neopixel_send_buffer>) [0 neopixel_send_buffer S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":408 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_buffer") [flags 0x41] <function_decl 06678ca8 neopixel_send_buffer>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_buffer") [flags 0x41] <function_decl 06700ca8 neopixel_send_buffer>)
         (nil))
     (expr_list:HI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -4179,11 +4179,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1138 1137 1139 119 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":414 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1139 1138 1140 119 (set (reg:SI 473)
@@ -4211,11 +4211,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1147 1146 1148 119 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("one_wire_reset") [flags 0x41] <function_decl 06678d20 one_wire_reset>) [0 one_wire_reset S4 A32])
+                (call (mem:SI (symbol_ref:SI ("one_wire_reset") [flags 0x41] <function_decl 06700d20 one_wire_reset>) [0 one_wire_reset S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":416 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("one_wire_reset") [flags 0x41] <function_decl 06678d20 one_wire_reset>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("one_wire_reset") [flags 0x41] <function_decl 06700d20 one_wire_reset>)
         (nil))
     (expr_list:HI (use (reg:SI 10 a0))
         (nil)))
@@ -4233,11 +4233,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 110 [ _44 ])) "../User/comms/src/comms.c":418 -1
      (nil))
 (call_insn 1153 1152 1154 119 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":418 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -4254,11 +4254,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1160 1159 1161 120 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":424 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1161 1160 1162 120 (set (reg:SI 478)
@@ -4285,11 +4285,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 481)) "../User/comms/src/comms.c":426 -1
      (nil))
 (call_insn 1169 1168 1170 120 (parallel [
-            (call (mem:SI (symbol_ref:SI ("one_wire_write0") [flags 0x41] <function_decl 06678d98 one_wire_write0>) [0 one_wire_write0 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("one_wire_write0") [flags 0x41] <function_decl 06700d98 one_wire_write0>) [0 one_wire_write0 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":426 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("one_wire_write0") [flags 0x41] <function_decl 06678d98 one_wire_write0>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("one_wire_write0") [flags 0x41] <function_decl 06700d98 one_wire_write0>)
         (nil))
     (expr_list:HI (use (reg:SI 10 a0))
         (nil)))
@@ -4306,11 +4306,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1176 1175 1177 121 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":432 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1177 1176 1178 121 (set (reg:SI 482)
@@ -4337,11 +4337,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 485)) "../User/comms/src/comms.c":434 -1
      (nil))
 (call_insn 1185 1184 1186 121 (parallel [
-            (call (mem:SI (symbol_ref:SI ("one_wire_write1") [flags 0x41] <function_decl 06678e10 one_wire_write1>) [0 one_wire_write1 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("one_wire_write1") [flags 0x41] <function_decl 06700e10 one_wire_write1>) [0 one_wire_write1 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":434 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("one_wire_write1") [flags 0x41] <function_decl 06678e10 one_wire_write1>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("one_wire_write1") [flags 0x41] <function_decl 06700e10 one_wire_write1>)
         (nil))
     (expr_list:HI (use (reg:SI 10 a0))
         (nil)))
@@ -4358,11 +4358,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1192 1191 1193 122 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":440 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1193 1192 1194 122 (set (reg:SI 486)
@@ -4390,11 +4390,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1201 1200 1202 122 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("one_wire_read") [flags 0x41] <function_decl 06678e88 one_wire_read>) [0 one_wire_read S4 A32])
+                (call (mem:SI (symbol_ref:SI ("one_wire_read") [flags 0x41] <function_decl 06700e88 one_wire_read>) [0 one_wire_read S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":442 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("one_wire_read") [flags 0x41] <function_decl 06678e88 one_wire_read>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("one_wire_read") [flags 0x41] <function_decl 06700e88 one_wire_read>)
         (nil))
     (expr_list:HI (use (reg:SI 10 a0))
         (nil)))
@@ -4412,11 +4412,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 120 [ _54 ])) "../User/comms/src/comms.c":444 -1
      (nil))
 (call_insn 1207 1206 1208 122 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":444 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0637d870 usbSerial_blocking_writeP_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 0640e870 usbSerial_blocking_writeP_u32>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -4433,11 +4433,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1214 1213 1215 123 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":450 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1215 1214 1216 123 (set (reg:SI 491)
@@ -4452,11 +4452,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1219 1218 1220 123 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":452 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1220 1219 1221 123 (set (reg:SI 492)
@@ -4471,11 +4471,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1224 1223 1225 123 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":454 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1225 1224 1226 123 (set (reg:SI 493)
@@ -4498,11 +4498,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 199 [ clock_pin ])) "../User/comms/src/comms.c":456 -1
      (nil))
 (call_insn 1232 1231 1233 123 (parallel [
-            (call (mem:SI (symbol_ref:SI ("spi_init") [flags 0x41] <function_decl 06678f00 spi_init>) [0 spi_init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("spi_init") [flags 0x41] <function_decl 06700f00 spi_init>) [0 spi_init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":456 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_init") [flags 0x41] <function_decl 06678f00 spi_init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_init") [flags 0x41] <function_decl 06700f00 spi_init>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -4521,11 +4521,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1239 1238 1240 124 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":462 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1240 1239 1241 124 (set (reg:SI 494)
@@ -4540,11 +4540,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1244 1243 1245 124 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":464 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1245 1244 1246 124 (set (reg:SI 495)
@@ -4559,11 +4559,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1249 1248 1250 124 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":466 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1250 1249 1251 124 (set (reg:SI 496)
@@ -4578,11 +4578,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1254 1253 1255 124 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":468 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1255 1254 1256 124 (set (reg:SI 497)
@@ -4597,11 +4597,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1259 1258 1260 124 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":470 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1260 1259 1261 124 (set (reg:SI 498)
@@ -4616,11 +4616,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1264 1263 1265 124 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":472 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 1265 1264 1266 124 (set (reg/v:SI 207 [ delay ])
@@ -4632,11 +4632,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1268 1267 1269 124 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":474 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 1269 1268 1270 124 (set (reg/v:SI 208 [ len ])
@@ -4680,11 +4680,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 202 [ clock_pin ])) "../User/comms/src/comms.c":478 -1
      (nil))
 (call_insn 1283 1282 1284 124 (parallel [
-            (call (mem:SI (symbol_ref:SI ("spi_read") [flags 0x41] <function_decl 06678f78 spi_read>) [0 spi_read S4 A32])
+            (call (mem:SI (symbol_ref:SI ("spi_read") [flags 0x41] <function_decl 06700f78 spi_read>) [0 spi_read S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":478 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_read") [flags 0x41] <function_decl 06678f78 spi_read>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_read") [flags 0x41] <function_decl 06700f78 spi_read>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -4714,11 +4714,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 503)) "../User/comms/src/comms.c":480 -1
      (nil))
 (call_insn 1290 1289 1291 124 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":480 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -4736,11 +4736,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1297 1296 1298 125 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":488 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1298 1297 1299 125 (set (reg:SI 504)
@@ -4755,11 +4755,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1302 1301 1303 125 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":490 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1303 1302 1304 125 (set (reg:SI 505)
@@ -4774,11 +4774,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1307 1306 1308 125 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":492 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1308 1307 1309 125 (set (reg:SI 506)
@@ -4793,11 +4793,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1312 1311 1313 125 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":494 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1313 1312 1314 125 (set (reg:SI 507)
@@ -4812,11 +4812,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1317 1316 1318 125 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":496 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 1318 1317 1319 125 (set (reg/v:SI 213 [ delay ])
@@ -4828,11 +4828,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1321 1320 1322 125 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":498 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 1322 1321 1323 125 (set (reg/v:SI 214 [ len ])
@@ -4865,11 +4865,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1333 1332 1334 126 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":503 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1334 1333 1335 126 (set (reg:SI 508)
@@ -4941,11 +4941,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 209 [ clock_pin ])) "../User/comms/src/comms.c":506 -1
      (nil))
 (call_insn 1358 1357 1359 128 (parallel [
-            (call (mem:SI (symbol_ref:SI ("spi_write") [flags 0x41] <function_decl 066a2000 spi_write>) [0 spi_write S4 A32])
+            (call (mem:SI (symbol_ref:SI ("spi_write") [flags 0x41] <function_decl 0672a000 spi_write>) [0 spi_write S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":506 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_write") [flags 0x41] <function_decl 066a2000 spi_write>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_write") [flags 0x41] <function_decl 0672a000 spi_write>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -4968,11 +4968,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1365 1364 1366 129 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":512 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1366 1365 1367 129 (set (reg:SI 514)
@@ -4987,11 +4987,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1370 1369 1371 129 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":514 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1371 1370 1372 129 (set (reg:SI 515)
@@ -5006,11 +5006,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1375 1374 1376 129 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":516 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1376 1375 1377 129 (set (reg:SI 516)
@@ -5025,11 +5025,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1380 1379 1381 129 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":518 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1381 1380 1382 129 (set (reg:SI 517)
@@ -5044,11 +5044,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1385 1384 1386 129 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":520 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 1386 1385 1387 129 (set (reg/v:SI 219 [ delay ])
@@ -5060,11 +5060,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1389 1388 1390 129 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":522 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0637d7f8 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 0640e7f8 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 1390 1389 1391 129 (set (reg/v:SI 220 [ len ])
@@ -5099,11 +5099,11 @@ Forwarding edge 53->54 to 134 failed.
      (nil))
 (call_insn 1402 1401 1403 130 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>) [0 usbSerial_blocking_read_u8 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":529 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0637d690 usbSerial_blocking_read_u8>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u8") [flags 0x41] <function_decl 0640e690 usbSerial_blocking_read_u8>)
         (nil))
     (nil))
 (insn 1403 1402 1404 130 (set (reg:SI 518)
@@ -5190,11 +5190,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg/v:SI 215 [ clock_pin ])) "../User/comms/src/comms.c":533 -1
      (nil))
 (call_insn 1431 1430 1432 132 (parallel [
-            (call (mem:SI (symbol_ref:SI ("spi_write_read") [flags 0x41] <function_decl 066a2078 spi_write_read>) [0 spi_write_read S4 A32])
+            (call (mem:SI (symbol_ref:SI ("spi_write_read") [flags 0x41] <function_decl 0672a078 spi_write_read>) [0 spi_write_read S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":533 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_write_read") [flags 0x41] <function_decl 066a2078 spi_write_read>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_write_read") [flags 0x41] <function_decl 0672a078 spi_write_read>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -5229,11 +5229,11 @@ Forwarding edge 53->54 to 134 failed.
         (reg:SI 528)) "../User/comms/src/comms.c":536 -1
      (nil))
 (call_insn 1439 1438 1440 132 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/comms.c":536 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0637d780 usbSerial_blocking_writeP>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0640e780 usbSerial_blocking_writeP>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
