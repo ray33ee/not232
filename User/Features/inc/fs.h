@@ -19,13 +19,13 @@ typedef struct {
 
 void flashfs_init();
 
-void flashfs_remove(const char* path);
+void flashfs_remove(uint8_t* path);
 
-void flashfs_move(const char* from, const char* to);
+void flashfs_move(uint8_t* from, uint8_t* to);
 
-void flashfs_file(const char* path);
+void flashfs_file_info(uint8_t* path);
 
-uint32_t flashfs_file_open(const char* path, int flags);
+uint32_t flashfs_file_open(uint8_t* path, int flags);
 
 void flashfs_file_close(uint32_t fh);
 
@@ -37,8 +37,12 @@ int flashfs_file_seek(uint32_t fh, uint32_t offset, uint32_t whence) ;
 
 void flashfs_file_truncate(uint32_t fh, uint32_t size);
 
-int flashfs_file_size(uint32_t fh);
+void flashfs_mkdir(uint8_t* path);
 
-void flashfs_mkdir(const char* path);
+int flashfs_dir_open(uint8_t* path);
+
+void flashfs_dir_close(uint32_t dh);
+
+void flashfs_dir_read(uint32_t dh);
 
 #endif

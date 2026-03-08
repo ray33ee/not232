@@ -13,6 +13,9 @@ uint16_t usbSerial_available(void);
 uint8_t  usbSerial_read(void);
 uint8_t  usbSerial_blocking_read_u8(void);
 
+void usbSerial_blocking_read_bytes(uint32_t len, uint8_t* buffer);
+void usbSerial_blocking_read_string(uint8_t* buffer);
+
 uint16_t usbSerial_writeP(const uint8_t *data, uint16_t len);
 void usbSerial_blocking_writeP(const uint8_t *data, uint16_t len);
 

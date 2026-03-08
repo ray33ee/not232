@@ -99,6 +99,21 @@ uint8_t usbSerial_blocking_read_u8(void)
     return usbSerial_read();
 }
 
+void usbSerial_blocking_read_bytes(uint32_t len, uint8_t* buffer) {
+    for (int i = 0; i < len; i++) {
+        while (!usbSerial_available());
+        buffer[i] = usbSerial_read();
+    }
+}
+
+void usbSerial_blocking_read_string(uint8_t* buffer) {
+    uint32_t len = usbSerial_blocking_read_u32();
+
+    usbSerial_blocking_read_bytes(len, buffer);
+
+    buffer[len] = '\0';   
+}
+
 uint16_t usbSerial_writeP(const uint8_t *data, uint16_t len)
 {
     uint16_t written = 0;

@@ -1,5 +1,11 @@
 #include "comms/inc/comms.h"
 
+#include "string.h"
+
+uint8_t mega_buffer[MEGA_BUFFER_SIZE] __attribute__((aligned(4)));
+
+extern struct lfs_info file_info;
+
 void get_packet() {
     uint8_t code = usbSerial_blocking_read_u8();
 
@@ -98,7 +104,7 @@ void get_packet() {
             uint8_t pile_t[PILE_SIZE]; //Transmit pile - a stack of bits that are sent out
             uint8_t pile_r[PILE_SIZE]; //Receive pile - a stack of bits received
 
-            uint8_t program[MAX_PROGRAM_SIZE_BYTES];
+            uint8_t* program = mega_buffer;
 
             uint32_t tp = 0;
 
@@ -108,12 +114,7 @@ void get_packet() {
             uint32_t program_size = usbSerial_blocking_read_u32();
 
             //Get the program
-            for (int i = 0; i < program_size; i++) {
-                
-                uint16_t b = usbSerial_blocking_read_u8();
-
-                program[i] = b;
-            }
+            usbSerial_blocking_read_bytes(program_size, program);
 
             //If the program writes to the registers, clear them
             if (writes_registers(program, program_size)) {
@@ -125,9 +126,7 @@ void get_packet() {
             // If the program contains any instructions that read from the registers, then we need to load the registers from the host
             if (reads_registers(program, program_size)) {
                 //printf("Read regs\r\n");
-                for (int i = 0; i < REGISTER_COUNT; i++) {
-                    registers[i] = usbSerial_blocking_read_u8();
-                }
+                usbSerial_blocking_read_bytes(REGISTER_COUNT, registers);
             }
 
             // If the program contains any instructions that read from the pile_t pile, then we need to load pile_t from the host
@@ -135,9 +134,7 @@ void get_packet() {
 
                 tp = usbSerial_blocking_read_u32();
 
-                for (int i = 0; i < PILE_SIZE; i++) {
-                    pile_t[i] = usbSerial_blocking_read_u8();
-                }
+                usbSerial_blocking_read_bytes(PILE_SIZE, pile_t);
             }
 
             //If the program writes to the r pile, clear it
@@ -256,7 +253,7 @@ void get_packet() {
             break;}
         case RECV_I2C_WRITE:
             {
-            uint8_t write_buffer[I2C_WRITE_BUFFER_MAX];
+            uint8_t* write_buffer = mega_buffer;
 
             // SDA and SCL (2 bytes)
             
@@ -270,10 +267,8 @@ void get_packet() {
             // Number of bytes to write to device (4 bytes)
             uint32_t write_data_len = usbSerial_blocking_read_u32();
 
-            // Get bytes to write (N bytes)
-            for (int i = 0; i < write_data_len; i++) {
-                write_buffer[i] = usbSerial_blocking_read_u8();
-            }
+            // Get bytes to write (N bytes)                
+            usbSerial_blocking_read_bytes(write_data_len, write_buffer);
 
             // Stop condition (1 byte)
             uint8_t stop = usbSerial_blocking_read_u8();
@@ -285,7 +280,7 @@ void get_packet() {
             break;}
         case RECV_I2C_READ:
             {
-            uint8_t read_buffer[I2C_READ_BUFFER_MAX];
+            uint8_t* read_buffer = mega_buffer;
 
             // SDA and SCL (2 bytes)
             
@@ -312,8 +307,9 @@ void get_packet() {
             break;}
         case RECV_I2C_WRITE_READ:
             {
-            uint8_t write_buffer[I2C_WRITE_BUFFER_MAX];
-            uint8_t read_buffer[I2C_READ_BUFFER_MAX];
+            //Use the first half of the megabuffer for write, the second half for read
+            uint8_t* write_buffer = mega_buffer;
+            uint8_t* read_buffer = mega_buffer + (MEGA_BUFFER_SIZE / 2);
 
             // SDA and SCL (2 bytes)
             
@@ -328,9 +324,7 @@ void get_packet() {
             uint32_t write_data_len = usbSerial_blocking_read_u32();
 
             // Get bytes to write (N bytes)
-            for (int i = 0; i < write_data_len; i++) {
-                write_buffer[i] = usbSerial_blocking_read_u8();
-            }
+            usbSerial_blocking_read_bytes(write_data_len, write_buffer);
 
             // Get number of bytes to read (4 bytes)
             uint32_t bytes_to_read = usbSerial_blocking_read_u32();
@@ -384,7 +378,7 @@ void get_packet() {
             
             uint32_t pulse_count = usbSerial_blocking_read_u32();
 
-            uint16_t pulses[PIO_PULSES_SIZE];
+            uint16_t* pulses = (uint16_t*)mega_buffer;
 
             pulseio_out_send(pin_number, duty, pulses, pulse_count);
 
@@ -392,16 +386,13 @@ void get_packet() {
         case RECV_NEOPIXEL_WRITE:
             {
 
-            uint8_t colors[NEOPIXEL_COLOR_MAX];
+            uint8_t* colors = mega_buffer;
             
             uint8_t pin_number = usbSerial_blocking_read_u8();
 
             uint32_t color_count = usbSerial_blocking_read_u32();
 
-            for (int i = 0; i < color_count; i++) {
-
-                colors[i] = usbSerial_blocking_read_u8();
-            }
+            usbSerial_blocking_read_bytes(color_count, colors);
 
             uint16_t pin_mask = 1 << pin_number;
 
@@ -473,7 +464,7 @@ void get_packet() {
 
             uint32_t len = usbSerial_blocking_read_u32();
 
-            uint8_t read_buff[1000];
+            uint8_t* read_buff = mega_buffer;
 
             spi_read(clock_pin, mosi_pin, miso_pin, mode, write_value, delay, read_buff, len);
 
@@ -497,11 +488,9 @@ void get_packet() {
 
             uint32_t len = usbSerial_blocking_read_u32();
 
-            uint8_t write_buff[1000];
+            uint8_t* write_buff = mega_buffer;
 
-            for (int i = 0; i < len; i++) {
-                write_buff[i] = usbSerial_blocking_read_u8();
-            }
+            usbSerial_blocking_read_bytes(len, write_buff);
             
             spi_write(clock_pin, mosi_pin, miso_pin, mode, delay, write_buff, len);
             
@@ -521,13 +510,10 @@ void get_packet() {
 
             uint32_t len = usbSerial_blocking_read_u32();
 
-            uint8_t read_buff[1000];
-            uint8_t write_buff[1000];
+            uint8_t* read_buff = mega_buffer;
+            uint8_t* write_buff = mega_buffer + (MEGA_BUFFER_SIZE / 2);
 
-            for (int i = 0; i < len; i++) {
-                
-                write_buff[i] = usbSerial_blocking_read_u8();
-            }
+            usbSerial_blocking_read_bytes(len, write_buff);
 
             
             spi_write_read(clock_pin, mosi_pin, miso_pin, mode, delay, write_buff, read_buff, len);
@@ -539,6 +525,153 @@ void get_packet() {
 
             
             break;}
+        case RECV_FLASHFS_REMOVE: 
+            {
+            uint8_t* path_buffer = mega_buffer;
+
+            usbSerial_blocking_read_string(path_buffer);
+
+            flashfs_remove(path_buffer);
+
+            break;}
+        case RECV_FLASHFS_MOVE: 
+            {
+            uint8_t* from_buffer = mega_buffer;
+            uint8_t* to_buffer = mega_buffer + (MEGA_BUFFER_SIZE / 2);
+
+            usbSerial_blocking_read_string(from_buffer);
+            usbSerial_blocking_read_string(to_buffer);
+
+            flashfs_move(from_buffer, to_buffer);
+            
+            break;}
+        case RECV_FLASHFS_FILE_INFO: 
+            {
+            //Unimplemented
+            break;}
+        case RECV_FLASHFS_FILE_OPEN: 
+            {
+            uint8_t* path_buffer = mega_buffer;
+
+            usbSerial_blocking_read_string(path_buffer);
+
+            uint32_t flags = usbSerial_blocking_read_u32();
+
+            uint32_t fh = flashfs_file_open(path_buffer, flags);
+
+            usbSerial_blocking_writeP_u32(fh);
+
+            break;}
+        case RECV_FLASHFS_FILE_CLOSE: 
+            {
+            
+            uint32_t fh = usbSerial_blocking_read_u32();
+
+            flashfs_file_close(fh);
+
+            break;}
+        case RECV_FLASHFS_FILE_READ: 
+            {
+
+            uint8_t* read_buffer = mega_buffer;
+            
+            uint32_t fh = usbSerial_blocking_read_u32();
+
+            uint32_t len = usbSerial_blocking_read_u32();
+
+            flashfs_file_read(fh, read_buffer, len);
+
+            usbSerial_blocking_writeP(read_buffer, len);
+
+            break;}
+        case RECV_FLASHFS_FILE_WRITE: 
+            {
+            uint8_t* write_buffer = mega_buffer;
+            
+            uint32_t fh = usbSerial_blocking_read_u32();
+
+            uint32_t len = usbSerial_blocking_read_u32();
+
+            usbSerial_blocking_read_bytes(len, write_buffer);
+
+            flashfs_file_write(fh, write_buffer, len);
+
+
+            
+            
+            break;}
+        case RECV_FLASHFS_FILE_SEEK: 
+            {
+            
+            
+            uint32_t fh = usbSerial_blocking_read_u32();
+
+            uint32_t offset = usbSerial_blocking_read_u32();
+
+            uint32_t whence = usbSerial_blocking_read_u32();
+
+            flashfs_file_seek(fh, offset, whence);
+            
+            break;}
+        case RECV_FLASHFS_FILE_TRUNCATE: 
+            {
+
+            uint32_t fh = usbSerial_blocking_read_u32();
+
+            uint32_t size = usbSerial_blocking_read_u32();
+
+            flashfs_file_truncate(fh, size);
+
+            break;}
+        case RECV_FLASHFS_MKDIR: 
+            {
+            uint8_t* path_buffer = mega_buffer;
+
+            usbSerial_blocking_read_string(path_buffer);
+
+            flashfs_mkdir(path_buffer);
+            
+            break;}
+        case RECV_FLASHFS_DIR_OPEN: 
+            {
+            uint8_t* path_buffer = mega_buffer;
+
+            usbSerial_blocking_read_string(path_buffer);
+
+            uint32_t dh = flashfs_dir_open(path_buffer);
+
+            usbSerial_blocking_writeP_u32(dh);
+            
+            break;}
+        case RECV_FLASHFS_DIR_CLOSE: 
+            {
+            
+            uint32_t dh = usbSerial_blocking_read_u32();
+
+            flashfs_dir_close(dh);
+            
+            break;}
+        case RECV_FLASHFS_DIR_READ: 
+            {
+            
+            uint32_t dh = usbSerial_blocking_read_u32();
+
+            flashfs_dir_read(dh);
+
+            usbSerial_blocking_writeP_u32(file_info.type); //REG (1), DIR (2)
+
+            usbSerial_blocking_writeP_u32(file_info.size);
+
+            char* str = file_info.name;
+
+            uint32_t str_len = strlen(str);
+
+            usbSerial_blocking_writeP_u32(str_len);
+
+            usbSerial_blocking_writeP((uint8_t*)str, str_len);
+            
+            break;}
             
     }
 }
+

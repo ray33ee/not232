@@ -46,7 +46,10 @@ User/USB_Serial/src/usb_serial.o: ../User/USB_Serial/src/usb_serial.c \
  e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_in.h \
  e:/Software\ Projects/moun_projects/not232/User/Features/inc/adc.h \
  e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_out.h \
- e:/Software\ Projects/moun_projects/not232/User/Features/inc/touchkey.h
+ e:/Software\ Projects/moun_projects/not232/User/Features/inc/touchkey.h \
+ e:/Software\ Projects/moun_projects/not232/User/Features/inc/fs.h \
+ e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs.h \
+ e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs_util.h
 
 e:/Software\ Projects/moun_projects/not232/User/USB_Serial/inc/usb_serial.h:
 
@@ -143,3 +146,9 @@ e:/Software\ Projects/moun_projects/not232/User/Features/inc/adc.h:
 e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_out.h:
 
 e:/Software\ Projects/moun_projects/not232/User/Features/inc/touchkey.h:
+
+e:/Software\ Projects/moun_projects/not232/User/Features/inc/fs.h:
+
+e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs.h:
+
+e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs_util.h:

@@ -8,6 +8,7 @@ lfs_t lfs;
 FLASHFS_FH file_handles[MAX_FILE_HANDLES];
 FLASHFS_DH dir_handles[MAX_DIR_HANDLES];
 
+struct lfs_info file_info;
 
 /* ------------------------------------------------------------------------- */
 /* littlefs region in CH32 internal flash                                    */
@@ -211,26 +212,24 @@ void flashfs_init() {
     }
 }
 
-void flashfs_remove(const char* path) {
-    lfs_remove(&lfs, path);
+void flashfs_remove(uint8_t* path) {
+    lfs_remove(&lfs, (char*)path);
 }
 
-void flashfs_move(const char* from, const char* to) {
-    lfs_rename(&lfs, from, to);
+void flashfs_move(uint8_t* from, uint8_t* to) {
+    lfs_rename(&lfs, (char*)from, (char*)to);
 }
 
-void flashfs_file(const char* path) {
-    struct lfs_info thing;
-
-    lfs_stat(&lfs, path, &thing);
+void flashfs_file_info(uint8_t* path) {
+    lfs_stat(&lfs, (char*)path, &file_info);
 }
 
-uint32_t flashfs_file_open(const char* path, int flags) {
+uint32_t flashfs_file_open(uint8_t* path, int flags) {
     uint32_t fh = allocate_fh();
     if (fh == -1) {
         return - 1;
     }
-    lfs_file_open(&lfs, &(file_handles[fh].file), path, flags);
+    lfs_file_open(&lfs, &(file_handles[fh].file), (char*)path, flags);
     return fh;
 }
 
@@ -255,10 +254,24 @@ void flashfs_file_truncate(uint32_t fh, uint32_t size) {
     lfs_file_truncate(&lfs, &(file_handles[fh].file), size);
 }
 
-int flashfs_file_size(uint32_t fh) {
-    lfs_file_size(&lfs, &(file_handles[fh].file));
+void flashfs_mkdir(uint8_t* path) {
+    lfs_mkdir(&lfs, (char*)path);
 }
 
-void flashfs_mkdir(const char* path) {
-    lfs_mkdir(&lfs, path);
+int flashfs_dir_open(uint8_t* path) {
+    uint32_t dh = allocate_dh();
+    if (dh == -1) {
+        return - 1;
+    }
+    lfs_dir_open(&lfs, &(dir_handles[dh].file), (char*)path);
+    return dh;
+}
+
+void flashfs_dir_close(uint32_t dh) {
+    lfs_dir_close(&lfs, &(dir_handles[dh].file));
+    free_dh(dh);
+}
+
+void flashfs_dir_read(uint32_t dh) {
+    lfs_dir_read(&lfs, &(dir_handles[dh].file), &file_info);
 }

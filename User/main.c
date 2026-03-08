@@ -32,10 +32,12 @@
 #include "FAT/inc/lfs.h"
 #include "Features/inc/fs.h"
 
-
 extern lfs_t lfs;
 extern lfs_file_t file;
 extern const struct lfs_config cfg;
+
+
+
 /*
 
 PLEASE SEE THIS LINK
@@ -56,22 +58,22 @@ It contains an implementation of USB-CDC, read and write, which works with Moun 
 /* littlefs block device callbacks                                            */
 /* ------------------------------------------------------------------------- */
 
-void test_lfs(void)
+/*void test_lfs(void)
 {
     uint32_t fh = flashfs_file_open("boot_count", LFS_O_RDWR | LFS_O_CREAT);
 
     uint32_t boot_count = 0;
-    flashfs_file_read(fh, &boot_count, sizeof(boot_count));
+    flashfs_file_read(fh, (uint8_t*)&boot_count, sizeof(boot_count));
 
     boot_count += 1;
     flashfs_file_seek(fh, 0, LFS_SEEK_SET);
-    flashfs_file_write(fh, &boot_count, sizeof(boot_count));
+    flashfs_file_write(fh, (uint8_t*)&boot_count, sizeof(boot_count));
 
     flashfs_file_close(fh);
 
     // print the boot count
     printf("boot_count: %d\n", boot_count);
-}
+}*/
 
 /*********************************************************************
  * @fn      main
@@ -87,6 +89,8 @@ int main(void)
     SystemCoreClockUpdate();
     Delay_Init();
     USART_Printf_Init(115200);
+
+    printf("Initialising...\r\n");
 
     /* Setup all the peripheral clocks */
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
@@ -114,19 +118,16 @@ int main(void)
     /* Setup ADC */
     adc_init();
     
-    // Setup pin 16, B0 as UART TX and use for printf
+    /* Setup pin 16, B0 as UART TX and use for printf */
     gpio_init_f_pins(16, GPIO_Mode_AF_PP);
 
-    printf("Startinga\r\n");
-
+    /* Mount the FLASH littfs storage */
     flashfs_init();
-
-    test_lfs();
 
     /* Setup pulseio timer */
     pulseio_in_init();
 
-    printf("Starting\r\n");
+    printf("Starting main loop.\r\n");
     
     while(1)
     {

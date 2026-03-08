@@ -1,5 +1,5 @@
 
-;; Function pulseio_out_send (pulseio_out_send, funcdef_no=29, decl_uid=4695, cgraph_uid=29, symbol_order=29)
+;; Function pulseio_out_send (pulseio_out_send, funcdef_no=29, decl_uid=4700, cgraph_uid=29, symbol_order=29)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -83,11 +83,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 20 19 21 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 066a0d98 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 066b0e88 usbSerial_blocking_read_u32>) [0 usbSerial_blocking_read_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_out.c":5 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 066a0d98 usbSerial_blocking_read_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_u32") [flags 0x41] <function_decl 066b0e88 usbSerial_blocking_read_u32>)
         (nil))
     (nil))
 (insn 21 20 22 4 (set (reg:SI 72 [ _1 ])
@@ -150,11 +150,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 86 [ pin_number ])) "../User/Features/src/pulse_out.c":11 -1
      (nil))
 (call_insn 42 41 43 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("pwm_set_duty") [flags 0x41] <function_decl 066b85a0 pwm_set_duty>) [0 pwm_set_duty S4 A32])
+            (call (mem:SI (symbol_ref:SI ("pwm_set_duty") [flags 0x41] <function_decl 066c8690 pwm_set_duty>) [0 pwm_set_duty S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_out.c":11 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pwm_set_duty") [flags 0x41] <function_decl 066b85a0 pwm_set_duty>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pwm_set_duty") [flags 0x41] <function_decl 066c8690 pwm_set_duty>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -175,11 +175,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 86 [ pin_number ])) "../User/Features/src/pulse_out.c":14 -1
      (nil))
 (call_insn 50 49 51 9 (parallel [
-            (call (mem:SI (symbol_ref:SI ("pwm_set_duty") [flags 0x41] <function_decl 066b85a0 pwm_set_duty>) [0 pwm_set_duty S4 A32])
+            (call (mem:SI (symbol_ref:SI ("pwm_set_duty") [flags 0x41] <function_decl 066c8690 pwm_set_duty>) [0 pwm_set_duty S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_out.c":14 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pwm_set_duty") [flags 0x41] <function_decl 066b85a0 pwm_set_duty>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pwm_set_duty") [flags 0x41] <function_decl 066c8690 pwm_set_duty>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -203,11 +203,11 @@ try_optimize_cfg iteration 2
         (reg:SI 94)) "../User/Features/src/pulse_out.c":16 -1
      (nil))
 (call_insn 58 57 59 10 (parallel [
-            (call (mem:SI (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 066a0618 Delay_Us>) [0 Delay_Us S4 A32])
+            (call (mem:SI (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 066b0618 Delay_Us>) [0 Delay_Us S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_out.c":16 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 066a0618 Delay_Us>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 066b0618 Delay_Us>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -238,11 +238,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 86 [ pin_number ])) "../User/Features/src/pulse_out.c":19 -1
      (nil))
 (call_insn 70 69 0 12 (parallel [
-            (call (mem:SI (symbol_ref:SI ("pwm_set_duty") [flags 0x41] <function_decl 066b85a0 pwm_set_duty>) [0 pwm_set_duty S4 A32])
+            (call (mem:SI (symbol_ref:SI ("pwm_set_duty") [flags 0x41] <function_decl 066c8690 pwm_set_duty>) [0 pwm_set_duty S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_out.c":19 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pwm_set_duty") [flags 0x41] <function_decl 066b85a0 pwm_set_duty>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pwm_set_duty") [flags 0x41] <function_decl 066c8690 pwm_set_duty>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))

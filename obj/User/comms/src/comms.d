@@ -43,7 +43,10 @@ User/comms/src/comms.o: ../User/comms/src/comms.c \
  e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_in.h \
  e:/Software\ Projects/moun_projects/not232/User/Features/inc/adc.h \
  e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_out.h \
- e:/Software\ Projects/moun_projects/not232/User/Features/inc/touchkey.h
+ e:/Software\ Projects/moun_projects/not232/User/Features/inc/touchkey.h \
+ e:/Software\ Projects/moun_projects/not232/User/Features/inc/fs.h \
+ e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs.h \
+ e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs_util.h
 
 e:/Software\ Projects/moun_projects/not232/User/comms/inc/comms.h:
 
@@ -134,3 +137,9 @@ e:/Software\ Projects/moun_projects/not232/User/Features/inc/adc.h:
 e:/Software\ Projects/moun_projects/not232/User/Features/inc/pulse_out.h:
 
 e:/Software\ Projects/moun_projects/not232/User/Features/inc/touchkey.h:
+
+e:/Software\ Projects/moun_projects/not232/User/Features/inc/fs.h:
+
+e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs.h:
+
+e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs_util.h:
