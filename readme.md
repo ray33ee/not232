@@ -8,7 +8,7 @@
 		  
 # Todo
 
-- Read the [Circuit Python](https://docs.circuitpython.org/en/latest/docs/index.html) API (NOT BLINKA) to get detailed explanations of the functions, and make sure our code conforms
+- Implement return codes from the littlefs functions
 - Add a bridge to allow user to select how the host talks - either over USB or via the TX and RX pins
 	- Create C code which call two functions, send byte and receive byte and builds the entire N232 communication protocol.
 	  This way users can use it in ANY C code that can talk over either USB or UART.
