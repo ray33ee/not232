@@ -22,9 +22,8 @@
 
 #include "VMIOX/inc/execute.h"
 #include "VMIOX/inc/opcodes.h"
-#include "USB_Serial/inc/usb_serial.h"
-#include "USB_Serial/inc/ch32v20x_usbfs_device.h"
 #include "comms/inc/comms.h"
+#include "comms/inc/protocol.h"
 #include "Features/inc/pwm.h"
 #include "Features/inc/adc.h"
 #include "Features/inc/pulse_in.h"
@@ -35,7 +34,6 @@
 extern lfs_t lfs;
 extern lfs_file_t file;
 extern const struct lfs_config cfg;
-
 
 
 /*
@@ -92,7 +90,7 @@ int main(void)
 
     printf("Initialising...\r\n");
 
-    /* Setup all the peripheral clocks */
+    // Setup all the peripheral clocks
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_TIM1, ENABLE);
@@ -103,28 +101,26 @@ int main(void)
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
 
-    /* Initialise the USB */
-    USBFS_RCC_Init();
-    usbSerial_begin();
 
-    while(!usbSerial_connected()) { }
+    // Initialise the USB 
+    comms_init(COMMS_MOVE_I2C, 0x04);
 
-    /* Set all GPIOA pins (and the 4 GPIOB) to floating inputs*/
+    // Set all GPIOA pins (and the 4 GPIOB) to floating inputs
     gpio_init_default();
     
-    /* Setup PWM timers */
+    // Setup PWM timers 
     pwm_init();
 
-    /* Setup ADC */
+    // Setup ADC 
     adc_init();
     
-    /* Setup pin 16, B0 as UART TX and use for printf */
+    // Setup pin 16, B0 as UART TX and use for printf 
     gpio_init_f_pins(16, GPIO_Mode_AF_PP);
 
-    /* Mount the FLASH littfs storage */
+    // Mount the FLASH littfs storage 
     flashfs_init();
 
-    /* Setup pulseio timer */
+    // Setup pulseio timer 
     pulseio_in_init();
 
     printf("Starting main loop.\r\n");

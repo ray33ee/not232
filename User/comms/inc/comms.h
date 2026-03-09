@@ -2,12 +2,13 @@
 #define __RECV_H
 
 #include "stdint.h"
-#include "USB_Serial/inc/usb_serial.h"
 #include "debug.h"
 #include "VMIOX/inc/execute.h"
 #include "VMIOX/inc/opcodes.h"
 #include "ch32v20x.h"
 #include "constants.h"
+
+#include "comms/inc/protocol.h"
 
 #include "Features/inc/i2c.h"
 #include "Features/inc/neopixel.h"

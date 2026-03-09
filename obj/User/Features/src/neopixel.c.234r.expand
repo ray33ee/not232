@@ -363,11 +363,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 88 [ pin_mask ])) "../User/Features/src/neopixel.c":27 -1
      (nil))
 (call_insn 12 11 13 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0662c780 neopixel_send_bit>) [0 neopixel_send_bit S4 A32])
+            (call (mem:SI (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0673c780 neopixel_send_bit>) [0 neopixel_send_bit S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/neopixel.c":27 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0662c780 neopixel_send_bit>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0673c780 neopixel_send_bit>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -389,11 +389,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 88 [ pin_mask ])) "../User/Features/src/neopixel.c":28 -1
      (nil))
 (call_insn 18 17 19 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0662c780 neopixel_send_bit>) [0 neopixel_send_bit S4 A32])
+            (call (mem:SI (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0673c780 neopixel_send_bit>) [0 neopixel_send_bit S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/neopixel.c":28 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0662c780 neopixel_send_bit>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0673c780 neopixel_send_bit>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -415,11 +415,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 88 [ pin_mask ])) "../User/Features/src/neopixel.c":29 -1
      (nil))
 (call_insn 24 23 25 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0662c780 neopixel_send_bit>) [0 neopixel_send_bit S4 A32])
+            (call (mem:SI (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0673c780 neopixel_send_bit>) [0 neopixel_send_bit S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/neopixel.c":29 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0662c780 neopixel_send_bit>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0673c780 neopixel_send_bit>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -441,11 +441,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 88 [ pin_mask ])) "../User/Features/src/neopixel.c":30 -1
      (nil))
 (call_insn 30 29 31 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0662c780 neopixel_send_bit>) [0 neopixel_send_bit S4 A32])
+            (call (mem:SI (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0673c780 neopixel_send_bit>) [0 neopixel_send_bit S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/neopixel.c":30 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0662c780 neopixel_send_bit>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0673c780 neopixel_send_bit>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -467,11 +467,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 88 [ pin_mask ])) "../User/Features/src/neopixel.c":31 -1
      (nil))
 (call_insn 36 35 37 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0662c780 neopixel_send_bit>) [0 neopixel_send_bit S4 A32])
+            (call (mem:SI (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0673c780 neopixel_send_bit>) [0 neopixel_send_bit S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/neopixel.c":31 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0662c780 neopixel_send_bit>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0673c780 neopixel_send_bit>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -493,11 +493,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 88 [ pin_mask ])) "../User/Features/src/neopixel.c":32 -1
      (nil))
 (call_insn 42 41 43 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0662c780 neopixel_send_bit>) [0 neopixel_send_bit S4 A32])
+            (call (mem:SI (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0673c780 neopixel_send_bit>) [0 neopixel_send_bit S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/neopixel.c":32 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0662c780 neopixel_send_bit>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0673c780 neopixel_send_bit>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -519,11 +519,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 88 [ pin_mask ])) "../User/Features/src/neopixel.c":33 -1
      (nil))
 (call_insn 48 47 49 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0662c780 neopixel_send_bit>) [0 neopixel_send_bit S4 A32])
+            (call (mem:SI (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0673c780 neopixel_send_bit>) [0 neopixel_send_bit S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/neopixel.c":33 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0662c780 neopixel_send_bit>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0673c780 neopixel_send_bit>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -545,11 +545,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 88 [ pin_mask ])) "../User/Features/src/neopixel.c":34 -1
      (nil))
 (call_insn 54 53 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0662c780 neopixel_send_bit>) [0 neopixel_send_bit S4 A32])
+            (call (mem:SI (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0673c780 neopixel_send_bit>) [0 neopixel_send_bit S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/neopixel.c":34 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0662c780 neopixel_send_bit>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_bit") [flags 0x3] <function_decl 0673c780 neopixel_send_bit>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -662,11 +662,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 79 [ pin_mask ])) "../User/Features/src/neopixel.c":39 -1
      (nil))
 (call_insn 34 33 35 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("neopixel_send_byte") [flags 0x3] <function_decl 0662c7f8 neopixel_send_byte>) [0 neopixel_send_byte S4 A32])
+            (call (mem:SI (symbol_ref:SI ("neopixel_send_byte") [flags 0x3] <function_decl 0673c7f8 neopixel_send_byte>) [0 neopixel_send_byte S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/neopixel.c":39 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_byte") [flags 0x3] <function_decl 0662c7f8 neopixel_send_byte>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_byte") [flags 0x3] <function_decl 0673c7f8 neopixel_send_byte>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -681,11 +681,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 79 [ pin_mask ])) "../User/Features/src/neopixel.c":40 -1
      (nil))
 (call_insn 38 37 39 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("neopixel_send_byte") [flags 0x3] <function_decl 0662c7f8 neopixel_send_byte>) [0 neopixel_send_byte S4 A32])
+            (call (mem:SI (symbol_ref:SI ("neopixel_send_byte") [flags 0x3] <function_decl 0673c7f8 neopixel_send_byte>) [0 neopixel_send_byte S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/neopixel.c":40 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_byte") [flags 0x3] <function_decl 0662c7f8 neopixel_send_byte>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_byte") [flags 0x3] <function_decl 0673c7f8 neopixel_send_byte>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -700,11 +700,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 79 [ pin_mask ])) "../User/Features/src/neopixel.c":41 -1
      (nil))
 (call_insn 42 41 43 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("neopixel_send_byte") [flags 0x3] <function_decl 0662c7f8 neopixel_send_byte>) [0 neopixel_send_byte S4 A32])
+            (call (mem:SI (symbol_ref:SI ("neopixel_send_byte") [flags 0x3] <function_decl 0673c7f8 neopixel_send_byte>) [0 neopixel_send_byte S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/neopixel.c":41 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_byte") [flags 0x3] <function_decl 0662c7f8 neopixel_send_byte>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("neopixel_send_byte") [flags 0x3] <function_decl 0673c7f8 neopixel_send_byte>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -724,11 +724,11 @@ try_optimize_cfg iteration 2
         (const_int 200 [0xc8])) "../User/Features/src/neopixel.c":52 -1
      (nil))
 (call_insn 49 48 50 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 06611618 Delay_Us>) [0 Delay_Us S4 A32])
+            (call (mem:SI (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 06721618 Delay_Us>) [0 Delay_Us S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/neopixel.c":52 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 06611618 Delay_Us>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 06721618 Delay_Us>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))

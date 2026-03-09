@@ -5,13 +5,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../User/comms/src/comms.c 
+../User/comms/src/comms.c \
+../User/comms/src/i2c_device.c \
+../User/comms/src/protocol.c 
 
 C_DEPS += \
-./User/comms/src/comms.d 
+./User/comms/src/comms.d \
+./User/comms/src/i2c_device.d \
+./User/comms/src/protocol.d 
 
 OBJS += \
-./User/comms/src/comms.o 
+./User/comms/src/comms.o \
+./User/comms/src/i2c_device.o \
+./User/comms/src/protocol.o 
 
 DIR_OBJS += \
 ./User/comms/src/*.o \

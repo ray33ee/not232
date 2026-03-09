@@ -34,6 +34,11 @@ User/main.o: ../User/main.c \
  e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/execute.h \
  e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/opcodes.h \
  e:/Software\ Projects/moun_projects/not232/User/constants.h \
+ e:/Software\ Projects/moun_projects/not232/User/comms/inc/protocol.h \
+ e:/Software\ Projects/moun_projects/not232/User/USB_Serial/inc/ch32v20x_usbfs_device.h \
+ e:/Software\ Projects/moun_projects/not232/User/USB_Serial/inc/usb_desc.h \
+ e:/Software\ Projects/moun_projects/not232/User/USB_Serial/inc/ch32v20x_usb.h \
+ e:/Software\ Projects/moun_projects/not232/User/comms/inc/i2c_device.h \
  e:/Software\ Projects/moun_projects/not232/User/Features/inc/i2c.h \
  e:/Software\ Projects/moun_projects/not232/User/Features/inc/neopixel.h \
  e:/Software\ Projects/moun_projects/not232/User/Features/inc/one_wire.h \
@@ -47,10 +52,8 @@ User/main.o: ../User/main.c \
  e:/Software\ Projects/moun_projects/not232/User/Features/inc/fs.h \
  e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs.h \
  e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs_util.h \
- ../User/VMIOX/inc/opcodes.h \
- ../User/USB_Serial/inc/ch32v20x_usbfs_device.h \
- ../User/USB_Serial/inc/usb_desc.h ../User/USB_Serial/inc/ch32v20x_usb.h \
- ../User/comms/inc/comms.h ../User/Features/inc/pwm.h \
+ ../User/VMIOX/inc/opcodes.h ../User/comms/inc/comms.h \
+ ../User/comms/inc/protocol.h ../User/Features/inc/pwm.h \
  ../User/Features/inc/adc.h ../User/Features/inc/pulse_in.h \
  ../User/FAT/inc/lfs.h ../User/Features/inc/fs.h
 
@@ -126,6 +129,16 @@ e:/Software\ Projects/moun_projects/not232/User/VMIOX/inc/opcodes.h:
 
 e:/Software\ Projects/moun_projects/not232/User/constants.h:
 
+e:/Software\ Projects/moun_projects/not232/User/comms/inc/protocol.h:
+
+e:/Software\ Projects/moun_projects/not232/User/USB_Serial/inc/ch32v20x_usbfs_device.h:
+
+e:/Software\ Projects/moun_projects/not232/User/USB_Serial/inc/usb_desc.h:
+
+e:/Software\ Projects/moun_projects/not232/User/USB_Serial/inc/ch32v20x_usb.h:
+
+e:/Software\ Projects/moun_projects/not232/User/comms/inc/i2c_device.h:
+
 e:/Software\ Projects/moun_projects/not232/User/Features/inc/i2c.h:
 
 e:/Software\ Projects/moun_projects/not232/User/Features/inc/neopixel.h:
@@ -154,13 +167,9 @@ e:/Software\ Projects/moun_projects/not232/User/FAT/inc/lfs_util.h:
 
 ../User/VMIOX/inc/opcodes.h:
 
-../User/USB_Serial/inc/ch32v20x_usbfs_device.h:
-
-../User/USB_Serial/inc/usb_desc.h:
-
-../User/USB_Serial/inc/ch32v20x_usb.h:
-
 ../User/comms/inc/comms.h:
+
+../User/comms/inc/protocol.h:
 
 ../User/Features/inc/pwm.h:
 

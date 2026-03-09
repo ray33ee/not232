@@ -93,7 +93,7 @@ int flash_prog(
         CH32 standard programming is halfword-based.
         Keep prog_size = 2 and cache_size/read_size aligned accordingly.
     */
-    if (((off & 1U) != 0U) || ((size & 1U) != 0U)) {
+    if ((off & 1U) != 0U || (size & 1U) != 0U) {
         return LFS_ERR_INVAL;
     }
 
@@ -148,6 +148,7 @@ int flash_erase(
     return 0;
 }
 
+//Out flash does not cache, so sync is a nop
 int flash_sync(const struct lfs_config *c)
 {
     (void)c;
@@ -212,16 +213,16 @@ void flashfs_init() {
     }
 }
 
-void flashfs_remove(uint8_t* path) {
-    lfs_remove(&lfs, (char*)path);
+uint32_t flashfs_remove(uint8_t* path) {
+    return lfs_remove(&lfs, (char*)path);
 }
 
-void flashfs_move(uint8_t* from, uint8_t* to) {
-    lfs_rename(&lfs, (char*)from, (char*)to);
+uint32_t flashfs_move(uint8_t* from, uint8_t* to) {
+    return lfs_rename(&lfs, (char*)from, (char*)to);
 }
 
-void flashfs_file_info(uint8_t* path) {
-    lfs_stat(&lfs, (char*)path, &file_info);
+uint32_t flashfs_file_info(uint8_t* path) {
+    return lfs_stat(&lfs, (char*)path, &file_info);
 }
 
 uint32_t flashfs_file_open(uint8_t* path, int flags) {
@@ -229,49 +230,59 @@ uint32_t flashfs_file_open(uint8_t* path, int flags) {
     if (fh == -1) {
         return - 1;
     }
-    lfs_file_open(&lfs, &(file_handles[fh].file), (char*)path, flags);
-    return fh;
+    int code = lfs_file_open(&lfs, &(file_handles[fh].file), (char*)path, flags);
+    if (code < 0) {
+        return code;
+    } else {
+        return fh;
+    }
 }
 
-void flashfs_file_close(uint32_t fh) {
-    lfs_file_close(&lfs, &(file_handles[fh].file));
+uint32_t flashfs_file_close(uint32_t fh) {
+    uint32_t code = lfs_file_close(&lfs, &(file_handles[fh].file));
     free_fh(fh);
+    return code;
 }
 
-void flashfs_file_read(uint32_t fh, uint8_t* buffer, uint32_t size) {
-    lfs_file_read(&lfs, &(file_handles[fh].file), buffer, size);
+uint32_t flashfs_file_read(uint32_t fh, uint8_t* buffer, uint32_t size) {
+    return lfs_file_read(&lfs, &(file_handles[fh].file), buffer, size);
 }
 
-void flashfs_file_write(uint32_t fh, uint8_t* buffer, uint32_t size) {
-    lfs_file_write(&lfs, &(file_handles[fh].file), buffer, size);
+uint32_t flashfs_file_write(uint32_t fh, uint8_t* buffer, uint32_t size) {
+    return lfs_file_write(&lfs, &(file_handles[fh].file), buffer, size);
 }
 
-int flashfs_file_seek(uint32_t fh, uint32_t offset, uint32_t whence) {
+uint32_t flashfs_file_seek(uint32_t fh, uint32_t offset, uint32_t whence) {
     return lfs_file_seek(&lfs, &(file_handles[fh].file), offset, whence);
 }
 
-void flashfs_file_truncate(uint32_t fh, uint32_t size) {
-    lfs_file_truncate(&lfs, &(file_handles[fh].file), size);
+uint32_t flashfs_file_truncate(uint32_t fh, uint32_t size) {
+    return lfs_file_truncate(&lfs, &(file_handles[fh].file), size);
 }
 
-void flashfs_mkdir(uint8_t* path) {
-    lfs_mkdir(&lfs, (char*)path);
+uint32_t flashfs_mkdir(uint8_t* path) {
+    return lfs_mkdir(&lfs, (char*)path);
 }
 
-int flashfs_dir_open(uint8_t* path) {
+uint32_t flashfs_dir_open(uint8_t* path) {
     uint32_t dh = allocate_dh();
     if (dh == -1) {
         return - 1;
     }
-    lfs_dir_open(&lfs, &(dir_handles[dh].file), (char*)path);
-    return dh;
+    int code = lfs_dir_open(&lfs, &(dir_handles[dh].file), (char*)path);
+    if (code < 0) {
+        return code;
+    } else {
+        return dh;
+    }
 }
 
-void flashfs_dir_close(uint32_t dh) {
-    lfs_dir_close(&lfs, &(dir_handles[dh].file));
+uint32_t flashfs_dir_close(uint32_t dh) {
+    int code = lfs_dir_close(&lfs, &(dir_handles[dh].file));
     free_dh(dh);
+    return code;
 }
 
-void flashfs_dir_read(uint32_t dh) {
-    lfs_dir_read(&lfs, &(dir_handles[dh].file), &file_info);
+uint32_t flashfs_dir_read(uint32_t dh) {
+    return lfs_dir_read(&lfs, &(dir_handles[dh].file), &file_info);
 }

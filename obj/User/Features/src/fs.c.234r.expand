@@ -26,20 +26,20 @@ try_optimize_cfg iteration 2
 (note 1 0 4 NOTE_INSN_DELETED)
 (note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
 (insn 2 4 3 2 (set (reg/v/f:SI 73 [ c ])
-        (reg:SI 10 a0 [ c ])) "../User/Features/src/fs.c":152 -1
+        (reg:SI 10 a0 [ c ])) "../User/Features/src/fs.c":153 -1
      (nil))
 (note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":153 -1
+(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":154 -1
      (nil))
-(debug_insn 7 6 8 2 (debug_marker) "../User/Features/src/fs.c":154 -1
+(debug_insn 7 6 8 2 (debug_marker) "../User/Features/src/fs.c":155 -1
      (nil))
 (insn 8 7 12 2 (set (reg:SI 72 [ <retval> ])
-        (const_int 0 [0])) "../User/Features/src/fs.c":154 -1
+        (const_int 0 [0])) "../User/Features/src/fs.c":155 -1
      (nil))
 (insn 12 8 13 2 (set (reg/i:SI 10 a0)
-        (reg:SI 72 [ <retval> ])) "../User/Features/src/fs.c":155 -1
+        (reg:SI 72 [ <retval> ])) "../User/Features/src/fs.c":156 -1
      (nil))
-(insn 13 12 0 2 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":155 -1
+(insn 13 12 0 2 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":156 -1
      (nil))
 
 ;; Function flash_erase (flash_erase, funcdef_no=48, decl_uid=5831, cgraph_uid=48, symbol_order=52)
@@ -123,11 +123,11 @@ try_optimize_cfg iteration 2
 (debug_insn 24 23 25 4 (debug_marker) "../User/Features/src/fs.c":137 -1
      (nil))
 (call_insn 25 24 26 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("FLASH_Unlock") [flags 0x41] <function_decl 06600ca8 FLASH_Unlock>) [0 FLASH_Unlock S4 A32])
+            (call (mem:SI (symbol_ref:SI ("FLASH_Unlock") [flags 0x41] <function_decl 06690ca8 FLASH_Unlock>) [0 FLASH_Unlock S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":137 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Unlock") [flags 0x41] <function_decl 06600ca8 FLASH_Unlock>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Unlock") [flags 0x41] <function_decl 06690ca8 FLASH_Unlock>)
         (nil))
     (nil))
 (debug_insn 26 25 27 4 (debug_marker) "../User/Features/src/fs.c":138 -1
@@ -136,11 +136,11 @@ try_optimize_cfg iteration 2
         (const_int 49 [0x31])) "../User/Features/src/fs.c":138 -1
      (nil))
 (call_insn 28 27 29 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("FLASH_ClearFlag") [flags 0x41] <function_decl 06611438 FLASH_ClearFlag>) [0 FLASH_ClearFlag S4 A32])
+            (call (mem:SI (symbol_ref:SI ("FLASH_ClearFlag") [flags 0x41] <function_decl 066a1438 FLASH_ClearFlag>) [0 FLASH_ClearFlag S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":138 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_ClearFlag") [flags 0x41] <function_decl 06611438 FLASH_ClearFlag>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_ClearFlag") [flags 0x41] <function_decl 066a1438 FLASH_ClearFlag>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -167,11 +167,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 35 34 36 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_ErasePage") [flags 0x41] <function_decl 06600d98 FLASH_ErasePage>) [0 FLASH_ErasePage S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_ErasePage") [flags 0x41] <function_decl 06690d98 FLASH_ErasePage>) [0 FLASH_ErasePage S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":140 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_ErasePage") [flags 0x41] <function_decl 06600d98 FLASH_ErasePage>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_ErasePage") [flags 0x41] <function_decl 06690d98 FLASH_ErasePage>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -183,11 +183,11 @@ try_optimize_cfg iteration 2
 (debug_insn 38 37 39 4 (debug_marker) "../User/Features/src/fs.c":142 -1
      (nil))
 (call_insn 39 38 40 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06600d20 FLASH_Lock>) [0 FLASH_Lock S4 A32])
+            (call (mem:SI (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06690d20 FLASH_Lock>) [0 FLASH_Lock S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":142 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06600d20 FLASH_Lock>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06690d20 FLASH_Lock>)
         (nil))
     (nil))
 (debug_insn 40 39 41 4 (debug_marker) "../User/Features/src/fs.c":144 -1
@@ -407,11 +407,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 57 56 58 5 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063bcd98 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
+                (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 0644cd98 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":70 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 063bcd98 __builtin_memcpy>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 0644cd98 __builtin_memcpy>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (set (reg:SI 10 a0)
@@ -662,11 +662,11 @@ try_optimize_cfg iteration 2
 (debug_insn 63 62 64 6 (debug_marker) "../User/Features/src/fs.c":103 -1
      (nil))
 (call_insn 64 63 65 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("FLASH_Unlock") [flags 0x41] <function_decl 06600ca8 FLASH_Unlock>) [0 FLASH_Unlock S4 A32])
+            (call (mem:SI (symbol_ref:SI ("FLASH_Unlock") [flags 0x41] <function_decl 06690ca8 FLASH_Unlock>) [0 FLASH_Unlock S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":103 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Unlock") [flags 0x41] <function_decl 06600ca8 FLASH_Unlock>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Unlock") [flags 0x41] <function_decl 06690ca8 FLASH_Unlock>)
         (nil))
     (nil))
 (debug_insn 65 64 66 6 (debug_marker) "../User/Features/src/fs.c":104 -1
@@ -675,11 +675,11 @@ try_optimize_cfg iteration 2
         (const_int 49 [0x31])) "../User/Features/src/fs.c":104 -1
      (nil))
 (call_insn 67 66 68 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("FLASH_ClearFlag") [flags 0x41] <function_decl 06611438 FLASH_ClearFlag>) [0 FLASH_ClearFlag S4 A32])
+            (call (mem:SI (symbol_ref:SI ("FLASH_ClearFlag") [flags 0x41] <function_decl 066a1438 FLASH_ClearFlag>) [0 FLASH_ClearFlag S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":104 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_ClearFlag") [flags 0x41] <function_decl 06611438 FLASH_ClearFlag>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_ClearFlag") [flags 0x41] <function_decl 066a1438 FLASH_ClearFlag>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -747,11 +747,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 87 86 88 7 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_ProgramHalfWord") [flags 0x41] <function_decl 06600f78 FLASH_ProgramHalfWord>) [0 FLASH_ProgramHalfWord S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_ProgramHalfWord") [flags 0x41] <function_decl 06690f78 FLASH_ProgramHalfWord>) [0 FLASH_ProgramHalfWord S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":111 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_ProgramHalfWord") [flags 0x41] <function_decl 06600f78 FLASH_ProgramHalfWord>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_ProgramHalfWord") [flags 0x41] <function_decl 06690f78 FLASH_ProgramHalfWord>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -781,11 +781,11 @@ try_optimize_cfg iteration 2
 (debug_insn 95 94 96 8 (debug_marker) "../User/Features/src/fs.c":113 -1
      (nil))
 (call_insn 96 95 97 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06600d20 FLASH_Lock>) [0 FLASH_Lock S4 A32])
+            (call (mem:SI (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06690d20 FLASH_Lock>) [0 FLASH_Lock S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":113 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06600d20 FLASH_Lock>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06690d20 FLASH_Lock>)
         (nil))
     (nil))
 (debug_insn 97 96 9 8 (debug_marker) "../User/Features/src/fs.c":114 -1
@@ -821,11 +821,11 @@ try_optimize_cfg iteration 2
 (debug_insn 110 109 111 11 (debug_marker) "../User/Features/src/fs.c":118 -1
      (nil))
 (call_insn 111 110 112 11 (parallel [
-            (call (mem:SI (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06600d20 FLASH_Lock>) [0 FLASH_Lock S4 A32])
+            (call (mem:SI (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06690d20 FLASH_Lock>) [0 FLASH_Lock S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":118 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06600d20 FLASH_Lock>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06690d20 FLASH_Lock>)
         (nil))
     (nil))
 (debug_insn 112 111 11 11 (debug_marker) "../User/Features/src/fs.c":119 -1
@@ -907,11 +907,11 @@ try_optimize_cfg iteration 2
 (note 1 0 5 NOTE_INSN_DELETED)
 (note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
 (note 2 5 7 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 7 2 8 2 (debug_marker) "../User/Features/src/fs.c":177 -1
+(debug_insn 7 2 8 2 (debug_marker) "../User/Features/src/fs.c":178 -1
      (nil))
-(debug_insn 8 7 9 2 (debug_marker) "../User/Features/src/fs.c":177 -1
+(debug_insn 8 7 9 2 (debug_marker) "../User/Features/src/fs.c":178 -1
      (nil))
-(debug_insn 9 8 10 2 (var_location:SI i (const_int 0 [0])) "../User/Features/src/fs.c":177 -1
+(debug_insn 9 8 10 2 (var_location:SI i (const_int 0 [0])) "../User/Features/src/fs.c":178 -1
      (nil))
 (debug_insn 10 9 11 2 (var_location:SI i (const_int 0 [0])) -1
      (nil))
@@ -927,61 +927,61 @@ try_optimize_cfg iteration 2
         (reg/f:SI 77)) -1
      (nil))
 (insn 3 13 38 2 (set (reg/v:SI 73 [ i ])
-        (const_int 0 [0])) "../User/Features/src/fs.c":177 -1
+        (const_int 0 [0])) "../User/Features/src/fs.c":178 -1
      (nil))
 (code_label 38 3 14 4 33 (nil) [1 uses])
 (note 14 38 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
 (debug_insn 15 14 16 4 (var_location:SI i (reg/v:SI 73 [ i ])) -1
      (nil))
-(debug_insn 16 15 17 4 (debug_marker) "../User/Features/src/fs.c":178 -1
+(debug_insn 16 15 17 4 (debug_marker) "../User/Features/src/fs.c":179 -1
      (nil))
 (insn 17 16 18 4 (set (reg:SI 79)
         (mem:SI (plus:SI (reg:SI 74 [ ivtmp.22 ])
-                (const_int 84 [0x54])) [6 MEM[base: _15, offset: 84B]+0 S4 A32])) "../User/Features/src/fs.c":178 -1
+                (const_int 84 [0x54])) [6 MEM[base: _15, offset: 84B]+0 S4 A32])) "../User/Features/src/fs.c":179 -1
      (nil))
 (jump_insn 18 17 19 4 (set (pc)
         (if_then_else (ne (reg:SI 79)
                 (const_int 0 [0]))
             (label_ref 32)
-            (pc))) "../User/Features/src/fs.c":178 -1
+            (pc))) "../User/Features/src/fs.c":179 -1
      (int_list:REG_BR_PROB 1014686028 (nil))
  -> 32)
 (note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 20 19 21 5 (debug_marker) "../User/Features/src/fs.c":179 -1
+(debug_insn 20 19 21 5 (debug_marker) "../User/Features/src/fs.c":180 -1
      (nil))
 (insn 21 20 22 5 (set (reg:SI 81)
-        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":179 -1
+        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":180 -1
      (nil))
 (insn 22 21 23 5 (set (reg/f:SI 80)
         (lo_sum:SI (reg:SI 81)
-            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":179 -1
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":180 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
         (nil)))
 (insn 23 22 24 5 (set (reg:SI 83)
-        (const_int 88 [0x58])) "../User/Features/src/fs.c":179 -1
+        (const_int 88 [0x58])) "../User/Features/src/fs.c":180 -1
      (nil))
 (insn 24 23 25 5 (set (reg:SI 84)
         (mult:SI (reg/v:SI 73 [ i ])
-            (reg:SI 83))) "../User/Features/src/fs.c":179 -1
+            (reg:SI 83))) "../User/Features/src/fs.c":180 -1
      (nil))
 (insn 25 24 26 5 (set (reg/f:SI 82)
         (plus:SI (reg/f:SI 80)
-            (reg:SI 84))) "../User/Features/src/fs.c":179 -1
+            (reg:SI 84))) "../User/Features/src/fs.c":180 -1
      (nil))
 (insn 26 25 27 5 (set (reg:SI 85)
-        (const_int 1 [0x1])) "../User/Features/src/fs.c":179 -1
+        (const_int 1 [0x1])) "../User/Features/src/fs.c":180 -1
      (nil))
 (insn 27 26 28 5 (set (mem:SI (plus:SI (reg/f:SI 82)
                 (const_int 84 [0x54])) [6 file_handles[i_12].taken+0 S4 A32])
-        (reg:SI 85)) "../User/Features/src/fs.c":179 -1
+        (reg:SI 85)) "../User/Features/src/fs.c":180 -1
      (nil))
-(debug_insn 28 27 29 5 (debug_marker) "../User/Features/src/fs.c":180 -1
+(debug_insn 28 27 29 5 (debug_marker) "../User/Features/src/fs.c":181 -1
      (nil))
 (insn 29 28 30 5 (set (reg:SI 76 [ <retval> ])
-        (reg/v:SI 73 [ i ])) "../User/Features/src/fs.c":180 -1
+        (reg/v:SI 73 [ i ])) "../User/Features/src/fs.c":181 -1
      (nil))
 (jump_insn 30 29 31 5 (set (pc)
-        (label_ref:SI 45)) "../User/Features/src/fs.c":180 250 {jump}
+        (label_ref:SI 45)) "../User/Features/src/fs.c":181 250 {jump}
      (nil)
  -> 45)
 (barrier 31 30 32)
@@ -989,9 +989,9 @@ try_optimize_cfg iteration 2
 (note 33 32 34 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
 (insn 34 33 35 6 (set (reg/v:SI 73 [ i ])
         (plus:SI (reg/v:SI 73 [ i ])
-            (const_int 1 [0x1]))) "../User/Features/src/fs.c":177 -1
+            (const_int 1 [0x1]))) "../User/Features/src/fs.c":178 -1
      (nil))
-(debug_insn 35 34 36 6 (var_location:SI i (reg/v:SI 73 [ i ])) "../User/Features/src/fs.c":177 -1
+(debug_insn 35 34 36 6 (var_location:SI i (reg/v:SI 73 [ i ])) "../User/Features/src/fs.c":178 -1
      (nil))
 (debug_insn 36 35 37 6 (var_location:SI i (reg/v:SI 73 [ i ])) -1
      (nil))
@@ -1000,25 +1000,25 @@ try_optimize_cfg iteration 2
             (const_int 88 [0x58]))) -1
      (nil))
 (insn 39 37 40 6 (set (reg:SI 86)
-        (const_int 10 [0xa])) "../User/Features/src/fs.c":177 -1
+        (const_int 10 [0xa])) "../User/Features/src/fs.c":178 -1
      (nil))
 (jump_insn 40 39 49 6 (set (pc)
         (if_then_else (ne (reg/v:SI 73 [ i ])
                 (reg:SI 86))
             (label_ref 38)
-            (pc))) "../User/Features/src/fs.c":177 -1
+            (pc))) "../User/Features/src/fs.c":178 -1
      (int_list:REG_BR_PROB 960130860 (nil))
  -> 38)
 (note 49 40 4 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 (insn 4 49 45 7 (set (reg:SI 76 [ <retval> ])
-        (const_int -1 [0xffffffffffffffff])) "../User/Features/src/fs.c":183 -1
+        (const_int -1 [0xffffffffffffffff])) "../User/Features/src/fs.c":184 -1
      (nil))
 (code_label 45 4 48 9 30 (nil) [1 uses])
 (note 48 45 46 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
 (insn 46 48 47 9 (set (reg/i:SI 10 a0)
-        (reg:SI 76 [ <retval> ])) "../User/Features/src/fs.c":184 -1
+        (reg:SI 76 [ <retval> ])) "../User/Features/src/fs.c":185 -1
      (nil))
-(insn 47 46 0 9 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":184 -1
+(insn 47 46 0 9 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":185 -1
      (nil))
 
 ;; Function free_fh (free_fh, funcdef_no=51, decl_uid=5846, cgraph_uid=51, symbol_order=56)
@@ -1047,33 +1047,33 @@ try_optimize_cfg iteration 2
 (note 1 0 4 NOTE_INSN_DELETED)
 (note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
 (insn 2 4 3 2 (set (reg/v:SI 72 [ fh ])
-        (reg:SI 10 a0 [ fh ])) "../User/Features/src/fs.c":186 -1
+        (reg:SI 10 a0 [ fh ])) "../User/Features/src/fs.c":187 -1
      (nil))
 (note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":187 -1
+(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":188 -1
      (nil))
 (insn 7 6 8 2 (set (reg:SI 74)
-        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":187 -1
+        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":188 -1
      (nil))
 (insn 8 7 9 2 (set (reg/f:SI 73)
         (lo_sum:SI (reg:SI 74)
-            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":187 -1
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":188 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
         (nil)))
 (insn 9 8 10 2 (set (reg:SI 76)
-        (const_int 88 [0x58])) "../User/Features/src/fs.c":187 -1
+        (const_int 88 [0x58])) "../User/Features/src/fs.c":188 -1
      (nil))
 (insn 10 9 11 2 (set (reg:SI 77)
         (mult:SI (reg/v:SI 72 [ fh ])
-            (reg:SI 76))) "../User/Features/src/fs.c":187 -1
+            (reg:SI 76))) "../User/Features/src/fs.c":188 -1
      (nil))
 (insn 11 10 12 2 (set (reg/f:SI 75)
         (plus:SI (reg/f:SI 73)
-            (reg:SI 77))) "../User/Features/src/fs.c":187 -1
+            (reg:SI 77))) "../User/Features/src/fs.c":188 -1
      (nil))
 (insn 12 11 0 2 (set (mem:SI (plus:SI (reg/f:SI 75)
                 (const_int 84 [0x54])) [6 file_handles[fh_2(D)].taken+0 S4 A32])
-        (const_int 0 [0])) "../User/Features/src/fs.c":187 -1
+        (const_int 0 [0])) "../User/Features/src/fs.c":188 -1
      (nil))
 
 ;; Function allocate_dh (allocate_dh, funcdef_no=52, decl_uid=5848, cgraph_uid=52, symbol_order=57)
@@ -1112,11 +1112,11 @@ try_optimize_cfg iteration 2
 (note 1 0 5 NOTE_INSN_DELETED)
 (note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
 (note 2 5 7 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 7 2 8 2 (debug_marker) "../User/Features/src/fs.c":191 -1
+(debug_insn 7 2 8 2 (debug_marker) "../User/Features/src/fs.c":192 -1
      (nil))
-(debug_insn 8 7 9 2 (debug_marker) "../User/Features/src/fs.c":191 -1
+(debug_insn 8 7 9 2 (debug_marker) "../User/Features/src/fs.c":192 -1
      (nil))
-(debug_insn 9 8 10 2 (var_location:SI i (const_int 0 [0])) "../User/Features/src/fs.c":191 -1
+(debug_insn 9 8 10 2 (var_location:SI i (const_int 0 [0])) "../User/Features/src/fs.c":192 -1
      (nil))
 (debug_insn 10 9 11 2 (var_location:SI i (const_int 0 [0])) -1
      (nil))
@@ -1132,61 +1132,61 @@ try_optimize_cfg iteration 2
         (reg/f:SI 77)) -1
      (nil))
 (insn 3 13 38 2 (set (reg/v:SI 73 [ i ])
-        (const_int 0 [0])) "../User/Features/src/fs.c":191 -1
+        (const_int 0 [0])) "../User/Features/src/fs.c":192 -1
      (nil))
 (code_label 38 3 14 4 39 (nil) [1 uses])
 (note 14 38 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
 (debug_insn 15 14 16 4 (var_location:SI i (reg/v:SI 73 [ i ])) -1
      (nil))
-(debug_insn 16 15 17 4 (debug_marker) "../User/Features/src/fs.c":192 -1
+(debug_insn 16 15 17 4 (debug_marker) "../User/Features/src/fs.c":193 -1
      (nil))
 (insn 17 16 18 4 (set (reg:SI 79)
         (mem:SI (plus:SI (reg:SI 74 [ ivtmp.30 ])
-                (const_int 52 [0x34])) [6 MEM[base: _15, offset: 52B]+0 S4 A32])) "../User/Features/src/fs.c":192 -1
+                (const_int 52 [0x34])) [6 MEM[base: _15, offset: 52B]+0 S4 A32])) "../User/Features/src/fs.c":193 -1
      (nil))
 (jump_insn 18 17 19 4 (set (pc)
         (if_then_else (ne (reg:SI 79)
                 (const_int 0 [0]))
             (label_ref 32)
-            (pc))) "../User/Features/src/fs.c":192 -1
+            (pc))) "../User/Features/src/fs.c":193 -1
      (int_list:REG_BR_PROB 1014686028 (nil))
  -> 32)
 (note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 20 19 21 5 (debug_marker) "../User/Features/src/fs.c":193 -1
+(debug_insn 20 19 21 5 (debug_marker) "../User/Features/src/fs.c":194 -1
      (nil))
 (insn 21 20 22 5 (set (reg:SI 81)
-        (high:SI (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":193 -1
+        (high:SI (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":194 -1
      (nil))
 (insn 22 21 23 5 (set (reg/f:SI 80)
         (lo_sum:SI (reg:SI 81)
-            (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":193 -1
+            (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":194 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])
         (nil)))
 (insn 23 22 24 5 (set (reg:SI 83)
-        (const_int 56 [0x38])) "../User/Features/src/fs.c":193 -1
+        (const_int 56 [0x38])) "../User/Features/src/fs.c":194 -1
      (nil))
 (insn 24 23 25 5 (set (reg:SI 84)
         (mult:SI (reg/v:SI 73 [ i ])
-            (reg:SI 83))) "../User/Features/src/fs.c":193 -1
+            (reg:SI 83))) "../User/Features/src/fs.c":194 -1
      (nil))
 (insn 25 24 26 5 (set (reg/f:SI 82)
         (plus:SI (reg/f:SI 80)
-            (reg:SI 84))) "../User/Features/src/fs.c":193 -1
+            (reg:SI 84))) "../User/Features/src/fs.c":194 -1
      (nil))
 (insn 26 25 27 5 (set (reg:SI 85)
-        (const_int 1 [0x1])) "../User/Features/src/fs.c":193 -1
+        (const_int 1 [0x1])) "../User/Features/src/fs.c":194 -1
      (nil))
 (insn 27 26 28 5 (set (mem:SI (plus:SI (reg/f:SI 82)
                 (const_int 52 [0x34])) [6 dir_handles[i_12].taken+0 S4 A32])
-        (reg:SI 85)) "../User/Features/src/fs.c":193 -1
+        (reg:SI 85)) "../User/Features/src/fs.c":194 -1
      (nil))
-(debug_insn 28 27 29 5 (debug_marker) "../User/Features/src/fs.c":194 -1
+(debug_insn 28 27 29 5 (debug_marker) "../User/Features/src/fs.c":195 -1
      (nil))
 (insn 29 28 30 5 (set (reg:SI 76 [ <retval> ])
-        (reg/v:SI 73 [ i ])) "../User/Features/src/fs.c":194 -1
+        (reg/v:SI 73 [ i ])) "../User/Features/src/fs.c":195 -1
      (nil))
 (jump_insn 30 29 31 5 (set (pc)
-        (label_ref:SI 45)) "../User/Features/src/fs.c":194 250 {jump}
+        (label_ref:SI 45)) "../User/Features/src/fs.c":195 250 {jump}
      (nil)
  -> 45)
 (barrier 31 30 32)
@@ -1194,9 +1194,9 @@ try_optimize_cfg iteration 2
 (note 33 32 34 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
 (insn 34 33 35 6 (set (reg/v:SI 73 [ i ])
         (plus:SI (reg/v:SI 73 [ i ])
-            (const_int 1 [0x1]))) "../User/Features/src/fs.c":191 -1
+            (const_int 1 [0x1]))) "../User/Features/src/fs.c":192 -1
      (nil))
-(debug_insn 35 34 36 6 (var_location:SI i (reg/v:SI 73 [ i ])) "../User/Features/src/fs.c":191 -1
+(debug_insn 35 34 36 6 (var_location:SI i (reg/v:SI 73 [ i ])) "../User/Features/src/fs.c":192 -1
      (nil))
 (debug_insn 36 35 37 6 (var_location:SI i (reg/v:SI 73 [ i ])) -1
      (nil))
@@ -1205,25 +1205,25 @@ try_optimize_cfg iteration 2
             (const_int 56 [0x38]))) -1
      (nil))
 (insn 39 37 40 6 (set (reg:SI 86)
-        (const_int 10 [0xa])) "../User/Features/src/fs.c":191 -1
+        (const_int 10 [0xa])) "../User/Features/src/fs.c":192 -1
      (nil))
 (jump_insn 40 39 49 6 (set (pc)
         (if_then_else (ne (reg/v:SI 73 [ i ])
                 (reg:SI 86))
             (label_ref 38)
-            (pc))) "../User/Features/src/fs.c":191 -1
+            (pc))) "../User/Features/src/fs.c":192 -1
      (int_list:REG_BR_PROB 960130860 (nil))
  -> 38)
 (note 49 40 4 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
 (insn 4 49 45 7 (set (reg:SI 76 [ <retval> ])
-        (const_int -1 [0xffffffffffffffff])) "../User/Features/src/fs.c":197 -1
+        (const_int -1 [0xffffffffffffffff])) "../User/Features/src/fs.c":198 -1
      (nil))
 (code_label 45 4 48 9 36 (nil) [1 uses])
 (note 48 45 46 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
 (insn 46 48 47 9 (set (reg/i:SI 10 a0)
-        (reg:SI 76 [ <retval> ])) "../User/Features/src/fs.c":198 -1
+        (reg:SI 76 [ <retval> ])) "../User/Features/src/fs.c":199 -1
      (nil))
-(insn 47 46 0 9 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":198 -1
+(insn 47 46 0 9 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":199 -1
      (nil))
 
 ;; Function free_dh (free_dh, funcdef_no=53, decl_uid=5855, cgraph_uid=53, symbol_order=58)
@@ -1252,33 +1252,33 @@ try_optimize_cfg iteration 2
 (note 1 0 4 NOTE_INSN_DELETED)
 (note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
 (insn 2 4 3 2 (set (reg/v:SI 72 [ fh ])
-        (reg:SI 10 a0 [ fh ])) "../User/Features/src/fs.c":200 -1
+        (reg:SI 10 a0 [ fh ])) "../User/Features/src/fs.c":201 -1
      (nil))
 (note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":201 -1
+(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":202 -1
      (nil))
 (insn 7 6 8 2 (set (reg:SI 74)
-        (high:SI (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":201 -1
+        (high:SI (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":202 -1
      (nil))
 (insn 8 7 9 2 (set (reg/f:SI 73)
         (lo_sum:SI (reg:SI 74)
-            (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":201 -1
+            (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":202 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])
         (nil)))
 (insn 9 8 10 2 (set (reg:SI 76)
-        (const_int 56 [0x38])) "../User/Features/src/fs.c":201 -1
+        (const_int 56 [0x38])) "../User/Features/src/fs.c":202 -1
      (nil))
 (insn 10 9 11 2 (set (reg:SI 77)
         (mult:SI (reg/v:SI 72 [ fh ])
-            (reg:SI 76))) "../User/Features/src/fs.c":201 -1
+            (reg:SI 76))) "../User/Features/src/fs.c":202 -1
      (nil))
 (insn 11 10 12 2 (set (reg/f:SI 75)
         (plus:SI (reg/f:SI 73)
-            (reg:SI 77))) "../User/Features/src/fs.c":201 -1
+            (reg:SI 77))) "../User/Features/src/fs.c":202 -1
      (nil))
 (insn 12 11 0 2 (set (mem:SI (plus:SI (reg/f:SI 75)
                 (const_int 52 [0x34])) [6 dir_handles[fh_2(D)].taken+0 S4 A32])
-        (const_int 0 [0])) "../User/Features/src/fs.c":201 -1
+        (const_int 0 [0])) "../User/Features/src/fs.c":202 -1
      (nil))
 
 ;; Function flashfs_init (flashfs_init, funcdef_no=54, decl_uid=5757, cgraph_uid=54, symbol_order=59)
@@ -1312,122 +1312,122 @@ try_optimize_cfg iteration 2
 (note 1 0 3 NOTE_INSN_DELETED)
 (note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
 (note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 5 2 6 2 (debug_marker) "../User/Features/src/fs.c":205 -1
+(debug_insn 5 2 6 2 (debug_marker) "../User/Features/src/fs.c":206 -1
      (nil))
 (insn 6 5 7 2 (set (reg:SI 74)
-        (high:SI (symbol_ref:SI ("*.LANCHOR2") [flags 0x182]))) "../User/Features/src/fs.c":205 -1
+        (high:SI (symbol_ref:SI ("*.LANCHOR2") [flags 0x182]))) "../User/Features/src/fs.c":206 -1
      (nil))
 (insn 7 6 8 2 (set (reg/f:SI 73)
         (lo_sum:SI (reg:SI 74)
-            (symbol_ref:SI ("*.LANCHOR2") [flags 0x182]))) "../User/Features/src/fs.c":205 -1
+            (symbol_ref:SI ("*.LANCHOR2") [flags 0x182]))) "../User/Features/src/fs.c":206 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR2") [flags 0x182])
         (nil)))
 (insn 8 7 9 2 (set (reg:SI 76)
-        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":205 -1
+        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":206 -1
      (nil))
 (insn 9 8 10 2 (set (reg/f:SI 75)
         (lo_sum:SI (reg:SI 76)
-            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":205 -1
+            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":206 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
         (nil)))
 (insn 10 9 11 2 (set (reg:SI 11 a1)
-        (reg/f:SI 73)) "../User/Features/src/fs.c":205 -1
+        (reg/f:SI 73)) "../User/Features/src/fs.c":206 -1
      (nil))
 (insn 11 10 12 2 (set (reg:SI 10 a0)
-        (reg/f:SI 75)) "../User/Features/src/fs.c":205 -1
+        (reg/f:SI 75)) "../User/Features/src/fs.c":206 -1
      (nil))
 (call_insn 12 11 13 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_mount") [flags 0x41] <function_decl 06463708 lfs_mount>) [0 lfs_mount S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_mount") [flags 0x41] <function_decl 064f3708 lfs_mount>) [0 lfs_mount S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":205 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_mount") [flags 0x41] <function_decl 06463708 lfs_mount>)
+        ]) "../User/Features/src/fs.c":206 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_mount") [flags 0x41] <function_decl 064f3708 lfs_mount>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (nil))))
 (insn 13 12 14 2 (set (reg/v:SI 72 [ err ])
-        (reg:SI 10 a0)) "../User/Features/src/fs.c":205 -1
+        (reg:SI 10 a0)) "../User/Features/src/fs.c":206 -1
      (nil))
-(debug_insn 14 13 15 2 (var_location:SI err (reg/v:SI 72 [ err ])) "../User/Features/src/fs.c":205 -1
+(debug_insn 14 13 15 2 (var_location:SI err (reg/v:SI 72 [ err ])) "../User/Features/src/fs.c":206 -1
      (nil))
-(debug_insn 15 14 16 2 (debug_marker) "../User/Features/src/fs.c":209 -1
+(debug_insn 15 14 16 2 (debug_marker) "../User/Features/src/fs.c":210 -1
      (nil))
 (jump_insn 16 15 17 2 (set (pc)
         (if_then_else (eq (reg/v:SI 72 [ err ])
                 (const_int 0 [0]))
             (label_ref:SI 36)
-            (pc))) "../User/Features/src/fs.c":209 180 {*branchsi}
+            (pc))) "../User/Features/src/fs.c":210 180 {*branchsi}
      (int_list:REG_BR_PROB 719407028 (nil))
  -> 36)
 (note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 18 17 19 4 (debug_marker) "../User/Features/src/fs.c":210 -1
+(debug_insn 18 17 19 4 (debug_marker) "../User/Features/src/fs.c":211 -1
      (nil))
 (insn 19 18 20 4 (set (reg:SI 78)
-        (high:SI (symbol_ref:SI ("*.LANCHOR2") [flags 0x182]))) "../User/Features/src/fs.c":210 -1
+        (high:SI (symbol_ref:SI ("*.LANCHOR2") [flags 0x182]))) "../User/Features/src/fs.c":211 -1
      (nil))
 (insn 20 19 21 4 (set (reg/f:SI 77)
         (lo_sum:SI (reg:SI 78)
-            (symbol_ref:SI ("*.LANCHOR2") [flags 0x182]))) "../User/Features/src/fs.c":210 -1
+            (symbol_ref:SI ("*.LANCHOR2") [flags 0x182]))) "../User/Features/src/fs.c":211 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR2") [flags 0x182])
         (nil)))
 (insn 21 20 22 4 (set (reg:SI 80)
-        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":210 -1
+        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":211 -1
      (nil))
 (insn 22 21 23 4 (set (reg/f:SI 79)
         (lo_sum:SI (reg:SI 80)
-            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":210 -1
+            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":211 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
         (nil)))
 (insn 23 22 24 4 (set (reg:SI 11 a1)
-        (reg/f:SI 77)) "../User/Features/src/fs.c":210 -1
+        (reg/f:SI 77)) "../User/Features/src/fs.c":211 -1
      (nil))
 (insn 24 23 25 4 (set (reg:SI 10 a0)
-        (reg/f:SI 79)) "../User/Features/src/fs.c":210 -1
+        (reg/f:SI 79)) "../User/Features/src/fs.c":211 -1
      (nil))
 (call_insn 25 24 26 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_format") [flags 0x41] <function_decl 06463690 lfs_format>) [0 lfs_format S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_format") [flags 0x41] <function_decl 064f3690 lfs_format>) [0 lfs_format S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":210 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_format") [flags 0x41] <function_decl 06463690 lfs_format>)
+        ]) "../User/Features/src/fs.c":211 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_format") [flags 0x41] <function_decl 064f3690 lfs_format>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (nil))))
-(debug_insn 26 25 27 4 (debug_marker) "../User/Features/src/fs.c":211 -1
+(debug_insn 26 25 27 4 (debug_marker) "../User/Features/src/fs.c":212 -1
      (nil))
 (insn 27 26 28 4 (set (reg:SI 82)
-        (high:SI (symbol_ref:SI ("*.LANCHOR2") [flags 0x182]))) "../User/Features/src/fs.c":211 -1
+        (high:SI (symbol_ref:SI ("*.LANCHOR2") [flags 0x182]))) "../User/Features/src/fs.c":212 -1
      (nil))
 (insn 28 27 29 4 (set (reg/f:SI 81)
         (lo_sum:SI (reg:SI 82)
-            (symbol_ref:SI ("*.LANCHOR2") [flags 0x182]))) "../User/Features/src/fs.c":211 -1
+            (symbol_ref:SI ("*.LANCHOR2") [flags 0x182]))) "../User/Features/src/fs.c":212 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR2") [flags 0x182])
         (nil)))
 (insn 29 28 30 4 (set (reg:SI 84)
-        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":211 -1
+        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":212 -1
      (nil))
 (insn 30 29 31 4 (set (reg/f:SI 83)
         (lo_sum:SI (reg:SI 84)
-            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":211 -1
+            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":212 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
         (nil)))
 (insn 31 30 32 4 (set (reg:SI 11 a1)
-        (reg/f:SI 81)) "../User/Features/src/fs.c":211 -1
+        (reg/f:SI 81)) "../User/Features/src/fs.c":212 -1
      (nil))
 (insn 32 31 33 4 (set (reg:SI 10 a0)
-        (reg/f:SI 83)) "../User/Features/src/fs.c":211 -1
+        (reg/f:SI 83)) "../User/Features/src/fs.c":212 -1
      (nil))
 (call_insn 33 32 36 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_mount") [flags 0x41] <function_decl 06463708 lfs_mount>) [0 lfs_mount S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_mount") [flags 0x41] <function_decl 064f3708 lfs_mount>) [0 lfs_mount S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":211 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_mount") [flags 0x41] <function_decl 06463708 lfs_mount>)
+        ]) "../User/Features/src/fs.c":212 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_mount") [flags 0x41] <function_decl 064f3708 lfs_mount>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1446,6 +1446,7 @@ try_optimize_cfg iteration 1
 Merging block 3 into block 2...
 Merged blocks 2 and 3.
 Merged 2 and 3 without moving.
+Removing jump 14.
 Merging block 4 into block 2...
 Merged blocks 2 and 4.
 Merged 2 and 4 without moving.
@@ -1460,37 +1461,48 @@ try_optimize_cfg iteration 2
 ;;
 (note 1 0 4 NOTE_INSN_DELETED)
 (note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(insn 2 4 3 2 (set (reg/v/f:SI 72 [ path ])
-        (reg:SI 10 a0 [ path ])) "../User/Features/src/fs.c":215 -1
+(insn 2 4 3 2 (set (reg/v/f:SI 74 [ path ])
+        (reg:SI 10 a0 [ path ])) "../User/Features/src/fs.c":216 -1
      (nil))
 (note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":216 -1
+(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":217 -1
      (nil))
-(insn 7 6 8 2 (set (reg:SI 74)
-        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":216 -1
+(insn 7 6 8 2 (set (reg:SI 76)
+        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":217 -1
      (nil))
-(insn 8 7 9 2 (set (reg/f:SI 73)
-        (lo_sum:SI (reg:SI 74)
-            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":216 -1
+(insn 8 7 9 2 (set (reg/f:SI 75)
+        (lo_sum:SI (reg:SI 76)
+            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":217 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
         (nil)))
 (insn 9 8 10 2 (set (reg:SI 11 a1)
-        (reg/v/f:SI 72 [ path ])) "../User/Features/src/fs.c":216 -1
+        (reg/v/f:SI 74 [ path ])) "../User/Features/src/fs.c":217 -1
      (nil))
 (insn 10 9 11 2 (set (reg:SI 10 a0)
-        (reg/f:SI 73)) "../User/Features/src/fs.c":216 -1
+        (reg/f:SI 75)) "../User/Features/src/fs.c":217 -1
      (nil))
-(call_insn 11 10 0 2 (parallel [
+(call_insn 11 10 12 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_remove") [flags 0x41] <function_decl 064637f8 lfs_remove>) [0 lfs_remove S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_remove") [flags 0x41] <function_decl 064f37f8 lfs_remove>) [0 lfs_remove S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":216 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_remove") [flags 0x41] <function_decl 064637f8 lfs_remove>)
+        ]) "../User/Features/src/fs.c":217 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_remove") [flags 0x41] <function_decl 064f37f8 lfs_remove>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (nil))))
+(insn 12 11 13 2 (set (reg:SI 72 [ _1 ])
+        (reg:SI 10 a0)) "../User/Features/src/fs.c":217 -1
+     (nil))
+(insn 13 12 17 2 (set (reg:SI 73 [ <retval> ])
+        (reg:SI 72 [ _1 ])) "../User/Features/src/fs.c":217 -1
+     (nil))
+(insn 17 13 18 2 (set (reg/i:SI 10 a0)
+        (reg:SI 73 [ <retval> ])) "../User/Features/src/fs.c":218 -1
+     (nil))
+(insn 18 17 0 2 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":218 -1
+     (nil))
 
 ;; Function flashfs_move (flashfs_move, funcdef_no=56, decl_uid=5762, cgraph_uid=56, symbol_order=61)
 
@@ -1503,6 +1515,7 @@ try_optimize_cfg iteration 1
 Merging block 3 into block 2...
 Merged blocks 2 and 3.
 Merged 2 and 3 without moving.
+Removing jump 16.
 Merging block 4 into block 2...
 Merged blocks 2 and 4.
 Merged 2 and 4 without moving.
@@ -1517,44 +1530,55 @@ try_optimize_cfg iteration 2
 ;;
 (note 1 0 5 NOTE_INSN_DELETED)
 (note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(insn 2 5 3 2 (set (reg/v/f:SI 72 [ from ])
-        (reg:SI 10 a0 [ from ])) "../User/Features/src/fs.c":219 -1
+(insn 2 5 3 2 (set (reg/v/f:SI 74 [ from ])
+        (reg:SI 10 a0 [ from ])) "../User/Features/src/fs.c":220 -1
      (nil))
-(insn 3 2 4 2 (set (reg/v/f:SI 73 [ to ])
-        (reg:SI 11 a1 [ to ])) "../User/Features/src/fs.c":219 -1
+(insn 3 2 4 2 (set (reg/v/f:SI 75 [ to ])
+        (reg:SI 11 a1 [ to ])) "../User/Features/src/fs.c":220 -1
      (nil))
 (note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 7 4 8 2 (debug_marker) "../User/Features/src/fs.c":220 -1
+(debug_insn 7 4 8 2 (debug_marker) "../User/Features/src/fs.c":221 -1
      (nil))
-(insn 8 7 9 2 (set (reg:SI 75)
-        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":220 -1
+(insn 8 7 9 2 (set (reg:SI 77)
+        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":221 -1
      (nil))
-(insn 9 8 10 2 (set (reg/f:SI 74)
-        (lo_sum:SI (reg:SI 75)
-            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":220 -1
+(insn 9 8 10 2 (set (reg/f:SI 76)
+        (lo_sum:SI (reg:SI 77)
+            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":221 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
         (nil)))
 (insn 10 9 11 2 (set (reg:SI 12 a2)
-        (reg/v/f:SI 73 [ to ])) "../User/Features/src/fs.c":220 -1
+        (reg/v/f:SI 75 [ to ])) "../User/Features/src/fs.c":221 -1
      (nil))
 (insn 11 10 12 2 (set (reg:SI 11 a1)
-        (reg/v/f:SI 72 [ from ])) "../User/Features/src/fs.c":220 -1
+        (reg/v/f:SI 74 [ from ])) "../User/Features/src/fs.c":221 -1
      (nil))
 (insn 12 11 13 2 (set (reg:SI 10 a0)
-        (reg/f:SI 74)) "../User/Features/src/fs.c":220 -1
+        (reg/f:SI 76)) "../User/Features/src/fs.c":221 -1
      (nil))
-(call_insn 13 12 0 2 (parallel [
+(call_insn 13 12 14 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_rename") [flags 0x41] <function_decl 06463870 lfs_rename>) [0 lfs_rename S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_rename") [flags 0x41] <function_decl 064f3870 lfs_rename>) [0 lfs_rename S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":220 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_rename") [flags 0x41] <function_decl 06463870 lfs_rename>)
+        ]) "../User/Features/src/fs.c":221 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_rename") [flags 0x41] <function_decl 064f3870 lfs_rename>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (expr_list:SI (use (reg:SI 12 a2))
                 (nil)))))
+(insn 14 13 15 2 (set (reg:SI 72 [ _1 ])
+        (reg:SI 10 a0)) "../User/Features/src/fs.c":221 -1
+     (nil))
+(insn 15 14 19 2 (set (reg:SI 73 [ <retval> ])
+        (reg:SI 72 [ _1 ])) "../User/Features/src/fs.c":221 -1
+     (nil))
+(insn 19 15 20 2 (set (reg/i:SI 10 a0)
+        (reg:SI 73 [ <retval> ])) "../User/Features/src/fs.c":222 -1
+     (nil))
+(insn 20 19 0 2 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":222 -1
+     (nil))
 
 ;; Function flashfs_file_info (flashfs_file_info, funcdef_no=57, decl_uid=5764, cgraph_uid=57, symbol_order=62)
 
@@ -1567,6 +1591,7 @@ try_optimize_cfg iteration 1
 Merging block 3 into block 2...
 Merged blocks 2 and 3.
 Merged 2 and 3 without moving.
+Removing jump 17.
 Merging block 4 into block 2...
 Merged blocks 2 and 4.
 Merged 2 and 4 without moving.
@@ -1581,49 +1606,60 @@ try_optimize_cfg iteration 2
 ;;
 (note 1 0 4 NOTE_INSN_DELETED)
 (note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(insn 2 4 3 2 (set (reg/v/f:SI 72 [ path ])
-        (reg:SI 10 a0 [ path ])) "../User/Features/src/fs.c":223 -1
+(insn 2 4 3 2 (set (reg/v/f:SI 74 [ path ])
+        (reg:SI 10 a0 [ path ])) "../User/Features/src/fs.c":224 -1
      (nil))
 (note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":224 -1
+(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":225 -1
      (nil))
-(insn 7 6 8 2 (set (reg:SI 74)
-        (high:SI (symbol_ref:SI ("*.LANCHOR4") [flags 0x182]))) "../User/Features/src/fs.c":224 -1
+(insn 7 6 8 2 (set (reg:SI 76)
+        (high:SI (symbol_ref:SI ("*.LANCHOR4") [flags 0x182]))) "../User/Features/src/fs.c":225 -1
      (nil))
-(insn 8 7 9 2 (set (reg/f:SI 73)
-        (lo_sum:SI (reg:SI 74)
-            (symbol_ref:SI ("*.LANCHOR4") [flags 0x182]))) "../User/Features/src/fs.c":224 -1
+(insn 8 7 9 2 (set (reg/f:SI 75)
+        (lo_sum:SI (reg:SI 76)
+            (symbol_ref:SI ("*.LANCHOR4") [flags 0x182]))) "../User/Features/src/fs.c":225 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR4") [flags 0x182])
         (nil)))
-(insn 9 8 10 2 (set (reg:SI 76)
-        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":224 -1
+(insn 9 8 10 2 (set (reg:SI 78)
+        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":225 -1
      (nil))
-(insn 10 9 11 2 (set (reg/f:SI 75)
-        (lo_sum:SI (reg:SI 76)
-            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":224 -1
+(insn 10 9 11 2 (set (reg/f:SI 77)
+        (lo_sum:SI (reg:SI 78)
+            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":225 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
         (nil)))
 (insn 11 10 12 2 (set (reg:SI 12 a2)
-        (reg/f:SI 73)) "../User/Features/src/fs.c":224 -1
+        (reg/f:SI 75)) "../User/Features/src/fs.c":225 -1
      (nil))
 (insn 12 11 13 2 (set (reg:SI 11 a1)
-        (reg/v/f:SI 72 [ path ])) "../User/Features/src/fs.c":224 -1
+        (reg/v/f:SI 74 [ path ])) "../User/Features/src/fs.c":225 -1
      (nil))
 (insn 13 12 14 2 (set (reg:SI 10 a0)
-        (reg/f:SI 75)) "../User/Features/src/fs.c":224 -1
+        (reg/f:SI 77)) "../User/Features/src/fs.c":225 -1
      (nil))
-(call_insn 14 13 0 2 (parallel [
+(call_insn 14 13 15 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_stat") [flags 0x41] <function_decl 064638e8 lfs_stat>) [0 lfs_stat S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_stat") [flags 0x41] <function_decl 064f38e8 lfs_stat>) [0 lfs_stat S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":224 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_stat") [flags 0x41] <function_decl 064638e8 lfs_stat>)
+        ]) "../User/Features/src/fs.c":225 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_stat") [flags 0x41] <function_decl 064f38e8 lfs_stat>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (expr_list:SI (use (reg:SI 12 a2))
                 (nil)))))
+(insn 15 14 16 2 (set (reg:SI 72 [ _1 ])
+        (reg:SI 10 a0)) "../User/Features/src/fs.c":225 -1
+     (nil))
+(insn 16 15 20 2 (set (reg:SI 73 [ <retval> ])
+        (reg:SI 72 [ _1 ])) "../User/Features/src/fs.c":225 -1
+     (nil))
+(insn 20 16 21 2 (set (reg/i:SI 10 a0)
+        (reg:SI 73 [ <retval> ])) "../User/Features/src/fs.c":226 -1
+     (nil))
+(insn 21 20 0 2 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":226 -1
+     (nil))
 
 ;; Function flashfs_file_open (flashfs_file_open, funcdef_no=58, decl_uid=5767, cgraph_uid=58, symbol_order=63)
 
@@ -1634,17 +1670,20 @@ try_optimize_cfg iteration 2
 
 ;; Generating RTL for gimple basic block 4
 
+;; Generating RTL for gimple basic block 5
+
 
 try_optimize_cfg iteration 1
 
 Merging block 3 into block 2...
 Merged blocks 2 and 3.
 Merged 2 and 3 without moving.
-Edge 2->5 redirected to 6
-Merging block 5 into block 4...
-Merged blocks 4 and 5.
-Merged 4 and 5 without moving.
-Removing jump 31.
+Edge 2->6 redirected to 7
+Edge 4->6 redirected to 7
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 37.
 
 
 try_optimize_cfg iteration 2
@@ -1656,105 +1695,123 @@ try_optimize_cfg iteration 2
 ;;
 (note 1 0 5 NOTE_INSN_DELETED)
 (note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(insn 2 5 3 2 (set (reg/v/f:SI 75 [ path ])
-        (reg:SI 10 a0 [ path ])) "../User/Features/src/fs.c":227 -1
+(insn 2 5 3 2 (set (reg/v/f:SI 76 [ path ])
+        (reg:SI 10 a0 [ path ])) "../User/Features/src/fs.c":228 -1
      (nil))
-(insn 3 2 4 2 (set (reg/v:SI 76 [ flags ])
-        (reg:SI 11 a1 [ flags ])) "../User/Features/src/fs.c":227 -1
+(insn 3 2 4 2 (set (reg/v:SI 77 [ flags ])
+        (reg:SI 11 a1 [ flags ])) "../User/Features/src/fs.c":228 -1
      (nil))
 (note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 7 4 8 2 (debug_marker) "../User/Features/src/fs.c":228 -1
+(debug_insn 7 4 8 2 (debug_marker) "../User/Features/src/fs.c":229 -1
      (nil))
 (call_insn 8 7 9 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("allocate_fh") [flags 0x3] <function_decl 06488f78 allocate_fh>) [0 allocate_fh S4 A32])
+                (call (mem:SI (symbol_ref:SI ("allocate_fh") [flags 0x3] <function_decl 0651bf78 allocate_fh>) [0 allocate_fh S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":228 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("allocate_fh") [flags 0x3] <function_decl 06488f78 allocate_fh>)
+        ]) "../User/Features/src/fs.c":229 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("allocate_fh") [flags 0x3] <function_decl 0651bf78 allocate_fh>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
-(insn 9 8 10 2 (set (reg/v:SI 74 [ <retval> ])
-        (reg:SI 10 a0)) "../User/Features/src/fs.c":228 -1
+(insn 9 8 10 2 (set (reg/v:SI 75 [ <retval> ])
+        (reg:SI 10 a0)) "../User/Features/src/fs.c":229 -1
      (nil))
-(debug_insn 10 9 11 2 (var_location:SI fh (reg/v:SI 74 [ <retval> ])) "../User/Features/src/fs.c":228 -1
+(debug_insn 10 9 11 2 (var_location:SI fh (reg/v:SI 75 [ <retval> ])) "../User/Features/src/fs.c":229 -1
      (nil))
-(debug_insn 11 10 12 2 (debug_marker) "../User/Features/src/fs.c":229 -1
+(debug_insn 11 10 12 2 (debug_marker) "../User/Features/src/fs.c":230 -1
      (nil))
-(insn 12 11 13 2 (set (reg:SI 77)
-        (const_int -1 [0xffffffffffffffff])) "../User/Features/src/fs.c":229 -1
+(insn 12 11 13 2 (set (reg:SI 78)
+        (const_int -1 [0xffffffffffffffff])) "../User/Features/src/fs.c":230 -1
      (nil))
 (jump_insn 13 12 14 2 (set (pc)
-        (if_then_else (eq (reg/v:SI 74 [ <retval> ])
-                (reg:SI 77))
-            (label_ref:SI 33)
-            (pc))) "../User/Features/src/fs.c":229 180 {*branchsi}
+        (if_then_else (eq (reg/v:SI 75 [ <retval> ])
+                (reg:SI 78))
+            (label_ref:SI 39)
+            (pc))) "../User/Features/src/fs.c":230 180 {*branchsi}
      (int_list:REG_BR_PROB 241377164 (nil))
- -> 33)
+ -> 39)
 (note 14 13 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 15 14 16 4 (debug_marker) "../User/Features/src/fs.c":232 -1
+(debug_insn 15 14 16 4 (debug_marker) "../User/Features/src/fs.c":233 -1
      (nil))
-(insn 16 15 17 4 (set (reg:SI 79)
-        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":232 -1
+(insn 16 15 17 4 (set (reg:SI 80)
+        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":233 -1
      (nil))
-(insn 17 16 18 4 (set (reg/f:SI 78)
-        (lo_sum:SI (reg:SI 79)
-            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":232 -1
+(insn 17 16 18 4 (set (reg/f:SI 79)
+        (lo_sum:SI (reg:SI 80)
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":233 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
         (nil)))
-(insn 18 17 19 4 (set (reg:SI 80)
-        (const_int 88 [0x58])) "../User/Features/src/fs.c":232 -1
+(insn 18 17 19 4 (set (reg:SI 81)
+        (const_int 88 [0x58])) "../User/Features/src/fs.c":233 -1
      (nil))
-(insn 19 18 20 4 (set (reg:SI 81)
-        (mult:SI (reg/v:SI 74 [ <retval> ])
-            (reg:SI 80))) "../User/Features/src/fs.c":232 -1
+(insn 19 18 20 4 (set (reg:SI 82)
+        (mult:SI (reg/v:SI 75 [ <retval> ])
+            (reg:SI 81))) "../User/Features/src/fs.c":233 -1
      (nil))
-(insn 20 19 21 4 (set (reg:SI 82)
-        (plus:SI (reg/f:SI 78)
-            (reg:SI 81))) "../User/Features/src/fs.c":232 -1
+(insn 20 19 21 4 (set (reg:SI 83)
+        (plus:SI (reg/f:SI 79)
+            (reg:SI 82))) "../User/Features/src/fs.c":233 -1
      (nil))
-(insn 21 20 22 4 (set (reg:SI 84)
-        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":232 -1
+(insn 21 20 22 4 (set (reg:SI 85)
+        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":233 -1
      (nil))
-(insn 22 21 23 4 (set (reg/f:SI 83)
-        (lo_sum:SI (reg:SI 84)
-            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":232 -1
+(insn 22 21 23 4 (set (reg/f:SI 84)
+        (lo_sum:SI (reg:SI 85)
+            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":233 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
         (nil)))
 (insn 23 22 24 4 (set (reg:SI 13 a3)
-        (reg/v:SI 76 [ flags ])) "../User/Features/src/fs.c":232 -1
+        (reg/v:SI 77 [ flags ])) "../User/Features/src/fs.c":233 -1
      (nil))
 (insn 24 23 25 4 (set (reg:SI 12 a2)
-        (reg/v/f:SI 75 [ path ])) "../User/Features/src/fs.c":232 -1
+        (reg/v/f:SI 76 [ path ])) "../User/Features/src/fs.c":233 -1
      (nil))
 (insn 25 24 26 4 (set (reg:SI 11 a1)
-        (reg:SI 82)) "../User/Features/src/fs.c":232 -1
+        (reg:SI 83)) "../User/Features/src/fs.c":233 -1
      (nil))
 (insn 26 25 27 4 (set (reg:SI 10 a0)
-        (reg/f:SI 83)) "../User/Features/src/fs.c":232 -1
+        (reg/f:SI 84)) "../User/Features/src/fs.c":233 -1
      (nil))
 (call_insn 27 26 28 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_file_open") [flags 0x41] <function_decl 06463ac8 lfs_file_open>) [0 lfs_file_open S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_file_open") [flags 0x41] <function_decl 064f3ac8 lfs_file_open>) [0 lfs_file_open S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":232 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_open") [flags 0x41] <function_decl 06463ac8 lfs_file_open>)
+        ]) "../User/Features/src/fs.c":233 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_open") [flags 0x41] <function_decl 064f3ac8 lfs_file_open>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (expr_list:SI (use (reg:SI 12 a2))
                 (expr_list:SI (use (reg:SI 13 a3))
                     (nil))))))
-(debug_insn 28 27 33 4 (debug_marker) "../User/Features/src/fs.c":233 -1
+(insn 28 27 29 4 (set (reg/v:SI 73 [ code ])
+        (reg:SI 10 a0)) "../User/Features/src/fs.c":233 -1
      (nil))
-(code_label 33 28 36 6 54 (nil) [1 uses])
-(note 36 33 34 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
-(insn 34 36 35 6 (set (reg/i:SI 10 a0)
-        (reg/v:SI 74 [ <retval> ])) "../User/Features/src/fs.c":234 -1
+(debug_insn 29 28 30 4 (var_location:SI code (reg/v:SI 73 [ code ])) "../User/Features/src/fs.c":233 -1
      (nil))
-(insn 35 34 0 6 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":234 -1
+(debug_insn 30 29 31 4 (debug_marker) "../User/Features/src/fs.c":234 -1
+     (nil))
+(jump_insn 31 30 32 4 (set (pc)
+        (if_then_else (ge (reg/v:SI 73 [ code ])
+                (const_int 0 [0]))
+            (label_ref:SI 39)
+            (pc))) "../User/Features/src/fs.c":234 180 {*branchsi}
+     (int_list:REG_BR_PROB 633507684 (nil))
+ -> 39)
+(note 32 31 33 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 33 32 34 5 (debug_marker) "../User/Features/src/fs.c":235 -1
+     (nil))
+(insn 34 33 39 5 (set (reg/v:SI 75 [ <retval> ])
+        (reg/v:SI 73 [ code ])) "../User/Features/src/fs.c":235 -1
+     (nil))
+(code_label 39 34 42 7 54 (nil) [2 uses])
+(note 42 39 40 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 40 42 41 7 (set (reg/i:SI 10 a0)
+        (reg/v:SI 75 [ <retval> ])) "../User/Features/src/fs.c":239 -1
+     (nil))
+(insn 41 40 0 7 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":239 -1
      (nil))
 
 ;; Function flashfs_file_close (flashfs_file_close, funcdef_no=59, decl_uid=5769, cgraph_uid=59, symbol_order=64)
@@ -1768,6 +1825,7 @@ try_optimize_cfg iteration 1
 Merging block 3 into block 2...
 Merged blocks 2 and 3.
 Merged 2 and 3 without moving.
+Removing jump 31.
 Merging block 4 into block 2...
 Merged blocks 2 and 4.
 Merged 2 and 4 without moving.
@@ -1782,86 +1840,101 @@ try_optimize_cfg iteration 2
 ;;
 (note 1 0 4 NOTE_INSN_DELETED)
 (note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(insn 2 4 3 2 (set (reg/v:SI 74 [ fh ])
-        (reg:SI 10 a0 [ fh ])) "../User/Features/src/fs.c":236 -1
+(insn 2 4 3 2 (set (reg/v:SI 76 [ fh ])
+        (reg:SI 10 a0 [ fh ])) "../User/Features/src/fs.c":241 -1
      (nil))
 (note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":237 -1
+(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":242 -1
      (nil))
-(insn 7 6 8 2 (set (reg:SI 76)
-        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":237 -1
+(insn 7 6 8 2 (set (reg:SI 78)
+        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":242 -1
      (nil))
-(insn 8 7 9 2 (set (reg/f:SI 75)
-        (lo_sum:SI (reg:SI 76)
-            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":237 -1
+(insn 8 7 9 2 (set (reg/f:SI 77)
+        (lo_sum:SI (reg:SI 78)
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":242 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
         (nil)))
-(insn 9 8 10 2 (set (reg:SI 77)
-        (const_int 88 [0x58])) "../User/Features/src/fs.c":237 -1
+(insn 9 8 10 2 (set (reg:SI 79)
+        (const_int 88 [0x58])) "../User/Features/src/fs.c":242 -1
      (nil))
-(insn 10 9 11 2 (set (reg:SI 78)
-        (mult:SI (reg/v:SI 74 [ fh ])
-            (reg:SI 77))) "../User/Features/src/fs.c":237 -1
+(insn 10 9 11 2 (set (reg:SI 80)
+        (mult:SI (reg/v:SI 76 [ fh ])
+            (reg:SI 79))) "../User/Features/src/fs.c":242 -1
      (nil))
-(insn 11 10 12 2 (set (reg:SI 79)
-        (plus:SI (reg/f:SI 75)
-            (reg:SI 78))) "../User/Features/src/fs.c":237 -1
+(insn 11 10 12 2 (set (reg:SI 81)
+        (plus:SI (reg/f:SI 77)
+            (reg:SI 80))) "../User/Features/src/fs.c":242 -1
      (nil))
-(insn 12 11 13 2 (set (reg:SI 81)
-        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":237 -1
+(insn 12 11 13 2 (set (reg:SI 83)
+        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":242 -1
      (nil))
-(insn 13 12 14 2 (set (reg/f:SI 80)
-        (lo_sum:SI (reg:SI 81)
-            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":237 -1
+(insn 13 12 14 2 (set (reg/f:SI 82)
+        (lo_sum:SI (reg:SI 83)
+            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":242 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
         (nil)))
 (insn 14 13 15 2 (set (reg:SI 11 a1)
-        (reg:SI 79)) "../User/Features/src/fs.c":237 -1
+        (reg:SI 81)) "../User/Features/src/fs.c":242 -1
      (nil))
 (insn 15 14 16 2 (set (reg:SI 10 a0)
-        (reg/f:SI 80)) "../User/Features/src/fs.c":237 -1
+        (reg/f:SI 82)) "../User/Features/src/fs.c":242 -1
      (nil))
 (call_insn 16 15 17 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_file_close") [flags 0x41] <function_decl 06463bb8 lfs_file_close>) [0 lfs_file_close S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_file_close") [flags 0x41] <function_decl 064f3bb8 lfs_file_close>) [0 lfs_file_close S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":237 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_close") [flags 0x41] <function_decl 06463bb8 lfs_file_close>)
+        ]) "../User/Features/src/fs.c":242 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_close") [flags 0x41] <function_decl 064f3bb8 lfs_file_close>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (nil))))
-(debug_insn 17 16 18 2 (debug_marker) "../User/Features/src/fs.c":238 -1
+(insn 17 16 18 2 (set (reg:SI 73 [ _2 ])
+        (reg:SI 10 a0)) "../User/Features/src/fs.c":242 -1
      (nil))
-(debug_insn 18 17 19 2 (var_location:SI fh (reg/v:SI 74 [ fh ])) "../User/Features/src/fs.c":238 -1
+(debug_insn 18 17 19 2 (var_location:SI code (reg:SI 73 [ _2 ])) "../User/Features/src/fs.c":242 -1
      (nil))
-(debug_insn 19 18 20 2 (debug_marker) "../User/Features/src/fs.c":187 -1
+(debug_insn 19 18 20 2 (debug_marker) "../User/Features/src/fs.c":243 -1
      (nil))
-(insn 20 19 21 2 (set (reg:SI 83)
-        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":187 -1
+(debug_insn 20 19 21 2 (var_location:SI fh (reg/v:SI 76 [ fh ])) "../User/Features/src/fs.c":243 -1
      (nil))
-(insn 21 20 22 2 (set (reg/f:SI 82)
-        (lo_sum:SI (reg:SI 83)
-            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":187 -1
+(debug_insn 21 20 22 2 (debug_marker) "../User/Features/src/fs.c":188 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 85)
+        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":188 -1
+     (nil))
+(insn 23 22 24 2 (set (reg/f:SI 84)
+        (lo_sum:SI (reg:SI 85)
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":188 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
         (nil)))
-(insn 22 21 23 2 (set (reg:SI 85)
-        (const_int 88 [0x58])) "../User/Features/src/fs.c":187 -1
+(insn 24 23 25 2 (set (reg:SI 87)
+        (const_int 88 [0x58])) "../User/Features/src/fs.c":188 -1
      (nil))
-(insn 23 22 24 2 (set (reg:SI 86)
-        (mult:SI (reg/v:SI 74 [ fh ])
-            (reg:SI 85))) "../User/Features/src/fs.c":187 -1
+(insn 25 24 26 2 (set (reg:SI 88)
+        (mult:SI (reg/v:SI 76 [ fh ])
+            (reg:SI 87))) "../User/Features/src/fs.c":188 -1
      (nil))
-(insn 24 23 25 2 (set (reg/f:SI 84)
-        (plus:SI (reg/f:SI 82)
-            (reg:SI 86))) "../User/Features/src/fs.c":187 -1
+(insn 26 25 27 2 (set (reg/f:SI 86)
+        (plus:SI (reg/f:SI 84)
+            (reg:SI 88))) "../User/Features/src/fs.c":188 -1
      (nil))
-(insn 25 24 26 2 (set (mem:SI (plus:SI (reg/f:SI 84)
-                (const_int 84 [0x54])) [6 file_handles[fh_2(D)].taken+0 S4 A32])
-        (const_int 0 [0])) "../User/Features/src/fs.c":187 -1
+(insn 27 26 28 2 (set (mem:SI (plus:SI (reg/f:SI 86)
+                (const_int 84 [0x54])) [6 file_handles[fh_3(D)].taken+0 S4 A32])
+        (const_int 0 [0])) "../User/Features/src/fs.c":188 -1
      (nil))
-(debug_insn 26 25 0 2 (var_location:SI fh (clobber (const_int 0 [0]))) "../User/Features/src/fs.c":238 -1
+(debug_insn 28 27 29 2 (var_location:SI fh (clobber (const_int 0 [0]))) "../User/Features/src/fs.c":243 -1
+     (nil))
+(debug_insn 29 28 30 2 (debug_marker) "../User/Features/src/fs.c":244 -1
+     (nil))
+(insn 30 29 34 2 (set (reg/v:SI 75 [ <retval> ])
+        (reg:SI 73 [ _2 ])) "../User/Features/src/fs.c":244 -1
+     (nil))
+(insn 34 30 35 2 (set (reg/i:SI 10 a0)
+        (reg/v:SI 75 [ <retval> ])) "../User/Features/src/fs.c":245 -1
+     (nil))
+(insn 35 34 0 2 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":245 -1
      (nil))
 
 ;; Function flashfs_file_read (flashfs_file_read, funcdef_no=60, decl_uid=5773, cgraph_uid=60, symbol_order=65)
@@ -1875,6 +1948,7 @@ try_optimize_cfg iteration 1
 Merging block 3 into block 2...
 Merged blocks 2 and 3.
 Merged 2 and 3 without moving.
+Removing jump 23.
 Merging block 4 into block 2...
 Merged blocks 2 and 4.
 Merged 2 and 4 without moving.
@@ -1889,70 +1963,81 @@ try_optimize_cfg iteration 2
 ;;
 (note 1 0 6 NOTE_INSN_DELETED)
 (note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(insn 2 6 3 2 (set (reg/v:SI 74 [ fh ])
-        (reg:SI 10 a0 [ fh ])) "../User/Features/src/fs.c":241 -1
+(insn 2 6 3 2 (set (reg/v:SI 76 [ fh ])
+        (reg:SI 10 a0 [ fh ])) "../User/Features/src/fs.c":247 -1
      (nil))
-(insn 3 2 4 2 (set (reg/v/f:SI 75 [ buffer ])
-        (reg:SI 11 a1 [ buffer ])) "../User/Features/src/fs.c":241 -1
+(insn 3 2 4 2 (set (reg/v/f:SI 77 [ buffer ])
+        (reg:SI 11 a1 [ buffer ])) "../User/Features/src/fs.c":247 -1
      (nil))
-(insn 4 3 5 2 (set (reg/v:SI 76 [ size ])
-        (reg:SI 12 a2 [ size ])) "../User/Features/src/fs.c":241 -1
+(insn 4 3 5 2 (set (reg/v:SI 78 [ size ])
+        (reg:SI 12 a2 [ size ])) "../User/Features/src/fs.c":247 -1
      (nil))
 (note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 8 5 9 2 (debug_marker) "../User/Features/src/fs.c":242 -1
+(debug_insn 8 5 9 2 (debug_marker) "../User/Features/src/fs.c":248 -1
      (nil))
-(insn 9 8 10 2 (set (reg:SI 78)
-        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":242 -1
+(insn 9 8 10 2 (set (reg:SI 80)
+        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":248 -1
      (nil))
-(insn 10 9 11 2 (set (reg/f:SI 77)
-        (lo_sum:SI (reg:SI 78)
-            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":242 -1
+(insn 10 9 11 2 (set (reg/f:SI 79)
+        (lo_sum:SI (reg:SI 80)
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":248 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
         (nil)))
-(insn 11 10 12 2 (set (reg:SI 79)
-        (const_int 88 [0x58])) "../User/Features/src/fs.c":242 -1
+(insn 11 10 12 2 (set (reg:SI 81)
+        (const_int 88 [0x58])) "../User/Features/src/fs.c":248 -1
      (nil))
-(insn 12 11 13 2 (set (reg:SI 80)
-        (mult:SI (reg/v:SI 74 [ fh ])
-            (reg:SI 79))) "../User/Features/src/fs.c":242 -1
+(insn 12 11 13 2 (set (reg:SI 82)
+        (mult:SI (reg/v:SI 76 [ fh ])
+            (reg:SI 81))) "../User/Features/src/fs.c":248 -1
      (nil))
-(insn 13 12 14 2 (set (reg:SI 81)
-        (plus:SI (reg/f:SI 77)
-            (reg:SI 80))) "../User/Features/src/fs.c":242 -1
+(insn 13 12 14 2 (set (reg:SI 83)
+        (plus:SI (reg/f:SI 79)
+            (reg:SI 82))) "../User/Features/src/fs.c":248 -1
      (nil))
-(insn 14 13 15 2 (set (reg:SI 83)
-        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":242 -1
+(insn 14 13 15 2 (set (reg:SI 85)
+        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":248 -1
      (nil))
-(insn 15 14 16 2 (set (reg/f:SI 82)
-        (lo_sum:SI (reg:SI 83)
-            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":242 -1
+(insn 15 14 16 2 (set (reg/f:SI 84)
+        (lo_sum:SI (reg:SI 85)
+            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":248 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
         (nil)))
 (insn 16 15 17 2 (set (reg:SI 13 a3)
-        (reg/v:SI 76 [ size ])) "../User/Features/src/fs.c":242 -1
+        (reg/v:SI 78 [ size ])) "../User/Features/src/fs.c":248 -1
      (nil))
 (insn 17 16 18 2 (set (reg:SI 12 a2)
-        (reg/v/f:SI 75 [ buffer ])) "../User/Features/src/fs.c":242 -1
+        (reg/v/f:SI 77 [ buffer ])) "../User/Features/src/fs.c":248 -1
      (nil))
 (insn 18 17 19 2 (set (reg:SI 11 a1)
-        (reg:SI 81)) "../User/Features/src/fs.c":242 -1
+        (reg:SI 83)) "../User/Features/src/fs.c":248 -1
      (nil))
 (insn 19 18 20 2 (set (reg:SI 10 a0)
-        (reg/f:SI 82)) "../User/Features/src/fs.c":242 -1
+        (reg/f:SI 84)) "../User/Features/src/fs.c":248 -1
      (nil))
-(call_insn 20 19 0 2 (parallel [
+(call_insn 20 19 21 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_file_read") [flags 0x41] <function_decl 06463ca8 lfs_file_read>) [0 lfs_file_read S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_file_read") [flags 0x41] <function_decl 064f3ca8 lfs_file_read>) [0 lfs_file_read S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":242 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_read") [flags 0x41] <function_decl 06463ca8 lfs_file_read>)
+        ]) "../User/Features/src/fs.c":248 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_read") [flags 0x41] <function_decl 064f3ca8 lfs_file_read>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (expr_list:SI (use (reg:SI 12 a2))
                 (expr_list:SI (use (reg:SI 13 a3))
                     (nil))))))
+(insn 21 20 22 2 (set (reg:SI 73 [ _2 ])
+        (reg:SI 10 a0)) "../User/Features/src/fs.c":248 -1
+     (nil))
+(insn 22 21 26 2 (set (reg:SI 75 [ <retval> ])
+        (reg:SI 73 [ _2 ])) "../User/Features/src/fs.c":248 -1
+     (nil))
+(insn 26 22 27 2 (set (reg/i:SI 10 a0)
+        (reg:SI 75 [ <retval> ])) "../User/Features/src/fs.c":249 -1
+     (nil))
+(insn 27 26 0 2 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":249 -1
+     (nil))
 
 ;; Function flashfs_file_write (flashfs_file_write, funcdef_no=61, decl_uid=5777, cgraph_uid=61, symbol_order=66)
 
@@ -1965,6 +2050,7 @@ try_optimize_cfg iteration 1
 Merging block 3 into block 2...
 Merged blocks 2 and 3.
 Merged 2 and 3 without moving.
+Removing jump 23.
 Merging block 4 into block 2...
 Merged blocks 2 and 4.
 Merged 2 and 4 without moving.
@@ -1979,72 +2065,618 @@ try_optimize_cfg iteration 2
 ;;
 (note 1 0 6 NOTE_INSN_DELETED)
 (note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(insn 2 6 3 2 (set (reg/v:SI 74 [ fh ])
-        (reg:SI 10 a0 [ fh ])) "../User/Features/src/fs.c":245 -1
+(insn 2 6 3 2 (set (reg/v:SI 76 [ fh ])
+        (reg:SI 10 a0 [ fh ])) "../User/Features/src/fs.c":251 -1
      (nil))
-(insn 3 2 4 2 (set (reg/v/f:SI 75 [ buffer ])
-        (reg:SI 11 a1 [ buffer ])) "../User/Features/src/fs.c":245 -1
+(insn 3 2 4 2 (set (reg/v/f:SI 77 [ buffer ])
+        (reg:SI 11 a1 [ buffer ])) "../User/Features/src/fs.c":251 -1
      (nil))
-(insn 4 3 5 2 (set (reg/v:SI 76 [ size ])
-        (reg:SI 12 a2 [ size ])) "../User/Features/src/fs.c":245 -1
+(insn 4 3 5 2 (set (reg/v:SI 78 [ size ])
+        (reg:SI 12 a2 [ size ])) "../User/Features/src/fs.c":251 -1
      (nil))
 (note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 8 5 9 2 (debug_marker) "../User/Features/src/fs.c":246 -1
+(debug_insn 8 5 9 2 (debug_marker) "../User/Features/src/fs.c":252 -1
      (nil))
-(insn 9 8 10 2 (set (reg:SI 78)
-        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":246 -1
+(insn 9 8 10 2 (set (reg:SI 80)
+        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":252 -1
      (nil))
-(insn 10 9 11 2 (set (reg/f:SI 77)
-        (lo_sum:SI (reg:SI 78)
-            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":246 -1
+(insn 10 9 11 2 (set (reg/f:SI 79)
+        (lo_sum:SI (reg:SI 80)
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":252 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
         (nil)))
-(insn 11 10 12 2 (set (reg:SI 79)
-        (const_int 88 [0x58])) "../User/Features/src/fs.c":246 -1
+(insn 11 10 12 2 (set (reg:SI 81)
+        (const_int 88 [0x58])) "../User/Features/src/fs.c":252 -1
      (nil))
-(insn 12 11 13 2 (set (reg:SI 80)
-        (mult:SI (reg/v:SI 74 [ fh ])
-            (reg:SI 79))) "../User/Features/src/fs.c":246 -1
+(insn 12 11 13 2 (set (reg:SI 82)
+        (mult:SI (reg/v:SI 76 [ fh ])
+            (reg:SI 81))) "../User/Features/src/fs.c":252 -1
      (nil))
-(insn 13 12 14 2 (set (reg:SI 81)
-        (plus:SI (reg/f:SI 77)
-            (reg:SI 80))) "../User/Features/src/fs.c":246 -1
+(insn 13 12 14 2 (set (reg:SI 83)
+        (plus:SI (reg/f:SI 79)
+            (reg:SI 82))) "../User/Features/src/fs.c":252 -1
      (nil))
-(insn 14 13 15 2 (set (reg:SI 83)
-        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":246 -1
+(insn 14 13 15 2 (set (reg:SI 85)
+        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":252 -1
      (nil))
-(insn 15 14 16 2 (set (reg/f:SI 82)
-        (lo_sum:SI (reg:SI 83)
-            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":246 -1
+(insn 15 14 16 2 (set (reg/f:SI 84)
+        (lo_sum:SI (reg:SI 85)
+            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":252 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
         (nil)))
 (insn 16 15 17 2 (set (reg:SI 13 a3)
-        (reg/v:SI 76 [ size ])) "../User/Features/src/fs.c":246 -1
+        (reg/v:SI 78 [ size ])) "../User/Features/src/fs.c":252 -1
      (nil))
 (insn 17 16 18 2 (set (reg:SI 12 a2)
-        (reg/v/f:SI 75 [ buffer ])) "../User/Features/src/fs.c":246 -1
+        (reg/v/f:SI 77 [ buffer ])) "../User/Features/src/fs.c":252 -1
      (nil))
 (insn 18 17 19 2 (set (reg:SI 11 a1)
-        (reg:SI 81)) "../User/Features/src/fs.c":246 -1
+        (reg:SI 83)) "../User/Features/src/fs.c":252 -1
      (nil))
 (insn 19 18 20 2 (set (reg:SI 10 a0)
-        (reg/f:SI 82)) "../User/Features/src/fs.c":246 -1
+        (reg/f:SI 84)) "../User/Features/src/fs.c":252 -1
      (nil))
-(call_insn 20 19 0 2 (parallel [
+(call_insn 20 19 21 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_file_write") [flags 0x41] <function_decl 06463d20 lfs_file_write>) [0 lfs_file_write S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_file_write") [flags 0x41] <function_decl 064f3d20 lfs_file_write>) [0 lfs_file_write S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":246 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_write") [flags 0x41] <function_decl 06463d20 lfs_file_write>)
+        ]) "../User/Features/src/fs.c":252 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_write") [flags 0x41] <function_decl 064f3d20 lfs_file_write>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (expr_list:SI (use (reg:SI 12 a2))
                 (expr_list:SI (use (reg:SI 13 a3))
                     (nil))))))
+(insn 21 20 22 2 (set (reg:SI 73 [ _2 ])
+        (reg:SI 10 a0)) "../User/Features/src/fs.c":252 -1
+     (nil))
+(insn 22 21 26 2 (set (reg:SI 75 [ <retval> ])
+        (reg:SI 73 [ _2 ])) "../User/Features/src/fs.c":252 -1
+     (nil))
+(insn 26 22 27 2 (set (reg/i:SI 10 a0)
+        (reg:SI 75 [ <retval> ])) "../User/Features/src/fs.c":253 -1
+     (nil))
+(insn 27 26 0 2 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":253 -1
+     (nil))
 
 ;; Function flashfs_file_seek (flashfs_file_seek, funcdef_no=62, decl_uid=5781, cgraph_uid=62, symbol_order=67)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 23.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v:SI 78 [ fh ])
+        (reg:SI 10 a0 [ fh ])) "../User/Features/src/fs.c":255 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 79 [ offset ])
+        (reg:SI 11 a1 [ offset ])) "../User/Features/src/fs.c":255 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v:SI 80 [ whence ])
+        (reg:SI 12 a2 [ whence ])) "../User/Features/src/fs.c":255 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (debug_marker) "../User/Features/src/fs.c":256 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 82)
+        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":256 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:SI 81)
+        (lo_sum:SI (reg:SI 82)
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":256 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 11 10 12 2 (set (reg:SI 83)
+        (const_int 88 [0x58])) "../User/Features/src/fs.c":256 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 84)
+        (mult:SI (reg/v:SI 78 [ fh ])
+            (reg:SI 83))) "../User/Features/src/fs.c":256 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 85)
+        (plus:SI (reg/f:SI 81)
+            (reg:SI 84))) "../User/Features/src/fs.c":256 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 87)
+        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":256 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 86)
+        (lo_sum:SI (reg:SI 87)
+            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":256 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
+        (nil)))
+(insn 16 15 17 2 (set (reg:SI 13 a3)
+        (reg/v:SI 80 [ whence ])) "../User/Features/src/fs.c":256 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 12 a2)
+        (reg/v:SI 79 [ offset ])) "../User/Features/src/fs.c":256 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 11 a1)
+        (reg:SI 85)) "../User/Features/src/fs.c":256 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 10 a0)
+        (reg/f:SI 86)) "../User/Features/src/fs.c":256 -1
+     (nil))
+(call_insn 20 19 21 2 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("lfs_file_seek") [flags 0x41] <function_decl 064f3d98 lfs_file_seek>) [0 lfs_file_seek S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/fs.c":256 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_seek") [flags 0x41] <function_decl 064f3d98 lfs_file_seek>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (expr_list:SI (use (reg:SI 12 a2))
+                (expr_list:SI (use (reg:SI 13 a3))
+                    (nil))))))
+(insn 21 20 22 2 (set (reg:SI 75 [ _4 ])
+        (reg:SI 10 a0)) "../User/Features/src/fs.c":256 -1
+     (nil))
+(insn 22 21 26 2 (set (reg:SI 77 [ <retval> ])
+        (reg:SI 75 [ _4 ])) "../User/Features/src/fs.c":256 -1
+     (nil))
+(insn 26 22 27 2 (set (reg/i:SI 10 a0)
+        (reg:SI 77 [ <retval> ])) "../User/Features/src/fs.c":257 -1
+     (nil))
+(insn 27 26 0 2 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":257 -1
+     (nil))
+
+;; Function flashfs_file_truncate (flashfs_file_truncate, funcdef_no=63, decl_uid=5784, cgraph_uid=63, symbol_order=68)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 21.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v:SI 76 [ fh ])
+        (reg:SI 10 a0 [ fh ])) "../User/Features/src/fs.c":259 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 77 [ size ])
+        (reg:SI 11 a1 [ size ])) "../User/Features/src/fs.c":259 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "../User/Features/src/fs.c":260 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 79)
+        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":260 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 78)
+        (lo_sum:SI (reg:SI 79)
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":260 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 10 9 11 2 (set (reg:SI 80)
+        (const_int 88 [0x58])) "../User/Features/src/fs.c":260 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 81)
+        (mult:SI (reg/v:SI 76 [ fh ])
+            (reg:SI 80))) "../User/Features/src/fs.c":260 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 82)
+        (plus:SI (reg/f:SI 78)
+            (reg:SI 81))) "../User/Features/src/fs.c":260 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 84)
+        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":260 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:SI 83)
+        (lo_sum:SI (reg:SI 84)
+            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":260 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
+        (nil)))
+(insn 15 14 16 2 (set (reg:SI 12 a2)
+        (reg/v:SI 77 [ size ])) "../User/Features/src/fs.c":260 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 11 a1)
+        (reg:SI 82)) "../User/Features/src/fs.c":260 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 10 a0)
+        (reg/f:SI 83)) "../User/Features/src/fs.c":260 -1
+     (nil))
+(call_insn 18 17 19 2 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("lfs_file_truncate") [flags 0x41] <function_decl 064f3e10 lfs_file_truncate>) [0 lfs_file_truncate S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/fs.c":260 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_truncate") [flags 0x41] <function_decl 064f3e10 lfs_file_truncate>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (expr_list:SI (use (reg:SI 12 a2))
+                (nil)))))
+(insn 19 18 20 2 (set (reg:SI 73 [ _2 ])
+        (reg:SI 10 a0)) "../User/Features/src/fs.c":260 -1
+     (nil))
+(insn 20 19 24 2 (set (reg:SI 75 [ <retval> ])
+        (reg:SI 73 [ _2 ])) "../User/Features/src/fs.c":260 -1
+     (nil))
+(insn 24 20 25 2 (set (reg/i:SI 10 a0)
+        (reg:SI 75 [ <retval> ])) "../User/Features/src/fs.c":261 -1
+     (nil))
+(insn 25 24 0 2 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":261 -1
+     (nil))
+
+;; Function flashfs_mkdir (flashfs_mkdir, funcdef_no=64, decl_uid=5786, cgraph_uid=64, symbol_order=69)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 14.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 74 [ path ])
+        (reg:SI 10 a0 [ path ])) "../User/Features/src/fs.c":263 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":264 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 76)
+        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":264 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 75)
+        (lo_sum:SI (reg:SI 76)
+            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":264 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 11 a1)
+        (reg/v/f:SI 74 [ path ])) "../User/Features/src/fs.c":264 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 10 a0)
+        (reg/f:SI 75)) "../User/Features/src/fs.c":264 -1
+     (nil))
+(call_insn 11 10 12 2 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("lfs_mkdir") [flags 0x41] <function_decl 0651b000 lfs_mkdir>) [0 lfs_mkdir S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/fs.c":264 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_mkdir") [flags 0x41] <function_decl 0651b000 lfs_mkdir>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 12 11 13 2 (set (reg:SI 72 [ _1 ])
+        (reg:SI 10 a0)) "../User/Features/src/fs.c":264 -1
+     (nil))
+(insn 13 12 17 2 (set (reg:SI 73 [ <retval> ])
+        (reg:SI 72 [ _1 ])) "../User/Features/src/fs.c":264 -1
+     (nil))
+(insn 17 13 18 2 (set (reg/i:SI 10 a0)
+        (reg:SI 73 [ <retval> ])) "../User/Features/src/fs.c":265 -1
+     (nil))
+(insn 18 17 0 2 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":265 -1
+     (nil))
+
+;; Function flashfs_dir_open (flashfs_dir_open, funcdef_no=65, decl_uid=5788, cgraph_uid=65, symbol_order=70)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 2->6 redirected to 7
+Edge 4->6 redirected to 7
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 35.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 76 [ path ])
+        (reg:SI 10 a0 [ path ])) "../User/Features/src/fs.c":267 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":268 -1
+     (nil))
+(call_insn 7 6 8 2 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("allocate_dh") [flags 0x3] <function_decl 067e6078 allocate_dh>) [0 allocate_dh S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/fs.c":268 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("allocate_dh") [flags 0x3] <function_decl 067e6078 allocate_dh>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (nil))
+(insn 8 7 9 2 (set (reg/v:SI 75 [ <retval> ])
+        (reg:SI 10 a0)) "../User/Features/src/fs.c":268 -1
+     (nil))
+(debug_insn 9 8 10 2 (var_location:SI dh (reg/v:SI 75 [ <retval> ])) "../User/Features/src/fs.c":268 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../User/Features/src/fs.c":269 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 77)
+        (const_int -1 [0xffffffffffffffff])) "../User/Features/src/fs.c":269 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 75 [ <retval> ])
+                (reg:SI 77))
+            (label_ref:SI 37)
+            (pc))) "../User/Features/src/fs.c":269 180 {*branchsi}
+     (int_list:REG_BR_PROB 241377164 (nil))
+ -> 37)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 14 13 15 4 (debug_marker) "../User/Features/src/fs.c":272 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:SI 79)
+        (high:SI (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":272 -1
+     (nil))
+(insn 16 15 17 4 (set (reg/f:SI 78)
+        (lo_sum:SI (reg:SI 79)
+            (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":272 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])
+        (nil)))
+(insn 17 16 18 4 (set (reg:SI 80)
+        (const_int 56 [0x38])) "../User/Features/src/fs.c":272 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:SI 81)
+        (mult:SI (reg/v:SI 75 [ <retval> ])
+            (reg:SI 80))) "../User/Features/src/fs.c":272 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:SI 82)
+        (plus:SI (reg/f:SI 78)
+            (reg:SI 81))) "../User/Features/src/fs.c":272 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:SI 84)
+        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":272 -1
+     (nil))
+(insn 21 20 22 4 (set (reg/f:SI 83)
+        (lo_sum:SI (reg:SI 84)
+            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":272 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
+        (nil)))
+(insn 22 21 23 4 (set (reg:SI 12 a2)
+        (reg/v/f:SI 76 [ path ])) "../User/Features/src/fs.c":272 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:SI 11 a1)
+        (reg:SI 82)) "../User/Features/src/fs.c":272 -1
+     (nil))
+(insn 24 23 25 4 (set (reg:SI 10 a0)
+        (reg/f:SI 83)) "../User/Features/src/fs.c":272 -1
+     (nil))
+(call_insn 25 24 26 4 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("lfs_dir_open") [flags 0x41] <function_decl 0651b078 lfs_dir_open>) [0 lfs_dir_open S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/fs.c":272 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_dir_open") [flags 0x41] <function_decl 0651b078 lfs_dir_open>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (expr_list:SI (use (reg:SI 12 a2))
+                (nil)))))
+(insn 26 25 27 4 (set (reg/v:SI 73 [ code ])
+        (reg:SI 10 a0)) "../User/Features/src/fs.c":272 -1
+     (nil))
+(debug_insn 27 26 28 4 (var_location:SI code (reg/v:SI 73 [ code ])) "../User/Features/src/fs.c":272 -1
+     (nil))
+(debug_insn 28 27 29 4 (debug_marker) "../User/Features/src/fs.c":273 -1
+     (nil))
+(jump_insn 29 28 30 4 (set (pc)
+        (if_then_else (ge (reg/v:SI 73 [ code ])
+                (const_int 0 [0]))
+            (label_ref:SI 37)
+            (pc))) "../User/Features/src/fs.c":273 180 {*branchsi}
+     (int_list:REG_BR_PROB 633507684 (nil))
+ -> 37)
+(note 30 29 31 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 31 30 32 5 (debug_marker) "../User/Features/src/fs.c":274 -1
+     (nil))
+(insn 32 31 37 5 (set (reg/v:SI 75 [ <retval> ])
+        (reg/v:SI 73 [ code ])) "../User/Features/src/fs.c":274 -1
+     (nil))
+(code_label 37 32 40 7 69 (nil) [2 uses])
+(note 40 37 38 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 38 40 39 7 (set (reg/i:SI 10 a0)
+        (reg/v:SI 75 [ <retval> ])) "../User/Features/src/fs.c":278 -1
+     (nil))
+(insn 39 38 0 7 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":278 -1
+     (nil))
+
+;; Function flashfs_dir_close (flashfs_dir_close, funcdef_no=66, decl_uid=5790, cgraph_uid=66, symbol_order=71)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 31.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 76 [ dh ])
+        (reg:SI 10 a0 [ dh ])) "../User/Features/src/fs.c":280 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":281 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 78)
+        (high:SI (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":281 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 77)
+        (lo_sum:SI (reg:SI 78)
+            (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":281 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 79)
+        (const_int 56 [0x38])) "../User/Features/src/fs.c":281 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 80)
+        (mult:SI (reg/v:SI 76 [ dh ])
+            (reg:SI 79))) "../User/Features/src/fs.c":281 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 81)
+        (plus:SI (reg/f:SI 77)
+            (reg:SI 80))) "../User/Features/src/fs.c":281 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 83)
+        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":281 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:SI 82)
+        (lo_sum:SI (reg:SI 83)
+            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":281 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
+        (nil)))
+(insn 14 13 15 2 (set (reg:SI 11 a1)
+        (reg:SI 81)) "../User/Features/src/fs.c":281 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 10 a0)
+        (reg/f:SI 82)) "../User/Features/src/fs.c":281 -1
+     (nil))
+(call_insn 16 15 17 2 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("lfs_dir_close") [flags 0x41] <function_decl 0651b0f0 lfs_dir_close>) [0 lfs_dir_close S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/Features/src/fs.c":281 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_dir_close") [flags 0x41] <function_decl 0651b0f0 lfs_dir_close>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 17 16 18 2 (set (reg/v:SI 73 [ code ])
+        (reg:SI 10 a0)) "../User/Features/src/fs.c":281 -1
+     (nil))
+(debug_insn 18 17 19 2 (var_location:SI code (reg/v:SI 73 [ code ])) "../User/Features/src/fs.c":281 -1
+     (nil))
+(debug_insn 19 18 20 2 (debug_marker) "../User/Features/src/fs.c":282 -1
+     (nil))
+(debug_insn 20 19 21 2 (var_location:SI fh (reg/v:SI 76 [ dh ])) "../User/Features/src/fs.c":282 -1
+     (nil))
+(debug_insn 21 20 22 2 (debug_marker) "../User/Features/src/fs.c":202 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 85)
+        (high:SI (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":202 -1
+     (nil))
+(insn 23 22 24 2 (set (reg/f:SI 84)
+        (lo_sum:SI (reg:SI 85)
+            (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":202 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])
+        (nil)))
+(insn 24 23 25 2 (set (reg:SI 87)
+        (const_int 56 [0x38])) "../User/Features/src/fs.c":202 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 88)
+        (mult:SI (reg/v:SI 76 [ dh ])
+            (reg:SI 87))) "../User/Features/src/fs.c":202 -1
+     (nil))
+(insn 26 25 27 2 (set (reg/f:SI 86)
+        (plus:SI (reg/f:SI 84)
+            (reg:SI 88))) "../User/Features/src/fs.c":202 -1
+     (nil))
+(insn 27 26 28 2 (set (mem:SI (plus:SI (reg/f:SI 86)
+                (const_int 52 [0x34])) [6 dir_handles[dh_2(D)].taken+0 S4 A32])
+        (const_int 0 [0])) "../User/Features/src/fs.c":202 -1
+     (nil))
+(debug_insn 28 27 29 2 (var_location:SI fh (clobber (const_int 0 [0]))) "../User/Features/src/fs.c":282 -1
+     (nil))
+(debug_insn 29 28 30 2 (debug_marker) "../User/Features/src/fs.c":283 -1
+     (nil))
+(insn 30 29 34 2 (set (reg:SI 75 [ <retval> ])
+        (reg/v:SI 73 [ code ])) "../User/Features/src/fs.c":283 -1
+     (nil))
+(insn 34 30 35 2 (set (reg/i:SI 10 a0)
+        (reg:SI 75 [ <retval> ])) "../User/Features/src/fs.c":284 -1
+     (nil))
+(insn 35 34 0 2 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":284 -1
+     (nil))
+
+;; Function flashfs_dir_read (flashfs_dir_read, funcdef_no=67, decl_uid=5792, cgraph_uid=67, symbol_order=72)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -2068,551 +2700,78 @@ try_optimize_cfg iteration 2
 ;;
 ;; Full RTL generated for this function:
 ;;
-(note 1 0 6 NOTE_INSN_DELETED)
-(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(insn 2 6 3 2 (set (reg/v:SI 77 [ fh ])
-        (reg:SI 10 a0 [ fh ])) "../User/Features/src/fs.c":249 -1
-     (nil))
-(insn 3 2 4 2 (set (reg/v:SI 78 [ offset ])
-        (reg:SI 11 a1 [ offset ])) "../User/Features/src/fs.c":249 -1
-     (nil))
-(insn 4 3 5 2 (set (reg/v:SI 79 [ whence ])
-        (reg:SI 12 a2 [ whence ])) "../User/Features/src/fs.c":249 -1
-     (nil))
-(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 8 5 9 2 (debug_marker) "../User/Features/src/fs.c":250 -1
-     (nil))
-(insn 9 8 10 2 (set (reg:SI 81)
-        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":250 -1
-     (nil))
-(insn 10 9 11 2 (set (reg/f:SI 80)
-        (lo_sum:SI (reg:SI 81)
-            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":250 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
-        (nil)))
-(insn 11 10 12 2 (set (reg:SI 82)
-        (const_int 88 [0x58])) "../User/Features/src/fs.c":250 -1
-     (nil))
-(insn 12 11 13 2 (set (reg:SI 83)
-        (mult:SI (reg/v:SI 77 [ fh ])
-            (reg:SI 82))) "../User/Features/src/fs.c":250 -1
-     (nil))
-(insn 13 12 14 2 (set (reg:SI 84)
-        (plus:SI (reg/f:SI 80)
-            (reg:SI 83))) "../User/Features/src/fs.c":250 -1
-     (nil))
-(insn 14 13 15 2 (set (reg:SI 86)
-        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":250 -1
-     (nil))
-(insn 15 14 16 2 (set (reg/f:SI 85)
-        (lo_sum:SI (reg:SI 86)
-            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":250 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
-        (nil)))
-(insn 16 15 17 2 (set (reg:SI 13 a3)
-        (reg/v:SI 79 [ whence ])) "../User/Features/src/fs.c":250 -1
-     (nil))
-(insn 17 16 18 2 (set (reg:SI 12 a2)
-        (reg/v:SI 78 [ offset ])) "../User/Features/src/fs.c":250 -1
-     (nil))
-(insn 18 17 19 2 (set (reg:SI 11 a1)
-        (reg:SI 84)) "../User/Features/src/fs.c":250 -1
-     (nil))
-(insn 19 18 20 2 (set (reg:SI 10 a0)
-        (reg/f:SI 85)) "../User/Features/src/fs.c":250 -1
-     (nil))
-(call_insn 20 19 21 2 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_file_seek") [flags 0x41] <function_decl 06463d98 lfs_file_seek>) [0 lfs_file_seek S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":250 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_seek") [flags 0x41] <function_decl 06463d98 lfs_file_seek>)
-        (nil))
-    (expr_list:SI (use (reg:SI 10 a0))
-        (expr_list:SI (use (reg:SI 11 a1))
-            (expr_list:SI (use (reg:SI 12 a2))
-                (expr_list:SI (use (reg:SI 13 a3))
-                    (nil))))))
-(insn 21 20 25 2 (set (reg:SI 76 [ <retval> ])
-        (reg:SI 10 a0)) "../User/Features/src/fs.c":250 -1
-     (nil))
-(insn 25 21 26 2 (set (reg/i:SI 10 a0)
-        (reg:SI 76 [ <retval> ])) "../User/Features/src/fs.c":251 -1
-     (nil))
-(insn 26 25 0 2 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":251 -1
-     (nil))
-
-;; Function flashfs_file_truncate (flashfs_file_truncate, funcdef_no=63, decl_uid=5784, cgraph_uid=63, symbol_order=68)
-
-
-;; Generating RTL for gimple basic block 2
-
-
-try_optimize_cfg iteration 1
-
-Merging block 3 into block 2...
-Merged blocks 2 and 3.
-Merged 2 and 3 without moving.
-Merging block 4 into block 2...
-Merged blocks 2 and 4.
-Merged 2 and 4 without moving.
-
-
-try_optimize_cfg iteration 2
-
-
-
-;;
-;; Full RTL generated for this function:
-;;
-(note 1 0 5 NOTE_INSN_DELETED)
-(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(insn 2 5 3 2 (set (reg/v:SI 74 [ fh ])
-        (reg:SI 10 a0 [ fh ])) "../User/Features/src/fs.c":253 -1
-     (nil))
-(insn 3 2 4 2 (set (reg/v:SI 75 [ size ])
-        (reg:SI 11 a1 [ size ])) "../User/Features/src/fs.c":253 -1
-     (nil))
-(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 7 4 8 2 (debug_marker) "../User/Features/src/fs.c":254 -1
-     (nil))
-(insn 8 7 9 2 (set (reg:SI 77)
-        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":254 -1
-     (nil))
-(insn 9 8 10 2 (set (reg/f:SI 76)
-        (lo_sum:SI (reg:SI 77)
-            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/Features/src/fs.c":254 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
-        (nil)))
-(insn 10 9 11 2 (set (reg:SI 78)
-        (const_int 88 [0x58])) "../User/Features/src/fs.c":254 -1
-     (nil))
-(insn 11 10 12 2 (set (reg:SI 79)
-        (mult:SI (reg/v:SI 74 [ fh ])
-            (reg:SI 78))) "../User/Features/src/fs.c":254 -1
-     (nil))
-(insn 12 11 13 2 (set (reg:SI 80)
-        (plus:SI (reg/f:SI 76)
-            (reg:SI 79))) "../User/Features/src/fs.c":254 -1
-     (nil))
-(insn 13 12 14 2 (set (reg:SI 82)
-        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":254 -1
-     (nil))
-(insn 14 13 15 2 (set (reg/f:SI 81)
-        (lo_sum:SI (reg:SI 82)
-            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":254 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
-        (nil)))
-(insn 15 14 16 2 (set (reg:SI 12 a2)
-        (reg/v:SI 75 [ size ])) "../User/Features/src/fs.c":254 -1
-     (nil))
-(insn 16 15 17 2 (set (reg:SI 11 a1)
-        (reg:SI 80)) "../User/Features/src/fs.c":254 -1
-     (nil))
-(insn 17 16 18 2 (set (reg:SI 10 a0)
-        (reg/f:SI 81)) "../User/Features/src/fs.c":254 -1
-     (nil))
-(call_insn 18 17 0 2 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_file_truncate") [flags 0x41] <function_decl 06463e10 lfs_file_truncate>) [0 lfs_file_truncate S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":254 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_truncate") [flags 0x41] <function_decl 06463e10 lfs_file_truncate>)
-        (nil))
-    (expr_list:SI (use (reg:SI 10 a0))
-        (expr_list:SI (use (reg:SI 11 a1))
-            (expr_list:SI (use (reg:SI 12 a2))
-                (nil)))))
-
-;; Function flashfs_mkdir (flashfs_mkdir, funcdef_no=64, decl_uid=5786, cgraph_uid=64, symbol_order=69)
-
-
-;; Generating RTL for gimple basic block 2
-
-
-try_optimize_cfg iteration 1
-
-Merging block 3 into block 2...
-Merged blocks 2 and 3.
-Merged 2 and 3 without moving.
-Merging block 4 into block 2...
-Merged blocks 2 and 4.
-Merged 2 and 4 without moving.
-
-
-try_optimize_cfg iteration 2
-
-
-
-;;
-;; Full RTL generated for this function:
-;;
 (note 1 0 4 NOTE_INSN_DELETED)
 (note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(insn 2 4 3 2 (set (reg/v/f:SI 72 [ path ])
-        (reg:SI 10 a0 [ path ])) "../User/Features/src/fs.c":257 -1
+(insn 2 4 3 2 (set (reg/v:SI 76 [ dh ])
+        (reg:SI 10 a0 [ dh ])) "../User/Features/src/fs.c":286 -1
      (nil))
 (note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":258 -1
+(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":287 -1
      (nil))
-(insn 7 6 8 2 (set (reg:SI 74)
-        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":258 -1
+(insn 7 6 8 2 (set (reg:SI 78)
+        (high:SI (symbol_ref:SI ("*.LANCHOR4") [flags 0x182]))) "../User/Features/src/fs.c":287 -1
      (nil))
-(insn 8 7 9 2 (set (reg/f:SI 73)
-        (lo_sum:SI (reg:SI 74)
-            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":258 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
-        (nil)))
-(insn 9 8 10 2 (set (reg:SI 11 a1)
-        (reg/v/f:SI 72 [ path ])) "../User/Features/src/fs.c":258 -1
-     (nil))
-(insn 10 9 11 2 (set (reg:SI 10 a0)
-        (reg/f:SI 73)) "../User/Features/src/fs.c":258 -1
-     (nil))
-(call_insn 11 10 0 2 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_mkdir") [flags 0x41] <function_decl 06488000 lfs_mkdir>) [0 lfs_mkdir S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":258 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_mkdir") [flags 0x41] <function_decl 06488000 lfs_mkdir>)
-        (nil))
-    (expr_list:SI (use (reg:SI 10 a0))
-        (expr_list:SI (use (reg:SI 11 a1))
-            (nil))))
-
-;; Function flashfs_dir_open (flashfs_dir_open, funcdef_no=65, decl_uid=5788, cgraph_uid=65, symbol_order=70)
-
-
-;; Generating RTL for gimple basic block 2
-
-;; Generating RTL for gimple basic block 3
-
-;; Generating RTL for gimple basic block 4
-Edge 2->4 redirected to 7
-
-
-try_optimize_cfg iteration 1
-
-Merging block 3 into block 2...
-Merged blocks 2 and 3.
-Merged 2 and 3 without moving.
-Redirecting jump 37 from 6 to 7.
-Merging block 6 into block 5...
-Merged blocks 5 and 6.
-Merged 5 and 6 without moving.
-Removing jump 31.
-
-
-try_optimize_cfg iteration 2
-
-
-
-;;
-;; Full RTL generated for this function:
-;;
-(note 1 0 5 NOTE_INSN_DELETED)
-(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(insn 2 5 3 2 (set (reg/v/f:SI 76 [ path ])
-        (reg:SI 10 a0 [ path ])) "../User/Features/src/fs.c":261 -1
-     (nil))
-(note 3 2 7 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 7 3 8 2 (debug_marker) "../User/Features/src/fs.c":262 -1
-     (nil))
-(call_insn 8 7 9 2 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("allocate_dh") [flags 0x3] <function_decl 06757078 allocate_dh>) [0 allocate_dh S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":262 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("allocate_dh") [flags 0x3] <function_decl 06757078 allocate_dh>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 9 8 10 2 (set (reg/v:SI 73 [ dh ])
-        (reg:SI 10 a0)) "../User/Features/src/fs.c":262 -1
-     (nil))
-(debug_insn 10 9 11 2 (var_location:SI dh (reg/v:SI 73 [ dh ])) "../User/Features/src/fs.c":262 -1
-     (nil))
-(debug_insn 11 10 12 2 (debug_marker) "../User/Features/src/fs.c":263 -1
-     (nil))
-(insn 12 11 13 2 (set (reg:SI 77)
-        (const_int -1 [0xffffffffffffffff])) "../User/Features/src/fs.c":263 -1
-     (nil))
-(jump_insn 13 12 14 2 (set (pc)
-        (if_then_else (eq (reg/v:SI 73 [ dh ])
-                (reg:SI 77))
-            (label_ref:SI 40)
-            (pc))) "../User/Features/src/fs.c":263 180 {*branchsi}
-     (int_list:REG_BR_PROB 11703788 (nil))
- -> 40)
-(note 14 13 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 15 14 16 4 (debug_marker) "../User/Features/src/fs.c":266 -1
-     (nil))
-(insn 16 15 17 4 (set (reg:SI 79)
-        (high:SI (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":266 -1
-     (nil))
-(insn 17 16 18 4 (set (reg/f:SI 78)
-        (lo_sum:SI (reg:SI 79)
-            (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":266 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])
-        (nil)))
-(insn 18 17 19 4 (set (reg:SI 80)
-        (const_int 56 [0x38])) "../User/Features/src/fs.c":266 -1
-     (nil))
-(insn 19 18 20 4 (set (reg:SI 81)
-        (mult:SI (reg/v:SI 73 [ dh ])
-            (reg:SI 80))) "../User/Features/src/fs.c":266 -1
-     (nil))
-(insn 20 19 21 4 (set (reg:SI 82)
-        (plus:SI (reg/f:SI 78)
-            (reg:SI 81))) "../User/Features/src/fs.c":266 -1
-     (nil))
-(insn 21 20 22 4 (set (reg:SI 84)
-        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":266 -1
-     (nil))
-(insn 22 21 23 4 (set (reg/f:SI 83)
-        (lo_sum:SI (reg:SI 84)
-            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":266 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
-        (nil)))
-(insn 23 22 24 4 (set (reg:SI 12 a2)
-        (reg/v/f:SI 76 [ path ])) "../User/Features/src/fs.c":266 -1
-     (nil))
-(insn 24 23 25 4 (set (reg:SI 11 a1)
-        (reg:SI 82)) "../User/Features/src/fs.c":266 -1
-     (nil))
-(insn 25 24 26 4 (set (reg:SI 10 a0)
-        (reg/f:SI 83)) "../User/Features/src/fs.c":266 -1
-     (nil))
-(call_insn 26 25 27 4 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_dir_open") [flags 0x41] <function_decl 06488078 lfs_dir_open>) [0 lfs_dir_open S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":266 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_dir_open") [flags 0x41] <function_decl 06488078 lfs_dir_open>)
-        (nil))
-    (expr_list:SI (use (reg:SI 10 a0))
-        (expr_list:SI (use (reg:SI 11 a1))
-            (expr_list:SI (use (reg:SI 12 a2))
-                (nil)))))
-(debug_insn 27 26 28 4 (debug_marker) "../User/Features/src/fs.c":267 -1
-     (nil))
-(insn 28 27 37 4 (set (reg:SI 75 [ <retval> ])
-        (reg/v:SI 73 [ dh ])) "../User/Features/src/fs.c":267 -1
-     (nil))
-(jump_insn 37 28 38 4 (set (pc)
-        (label_ref:SI 33)) "../User/Features/src/fs.c":267 250 {jump}
-     (nil)
- -> 33)
-(barrier 38 37 40)
-(code_label 40 38 39 5 71 (nil) [1 uses])
-(note 39 40 4 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
-(insn 4 39 33 5 (set (reg:SI 75 [ <retval> ])
-        (const_int -1 [0xffffffffffffffff])) "../User/Features/src/fs.c":264 -1
-     (nil))
-(code_label 33 4 36 7 69 (nil) [1 uses])
-(note 36 33 34 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
-(insn 34 36 35 7 (set (reg/i:SI 10 a0)
-        (reg:SI 75 [ <retval> ])) "../User/Features/src/fs.c":268 -1
-     (nil))
-(insn 35 34 0 7 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":268 -1
-     (nil))
-
-;; Function flashfs_dir_close (flashfs_dir_close, funcdef_no=66, decl_uid=5790, cgraph_uid=66, symbol_order=71)
-
-
-;; Generating RTL for gimple basic block 2
-
-
-try_optimize_cfg iteration 1
-
-Merging block 3 into block 2...
-Merged blocks 2 and 3.
-Merged 2 and 3 without moving.
-Merging block 4 into block 2...
-Merged blocks 2 and 4.
-Merged 2 and 4 without moving.
-
-
-try_optimize_cfg iteration 2
-
-
-
-;;
-;; Full RTL generated for this function:
-;;
-(note 1 0 4 NOTE_INSN_DELETED)
-(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(insn 2 4 3 2 (set (reg/v:SI 74 [ dh ])
-        (reg:SI 10 a0 [ dh ])) "../User/Features/src/fs.c":270 -1
-     (nil))
-(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":271 -1
-     (nil))
-(insn 7 6 8 2 (set (reg:SI 76)
-        (high:SI (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":271 -1
-     (nil))
-(insn 8 7 9 2 (set (reg/f:SI 75)
-        (lo_sum:SI (reg:SI 76)
-            (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":271 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])
-        (nil)))
-(insn 9 8 10 2 (set (reg:SI 77)
-        (const_int 56 [0x38])) "../User/Features/src/fs.c":271 -1
-     (nil))
-(insn 10 9 11 2 (set (reg:SI 78)
-        (mult:SI (reg/v:SI 74 [ dh ])
-            (reg:SI 77))) "../User/Features/src/fs.c":271 -1
-     (nil))
-(insn 11 10 12 2 (set (reg:SI 79)
-        (plus:SI (reg/f:SI 75)
-            (reg:SI 78))) "../User/Features/src/fs.c":271 -1
-     (nil))
-(insn 12 11 13 2 (set (reg:SI 81)
-        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":271 -1
-     (nil))
-(insn 13 12 14 2 (set (reg/f:SI 80)
-        (lo_sum:SI (reg:SI 81)
-            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":271 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
-        (nil)))
-(insn 14 13 15 2 (set (reg:SI 11 a1)
-        (reg:SI 79)) "../User/Features/src/fs.c":271 -1
-     (nil))
-(insn 15 14 16 2 (set (reg:SI 10 a0)
-        (reg/f:SI 80)) "../User/Features/src/fs.c":271 -1
-     (nil))
-(call_insn 16 15 17 2 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_dir_close") [flags 0x41] <function_decl 064880f0 lfs_dir_close>) [0 lfs_dir_close S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":271 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_dir_close") [flags 0x41] <function_decl 064880f0 lfs_dir_close>)
-        (nil))
-    (expr_list:SI (use (reg:SI 10 a0))
-        (expr_list:SI (use (reg:SI 11 a1))
-            (nil))))
-(debug_insn 17 16 18 2 (debug_marker) "../User/Features/src/fs.c":272 -1
-     (nil))
-(debug_insn 18 17 19 2 (var_location:SI fh (reg/v:SI 74 [ dh ])) "../User/Features/src/fs.c":272 -1
-     (nil))
-(debug_insn 19 18 20 2 (debug_marker) "../User/Features/src/fs.c":201 -1
-     (nil))
-(insn 20 19 21 2 (set (reg:SI 83)
-        (high:SI (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":201 -1
-     (nil))
-(insn 21 20 22 2 (set (reg/f:SI 82)
-        (lo_sum:SI (reg:SI 83)
-            (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":201 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])
-        (nil)))
-(insn 22 21 23 2 (set (reg:SI 85)
-        (const_int 56 [0x38])) "../User/Features/src/fs.c":201 -1
-     (nil))
-(insn 23 22 24 2 (set (reg:SI 86)
-        (mult:SI (reg/v:SI 74 [ dh ])
-            (reg:SI 85))) "../User/Features/src/fs.c":201 -1
-     (nil))
-(insn 24 23 25 2 (set (reg/f:SI 84)
-        (plus:SI (reg/f:SI 82)
-            (reg:SI 86))) "../User/Features/src/fs.c":201 -1
-     (nil))
-(insn 25 24 26 2 (set (mem:SI (plus:SI (reg/f:SI 84)
-                (const_int 52 [0x34])) [6 dir_handles[dh_2(D)].taken+0 S4 A32])
-        (const_int 0 [0])) "../User/Features/src/fs.c":201 -1
-     (nil))
-(debug_insn 26 25 0 2 (var_location:SI fh (clobber (const_int 0 [0]))) "../User/Features/src/fs.c":272 -1
-     (nil))
-
-;; Function flashfs_dir_read (flashfs_dir_read, funcdef_no=67, decl_uid=5792, cgraph_uid=67, symbol_order=72)
-
-
-;; Generating RTL for gimple basic block 2
-
-
-try_optimize_cfg iteration 1
-
-Merging block 3 into block 2...
-Merged blocks 2 and 3.
-Merged 2 and 3 without moving.
-Merging block 4 into block 2...
-Merged blocks 2 and 4.
-Merged 2 and 4 without moving.
-
-
-try_optimize_cfg iteration 2
-
-
-
-;;
-;; Full RTL generated for this function:
-;;
-(note 1 0 4 NOTE_INSN_DELETED)
-(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(insn 2 4 3 2 (set (reg/v:SI 74 [ dh ])
-        (reg:SI 10 a0 [ dh ])) "../User/Features/src/fs.c":275 -1
-     (nil))
-(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 6 3 7 2 (debug_marker) "../User/Features/src/fs.c":276 -1
-     (nil))
-(insn 7 6 8 2 (set (reg:SI 76)
-        (high:SI (symbol_ref:SI ("*.LANCHOR4") [flags 0x182]))) "../User/Features/src/fs.c":276 -1
-     (nil))
-(insn 8 7 9 2 (set (reg/f:SI 75)
-        (lo_sum:SI (reg:SI 76)
-            (symbol_ref:SI ("*.LANCHOR4") [flags 0x182]))) "../User/Features/src/fs.c":276 -1
+(insn 8 7 9 2 (set (reg/f:SI 77)
+        (lo_sum:SI (reg:SI 78)
+            (symbol_ref:SI ("*.LANCHOR4") [flags 0x182]))) "../User/Features/src/fs.c":287 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR4") [flags 0x182])
         (nil)))
-(insn 9 8 10 2 (set (reg:SI 78)
-        (high:SI (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":276 -1
+(insn 9 8 10 2 (set (reg:SI 80)
+        (high:SI (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":287 -1
      (nil))
-(insn 10 9 11 2 (set (reg/f:SI 77)
-        (lo_sum:SI (reg:SI 78)
-            (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":276 -1
+(insn 10 9 11 2 (set (reg/f:SI 79)
+        (lo_sum:SI (reg:SI 80)
+            (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]))) "../User/Features/src/fs.c":287 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])
         (nil)))
-(insn 11 10 12 2 (set (reg:SI 79)
-        (const_int 56 [0x38])) "../User/Features/src/fs.c":276 -1
+(insn 11 10 12 2 (set (reg:SI 81)
+        (const_int 56 [0x38])) "../User/Features/src/fs.c":287 -1
      (nil))
-(insn 12 11 13 2 (set (reg:SI 80)
-        (mult:SI (reg/v:SI 74 [ dh ])
-            (reg:SI 79))) "../User/Features/src/fs.c":276 -1
+(insn 12 11 13 2 (set (reg:SI 82)
+        (mult:SI (reg/v:SI 76 [ dh ])
+            (reg:SI 81))) "../User/Features/src/fs.c":287 -1
      (nil))
-(insn 13 12 14 2 (set (reg:SI 81)
-        (plus:SI (reg/f:SI 77)
-            (reg:SI 80))) "../User/Features/src/fs.c":276 -1
+(insn 13 12 14 2 (set (reg:SI 83)
+        (plus:SI (reg/f:SI 79)
+            (reg:SI 82))) "../User/Features/src/fs.c":287 -1
      (nil))
-(insn 14 13 15 2 (set (reg:SI 83)
-        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":276 -1
+(insn 14 13 15 2 (set (reg:SI 85)
+        (high:SI (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":287 -1
      (nil))
-(insn 15 14 16 2 (set (reg/f:SI 82)
-        (lo_sum:SI (reg:SI 83)
-            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":276 -1
+(insn 15 14 16 2 (set (reg/f:SI 84)
+        (lo_sum:SI (reg:SI 85)
+            (symbol_ref:SI ("*.LANCHOR3") [flags 0x182]))) "../User/Features/src/fs.c":287 -1
      (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR3") [flags 0x182])
         (nil)))
 (insn 16 15 17 2 (set (reg:SI 12 a2)
-        (reg/f:SI 75)) "../User/Features/src/fs.c":276 -1
+        (reg/f:SI 77)) "../User/Features/src/fs.c":287 -1
      (nil))
 (insn 17 16 18 2 (set (reg:SI 11 a1)
-        (reg:SI 81)) "../User/Features/src/fs.c":276 -1
+        (reg:SI 83)) "../User/Features/src/fs.c":287 -1
      (nil))
 (insn 18 17 19 2 (set (reg:SI 10 a0)
-        (reg/f:SI 82)) "../User/Features/src/fs.c":276 -1
+        (reg/f:SI 84)) "../User/Features/src/fs.c":287 -1
      (nil))
-(call_insn 19 18 0 2 (parallel [
+(call_insn 19 18 20 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_dir_read") [flags 0x41] <function_decl 06488168 lfs_dir_read>) [0 lfs_dir_read S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_dir_read") [flags 0x41] <function_decl 0651b168 lfs_dir_read>) [0 lfs_dir_read S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/Features/src/fs.c":276 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_dir_read") [flags 0x41] <function_decl 06488168 lfs_dir_read>)
+        ]) "../User/Features/src/fs.c":287 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_dir_read") [flags 0x41] <function_decl 0651b168 lfs_dir_read>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (expr_list:SI (use (reg:SI 12 a2))
                 (nil)))))
+(insn 20 19 21 2 (set (reg:SI 73 [ _2 ])
+        (reg:SI 10 a0)) "../User/Features/src/fs.c":287 -1
+     (nil))
+(insn 21 20 25 2 (set (reg:SI 75 [ <retval> ])
+        (reg:SI 73 [ _2 ])) "../User/Features/src/fs.c":287 -1
+     (nil))
+(insn 25 21 26 2 (set (reg/i:SI 10 a0)
+        (reg:SI 75 [ <retval> ])) "../User/Features/src/fs.c":288 -1
+     (nil))
+(insn 26 25 0 2 (use (reg/i:SI 10 a0)) "../User/Features/src/fs.c":288 -1
+     (nil))
