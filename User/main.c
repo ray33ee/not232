@@ -127,13 +127,13 @@ int main(void)
     
     while(1)
     {
-
-        if (usbSerial_available()) {
+        if (comms_is_i2c_mode()) {
             get_packet();
-
+            comms_flush_i2c();
+        } else if (usbSerial_available()) {
+            get_packet();
+        } else {
+            usbSerial_flush();
         }
-
-
-        usbSerial_flush();
     }
 }

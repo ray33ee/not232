@@ -10,6 +10,8 @@ void get_packet() {
     
     uint8_t code = comms_recv_u8();
 
+    printf("Get packet! - %i\r\n", code);
+
     switch (code) {
         case RECV_PING:
             /*

@@ -99,6 +99,16 @@ void i2c_device_write(uint8_t *buffer, uint32_t size) {
     while (!I2C_CheckEvent(I2C1, I2C_EVENT_SLAVE_TRANSMITTER_ADDRESS_MATCHED)) {
     }
 
+    /* CRITICAL: Clear ADDR flag - slave stretches SCL until this is done */
+    (void)I2C1->STAR1;
+    (void)I2C1->STAR2;
+
+    /* Pre-load first byte - host will clock immediately after ADDR clear */
+    if (size > 0) {
+        I2C_SendData(I2C1, buffer[0]);
+        i = 1;
+    }
+
     while (1) {
         if ((I2C_GetFlagStatus(I2C1, I2C_FLAG_TXE) != RESET) && (i < size)) {
             I2C_SendData(I2C1, buffer[i]);
