@@ -103,7 +103,7 @@ int main(void)
 
 
     // Initialise the USB 
-    comms_init(COMMS_MOVE_I2C, 0x04);
+    comms_init(COMMS_MOVE_USB, 0x04);
 
     // Set all GPIOA pins (and the 4 GPIOB) to floating inputs
     gpio_init_default();
