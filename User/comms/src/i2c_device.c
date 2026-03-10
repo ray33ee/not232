@@ -1,6 +1,10 @@
 #include "comms/inc/i2c_device.h"
 
+/*
 
+This code doesn't really work properly and needs rewriting
+
+*/
 
 /*void i2c_device_init(uint8_t address) {
 

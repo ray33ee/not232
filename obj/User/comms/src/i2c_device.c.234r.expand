@@ -73,11 +73,11 @@ try_optimize_cfg iteration 2
         (const_int 9 [0x9])) "../User/comms/src/i2c_device.c":39 -1
      (nil))
 (call_insn 18 17 19 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 065fa7f8 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 065187f8 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":39 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 065fa7f8 RCC_APB2PeriphClockCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 065187f8 RCC_APB2PeriphClockCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -91,11 +91,11 @@ try_optimize_cfg iteration 2
         (const_int 2097152 [0x200000])) "../User/comms/src/i2c_device.c":40 -1
      (nil))
 (call_insn 22 21 23 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 065fa870 RCC_APB1PeriphClockCmd>) [0 RCC_APB1PeriphClockCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 06518870 RCC_APB1PeriphClockCmd>) [0 RCC_APB1PeriphClockCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":40 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 065fa870 RCC_APB1PeriphClockCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 06518870 RCC_APB1PeriphClockCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -109,11 +109,11 @@ try_optimize_cfg iteration 2
         (const_int 2 [0x2])) "../User/comms/src/i2c_device.c":42 -1
      (nil))
 (call_insn 26 25 27 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x41] <function_decl 0664c348 GPIO_PinRemapConfig>) [0 GPIO_PinRemapConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x41] <function_decl 0656c348 GPIO_PinRemapConfig>) [0 GPIO_PinRemapConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":42 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x41] <function_decl 0664c348 GPIO_PinRemapConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x41] <function_decl 0656c348 GPIO_PinRemapConfig>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -163,11 +163,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
         (nil)))
 (call_insn 41 40 42 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 06640d20 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 06560d20 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":47 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 06640d20 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 06560d20 GPIO_Init>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -239,11 +239,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
         (nil)))
 (call_insn 63 62 64 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("I2C_Init") [flags 0x41] <function_decl 0664c5a0 I2C_Init>) [0 I2C_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("I2C_Init") [flags 0x41] <function_decl 0656c5a0 I2C_Init>) [0 I2C_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":55 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_Init") [flags 0x41] <function_decl 0664c5a0 I2C_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_Init") [flags 0x41] <function_decl 0656c5a0 I2C_Init>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -262,11 +262,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
         (nil)))
 (call_insn 68 67 69 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("I2C_Cmd") [flags 0x41] <function_decl 0664c690 I2C_Cmd>) [0 I2C_Cmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("I2C_Cmd") [flags 0x41] <function_decl 0656c690 I2C_Cmd>) [0 I2C_Cmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":57 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_Cmd") [flags 0x41] <function_decl 0664c690 I2C_Cmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_Cmd") [flags 0x41] <function_decl 0656c690 I2C_Cmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -285,11 +285,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
         (nil)))
 (call_insn 73 72 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("I2C_AcknowledgeConfig") [flags 0x41] <function_decl 0664c8e8 I2C_AcknowledgeConfig>) [0 I2C_AcknowledgeConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("I2C_AcknowledgeConfig") [flags 0x41] <function_decl 0656c8e8 I2C_AcknowledgeConfig>) [0 I2C_AcknowledgeConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":58 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_AcknowledgeConfig") [flags 0x41] <function_decl 0664c8e8 I2C_AcknowledgeConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_AcknowledgeConfig") [flags 0x41] <function_decl 0656c8e8 I2C_AcknowledgeConfig>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -379,11 +379,11 @@ try_optimize_cfg iteration 2
         (nil)))
 (call_insn 19 18 20 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 065ef2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0650d2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":68 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 065ef2d0 I2C_GetFlagStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0650d2d0 I2C_GetFlagStatus>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -462,11 +462,11 @@ try_optimize_cfg iteration 2
         (nil)))
 (call_insn 44 43 45 6 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 065ef2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0650d2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":76 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 065ef2d0 I2C_GetFlagStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0650d2d0 I2C_GetFlagStatus>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -494,11 +494,11 @@ try_optimize_cfg iteration 2
         (nil)))
 (call_insn 51 50 52 7 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("I2C_ReceiveData") [flags 0x41] <function_decl 0664cbb8 I2C_ReceiveData>) [0 I2C_ReceiveData S4 A32])
+                (call (mem:SI (symbol_ref:SI ("I2C_ReceiveData") [flags 0x41] <function_decl 0656cbb8 I2C_ReceiveData>) [0 I2C_ReceiveData S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":77 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_ReceiveData") [flags 0x41] <function_decl 0664cbb8 I2C_ReceiveData>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_ReceiveData") [flags 0x41] <function_decl 0656cbb8 I2C_ReceiveData>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -562,11 +562,11 @@ try_optimize_cfg iteration 2
         (nil)))
 (call_insn 71 70 72 9 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 065ef2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0650d2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":83 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 065ef2d0 I2C_GetFlagStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0650d2d0 I2C_GetFlagStatus>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -727,11 +727,11 @@ try_optimize_cfg iteration 2
         (nil)))
 (call_insn 18 17 19 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("I2C_CheckEvent") [flags 0x41] <function_decl 065ef1e0 I2C_CheckEvent>) [0 I2C_CheckEvent S4 A32])
+                (call (mem:SI (symbol_ref:SI ("I2C_CheckEvent") [flags 0x41] <function_decl 0650d1e0 I2C_CheckEvent>) [0 I2C_CheckEvent S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":99 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_CheckEvent") [flags 0x41] <function_decl 065ef1e0 I2C_CheckEvent>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_CheckEvent") [flags 0x41] <function_decl 0650d1e0 I2C_CheckEvent>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -800,11 +800,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
         (nil)))
 (call_insn 41 40 42 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("I2C_SendData") [flags 0x41] <function_decl 0664cb40 I2C_SendData>) [0 I2C_SendData S4 A32])
+            (call (mem:SI (symbol_ref:SI ("I2C_SendData") [flags 0x41] <function_decl 0656cb40 I2C_SendData>) [0 I2C_SendData S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":108 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_SendData") [flags 0x41] <function_decl 0664cb40 I2C_SendData>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_SendData") [flags 0x41] <function_decl 0656cb40 I2C_SendData>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -842,11 +842,11 @@ try_optimize_cfg iteration 2
         (nil)))
 (call_insn 52 51 53 6 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 065ef2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0650d2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":113 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 065ef2d0 I2C_GetFlagStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0650d2d0 I2C_GetFlagStatus>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -891,11 +891,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
         (nil)))
 (call_insn 64 63 65 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("I2C_SendData") [flags 0x41] <function_decl 0664cb40 I2C_SendData>) [0 I2C_SendData S4 A32])
+            (call (mem:SI (symbol_ref:SI ("I2C_SendData") [flags 0x41] <function_decl 0656cb40 I2C_SendData>) [0 I2C_SendData S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":114 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_SendData") [flags 0x41] <function_decl 0664cb40 I2C_SendData>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_SendData") [flags 0x41] <function_decl 0656cb40 I2C_SendData>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -932,11 +932,11 @@ try_optimize_cfg iteration 2
         (nil)))
 (call_insn 76 75 77 9 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 065ef2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0650d2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":119 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 065ef2d0 I2C_GetFlagStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0650d2d0 I2C_GetFlagStatus>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -971,11 +971,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
         (nil)))
 (call_insn 85 84 86 10 (parallel [
-            (call (mem:SI (symbol_ref:SI ("I2C_ClearFlag") [flags 0x41] <function_decl 065ef348 I2C_ClearFlag>) [0 I2C_ClearFlag S4 A32])
+            (call (mem:SI (symbol_ref:SI ("I2C_ClearFlag") [flags 0x41] <function_decl 0650d348 I2C_ClearFlag>) [0 I2C_ClearFlag S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":120 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_ClearFlag") [flags 0x41] <function_decl 065ef348 I2C_ClearFlag>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_ClearFlag") [flags 0x41] <function_decl 0650d348 I2C_ClearFlag>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1009,11 +1009,11 @@ try_optimize_cfg iteration 2
         (nil)))
 (call_insn 96 95 97 11 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 065ef2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0650d2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":125 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 065ef2d0 I2C_GetFlagStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0650d2d0 I2C_GetFlagStatus>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1060,11 +1060,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
         (nil)))
 (call_insn 111 110 112 12 (parallel [
-            (call (mem:SI (symbol_ref:SI ("I2C_Cmd") [flags 0x41] <function_decl 0664c690 I2C_Cmd>) [0 I2C_Cmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("I2C_Cmd") [flags 0x41] <function_decl 0656c690 I2C_Cmd>) [0 I2C_Cmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/i2c_device.c":127 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_Cmd") [flags 0x41] <function_decl 0664c690 I2C_Cmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_Cmd") [flags 0x41] <function_decl 0656c690 I2C_Cmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))

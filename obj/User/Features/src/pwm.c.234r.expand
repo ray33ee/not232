@@ -107,11 +107,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 72 [ timer ])) "../User/Features/src/pwm.c":14 -1
      (nil))
 (call_insn 28 27 29 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_TimeBaseInit") [flags 0x41] <function_decl 06565000 TIM_TimeBaseInit>) [0 TIM_TimeBaseInit S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_TimeBaseInit") [flags 0x41] <function_decl 06636000 TIM_TimeBaseInit>) [0 TIM_TimeBaseInit S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pwm.c":14 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_TimeBaseInit") [flags 0x41] <function_decl 06565000 TIM_TimeBaseInit>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_TimeBaseInit") [flags 0x41] <function_decl 06636000 TIM_TimeBaseInit>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -157,11 +157,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 72 [ timer ])) "../User/Features/src/pwm.c":21 -1
      (nil))
 (call_insn 42 41 43 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_OC1Init") [flags 0x41] <function_decl 06565078 TIM_OC1Init>) [0 TIM_OC1Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_OC1Init") [flags 0x41] <function_decl 06636078 TIM_OC1Init>) [0 TIM_OC1Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pwm.c":21 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_OC1Init") [flags 0x41] <function_decl 06565078 TIM_OC1Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_OC1Init") [flags 0x41] <function_decl 06636078 TIM_OC1Init>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -175,11 +175,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 72 [ timer ])) "../User/Features/src/pwm.c":22 -1
      (nil))
 (call_insn 46 45 47 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_OC1PreloadConfig") [flags 0x41] <function_decl 0656e0f0 TIM_OC1PreloadConfig>) [0 TIM_OC1PreloadConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_OC1PreloadConfig") [flags 0x41] <function_decl 0663d0f0 TIM_OC1PreloadConfig>) [0 TIM_OC1PreloadConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pwm.c":22 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_OC1PreloadConfig") [flags 0x41] <function_decl 0656e0f0 TIM_OC1PreloadConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_OC1PreloadConfig") [flags 0x41] <function_decl 0663d0f0 TIM_OC1PreloadConfig>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -197,11 +197,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 72 [ timer ])) "../User/Features/src/pwm.c":24 -1
      (nil))
 (call_insn 51 50 52 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_OC2Init") [flags 0x41] <function_decl 065650f0 TIM_OC2Init>) [0 TIM_OC2Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_OC2Init") [flags 0x41] <function_decl 066360f0 TIM_OC2Init>) [0 TIM_OC2Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pwm.c":24 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_OC2Init") [flags 0x41] <function_decl 065650f0 TIM_OC2Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_OC2Init") [flags 0x41] <function_decl 066360f0 TIM_OC2Init>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -215,11 +215,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 72 [ timer ])) "../User/Features/src/pwm.c":25 -1
      (nil))
 (call_insn 55 54 56 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_OC2PreloadConfig") [flags 0x41] <function_decl 0656e168 TIM_OC2PreloadConfig>) [0 TIM_OC2PreloadConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_OC2PreloadConfig") [flags 0x41] <function_decl 0663d168 TIM_OC2PreloadConfig>) [0 TIM_OC2PreloadConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pwm.c":25 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_OC2PreloadConfig") [flags 0x41] <function_decl 0656e168 TIM_OC2PreloadConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_OC2PreloadConfig") [flags 0x41] <function_decl 0663d168 TIM_OC2PreloadConfig>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -237,11 +237,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 72 [ timer ])) "../User/Features/src/pwm.c":27 -1
      (nil))
 (call_insn 60 59 61 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_OC3Init") [flags 0x41] <function_decl 06565168 TIM_OC3Init>) [0 TIM_OC3Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_OC3Init") [flags 0x41] <function_decl 06636168 TIM_OC3Init>) [0 TIM_OC3Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pwm.c":27 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_OC3Init") [flags 0x41] <function_decl 06565168 TIM_OC3Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_OC3Init") [flags 0x41] <function_decl 06636168 TIM_OC3Init>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -255,11 +255,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 72 [ timer ])) "../User/Features/src/pwm.c":28 -1
      (nil))
 (call_insn 64 63 65 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_OC3PreloadConfig") [flags 0x41] <function_decl 0656e1e0 TIM_OC3PreloadConfig>) [0 TIM_OC3PreloadConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_OC3PreloadConfig") [flags 0x41] <function_decl 0663d1e0 TIM_OC3PreloadConfig>) [0 TIM_OC3PreloadConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pwm.c":28 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_OC3PreloadConfig") [flags 0x41] <function_decl 0656e1e0 TIM_OC3PreloadConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_OC3PreloadConfig") [flags 0x41] <function_decl 0663d1e0 TIM_OC3PreloadConfig>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -277,11 +277,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 72 [ timer ])) "../User/Features/src/pwm.c":30 -1
      (nil))
 (call_insn 69 68 70 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_OC4Init") [flags 0x41] <function_decl 065651e0 TIM_OC4Init>) [0 TIM_OC4Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_OC4Init") [flags 0x41] <function_decl 066361e0 TIM_OC4Init>) [0 TIM_OC4Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pwm.c":30 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_OC4Init") [flags 0x41] <function_decl 065651e0 TIM_OC4Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_OC4Init") [flags 0x41] <function_decl 066361e0 TIM_OC4Init>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -295,11 +295,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 72 [ timer ])) "../User/Features/src/pwm.c":31 -1
      (nil))
 (call_insn 73 72 74 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_OC4PreloadConfig") [flags 0x41] <function_decl 0656e258 TIM_OC4PreloadConfig>) [0 TIM_OC4PreloadConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_OC4PreloadConfig") [flags 0x41] <function_decl 0663d258 TIM_OC4PreloadConfig>) [0 TIM_OC4PreloadConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pwm.c":31 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_OC4PreloadConfig") [flags 0x41] <function_decl 0656e258 TIM_OC4PreloadConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_OC4PreloadConfig") [flags 0x41] <function_decl 0663d258 TIM_OC4PreloadConfig>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -313,11 +313,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 72 [ timer ])) "../User/Features/src/pwm.c":33 -1
      (nil))
 (call_insn 77 76 78 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_ARRPreloadConfig") [flags 0x41] <function_decl 06565f00 TIM_ARRPreloadConfig>) [0 TIM_ARRPreloadConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_ARRPreloadConfig") [flags 0x41] <function_decl 06636f00 TIM_ARRPreloadConfig>) [0 TIM_ARRPreloadConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pwm.c":33 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_ARRPreloadConfig") [flags 0x41] <function_decl 06565f00 TIM_ARRPreloadConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_ARRPreloadConfig") [flags 0x41] <function_decl 06636f00 TIM_ARRPreloadConfig>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -354,11 +354,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073818624 [0x40012c00])
         (nil)))
 (call_insn 87 86 88 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_CtrlPWMOutputs") [flags 0x41] <function_decl 06565618 TIM_CtrlPWMOutputs>) [0 TIM_CtrlPWMOutputs S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_CtrlPWMOutputs") [flags 0x41] <function_decl 06636618 TIM_CtrlPWMOutputs>) [0 TIM_CtrlPWMOutputs S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pwm.c":37 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_CtrlPWMOutputs") [flags 0x41] <function_decl 06565618 TIM_CtrlPWMOutputs>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_CtrlPWMOutputs") [flags 0x41] <function_decl 06636618 TIM_CtrlPWMOutputs>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -374,11 +374,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 72 [ timer ])) "../User/Features/src/pwm.c":40 -1
      (nil))
 (call_insn 93 92 0 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 065655a0 TIM_Cmd>) [0 TIM_Cmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 066365a0 TIM_Cmd>) [0 TIM_Cmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pwm.c":40 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 065655a0 TIM_Cmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 066365a0 TIM_Cmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -421,11 +421,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073818624 [0x40012c00])
         (nil)))
 (call_insn 8 7 9 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("pwm_timer_init") [flags 0x3] <function_decl 06619708 pwm_timer_init>) [0 pwm_timer_init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("pwm_timer_init") [flags 0x3] <function_decl 066e7708 pwm_timer_init>) [0 pwm_timer_init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pwm.c":45 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pwm_timer_init") [flags 0x3] <function_decl 06619708 pwm_timer_init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pwm_timer_init") [flags 0x3] <function_decl 066e7708 pwm_timer_init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -436,11 +436,11 @@ try_optimize_cfg iteration 2
         (const_int 1073741824 [0x40000000])) "../User/Features/src/pwm.c":46 -1
      (nil))
 (call_insn 11 10 12 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("pwm_timer_init") [flags 0x3] <function_decl 06619708 pwm_timer_init>) [0 pwm_timer_init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("pwm_timer_init") [flags 0x3] <function_decl 066e7708 pwm_timer_init>) [0 pwm_timer_init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pwm.c":46 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pwm_timer_init") [flags 0x3] <function_decl 06619708 pwm_timer_init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pwm_timer_init") [flags 0x3] <function_decl 066e7708 pwm_timer_init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -456,11 +456,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073742848 [0x40000400])
         (nil)))
 (call_insn 15 14 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("pwm_timer_init") [flags 0x3] <function_decl 06619708 pwm_timer_init>) [0 pwm_timer_init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("pwm_timer_init") [flags 0x3] <function_decl 066e7708 pwm_timer_init>) [0 pwm_timer_init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pwm.c":47 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pwm_timer_init") [flags 0x3] <function_decl 06619708 pwm_timer_init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pwm_timer_init") [flags 0x3] <function_decl 066e7708 pwm_timer_init>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))

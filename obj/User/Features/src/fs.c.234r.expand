@@ -123,11 +123,11 @@ try_optimize_cfg iteration 2
 (debug_insn 24 23 25 4 (debug_marker) "../User/Features/src/fs.c":137 -1
      (nil))
 (call_insn 25 24 26 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("FLASH_Unlock") [flags 0x41] <function_decl 06690ca8 FLASH_Unlock>) [0 FLASH_Unlock S4 A32])
+            (call (mem:SI (symbol_ref:SI ("FLASH_Unlock") [flags 0x41] <function_decl 065ceca8 FLASH_Unlock>) [0 FLASH_Unlock S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":137 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Unlock") [flags 0x41] <function_decl 06690ca8 FLASH_Unlock>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Unlock") [flags 0x41] <function_decl 065ceca8 FLASH_Unlock>)
         (nil))
     (nil))
 (debug_insn 26 25 27 4 (debug_marker) "../User/Features/src/fs.c":138 -1
@@ -136,11 +136,11 @@ try_optimize_cfg iteration 2
         (const_int 49 [0x31])) "../User/Features/src/fs.c":138 -1
      (nil))
 (call_insn 28 27 29 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("FLASH_ClearFlag") [flags 0x41] <function_decl 066a1438 FLASH_ClearFlag>) [0 FLASH_ClearFlag S4 A32])
+            (call (mem:SI (symbol_ref:SI ("FLASH_ClearFlag") [flags 0x41] <function_decl 065df438 FLASH_ClearFlag>) [0 FLASH_ClearFlag S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":138 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_ClearFlag") [flags 0x41] <function_decl 066a1438 FLASH_ClearFlag>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_ClearFlag") [flags 0x41] <function_decl 065df438 FLASH_ClearFlag>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -167,11 +167,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 35 34 36 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_ErasePage") [flags 0x41] <function_decl 06690d98 FLASH_ErasePage>) [0 FLASH_ErasePage S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_ErasePage") [flags 0x41] <function_decl 065ced98 FLASH_ErasePage>) [0 FLASH_ErasePage S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":140 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_ErasePage") [flags 0x41] <function_decl 06690d98 FLASH_ErasePage>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_ErasePage") [flags 0x41] <function_decl 065ced98 FLASH_ErasePage>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -183,11 +183,11 @@ try_optimize_cfg iteration 2
 (debug_insn 38 37 39 4 (debug_marker) "../User/Features/src/fs.c":142 -1
      (nil))
 (call_insn 39 38 40 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06690d20 FLASH_Lock>) [0 FLASH_Lock S4 A32])
+            (call (mem:SI (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 065ced20 FLASH_Lock>) [0 FLASH_Lock S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":142 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06690d20 FLASH_Lock>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 065ced20 FLASH_Lock>)
         (nil))
     (nil))
 (debug_insn 40 39 41 4 (debug_marker) "../User/Features/src/fs.c":144 -1
@@ -407,11 +407,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 57 56 58 5 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 0644cd98 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
+                (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 0638dd98 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":70 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 0644cd98 __builtin_memcpy>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41] <function_decl 0638dd98 __builtin_memcpy>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (set (reg:SI 10 a0)
@@ -662,11 +662,11 @@ try_optimize_cfg iteration 2
 (debug_insn 63 62 64 6 (debug_marker) "../User/Features/src/fs.c":103 -1
      (nil))
 (call_insn 64 63 65 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("FLASH_Unlock") [flags 0x41] <function_decl 06690ca8 FLASH_Unlock>) [0 FLASH_Unlock S4 A32])
+            (call (mem:SI (symbol_ref:SI ("FLASH_Unlock") [flags 0x41] <function_decl 065ceca8 FLASH_Unlock>) [0 FLASH_Unlock S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":103 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Unlock") [flags 0x41] <function_decl 06690ca8 FLASH_Unlock>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Unlock") [flags 0x41] <function_decl 065ceca8 FLASH_Unlock>)
         (nil))
     (nil))
 (debug_insn 65 64 66 6 (debug_marker) "../User/Features/src/fs.c":104 -1
@@ -675,11 +675,11 @@ try_optimize_cfg iteration 2
         (const_int 49 [0x31])) "../User/Features/src/fs.c":104 -1
      (nil))
 (call_insn 67 66 68 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("FLASH_ClearFlag") [flags 0x41] <function_decl 066a1438 FLASH_ClearFlag>) [0 FLASH_ClearFlag S4 A32])
+            (call (mem:SI (symbol_ref:SI ("FLASH_ClearFlag") [flags 0x41] <function_decl 065df438 FLASH_ClearFlag>) [0 FLASH_ClearFlag S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":104 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_ClearFlag") [flags 0x41] <function_decl 066a1438 FLASH_ClearFlag>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_ClearFlag") [flags 0x41] <function_decl 065df438 FLASH_ClearFlag>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -747,11 +747,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 87 86 88 7 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("FLASH_ProgramHalfWord") [flags 0x41] <function_decl 06690f78 FLASH_ProgramHalfWord>) [0 FLASH_ProgramHalfWord S4 A32])
+                (call (mem:SI (symbol_ref:SI ("FLASH_ProgramHalfWord") [flags 0x41] <function_decl 065cef78 FLASH_ProgramHalfWord>) [0 FLASH_ProgramHalfWord S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":111 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_ProgramHalfWord") [flags 0x41] <function_decl 06690f78 FLASH_ProgramHalfWord>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_ProgramHalfWord") [flags 0x41] <function_decl 065cef78 FLASH_ProgramHalfWord>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -781,11 +781,11 @@ try_optimize_cfg iteration 2
 (debug_insn 95 94 96 8 (debug_marker) "../User/Features/src/fs.c":113 -1
      (nil))
 (call_insn 96 95 97 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06690d20 FLASH_Lock>) [0 FLASH_Lock S4 A32])
+            (call (mem:SI (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 065ced20 FLASH_Lock>) [0 FLASH_Lock S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":113 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06690d20 FLASH_Lock>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 065ced20 FLASH_Lock>)
         (nil))
     (nil))
 (debug_insn 97 96 9 8 (debug_marker) "../User/Features/src/fs.c":114 -1
@@ -821,11 +821,11 @@ try_optimize_cfg iteration 2
 (debug_insn 110 109 111 11 (debug_marker) "../User/Features/src/fs.c":118 -1
      (nil))
 (call_insn 111 110 112 11 (parallel [
-            (call (mem:SI (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06690d20 FLASH_Lock>) [0 FLASH_Lock S4 A32])
+            (call (mem:SI (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 065ced20 FLASH_Lock>) [0 FLASH_Lock S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":118 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 06690d20 FLASH_Lock>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("FLASH_Lock") [flags 0x41] <function_decl 065ced20 FLASH_Lock>)
         (nil))
     (nil))
 (debug_insn 112 111 11 11 (debug_marker) "../User/Features/src/fs.c":119 -1
@@ -1338,11 +1338,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 12 11 13 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_mount") [flags 0x41] <function_decl 064f3708 lfs_mount>) [0 lfs_mount S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_mount") [flags 0x41] <function_decl 06441708 lfs_mount>) [0 lfs_mount S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":206 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_mount") [flags 0x41] <function_decl 064f3708 lfs_mount>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_mount") [flags 0x41] <function_decl 06441708 lfs_mount>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1388,11 +1388,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 25 24 26 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_format") [flags 0x41] <function_decl 064f3690 lfs_format>) [0 lfs_format S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_format") [flags 0x41] <function_decl 06441690 lfs_format>) [0 lfs_format S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":211 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_format") [flags 0x41] <function_decl 064f3690 lfs_format>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_format") [flags 0x41] <function_decl 06441690 lfs_format>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1423,11 +1423,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 33 32 36 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_mount") [flags 0x41] <function_decl 064f3708 lfs_mount>) [0 lfs_mount S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_mount") [flags 0x41] <function_decl 06441708 lfs_mount>) [0 lfs_mount S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":212 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_mount") [flags 0x41] <function_decl 064f3708 lfs_mount>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_mount") [flags 0x41] <function_decl 06441708 lfs_mount>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1483,11 +1483,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 11 10 12 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_remove") [flags 0x41] <function_decl 064f37f8 lfs_remove>) [0 lfs_remove S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_remove") [flags 0x41] <function_decl 064417f8 lfs_remove>) [0 lfs_remove S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":217 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_remove") [flags 0x41] <function_decl 064f37f8 lfs_remove>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_remove") [flags 0x41] <function_decl 064417f8 lfs_remove>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1558,11 +1558,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 13 12 14 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_rename") [flags 0x41] <function_decl 064f3870 lfs_rename>) [0 lfs_rename S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_rename") [flags 0x41] <function_decl 06441870 lfs_rename>) [0 lfs_rename S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":221 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_rename") [flags 0x41] <function_decl 064f3870 lfs_rename>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_rename") [flags 0x41] <function_decl 06441870 lfs_rename>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1639,11 +1639,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 14 13 15 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_stat") [flags 0x41] <function_decl 064f38e8 lfs_stat>) [0 lfs_stat S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_stat") [flags 0x41] <function_decl 064418e8 lfs_stat>) [0 lfs_stat S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":225 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_stat") [flags 0x41] <function_decl 064f38e8 lfs_stat>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_stat") [flags 0x41] <function_decl 064418e8 lfs_stat>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1706,11 +1706,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 8 7 9 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("allocate_fh") [flags 0x3] <function_decl 0651bf78 allocate_fh>) [0 allocate_fh S4 A32])
+                (call (mem:SI (symbol_ref:SI ("allocate_fh") [flags 0x3] <function_decl 06469f78 allocate_fh>) [0 allocate_fh S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":229 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("allocate_fh") [flags 0x3] <function_decl 0651bf78 allocate_fh>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("allocate_fh") [flags 0x3] <function_decl 06469f78 allocate_fh>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -1775,11 +1775,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 27 26 28 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_file_open") [flags 0x41] <function_decl 064f3ac8 lfs_file_open>) [0 lfs_file_open S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_file_open") [flags 0x41] <function_decl 06441ac8 lfs_file_open>) [0 lfs_file_open S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":233 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_open") [flags 0x41] <function_decl 064f3ac8 lfs_file_open>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_open") [flags 0x41] <function_decl 06441ac8 lfs_file_open>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1881,11 +1881,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 16 15 17 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_file_close") [flags 0x41] <function_decl 064f3bb8 lfs_file_close>) [0 lfs_file_close S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_file_close") [flags 0x41] <function_decl 06441bb8 lfs_file_close>) [0 lfs_file_close S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":242 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_close") [flags 0x41] <function_decl 064f3bb8 lfs_file_close>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_close") [flags 0x41] <function_decl 06441bb8 lfs_file_close>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2016,11 +2016,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 20 19 21 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_file_read") [flags 0x41] <function_decl 064f3ca8 lfs_file_read>) [0 lfs_file_read S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_file_read") [flags 0x41] <function_decl 06441ca8 lfs_file_read>) [0 lfs_file_read S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":248 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_read") [flags 0x41] <function_decl 064f3ca8 lfs_file_read>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_read") [flags 0x41] <function_decl 06441ca8 lfs_file_read>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2118,11 +2118,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 20 19 21 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_file_write") [flags 0x41] <function_decl 064f3d20 lfs_file_write>) [0 lfs_file_write S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_file_write") [flags 0x41] <function_decl 06441d20 lfs_file_write>) [0 lfs_file_write S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":252 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_write") [flags 0x41] <function_decl 064f3d20 lfs_file_write>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_write") [flags 0x41] <function_decl 06441d20 lfs_file_write>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2220,11 +2220,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 20 19 21 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_file_seek") [flags 0x41] <function_decl 064f3d98 lfs_file_seek>) [0 lfs_file_seek S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_file_seek") [flags 0x41] <function_decl 06441d98 lfs_file_seek>) [0 lfs_file_seek S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":256 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_seek") [flags 0x41] <function_decl 064f3d98 lfs_file_seek>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_seek") [flags 0x41] <function_decl 06441d98 lfs_file_seek>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2316,11 +2316,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 18 17 19 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_file_truncate") [flags 0x41] <function_decl 064f3e10 lfs_file_truncate>) [0 lfs_file_truncate S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_file_truncate") [flags 0x41] <function_decl 06441e10 lfs_file_truncate>) [0 lfs_file_truncate S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":260 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_truncate") [flags 0x41] <function_decl 064f3e10 lfs_file_truncate>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_file_truncate") [flags 0x41] <function_decl 06441e10 lfs_file_truncate>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2386,11 +2386,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 11 10 12 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_mkdir") [flags 0x41] <function_decl 0651b000 lfs_mkdir>) [0 lfs_mkdir S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_mkdir") [flags 0x41] <function_decl 06469000 lfs_mkdir>) [0 lfs_mkdir S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":264 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_mkdir") [flags 0x41] <function_decl 0651b000 lfs_mkdir>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_mkdir") [flags 0x41] <function_decl 06469000 lfs_mkdir>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2449,11 +2449,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 7 6 8 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("allocate_dh") [flags 0x3] <function_decl 067e6078 allocate_dh>) [0 allocate_dh S4 A32])
+                (call (mem:SI (symbol_ref:SI ("allocate_dh") [flags 0x3] <function_decl 06728078 allocate_dh>) [0 allocate_dh S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":268 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("allocate_dh") [flags 0x3] <function_decl 067e6078 allocate_dh>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("allocate_dh") [flags 0x3] <function_decl 06728078 allocate_dh>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -2515,11 +2515,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 25 24 26 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_dir_open") [flags 0x41] <function_decl 0651b078 lfs_dir_open>) [0 lfs_dir_open S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_dir_open") [flags 0x41] <function_decl 06469078 lfs_dir_open>) [0 lfs_dir_open S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":272 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_dir_open") [flags 0x41] <function_decl 0651b078 lfs_dir_open>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_dir_open") [flags 0x41] <function_decl 06469078 lfs_dir_open>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2620,11 +2620,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 16 15 17 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_dir_close") [flags 0x41] <function_decl 0651b0f0 lfs_dir_close>) [0 lfs_dir_close S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_dir_close") [flags 0x41] <function_decl 064690f0 lfs_dir_close>) [0 lfs_dir_close S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":281 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_dir_close") [flags 0x41] <function_decl 0651b0f0 lfs_dir_close>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_dir_close") [flags 0x41] <function_decl 064690f0 lfs_dir_close>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -2754,11 +2754,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 19 18 20 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("lfs_dir_read") [flags 0x41] <function_decl 0651b168 lfs_dir_read>) [0 lfs_dir_read S4 A32])
+                (call (mem:SI (symbol_ref:SI ("lfs_dir_read") [flags 0x41] <function_decl 06469168 lfs_dir_read>) [0 lfs_dir_read S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/fs.c":287 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_dir_read") [flags 0x41] <function_decl 0651b168 lfs_dir_read>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("lfs_dir_read") [flags 0x41] <function_decl 06469168 lfs_dir_read>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))

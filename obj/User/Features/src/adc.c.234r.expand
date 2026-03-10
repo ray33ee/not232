@@ -55,11 +55,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 11 10 12 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("memset") [flags 0x41] <function_decl 062df078 __builtin_memset>) [0 __builtin_memset S4 A32])
+                (call (mem:SI (symbol_ref:SI ("memset") [flags 0x41] <function_decl 04dae078 __builtin_memset>) [0 __builtin_memset S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":6 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memset") [flags 0x41] <function_decl 062df078 __builtin_memset>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memset") [flags 0x41] <function_decl 04dae078 __builtin_memset>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (set (reg:SI 10 a0)
@@ -77,11 +77,11 @@ try_optimize_cfg iteration 2
         (const_int 49152 [0xc000])) "../User/Features/src/adc.c":9 -1
      (nil))
 (call_insn 15 14 16 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_ADCCLKConfig") [flags 0x41] <function_decl 064e84b0 RCC_ADCCLKConfig>) [0 RCC_ADCCLKConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_ADCCLKConfig") [flags 0x41] <function_decl 065ab4b0 RCC_ADCCLKConfig>) [0 RCC_ADCCLKConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":9 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_ADCCLKConfig") [flags 0x41] <function_decl 064e84b0 RCC_ADCCLKConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_ADCCLKConfig") [flags 0x41] <function_decl 065ab4b0 RCC_ADCCLKConfig>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -96,11 +96,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
         (nil)))
 (call_insn 19 18 20 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ADC_DeInit") [flags 0x41] <function_decl 063dbac8 ADC_DeInit>) [0 ADC_DeInit S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ADC_DeInit") [flags 0x41] <function_decl 0649aac8 ADC_DeInit>) [0 ADC_DeInit S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":10 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_DeInit") [flags 0x41] <function_decl 063dbac8 ADC_DeInit>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_DeInit") [flags 0x41] <function_decl 0649aac8 ADC_DeInit>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -164,11 +164,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
         (nil)))
 (call_insn 39 38 40 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ADC_Init") [flags 0x41] <function_decl 063dbb40 ADC_Init>) [0 ADC_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ADC_Init") [flags 0x41] <function_decl 0649ab40 ADC_Init>) [0 ADC_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":19 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_Init") [flags 0x41] <function_decl 063dbb40 ADC_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_Init") [flags 0x41] <function_decl 0649ab40 ADC_Init>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -187,11 +187,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
         (nil)))
 (call_insn 44 43 45 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ADC_InjectedDiscModeCmd") [flags 0x41] <function_decl 065033c0 ADC_InjectedDiscModeCmd>) [0 ADC_InjectedDiscModeCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ADC_InjectedDiscModeCmd") [flags 0x41] <function_decl 065c23c0 ADC_InjectedDiscModeCmd>) [0 ADC_InjectedDiscModeCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":22 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_InjectedDiscModeCmd") [flags 0x41] <function_decl 065033c0 ADC_InjectedDiscModeCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_InjectedDiscModeCmd") [flags 0x41] <function_decl 065c23c0 ADC_InjectedDiscModeCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -210,11 +210,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
         (nil)))
 (call_insn 49 48 50 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ADC_ExternalTrigInjectedConvCmd") [flags 0x41] <function_decl 065034b0 ADC_ExternalTrigInjectedConvCmd>) [0 ADC_ExternalTrigInjectedConvCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ADC_ExternalTrigInjectedConvCmd") [flags 0x41] <function_decl 065c24b0 ADC_ExternalTrigInjectedConvCmd>) [0 ADC_ExternalTrigInjectedConvCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":23 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_ExternalTrigInjectedConvCmd") [flags 0x41] <function_decl 065034b0 ADC_ExternalTrigInjectedConvCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_ExternalTrigInjectedConvCmd") [flags 0x41] <function_decl 065c24b0 ADC_ExternalTrigInjectedConvCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -233,11 +233,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
         (nil)))
 (call_insn 54 53 55 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ADC_Cmd") [flags 0x41] <function_decl 063dbc30 ADC_Cmd>) [0 ADC_Cmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ADC_Cmd") [flags 0x41] <function_decl 0649ac30 ADC_Cmd>) [0 ADC_Cmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":25 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_Cmd") [flags 0x41] <function_decl 063dbc30 ADC_Cmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_Cmd") [flags 0x41] <function_decl 0649ac30 ADC_Cmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -256,11 +256,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
         (nil)))
 (call_insn 59 58 60 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ADC_BufferCmd") [flags 0x41] <function_decl 06503c30 ADC_BufferCmd>) [0 ADC_BufferCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ADC_BufferCmd") [flags 0x41] <function_decl 065c2c30 ADC_BufferCmd>) [0 ADC_BufferCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":28 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_BufferCmd") [flags 0x41] <function_decl 06503c30 ADC_BufferCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_BufferCmd") [flags 0x41] <function_decl 065c2c30 ADC_BufferCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -276,11 +276,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
         (nil)))
 (call_insn 63 62 64 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ADC_ResetCalibration") [flags 0x41] <function_decl 063dbd98 ADC_ResetCalibration>) [0 ADC_ResetCalibration S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ADC_ResetCalibration") [flags 0x41] <function_decl 0649ad98 ADC_ResetCalibration>) [0 ADC_ResetCalibration S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":29 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_ResetCalibration") [flags 0x41] <function_decl 063dbd98 ADC_ResetCalibration>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_ResetCalibration") [flags 0x41] <function_decl 0649ad98 ADC_ResetCalibration>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -300,11 +300,11 @@ try_optimize_cfg iteration 2
         (nil)))
 (call_insn 69 68 70 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("ADC_GetResetCalibrationStatus") [flags 0x41] <function_decl 063dbe10 ADC_GetResetCalibrationStatus>) [0 ADC_GetResetCalibrationStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("ADC_GetResetCalibrationStatus") [flags 0x41] <function_decl 0649ae10 ADC_GetResetCalibrationStatus>) [0 ADC_GetResetCalibrationStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":30 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetResetCalibrationStatus") [flags 0x41] <function_decl 063dbe10 ADC_GetResetCalibrationStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetResetCalibrationStatus") [flags 0x41] <function_decl 0649ae10 ADC_GetResetCalibrationStatus>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -330,11 +330,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
         (nil)))
 (call_insn 77 76 78 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ADC_StartCalibration") [flags 0x41] <function_decl 063dbe88 ADC_StartCalibration>) [0 ADC_StartCalibration S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ADC_StartCalibration") [flags 0x41] <function_decl 0649ae88 ADC_StartCalibration>) [0 ADC_StartCalibration S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":31 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_StartCalibration") [flags 0x41] <function_decl 063dbe88 ADC_StartCalibration>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_StartCalibration") [flags 0x41] <function_decl 0649ae88 ADC_StartCalibration>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -354,11 +354,11 @@ try_optimize_cfg iteration 2
         (nil)))
 (call_insn 83 82 84 6 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("ADC_GetCalibrationStatus") [flags 0x41] <function_decl 063dbf00 ADC_GetCalibrationStatus>) [0 ADC_GetCalibrationStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("ADC_GetCalibrationStatus") [flags 0x41] <function_decl 0649af00 ADC_GetCalibrationStatus>) [0 ADC_GetCalibrationStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":32 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetCalibrationStatus") [flags 0x41] <function_decl 063dbf00 ADC_GetCalibrationStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetCalibrationStatus") [flags 0x41] <function_decl 0649af00 ADC_GetCalibrationStatus>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -387,11 +387,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
         (nil)))
 (call_insn 92 91 0 7 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ADC_BufferCmd") [flags 0x41] <function_decl 06503c30 ADC_BufferCmd>) [0 ADC_BufferCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ADC_BufferCmd") [flags 0x41] <function_decl 065c2c30 ADC_BufferCmd>) [0 ADC_BufferCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":33 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_BufferCmd") [flags 0x41] <function_decl 06503c30 ADC_BufferCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_BufferCmd") [flags 0x41] <function_decl 065c2c30 ADC_BufferCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -485,11 +485,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
         (nil)))
 (call_insn 24 23 25 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ADC_RegularChannelConfig") [flags 0x41] <function_decl 06503168 ADC_RegularChannelConfig>) [0 ADC_RegularChannelConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ADC_RegularChannelConfig") [flags 0x41] <function_decl 065c2168 ADC_RegularChannelConfig>) [0 ADC_RegularChannelConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":48 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_RegularChannelConfig") [flags 0x41] <function_decl 06503168 ADC_RegularChannelConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_RegularChannelConfig") [flags 0x41] <function_decl 065c2168 ADC_RegularChannelConfig>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -510,11 +510,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
         (nil)))
 (call_insn 29 28 30 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ADC_SoftwareStartConvCmd") [flags 0x41] <function_decl 063dbf78 ADC_SoftwareStartConvCmd>) [0 ADC_SoftwareStartConvCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ADC_SoftwareStartConvCmd") [flags 0x41] <function_decl 0649af78 ADC_SoftwareStartConvCmd>) [0 ADC_SoftwareStartConvCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":50 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_SoftwareStartConvCmd") [flags 0x41] <function_decl 063dbf78 ADC_SoftwareStartConvCmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_SoftwareStartConvCmd") [flags 0x41] <function_decl 0649af78 ADC_SoftwareStartConvCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -538,11 +538,11 @@ try_optimize_cfg iteration 2
         (nil)))
 (call_insn 36 35 37 6 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("ADC_GetFlagStatus") [flags 0x41] <function_decl 065039d8 ADC_GetFlagStatus>) [0 ADC_GetFlagStatus S4 A32])
+                (call (mem:SI (symbol_ref:SI ("ADC_GetFlagStatus") [flags 0x41] <function_decl 065c29d8 ADC_GetFlagStatus>) [0 ADC_GetFlagStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":52 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetFlagStatus") [flags 0x41] <function_decl 065039d8 ADC_GetFlagStatus>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetFlagStatus") [flags 0x41] <function_decl 065c29d8 ADC_GetFlagStatus>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -570,11 +570,11 @@ try_optimize_cfg iteration 2
         (nil)))
 (call_insn 44 43 45 7 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("ADC_GetConversionValue") [flags 0x41] <function_decl 06503258 ADC_GetConversionValue>) [0 ADC_GetConversionValue S4 A32])
+                (call (mem:SI (symbol_ref:SI ("ADC_GetConversionValue") [flags 0x41] <function_decl 065c2258 ADC_GetConversionValue>) [0 ADC_GetConversionValue S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":54 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetConversionValue") [flags 0x41] <function_decl 06503258 ADC_GetConversionValue>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_GetConversionValue") [flags 0x41] <function_decl 065c2258 ADC_GetConversionValue>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -600,11 +600,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073816576 [0x40012400])
         (nil)))
 (call_insn 52 51 53 7 (parallel [
-            (call (mem:SI (symbol_ref:SI ("ADC_ClearFlag") [flags 0x41] <function_decl 06503a50 ADC_ClearFlag>) [0 ADC_ClearFlag S4 A32])
+            (call (mem:SI (symbol_ref:SI ("ADC_ClearFlag") [flags 0x41] <function_decl 065c2a50 ADC_ClearFlag>) [0 ADC_ClearFlag S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/adc.c":56 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_ClearFlag") [flags 0x41] <function_decl 06503a50 ADC_ClearFlag>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ADC_ClearFlag") [flags 0x41] <function_decl 065c2a50 ADC_ClearFlag>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))

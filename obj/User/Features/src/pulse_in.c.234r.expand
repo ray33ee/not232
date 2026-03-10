@@ -81,11 +81,11 @@ try_optimize_cfg iteration 2
         (const_int 0 [0])) "../User/Features/src/pulse_in.c":12 -1
      (nil))
 (call_insn 20 19 21 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_EXTILineConfig") [flags 0x41] <function_decl 065ec3c0 GPIO_EXTILineConfig>) [0 GPIO_EXTILineConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_EXTILineConfig") [flags 0x41] <function_decl 0664c3c0 GPIO_EXTILineConfig>) [0 GPIO_EXTILineConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":12 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_EXTILineConfig") [flags 0x41] <function_decl 065ec3c0 GPIO_EXTILineConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_EXTILineConfig") [flags 0x41] <function_decl 0664c3c0 GPIO_EXTILineConfig>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
@@ -145,11 +145,11 @@ try_optimize_cfg iteration 2
         (reg:SI 86)) "../User/Features/src/pulse_in.c":21 -1
      (nil))
 (call_insn 39 38 40 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("EXTI_Init") [flags 0x41] <function_decl 065cf960 EXTI_Init>) [0 EXTI_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("EXTI_Init") [flags 0x41] <function_decl 0662f960 EXTI_Init>) [0 EXTI_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":21 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("EXTI_Init") [flags 0x41] <function_decl 065cf960 EXTI_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("EXTI_Init") [flags 0x41] <function_decl 0662f960 EXTI_Init>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -166,11 +166,11 @@ try_optimize_cfg iteration 2
         (reg:SI 87 [ line ])) "../User/Features/src/pulse_in.c":24 -1
      (nil))
 (call_insn 44 43 45 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("EXTI_ClearITPendingBit") [flags 0x41] <function_decl 065cfc30 EXTI_ClearITPendingBit>) [0 EXTI_ClearITPendingBit S4 A32])
+            (call (mem:SI (symbol_ref:SI ("EXTI_ClearITPendingBit") [flags 0x41] <function_decl 0662fc30 EXTI_ClearITPendingBit>) [0 EXTI_ClearITPendingBit S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":24 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("EXTI_ClearITPendingBit") [flags 0x41] <function_decl 065cfc30 EXTI_ClearITPendingBit>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("EXTI_ClearITPendingBit") [flags 0x41] <function_decl 0662fc30 EXTI_ClearITPendingBit>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -277,11 +277,11 @@ try_optimize_cfg iteration 2
         (reg:SI 94)) "../User/Features/src/pulse_in.c":40 -1
      (nil))
 (call_insn 78 77 0 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("NVIC_Init") [flags 0x41] <function_decl 066b1ac8 NVIC_Init>) [0 NVIC_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("NVIC_Init") [flags 0x41] <function_decl 06711ac8 NVIC_Init>) [0 NVIC_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":40 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("NVIC_Init") [flags 0x41] <function_decl 066b1ac8 NVIC_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("NVIC_Init") [flags 0x41] <function_decl 06711ac8 NVIC_Init>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -371,11 +371,11 @@ try_optimize_cfg iteration 2
         (reg:SI 77)) "../User/Features/src/pulse_in.c":56 -1
      (nil))
 (call_insn 24 23 25 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("EXTI_Init") [flags 0x41] <function_decl 065cf960 EXTI_Init>) [0 EXTI_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("EXTI_Init") [flags 0x41] <function_decl 0662f960 EXTI_Init>) [0 EXTI_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":56 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("EXTI_Init") [flags 0x41] <function_decl 065cf960 EXTI_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("EXTI_Init") [flags 0x41] <function_decl 0662f960 EXTI_Init>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -385,11 +385,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 73 [ line ])) "../User/Features/src/pulse_in.c":59 -1
      (nil))
 (call_insn 27 26 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("EXTI_ClearITPendingBit") [flags 0x41] <function_decl 065cfc30 EXTI_ClearITPendingBit>) [0 EXTI_ClearITPendingBit S4 A32])
+            (call (mem:SI (symbol_ref:SI ("EXTI_ClearITPendingBit") [flags 0x41] <function_decl 0662fc30 EXTI_ClearITPendingBit>) [0 EXTI_ClearITPendingBit S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":59 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("EXTI_ClearITPendingBit") [flags 0x41] <function_decl 065cfc30 EXTI_ClearITPendingBit>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("EXTI_ClearITPendingBit") [flags 0x41] <function_decl 0662fc30 EXTI_ClearITPendingBit>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -465,11 +465,11 @@ try_optimize_cfg iteration 2
         (reg:SI 80)) "../User/Features/src/pulse_in.c":70 -1
      (nil))
 (call_insn 17 16 18 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_GetClocksFreq") [flags 0x41] <function_decl 06597708 RCC_GetClocksFreq>) [0 RCC_GetClocksFreq S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_GetClocksFreq") [flags 0x41] <function_decl 065f7708 RCC_GetClocksFreq>) [0 RCC_GetClocksFreq S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":70 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_GetClocksFreq") [flags 0x41] <function_decl 06597708 RCC_GetClocksFreq>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_GetClocksFreq") [flags 0x41] <function_decl 065f7708 RCC_GetClocksFreq>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -593,11 +593,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073743872 [0x40000800])
         (nil)))
 (call_insn 58 57 59 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_TimeBaseInit") [flags 0x41] <function_decl 06615000 TIM_TimeBaseInit>) [0 TIM_TimeBaseInit S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_TimeBaseInit") [flags 0x41] <function_decl 06675000 TIM_TimeBaseInit>) [0 TIM_TimeBaseInit S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":96 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_TimeBaseInit") [flags 0x41] <function_decl 06615000 TIM_TimeBaseInit>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_TimeBaseInit") [flags 0x41] <function_decl 06675000 TIM_TimeBaseInit>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -616,11 +616,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073743872 [0x40000800])
         (nil)))
 (call_insn 63 62 64 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_ARRPreloadConfig") [flags 0x41] <function_decl 06615f00 TIM_ARRPreloadConfig>) [0 TIM_ARRPreloadConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_ARRPreloadConfig") [flags 0x41] <function_decl 06675f00 TIM_ARRPreloadConfig>) [0 TIM_ARRPreloadConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":99 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_ARRPreloadConfig") [flags 0x41] <function_decl 06615f00 TIM_ARRPreloadConfig>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_ARRPreloadConfig") [flags 0x41] <function_decl 06675f00 TIM_ARRPreloadConfig>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -639,11 +639,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073743872 [0x40000800])
         (nil)))
 (call_insn 68 67 69 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 066155a0 TIM_Cmd>) [0 TIM_Cmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 066755a0 TIM_Cmd>) [0 TIM_Cmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":102 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 066155a0 TIM_Cmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 066755a0 TIM_Cmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -662,11 +662,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073743872 [0x40000800])
         (nil)))
 (call_insn 73 72 0 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_ClearFlag") [flags 0x41] <function_decl 06622708 TIM_ClearFlag>) [0 TIM_ClearFlag S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_ClearFlag") [flags 0x41] <function_decl 06682708 TIM_ClearFlag>) [0 TIM_ClearFlag S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":105 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_ClearFlag") [flags 0x41] <function_decl 06622708 TIM_ClearFlag>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_ClearFlag") [flags 0x41] <function_decl 06682708 TIM_ClearFlag>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -712,11 +712,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073743872 [0x40000800])
         (nil)))
 (call_insn 9 8 10 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_SetCounter") [flags 0x41] <function_decl 0661ee88 TIM_SetCounter>) [0 TIM_SetCounter S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_SetCounter") [flags 0x41] <function_decl 0667ee88 TIM_SetCounter>) [0 TIM_SetCounter S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":112 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetCounter") [flags 0x41] <function_decl 0661ee88 TIM_SetCounter>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_SetCounter") [flags 0x41] <function_decl 0667ee88 TIM_SetCounter>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -735,11 +735,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073743872 [0x40000800])
         (nil)))
 (call_insn 14 13 15 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_ClearFlag") [flags 0x41] <function_decl 06622708 TIM_ClearFlag>) [0 TIM_ClearFlag S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_ClearFlag") [flags 0x41] <function_decl 06682708 TIM_ClearFlag>) [0 TIM_ClearFlag S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":113 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_ClearFlag") [flags 0x41] <function_decl 06622708 TIM_ClearFlag>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_ClearFlag") [flags 0x41] <function_decl 06682708 TIM_ClearFlag>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -758,11 +758,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073743872 [0x40000800])
         (nil)))
 (call_insn 19 18 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 066155a0 TIM_Cmd>) [0 TIM_Cmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 066755a0 TIM_Cmd>) [0 TIM_Cmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":115 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 066155a0 TIM_Cmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 066755a0 TIM_Cmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -828,11 +828,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073743872 [0x40000800])
         (nil)))
 (call_insn 16 15 17 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 066155a0 TIM_Cmd>) [0 TIM_Cmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 066755a0 TIM_Cmd>) [0 TIM_Cmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":122 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 066155a0 TIM_Cmd>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 066755a0 TIM_Cmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -903,11 +903,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 76 [ pin ])) "../User/Features/src/pulse_in.c":129 -1
      (nil))
 (call_insn 13 12 14 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 066c9690 gpio_init_ad_pins>) [0 gpio_init_ad_pins S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06729690 gpio_init_ad_pins>) [0 gpio_init_ad_pins S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":129 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 066c9690 gpio_init_ad_pins>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06729690 gpio_init_ad_pins>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -939,11 +939,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 77 [ trigger_duration ])) "../User/Features/src/pulse_in.c":133 -1
      (nil))
 (call_insn 22 21 23 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 066b1618 Delay_Us>) [0 Delay_Us S4 A32])
+            (call (mem:SI (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 06711618 Delay_Us>) [0 Delay_Us S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":133 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 066b1618 Delay_Us>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Us") [flags 0x41] <function_decl 06711618 Delay_Us>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -972,11 +972,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 76 [ pin ])) "../User/Features/src/pulse_in.c":139 -1
      (nil))
 (call_insn 32 31 33 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 066c9690 gpio_init_ad_pins>) [0 gpio_init_ad_pins S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06729690 gpio_init_ad_pins>) [0 gpio_init_ad_pins S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":139 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 066c9690 gpio_init_ad_pins>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06729690 gpio_init_ad_pins>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -990,11 +990,11 @@ try_optimize_cfg iteration 2
         (reg:SI 83)) "../User/Features/src/pulse_in.c":142 -1
      (nil))
 (call_insn 36 35 37 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("EXTI_INIT") [flags 0x3] <function_decl 066c9960 EXTI_INIT>) [0 EXTI_INIT S4 A32])
+            (call (mem:SI (symbol_ref:SI ("EXTI_INIT") [flags 0x3] <function_decl 06729960 EXTI_INIT>) [0 EXTI_INIT S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":142 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("EXTI_INIT") [flags 0x3] <function_decl 066c9960 EXTI_INIT>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("EXTI_INIT") [flags 0x3] <function_decl 06729960 EXTI_INIT>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:HI (use (reg:SI 10 a0))
@@ -1002,11 +1002,11 @@ try_optimize_cfg iteration 2
 (debug_insn 37 36 38 5 (debug_marker) "../User/Features/src/pulse_in.c":145 -1
      (nil))
 (call_insn 38 37 0 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("pulseio_in_tim4_start") [flags 0x3] <function_decl 066c9528 pulseio_in_tim4_start>) [0 pulseio_in_tim4_start S4 A32])
+            (call (mem:SI (symbol_ref:SI ("pulseio_in_tim4_start") [flags 0x3] <function_decl 06729528 pulseio_in_tim4_start>) [0 pulseio_in_tim4_start S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":145 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pulseio_in_tim4_start") [flags 0x3] <function_decl 066c9528 pulseio_in_tim4_start>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pulseio_in_tim4_start") [flags 0x3] <function_decl 06729528 pulseio_in_tim4_start>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -1062,19 +1062,19 @@ try_optimize_cfg iteration 2
 (debug_insn 11 10 12 2 (debug_marker) "../User/Features/src/pulse_in.c":150 -1
      (nil))
 (insn 12 11 13 2 (set (reg:SI 73)
-        (high:SI (symbol_ref:SI ("pio_head") [flags 0xc4] <var_decl 06684790 pio_head>))) "../User/Features/src/pulse_in.c":150 -1
+        (high:SI (symbol_ref:SI ("pio_head") [flags 0xc4] <var_decl 066e4790 pio_head>))) "../User/Features/src/pulse_in.c":150 -1
      (nil))
 (insn 13 12 14 2 (set (mem/c:SI (lo_sum:SI (reg:SI 73)
-                (symbol_ref:SI ("pio_head") [flags 0xc4] <var_decl 06684790 pio_head>)) [2 pio_head+0 S4 A32])
+                (symbol_ref:SI ("pio_head") [flags 0xc4] <var_decl 066e4790 pio_head>)) [2 pio_head+0 S4 A32])
         (const_int 0 [0])) "../User/Features/src/pulse_in.c":150 -1
      (nil))
 (debug_insn 14 13 15 2 (debug_marker) "../User/Features/src/pulse_in.c":151 -1
      (nil))
 (insn 15 14 16 2 (set (reg:SI 74)
-        (high:SI (symbol_ref:SI ("pio_count") [flags 0xc4] <var_decl 066847e8 pio_count>))) "../User/Features/src/pulse_in.c":151 -1
+        (high:SI (symbol_ref:SI ("pio_count") [flags 0xc4] <var_decl 066e47e8 pio_count>))) "../User/Features/src/pulse_in.c":151 -1
      (nil))
 (insn 16 15 17 2 (set (mem/c:SI (lo_sum:SI (reg:SI 74)
-                (symbol_ref:SI ("pio_count") [flags 0xc4] <var_decl 066847e8 pio_count>)) [2 pio_count+0 S4 A32])
+                (symbol_ref:SI ("pio_count") [flags 0xc4] <var_decl 066e47e8 pio_count>)) [2 pio_count+0 S4 A32])
         (const_int 0 [0])) "../User/Features/src/pulse_in.c":151 -1
      (nil))
 (debug_insn 17 16 18 2 (debug_marker) "../User/Features/src/pulse_in.c":152 -1
@@ -1128,11 +1128,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 72 [ pin ])) "../User/Features/src/pulse_in.c":157 -1
      (nil))
 (call_insn 8 7 9 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("EXTI_DEINIT") [flags 0x3] <function_decl 066c99d8 EXTI_DEINIT>) [0 EXTI_DEINIT S4 A32])
+            (call (mem:SI (symbol_ref:SI ("EXTI_DEINIT") [flags 0x3] <function_decl 067299d8 EXTI_DEINIT>) [0 EXTI_DEINIT S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":157 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("EXTI_DEINIT") [flags 0x3] <function_decl 066c99d8 EXTI_DEINIT>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("EXTI_DEINIT") [flags 0x3] <function_decl 067299d8 EXTI_DEINIT>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:QI (use (reg:SI 10 a0))
@@ -1141,11 +1141,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 10 9 0 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("pulseio_in_tim4_stop") [flags 0x3] <function_decl 066c95a0 pulseio_in_tim4_stop>) [0 pulseio_in_tim4_stop S4 A32])
+                (call (mem:SI (symbol_ref:SI ("pulseio_in_tim4_stop") [flags 0x3] <function_decl 067295a0 pulseio_in_tim4_stop>) [0 pulseio_in_tim4_stop S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":159 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pulseio_in_tim4_stop") [flags 0x3] <function_decl 066c95a0 pulseio_in_tim4_stop>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pulseio_in_tim4_stop") [flags 0x3] <function_decl 067295a0 pulseio_in_tim4_stop>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -1214,17 +1214,17 @@ try_optimize_cfg iteration 2
 (debug_insn 13 12 14 2 (debug_marker) "../User/Features/src/pulse_in.c":165 -1
      (nil))
 (insn 14 13 15 2 (set (reg:SI 87)
-        (high:SI (symbol_ref:SI ("pio_head") [flags 0xc4] <var_decl 06684790 pio_head>))) "../User/Features/src/pulse_in.c":165 -1
+        (high:SI (symbol_ref:SI ("pio_head") [flags 0xc4] <var_decl 066e4790 pio_head>))) "../User/Features/src/pulse_in.c":165 -1
      (nil))
 (insn 15 14 16 2 (set (reg/v:SI 78 [ pio_head_copy ])
         (mem/c:SI (lo_sum:SI (reg:SI 87)
-                (symbol_ref:SI ("pio_head") [flags 0xc4] <var_decl 06684790 pio_head>)) [2 pio_head+0 S4 A32])) "../User/Features/src/pulse_in.c":165 -1
+                (symbol_ref:SI ("pio_head") [flags 0xc4] <var_decl 066e4790 pio_head>)) [2 pio_head+0 S4 A32])) "../User/Features/src/pulse_in.c":165 -1
      (nil))
 (debug_insn 16 15 17 2 (var_location:SI pio_head_copy (reg/v:SI 78 [ pio_head_copy ])) "../User/Features/src/pulse_in.c":165 -1
      (nil))
 (debug_insn 17 16 18 2 (debug_marker) "../User/Features/src/pulse_in.c":166 -1
      (nil))
-(debug_insn 18 17 19 2 (var_location:SI pio_count_copy (mem/c:SI (symbol_ref:SI ("pio_count") [flags 0xc4] <var_decl 066847e8 pio_count>) [2 pio_count+0 S4 A32])) "../User/Features/src/pulse_in.c":166 -1
+(debug_insn 18 17 19 2 (var_location:SI pio_count_copy (mem/c:SI (symbol_ref:SI ("pio_count") [flags 0xc4] <var_decl 066e47e8 pio_count>) [2 pio_count+0 S4 A32])) "../User/Features/src/pulse_in.c":166 -1
      (nil))
 (debug_insn 19 18 20 2 (debug_marker) "../User/Features/src/pulse_in.c":168 -1
      (nil))
@@ -1246,11 +1246,11 @@ try_optimize_cfg iteration 2
 (debug_insn 24 23 25 2 (debug_marker) "../User/Features/src/pulse_in.c":172 -1
      (nil))
 (insn 25 24 26 2 (set (reg:SI 89)
-        (high:SI (symbol_ref:SI ("pio_count") [flags 0xc4] <var_decl 066847e8 pio_count>))) "../User/Features/src/pulse_in.c":166 -1
+        (high:SI (symbol_ref:SI ("pio_count") [flags 0xc4] <var_decl 066e47e8 pio_count>))) "../User/Features/src/pulse_in.c":166 -1
      (nil))
 (insn 26 25 27 2 (set (reg/v:SI 82 [ modified_count ])
         (mem/c:SI (lo_sum:SI (reg:SI 89)
-                (symbol_ref:SI ("pio_count") [flags 0xc4] <var_decl 066847e8 pio_count>)) [2 pio_count+0 S4 A32])) -1
+                (symbol_ref:SI ("pio_count") [flags 0xc4] <var_decl 066e47e8 pio_count>)) [2 pio_count+0 S4 A32])) -1
      (nil))
 (jump_insn 27 26 75 2 (set (pc)
         (if_then_else (leu (reg/v:SI 82 [ modified_count ])
@@ -1273,11 +1273,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 82 [ modified_count ])) "../User/Features/src/pulse_in.c":178 -1
      (nil))
 (call_insn 33 32 34 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 066b10f0 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 067110f0 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":178 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 066b10f0 usbSerial_blocking_writeP_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 067110f0 usbSerial_blocking_writeP_u32>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
@@ -1340,12 +1340,12 @@ try_optimize_cfg iteration 2
 (debug_insn 51 72 52 6 (var_location:HI value (mem:HI (plus:SI (ashift:SI (umod:SI (debug_expr:SI D#1)
                     (const_int 3000 [0xbb8]))
                 (const_int 1 [0x1]))
-            (symbol_ref:SI ("pio_buffer") [flags 0xc0] <var_decl 06684840 pio_buffer>)) [9 pio_buffer S2 A16])) "../User/Features/src/pulse_in.c":183 -1
+            (symbol_ref:SI ("pio_buffer") [flags 0xc0] <var_decl 066e4840 pio_buffer>)) [9 pio_buffer S2 A16])) "../User/Features/src/pulse_in.c":183 -1
      (nil))
 (debug_insn 52 51 53 6 (debug_marker) "../User/Features/src/pulse_in.c":184 -1
      (nil))
 (insn 53 52 54 6 (set (reg:SI 96)
-        (high:SI (symbol_ref:SI ("pio_buffer") [flags 0xc0] <var_decl 06684840 pio_buffer>))) "../User/Features/src/pulse_in.c":183 -1
+        (high:SI (symbol_ref:SI ("pio_buffer") [flags 0xc0] <var_decl 066e4840 pio_buffer>))) "../User/Features/src/pulse_in.c":183 -1
      (nil))
 (insn 54 53 55 6 (set (reg:SI 97)
         (plus:SI (reg/v:SI 77 [ i ])
@@ -1369,7 +1369,7 @@ try_optimize_cfg iteration 2
      (nil))
 (insn 59 58 60 6 (set (reg:SI 104)
         (lo_sum:SI (reg:SI 96)
-            (symbol_ref:SI ("pio_buffer") [flags 0xc0] <var_decl 06684840 pio_buffer>))) "../User/Features/src/pulse_in.c":183 -1
+            (symbol_ref:SI ("pio_buffer") [flags 0xc0] <var_decl 066e4840 pio_buffer>))) "../User/Features/src/pulse_in.c":183 -1
      (nil))
 (insn 60 59 61 6 (set (reg/f:SI 103)
         (plus:SI (reg:SI 102)
@@ -1382,11 +1382,11 @@ try_optimize_cfg iteration 2
         (reg:SI 105)) "../User/Features/src/pulse_in.c":184 -1
      (nil))
 (call_insn 63 62 64 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 066b10f0 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 067110f0 usbSerial_blocking_writeP_u32>) [0 usbSerial_blocking_writeP_u32 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/pulse_in.c":184 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 066b10f0 usbSerial_blocking_writeP_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP_u32") [flags 0x41] <function_decl 067110f0 usbSerial_blocking_writeP_u32>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))

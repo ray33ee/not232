@@ -8,6 +8,8 @@
 		  
 # Todo
 
+- I2C stuff is looking good - now implement the sytem that allows the host to poll until the device is ready (turn peripheral off when working, then back on when ready).
+	 - At the start of a write, we wait for the address byte then ack it. If the host issues a stop after, we know this is just polling to see if the device is busy, to we loop back and wait for another address byte. If the next event isnt a stop and it asks for data, this is the actual write command.
 - Turn the python code into a working python package
 - Get UART working (use interrupts for RXNE, good luck)
 - Get FLASH working
