@@ -1,10 +1,6 @@
 #include "comms/inc/i2c_device.h"
 
-/*
 
-This code doesn't really work properly and needs rewriting
-
-*/
 
 /*void i2c_device_init(uint8_t address) {
 
@@ -63,73 +59,28 @@ void i2c_device_init(uint8_t address)
 }
 
 void i2c_device_read(uint8_t *buffer, uint32_t size) {
-    uint32_t i = 0;
+    while( !I2C_CheckEvent( I2C1, I2C_EVENT_SLAVE_RECEIVER_ADDRESS_MATCHED ) );
 
-    if (size == 0) {
-        return;
-    }
+    ((void)(I2C1->STAR1));
+    ((void)(I2C1->STAR2));
 
-    while (I2C_GetFlagStatus(I2C1, I2C_FLAG_ADDR) == RESET) {
-    }
-
-    /* clear ADDR */
-    (void)I2C1->STAR1;
-    (void)I2C1->STAR2;
-
-    while (1) {
-        if (I2C_GetFlagStatus(I2C1, I2C_FLAG_RXNE) != RESET) {
-            uint8_t b = I2C_ReceiveData(I2C1);
-            if (i < size) {
-                buffer[i++] = b;
-            }
-        }
-
-        if (I2C_GetFlagStatus(I2C1, I2C_FLAG_STOPF) != RESET) {
-            (void)I2C1->STAR1;
-            I2C1->CTLR1 |= I2C_CTLR1_PE;   /* clear STOPF */
-            break;
-        }
+    for (int i = 0; i < size; i++) {
+        while( !I2C_GetFlagStatus( I2C1, I2C_FLAG_RXNE ) );
+        buffer[i] = I2C_ReceiveData( I2C1 );
     }
 }
 
 void i2c_device_write(uint8_t *buffer, uint32_t size) {
-    uint32_t i = 0;
+    
+	while( !I2C_CheckEvent( I2C1, I2C_EVENT_SLAVE_TRANSMITTER_ADDRESS_MATCHED ) );
 
-    if (size == 0) {
-        return;
+    ((void)(I2C1->STAR1));
+    ((void)(I2C1->STAR2));
+
+
+    for (int i = 0; i < size; i++) {
+        while ( !I2C_GetFlagStatus( I2C1, I2C_FLAG_TXE ));
+        I2C_SendData( I2C1, buffer[i] );
     }
 
-    /* Wait for a completely separate READ transaction: SLA+R */
-    while (!I2C_CheckEvent(I2C1, I2C_EVENT_SLAVE_TRANSMITTER_ADDRESS_MATCHED)) {
-    }
-
-    /* CRITICAL: Clear ADDR flag - slave stretches SCL until this is done */
-    (void)I2C1->STAR1;
-    (void)I2C1->STAR2;
-
-    /* Pre-load first byte - host will clock immediately after ADDR clear */
-    if (size > 0) {
-        I2C_SendData(I2C1, buffer[0]);
-        i = 1;
-    }
-
-    while (1) {
-        if ((I2C_GetFlagStatus(I2C1, I2C_FLAG_TXE) != RESET) && (i < size)) {
-            I2C_SendData(I2C1, buffer[i]);
-            i++;
-        }
-
-        /* Master NACKed final byte */
-        if (I2C_GetFlagStatus(I2C1, I2C_FLAG_AF) != RESET) {
-            I2C_ClearFlag(I2C1, I2C_FLAG_AF);
-            break;
-        }
-
-        /* Also tolerate STOP */
-        if (I2C_GetFlagStatus(I2C1, I2C_FLAG_STOPF) != RESET) {
-            (void)I2C1->STAR1;
-            I2C_Cmd(I2C1, ENABLE);
-            break;
-        }
-    }
 }

@@ -11,10 +11,6 @@
 
 void comms_init(uint32_t mode, uint8_t i2c_address);
 
-int comms_is_i2c_mode(void);
-
-void comms_flush_i2c(void);
-
 void comms_send_buffer(uint8_t* buffer, uint32_t size);
 
 void comms_send_u8(uint8_t byte);

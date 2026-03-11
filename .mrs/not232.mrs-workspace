@@ -5,11 +5,12 @@
 		},
 		{
 			"name": "not232",
-			"path": "e:\\Software Projects\\moun_projects\\not232"
+			"path": "E:\\Software Projects\\moun_projects\\not232"
 		}
 	],
 	"settings": {
 		"mrs.workspace.type": "project",
+		"mrs.init.arg": "",
 		"files.associations": {
 			"*.c": "c",
 			"*.h": "cpp",

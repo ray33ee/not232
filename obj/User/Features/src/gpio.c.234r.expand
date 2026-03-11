@@ -74,11 +74,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073809408 [0x40010800])
         (nil)))
 (call_insn 20 19 21 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 06641e10 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 06683e10 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/gpio.c":14 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 06641e10 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 06683e10 GPIO_Init>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -115,11 +115,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
         (nil)))
 (call_insn 30 29 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 06641e10 GPIO_Init>) [0 GPIO_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 06683e10 GPIO_Init>) [0 GPIO_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/gpio.c":19 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 06641e10 GPIO_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 06683e10 GPIO_Init>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -434,11 +434,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073809408 [0x40010800])
         (nil)))
 (call_insn 12 11 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_port") [flags 0x3] <function_decl 066769d8 gpio_init_port>) [0 gpio_init_port S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_port") [flags 0x3] <function_decl 066b89d8 gpio_init_port>) [0 gpio_init_port S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/gpio.c":55 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_port") [flags 0x3] <function_decl 066769d8 gpio_init_port>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_port") [flags 0x3] <function_decl 066b89d8 gpio_init_port>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -585,11 +585,11 @@ try_optimize_cfg iteration 2
      (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
         (nil)))
 (call_insn 41 40 44 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_port") [flags 0x3] <function_decl 066769d8 gpio_init_port>) [0 gpio_init_port S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_port") [flags 0x3] <function_decl 066b89d8 gpio_init_port>) [0 gpio_init_port S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/gpio.c":71 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_port") [flags 0x3] <function_decl 066769d8 gpio_init_port>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_port") [flags 0x3] <function_decl 066b89d8 gpio_init_port>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -660,11 +660,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 72 [ pin ])) "../User/Features/src/gpio.c":76 -1
      (nil))
 (call_insn 14 13 15 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x3] <function_decl 06676690 gpio_init_ad_pins>) [0 gpio_init_ad_pins S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x3] <function_decl 066b8690 gpio_init_ad_pins>) [0 gpio_init_ad_pins S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/gpio.c":76 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x3] <function_decl 06676690 gpio_init_ad_pins>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x3] <function_decl 066b8690 gpio_init_ad_pins>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:QI (use (reg:SI 10 a0))
@@ -686,11 +686,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 72 [ pin ])) "../User/Features/src/gpio.c":78 -1
      (nil))
 (call_insn 22 21 25 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_f_pins") [flags 0x3] <function_decl 06676708 gpio_init_f_pins>) [0 gpio_init_f_pins S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_f_pins") [flags 0x3] <function_decl 066b8708 gpio_init_f_pins>) [0 gpio_init_f_pins S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/gpio.c":78 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_f_pins") [flags 0x3] <function_decl 06676708 gpio_init_f_pins>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_f_pins") [flags 0x3] <function_decl 066b8708 gpio_init_f_pins>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:QI (use (reg:SI 10 a0))
