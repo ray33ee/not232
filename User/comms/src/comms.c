@@ -23,15 +23,15 @@ void get_packet() {
 
                 Returns a response unique to each N232 Device
             */
-            {uint32_t* uids = ESIG_REGISTER_BASE;
+            {uint8_t* uids = ESIG_REGISTER_BASE;
 
-            char s[] = "TLL_N232";
+            char s[] = "            TLL_N232";
 
-            comms_send_u32(uids[0]);
-            comms_send_u32(uids[1]);
-            comms_send_u32(uids[2]);
+            for (int i = 0; i < 12; i++) {
+                s[i] = uids[i];
+            }
 
-            comms_send_buffer((uint8_t*)s, 8);
+            comms_send_buffer((uint8_t*)s, 20);
             break;}
         case RECV_OUT_PP:
             {

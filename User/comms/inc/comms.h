@@ -27,7 +27,7 @@
 #define BYTES_PER_INSTRUCTION       (4)
 
 
-#define ESIG_REGISTER_BASE          ((uint32_t*)0x1FFFF7E8)
+#define ESIG_REGISTER_BASE          ((uint8_t*)0x1FFFF7E8)
 
 #define RECV_PING                   ((uint8_t)0)
 #define RECV_IDENTIFY               ((uint8_t)1)
