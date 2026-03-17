@@ -1,5 +1,481 @@
 
-;; Function main (main, funcdef_no=44, decl_uid=6096, cgraph_uid=44, symbol_order=44) (executed once)
+;; Function i2c_device_init2 (i2c_device_init2, funcdef_no=44, decl_uid=6096, cgraph_uid=44, symbol_order=44)
+
+Partition 0: size 12 align 4
+	all
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../User/main.c":87 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 73)
+        (const_int 1073811456 [0x40011000])) "../User/main.c":87 -1
+     (nil))
+(insn 7 6 8 2 (set (reg/f:SI 72)
+        (plus:SI (reg:SI 73)
+            (const_int -1024 [0xfffffffffffffc00]))) "../User/main.c":87 -1
+     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
+        (nil)))
+(insn 8 7 9 2 (set (reg:SI 74)
+        (const_int 512 [0x200])) "../User/main.c":87 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/v:SI (plus:SI (reg/f:SI 72)
+                (const_int 16 [0x10])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].BSHR+0 S4 A128])
+        (reg:SI 74)) "../User/main.c":87 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../User/main.c":88 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 76)
+        (const_int 1073811456 [0x40011000])) "../User/main.c":88 -1
+     (nil))
+(insn 12 11 13 2 (set (reg/f:SI 75)
+        (plus:SI (reg:SI 76)
+            (const_int -1024 [0xfffffffffffffc00]))) "../User/main.c":88 -1
+     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
+        (nil)))
+(insn 13 12 14 2 (set (reg:SI 77)
+        (const_int 256 [0x100])) "../User/main.c":88 -1
+     (nil))
+(insn 14 13 15 2 (set (mem/v:SI (plus:SI (reg/f:SI 75)
+                (const_int 16 [0x10])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].BSHR+0 S4 A128])
+        (reg:SI 77)) "../User/main.c":88 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "../User/main.c":90 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "../User/main.c":92 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 78)
+        (const_int 20 [0x14])) "../User/main.c":92 -1
+     (nil))
+(insn 18 17 19 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [4 all.GPIO_Mode+0 S4 A32])
+        (reg:SI 78)) "../User/main.c":92 -1
+     (nil))
+(debug_insn 19 18 20 2 (debug_marker) "../User/main.c":93 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 79)
+        (const_int 3 [0x3])) "../User/main.c":93 -1
+     (nil))
+(insn 21 20 22 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 all.GPIO_Speed+0 S4 A32])
+        (reg:SI 79)) "../User/main.c":93 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "../User/main.c":95 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:HI 80)
+        (const_int 768 [0x300])) "../User/main.c":95 -1
+     (nil))
+(insn 24 23 25 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [2 all.GPIO_Pin+0 S2 A32])
+        (reg:HI 80)) "../User/main.c":95 -1
+     (nil))
+(debug_insn 25 24 26 2 (debug_marker) "../User/main.c":97 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 81)
+        (plus:SI (reg/f:SI 67 virtual-stack-vars)
+            (const_int -12 [0xfffffffffffffff4]))) "../User/main.c":97 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:SI 11 a1)
+        (reg:SI 81)) "../User/main.c":97 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 82)
+        (const_int 1073811456 [0x40011000])) "../User/main.c":97 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 82)
+            (const_int -1024 [0xfffffffffffffc00]))) "../User/main.c":97 -1
+     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
+        (nil)))
+(call_insn 30 29 0 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 065e28e8 GPIO_Init>) [0 GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":97 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 065e28e8 GPIO_Init>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+
+;; Function i2c_device_start_condition (i2c_device_start_condition, funcdef_no=49, decl_uid=6107, cgraph_uid=49, symbol_order=49)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 6->7 to 8 failed.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../User/main.c":117 -1
+     (nil))
+(debug_insn 6 5 7 2 (debug_marker) "../User/main.c":101 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 81)
+        (const_int 1073811456 [0x40011000])) "../User/main.c":101 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 80)
+        (plus:SI (reg:SI 81)
+            (const_int -1024 [0xfffffffffffffc00]))) "../User/main.c":101 -1
+     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 72 [ _13 ])
+        (mem/v:SI (plus:SI (reg/f:SI 80)
+                (const_int 8 [0x8])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].INDR+0 S4 A64])) "../User/main.c":101 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 82)
+        (and:SI (reg:SI 72 [ _13 ])
+            (const_int 256 [0x100]))) "../User/main.c":101 -1
+     (nil))
+(jump_insn 11 10 12 2 (set (pc)
+        (if_then_else (eq (reg:SI 82)
+                (const_int 0 [0]))
+            (label_ref 28)
+            (pc))) "../User/main.c":117 -1
+     (int_list:REG_BR_PROB 719407028 (nil))
+ -> 28)
+(note 12 11 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 13 12 14 4 (debug_marker) "../User/main.c":105 -1
+     (nil))
+(insn 14 13 15 4 (set (reg:SI 84)
+        (const_int 1073811456 [0x40011000])) "../User/main.c":105 -1
+     (nil))
+(insn 15 14 16 4 (set (reg/f:SI 83)
+        (plus:SI (reg:SI 84)
+            (const_int -1024 [0xfffffffffffffc00]))) "../User/main.c":105 -1
+     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
+        (nil)))
+(insn 16 15 17 4 (set (reg:SI 74 [ _17 ])
+        (mem/v:SI (plus:SI (reg/f:SI 83)
+                (const_int 8 [0x8])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].INDR+0 S4 A64])) "../User/main.c":105 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:SI 85)
+        (and:SI (reg:SI 74 [ _17 ])
+            (const_int 512 [0x200]))) "../User/main.c":105 -1
+     (nil))
+(jump_insn 18 17 25 4 (set (pc)
+        (if_then_else (eq (reg:SI 85)
+                (const_int 0 [0]))
+            (label_ref 28)
+            (pc))) "../User/main.c":117 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 28)
+(code_label 25 18 19 5 5 (nil) [1 uses])
+(note 19 25 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 20 19 21 5 (debug_marker) "../User/main.c":118 -1
+     (nil))
+(debug_insn 21 20 22 5 (debug_marker) "../User/main.c":105 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:SI 87)
+        (const_int 1073811456 [0x40011000])) "../User/main.c":105 -1
+     (nil))
+(insn 23 22 24 5 (set (reg/f:SI 86)
+        (plus:SI (reg:SI 87)
+            (const_int -1024 [0xfffffffffffffc00]))) "../User/main.c":105 -1
+     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
+        (nil)))
+(insn 24 23 26 5 (set (reg:SI 76 [ _21 ])
+        (mem/v:SI (plus:SI (reg/f:SI 86)
+                (const_int 8 [0x8])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].INDR+0 S4 A64])) "../User/main.c":105 -1
+     (nil))
+(insn 26 24 27 5 (set (reg:SI 88)
+        (and:SI (reg:SI 76 [ _21 ])
+            (const_int 512 [0x200]))) "../User/main.c":105 -1
+     (nil))
+(jump_insn 27 26 28 5 (set (pc)
+        (if_then_else (ne (reg:SI 88)
+                (const_int 0 [0]))
+            (label_ref 25)
+            (pc))) "../User/main.c":118 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 25)
+(code_label 28 27 29 6 4 (nil) [3 uses])
+(note 29 28 30 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 30 29 31 6 (debug_marker) "../User/main.c":122 -1
+     (nil))
+(debug_insn 31 30 32 6 (debug_marker) "../User/main.c":101 -1
+     (nil))
+(insn 32 31 33 6 (set (reg:SI 90)
+        (const_int 1073811456 [0x40011000])) "../User/main.c":101 -1
+     (nil))
+(insn 33 32 34 6 (set (reg/f:SI 89)
+        (plus:SI (reg:SI 90)
+            (const_int -1024 [0xfffffffffffffc00]))) "../User/main.c":101 -1
+     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
+        (nil)))
+(insn 34 33 35 6 (set (reg:SI 78 [ _25 ])
+        (mem/v:SI (plus:SI (reg/f:SI 89)
+                (const_int 8 [0x8])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].INDR+0 S4 A64])) "../User/main.c":101 -1
+     (nil))
+(insn 35 34 36 6 (set (reg:SI 91)
+        (and:SI (reg:SI 78 [ _25 ])
+            (const_int 256 [0x100]))) "../User/main.c":101 -1
+     (nil))
+(jump_insn 36 35 37 6 (set (pc)
+        (if_then_else (ne (reg:SI 91)
+                (const_int 0 [0]))
+            (label_ref 28)
+            (pc))) "../User/main.c":122 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 28)
+(note 37 36 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function i2c_device_read_bit (i2c_device_read_bit, funcdef_no=50, decl_uid=6115, cgraph_uid=50, symbol_order=50)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+Edge 5->8 redirected to 11
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 57.
+Merging block 11 into block 10...
+Merged blocks 10 and 11.
+Merged 10 and 11 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 5 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 2 14 2 (debug_marker) "../User/main.c":128 -1
+     (nil))
+(code_label 14 7 8 4 14 (nil) [1 uses])
+(note 8 14 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 9 8 10 4 (debug_marker) "../User/main.c":128 -1
+     (nil))
+(debug_insn 10 9 11 4 (debug_marker) "../User/main.c":101 -1
+     (nil))
+(insn 11 10 12 4 (set (reg:SI 85)
+        (const_int 1073811456 [0x40011000])) "../User/main.c":101 -1
+     (nil))
+(insn 12 11 13 4 (set (reg/f:SI 84)
+        (plus:SI (reg:SI 85)
+            (const_int -1024 [0xfffffffffffffc00]))) "../User/main.c":101 -1
+     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
+        (nil)))
+(insn 13 12 15 4 (set (reg:SI 72 [ _15 ])
+        (mem/v:SI (plus:SI (reg/f:SI 84)
+                (const_int 8 [0x8])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].INDR+0 S4 A64])) "../User/main.c":101 -1
+     (nil))
+(insn 15 13 16 4 (set (reg:SI 86)
+        (and:SI (reg:SI 72 [ _15 ])
+            (const_int 256 [0x100]))) "../User/main.c":101 -1
+     (nil))
+(jump_insn 16 15 17 4 (set (pc)
+        (if_then_else (eq (reg:SI 86)
+                (const_int 0 [0]))
+            (label_ref 14)
+            (pc))) "../User/main.c":128 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 14)
+(note 17 16 18 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 18 17 19 5 (debug_marker) "../User/main.c":131 -1
+     (nil))
+(debug_insn 19 18 20 5 (debug_marker) "../User/main.c":105 -1
+     (nil))
+(insn 20 19 21 5 (set (reg:SI 88)
+        (const_int 1073811456 [0x40011000])) "../User/main.c":105 -1
+     (nil))
+(insn 21 20 22 5 (set (reg/f:SI 87)
+        (plus:SI (reg:SI 88)
+            (const_int -1024 [0xfffffffffffffc00]))) "../User/main.c":105 -1
+     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
+        (nil)))
+(insn 22 21 23 5 (set (reg:SI 74 [ _19 ])
+        (mem/v:SI (plus:SI (reg/f:SI 87)
+                (const_int 8 [0x8])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].INDR+0 S4 A64])) "../User/main.c":105 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:SI 89)
+        (lshiftrt:SI (reg:SI 74 [ _19 ])
+            (const_int 9 [0x9]))) "../User/main.c":105 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:QI 90)
+        (subreg:QI (reg:SI 89) 0)) "../User/main.c":105 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:SI 91)
+        (and:SI (subreg:SI (reg:QI 90) 0)
+            (const_int 1 [0x1]))) "../User/main.c":105 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:SI 76 [ _21 ])
+        (zero_extend:SI (subreg:QI (reg:SI 91) 0))) "../User/main.c":105 -1
+     (nil))
+(debug_insn 27 26 28 5 (var_location:SI bit (zero_extend:SI (subreg:QI (reg:SI 76 [ _21 ]) 0))) "../User/main.c":131 -1
+     (nil))
+(debug_insn 28 27 29 5 (debug_marker) "../User/main.c":134 -1
+     (nil))
+(jump_insn 29 28 30 5 (set (pc)
+        (label_ref 42)) "../User/main.c":134 -1
+     (nil)
+ -> 42)
+(barrier 30 29 48)
+(code_label 48 30 31 6 17 (nil) [1 uses])
+(note 31 48 32 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 32 31 33 6 (debug_marker) "../User/main.c":137 -1
+     (nil))
+(debug_insn 33 32 34 6 (debug_marker) "../User/main.c":105 -1
+     (nil))
+(insn 34 33 35 6 (set (reg:SI 93)
+        (const_int 1073811456 [0x40011000])) "../User/main.c":105 -1
+     (nil))
+(insn 35 34 36 6 (set (reg/f:SI 92)
+        (plus:SI (reg:SI 93)
+            (const_int -1024 [0xfffffffffffffc00]))) "../User/main.c":105 -1
+     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
+        (nil)))
+(insn 36 35 37 6 (set (reg:SI 77 [ _23 ])
+        (mem/v:SI (plus:SI (reg/f:SI 92)
+                (const_int 8 [0x8])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].INDR+0 S4 A64])) "../User/main.c":105 -1
+     (nil))
+(insn 37 36 38 6 (set (reg:SI 94)
+        (lshiftrt:SI (reg:SI 77 [ _23 ])
+            (const_int 9 [0x9]))) "../User/main.c":105 -1
+     (nil))
+(insn 38 37 39 6 (set (reg:QI 95)
+        (subreg:QI (reg:SI 94) 0)) "../User/main.c":105 -1
+     (nil))
+(insn 39 38 40 6 (set (reg:SI 96)
+        (and:SI (subreg:SI (reg:QI 95) 0)
+            (const_int 1 [0x1]))) "../User/main.c":105 -1
+     (nil))
+(insn 40 39 41 6 (set (reg:SI 97)
+        (zero_extend:SI (subreg:QI (reg:SI 96) 0))) "../User/main.c":137 -1
+     (nil))
+(jump_insn 41 40 42 6 (set (pc)
+        (if_then_else (ne (reg:SI 76 [ _21 ])
+                (reg:SI 97))
+            (label_ref:SI 66)
+            (pc))) "../User/main.c":137 180 {*branchsi}
+     (int_list:REG_BR_PROB 59055804 (nil))
+ -> 66)
+(code_label 42 41 43 7 15 (nil) [1 uses])
+(note 43 42 44 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 44 43 45 7 (debug_marker) "../User/main.c":101 -1
+     (nil))
+(insn 45 44 46 7 (set (reg:SI 99)
+        (const_int 1073811456 [0x40011000])) "../User/main.c":101 -1
+     (nil))
+(insn 46 45 47 7 (set (reg/f:SI 98)
+        (plus:SI (reg:SI 99)
+            (const_int -1024 [0xfffffffffffffc00]))) "../User/main.c":101 -1
+     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
+        (nil)))
+(insn 47 46 49 7 (set (reg:SI 80 [ _27 ])
+        (mem/v:SI (plus:SI (reg/f:SI 98)
+                (const_int 8 [0x8])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].INDR+0 S4 A64])) "../User/main.c":101 -1
+     (nil))
+(insn 49 47 50 7 (set (reg:SI 100)
+        (and:SI (reg:SI 80 [ _27 ])
+            (const_int 256 [0x100]))) "../User/main.c":101 -1
+     (nil))
+(jump_insn 50 49 51 7 (set (pc)
+        (if_then_else (ne (reg:SI 100)
+                (const_int 0 [0]))
+            (label_ref 48)
+            (pc))) "../User/main.c":134 -1
+     (int_list:REG_BR_PROB 1014686028 (nil))
+ -> 48)
+(note 51 50 52 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 52 51 53 8 (debug_marker) "../User/main.c":142 -1
+     (nil))
+(insn 53 52 63 8 (set (reg:SI 82 [ <retval> ])
+        (zero_extend:SI (subreg:HI (reg:SI 76 [ _21 ]) 0))) "../User/main.c":142 -1
+     (nil))
+(jump_insn 63 53 64 8 (set (pc)
+        (label_ref 54)) "../User/main.c":142 -1
+     (nil)
+ -> 54)
+(barrier 64 63 66)
+(code_label 66 64 65 9 18 (nil) [1 uses])
+(note 65 66 3 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 3 65 4 9 (set (reg:SI 83)
+        (const_int 65536 [0x10000])) "../User/main.c":138 -1
+     (nil))
+(insn 4 3 54 9 (set (reg:SI 82 [ <retval> ])
+        (plus:SI (reg:SI 83)
+            (const_int -1 [0xffffffffffffffff]))) "../User/main.c":138 -1
+     (expr_list:REG_EQUAL (const_int 65535 [0xffff])
+        (nil)))
+(code_label 54 4 55 10 16 (nil) [1 uses])
+(note 55 54 56 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 56 55 60 10 (set (reg:SI 82 [ <retval> ])
+        (reg:SI 82 [ <retval> ])) -1
+     (nil))
+(insn 60 56 61 10 (set (reg/i:SI 10 a0)
+        (reg:SI 82 [ <retval> ])) "../User/main.c":143 -1
+     (nil))
+(insn 61 60 0 10 (use (reg/i:SI 10 a0)) "../User/main.c":143 -1
+     (nil))
+
+;; Function main (main, funcdef_no=56, decl_uid=6175, cgraph_uid=56, symbol_order=56) (executed once)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -35,448 +511,428 @@ try_optimize_cfg iteration 2
 (note 1 0 3 NOTE_INSN_DELETED)
 (note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
 (note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 5 2 6 2 (debug_marker) "../User/main.c":88 -1
+(debug_insn 5 2 6 2 (debug_marker) "../User/main.c":287 -1
      (nil))
 (insn 6 5 7 2 (set (reg:SI 10 a0)
-        (const_int 1 [0x1])) "../User/main.c":88 -1
+        (const_int 1 [0x1])) "../User/main.c":287 -1
      (nil))
 (call_insn 7 6 8 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("NVIC_PriorityGroupConfig") [flags 0x41] <function_decl 06634078 NVIC_PriorityGroupConfig>) [0 NVIC_PriorityGroupConfig S4 A32])
+            (call (mem:SI (symbol_ref:SI ("NVIC_PriorityGroupConfig") [flags 0x41] <function_decl 06659078 NVIC_PriorityGroupConfig>) [0 NVIC_PriorityGroupConfig S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":88 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("NVIC_PriorityGroupConfig") [flags 0x41] <function_decl 06634078 NVIC_PriorityGroupConfig>)
+        ]) "../User/main.c":287 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("NVIC_PriorityGroupConfig") [flags 0x41] <function_decl 06659078 NVIC_PriorityGroupConfig>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
-(debug_insn 8 7 9 2 (debug_marker) "../User/main.c":89 -1
+(debug_insn 8 7 9 2 (debug_marker) "../User/main.c":288 -1
      (nil))
 (call_insn 9 8 10 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("SystemCoreClockUpdate") [flags 0x41] <function_decl 06493618 SystemCoreClockUpdate>) [0 SystemCoreClockUpdate S4 A32])
+            (call (mem:SI (symbol_ref:SI ("SystemCoreClockUpdate") [flags 0x41] <function_decl 064b7618 SystemCoreClockUpdate>) [0 SystemCoreClockUpdate S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":89 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("SystemCoreClockUpdate") [flags 0x41] <function_decl 06493618 SystemCoreClockUpdate>)
+        ]) "../User/main.c":288 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("SystemCoreClockUpdate") [flags 0x41] <function_decl 064b7618 SystemCoreClockUpdate>)
         (nil))
     (nil))
-(debug_insn 10 9 11 2 (debug_marker) "../User/main.c":90 -1
+(debug_insn 10 9 11 2 (debug_marker) "../User/main.c":289 -1
      (nil))
 (call_insn 11 10 12 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("Delay_Init") [flags 0x41] <function_decl 06634168 Delay_Init>) [0 Delay_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("Delay_Init") [flags 0x41] <function_decl 06659168 Delay_Init>) [0 Delay_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":90 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Init") [flags 0x41] <function_decl 06634168 Delay_Init>)
+        ]) "../User/main.c":289 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Delay_Init") [flags 0x41] <function_decl 06659168 Delay_Init>)
         (nil))
     (nil))
-(debug_insn 12 11 13 2 (debug_marker) "../User/main.c":91 -1
+(debug_insn 12 11 13 2 (debug_marker) "../User/main.c":290 -1
      (nil))
 (insn 13 12 14 2 (set (reg:SI 76)
-        (const_int 114688 [0x1c000])) "../User/main.c":91 -1
+        (const_int 114688 [0x1c000])) "../User/main.c":290 -1
      (nil))
 (insn 14 13 15 2 (set (reg:SI 10 a0)
         (plus:SI (reg:SI 76)
-            (const_int 512 [0x200]))) "../User/main.c":91 -1
+            (const_int 512 [0x200]))) "../User/main.c":290 -1
      (expr_list:REG_EQUAL (const_int 115200 [0x1c200])
         (nil)))
 (call_insn 15 14 16 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("USART_Printf_Init") [flags 0x41] <function_decl 06634348 USART_Printf_Init>) [0 USART_Printf_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("USART_Printf_Init") [flags 0x41] <function_decl 06659348 USART_Printf_Init>) [0 USART_Printf_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":91 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("USART_Printf_Init") [flags 0x41] <function_decl 06634348 USART_Printf_Init>)
+        ]) "../User/main.c":290 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("USART_Printf_Init") [flags 0x41] <function_decl 06659348 USART_Printf_Init>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
-(debug_insn 16 15 17 2 (debug_marker) "../User/main.c":94 -1
+(debug_insn 16 15 17 2 (debug_marker) "../User/main.c":293 -1
      (nil))
 (insn 17 16 18 2 (set (reg:SI 11 a1)
-        (const_int 1 [0x1])) "../User/main.c":94 -1
+        (const_int 1 [0x1])) "../User/main.c":293 -1
      (nil))
 (insn 18 17 19 2 (set (reg:SI 10 a0)
-        (const_int 4 [0x4])) "../User/main.c":94 -1
+        (const_int 4 [0x4])) "../User/main.c":293 -1
      (nil))
 (call_insn 19 18 20 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 065f73c0 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 0660c3c0 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":94 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 065f73c0 RCC_APB2PeriphClockCmd>)
+        ]) "../User/main.c":293 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 0660c3c0 RCC_APB2PeriphClockCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (nil))))
-(debug_insn 20 19 21 2 (debug_marker) "../User/main.c":95 -1
+(debug_insn 20 19 21 2 (debug_marker) "../User/main.c":294 -1
      (nil))
 (insn 21 20 22 2 (set (reg:SI 11 a1)
-        (const_int 1 [0x1])) "../User/main.c":95 -1
+        (const_int 1 [0x1])) "../User/main.c":294 -1
      (nil))
 (insn 22 21 23 2 (set (reg:SI 10 a0)
-        (const_int 8 [0x8])) "../User/main.c":95 -1
+        (const_int 8 [0x8])) "../User/main.c":294 -1
      (nil))
 (call_insn 23 22 24 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 065f73c0 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 0660c3c0 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":95 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 065f73c0 RCC_APB2PeriphClockCmd>)
+        ]) "../User/main.c":294 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 0660c3c0 RCC_APB2PeriphClockCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (nil))))
-(debug_insn 24 23 25 2 (debug_marker) "../User/main.c":96 -1
+(debug_insn 24 23 25 2 (debug_marker) "../User/main.c":295 -1
      (nil))
 (insn 25 24 26 2 (set (reg:SI 11 a1)
-        (const_int 1 [0x1])) "../User/main.c":96 -1
+        (const_int 1 [0x1])) "../User/main.c":295 -1
      (nil))
 (insn 26 25 27 2 (set (reg:SI 77)
-        (const_int 4096 [0x1000])) "../User/main.c":96 -1
+        (const_int 4096 [0x1000])) "../User/main.c":295 -1
      (nil))
 (insn 27 26 28 2 (set (reg:SI 10 a0)
         (plus:SI (reg:SI 77)
-            (const_int -2048 [0xfffffffffffff800]))) "../User/main.c":96 -1
+            (const_int -2048 [0xfffffffffffff800]))) "../User/main.c":295 -1
      (expr_list:REG_EQUAL (const_int 2048 [0x800])
         (nil)))
 (call_insn 28 27 29 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 065f73c0 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 0660c3c0 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":96 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 065f73c0 RCC_APB2PeriphClockCmd>)
+        ]) "../User/main.c":295 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 0660c3c0 RCC_APB2PeriphClockCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (nil))))
-(debug_insn 29 28 30 2 (debug_marker) "../User/main.c":97 -1
+(debug_insn 29 28 30 2 (debug_marker) "../User/main.c":296 -1
      (nil))
 (insn 30 29 31 2 (set (reg:SI 11 a1)
-        (const_int 1 [0x1])) "../User/main.c":97 -1
+        (const_int 1 [0x1])) "../User/main.c":296 -1
      (nil))
 (insn 31 30 32 2 (set (reg:SI 10 a0)
-        (const_int 512 [0x200])) "../User/main.c":97 -1
+        (const_int 512 [0x200])) "../User/main.c":296 -1
      (nil))
 (call_insn 32 31 33 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 065f73c0 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 0660c3c0 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":97 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 065f73c0 RCC_APB2PeriphClockCmd>)
+        ]) "../User/main.c":296 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 0660c3c0 RCC_APB2PeriphClockCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (nil))))
-(debug_insn 33 32 34 2 (debug_marker) "../User/main.c":98 -1
+(debug_insn 33 32 34 2 (debug_marker) "../User/main.c":297 -1
      (nil))
 (insn 34 33 35 2 (set (reg:SI 11 a1)
-        (const_int 1 [0x1])) "../User/main.c":98 -1
+        (const_int 1 [0x1])) "../User/main.c":297 -1
      (nil))
 (insn 35 34 36 2 (set (reg:SI 10 a0)
-        (const_int 1 [0x1])) "../User/main.c":98 -1
+        (const_int 1 [0x1])) "../User/main.c":297 -1
      (nil))
 (call_insn 36 35 37 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 065f73c0 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 0660c3c0 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":98 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 065f73c0 RCC_APB2PeriphClockCmd>)
+        ]) "../User/main.c":297 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 0660c3c0 RCC_APB2PeriphClockCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (nil))))
-(debug_insn 37 36 38 2 (debug_marker) "../User/main.c":100 -1
+(debug_insn 37 36 38 2 (debug_marker) "../User/main.c":299 -1
      (nil))
 (insn 38 37 39 2 (set (reg:SI 11 a1)
-        (const_int 1 [0x1])) "../User/main.c":100 -1
+        (const_int 1 [0x1])) "../User/main.c":299 -1
      (nil))
 (insn 39 38 40 2 (set (reg:SI 10 a0)
-        (const_int 2 [0x2])) "../User/main.c":100 -1
+        (const_int 2 [0x2])) "../User/main.c":299 -1
      (nil))
 (call_insn 40 39 41 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 065f7438 RCC_APB1PeriphClockCmd>) [0 RCC_APB1PeriphClockCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 0660c438 RCC_APB1PeriphClockCmd>) [0 RCC_APB1PeriphClockCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":100 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 065f7438 RCC_APB1PeriphClockCmd>)
+        ]) "../User/main.c":299 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 0660c438 RCC_APB1PeriphClockCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (nil))))
-(debug_insn 41 40 42 2 (debug_marker) "../User/main.c":101 -1
+(debug_insn 41 40 42 2 (debug_marker) "../User/main.c":300 -1
      (nil))
 (insn 42 41 43 2 (set (reg:SI 11 a1)
-        (const_int 1 [0x1])) "../User/main.c":101 -1
+        (const_int 1 [0x1])) "../User/main.c":300 -1
      (nil))
 (insn 43 42 44 2 (set (reg:SI 10 a0)
-        (const_int 1 [0x1])) "../User/main.c":101 -1
+        (const_int 1 [0x1])) "../User/main.c":300 -1
      (nil))
 (call_insn 44 43 45 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 065f7438 RCC_APB1PeriphClockCmd>) [0 RCC_APB1PeriphClockCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 0660c438 RCC_APB1PeriphClockCmd>) [0 RCC_APB1PeriphClockCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":101 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 065f7438 RCC_APB1PeriphClockCmd>)
+        ]) "../User/main.c":300 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 0660c438 RCC_APB1PeriphClockCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (nil))))
-(debug_insn 45 44 46 2 (debug_marker) "../User/main.c":102 -1
+(debug_insn 45 44 46 2 (debug_marker) "../User/main.c":301 -1
      (nil))
 (insn 46 45 47 2 (set (reg:SI 11 a1)
-        (const_int 1 [0x1])) "../User/main.c":102 -1
+        (const_int 1 [0x1])) "../User/main.c":301 -1
      (nil))
 (insn 47 46 48 2 (set (reg:SI 10 a0)
-        (const_int 4 [0x4])) "../User/main.c":102 -1
+        (const_int 4 [0x4])) "../User/main.c":301 -1
      (nil))
 (call_insn 48 47 49 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 065f7438 RCC_APB1PeriphClockCmd>) [0 RCC_APB1PeriphClockCmd S4 A32])
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 0660c438 RCC_APB1PeriphClockCmd>) [0 RCC_APB1PeriphClockCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":102 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 065f7438 RCC_APB1PeriphClockCmd>)
+        ]) "../User/main.c":301 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 0660c438 RCC_APB1PeriphClockCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (nil))))
-(debug_insn 49 48 50 2 (debug_marker) "../User/main.c":104 -1
+(debug_insn 49 48 50 2 (debug_marker) "../User/main.c":304 -1
      (nil))
-(call_insn 50 49 51 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_default") [flags 0x41] <function_decl 064241e0 gpio_init_default>) [0 gpio_init_default S4 A32])
+(insn 50 49 51 2 (set (reg:SI 11 a1)
+        (const_int 2 [0x2])) "../User/main.c":304 -1
+     (nil))
+(insn 51 50 52 2 (set (reg:SI 10 a0)
+        (const_int 1 [0x1])) "../User/main.c":304 -1
+     (nil))
+(call_insn 52 51 53 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("comms_init") [flags 0x41] <function_decl 0668b870 comms_init>) [0 comms_init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":104 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_default") [flags 0x41] <function_decl 064241e0 gpio_init_default>)
-        (nil))
-    (nil))
-(debug_insn 51 50 52 2 (debug_marker) "../User/main.c":107 -1
-     (nil))
-(insn 52 51 53 2 (set (reg:SI 11 a1)
-        (const_int 24 [0x18])) "../User/main.c":107 -1
-     (nil))
-(insn 53 52 54 2 (set (reg:SI 10 a0)
-        (const_int 16 [0x10])) "../User/main.c":107 -1
-     (nil))
-(call_insn 54 53 55 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_f_pins") [flags 0x41] <function_decl 064242d0 gpio_init_f_pins>) [0 gpio_init_f_pins S4 A32])
-                (const_int 0 [0]))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":107 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_f_pins") [flags 0x41] <function_decl 064242d0 gpio_init_f_pins>)
-        (nil))
-    (expr_list:QI (use (reg:SI 10 a0))
-        (expr_list:SI (use (reg:SI 11 a1))
-            (nil))))
-(debug_insn 55 54 56 2 (debug_marker) "../User/main.c":109 -1
-     (nil))
-(insn 56 55 57 2 (set (reg:SI 78)
-        (high:SI (symbol_ref/f:SI ("*.LC0") [flags 0x82] <var_decl 066c0c60 *.LC0>))) "../User/main.c":109 -1
-     (nil))
-(insn 57 56 58 2 (set (reg:SI 10 a0)
-        (lo_sum:SI (reg:SI 78)
-            (symbol_ref/f:SI ("*.LC0") [flags 0x82] <var_decl 066c0c60 *.LC0>))) "../User/main.c":109 -1
-     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC0") [flags 0x82] <var_decl 066c0c60 *.LC0>)
-        (nil)))
-(call_insn 58 57 59 2 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("puts") [flags 0x41] <function_decl 06306258 __builtin_puts>) [0 __builtin_puts S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":109 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("puts") [flags 0x41] <function_decl 06306258 __builtin_puts>)
-        (nil))
-    (expr_list:SI (use (reg:SI 10 a0))
-        (nil)))
-(debug_insn 59 58 60 2 (debug_marker) "../User/main.c":112 -1
-     (nil))
-(insn 60 59 61 2 (set (reg:SI 11 a1)
-        (const_int 2 [0x2])) "../User/main.c":112 -1
-     (nil))
-(insn 61 60 62 2 (set (reg:SI 10 a0)
-        (const_int 2 [0x2])) "../User/main.c":112 -1
-     (nil))
-(call_insn 62 61 63 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("comms_init") [flags 0x41] <function_decl 06662870 comms_init>) [0 comms_init S4 A32])
-                (const_int 0 [0]))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":112 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_init") [flags 0x41] <function_decl 06662870 comms_init>)
+        ]) "../User/main.c":304 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_init") [flags 0x41] <function_decl 0668b870 comms_init>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:QI (use (reg:SI 11 a1))
             (nil))))
-(debug_insn 63 62 64 2 (debug_marker) "../User/main.c":117 -1
+(debug_insn 53 52 54 2 (debug_marker) "../User/main.c":306 -1
      (nil))
-(call_insn 64 63 65 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("pwm_init") [flags 0x41] <function_decl 06424708 pwm_init>) [0 pwm_init S4 A32])
+(call_insn 54 53 55 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("gpio_init_default") [flags 0x41] <function_decl 064421e0 gpio_init_default>) [0 gpio_init_default S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":117 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pwm_init") [flags 0x41] <function_decl 06424708 pwm_init>)
+        ]) "../User/main.c":306 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_default") [flags 0x41] <function_decl 064421e0 gpio_init_default>)
         (nil))
     (nil))
-(debug_insn 65 64 66 2 (debug_marker) "../User/main.c":120 -1
+(debug_insn 55 54 56 2 (debug_marker) "../User/main.c":309 -1
      (nil))
+(call_insn 56 55 57 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("pwm_init") [flags 0x41] <function_decl 06442708 pwm_init>) [0 pwm_init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":309 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pwm_init") [flags 0x41] <function_decl 06442708 pwm_init>)
+        (nil))
+    (nil))
+(debug_insn 57 56 58 2 (debug_marker) "../User/main.c":312 -1
+     (nil))
+(call_insn 58 57 59 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("adc_init") [flags 0x41] <function_decl 064427f8 adc_init>) [0 adc_init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":312 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("adc_init") [flags 0x41] <function_decl 064427f8 adc_init>)
+        (nil))
+    (nil))
+(debug_insn 59 58 60 2 (debug_marker) "../User/main.c":315 -1
+     (nil))
+(insn 60 59 61 2 (set (reg:SI 11 a1)
+        (const_int 24 [0x18])) "../User/main.c":315 -1
+     (nil))
+(insn 61 60 62 2 (set (reg:SI 10 a0)
+        (const_int 16 [0x10])) "../User/main.c":315 -1
+     (nil))
+(call_insn 62 61 63 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("gpio_init_f_pins") [flags 0x41] <function_decl 064422d0 gpio_init_f_pins>) [0 gpio_init_f_pins S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":315 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_f_pins") [flags 0x41] <function_decl 064422d0 gpio_init_f_pins>)
+        (nil))
+    (expr_list:QI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(debug_insn 63 62 64 2 (debug_marker) "../User/main.c":318 -1
+     (nil))
+(insn 64 63 65 2 (set (reg:SI 78)
+        (high:SI (symbol_ref/f:SI ("*.LC0") [flags 0x82] <var_decl 0671c9a0 *.LC0>))) "../User/main.c":318 -1
+     (nil))
+(insn 65 64 66 2 (set (reg:SI 10 a0)
+        (lo_sum:SI (reg:SI 78)
+            (symbol_ref/f:SI ("*.LC0") [flags 0x82] <var_decl 0671c9a0 *.LC0>))) "../User/main.c":318 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC0") [flags 0x82] <var_decl 0671c9a0 *.LC0>)
+        (nil)))
 (call_insn 66 65 67 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("adc_init") [flags 0x41] <function_decl 064247f8 adc_init>) [0 adc_init S4 A32])
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("puts") [flags 0x41] <function_decl 04d77258 __builtin_puts>) [0 __builtin_puts S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":318 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("puts") [flags 0x41] <function_decl 04d77258 __builtin_puts>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (nil)))
+(debug_insn 67 66 68 2 (debug_marker) "../User/main.c":321 -1
+     (nil))
+(call_insn 68 67 69 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("flashfs_init") [flags 0x41] <function_decl 066e5bb8 flashfs_init>) [0 flashfs_init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":120 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("adc_init") [flags 0x41] <function_decl 064247f8 adc_init>)
+        ]) "../User/main.c":321 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("flashfs_init") [flags 0x41] <function_decl 066e5bb8 flashfs_init>)
         (nil))
     (nil))
-(debug_insn 67 66 68 2 (debug_marker) "../User/main.c":123 -1
+(debug_insn 69 68 70 2 (debug_marker) "../User/main.c":324 -1
      (nil))
-(insn 68 67 69 2 (set (reg:SI 79)
-        (high:SI (symbol_ref/f:SI ("*.LC1") [flags 0x82] <var_decl 066c0cb8 *.LC1>))) "../User/main.c":123 -1
-     (nil))
-(insn 69 68 70 2 (set (reg:SI 10 a0)
-        (lo_sum:SI (reg:SI 79)
-            (symbol_ref/f:SI ("*.LC1") [flags 0x82] <var_decl 066c0cb8 *.LC1>))) "../User/main.c":123 -1
-     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC1") [flags 0x82] <var_decl 066c0cb8 *.LC1>)
-        (nil)))
 (call_insn 70 69 71 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("pulseio_in_init") [flags 0x41] <function_decl 06654d20 pulseio_in_init>) [0 pulseio_in_init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":324 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pulseio_in_init") [flags 0x41] <function_decl 06654d20 pulseio_in_init>)
+        (nil))
+    (nil))
+(debug_insn 71 70 72 2 (debug_marker) "../User/main.c":326 -1
+     (nil))
+(insn 72 71 73 2 (set (reg:SI 79)
+        (high:SI (symbol_ref/f:SI ("*.LC1") [flags 0x82] <var_decl 0671c9f8 *.LC1>))) "../User/main.c":326 -1
+     (nil))
+(insn 73 72 74 2 (set (reg:SI 10 a0)
+        (lo_sum:SI (reg:SI 79)
+            (symbol_ref/f:SI ("*.LC1") [flags 0x82] <var_decl 0671c9f8 *.LC1>))) "../User/main.c":326 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC1") [flags 0x82] <var_decl 0671c9f8 *.LC1>)
+        (nil)))
+(call_insn 74 73 103 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("puts") [flags 0x41] <function_decl 06306258 __builtin_puts>) [0 __builtin_puts S4 A32])
+                (call (mem:SI (symbol_ref:SI ("puts") [flags 0x41] <function_decl 04d77258 __builtin_puts>) [0 __builtin_puts S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":123 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("puts") [flags 0x41] <function_decl 06306258 __builtin_puts>)
+        ]) "../User/main.c":326 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("puts") [flags 0x41] <function_decl 04d77258 __builtin_puts>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (nil)))
-(debug_insn 71 70 72 2 (debug_marker) "../User/main.c":126 -1
+(code_label 103 74 75 4 25 (nil) [1 uses])
+(note 75 103 95 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(code_label 95 75 76 5 24 (nil) [1 uses])
+(note 76 95 77 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 77 76 78 5 (debug_marker) "../User/main.c":328 -1
      (nil))
-(call_insn 72 71 73 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("flashfs_init") [flags 0x41] <function_decl 066bbbb8 flashfs_init>) [0 flashfs_init S4 A32])
-                (const_int 0 [0]))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":126 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("flashfs_init") [flags 0x41] <function_decl 066bbbb8 flashfs_init>)
-        (nil))
-    (nil))
-(debug_insn 73 72 74 2 (debug_marker) "../User/main.c":129 -1
+(debug_insn 78 77 79 5 (debug_marker) "../User/main.c":333 -1
      (nil))
-(call_insn 74 73 75 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("pulseio_in_init") [flags 0x41] <function_decl 0662fd20 pulseio_in_init>) [0 pulseio_in_init S4 A32])
-                (const_int 0 [0]))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":129 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("pulseio_in_init") [flags 0x41] <function_decl 0662fd20 pulseio_in_init>)
-        (nil))
-    (nil))
-(debug_insn 75 74 76 2 (debug_marker) "../User/main.c":131 -1
-     (nil))
-(insn 76 75 77 2 (set (reg:SI 80)
-        (high:SI (symbol_ref/f:SI ("*.LC2") [flags 0x82] <var_decl 066c0d10 *.LC2>))) "../User/main.c":131 -1
-     (nil))
-(insn 77 76 78 2 (set (reg:SI 10 a0)
-        (lo_sum:SI (reg:SI 80)
-            (symbol_ref/f:SI ("*.LC2") [flags 0x82] <var_decl 066c0d10 *.LC2>))) "../User/main.c":131 -1
-     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC2") [flags 0x82] <var_decl 066c0d10 *.LC2>)
-        (nil)))
-(call_insn 78 77 107 2 (parallel [
+(call_insn 79 78 80 5 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("puts") [flags 0x41] <function_decl 06306258 __builtin_puts>) [0 __builtin_puts S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_available") [flags 0x41] <function_decl 066545a0 usbSerial_available>) [0 usbSerial_available S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":131 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("puts") [flags 0x41] <function_decl 06306258 __builtin_puts>)
-        (nil))
-    (expr_list:SI (use (reg:SI 10 a0))
-        (nil)))
-(code_label 107 78 79 4 5 (nil) [1 uses])
-(note 79 107 99 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
-(code_label 99 79 80 5 4 (nil) [1 uses])
-(note 80 99 81 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 81 80 82 5 (debug_marker) "../User/main.c":133 -1
-     (nil))
-(debug_insn 82 81 83 5 (debug_marker) "../User/main.c":138 -1
-     (nil))
-(call_insn 83 82 84 5 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_available") [flags 0x41] <function_decl 0662f5a0 usbSerial_available>) [0 usbSerial_available S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":138 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_available") [flags 0x41] <function_decl 0662f5a0 usbSerial_available>)
+        ]) "../User/main.c":333 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_available") [flags 0x41] <function_decl 066545a0 usbSerial_available>)
         (nil))
     (nil))
-(insn 84 83 85 5 (set (reg:SI 81)
-        (reg:SI 10 a0)) "../User/main.c":138 -1
+(insn 80 79 81 5 (set (reg:SI 80)
+        (reg:SI 10 a0)) "../User/main.c":333 -1
      (nil))
-(insn 85 84 86 5 (set (reg:SI 72 [ _1 ])
-        (reg:SI 81)) "../User/main.c":138 -1
+(insn 81 80 82 5 (set (reg:SI 72 [ _1 ])
+        (reg:SI 80)) "../User/main.c":333 -1
      (nil))
-(jump_insn 86 85 87 5 (set (pc)
+(jump_insn 82 81 83 5 (set (pc)
         (if_then_else (ne (reg:SI 72 [ _1 ])
                 (const_int 0 [0]))
-            (label_ref 92)
-            (pc))) "../User/main.c":138 -1
+            (label_ref 88)
+            (pc))) "../User/main.c":333 -1
      (int_list:REG_BR_PROB 354334804 (nil))
- -> 92)
-(note 87 86 88 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
-(insn 88 87 89 6 (set (reg:SI 82)
-        (high:SI (symbol_ref:SI ("current_mode") [flags 0xc4] <var_decl 066c0268 current_mode>))) "../User/main.c":138 -1
+ -> 88)
+(note 83 82 84 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 84 83 85 6 (set (reg:SI 81)
+        (high:SI (symbol_ref:SI ("current_mode") [flags 0xc4] <var_decl 066ea268 current_mode>))) "../User/main.c":333 -1
      (nil))
-(insn 89 88 90 6 (set (reg:SI 83)
-        (mem/c:SI (lo_sum:SI (reg:SI 82)
-                (symbol_ref:SI ("current_mode") [flags 0xc4] <var_decl 066c0268 current_mode>)) [1 current_mode+0 S4 A32])) "../User/main.c":138 -1
+(insn 85 84 86 6 (set (reg:SI 82)
+        (mem/c:SI (lo_sum:SI (reg:SI 81)
+                (symbol_ref:SI ("current_mode") [flags 0xc4] <var_decl 066ea268 current_mode>)) [6 current_mode+0 S4 A32])) "../User/main.c":333 -1
      (nil))
-(insn 90 89 91 6 (set (reg:SI 84)
-        (const_int 2 [0x2])) "../User/main.c":138 -1
+(insn 86 85 87 6 (set (reg:SI 83)
+        (const_int 2 [0x2])) "../User/main.c":333 -1
      (nil))
-(jump_insn 91 90 92 6 (set (pc)
-        (if_then_else (ne (reg:SI 83)
-                (reg:SI 84))
-            (label_ref 96)
-            (pc))) "../User/main.c":138 -1
+(jump_insn 87 86 88 6 (set (pc)
+        (if_then_else (ne (reg:SI 82)
+                (reg:SI 83))
+            (label_ref 92)
+            (pc))) "../User/main.c":333 -1
      (int_list:REG_BR_PROB 708669604 (nil))
- -> 96)
-(code_label 92 91 93 7 2 (nil) [1 uses])
-(note 93 92 94 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 94 93 95 7 (debug_marker) "../User/main.c":139 -1
+ -> 92)
+(code_label 88 87 89 7 22 (nil) [1 uses])
+(note 89 88 90 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 90 89 91 7 (debug_marker) "../User/main.c":334 -1
      (nil))
-(call_insn 95 94 96 7 (parallel [
-            (call (mem:SI (symbol_ref:SI ("get_packet") [flags 0x41] <function_decl 066c2258 get_packet>) [0 get_packet S4 A32])
+(call_insn 91 90 92 7 (parallel [
+            (call (mem:SI (symbol_ref:SI ("get_packet") [flags 0x41] <function_decl 066ec258 get_packet>) [0 get_packet S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":139 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("get_packet") [flags 0x41] <function_decl 066c2258 get_packet>)
+        ]) "../User/main.c":334 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("get_packet") [flags 0x41] <function_decl 066ec258 get_packet>)
         (nil))
     (nil))
-(code_label 96 95 97 8 3 (nil) [1 uses])
-(note 97 96 98 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 98 97 100 8 (debug_marker) "../User/main.c":143 -1
+(code_label 92 91 93 8 23 (nil) [1 uses])
+(note 93 92 94 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 94 93 96 8 (debug_marker) "../User/main.c":338 -1
      (nil))
-(insn 100 98 101 8 (set (reg:SI 85)
-        (high:SI (symbol_ref:SI ("current_mode") [flags 0xc4] <var_decl 066c0268 current_mode>))) "../User/main.c":143 -1
+(insn 96 94 97 8 (set (reg:SI 84)
+        (high:SI (symbol_ref:SI ("current_mode") [flags 0xc4] <var_decl 066ea268 current_mode>))) "../User/main.c":338 -1
      (nil))
-(insn 101 100 102 8 (set (reg:SI 86)
-        (mem/c:SI (lo_sum:SI (reg:SI 85)
-                (symbol_ref:SI ("current_mode") [flags 0xc4] <var_decl 066c0268 current_mode>)) [1 current_mode+0 S4 A32])) "../User/main.c":143 -1
+(insn 97 96 98 8 (set (reg:SI 85)
+        (mem/c:SI (lo_sum:SI (reg:SI 84)
+                (symbol_ref:SI ("current_mode") [flags 0xc4] <var_decl 066ea268 current_mode>)) [6 current_mode+0 S4 A32])) "../User/main.c":338 -1
      (nil))
-(insn 102 101 103 8 (set (reg:SI 87)
-        (const_int 1 [0x1])) "../User/main.c":143 -1
+(insn 98 97 99 8 (set (reg:SI 86)
+        (const_int 1 [0x1])) "../User/main.c":338 -1
      (nil))
-(jump_insn 103 102 104 8 (set (pc)
-        (if_then_else (ne (reg:SI 86)
-                (reg:SI 87))
-            (label_ref 99)
-            (pc))) "../User/main.c":143 -1
+(jump_insn 99 98 100 8 (set (pc)
+        (if_then_else (ne (reg:SI 85)
+                (reg:SI 86))
+            (label_ref 95)
+            (pc))) "../User/main.c":338 -1
      (int_list:REG_BR_PROB 856416484 (nil))
- -> 99)
-(note 104 103 105 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 105 104 106 9 (debug_marker) "../User/main.c":144 -1
+ -> 95)
+(note 100 99 101 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 101 100 102 9 (debug_marker) "../User/main.c":339 -1
      (nil))
-(call_insn 106 105 108 9 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_flush") [flags 0x41] <function_decl 0662f9d8 usbSerial_flush>) [0 usbSerial_flush S4 A32])
+(call_insn 102 101 104 9 (parallel [
+            (call (mem:SI (symbol_ref:SI ("usbSerial_flush") [flags 0x41] <function_decl 066549d8 usbSerial_flush>) [0 usbSerial_flush S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/main.c":144 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_flush") [flags 0x41] <function_decl 0662f9d8 usbSerial_flush>)
+        ]) "../User/main.c":339 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_flush") [flags 0x41] <function_decl 066549d8 usbSerial_flush>)
         (nil))
     (nil))
-(jump_insn 108 106 109 9 (set (pc)
-        (label_ref 107)) "../User/main.c":144 -1
+(jump_insn 104 102 105 9 (set (pc)
+        (label_ref 103)) "../User/main.c":339 -1
      (nil)
- -> 107)
-(barrier 109 108 0)
+ -> 103)
+(barrier 105 104 0)

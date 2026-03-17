@@ -1,6 +1,7 @@
 # Issues
 
 - EVentually, some of the write commands timeout and stop working (the known offenders are commented in the device code)
+- Why does the device stop working when we connect an SD card (using the zif board) while the device is running?
 
 # Pinout
 
@@ -8,11 +9,15 @@
 		  
 # Todo
 
+- I2C stuff is looking good - now implement the sytem that allows the host to poll until the device is ready (turn peripheral off when working, then back on when ready).
+	 - At the start of a write, we wait for the address byte then ack it. If the host issues a stop after, we know this is just polling to see if the device is busy, to we loop back and wait for another address byte. If the next event isnt a stop and it asks for data, this is the actual write command.
+	 - Implement a system for selecting either I2C or USB. I suggest a 3 terminal solder bridge. This can be used in three settings - connected to GND (via strong pullup 2.2k), VCC (via strong pullup 2.2k) or open. Connected to GND or VCC selects either I2C or USB. Left floating then fallsback to the saved setting in the FLASH. (We can determine whether the pin is floating or not by connecting to internal pullups and pulldowns and reading the results)
+- Implement the trylock/unlock 
 - Turn the python code into a working python package
 - Get UART working (use interrupts for RXNE, good luck)
-- Get FLASH working
 - Get CAN working
 - Get op amps working
+- Get RNG working
 - Implement Soft I2S
 - Disable interrupts in critical sections
 - Modify SPI code to allow an arbitrary number of bits per word - up to 32

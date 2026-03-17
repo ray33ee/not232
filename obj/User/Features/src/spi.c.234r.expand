@@ -348,11 +348,11 @@ Forwarding edge 17->18 to 30 failed.
         (reg/v:SI 111 [ edge_delay_nops ])) "../User/Features/src/spi.c":42 -1
      (nil))
 (call_insn 82 81 83 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06670b40 spi_delay_nops>) [0 spi_delay_nops S4 A32])
+            (call (mem:SI (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06672b40 spi_delay_nops>) [0 spi_delay_nops S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/spi.c":42 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06670b40 spi_delay_nops>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06672b40 spi_delay_nops>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -536,11 +536,11 @@ Forwarding edge 17->18 to 30 failed.
         (reg/v:SI 111 [ edge_delay_nops ])) "../User/Features/src/spi.c":53 -1
      (nil))
 (call_insn 146 145 147 14 (parallel [
-            (call (mem:SI (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06670b40 spi_delay_nops>) [0 spi_delay_nops S4 A32])
+            (call (mem:SI (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06672b40 spi_delay_nops>) [0 spi_delay_nops S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/spi.c":53 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06670b40 spi_delay_nops>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06672b40 spi_delay_nops>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -694,11 +694,11 @@ Forwarding edge 17->18 to 30 failed.
         (reg/v:SI 111 [ edge_delay_nops ])) "../User/Features/src/spi.c":60 -1
      (nil))
 (call_insn 202 201 203 17 (parallel [
-            (call (mem:SI (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06670b40 spi_delay_nops>) [0 spi_delay_nops S4 A32])
+            (call (mem:SI (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06672b40 spi_delay_nops>) [0 spi_delay_nops S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/spi.c":60 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06670b40 spi_delay_nops>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06672b40 spi_delay_nops>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -871,11 +871,11 @@ Forwarding edge 17->18 to 30 failed.
         (reg/v:SI 111 [ edge_delay_nops ])) "../User/Features/src/spi.c":67 -1
      (nil))
 (call_insn 270 269 271 23 (parallel [
-            (call (mem:SI (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06670b40 spi_delay_nops>) [0 spi_delay_nops S4 A32])
+            (call (mem:SI (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06672b40 spi_delay_nops>) [0 spi_delay_nops S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/spi.c":67 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06670b40 spi_delay_nops>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06672b40 spi_delay_nops>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -1034,11 +1034,11 @@ Forwarding edge 17->18 to 30 failed.
         (reg/v:SI 111 [ edge_delay_nops ])) "../User/Features/src/spi.c":75 -1
      (nil))
 (call_insn 327 326 328 29 (parallel [
-            (call (mem:SI (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06670b40 spi_delay_nops>) [0 spi_delay_nops S4 A32])
+            (call (mem:SI (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06672b40 spi_delay_nops>) [0 spi_delay_nops S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/spi.c":75 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06670b40 spi_delay_nops>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_delay_nops") [flags 0x3] <function_decl 06672b40 spi_delay_nops>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -1189,11 +1189,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 72 [ sck_pin ])) "../User/Features/src/spi.c":86 -1
      (nil))
 (call_insn 11 10 12 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06670690 gpio_init_ad_pins>) [0 gpio_init_ad_pins S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06672690 gpio_init_ad_pins>) [0 gpio_init_ad_pins S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/spi.c":86 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06670690 gpio_init_ad_pins>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06672690 gpio_init_ad_pins>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1207,11 +1207,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 73 [ mosi_pin ])) "../User/Features/src/spi.c":87 -1
      (nil))
 (call_insn 15 14 16 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06670690 gpio_init_ad_pins>) [0 gpio_init_ad_pins S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06672690 gpio_init_ad_pins>) [0 gpio_init_ad_pins S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/spi.c":87 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06670690 gpio_init_ad_pins>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06672690 gpio_init_ad_pins>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1225,11 +1225,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 74 [ miso_pin ])) "../User/Features/src/spi.c":88 -1
      (nil))
 (call_insn 19 18 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06670690 gpio_init_ad_pins>) [0 gpio_init_ad_pins S4 A32])
+            (call (mem:SI (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06672690 gpio_init_ad_pins>) [0 gpio_init_ad_pins S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/spi.c":88 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06670690 gpio_init_ad_pins>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("gpio_init_ad_pins") [flags 0x41] <function_decl 06672690 gpio_init_ad_pins>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -1334,11 +1334,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 28 27 29 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("spi_xfer_byte_bb_ch32") [flags 0x3] <function_decl 06670ca8 spi_xfer_byte_bb_ch32>) [0 spi_xfer_byte_bb_ch32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("spi_xfer_byte_bb_ch32") [flags 0x3] <function_decl 06672ca8 spi_xfer_byte_bb_ch32>) [0 spi_xfer_byte_bb_ch32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/spi.c":93 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_xfer_byte_bb_ch32") [flags 0x3] <function_decl 06670ca8 spi_xfer_byte_bb_ch32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_xfer_byte_bb_ch32") [flags 0x3] <function_decl 06672ca8 spi_xfer_byte_bb_ch32>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:QI (use (reg:SI 10 a0))
@@ -1478,11 +1478,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 28 27 29 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("spi_xfer_byte_bb_ch32") [flags 0x3] <function_decl 06670ca8 spi_xfer_byte_bb_ch32>) [0 spi_xfer_byte_bb_ch32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("spi_xfer_byte_bb_ch32") [flags 0x3] <function_decl 06672ca8 spi_xfer_byte_bb_ch32>) [0 spi_xfer_byte_bb_ch32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/spi.c":99 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_xfer_byte_bb_ch32") [flags 0x3] <function_decl 06670ca8 spi_xfer_byte_bb_ch32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_xfer_byte_bb_ch32") [flags 0x3] <function_decl 06672ca8 spi_xfer_byte_bb_ch32>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:QI (use (reg:SI 10 a0))
@@ -1622,11 +1622,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 31 30 32 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("spi_xfer_byte_bb_ch32") [flags 0x3] <function_decl 06670ca8 spi_xfer_byte_bb_ch32>) [0 spi_xfer_byte_bb_ch32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("spi_xfer_byte_bb_ch32") [flags 0x3] <function_decl 06672ca8 spi_xfer_byte_bb_ch32>) [0 spi_xfer_byte_bb_ch32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/Features/src/spi.c":105 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_xfer_byte_bb_ch32") [flags 0x3] <function_decl 06670ca8 spi_xfer_byte_bb_ch32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("spi_xfer_byte_bb_ch32") [flags 0x3] <function_decl 06672ca8 spi_xfer_byte_bb_ch32>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:QI (use (reg:SI 10 a0))

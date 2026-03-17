@@ -1,901 +1,10 @@
 
-;; Function i2c_device_read_scl (i2c_device_read_scl, funcdef_no=30, decl_uid=4705, cgraph_uid=30, symbol_order=31)
+;; Function i2c_device_init (i2c_device_init, funcdef_no=29, decl_uid=4693, cgraph_uid=29, symbol_order=29)
 
-
-;; Generating RTL for gimple basic block 2
-
-
-try_optimize_cfg iteration 1
-
-Merging block 3 into block 2...
-Merged blocks 2 and 3.
-Merged 2 and 3 without moving.
-Removing jump 12.
-Merging block 4 into block 2...
-Merged blocks 2 and 4.
-Merged 2 and 4 without moving.
-
-
-try_optimize_cfg iteration 2
-
-
-
-;;
-;; Full RTL generated for this function:
-;;
-(note 1 0 3 NOTE_INSN_DELETED)
-(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 5 2 6 2 (debug_marker) "../User/comms/src/i2c_device.c":32 -1
-     (nil))
-(insn 6 5 7 2 (set (reg:SI 77)
-        (const_int 1073811456 [0x40011000])) "../User/comms/src/i2c_device.c":32 -1
-     (nil))
-(insn 7 6 8 2 (set (reg/f:SI 76)
-        (plus:SI (reg:SI 77)
-            (const_int -1024 [0xfffffffffffffc00]))) "../User/comms/src/i2c_device.c":32 -1
-     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
-        (nil)))
-(insn 8 7 9 2 (set (reg:SI 72 [ _1 ])
-        (mem/v:SI (plus:SI (reg/f:SI 76)
-                (const_int 8 [0x8])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].INDR+0 S4 A64])) "../User/comms/src/i2c_device.c":32 -1
-     (nil))
-(insn 9 8 10 2 (set (reg:SI 79)
-        (lshiftrt:SI (reg:SI 72 [ _1 ])
-            (const_int 8 [0x8]))) "../User/comms/src/i2c_device.c":32 -1
-     (nil))
-(insn 10 9 11 2 (set (reg:SI 80)
-        (and:SI (reg:SI 79)
-            (const_int 1 [0x1]))) "../User/comms/src/i2c_device.c":32 -1
-     (nil))
-(insn 11 10 15 2 (set (reg:SI 75 [ <retval> ])
-        (reg:SI 80)) "../User/comms/src/i2c_device.c":32 -1
-     (nil))
-(insn 15 11 16 2 (set (reg/i:SI 10 a0)
-        (reg:SI 75 [ <retval> ])) "../User/comms/src/i2c_device.c":33 -1
-     (nil))
-(insn 16 15 0 2 (use (reg/i:SI 10 a0)) "../User/comms/src/i2c_device.c":33 -1
-     (nil))
-
-;; Function i2c_device_start_condition (i2c_device_start_condition, funcdef_no=34, decl_uid=4713, cgraph_uid=34, symbol_order=35)
-
-
-;; Generating RTL for gimple basic block 2
-
-;; Generating RTL for gimple basic block 3
-
-;; Generating RTL for gimple basic block 4
-
-;; Generating RTL for gimple basic block 5
-
-;; Generating RTL for gimple basic block 6
-
-;; Generating RTL for gimple basic block 7
-
-
-try_optimize_cfg iteration 1
-
-Merging block 3 into block 2...
-Merged blocks 2 and 3.
-Merged 2 and 3 without moving.
-Forwarding edge 7->8 to 9 failed.
-Merging block 9 into block 8...
-Merged blocks 8 and 9.
-Merged 8 and 9 without moving.
-
-
-try_optimize_cfg iteration 2
-
-
-
-;;
-;; Full RTL generated for this function:
-;;
-(note 1 0 3 NOTE_INSN_DELETED)
-(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 5 2 6 2 (debug_marker) "../User/comms/src/i2c_device.c":48 -1
-     (nil))
-(call_insn 6 5 7 2 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>) [0 i2c_device_read_scl S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":48 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 7 6 8 2 (set (reg:SI 72 [ _1 ])
-        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":48 -1
-     (nil))
-(jump_insn 8 7 9 2 (set (pc)
-        (if_then_else (eq (reg:SI 72 [ _1 ])
-                (const_int 0 [0]))
-            (label_ref 25)
-            (pc))) "../User/comms/src/i2c_device.c":48 -1
-     (int_list:REG_BR_PROB 719407028 (nil))
- -> 25)
-(note 9 8 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 10 9 11 4 (debug_marker) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 11 10 12 4 (set (reg:SI 79)
-        (const_int 1073811456 [0x40011000])) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 12 11 13 4 (set (reg/f:SI 78)
-        (plus:SI (reg:SI 79)
-            (const_int -1024 [0xfffffffffffffc00]))) "../User/comms/src/i2c_device.c":36 -1
-     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
-        (nil)))
-(insn 13 12 14 4 (set (reg:SI 74 [ _13 ])
-        (mem/v:SI (plus:SI (reg/f:SI 78)
-                (const_int 8 [0x8])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].INDR+0 S4 A64])) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 14 13 15 4 (set (reg:SI 80)
-        (and:SI (reg:SI 74 [ _13 ])
-            (const_int 512 [0x200]))) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(jump_insn 15 14 22 4 (set (pc)
-        (if_then_else (eq (reg:SI 80)
-                (const_int 0 [0]))
-            (label_ref 25)
-            (pc))) "../User/comms/src/i2c_device.c":48 -1
-     (int_list:REG_BR_PROB 536870916 (nil))
- -> 25)
-(code_label 22 15 16 5 4 (nil) [1 uses])
-(note 16 22 17 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 17 16 18 5 (debug_marker) "../User/comms/src/i2c_device.c":49 -1
-     (nil))
-(debug_insn 18 17 19 5 (debug_marker) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 19 18 20 5 (set (reg:SI 82)
-        (const_int 1073811456 [0x40011000])) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 20 19 21 5 (set (reg/f:SI 81)
-        (plus:SI (reg:SI 82)
-            (const_int -1024 [0xfffffffffffffc00]))) "../User/comms/src/i2c_device.c":36 -1
-     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
-        (nil)))
-(insn 21 20 23 5 (set (reg:SI 76 [ _17 ])
-        (mem/v:SI (plus:SI (reg/f:SI 81)
-                (const_int 8 [0x8])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].INDR+0 S4 A64])) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 23 21 24 5 (set (reg:SI 83)
-        (and:SI (reg:SI 76 [ _17 ])
-            (const_int 512 [0x200]))) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(jump_insn 24 23 25 5 (set (pc)
-        (if_then_else (ne (reg:SI 83)
-                (const_int 0 [0]))
-            (label_ref 22)
-            (pc))) "../User/comms/src/i2c_device.c":49 -1
-     (int_list:REG_BR_PROB 955630228 (nil))
- -> 22)
-(code_label 25 24 26 6 3 (nil) [2 uses])
-(note 26 25 31 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
-(code_label 31 26 27 7 5 (nil) [1 uses])
-(note 27 31 28 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 28 27 29 7 (debug_marker) "../User/comms/src/i2c_device.c":53 -1
-     (nil))
-(call_insn 29 28 30 7 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>) [0 i2c_device_read_scl S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":53 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 30 29 32 7 (set (reg:SI 73 [ _4 ])
-        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":53 -1
-     (nil))
-(jump_insn 32 30 33 7 (set (pc)
-        (if_then_else (ne (reg:SI 73 [ _4 ])
-                (const_int 0 [0]))
-            (label_ref 31)
-            (pc))) "../User/comms/src/i2c_device.c":53 -1
-     (int_list:REG_BR_PROB 955630228 (nil))
- -> 31)
-(note 33 32 0 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
-
-;; Function i2c_device_stop_condition (i2c_device_stop_condition, funcdef_no=35, decl_uid=4721, cgraph_uid=35, symbol_order=36)
-
-
-;; Generating RTL for gimple basic block 2
-
-;; Generating RTL for gimple basic block 3
-
-;; Generating RTL for gimple basic block 4
-
-;; Generating RTL for gimple basic block 5
-
-;; Generating RTL for gimple basic block 6
-
-;; Generating RTL for gimple basic block 7
-
-;; Generating RTL for gimple basic block 8
-
-
-try_optimize_cfg iteration 1
-
-Merging block 3 into block 2...
-Merged blocks 2 and 3.
-Merged 2 and 3 without moving.
-Forwarding edge 7->8 to 11 failed.
-
-
-try_optimize_cfg iteration 2
-
-Forwarding edge 7->8 to 11 failed.
-
-
-;;
-;; Full RTL generated for this function:
-;;
-(note 1 0 3 NOTE_INSN_DELETED)
-(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(note 2 3 50 2 NOTE_INSN_FUNCTION_BEG)
-(code_label 50 2 5 4 19 (nil) [1 uses])
-(note 5 50 6 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 6 5 7 4 (debug_marker) "../User/comms/src/i2c_device.c":58 -1
-     (nil))
-(debug_insn 7 6 12 4 (debug_marker) "../User/comms/src/i2c_device.c":60 -1
-     (nil))
-(code_label 12 7 8 5 16 (nil) [1 uses])
-(note 8 12 9 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 9 8 10 5 (debug_marker) "../User/comms/src/i2c_device.c":60 -1
-     (nil))
-(call_insn 10 9 11 5 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>) [0 i2c_device_read_scl S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":60 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 11 10 13 5 (set (reg:SI 72 [ _1 ])
-        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":60 -1
-     (nil))
-(jump_insn 13 11 14 5 (set (pc)
-        (if_then_else (eq (reg:SI 72 [ _1 ])
-                (const_int 0 [0]))
-            (label_ref 12)
-            (pc))) "../User/comms/src/i2c_device.c":60 -1
-     (int_list:REG_BR_PROB 955630228 (nil))
- -> 12)
-(note 14 13 15 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 15 14 16 6 (debug_marker) "../User/comms/src/i2c_device.c":63 -1
-     (nil))
-(debug_insn 16 15 17 6 (debug_marker) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 17 16 18 6 (set (reg:SI 81)
-        (const_int 1073811456 [0x40011000])) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 18 17 19 6 (set (reg/f:SI 80)
-        (plus:SI (reg:SI 81)
-            (const_int -1024 [0xfffffffffffffc00]))) "../User/comms/src/i2c_device.c":36 -1
-     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
-        (nil)))
-(insn 19 18 20 6 (set (reg:SI 74 [ _14 ])
-        (mem/v:SI (plus:SI (reg/f:SI 80)
-                (const_int 8 [0x8])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].INDR+0 S4 A64])) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 20 19 21 6 (set (reg:SI 82)
-        (lshiftrt:SI (reg:SI 74 [ _14 ])
-            (const_int 9 [0x9]))) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 21 20 22 6 (set (reg:QI 83)
-        (subreg:QI (reg:SI 82) 0)) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 22 21 23 6 (set (reg:SI 84)
-        (and:SI (subreg:SI (reg:QI 83) 0)
-            (const_int 1 [0x1]))) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 23 22 24 6 (set (reg:SI 76 [ _16 ])
-        (zero_extend:SI (subreg:QI (reg:SI 84) 0))) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(debug_insn 24 23 25 6 (var_location:SI D#1 (zero_extend:SI (subreg:QI (reg:SI 76 [ _16 ]) 0))) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(debug_insn 25 24 26 6 (var_location:HI bit (subreg:HI (debug_expr:SI D#1) 0)) "../User/comms/src/i2c_device.c":63 -1
-     (nil))
-(debug_insn 26 25 27 6 (debug_marker) "../User/comms/src/i2c_device.c":66 -1
-     (nil))
-(jump_insn 27 26 28 6 (set (pc)
-        (label_ref 44)) "../User/comms/src/i2c_device.c":66 -1
-     (nil)
- -> 44)
-(barrier 28 27 48)
-(code_label 48 28 29 7 18 (nil) [1 uses])
-(note 29 48 30 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 30 29 31 7 (debug_marker) "../User/comms/src/i2c_device.c":67 -1
-     (nil))
-(debug_insn 31 30 32 7 (debug_marker) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 32 31 33 7 (set (reg:SI 86)
-        (const_int 1073811456 [0x40011000])) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 33 32 34 7 (set (reg/f:SI 85)
-        (plus:SI (reg:SI 86)
-            (const_int -1024 [0xfffffffffffffc00]))) "../User/comms/src/i2c_device.c":36 -1
-     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
-        (nil)))
-(insn 34 33 35 7 (set (reg:SI 77 [ _18 ])
-        (mem/v:SI (plus:SI (reg/f:SI 85)
-                (const_int 8 [0x8])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].INDR+0 S4 A64])) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 35 34 36 7 (set (reg:SI 87)
-        (lshiftrt:SI (reg:SI 77 [ _18 ])
-            (const_int 9 [0x9]))) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 36 35 37 7 (set (reg:QI 88)
-        (subreg:QI (reg:SI 87) 0)) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 37 36 38 7 (set (reg:SI 89)
-        (and:SI (subreg:SI (reg:QI 88) 0)
-            (const_int 1 [0x1]))) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 38 37 39 7 (set (reg:SI 90)
-        (zero_extend:SI (subreg:QI (reg:SI 89) 0))) "../User/comms/src/i2c_device.c":67 -1
-     (nil))
-(jump_insn 39 38 40 7 (set (pc)
-        (if_then_else (eq (reg:SI 76 [ _16 ])
-                (reg:SI 90))
-            (label_ref 44)
-            (pc))) "../User/comms/src/i2c_device.c":67 -1
-     (int_list:REG_BR_PROB 1014686028 (nil))
- -> 44)
-(note 40 39 41 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 41 40 42 8 (debug_marker) "../User/comms/src/i2c_device.c":68 -1
-     (nil))
-(jump_insn 42 41 43 8 (set (pc)
-        (label_ref 54)) "../User/comms/src/i2c_device.c":68 -1
-     (nil)
- -> 54)
-(barrier 43 42 44)
-(code_label 44 43 45 9 17 (nil) [2 uses])
-(note 45 44 46 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
-(call_insn 46 45 47 9 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>) [0 i2c_device_read_scl S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":66 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 47 46 49 9 (set (reg:SI 73 [ _4 ])
-        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":66 -1
-     (nil))
-(jump_insn 49 47 53 9 (set (pc)
-        (if_then_else (ne (reg:SI 73 [ _4 ])
-                (const_int 0 [0]))
-            (label_ref 48)
-            (pc))) "../User/comms/src/i2c_device.c":66 -1
-     (int_list:REG_BR_PROB 1014686028 (nil))
- -> 48)
-(note 53 49 51 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
-(jump_insn 51 53 52 10 (set (pc)
-        (label_ref 50)) -1
-     (nil)
- -> 50)
-(barrier 52 51 54)
-(code_label 54 52 55 11 15 (nil) [1 uses])
-(note 55 54 0 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
-
-;; Function i2c_device_read_bit.part.0 (i2c_device_read_bit.part.0, funcdef_no=43, decl_uid=4867, cgraph_uid=0, symbol_order=45)
-
-
-;; Generating RTL for gimple basic block 2
-
-;; Generating RTL for gimple basic block 3
-
-;; Generating RTL for gimple basic block 4
-
-;; Generating RTL for gimple basic block 5
-
-;; Generating RTL for gimple basic block 6
-
-;; Generating RTL for gimple basic block 7
-
-;; Generating RTL for gimple basic block 8
-Edge 5->8 redirected to 11
-
-
-try_optimize_cfg iteration 1
-
-Merging block 3 into block 2...
-Merged blocks 2 and 3.
-Merged 2 and 3 without moving.
-Removing jump 50.
-Merging block 11 into block 10...
-Merged blocks 10 and 11.
-Merged 10 and 11 without moving.
-
-
-try_optimize_cfg iteration 2
-
-
-
-;;
-;; Full RTL generated for this function:
-;;
-(note 1 0 5 NOTE_INSN_DELETED)
-(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(note 2 5 11 2 NOTE_INSN_FUNCTION_BEG)
-(code_label 11 2 7 4 26 (nil) [1 uses])
-(note 7 11 8 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 8 7 9 4 (debug_marker) "../User/comms/src/i2c_device.c":78 -1
-     (nil))
-(call_insn 9 8 10 4 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>) [0 i2c_device_read_scl S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":78 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 10 9 12 4 (set (reg:SI 72 [ _1 ])
-        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":78 -1
-     (nil))
-(jump_insn 12 10 13 4 (set (pc)
-        (if_then_else (eq (reg:SI 72 [ _1 ])
-                (const_int 0 [0]))
-            (label_ref 11)
-            (pc))) "../User/comms/src/i2c_device.c":78 -1
-     (int_list:REG_BR_PROB 955630228 (nil))
- -> 11)
-(note 13 12 14 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 14 13 15 5 (debug_marker) "../User/comms/src/i2c_device.c":81 -1
-     (nil))
-(debug_insn 15 14 16 5 (debug_marker) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 16 15 17 5 (set (reg:SI 83)
-        (const_int 1073811456 [0x40011000])) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 17 16 18 5 (set (reg/f:SI 82)
-        (plus:SI (reg:SI 83)
-            (const_int -1024 [0xfffffffffffffc00]))) "../User/comms/src/i2c_device.c":36 -1
-     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
-        (nil)))
-(insn 18 17 19 5 (set (reg:SI 74 [ _15 ])
-        (mem/v:SI (plus:SI (reg/f:SI 82)
-                (const_int 8 [0x8])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].INDR+0 S4 A64])) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 19 18 20 5 (set (reg:SI 84)
-        (lshiftrt:SI (reg:SI 74 [ _15 ])
-            (const_int 9 [0x9]))) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 20 19 21 5 (set (reg:QI 85)
-        (subreg:QI (reg:SI 84) 0)) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 21 20 22 5 (set (reg:SI 86)
-        (and:SI (subreg:SI (reg:QI 85) 0)
-            (const_int 1 [0x1]))) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 22 21 23 5 (set (reg:SI 76 [ _17 ])
-        (zero_extend:SI (subreg:QI (reg:SI 86) 0))) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(debug_insn 23 22 24 5 (var_location:SI bit (zero_extend:SI (subreg:QI (reg:SI 76 [ _17 ]) 0))) "../User/comms/src/i2c_device.c":81 -1
-     (nil))
-(debug_insn 24 23 25 5 (debug_marker) "../User/comms/src/i2c_device.c":84 -1
-     (nil))
-(jump_insn 25 24 26 5 (set (pc)
-        (label_ref 38)) "../User/comms/src/i2c_device.c":36 -1
-     (nil)
- -> 38)
-(barrier 26 25 42)
-(code_label 42 26 27 6 29 (nil) [1 uses])
-(note 27 42 28 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 28 27 29 6 (debug_marker) "../User/comms/src/i2c_device.c":87 -1
-     (nil))
-(debug_insn 29 28 30 6 (debug_marker) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 30 29 31 6 (set (reg:SI 88)
-        (const_int 1073811456 [0x40011000])) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 31 30 32 6 (set (reg/f:SI 87)
-        (plus:SI (reg:SI 88)
-            (const_int -1024 [0xfffffffffffffc00]))) "../User/comms/src/i2c_device.c":36 -1
-     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
-        (nil)))
-(insn 32 31 33 6 (set (reg:SI 77 [ _19 ])
-        (mem/v:SI (plus:SI (reg/f:SI 87)
-                (const_int 8 [0x8])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].INDR+0 S4 A64])) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 33 32 34 6 (set (reg:SI 89)
-        (lshiftrt:SI (reg:SI 77 [ _19 ])
-            (const_int 9 [0x9]))) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 34 33 35 6 (set (reg:QI 90)
-        (subreg:QI (reg:SI 89) 0)) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 35 34 36 6 (set (reg:SI 91)
-        (and:SI (subreg:SI (reg:QI 90) 0)
-            (const_int 1 [0x1]))) "../User/comms/src/i2c_device.c":36 -1
-     (nil))
-(insn 36 35 37 6 (set (reg:SI 92)
-        (zero_extend:SI (subreg:QI (reg:SI 91) 0))) "../User/comms/src/i2c_device.c":87 -1
-     (nil))
-(jump_insn 37 36 38 6 (set (pc)
-        (if_then_else (ne (reg:SI 76 [ _17 ])
-                (reg:SI 92))
-            (label_ref:SI 59)
-            (pc))) "../User/comms/src/i2c_device.c":87 180 {*branchsi}
-     (int_list:REG_BR_PROB 59055804 (nil))
- -> 59)
-(code_label 38 37 39 7 27 (nil) [1 uses])
-(note 39 38 40 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
-(call_insn 40 39 41 7 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>) [0 i2c_device_read_scl S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":84 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 41 40 43 7 (set (reg:SI 73 [ _4 ])
-        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":84 -1
-     (nil))
-(jump_insn 43 41 44 7 (set (pc)
-        (if_then_else (ne (reg:SI 73 [ _4 ])
-                (const_int 0 [0]))
-            (label_ref 42)
-            (pc))) "../User/comms/src/i2c_device.c":84 -1
-     (int_list:REG_BR_PROB 1014686028 (nil))
- -> 42)
-(note 44 43 45 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 45 44 46 8 (debug_marker) "../User/comms/src/i2c_device.c":92 -1
-     (nil))
-(insn 46 45 56 8 (set (reg:SI 80 [ <retval> ])
-        (zero_extend:SI (subreg:HI (reg:SI 76 [ _17 ]) 0))) "../User/comms/src/i2c_device.c":92 -1
-     (nil))
-(jump_insn 56 46 57 8 (set (pc)
-        (label_ref 47)) -1
-     (nil)
- -> 47)
-(barrier 57 56 59)
-(code_label 59 57 58 9 30 (nil) [1 uses])
-(note 58 59 3 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
-(insn 3 58 4 9 (set (reg:SI 81)
-        (const_int 65536 [0x10000])) "../User/comms/src/i2c_device.c":88 -1
-     (nil))
-(insn 4 3 47 9 (set (reg:SI 80 [ <retval> ])
-        (plus:SI (reg:SI 81)
-            (const_int -1 [0xffffffffffffffff]))) "../User/comms/src/i2c_device.c":88 -1
-     (expr_list:REG_EQUAL (const_int 65535 [0xffff])
-        (nil)))
-(code_label 47 4 48 10 28 (nil) [1 uses])
-(note 48 47 49 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
-(insn 49 48 53 10 (set (reg:SI 80 [ <retval> ])
-        (reg:SI 80 [ <retval> ])) -1
-     (nil))
-(insn 53 49 54 10 (set (reg/i:SI 10 a0)
-        (reg:SI 80 [ <retval> ])) "../User/comms/src/i2c_device.c":93 -1
-     (nil))
-(insn 54 53 0 10 (use (reg/i:SI 10 a0)) "../User/comms/src/i2c_device.c":93 -1
-     (nil))
-
-;; Function i2c_device_read_byte (i2c_device_read_byte, funcdef_no=38, decl_uid=4750, cgraph_uid=38, symbol_order=39)
-
-
-;; Generating RTL for gimple basic block 2
-
-;; Generating RTL for gimple basic block 3
-
-;; Generating RTL for gimple basic block 4
-
-;; Generating RTL for gimple basic block 5
-
-;; Generating RTL for gimple basic block 6
-
-;; Generating RTL for gimple basic block 7
-
-;; Generating RTL for gimple basic block 8
-
-;; Generating RTL for gimple basic block 9
-Edge 2->9 redirected to 12
-
-
-try_optimize_cfg iteration 1
-
-Merging block 3 into block 2...
-Merged blocks 2 and 3.
-Merged 2 and 3 without moving.
-Removing jump 90.
-Merging block 12 into block 11...
-Merged blocks 11 and 12.
-Merged 11 and 12 without moving.
-
-
-try_optimize_cfg iteration 2
-
-
-
-;;
-;; Full RTL generated for this function:
-;;
-(note 1 0 6 NOTE_INSN_DELETED)
-(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(note 2 6 8 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 8 2 9 2 (debug_marker) "../User/comms/src/i2c_device.c":118 -1
-     (nil))
-(debug_insn 9 8 10 2 (var_location:QI byte (const_int 0 [0])) "../User/comms/src/i2c_device.c":118 -1
-     (nil))
-(debug_insn 10 9 11 2 (debug_marker) "../User/comms/src/i2c_device.c":120 -1
-     (nil))
-(debug_insn 11 10 12 2 (debug_marker) "../User/comms/src/i2c_device.c":78 -1
-     (nil))
-(call_insn 12 11 13 2 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_device_read_bit.part.0") [flags 0x3] <function_decl 066f8e10 i2c_device_read_bit.part.0>) [0 i2c_device_read_bit.part.0 S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read_bit.part.0") [flags 0x3] <function_decl 066f8e10 i2c_device_read_bit.part.0>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 13 12 14 2 (set (reg:SI 82)
-        (reg:SI 10 a0)) -1
-     (nil))
-(insn 14 13 15 2 (set (reg:SI 76 [ _15 ])
-        (reg:SI 82)) -1
-     (nil))
-(debug_insn 15 14 16 2 (var_location:SI first_bit (zero_extend:SI (subreg:HI (reg:SI 76 [ _15 ]) 0))) "../User/comms/src/i2c_device.c":120 -1
-     (nil))
-(debug_insn 16 15 17 2 (debug_marker) "../User/comms/src/i2c_device.c":123 -1
-     (nil))
-(insn 17 16 18 2 (set (reg:SI 84)
-        (const_int 65536 [0x10000])) "../User/comms/src/i2c_device.c":123 -1
-     (nil))
-(insn 18 17 19 2 (set (reg:SI 83)
-        (plus:SI (reg:SI 84)
-            (const_int -1 [0xffffffffffffffff]))) "../User/comms/src/i2c_device.c":123 -1
-     (expr_list:REG_EQUAL (const_int 65535 [0xffff])
-        (nil)))
-(jump_insn 19 18 20 2 (set (pc)
-        (if_then_else (eq (reg:SI 76 [ _15 ])
-                (reg:SI 83))
-            (label_ref:SI 99)
-            (pc))) "../User/comms/src/i2c_device.c":123 180 {*branchsi}
-     (int_list:REG_BR_PROB 134217732 (nil))
- -> 99)
-(note 20 19 21 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 21 20 22 4 (debug_marker) "../User/comms/src/i2c_device.c":127 -1
-     (nil))
-(insn 22 21 23 4 (set (reg/v:SI 75 [ byte ])
-        (zero_extend:SI (subreg:QI (reg:SI 76 [ _15 ]) 0))) "../User/comms/src/i2c_device.c":127 -1
-     (nil))
-(debug_insn 23 22 24 4 (var_location:QI byte (subreg:QI (reg/v:SI 75 [ byte ]) 0)) "../User/comms/src/i2c_device.c":127 -1
-     (nil))
-(debug_insn 24 23 25 4 (debug_marker) "../User/comms/src/i2c_device.c":129 -1
-     (nil))
-(debug_insn 25 24 26 4 (debug_marker) "../User/comms/src/i2c_device.c":129 -1
-     (nil))
-(debug_insn 26 25 27 4 (var_location:SI i (const_int 1 [0x1])) "../User/comms/src/i2c_device.c":129 -1
-     (nil))
-(debug_insn 27 26 28 4 (var_location:SI i (const_int 1 [0x1])) -1
-     (nil))
-(debug_insn 28 27 3 4 (var_location:QI byte (subreg:QI (reg/v:SI 75 [ byte ]) 0)) -1
-     (nil))
-(insn 3 28 50 4 (set (reg:SI 73 [ ivtmp_3 ])
-        (const_int 7 [0x7])) "../User/comms/src/i2c_device.c":127 -1
-     (nil))
-(code_label 50 3 29 5 36 (nil) [1 uses])
-(note 29 50 30 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 30 29 31 5 (var_location:SI i (minus:SI (const_int 8 [0x8])
-        (reg:SI 73 [ ivtmp_3 ]))) -1
-     (nil))
-(debug_insn 31 30 32 5 (var_location:QI byte (subreg:QI (reg/v:SI 75 [ byte ]) 0)) -1
-     (nil))
-(debug_insn 32 31 33 5 (debug_marker) "../User/comms/src/i2c_device.c":130 -1
-     (nil))
-(insn 33 32 34 5 (set (reg:SI 85)
-        (ashift:SI (reg/v:SI 75 [ byte ])
-            (const_int 1 [0x1]))) "../User/comms/src/i2c_device.c":130 -1
-     (nil))
-(insn 34 33 35 5 (set (reg/v:SI 74 [ byte ])
-        (zero_extend:SI (subreg:QI (reg:SI 85) 0))) "../User/comms/src/i2c_device.c":130 -1
-     (nil))
-(debug_insn 35 34 36 5 (var_location:QI byte (subreg:QI (reg/v:SI 74 [ byte ]) 0)) "../User/comms/src/i2c_device.c":130 -1
-     (nil))
-(debug_insn 36 35 37 5 (debug_marker) "../User/comms/src/i2c_device.c":131 -1
-     (nil))
-(debug_insn 37 36 38 5 (debug_marker) "../User/comms/src/i2c_device.c":78 -1
-     (nil))
-(call_insn 38 37 39 5 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_device_read_bit.part.0") [flags 0x3] <function_decl 066f8e10 i2c_device_read_bit.part.0>) [0 i2c_device_read_bit.part.0 S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read_bit.part.0") [flags 0x3] <function_decl 066f8e10 i2c_device_read_bit.part.0>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 39 38 40 5 (set (reg:SI 86)
-        (reg:SI 10 a0)) -1
-     (nil))
-(insn 40 39 41 5 (set (reg:SI 77 [ _16 ])
-        (reg:SI 86)) -1
-     (nil))
-(insn 41 40 42 5 (set (reg:QI 87)
-        (subreg:QI (reg:SI 77 [ _16 ]) 0)) "../User/comms/src/i2c_device.c":131 -1
-     (nil))
-(insn 42 41 43 5 (set (reg:SI 88)
-        (ior:SI (reg/v:SI 74 [ byte ])
-            (subreg:SI (reg:QI 87) 0))) "../User/comms/src/i2c_device.c":131 -1
-     (nil))
-(insn 43 42 44 5 (set (reg/v:SI 75 [ byte ])
-        (zero_extend:SI (subreg:QI (reg:SI 88) 0))) "../User/comms/src/i2c_device.c":131 -1
-     (nil))
-(debug_insn 44 43 45 5 (var_location:QI byte (subreg:QI (reg/v:SI 75 [ byte ]) 0)) "../User/comms/src/i2c_device.c":131 -1
-     (nil))
-(debug_insn 45 44 46 5 (var_location:SI D#2 (minus:SI (const_int 9 [0x9])
-        (reg:SI 73 [ ivtmp_3 ]))) -1
-     (nil))
-(debug_insn 46 45 47 5 (var_location:SI i (debug_expr:SI D#2)) "../User/comms/src/i2c_device.c":129 -1
-     (nil))
-(debug_insn 47 46 48 5 (var_location:SI i (debug_expr:SI D#2)) -1
-     (nil))
-(debug_insn 48 47 49 5 (var_location:QI byte (subreg:QI (reg/v:SI 75 [ byte ]) 0)) -1
-     (nil))
-(insn 49 48 51 5 (set (reg:SI 73 [ ivtmp_3 ])
-        (plus:SI (reg:SI 73 [ ivtmp_3 ])
-            (const_int -1 [0xffffffffffffffff]))) -1
-     (nil))
-(jump_insn 51 49 52 5 (set (pc)
-        (if_then_else (ne (reg:SI 73 [ ivtmp_3 ])
-                (const_int 0 [0]))
-            (label_ref 50)
-            (pc))) "../User/comms/src/i2c_device.c":129 -1
-     (int_list:REG_BR_PROB 920350140 (nil))
- -> 50)
-(note 52 51 53 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 53 52 54 6 (debug_marker) "../User/comms/src/i2c_device.c":134 -1
-     (nil))
-(debug_insn 54 53 55 6 (var_location:SI sda (const_int 1 [0x1])) -1
-     (nil))
-(debug_insn 55 54 56 6 (var_location:SI ack (const_int 1 [0x1])) -1
-     (nil))
-(debug_insn 56 55 57 6 (debug_marker) "../User/comms/src/i2c_device.c":97 -1
-     (nil))
-(debug_insn 57 56 58 6 (debug_marker) "../User/comms/src/i2c_device.c":98 -1
-     (nil))
-(debug_insn 58 57 59 6 (debug_marker) "../User/comms/src/i2c_device.c":44 -1
-     (nil))
-(insn 59 58 60 6 (set (reg:SI 90)
-        (const_int 1073811456 [0x40011000])) "../User/comms/src/i2c_device.c":44 -1
-     (nil))
-(insn 60 59 61 6 (set (reg/f:SI 89)
-        (plus:SI (reg:SI 90)
-            (const_int -1024 [0xfffffffffffffc00]))) "../User/comms/src/i2c_device.c":44 -1
-     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
-        (nil)))
-(insn 61 60 62 6 (set (reg:SI 91)
-        (const_int 512 [0x200])) "../User/comms/src/i2c_device.c":44 -1
-     (nil))
-(insn 62 61 67 6 (set (mem/v:SI (plus:SI (reg/f:SI 89)
-                (const_int 20 [0x14])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].BCR+0 S4 A32])
-        (reg:SI 91)) "../User/comms/src/i2c_device.c":44 -1
-     (nil))
-(code_label 67 62 63 7 37 (nil) [1 uses])
-(note 63 67 64 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 64 63 65 7 (debug_marker) "../User/comms/src/i2c_device.c":104 -1
-     (nil))
-(call_insn 65 64 66 7 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>) [0 i2c_device_read_scl S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":104 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 66 65 68 7 (set (reg:SI 78 [ _19 ])
-        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":104 -1
-     (nil))
-(jump_insn 68 66 73 7 (set (pc)
-        (if_then_else (eq (reg:SI 78 [ _19 ])
-                (const_int 0 [0]))
-            (label_ref 67)
-            (pc))) "../User/comms/src/i2c_device.c":104 -1
-     (int_list:REG_BR_PROB 955630228 (nil))
- -> 67)
-(code_label 73 68 69 8 38 (nil) [1 uses])
-(note 69 73 70 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 70 69 71 8 (debug_marker) "../User/comms/src/i2c_device.c":106 -1
-     (nil))
-(call_insn 71 70 72 8 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>) [0 i2c_device_read_scl S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":106 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 72 71 74 8 (set (reg:SI 79 [ _20 ])
-        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":106 -1
-     (nil))
-(jump_insn 74 72 75 8 (set (pc)
-        (if_then_else (ne (reg:SI 79 [ _20 ])
-                (const_int 0 [0]))
-            (label_ref 73)
-            (pc))) "../User/comms/src/i2c_device.c":106 -1
-     (int_list:REG_BR_PROB 955630228 (nil))
- -> 73)
-(note 75 74 76 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 76 75 77 9 (debug_marker) "../User/comms/src/i2c_device.c":110 -1
-     (nil))
-(debug_insn 77 76 78 9 (debug_marker) "../User/comms/src/i2c_device.c":111 -1
-     (nil))
-(debug_insn 78 77 79 9 (debug_marker) "../User/comms/src/i2c_device.c":40 -1
-     (nil))
-(insn 79 78 80 9 (set (reg:SI 93)
-        (const_int 1073811456 [0x40011000])) "../User/comms/src/i2c_device.c":40 -1
-     (nil))
-(insn 80 79 81 9 (set (reg/f:SI 92)
-        (plus:SI (reg:SI 93)
-            (const_int -1024 [0xfffffffffffffc00]))) "../User/comms/src/i2c_device.c":40 -1
-     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
-        (nil)))
-(insn 81 80 82 9 (set (reg:SI 94)
-        (const_int 512 [0x200])) "../User/comms/src/i2c_device.c":40 -1
-     (nil))
-(insn 82 81 83 9 (set (mem/v:SI (plus:SI (reg/f:SI 92)
-                (const_int 16 [0x10])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].BSHR+0 S4 A128])
-        (reg:SI 94)) "../User/comms/src/i2c_device.c":40 -1
-     (nil))
-(debug_insn 83 82 84 9 (var_location:SI ack (clobber (const_int 0 [0]))) "../User/comms/src/i2c_device.c":134 -1
-     (nil))
-(debug_insn 84 83 85 9 (var_location:SI sda (clobber (const_int 0 [0]))) "../User/comms/src/i2c_device.c":134 -1
-     (nil))
-(debug_insn 85 84 86 9 (debug_marker) "../User/comms/src/i2c_device.c":136 -1
-     (nil))
-(insn 86 85 96 9 (set (reg:SI 80 [ <retval> ])
-        (zero_extend:SI (subreg:HI (reg/v:SI 75 [ byte ]) 0))) "../User/comms/src/i2c_device.c":136 -1
-     (nil))
-(jump_insn 96 86 97 9 (set (pc)
-        (label_ref 87)) "../User/comms/src/i2c_device.c":136 -1
-     (nil)
- -> 87)
-(barrier 97 96 99)
-(code_label 99 97 98 10 39 (nil) [1 uses])
-(note 98 99 4 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
-(insn 4 98 5 10 (set (reg:SI 81)
-        (const_int 65536 [0x10000])) "../User/comms/src/i2c_device.c":124 -1
-     (nil))
-(insn 5 4 87 10 (set (reg:SI 80 [ <retval> ])
-        (plus:SI (reg:SI 81)
-            (const_int -1 [0xffffffffffffffff]))) "../User/comms/src/i2c_device.c":124 -1
-     (expr_list:REG_EQUAL (const_int 65535 [0xffff])
-        (nil)))
-(code_label 87 5 88 11 35 (nil) [1 uses])
-(note 88 87 89 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
-(insn 89 88 93 11 (set (reg:SI 80 [ <retval> ])
-        (reg:SI 80 [ <retval> ])) -1
-     (nil))
-(insn 93 89 94 11 (set (reg/i:SI 10 a0)
-        (reg:SI 80 [ <retval> ])) "../User/comms/src/i2c_device.c":137 -1
-     (nil))
-(insn 94 93 0 11 (use (reg/i:SI 10 a0)) "../User/comms/src/i2c_device.c":137 -1
-     (nil))
-
-;; Function i2c_device_init (i2c_device_init, funcdef_no=29, decl_uid=4693, cgraph_uid=29, symbol_order=30)
-
+Partition 1: size 16 align 4
+	I2C_InitTSturcture
 Partition 0: size 12 align 4
-	all
+	GPIO_InitStructure
 
 ;; Generating RTL for gimple basic block 2
 
@@ -919,115 +28,281 @@ try_optimize_cfg iteration 2
 ;;
 (note 1 0 4 NOTE_INSN_DELETED)
 (note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(insn 2 4 3 2 (set (reg/v:SI 72 [ address ])
-        (reg:SI 10 a0 [ address ])) "../User/comms/src/i2c_device.c":14 -1
+(insn 2 4 3 2 (set (reg/v:SI 74 [ address ])
+        (reg:SI 10 a0 [ address ])) "../User/comms/src/i2c_device.c":35 -1
      (nil))
 (note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
-(debug_insn 6 3 7 2 (debug_marker) "../User/comms/src/i2c_device.c":16 -1
+(debug_insn 6 3 7 2 (debug_marker) "../User/comms/src/i2c_device.c":36 -1
      (nil))
-(insn 7 6 8 2 (set (reg:SI 74)
-        (const_int 1073811456 [0x40011000])) "../User/comms/src/i2c_device.c":16 -1
+(insn 7 6 8 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [1 GPIO_InitStructure+0 S4 A32])
+        (const_int 0 [0])) "../User/comms/src/i2c_device.c":36 -1
      (nil))
-(insn 8 7 9 2 (set (reg/f:SI 73)
-        (plus:SI (reg:SI 74)
-            (const_int -1024 [0xfffffffffffffc00]))) "../User/comms/src/i2c_device.c":16 -1
-     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
-        (nil)))
-(insn 9 8 10 2 (set (reg:SI 75)
-        (const_int 512 [0x200])) "../User/comms/src/i2c_device.c":16 -1
+(insn 8 7 9 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 GPIO_InitStructure+4 S4 A32])
+        (const_int 0 [0])) "../User/comms/src/i2c_device.c":36 -1
      (nil))
-(insn 10 9 11 2 (set (mem/v:SI (plus:SI (reg/f:SI 73)
-                (const_int 16 [0x10])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].BSHR+0 S4 A128])
-        (reg:SI 75)) "../User/comms/src/i2c_device.c":16 -1
+(insn 9 8 10 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [1 GPIO_InitStructure+8 S4 A32])
+        (const_int 0 [0])) "../User/comms/src/i2c_device.c":36 -1
      (nil))
-(debug_insn 11 10 12 2 (debug_marker) "../User/comms/src/i2c_device.c":17 -1
+(debug_insn 10 9 11 2 (debug_marker) "../User/comms/src/i2c_device.c":37 -1
      (nil))
-(insn 12 11 13 2 (set (reg:SI 77)
-        (const_int 1073811456 [0x40011000])) "../User/comms/src/i2c_device.c":17 -1
+(insn 11 10 12 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [5 I2C_InitTSturcture+0 S4 A64])
+        (const_int 0 [0])) "../User/comms/src/i2c_device.c":37 -1
      (nil))
-(insn 13 12 14 2 (set (reg/f:SI 76)
-        (plus:SI (reg:SI 77)
-            (const_int -1024 [0xfffffffffffffc00]))) "../User/comms/src/i2c_device.c":17 -1
-     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
-        (nil)))
-(insn 14 13 15 2 (set (reg:SI 78)
-        (const_int 256 [0x100])) "../User/comms/src/i2c_device.c":17 -1
+(insn 12 11 13 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [5 I2C_InitTSturcture+4 S4 A32])
+        (const_int 0 [0])) "../User/comms/src/i2c_device.c":37 -1
      (nil))
-(insn 15 14 16 2 (set (mem/v:SI (plus:SI (reg/f:SI 76)
-                (const_int 16 [0x10])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].BSHR+0 S4 A128])
-        (reg:SI 78)) "../User/comms/src/i2c_device.c":17 -1
+(insn 13 12 14 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [5 I2C_InitTSturcture+8 S4 A64])
+        (const_int 0 [0])) "../User/comms/src/i2c_device.c":37 -1
      (nil))
-(debug_insn 16 15 17 2 (debug_marker) "../User/comms/src/i2c_device.c":19 -1
+(insn 14 13 15 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [5 I2C_InitTSturcture+12 S4 A32])
+        (const_int 0 [0])) "../User/comms/src/i2c_device.c":37 -1
      (nil))
-(debug_insn 17 16 18 2 (debug_marker) "../User/comms/src/i2c_device.c":21 -1
+(debug_insn 15 14 16 2 (debug_marker) "../User/comms/src/i2c_device.c":39 -1
      (nil))
-(insn 18 17 19 2 (set (reg:SI 79)
-        (const_int 20 [0x14])) "../User/comms/src/i2c_device.c":21 -1
+(insn 16 15 17 2 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../User/comms/src/i2c_device.c":39 -1
      (nil))
-(insn 19 18 20 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
-                (const_int -4 [0xfffffffffffffffc])) [4 all.GPIO_Mode+0 S4 A32])
-        (reg:SI 79)) "../User/comms/src/i2c_device.c":21 -1
+(insn 17 16 18 2 (set (reg:SI 10 a0)
+        (const_int 9 [0x9])) "../User/comms/src/i2c_device.c":39 -1
      (nil))
-(debug_insn 20 19 21 2 (debug_marker) "../User/comms/src/i2c_device.c":22 -1
-     (nil))
-(insn 21 20 22 2 (set (reg:SI 80)
-        (const_int 3 [0x3])) "../User/comms/src/i2c_device.c":22 -1
-     (nil))
-(insn 22 21 23 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
-                (const_int -8 [0xfffffffffffffff8])) [3 all.GPIO_Speed+0 S4 A32])
-        (reg:SI 80)) "../User/comms/src/i2c_device.c":22 -1
-     (nil))
-(debug_insn 23 22 24 2 (debug_marker) "../User/comms/src/i2c_device.c":24 -1
-     (nil))
-(insn 24 23 25 2 (set (reg:HI 81)
-        (const_int 768 [0x300])) "../User/comms/src/i2c_device.c":24 -1
-     (nil))
-(insn 25 24 26 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
-                (const_int -12 [0xfffffffffffffff4])) [2 all.GPIO_Pin+0 S2 A32])
-        (reg:HI 81)) "../User/comms/src/i2c_device.c":24 -1
-     (nil))
-(debug_insn 26 25 27 2 (debug_marker) "../User/comms/src/i2c_device.c":26 -1
-     (nil))
-(insn 27 26 28 2 (set (reg:SI 82)
-        (plus:SI (reg/f:SI 67 virtual-stack-vars)
-            (const_int -12 [0xfffffffffffffff4]))) "../User/comms/src/i2c_device.c":26 -1
-     (nil))
-(insn 28 27 29 2 (set (reg:SI 11 a1)
-        (reg:SI 82)) "../User/comms/src/i2c_device.c":26 -1
-     (nil))
-(insn 29 28 30 2 (set (reg:SI 83)
-        (const_int 1073811456 [0x40011000])) "../User/comms/src/i2c_device.c":26 -1
-     (nil))
-(insn 30 29 31 2 (set (reg:SI 10 a0)
-        (plus:SI (reg:SI 83)
-            (const_int -1024 [0xfffffffffffffc00]))) "../User/comms/src/i2c_device.c":26 -1
-     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
-        (nil)))
-(call_insn 31 30 32 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 06610d20 GPIO_Init>) [0 GPIO_Init S4 A32])
+(call_insn 18 17 19 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 065897f8 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":26 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 06610d20 GPIO_Init>)
+        ]) "../User/comms/src/i2c_device.c":39 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 065897f8 RCC_APB2PeriphClockCmd>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
             (nil))))
-(debug_insn 32 31 33 2 (debug_marker) "../User/comms/src/i2c_device.c":28 -1
+(debug_insn 19 18 20 2 (debug_marker) "../User/comms/src/i2c_device.c":40 -1
      (nil))
-(insn 33 32 34 2 (set (reg:SI 85)
-        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/comms/src/i2c_device.c":28 -1
+(insn 20 19 21 2 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../User/comms/src/i2c_device.c":40 -1
      (nil))
-(insn 34 33 35 2 (set (reg/f:SI 84)
-        (lo_sum:SI (reg:SI 85)
-            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/comms/src/i2c_device.c":28 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+(insn 21 20 22 2 (set (reg:SI 10 a0)
+        (const_int 2097152 [0x200000])) "../User/comms/src/i2c_device.c":40 -1
+     (nil))
+(call_insn 22 21 23 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 06589870 RCC_APB1PeriphClockCmd>) [0 RCC_APB1PeriphClockCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/comms/src/i2c_device.c":40 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 06589870 RCC_APB1PeriphClockCmd>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(debug_insn 23 22 24 2 (debug_marker) "../User/comms/src/i2c_device.c":42 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../User/comms/src/i2c_device.c":42 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 10 a0)
+        (const_int 2 [0x2])) "../User/comms/src/i2c_device.c":42 -1
+     (nil))
+(call_insn 26 25 27 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x41] <function_decl 065dc348 GPIO_PinRemapConfig>) [0 GPIO_PinRemapConfig S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/comms/src/i2c_device.c":42 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_PinRemapConfig") [flags 0x41] <function_decl 065dc348 GPIO_PinRemapConfig>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(debug_insn 27 26 28 2 (debug_marker) "../User/comms/src/i2c_device.c":44 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:HI 75)
+        (const_int 768 [0x300])) "../User/comms/src/i2c_device.c":44 -1
+     (nil))
+(insn 29 28 30 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [2 GPIO_InitStructure.GPIO_Pin+0 S2 A32])
+        (reg:HI 75)) "../User/comms/src/i2c_device.c":44 -1
+     (nil))
+(debug_insn 30 29 31 2 (debug_marker) "../User/comms/src/i2c_device.c":45 -1
+     (nil))
+(insn 31 30 32 2 (set (reg:SI 76)
+        (const_int 28 [0x1c])) "../User/comms/src/i2c_device.c":45 -1
+     (nil))
+(insn 32 31 33 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [4 GPIO_InitStructure.GPIO_Mode+0 S4 A32])
+        (reg:SI 76)) "../User/comms/src/i2c_device.c":45 -1
+     (nil))
+(debug_insn 33 32 34 2 (debug_marker) "../User/comms/src/i2c_device.c":46 -1
+     (nil))
+(insn 34 33 35 2 (set (reg:SI 77)
+        (const_int 3 [0x3])) "../User/comms/src/i2c_device.c":46 -1
+     (nil))
+(insn 35 34 36 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 GPIO_InitStructure.GPIO_Speed+0 S4 A32])
+        (reg:SI 77)) "../User/comms/src/i2c_device.c":46 -1
+     (nil))
+(debug_insn 36 35 37 2 (debug_marker) "../User/comms/src/i2c_device.c":47 -1
+     (nil))
+(insn 37 36 38 2 (set (reg:SI 78)
+        (plus:SI (reg/f:SI 67 virtual-stack-vars)
+            (const_int -28 [0xffffffffffffffe4]))) "../User/comms/src/i2c_device.c":47 -1
+     (nil))
+(insn 38 37 39 2 (set (reg:SI 11 a1)
+        (reg:SI 78)) "../User/comms/src/i2c_device.c":47 -1
+     (nil))
+(insn 39 38 40 2 (set (reg:SI 79)
+        (const_int 1073811456 [0x40011000])) "../User/comms/src/i2c_device.c":47 -1
+     (nil))
+(insn 40 39 41 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 79)
+            (const_int -1024 [0xfffffffffffffc00]))) "../User/comms/src/i2c_device.c":47 -1
+     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
         (nil)))
-(insn 35 34 0 2 (set (mem/c:QI (reg/f:SI 84) [0 i2c_address+0 S1 A8])
-        (subreg/s/v:QI (reg/v:SI 72 [ address ]) 0)) "../User/comms/src/i2c_device.c":28 -1
+(call_insn 41 40 42 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 065d0d20 GPIO_Init>) [0 GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/comms/src/i2c_device.c":47 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 065d0d20 GPIO_Init>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(debug_insn 42 41 43 2 (debug_marker) "../User/comms/src/i2c_device.c":49 -1
      (nil))
+(debug_insn 43 42 44 2 (debug_marker) "../User/comms/src/i2c_device.c":50 -1
+     (nil))
+(debug_insn 44 43 45 2 (debug_marker) "../User/comms/src/i2c_device.c":51 -1
+     (nil))
+(insn 45 44 46 2 (set (reg:SI 81)
+        (const_int 98304 [0x18000])) "../User/comms/src/i2c_device.c":49 -1
+     (nil))
+(insn 46 45 47 2 (set (reg:SI 80)
+        (plus:SI (reg:SI 81)
+            (const_int 1696 [0x6a0]))) "../User/comms/src/i2c_device.c":49 -1
+     (expr_list:REG_EQUAL (const_int 100000 [0x186a0])
+        (nil)))
+(insn 47 46 48 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [6 I2C_InitTSturcture.I2C_ClockSpeed+0 S4 A64])
+        (reg:SI 80)) "../User/comms/src/i2c_device.c":49 -1
+     (nil))
+(insn 48 47 49 2 (set (reg:SI 82)
+        (const_int 1073741824 [0x40000000])) "../User/comms/src/i2c_device.c":50 -1
+     (nil))
+(insn 49 48 50 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [2 MEM[(short unsigned int *)&I2C_InitTSturcture + 4B]+0 S4 A32])
+        (reg:SI 82)) "../User/comms/src/i2c_device.c":50 -1
+     (nil))
+(debug_insn 50 49 51 2 (debug_marker) "../User/comms/src/i2c_device.c":52 -1
+     (nil))
+(insn 51 50 52 2 (set (reg:HI 83)
+        (subreg:HI (reg/v:SI 74 [ address ]) 0)) "../User/comms/src/i2c_device.c":52 -1
+     (nil))
+(insn 52 51 53 2 (set (reg:SI 84)
+        (ashift:SI (subreg:SI (reg:HI 83) 0)
+            (const_int 1 [0x1]))) "../User/comms/src/i2c_device.c":52 -1
+     (nil))
+(insn 53 52 54 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 I2C_InitTSturcture.I2C_OwnAddress1+0 S2 A64])
+        (subreg:HI (reg:SI 84) 0)) "../User/comms/src/i2c_device.c":52 -1
+     (nil))
+(debug_insn 54 53 55 2 (debug_marker) "../User/comms/src/i2c_device.c":53 -1
+     (nil))
+(insn 55 54 56 2 (set (reg:HI 85)
+        (const_int 1024 [0x400])) "../User/comms/src/i2c_device.c":53 -1
+     (nil))
+(insn 56 55 57 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -6 [0xfffffffffffffffa])) [2 I2C_InitTSturcture.I2C_Ack+0 S2 A16])
+        (reg:HI 85)) "../User/comms/src/i2c_device.c":53 -1
+     (nil))
+(debug_insn 57 56 58 2 (debug_marker) "../User/comms/src/i2c_device.c":54 -1
+     (nil))
+(insn 58 57 59 2 (set (reg:HI 86)
+        (const_int 16384 [0x4000])) "../User/comms/src/i2c_device.c":54 -1
+     (nil))
+(insn 59 58 60 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 I2C_InitTSturcture.I2C_AcknowledgedAddress+0 S2 A32])
+        (reg:HI 86)) "../User/comms/src/i2c_device.c":54 -1
+     (nil))
+(debug_insn 60 59 61 2 (debug_marker) "../User/comms/src/i2c_device.c":55 -1
+     (nil))
+(insn 61 60 62 2 (set (reg:SI 87)
+        (plus:SI (reg/f:SI 67 virtual-stack-vars)
+            (const_int -16 [0xfffffffffffffff0]))) "../User/comms/src/i2c_device.c":55 -1
+     (nil))
+(insn 62 61 63 2 (set (reg:SI 11 a1)
+        (reg:SI 87)) "../User/comms/src/i2c_device.c":55 -1
+     (nil))
+(insn 63 62 64 2 (set (reg:SI 88)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":55 -1
+     (nil))
+(insn 64 63 65 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 88)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":55 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(call_insn 65 64 66 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("I2C_Init") [flags 0x41] <function_decl 065dc5a0 I2C_Init>) [0 I2C_Init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/comms/src/i2c_device.c":55 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_Init") [flags 0x41] <function_decl 065dc5a0 I2C_Init>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(debug_insn 66 65 67 2 (debug_marker) "../User/comms/src/i2c_device.c":57 -1
+     (nil))
+(insn 67 66 68 2 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../User/comms/src/i2c_device.c":57 -1
+     (nil))
+(insn 68 67 69 2 (set (reg:SI 89)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":57 -1
+     (nil))
+(insn 69 68 70 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 89)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":57 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(call_insn 70 69 71 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("I2C_Cmd") [flags 0x41] <function_decl 065dc690 I2C_Cmd>) [0 I2C_Cmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/comms/src/i2c_device.c":57 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_Cmd") [flags 0x41] <function_decl 065dc690 I2C_Cmd>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(debug_insn 71 70 72 2 (debug_marker) "../User/comms/src/i2c_device.c":58 -1
+     (nil))
+(insn 72 71 73 2 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../User/comms/src/i2c_device.c":58 -1
+     (nil))
+(insn 73 72 74 2 (set (reg:SI 90)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":58 -1
+     (nil))
+(insn 74 73 75 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 90)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":58 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(call_insn 75 74 0 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("I2C_AcknowledgeConfig") [flags 0x41] <function_decl 065dc8e8 I2C_AcknowledgeConfig>) [0 I2C_AcknowledgeConfig S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/comms/src/i2c_device.c":58 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_AcknowledgeConfig") [flags 0x41] <function_decl 065dc8e8 I2C_AcknowledgeConfig>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
 
-;; Function i2c_device_read (i2c_device_read, funcdef_no=39, decl_uid=4696, cgraph_uid=39, symbol_order=40)
+;; Function i2c_device_read (i2c_device_read, funcdef_no=30, decl_uid=4696, cgraph_uid=30, symbol_order=30)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1048,21 +323,16 @@ try_optimize_cfg iteration 2
 
 ;; Generating RTL for gimple basic block 10
 
-;; Generating RTL for gimple basic block 11
-
-;; Generating RTL for gimple basic block 12
-
-;; Generating RTL for gimple basic block 13
-
 
 try_optimize_cfg iteration 1
 
 Merging block 3 into block 2...
 Merged blocks 2 and 3.
 Merged 2 and 3 without moving.
-Redirecting jump 49 from 14 to 15.
-Redirecting jump 68 from 14 to 15.
-deleting block 14
+Edge 2->11 redirected to 12
+Merging block 11 into block 10...
+Merged blocks 10 and 11.
+Merged 10 and 11 without moving.
 
 
 try_optimize_cfg iteration 2
@@ -1074,244 +344,308 @@ try_optimize_cfg iteration 2
 ;;
 (note 1 0 7 NOTE_INSN_DELETED)
 (note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(insn 2 7 3 2 (set (reg/v/f:SI 83 [ buffer ])
-        (reg:SI 10 a0 [ buffer ])) "../User/comms/src/i2c_device.c":139 -1
+(insn 2 7 3 2 (set (reg/v/f:SI 84 [ buffer ])
+        (reg:SI 10 a0 [ buffer ])) "../User/comms/src/i2c_device.c":61 -1
      (nil))
-(insn 3 2 4 2 (set (reg/v:SI 84 [ size ])
-        (reg:SI 11 a1 [ size ])) "../User/comms/src/i2c_device.c":139 -1
+(insn 3 2 4 2 (set (reg/v:SI 85 [ size ])
+        (reg:SI 11 a1 [ size ])) "../User/comms/src/i2c_device.c":61 -1
      (nil))
-(note 4 3 75 2 NOTE_INSN_FUNCTION_BEG)
-(code_label 75 4 9 4 55 (nil) [1 uses])
-(note 9 75 20 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
-(code_label 20 9 10 5 49 (nil) [1 uses])
-(note 10 20 11 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 11 10 12 5 (debug_marker) "../User/comms/src/i2c_device.c":143 -1
+(note 4 3 9 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 9 4 10 2 (debug_marker) "../User/comms/src/i2c_device.c":62 -1
      (nil))
-(call_insn 12 11 13 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_device_start_condition") [flags 0x3] <function_decl 066f89d8 i2c_device_start_condition>) [0 i2c_device_start_condition S4 A32])
+(debug_insn 10 9 11 2 (var_location:SI i (const_int 0 [0])) "../User/comms/src/i2c_device.c":62 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../User/comms/src/i2c_device.c":64 -1
+     (nil))
+(jump_insn 12 11 21 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 85 [ size ])
                 (const_int 0 [0]))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":143 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_start_condition") [flags 0x3] <function_decl 066f89d8 i2c_device_start_condition>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(debug_insn 13 12 14 5 (debug_marker) "../User/comms/src/i2c_device.c":145 -1
+            (label_ref:SI 95)
+            (pc))) "../User/comms/src/i2c_device.c":64 180 {*branchsi}
+     (int_list:REG_BR_PROB 365072228 (nil))
+ -> 95)
+(code_label 21 12 13 4 5 (nil) [1 uses])
+(note 13 21 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 14 13 15 4 (debug_marker) "../User/comms/src/i2c_device.c":69 -1
      (nil))
-(debug_insn 14 13 15 5 (debug_marker) "../User/comms/src/i2c_device.c":147 -1
+(insn 15 14 16 4 (set (reg:SI 86)
+        (const_int 268435456 [0x10000000])) "../User/comms/src/i2c_device.c":68 -1
      (nil))
-(call_insn 15 14 16 5 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_device_read_byte") [flags 0x3] <function_decl 066f8bb8 i2c_device_read_byte>) [0 i2c_device_read_byte S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":147 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read_byte") [flags 0x3] <function_decl 066f8bb8 i2c_device_read_byte>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 16 15 17 5 (set (reg:SI 85)
-        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":147 -1
+(insn 16 15 17 4 (set (reg:SI 11 a1)
+        (plus:SI (reg:SI 86)
+            (const_int 2 [0x2]))) "../User/comms/src/i2c_device.c":68 -1
+     (expr_list:REG_EQUAL (const_int 268435458 [0x10000002])
+        (nil)))
+(insn 17 16 18 4 (set (reg:SI 87)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":68 -1
      (nil))
-(insn 17 16 18 5 (set (reg/v:SI 78 [ bus_address ])
-        (reg:SI 85)) "../User/comms/src/i2c_device.c":147 -1
-     (nil))
-(debug_insn 18 17 19 5 (var_location:HI bus_address (subreg:HI (reg/v:SI 78 [ bus_address ]) 0)) "../User/comms/src/i2c_device.c":147 -1
-     (nil))
-(debug_insn 19 18 21 5 (debug_marker) "../User/comms/src/i2c_device.c":149 -1
-     (nil))
-(insn 21 19 22 5 (set (reg:SI 87)
-        (const_int 65536 [0x10000])) "../User/comms/src/i2c_device.c":149 -1
-     (nil))
-(insn 22 21 23 5 (set (reg:SI 86)
+(insn 18 17 19 4 (set (reg:SI 10 a0)
         (plus:SI (reg:SI 87)
-            (const_int -1 [0xffffffffffffffff]))) "../User/comms/src/i2c_device.c":149 -1
-     (expr_list:REG_EQUAL (const_int 65535 [0xffff])
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":68 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
         (nil)))
-(jump_insn 23 22 24 5 (set (pc)
-        (if_then_else (eq (reg/v:SI 78 [ bus_address ])
-                (reg:SI 86))
-            (label_ref 20)
-            (pc))) "../User/comms/src/i2c_device.c":149 -1
-     (int_list:REG_BR_PROB 225163668 (nil))
- -> 20)
-(note 24 23 25 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 25 24 26 6 (debug_marker) "../User/comms/src/i2c_device.c":153 -1
-     (nil))
-(insn 26 25 27 6 (set (reg:SI 89)
-        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/comms/src/i2c_device.c":153 -1
-     (nil))
-(insn 27 26 28 6 (set (reg/f:SI 88)
-        (lo_sum:SI (reg:SI 89)
-            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/comms/src/i2c_device.c":153 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
-        (nil)))
-(insn 28 27 29 6 (set (reg:SI 90)
-        (zero_extend:SI (mem/c:QI (reg/f:SI 88) [0 i2c_address+0 S1 A8]))) "../User/comms/src/i2c_device.c":153 -1
-     (nil))
-(insn 29 28 30 6 (set (reg:SI 91)
-        (ashift:SI (reg:SI 90)
-            (const_int 1 [0x1]))) "../User/comms/src/i2c_device.c":153 -1
-     (nil))
-(jump_insn 30 29 31 6 (set (pc)
-        (if_then_else (ne (reg/v:SI 78 [ bus_address ])
-                (reg:SI 91))
-            (label_ref 70)
-            (pc))) "../User/comms/src/i2c_device.c":153 -1
-     (int_list:REG_BR_PROB 955630228 (nil))
- -> 70)
-(note 31 30 32 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
-(insn 32 31 5 7 (set (reg:SI 81 [ _32 ])
-        (reg/v:SI 84 [ size ])) -1
-     (nil))
-(insn 5 32 33 7 (set (reg/v:SI 77 [ i ])
-        (const_int 0 [0])) "../User/comms/src/i2c_device.c":154 -1
-     (nil))
-(jump_insn 33 5 34 7 (set (pc)
-        (label_ref 58)) -1
-     (nil)
- -> 58)
-(barrier 34 33 62)
-(code_label 62 34 35 8 54 (nil) [1 uses])
-(note 35 62 36 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 36 35 37 8 (debug_marker) "../User/comms/src/i2c_device.c":155 -1
-     (nil))
-(call_insn 37 36 38 8 (parallel [
+(call_insn 19 18 20 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_device_read_byte") [flags 0x3] <function_decl 066f8bb8 i2c_device_read_byte>) [0 i2c_device_read_byte S4 A32])
+                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0657e2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":155 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read_byte") [flags 0x3] <function_decl 066f8bb8 i2c_device_read_byte>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 38 37 39 8 (set (reg:SI 92)
-        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":155 -1
+        ]) "../User/comms/src/i2c_device.c":68 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0657e2d0 I2C_GetFlagStatus>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 20 19 22 4 (set (reg:SI 72 [ _1 ])
+        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":68 -1
      (nil))
-(insn 39 38 40 8 (set (reg/v:SI 79 [ byte ])
-        (reg:SI 92)) "../User/comms/src/i2c_device.c":155 -1
+(jump_insn 22 20 23 4 (set (pc)
+        (if_then_else (eq (reg:SI 72 [ _1 ])
+                (const_int 0 [0]))
+            (label_ref 21)
+            (pc))) "../User/comms/src/i2c_device.c":68 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 21)
+(note 23 22 24 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 24 23 25 5 (debug_marker) "../User/comms/src/i2c_device.c":72 -1
      (nil))
-(debug_insn 40 39 41 8 (var_location:HI byte (subreg:HI (reg/v:SI 79 [ byte ]) 0)) "../User/comms/src/i2c_device.c":155 -1
+(insn 25 24 26 5 (set (reg:SI 89)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":72 -1
      (nil))
-(debug_insn 41 40 42 8 (debug_marker) "../User/comms/src/i2c_device.c":158 -1
-     (nil))
-(insn 42 41 43 8 (set (reg:SI 94)
-        (const_int 65536 [0x10000])) "../User/comms/src/i2c_device.c":158 -1
-     (nil))
-(insn 43 42 44 8 (set (reg:SI 93)
-        (plus:SI (reg:SI 94)
-            (const_int -1 [0xffffffffffffffff]))) "../User/comms/src/i2c_device.c":158 -1
-     (expr_list:REG_EQUAL (const_int 65535 [0xffff])
+(insn 26 25 28 5 (set (reg/f:SI 88)
+        (plus:SI (reg:SI 89)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":72 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
         (nil)))
-(jump_insn 44 43 45 8 (set (pc)
-        (if_then_else (ne (reg/v:SI 79 [ byte ])
-                (reg:SI 93))
-            (label_ref 51)
-            (pc))) "../User/comms/src/i2c_device.c":158 -1
-     (int_list:REG_BR_PROB 1014686028 (nil))
- -> 51)
-(note 45 44 46 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 46 45 47 9 (debug_marker) "../User/comms/src/i2c_device.c":159 -1
+(insn 28 26 29 5 (set (reg:HI 91)
+        (mem/v:HI (plus:SI (reg/f:SI 88)
+                (const_int 20 [0x14])) [2 MEM[(struct I2C_TypeDef *)1073763328B].STAR1+0 S2 A32])) "../User/comms/src/i2c_device.c":72 -1
      (nil))
-(call_insn 47 46 48 9 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_device_stop_condition") [flags 0x3] <function_decl 066f8a50 i2c_device_stop_condition>) [0 i2c_device_stop_condition S4 A32])
-                (const_int 0 [0]))
+(insn 29 28 30 5 (set (reg:SI 79 [ vol.0_16 ])
+        (zero_extend:SI (reg:HI 91))) "../User/comms/src/i2c_device.c":72 -1
+     (nil))
+(debug_insn 30 29 31 5 (debug_marker) "../User/comms/src/i2c_device.c":73 -1
+     (nil))
+(insn 31 30 32 5 (set (reg:SI 93)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":73 -1
+     (nil))
+(insn 32 31 34 5 (set (reg/f:SI 92)
+        (plus:SI (reg:SI 93)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":73 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(insn 34 32 35 5 (set (reg:HI 95)
+        (mem/v:HI (plus:SI (reg/f:SI 92)
+                (const_int 24 [0x18])) [2 MEM[(struct I2C_TypeDef *)1073763328B].STAR2+0 S2 A64])) "../User/comms/src/i2c_device.c":73 -1
+     (nil))
+(insn 35 34 5 5 (set (reg:SI 80 [ vol.1_17 ])
+        (zero_extend:SI (reg:HI 95))) "../User/comms/src/i2c_device.c":73 -1
+     (nil))
+(insn 5 35 73 5 (set (reg/v:SI 78 [ i ])
+        (const_int 0 [0])) "../User/comms/src/i2c_device.c":62 -1
+     (nil))
+(code_label 73 5 36 6 7 (nil) [1 uses])
+(note 36 73 37 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 37 36 38 6 (var_location:SI i (reg/v:SI 78 [ i ])) -1
+     (nil))
+(debug_insn 38 37 39 6 (debug_marker) "../User/comms/src/i2c_device.c":75 -1
+     (nil))
+(debug_insn 39 38 40 6 (debug_marker) "../User/comms/src/i2c_device.c":76 -1
+     (nil))
+(insn 40 39 41 6 (set (reg:SI 96)
+        (const_int 268435456 [0x10000000])) "../User/comms/src/i2c_device.c":76 -1
+     (nil))
+(insn 41 40 42 6 (set (reg:SI 11 a1)
+        (plus:SI (reg:SI 96)
+            (const_int 64 [0x40]))) "../User/comms/src/i2c_device.c":76 -1
+     (expr_list:REG_EQUAL (const_int 268435520 [0x10000040])
+        (nil)))
+(insn 42 41 43 6 (set (reg:SI 97)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":76 -1
+     (nil))
+(insn 43 42 44 6 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 97)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":76 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(call_insn 44 43 45 6 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0657e2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
+                    (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":159 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_stop_condition") [flags 0x3] <function_decl 066f8a50 i2c_device_stop_condition>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(debug_insn 48 47 49 9 (debug_marker) "../User/comms/src/i2c_device.c":160 -1
+        ]) "../User/comms/src/i2c_device.c":76 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0657e2d0 I2C_GetFlagStatus>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 45 44 46 6 (set (reg:SI 73 [ _2 ])
+        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":76 -1
      (nil))
-(jump_insn 49 48 50 9 (set (pc)
-        (label_ref:SI 82)) "../User/comms/src/i2c_device.c":160 250 {jump}
-     (nil)
- -> 82)
-(barrier 50 49 51)
-(code_label 51 50 52 10 52 (nil) [1 uses])
-(note 52 51 53 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 53 52 54 10 (debug_marker) "../User/comms/src/i2c_device.c":163 -1
-     (nil))
-(insn 54 53 55 10 (set (reg:SI 95)
-        (plus:SI (reg/v/f:SI 83 [ buffer ])
-            (reg:SI 82 [ <retval> ]))) "../User/comms/src/i2c_device.c":163 -1
-     (nil))
-(insn 55 54 56 10 (set (mem:QI (reg:SI 95) [0 MEM[base: _31, offset: 0B]+0 S1 A8])
-        (subreg:QI (reg/v:SI 79 [ byte ]) 0)) "../User/comms/src/i2c_device.c":163 -1
-     (nil))
-(insn 56 55 57 10 (set (reg/v:SI 77 [ i ])
-        (plus:SI (reg/v:SI 77 [ i ])
-            (const_int 1 [0x1]))) "../User/comms/src/i2c_device.c":154 -1
-     (nil))
-(debug_insn 57 56 58 10 (var_location:SI i (reg/v:SI 77 [ i ])) "../User/comms/src/i2c_device.c":154 -1
-     (nil))
-(code_label 58 57 59 11 51 (nil) [1 uses])
-(note 59 58 60 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 60 59 61 11 (var_location:SI i (reg/v:SI 77 [ i ])) -1
-     (nil))
-(insn 61 60 63 11 (set (reg:SI 82 [ <retval> ])
-        (reg/v:SI 77 [ i ])) -1
-     (nil))
-(jump_insn 63 61 64 11 (set (pc)
-        (if_then_else (ne (reg/v:SI 77 [ i ])
-                (reg:SI 81 [ _32 ]))
-            (label_ref 62)
-            (pc))) "../User/comms/src/i2c_device.c":154 -1
-     (int_list:REG_BR_PROB 1014686028 (nil))
- -> 62)
-(note 64 63 65 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 65 64 66 12 (debug_marker) "../User/comms/src/i2c_device.c":166 -1
-     (nil))
-(call_insn 66 65 67 12 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_device_stop_condition") [flags 0x3] <function_decl 066f8a50 i2c_device_stop_condition>) [0 i2c_device_stop_condition S4 A32])
+(jump_insn 46 45 47 6 (set (pc)
+        (if_then_else (eq (reg:SI 73 [ _2 ])
                 (const_int 0 [0]))
+            (label_ref 63)
+            (pc))) "../User/comms/src/i2c_device.c":76 -1
+     (int_list:REG_BR_PROB 719407028 (nil))
+ -> 63)
+(note 47 46 48 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 48 47 49 7 (debug_marker) "../User/comms/src/i2c_device.c":77 -1
+     (nil))
+(insn 49 48 50 7 (set (reg:SI 98)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":77 -1
+     (nil))
+(insn 50 49 51 7 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 98)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":77 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(call_insn 51 50 52 7 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("I2C_ReceiveData") [flags 0x41] <function_decl 065dcbb8 I2C_ReceiveData>) [0 I2C_ReceiveData S4 A32])
+                    (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":166 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_stop_condition") [flags 0x3] <function_decl 066f8a50 i2c_device_stop_condition>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(debug_insn 67 66 6 12 (debug_marker) "../User/comms/src/i2c_device.c":168 -1
+        ]) "../User/comms/src/i2c_device.c":77 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_ReceiveData") [flags 0x41] <function_decl 065dcbb8 I2C_ReceiveData>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (nil)))
+(insn 52 51 53 7 (set (reg:SI 99)
+        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":77 -1
      (nil))
-(insn 6 67 68 12 (set (reg:SI 82 [ <retval> ])
-        (reg/v:SI 84 [ size ])) "../User/comms/src/i2c_device.c":168 -1
+(insn 53 52 54 7 (set (reg/v:SI 81 [ b ])
+        (reg:SI 99)) "../User/comms/src/i2c_device.c":77 -1
      (nil))
-(jump_insn 68 6 69 12 (set (pc)
-        (label_ref:SI 82)) "../User/comms/src/i2c_device.c":168 250 {jump}
-     (nil)
- -> 82)
-(barrier 69 68 70)
-(code_label 70 69 71 13 50 (nil) [1 uses])
-(note 71 70 72 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 72 71 73 13 (debug_marker) "../User/comms/src/i2c_device.c":173 -1
+(debug_insn 54 53 55 7 (var_location:QI b (subreg:QI (reg/v:SI 81 [ b ]) 0)) "../User/comms/src/i2c_device.c":77 -1
      (nil))
-(call_insn 73 72 74 13 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_device_stop_condition") [flags 0x3] <function_decl 066f8a50 i2c_device_stop_condition>) [0 i2c_device_stop_condition S4 A32])
+(debug_insn 55 54 56 7 (debug_marker) "../User/comms/src/i2c_device.c":78 -1
+     (nil))
+(jump_insn 56 55 57 7 (set (pc)
+        (if_then_else (geu (reg/v:SI 78 [ i ])
+                (reg/v:SI 85 [ size ]))
+            (label_ref 63)
+            (pc))) "../User/comms/src/i2c_device.c":78 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 63)
+(note 57 56 58 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 58 57 59 8 (debug_marker) "../User/comms/src/i2c_device.c":79 -1
+     (nil))
+(insn 59 58 60 8 (set (reg/v:SI 82 [ i ])
+        (plus:SI (reg/v:SI 78 [ i ])
+            (const_int 1 [0x1]))) "../User/comms/src/i2c_device.c":79 -1
+     (nil))
+(debug_insn 60 59 61 8 (var_location:SI i (reg/v:SI 82 [ i ])) "../User/comms/src/i2c_device.c":79 -1
+     (nil))
+(insn 61 60 62 8 (set (reg/f:SI 100)
+        (plus:SI (reg/v/f:SI 84 [ buffer ])
+            (reg/v:SI 78 [ i ]))) "../User/comms/src/i2c_device.c":79 -1
+     (nil))
+(insn 62 61 6 8 (set (mem:QI (reg/f:SI 100) [0 *_3+0 S1 A8])
+        (subreg/s/v:QI (reg/v:SI 81 [ b ]) 0)) "../User/comms/src/i2c_device.c":79 -1
+     (nil))
+(insn 6 62 63 8 (set (reg/v:SI 78 [ i ])
+        (reg/v:SI 82 [ i ])) "../User/comms/src/i2c_device.c":79 -1
+     (nil))
+(code_label 63 6 64 9 6 (nil) [2 uses])
+(note 64 63 65 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 65 64 66 9 (var_location:SI i (reg/v:SI 78 [ i ])) -1
+     (nil))
+(debug_insn 66 65 67 9 (debug_marker) "../User/comms/src/i2c_device.c":83 -1
+     (nil))
+(insn 67 66 68 9 (set (reg:SI 101)
+        (const_int 268435456 [0x10000000])) "../User/comms/src/i2c_device.c":83 -1
+     (nil))
+(insn 68 67 69 9 (set (reg:SI 11 a1)
+        (plus:SI (reg:SI 101)
+            (const_int 16 [0x10]))) "../User/comms/src/i2c_device.c":83 -1
+     (expr_list:REG_EQUAL (const_int 268435472 [0x10000010])
+        (nil)))
+(insn 69 68 70 9 (set (reg:SI 102)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":83 -1
+     (nil))
+(insn 70 69 71 9 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 102)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":83 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(call_insn 71 70 72 9 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0657e2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/comms/src/i2c_device.c":83 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0657e2d0 I2C_GetFlagStatus>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 72 71 74 9 (set (reg:SI 75 [ _4 ])
+        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":83 -1
+     (nil))
+(jump_insn 74 72 75 9 (set (pc)
+        (if_then_else (eq (reg:SI 75 [ _4 ])
                 (const_int 0 [0]))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":173 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_stop_condition") [flags 0x3] <function_decl 066f8a50 i2c_device_stop_condition>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(debug_insn 74 73 76 13 (debug_marker) "../User/comms/src/i2c_device.c":176 -1
+            (label_ref 73)
+            (pc))) "../User/comms/src/i2c_device.c":83 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 73)
+(note 75 74 76 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 76 75 77 10 (debug_marker) "../User/comms/src/i2c_device.c":84 -1
      (nil))
-(jump_insn 76 74 77 13 (set (pc)
-        (label_ref 75)) "../User/comms/src/i2c_device.c":176 -1
-     (nil)
- -> 75)
-(barrier 77 76 82)
-(code_label 82 77 85 15 48 (nil) [2 uses])
-(note 85 82 83 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
-(insn 83 85 84 15 (set (reg/i:SI 10 a0)
-        (reg:SI 82 [ <retval> ])) "../User/comms/src/i2c_device.c":180 -1
+(insn 77 76 78 10 (set (reg:SI 104)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":84 -1
      (nil))
-(insn 84 83 0 15 (use (reg/i:SI 10 a0)) "../User/comms/src/i2c_device.c":180 -1
+(insn 78 77 80 10 (set (reg/f:SI 103)
+        (plus:SI (reg:SI 104)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":84 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(insn 80 78 81 10 (set (reg:HI 106)
+        (mem/v:HI (plus:SI (reg/f:SI 103)
+                (const_int 20 [0x14])) [2 MEM[(struct I2C_TypeDef *)1073763328B].STAR1+0 S2 A32])) "../User/comms/src/i2c_device.c":84 -1
      (nil))
+(insn 81 80 82 10 (set (reg:SI 83 [ vol.3_25 ])
+        (zero_extend:SI (reg:HI 106))) "../User/comms/src/i2c_device.c":84 -1
+     (nil))
+(debug_insn 82 81 83 10 (debug_marker) "../User/comms/src/i2c_device.c":85 -1
+     (nil))
+(insn 83 82 84 10 (set (reg:SI 108)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":85 -1
+     (nil))
+(insn 84 83 85 10 (set (reg/f:SI 107)
+        (plus:SI (reg:SI 108)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":85 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(insn 85 84 86 10 (set (reg:HI 109)
+        (mem/v:HI (reg/f:SI 107) [2 MEM[(struct I2C_TypeDef *)1073763328B].CTLR1+0 S2 A128])) "../User/comms/src/i2c_device.c":85 -1
+     (nil))
+(insn 86 85 87 10 (set (reg:SI 76 [ _5 ])
+        (zero_extend:SI (reg:HI 109))) "../User/comms/src/i2c_device.c":85 -1
+     (nil))
+(insn 87 86 88 10 (set (reg:SI 110)
+        (ior:SI (reg:SI 76 [ _5 ])
+            (const_int 1 [0x1]))) "../User/comms/src/i2c_device.c":85 -1
+     (nil))
+(insn 88 87 89 10 (set (reg:SI 77 [ _6 ])
+        (zero_extend:SI (subreg:HI (reg:SI 110) 0))) "../User/comms/src/i2c_device.c":85 -1
+     (nil))
+(insn 89 88 90 10 (set (reg:SI 112)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":85 -1
+     (nil))
+(insn 90 89 91 10 (set (reg/f:SI 111)
+        (plus:SI (reg:SI 112)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":85 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(insn 91 90 92 10 (set (mem/v:HI (reg/f:SI 111) [2 MEM[(struct I2C_TypeDef *)1073763328B].CTLR1+0 S2 A128])
+        (subreg/s/v:HI (reg:SI 77 [ _6 ]) 0)) "../User/comms/src/i2c_device.c":85 -1
+     (nil))
+(debug_insn 92 91 95 10 (debug_marker) "../User/comms/src/i2c_device.c":86 -1
+     (nil))
+(code_label 95 92 96 12 3 (nil) [1 uses])
+(note 96 95 0 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
 
-;; Function i2c_device_write (i2c_device_write, funcdef_no=42, decl_uid=4699, cgraph_uid=42, symbol_order=43)
+;; Function i2c_device_write (i2c_device_write, funcdef_no=31, decl_uid=4699, cgraph_uid=31, symbol_order=31)
 
 
 ;; Generating RTL for gimple basic block 2
@@ -1334,35 +668,17 @@ try_optimize_cfg iteration 2
 
 ;; Generating RTL for gimple basic block 11
 
-;; Generating RTL for gimple basic block 12
-
-;; Generating RTL for gimple basic block 13
-
-;; Generating RTL for gimple basic block 14
-
-;; Generating RTL for gimple basic block 15
-
-;; Generating RTL for gimple basic block 16
-
-;; Generating RTL for gimple basic block 17
-
-;; Generating RTL for gimple basic block 18
-
-;; Generating RTL for gimple basic block 19
-
-;; Generating RTL for gimple basic block 20
-
-;; Generating RTL for gimple basic block 21
-
 
 try_optimize_cfg iteration 1
 
 Merging block 3 into block 2...
 Merged blocks 2 and 3.
 Merged 2 and 3 without moving.
-Redirecting jump 126 from 22 to 23.
-Redirecting jump 142 from 22 to 23.
-deleting block 22
+Edge 2->13 redirected to 14
+Redirecting jump 65 from 13 to 14.
+Merging block 13 into block 12...
+Merged blocks 12 and 13.
+Merged 12 and 13 without moving.
 
 
 try_optimize_cfg iteration 2
@@ -1372,446 +688,327 @@ try_optimize_cfg iteration 2
 ;;
 ;; Full RTL generated for this function:
 ;;
-(note 1 0 8 NOTE_INSN_DELETED)
-(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
-(insn 2 8 3 2 (set (reg/v/f:SI 89 [ buffer ])
-        (reg:SI 10 a0 [ buffer ])) "../User/comms/src/i2c_device.c":214 -1
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v/f:SI 80 [ buffer ])
+        (reg:SI 10 a0 [ buffer ])) "../User/comms/src/i2c_device.c":91 -1
      (nil))
-(insn 3 2 4 2 (set (reg/v:SI 90 [ size ])
-        (reg:SI 11 a1 [ size ])) "../User/comms/src/i2c_device.c":214 -1
+(insn 3 2 4 2 (set (reg/v:SI 81 [ size ])
+        (reg:SI 11 a1 [ size ])) "../User/comms/src/i2c_device.c":91 -1
      (nil))
-(note 4 3 149 2 NOTE_INSN_FUNCTION_BEG)
-(code_label 149 4 10 4 70 (nil) [1 uses])
-(note 10 149 20 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
-(code_label 20 10 11 5 59 (nil) [1 uses])
-(note 11 20 12 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 12 11 13 5 (debug_marker) "../User/comms/src/i2c_device.c":218 -1
+(note 4 3 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 4 9 2 (debug_marker) "../User/comms/src/i2c_device.c":92 -1
      (nil))
-(call_insn 13 12 14 5 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_device_start_condition") [flags 0x3] <function_decl 066f89d8 i2c_device_start_condition>) [0 i2c_device_start_condition S4 A32])
+(debug_insn 9 8 10 2 (var_location:SI i (const_int 0 [0])) "../User/comms/src/i2c_device.c":92 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../User/comms/src/i2c_device.c":94 -1
+     (nil))
+(jump_insn 11 10 20 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 81 [ size ])
                 (const_int 0 [0]))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":218 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_start_condition") [flags 0x3] <function_decl 066f89d8 i2c_device_start_condition>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(debug_insn 14 13 15 5 (debug_marker) "../User/comms/src/i2c_device.c":220 -1
+            (label_ref:SI 93)
+            (pc))) "../User/comms/src/i2c_device.c":94 180 {*branchsi}
+     (int_list:REG_BR_PROB 365072228 (nil))
+ -> 93)
+(code_label 20 11 12 4 24 (nil) [1 uses])
+(note 12 20 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 13 12 14 4 (debug_marker) "../User/comms/src/i2c_device.c":100 -1
      (nil))
-(call_insn 15 14 16 5 (parallel [
+(insn 14 13 15 4 (set (reg:SI 82)
+        (const_int 393216 [0x60000])) "../User/comms/src/i2c_device.c":99 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:SI 11 a1)
+        (plus:SI (reg:SI 82)
+            (const_int 130 [0x82]))) "../User/comms/src/i2c_device.c":99 -1
+     (expr_list:REG_EQUAL (const_int 393346 [0x60082])
+        (nil)))
+(insn 16 15 17 4 (set (reg:SI 83)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":99 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 83)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":99 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(call_insn 18 17 19 4 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_device_read_byte") [flags 0x3] <function_decl 066f8bb8 i2c_device_read_byte>) [0 i2c_device_read_byte S4 A32])
+                (call (mem:SI (symbol_ref:SI ("I2C_CheckEvent") [flags 0x41] <function_decl 0657e1e0 I2C_CheckEvent>) [0 I2C_CheckEvent S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":220 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read_byte") [flags 0x3] <function_decl 066f8bb8 i2c_device_read_byte>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 16 15 17 5 (set (reg:SI 91)
-        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":220 -1
+        ]) "../User/comms/src/i2c_device.c":99 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_CheckEvent") [flags 0x41] <function_decl 0657e1e0 I2C_CheckEvent>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 19 18 21 4 (set (reg:SI 72 [ _1 ])
+        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":99 -1
      (nil))
-(insn 17 16 18 5 (set (reg/v:SI 78 [ bus_address ])
-        (reg:SI 91)) "../User/comms/src/i2c_device.c":220 -1
-     (nil))
-(debug_insn 18 17 19 5 (var_location:HI bus_address (subreg:HI (reg/v:SI 78 [ bus_address ]) 0)) "../User/comms/src/i2c_device.c":220 -1
-     (nil))
-(debug_insn 19 18 21 5 (debug_marker) "../User/comms/src/i2c_device.c":222 -1
-     (nil))
-(insn 21 19 22 5 (set (reg:SI 93)
-        (const_int 65536 [0x10000])) "../User/comms/src/i2c_device.c":222 -1
-     (nil))
-(insn 22 21 23 5 (set (reg:SI 92)
-        (plus:SI (reg:SI 93)
-            (const_int -1 [0xffffffffffffffff]))) "../User/comms/src/i2c_device.c":222 -1
-     (expr_list:REG_EQUAL (const_int 65535 [0xffff])
-        (nil)))
-(jump_insn 23 22 24 5 (set (pc)
-        (if_then_else (eq (reg/v:SI 78 [ bus_address ])
-                (reg:SI 92))
+(jump_insn 21 19 95 4 (set (pc)
+        (if_then_else (eq (reg:SI 72 [ _1 ])
+                (const_int 0 [0]))
             (label_ref 20)
-            (pc))) "../User/comms/src/i2c_device.c":222 -1
-     (int_list:REG_BR_PROB 225163668 (nil))
- -> 20)
-(note 24 23 25 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 25 24 26 6 (debug_marker) "../User/comms/src/i2c_device.c":226 -1
-     (nil))
-(insn 26 25 27 6 (set (reg:SI 95)
-        (high:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/comms/src/i2c_device.c":226 -1
-     (nil))
-(insn 27 26 28 6 (set (reg/f:SI 94)
-        (lo_sum:SI (reg:SI 95)
-            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]))) "../User/comms/src/i2c_device.c":226 -1
-     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
-        (nil)))
-(insn 28 27 29 6 (set (reg:SI 96)
-        (zero_extend:SI (mem/c:QI (reg/f:SI 94) [0 i2c_address+0 S1 A8]))) "../User/comms/src/i2c_device.c":226 -1
-     (nil))
-(insn 29 28 30 6 (set (reg:SI 97)
-        (ashift:SI (reg:SI 96)
-            (const_int 1 [0x1]))) "../User/comms/src/i2c_device.c":226 -1
-     (nil))
-(insn 30 29 31 6 (set (reg:SI 98)
-        (ior:SI (reg:SI 97)
-            (const_int 1 [0x1]))) "../User/comms/src/i2c_device.c":226 -1
-     (nil))
-(jump_insn 31 30 32 6 (set (pc)
-        (if_then_else (ne (reg/v:SI 78 [ bus_address ])
-                (reg:SI 98))
-            (label_ref 144)
-            (pc))) "../User/comms/src/i2c_device.c":226 -1
+            (pc))) "../User/comms/src/i2c_device.c":99 -1
      (int_list:REG_BR_PROB 955630228 (nil))
- -> 144)
-(note 32 31 33 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
-(insn 33 32 6 7 (set (reg:SI 87 [ _56 ])
-        (reg/v:SI 90 [ size ])) -1
+ -> 20)
+(note 95 21 5 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 5 95 76 5 (set (reg/v:SI 78 [ i ])
+        (const_int 0 [0])) "../User/comms/src/i2c_device.c":92 -1
      (nil))
-(insn 6 33 34 7 (set (reg/v:SI 77 [ i ])
-        (const_int 0 [0])) "../User/comms/src/i2c_device.c":228 -1
+(code_label 76 5 22 6 27 (nil) [1 uses])
+(note 22 76 23 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 23 22 24 6 (var_location:SI i (reg/v:SI 78 [ i ])) -1
      (nil))
-(jump_insn 34 6 35 7 (set (pc)
-        (label_ref 132)) -1
-     (nil)
- -> 132)
-(barrier 35 34 136)
-(code_label 136 35 36 8 69 (nil) [1 uses])
-(note 36 136 37 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 37 36 38 8 (debug_marker) "../User/comms/src/i2c_device.c":229 -1
+(debug_insn 24 23 25 6 (debug_marker) "../User/comms/src/i2c_device.c":102 -1
      (nil))
-(insn 38 37 39 8 (set (reg:SI 99)
-        (plus:SI (reg/v/f:SI 89 [ buffer ])
-            (reg:SI 88 [ <retval> ]))) "../User/comms/src/i2c_device.c":229 -1
+(debug_insn 25 24 26 6 (debug_marker) "../User/comms/src/i2c_device.c":103 -1
      (nil))
-(insn 39 38 40 8 (set (reg/v:SI 81 [ byte ])
-        (zero_extend:SI (mem:QI (reg:SI 99) [0 MEM[base: _40, offset: 0B]+0 S1 A8]))) "../User/comms/src/i2c_device.c":229 -1
+(insn 26 25 27 6 (set (reg:SI 84)
+        (const_int 268435456 [0x10000000])) "../User/comms/src/i2c_device.c":103 -1
      (nil))
-(debug_insn 40 39 41 8 (var_location:QI byte (subreg:QI (reg/v:SI 81 [ byte ]) 0)) "../User/comms/src/i2c_device.c":229 -1
+(insn 27 26 28 6 (set (reg:SI 11 a1)
+        (plus:SI (reg:SI 84)
+            (const_int 128 [0x80]))) "../User/comms/src/i2c_device.c":103 -1
+     (expr_list:REG_EQUAL (const_int 268435584 [0x10000080])
+        (nil)))
+(insn 28 27 29 6 (set (reg:SI 85)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":103 -1
      (nil))
-(debug_insn 41 40 42 8 (debug_marker) "../User/comms/src/i2c_device.c":231 -1
+(insn 29 28 30 6 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 85)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":103 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(call_insn 30 29 31 6 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0657e2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/comms/src/i2c_device.c":103 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0657e2d0 I2C_GetFlagStatus>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 31 30 32 6 (set (reg:SI 73 [ _2 ])
+        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":103 -1
      (nil))
-(debug_insn 42 41 43 8 (var_location:QI byte (subreg:QI (reg/v:SI 81 [ byte ]) 0)) "../User/comms/src/i2c_device.c":231 -1
+(jump_insn 32 31 33 6 (set (pc)
+        (if_then_else (eq (reg:SI 73 [ _2 ])
+                (const_int 0 [0]))
+            (label_ref 46)
+            (pc))) "../User/comms/src/i2c_device.c":103 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 46)
+(note 33 32 34 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 34 33 35 7 (set (pc)
+        (if_then_else (geu (reg/v:SI 78 [ i ])
+                (reg/v:SI 81 [ size ]))
+            (label_ref 46)
+            (pc))) "../User/comms/src/i2c_device.c":103 -1
+     (int_list:REG_BR_PROB 719407028 (nil))
+ -> 46)
+(note 35 34 36 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 36 35 37 8 (debug_marker) "../User/comms/src/i2c_device.c":104 -1
      (nil))
-(debug_insn 43 42 44 8 (debug_marker) "../User/comms/src/i2c_device.c":202 -1
+(insn 37 36 38 8 (set (reg/f:SI 86)
+        (plus:SI (reg/v/f:SI 80 [ buffer ])
+            (reg/v:SI 78 [ i ]))) "../User/comms/src/i2c_device.c":104 -1
      (nil))
-(debug_insn 44 43 45 8 (debug_marker) "../User/comms/src/i2c_device.c":202 -1
+(insn 38 37 39 8 (set (reg:SI 87)
+        (zero_extend:SI (mem:QI (reg/f:SI 86) [0 *_3+0 S1 A8]))) "../User/comms/src/i2c_device.c":104 -1
      (nil))
-(debug_insn 45 44 46 8 (var_location:SI i (const_int 7 [0x7])) "../User/comms/src/i2c_device.c":202 -1
+(insn 39 38 40 8 (set (reg:SI 11 a1)
+        (reg:SI 87)) "../User/comms/src/i2c_device.c":104 -1
      (nil))
-(debug_insn 46 45 47 8 (var_location:SI i (const_int 7 [0x7])) -1
+(insn 40 39 41 8 (set (reg:SI 88)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":104 -1
      (nil))
-(debug_insn 47 46 5 8 (var_location:QI byte (subreg:QI (reg/v:SI 81 [ byte ]) 0)) -1
+(insn 41 40 42 8 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 88)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":104 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(call_insn 42 41 43 8 (parallel [
+            (call (mem:SI (symbol_ref:SI ("I2C_SendData") [flags 0x41] <function_decl 065dcb40 I2C_SendData>) [0 I2C_SendData S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/comms/src/i2c_device.c":104 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_SendData") [flags 0x41] <function_decl 065dcb40 I2C_SendData>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:QI (use (reg:SI 11 a1))
+            (nil))))
+(debug_insn 43 42 44 8 (debug_marker) "../User/comms/src/i2c_device.c":105 -1
      (nil))
-(insn 5 47 99 8 (set (reg:SI 80 [ ivtmp_29 ])
-        (const_int 8 [0x8])) "../User/comms/src/i2c_device.c":229 -1
+(insn 44 43 45 8 (set (reg/v:SI 78 [ i ])
+        (plus:SI (reg/v:SI 78 [ i ])
+            (const_int 1 [0x1]))) "../User/comms/src/i2c_device.c":105 -1
      (nil))
-(code_label 99 5 48 9 66 (nil) [1 uses])
-(note 48 99 49 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 49 48 50 9 (var_location:SI i (plus:SI (reg:SI 80 [ ivtmp_29 ])
-        (const_int -1 [0xffffffffffffffff]))) -1
+(debug_insn 45 44 46 8 (var_location:SI i (reg/v:SI 78 [ i ])) "../User/comms/src/i2c_device.c":105 -1
      (nil))
-(debug_insn 50 49 51 9 (var_location:QI byte (subreg:QI (reg/v:SI 81 [ byte ]) 0)) -1
+(code_label 46 45 47 9 25 (nil) [2 uses])
+(note 47 46 48 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 48 47 49 9 (var_location:SI i (reg/v:SI 78 [ i ])) -1
      (nil))
-(debug_insn 51 50 52 9 (debug_marker) "../User/comms/src/i2c_device.c":203 -1
+(debug_insn 49 48 50 9 (debug_marker) "../User/comms/src/i2c_device.c":109 -1
      (nil))
-(debug_insn 52 51 53 9 (var_location:QI D#3 (and:QI (subreg:QI (reg/v:SI 81 [ byte ]) 0)
-        (const_int -128 [0xffffffffffffff80]))) -1
+(insn 50 49 51 9 (set (reg:SI 89)
+        (const_int 268435456 [0x10000000])) "../User/comms/src/i2c_device.c":109 -1
      (nil))
-(debug_insn 53 52 54 9 (var_location:SI bit (zero_extend:SI (debug_expr:QI D#3))) "../User/comms/src/i2c_device.c":203 -1
+(insn 51 50 52 9 (set (reg:SI 11 a1)
+        (plus:SI (reg:SI 89)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":109 -1
+     (expr_list:REG_EQUAL (const_int 268436480 [0x10000400])
+        (nil)))
+(insn 52 51 53 9 (set (reg:SI 90)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":109 -1
      (nil))
-(debug_insn 54 53 55 9 (debug_marker) "../User/comms/src/i2c_device.c":184 -1
-     (nil))
-(insn 55 54 56 9 (set (reg:SI 100)
-        (sign_extend:SI (subreg/v:QI (reg/v:SI 81 [ byte ]) 0))) "../User/comms/src/i2c_device.c":184 -1
+(insn 53 52 54 9 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 90)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":109 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(call_insn 54 53 55 9 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0657e2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/comms/src/i2c_device.c":109 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0657e2d0 I2C_GetFlagStatus>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 55 54 56 9 (set (reg:SI 76 [ _5 ])
+        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":109 -1
      (nil))
 (jump_insn 56 55 57 9 (set (pc)
-        (if_then_else (ge (reg:SI 100)
+        (if_then_else (eq (reg:SI 76 [ _5 ])
                 (const_int 0 [0]))
-            (label_ref 66)
-            (pc))) "../User/comms/src/i2c_device.c":184 -1
-     (int_list:REG_BR_PROB 536870916 (nil))
- -> 66)
+            (label_ref 67)
+            (pc))) "../User/comms/src/i2c_device.c":109 -1
+     (int_list:REG_BR_PROB 1014686028 (nil))
+ -> 67)
 (note 57 56 58 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 58 57 59 10 (debug_marker) "../User/comms/src/i2c_device.c":185 -1
+(debug_insn 58 57 59 10 (debug_marker) "../User/comms/src/i2c_device.c":110 -1
      (nil))
-(debug_insn 59 58 60 10 (debug_marker) "../User/comms/src/i2c_device.c":40 -1
+(insn 59 58 60 10 (set (reg:SI 91)
+        (const_int 268435456 [0x10000000])) "../User/comms/src/i2c_device.c":110 -1
      (nil))
-(insn 60 59 61 10 (set (reg:SI 102)
-        (const_int 1073811456 [0x40011000])) "../User/comms/src/i2c_device.c":40 -1
-     (nil))
-(insn 61 60 62 10 (set (reg/f:SI 101)
-        (plus:SI (reg:SI 102)
-            (const_int -1024 [0xfffffffffffffc00]))) "../User/comms/src/i2c_device.c":40 -1
-     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
+(insn 60 59 61 10 (set (reg:SI 11 a1)
+        (plus:SI (reg:SI 91)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":110 -1
+     (expr_list:REG_EQUAL (const_int 268436480 [0x10000400])
         (nil)))
-(insn 62 61 63 10 (set (reg:SI 103)
-        (const_int 512 [0x200])) "../User/comms/src/i2c_device.c":40 -1
+(insn 61 60 62 10 (set (reg:SI 92)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":110 -1
      (nil))
-(insn 63 62 64 10 (set (mem/v:SI (plus:SI (reg/f:SI 101)
-                (const_int 16 [0x10])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].BSHR+0 S4 A128])
-        (reg:SI 103)) "../User/comms/src/i2c_device.c":40 -1
+(insn 62 61 63 10 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 92)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":110 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(call_insn 63 62 64 10 (parallel [
+            (call (mem:SI (symbol_ref:SI ("I2C_ClearFlag") [flags 0x41] <function_decl 0657e348 I2C_ClearFlag>) [0 I2C_ClearFlag S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/comms/src/i2c_device.c":110 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_ClearFlag") [flags 0x41] <function_decl 0657e348 I2C_ClearFlag>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(debug_insn 64 63 65 10 (debug_marker) "../User/comms/src/i2c_device.c":111 -1
      (nil))
-(jump_insn 64 63 65 10 (set (pc)
-        (label_ref 74)) "../User/comms/src/i2c_device.c":40 -1
+(jump_insn 65 64 66 10 (set (pc)
+        (label_ref:SI 93)) "../User/comms/src/i2c_device.c":111 250 {jump}
      (nil)
- -> 74)
-(barrier 65 64 66)
-(code_label 66 65 67 11 62 (nil) [1 uses])
-(note 67 66 68 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 68 67 69 11 (debug_marker) "../User/comms/src/i2c_device.c":187 -1
+ -> 93)
+(barrier 66 65 67)
+(code_label 67 66 68 11 26 (nil) [1 uses])
+(note 68 67 69 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 69 68 70 11 (debug_marker) "../User/comms/src/i2c_device.c":115 -1
      (nil))
-(debug_insn 69 68 70 11 (debug_marker) "../User/comms/src/i2c_device.c":44 -1
+(insn 70 69 71 11 (set (reg:SI 93)
+        (const_int 268435456 [0x10000000])) "../User/comms/src/i2c_device.c":115 -1
      (nil))
-(insn 70 69 71 11 (set (reg:SI 105)
-        (const_int 1073811456 [0x40011000])) "../User/comms/src/i2c_device.c":44 -1
-     (nil))
-(insn 71 70 72 11 (set (reg/f:SI 104)
-        (plus:SI (reg:SI 105)
-            (const_int -1024 [0xfffffffffffffc00]))) "../User/comms/src/i2c_device.c":44 -1
-     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
+(insn 71 70 72 11 (set (reg:SI 11 a1)
+        (plus:SI (reg:SI 93)
+            (const_int 16 [0x10]))) "../User/comms/src/i2c_device.c":115 -1
+     (expr_list:REG_EQUAL (const_int 268435472 [0x10000010])
         (nil)))
-(insn 72 71 73 11 (set (reg:SI 106)
-        (const_int 512 [0x200])) "../User/comms/src/i2c_device.c":44 -1
+(insn 72 71 73 11 (set (reg:SI 94)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":115 -1
      (nil))
-(insn 73 72 74 11 (set (mem/v:SI (plus:SI (reg/f:SI 104)
-                (const_int 20 [0x14])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].BCR+0 S4 A32])
-        (reg:SI 106)) "../User/comms/src/i2c_device.c":44 -1
-     (nil))
-(code_label 74 73 75 12 63 (nil) [1 uses])
-(note 75 74 80 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
-(code_label 80 75 76 13 64 (nil) [1 uses])
-(note 76 80 77 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 77 76 78 13 (debug_marker) "../User/comms/src/i2c_device.c":192 -1
-     (nil))
-(call_insn 78 77 79 13 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>) [0 i2c_device_read_scl S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":192 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 79 78 81 13 (set (reg:SI 83 [ _36 ])
-        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":192 -1
-     (nil))
-(jump_insn 81 79 86 13 (set (pc)
-        (if_then_else (eq (reg:SI 83 [ _36 ])
-                (const_int 0 [0]))
-            (label_ref 80)
-            (pc))) "../User/comms/src/i2c_device.c":192 -1
-     (int_list:REG_BR_PROB 955630228 (nil))
- -> 80)
-(code_label 86 81 82 14 65 (nil) [1 uses])
-(note 82 86 83 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 83 82 84 14 (debug_marker) "../User/comms/src/i2c_device.c":194 -1
-     (nil))
-(call_insn 84 83 85 14 (parallel [
-            (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>) [0 i2c_device_read_scl S4 A32])
-                    (const_int 0 [0])))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":194 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read_scl") [flags 0x3] <function_decl 066f87f8 i2c_device_read_scl>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 85 84 87 14 (set (reg:SI 84 [ _37 ])
-        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":194 -1
-     (nil))
-(jump_insn 87 85 88 14 (set (pc)
-        (if_then_else (ne (reg:SI 84 [ _37 ])
-                (const_int 0 [0]))
-            (label_ref 86)
-            (pc))) "../User/comms/src/i2c_device.c":194 -1
-     (int_list:REG_BR_PROB 955630228 (nil))
- -> 86)
-(note 88 87 89 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 89 88 90 15 (var_location:SI bit (clobber (const_int 0 [0]))) "../User/comms/src/i2c_device.c":203 -1
-     (nil))
-(debug_insn 90 89 91 15 (debug_marker) "../User/comms/src/i2c_device.c":204 -1
-     (nil))
-(insn 91 90 92 15 (set (reg:SI 107)
-        (ashift:SI (reg/v:SI 81 [ byte ])
-            (const_int 1 [0x1]))) "../User/comms/src/i2c_device.c":204 -1
-     (nil))
-(insn 92 91 93 15 (set (reg/v:SI 81 [ byte ])
-        (zero_extend:SI (subreg:QI (reg:SI 107) 0))) "../User/comms/src/i2c_device.c":204 -1
-     (nil))
-(debug_insn 93 92 94 15 (var_location:QI byte (subreg:QI (reg/v:SI 81 [ byte ]) 0)) "../User/comms/src/i2c_device.c":204 -1
-     (nil))
-(debug_insn 94 93 95 15 (var_location:SI D#4 (plus:SI (reg:SI 80 [ ivtmp_29 ])
-        (const_int -2 [0xfffffffffffffffe]))) -1
-     (nil))
-(debug_insn 95 94 96 15 (var_location:SI i (debug_expr:SI D#4)) "../User/comms/src/i2c_device.c":202 -1
-     (nil))
-(debug_insn 96 95 97 15 (var_location:SI i (debug_expr:SI D#4)) -1
-     (nil))
-(debug_insn 97 96 98 15 (var_location:QI byte (subreg:QI (reg/v:SI 81 [ byte ]) 0)) -1
-     (nil))
-(insn 98 97 100 15 (set (reg:SI 80 [ ivtmp_29 ])
-        (plus:SI (reg:SI 80 [ ivtmp_29 ])
-            (const_int -1 [0xffffffffffffffff]))) -1
-     (nil))
-(jump_insn 100 98 101 15 (set (pc)
-        (if_then_else (ne (reg:SI 80 [ ivtmp_29 ])
-                (const_int 0 [0]))
-            (label_ref 99)
-            (pc))) "../User/comms/src/i2c_device.c":202 -1
-     (int_list:REG_BR_PROB 939539196 (nil))
- -> 99)
-(note 101 100 102 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 102 101 103 16 (debug_marker) "../User/comms/src/i2c_device.c":207 -1
-     (nil))
-(debug_insn 103 102 104 16 (debug_marker) "../User/comms/src/i2c_device.c":40 -1
-     (nil))
-(insn 104 103 105 16 (set (reg:SI 109)
-        (const_int 1073811456 [0x40011000])) "../User/comms/src/i2c_device.c":40 -1
-     (nil))
-(insn 105 104 106 16 (set (reg/f:SI 108)
-        (plus:SI (reg:SI 109)
-            (const_int -1024 [0xfffffffffffffc00]))) "../User/comms/src/i2c_device.c":40 -1
-     (expr_list:REG_EQUAL (const_int 1073810432 [0x40010c00])
+(insn 73 72 74 11 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 94)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":115 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
         (nil)))
-(insn 106 105 107 16 (set (reg:SI 110)
-        (const_int 512 [0x200])) "../User/comms/src/i2c_device.c":40 -1
-     (nil))
-(insn 107 106 108 16 (set (mem/v:SI (plus:SI (reg/f:SI 108)
-                (const_int 16 [0x10])) [6 MEM[(struct GPIO_TypeDef *)1073810432B].BSHR+0 S4 A128])
-        (reg:SI 110)) "../User/comms/src/i2c_device.c":40 -1
-     (nil))
-(debug_insn 108 107 109 16 (debug_marker) "../User/comms/src/i2c_device.c":209 -1
-     (nil))
-(debug_insn 109 108 110 16 (debug_marker) "../User/comms/src/i2c_device.c":78 -1
-     (nil))
-(call_insn 110 109 111 16 (parallel [
+(call_insn 74 73 75 11 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("i2c_device_read_bit.part.0") [flags 0x3] <function_decl 066f8e10 i2c_device_read_bit.part.0>) [0 i2c_device_read_bit.part.0 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0657e2d0 I2C_GetFlagStatus>) [0 I2C_GetFlagStatus S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
-        ]) -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read_bit.part.0") [flags 0x3] <function_decl 066f8e10 i2c_device_read_bit.part.0>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(insn 111 110 112 16 (set (reg:SI 111)
-        (reg:SI 10 a0)) -1
+        ]) "../User/comms/src/i2c_device.c":115 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_GetFlagStatus") [flags 0x41] <function_decl 0657e2d0 I2C_GetFlagStatus>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 75 74 77 11 (set (reg:SI 77 [ _6 ])
+        (reg:SI 10 a0)) "../User/comms/src/i2c_device.c":115 -1
      (nil))
-(insn 112 111 113 16 (set (reg:SI 82 [ _35 ])
-        (reg:SI 111)) -1
-     (nil))
-(debug_insn 113 112 114 16 (var_location:HI ack (subreg:HI (reg:SI 82 [ _35 ]) 0)) "../User/comms/src/i2c_device.c":209 -1
-     (nil))
-(debug_insn 114 113 115 16 (debug_marker) "../User/comms/src/i2c_device.c":211 -1
-     (nil))
-(debug_insn 115 114 116 16 (var_location:QI byte (clobber (const_int 0 [0]))) "../User/comms/src/i2c_device.c":231 -1
-     (nil))
-(debug_insn 116 115 117 16 (var_location:SI i (clobber (const_int 0 [0]))) "../User/comms/src/i2c_device.c":231 -1
-     (nil))
-(debug_insn 117 116 118 16 (var_location:QI nack (subreg:QI (reg:SI 82 [ _35 ]) 0)) "../User/comms/src/i2c_device.c":231 -1
-     (nil))
-(debug_insn 118 117 119 16 (debug_marker) "../User/comms/src/i2c_device.c":233 -1
-     (nil))
-(insn 119 118 120 16 (set (reg:QI 112)
-        (subreg:QI (reg:SI 82 [ _35 ]) 0)) "../User/comms/src/i2c_device.c":233 -1
-     (nil))
-(insn 120 119 121 16 (set (reg:SI 113)
-        (zero_extend:SI (reg:QI 112))) "../User/comms/src/i2c_device.c":233 -1
-     (nil))
-(jump_insn 121 120 122 16 (set (pc)
-        (if_then_else (eq (reg:SI 113)
+(jump_insn 77 75 78 11 (set (pc)
+        (if_then_else (eq (reg:SI 77 [ _6 ])
                 (const_int 0 [0]))
-            (label_ref 128)
-            (pc))) "../User/comms/src/i2c_device.c":233 -1
+            (label_ref 76)
+            (pc))) "../User/comms/src/i2c_device.c":115 -1
      (int_list:REG_BR_PROB 1014686028 (nil))
- -> 128)
-(note 122 121 123 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 123 122 124 17 (debug_marker) "../User/comms/src/i2c_device.c":234 -1
+ -> 76)
+(note 78 77 79 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 79 78 80 12 (debug_marker) "../User/comms/src/i2c_device.c":116 -1
      (nil))
-(call_insn 124 123 125 17 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_device_stop_condition") [flags 0x3] <function_decl 066f8a50 i2c_device_stop_condition>) [0 i2c_device_stop_condition S4 A32])
+(insn 80 79 81 12 (set (reg:SI 96)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":116 -1
+     (nil))
+(insn 81 80 83 12 (set (reg/f:SI 95)
+        (plus:SI (reg:SI 96)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":116 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(insn 83 81 84 12 (set (reg:HI 98)
+        (mem/v:HI (plus:SI (reg/f:SI 95)
+                (const_int 20 [0x14])) [2 MEM[(struct I2C_TypeDef *)1073763328B].STAR1+0 S2 A32])) "../User/comms/src/i2c_device.c":116 -1
+     (nil))
+(insn 84 83 85 12 (set (reg:SI 79 [ vol.4_23 ])
+        (zero_extend:SI (reg:HI 98))) "../User/comms/src/i2c_device.c":116 -1
+     (nil))
+(debug_insn 85 84 86 12 (debug_marker) "../User/comms/src/i2c_device.c":117 -1
+     (nil))
+(insn 86 85 87 12 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../User/comms/src/i2c_device.c":117 -1
+     (nil))
+(insn 87 86 88 12 (set (reg:SI 99)
+        (const_int 1073762304 [0x40005000])) "../User/comms/src/i2c_device.c":117 -1
+     (nil))
+(insn 88 87 89 12 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 99)
+            (const_int 1024 [0x400]))) "../User/comms/src/i2c_device.c":117 -1
+     (expr_list:REG_EQUAL (const_int 1073763328 [0x40005400])
+        (nil)))
+(call_insn 89 88 90 12 (parallel [
+            (call (mem:SI (symbol_ref:SI ("I2C_Cmd") [flags 0x41] <function_decl 065dc690 I2C_Cmd>) [0 I2C_Cmd S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":234 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_stop_condition") [flags 0x3] <function_decl 066f8a50 i2c_device_stop_condition>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(debug_insn 125 124 126 17 (debug_marker) "../User/comms/src/i2c_device.c":236 -1
+        ]) "../User/comms/src/i2c_device.c":117 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("I2C_Cmd") [flags 0x41] <function_decl 065dc690 I2C_Cmd>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(debug_insn 90 89 93 12 (debug_marker) "../User/comms/src/i2c_device.c":118 -1
      (nil))
-(jump_insn 126 125 127 17 (set (pc)
-        (label_ref:SI 156)) "../User/comms/src/i2c_device.c":236 250 {jump}
-     (nil)
- -> 156)
-(barrier 127 126 128)
-(code_label 128 127 129 18 67 (nil) [1 uses])
-(note 129 128 130 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
-(insn 130 129 131 18 (set (reg/v:SI 77 [ i ])
-        (plus:SI (reg/v:SI 77 [ i ])
-            (const_int 1 [0x1]))) "../User/comms/src/i2c_device.c":228 -1
-     (nil))
-(debug_insn 131 130 132 18 (var_location:SI i (reg/v:SI 77 [ i ])) "../User/comms/src/i2c_device.c":228 -1
-     (nil))
-(code_label 132 131 133 19 61 (nil) [1 uses])
-(note 133 132 134 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 134 133 135 19 (var_location:SI i (reg/v:SI 77 [ i ])) -1
-     (nil))
-(insn 135 134 137 19 (set (reg:SI 88 [ <retval> ])
-        (reg/v:SI 77 [ i ])) -1
-     (nil))
-(jump_insn 137 135 138 19 (set (pc)
-        (if_then_else (ne (reg/v:SI 77 [ i ])
-                (reg:SI 87 [ _56 ]))
-            (label_ref 136)
-            (pc))) "../User/comms/src/i2c_device.c":228 -1
-     (int_list:REG_BR_PROB 1014686028 (nil))
- -> 136)
-(note 138 137 139 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 139 138 140 20 (debug_marker) "../User/comms/src/i2c_device.c":240 -1
-     (nil))
-(call_insn 140 139 141 20 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_device_stop_condition") [flags 0x3] <function_decl 066f8a50 i2c_device_stop_condition>) [0 i2c_device_stop_condition S4 A32])
-                (const_int 0 [0]))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":240 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_stop_condition") [flags 0x3] <function_decl 066f8a50 i2c_device_stop_condition>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(debug_insn 141 140 7 20 (debug_marker) "../User/comms/src/i2c_device.c":242 -1
-     (nil))
-(insn 7 141 142 20 (set (reg:SI 88 [ <retval> ])
-        (reg/v:SI 90 [ size ])) "../User/comms/src/i2c_device.c":242 -1
-     (nil))
-(jump_insn 142 7 143 20 (set (pc)
-        (label_ref:SI 156)) "../User/comms/src/i2c_device.c":242 250 {jump}
-     (nil)
- -> 156)
-(barrier 143 142 144)
-(code_label 144 143 145 21 60 (nil) [1 uses])
-(note 145 144 146 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
-(debug_insn 146 145 147 21 (debug_marker) "../User/comms/src/i2c_device.c":247 -1
-     (nil))
-(call_insn 147 146 148 21 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_device_stop_condition") [flags 0x3] <function_decl 066f8a50 i2c_device_stop_condition>) [0 i2c_device_stop_condition S4 A32])
-                (const_int 0 [0]))
-            (clobber (reg:SI 1 ra))
-        ]) "../User/comms/src/i2c_device.c":247 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_stop_condition") [flags 0x3] <function_decl 066f8a50 i2c_device_stop_condition>)
-        (expr_list:REG_EH_REGION (const_int 0 [0])
-            (nil)))
-    (nil))
-(debug_insn 148 147 150 21 (debug_marker) "../User/comms/src/i2c_device.c":248 -1
-     (nil))
-(jump_insn 150 148 151 21 (set (pc)
-        (label_ref 149)) "../User/comms/src/i2c_device.c":248 -1
-     (nil)
- -> 149)
-(barrier 151 150 156)
-(code_label 156 151 159 23 58 (nil) [2 uses])
-(note 159 156 157 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
-(insn 157 159 158 23 (set (reg/i:SI 10 a0)
-        (reg:SI 88 [ <retval> ])) "../User/comms/src/i2c_device.c":252 -1
-     (nil))
-(insn 158 157 0 23 (use (reg/i:SI 10 a0)) "../User/comms/src/i2c_device.c":252 -1
-     (nil))
+(code_label 93 90 94 14 22 (nil) [2 uses])
+(note 94 93 0 14 [bb 14] NOTE_INSN_BASIC_BLOCK)

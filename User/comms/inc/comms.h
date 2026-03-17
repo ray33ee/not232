@@ -64,6 +64,7 @@
 #define RECV_PULSEIO_OUT_SEND       ((uint8_t)160)
 
 #define RECV_NEOPIXEL_WRITE         ((uint8_t)170)
+#define RECV_INTERNAL_WS2812B       ((uint8_t)175)
 
 #define RECV_OW_RESET               ((uint8_t)180)
 #define RECV_OW_WRITE_0             ((uint8_t)181)

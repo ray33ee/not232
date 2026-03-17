@@ -1,253 +1,121 @@
 #include "comms/inc/i2c_device.h"
 
 
-#define SCL_MASK (1 << 8)
-#define SDA_MASK (1 << 9)
 
-#define ACK (1)
-#define NACK (0)
+/*void i2c_device_init(uint8_t address) {
 
-#define STOP ((uint16_t)0xFFFF)
+    GPIO_InitTypeDef GPIO_InitStructure={0};
+    I2C_InitTypeDef I2C_InitTSturcture={0};
 
-uint8_t i2c_address;
+    GPIO_PinRemapConfig(GPIO_Remap_I2C1, ENABLE);
+    RCC_APB1PeriphClockCmd( RCC_APB1Periph_I2C1, ENABLE );
 
-void i2c_device_init(uint8_t address) {
-    //Ensure both lines start OD
-    GPIOB->BSHR = SDA_MASK;
-    GPIOB->BSHR = SCL_MASK;
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_OD;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init( GPIOB, &GPIO_InitStructure );
 
-    GPIO_InitTypeDef all;
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_OD;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init( GPIOB, &GPIO_InitStructure );
 
-    all.GPIO_Mode = GPIO_Mode_Out_OD;
-    all.GPIO_Speed = GPIO_Speed_50MHz;
+    I2C_InitTSturcture.I2C_ClockSpeed = 100000;
+    I2C_InitTSturcture.I2C_Mode = I2C_Mode_I2C;
+    I2C_InitTSturcture.I2C_DutyCycle = I2C_DutyCycle_16_9;
+    I2C_InitTSturcture.I2C_OwnAddress1 = address;
+    I2C_InitTSturcture.I2C_Ack = I2C_Ack_Enable;
+    I2C_InitTSturcture.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit;
+    I2C_Init( I2C1, &I2C_InitTSturcture );
 
-    all.GPIO_Pin = SDA_MASK | SCL_MASK;
+    I2C_Cmd( I2C1, ENABLE );
+}*/
 
-    GPIO_Init(GPIOB, &all);
+void i2c_device_init(uint8_t address)
+{
+    GPIO_InitTypeDef GPIO_InitStructure = {0};
+    I2C_InitTypeDef I2C_InitTSturcture = {0};
 
-    i2c_address = address;
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB | RCC_APB2Periph_AFIO, ENABLE);
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_I2C1, ENABLE);
+
+    GPIO_PinRemapConfig(GPIO_Remap_I2C1, ENABLE);
+
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_OD;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &GPIO_InitStructure);
+
+    I2C_InitTSturcture.I2C_ClockSpeed = 100000;
+    I2C_InitTSturcture.I2C_Mode = I2C_Mode_I2C;
+    I2C_InitTSturcture.I2C_DutyCycle = I2C_DutyCycle_16_9;
+    I2C_InitTSturcture.I2C_OwnAddress1 = address << 1;
+    I2C_InitTSturcture.I2C_Ack = I2C_Ack_Enable;
+    I2C_InitTSturcture.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit;
+    I2C_Init(I2C1, &I2C_InitTSturcture);
+
+    I2C_Cmd(I2C1, ENABLE);
+    I2C_AcknowledgeConfig(I2C1, ENABLE);
 }
 
-static inline uint32_t i2c_device_read_scl() {
-    return (GPIOB->INDR & SCL_MASK) != (uint32_t)Bit_RESET;
-}
+void i2c_device_read(uint8_t *buffer, uint32_t size) {
+    uint32_t i = 0;
 
-static inline uint32_t i2c_device_read_sda() {
-    return (GPIOB->INDR & SDA_MASK) != (uint32_t)Bit_RESET;
-}
-
-static inline void i2c_device_set_sda() {
-    GPIOB->BSHR = SDA_MASK;
-}
-
-static inline void i2c_device_clear_sda() {
-    GPIOB->BCR = SDA_MASK;
-}
-
-static inline void i2c_device_start_condition() {
-    if (i2c_device_read_scl() && i2c_device_read_sda()) {
-        while (i2c_device_read_sda());
+    if (size == 0) {
+        return;
     }
 
-    //Not strictly part of the start condition, but we check before the data
-    while (i2c_device_read_scl()); //Wait for scl to come down too
-}
+    while (I2C_GetFlagStatus(I2C1, I2C_FLAG_ADDR) == RESET) {
+    }
 
-static inline void i2c_device_stop_condition() {
-    
+    /* clear ADDR */
+    (void)I2C1->STAR1;
+    (void)I2C1->STAR2;
+
     while (1) {
-        //Wait for SCL to go high
-        while (!i2c_device_read_scl());
-
-        //Read SDA
-        uint16_t bit = i2c_device_read_sda();
-
-        //If SDA changes while clock is high, this is a stop condition
-        while (i2c_device_read_scl()) {
-            if (i2c_device_read_sda() != bit) {
-                return;
+        if (I2C_GetFlagStatus(I2C1, I2C_FLAG_RXNE) != RESET) {
+            uint8_t b = I2C_ReceiveData(I2C1);
+            if (i < size) {
+                buffer[i++] = b;
             }
         }
 
-    }
-}
-
-static inline uint16_t i2c_device_read_bit() {
-
-    //Wait for SCL to go high
-    while (!i2c_device_read_scl());
-
-    //Read SDA
-    uint32_t bit = i2c_device_read_sda();
-
-    //Wait for SCL to go low again
-    while (i2c_device_read_scl()) {
-
-        //If SDA changes during the High clock pulse, this is a stop condition
-        if (i2c_device_read_sda() != bit) {
-            return STOP;
+        if (I2C_GetFlagStatus(I2C1, I2C_FLAG_STOPF) != RESET) {
+            (void)I2C1->STAR1;
+            I2C1->CTLR1 |= I2C_CTLR1_PE;   /* clear STOPF */
+            break;
         }
     }
-    
-    return bit;
 }
 
-static inline void i2c_device_ack(int ack, int sda) {
+void i2c_device_write(uint8_t *buffer, uint32_t size) {
+    uint32_t i = 0;
 
-    if (ack) {
-        i2c_device_clear_sda();
-    } else {
-        i2c_device_set_sda();
+    if (size == 0) {
+        return;
     }
 
-    //Wait for SCL to go high
-    while (!i2c_device_read_scl());
-    //Wait for SCL to go low
-    while (i2c_device_read_scl());
-
-    //while (!i2c_device_read_scl());
-
-    if (sda) {
-        i2c_device_set_sda();
-    } else {
-        i2c_device_clear_sda();
-    }
-}
-
-static inline uint16_t i2c_device_read_byte() {
-    uint8_t byte = 0;
-
-    uint32_t first_bit = i2c_device_read_bit();
-
-    //If the first bit is a stop condition, this is the end of the transmission
-    if (first_bit == STOP) {
-        return STOP;
+    /* Wait for a completely separate READ transaction: SLA+R */
+    while (!I2C_CheckEvent(I2C1, I2C_EVENT_SLAVE_TRANSMITTER_ADDRESS_MATCHED)) {
     }
 
-    byte |= first_bit;
-
-    for (int i = 1; i < 8; i++) {
-        byte <<= 1;
-        byte |= i2c_device_read_bit();
-    }
-
-    i2c_device_ack(ACK, SET);
-
-    return byte;
-}
-
-uint32_t i2c_device_read(uint8_t* buffer, uint32_t size) {
-
-retry:
-
-    i2c_device_start_condition();
-
-    uint16_t bus_address;
-
-    bus_address = i2c_device_read_byte();
-
-    if (bus_address == STOP) {
-        goto retry;
-    }
-
-    if (bus_address == i2c_address << 1) {
-        for (int i = 0; i < size; i++) {
-            uint16_t byte = i2c_device_read_byte();
-
-
-            if (byte == STOP) {
-                i2c_device_stop_condition();
-                return i;
-            }
-
-            buffer[i] = byte;
-        }
-        
-        i2c_device_stop_condition();
-
-        return size;
-    } else {
-        //Read bytes until the bus is free again
-        //while (i2c_device_read_byte() != STOP);
-
-        i2c_device_stop_condition();
-
-        //Retry the read
-        goto retry;
-    }
-
-    return -2;
-}
-
-static inline void i2c_device_write_bit(int bit) {
-
-    if (bit) {
-        i2c_device_set_sda();
-    } else {
-        i2c_device_clear_sda();
-    }
-
-    
-    //Wait for SCL to go high
-    while (!i2c_device_read_scl());
-    //Wait for SCL to go low
-    while (i2c_device_read_scl());
-
-    
-    //i2c_device_clear_sda();
-
-}
-
-static inline uint16_t i2c_device_write_byte(uint8_t byte) {
-    for (int i = 7; i >= 0; i--) {
-        i2c_device_write_bit(byte & 0x80);
-        byte <<= 1;
-    }
-
-    i2c_device_set_sda();
-
-    uint16_t ack = i2c_device_read_bit();
-
-    return ack;
-}
-
-uint32_t i2c_device_write(uint8_t* buffer, uint32_t size) {
-
-retry_2:
-
-    i2c_device_start_condition();
-
-    uint16_t bus_address = i2c_device_read_byte();
-
-    if (bus_address == STOP) {
-        goto retry_2;
-    }
-
-    if (bus_address == ((i2c_address << 1) | 1)) {
-
-        for (int i = 0; i < size; i++) {
-            uint8_t byte = buffer[i];
-
-            uint8_t nack = i2c_device_write_byte(byte);
-
-            if (nack) {
-                i2c_device_stop_condition();
-
-                return i;
-            }
+    while (1) {
+        if ((I2C_GetFlagStatus(I2C1, I2C_FLAG_TXE) != RESET) && (i < size)) {
+            I2C_SendData(I2C1, buffer[i]);
+            i++;
         }
 
-        i2c_device_stop_condition();
+        /* Master NACKed final byte */
+        if (I2C_GetFlagStatus(I2C1, I2C_FLAG_AF) != RESET) {
+            I2C_ClearFlag(I2C1, I2C_FLAG_AF);
+            break;
+        }
 
-        return size;
-
-
-    } else {
-
-        i2c_device_stop_condition();
-        goto retry_2;
+        /* Also tolerate STOP */
+        if (I2C_GetFlagStatus(I2C1, I2C_FLAG_STOPF) != RESET) {
+            (void)I2C1->STAR1;
+            I2C_Cmd(I2C1, ENABLE);
+            break;
+        }
     }
-    return -2;
-
 }
-

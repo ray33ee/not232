@@ -17,6 +17,12 @@ void gpio_init_default() {
     all.GPIO_Pin = 0xC003;
 
     GPIO_Init(GPIOB, &all);
+
+    //PB3 WS2812B
+    all.GPIO_Mode = GPIO_Mode_Out_PP;
+    all.GPIO_Pin = 1 << 3;
+    GPIO_Init(GPIOB, &all);
+
 }
 
 void gpio_init_port(GPIO_TypeDef* gpio, uint8_t pin, GPIOMode_TypeDef mode) {

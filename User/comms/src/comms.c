@@ -397,8 +397,21 @@ void get_packet() {
 
             uint16_t pin_mask = 1 << pin_number;
 
-            neopixel_send_buffer(pin_mask, colors, color_count);
+            neopixel_send_buffer(GPIOA, pin_mask, colors, color_count);
             
+            break;}
+        case RECV_INTERNAL_WS2812B: {
+
+            uint8_t cols[3];
+
+            cols[0] = comms_recv_u8();
+            cols[1] = comms_recv_u8();
+            cols[2] = comms_recv_u8();
+
+            //Internal WS2812 on PB3
+            neopixel_send_buffer(GPIOB, 1 << 3, cols, 1);
+
+
             break;}
         case RECV_OW_RESET:
             {
