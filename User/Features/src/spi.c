@@ -83,9 +83,9 @@ uint8_t spi_xfer_byte_bb_ch32(uint8_t sck_pin,
 }
 
 void spi_init(uint8_t sck_pin, uint8_t mosi_pin, uint8_t miso_pin) {
-    gpio_init_ad_pins(sck_pin, GPIO_Mode_Out_PP);
-    gpio_init_ad_pins(mosi_pin, GPIO_Mode_Out_PP);
-    gpio_init_ad_pins(miso_pin, GPIO_Mode_IN_FLOATING);
+    gpio_init_pin(sck_pin, GPIO_Mode_Out_PP);
+    gpio_init_pin(mosi_pin, GPIO_Mode_Out_PP);
+    gpio_init_pin(miso_pin, GPIO_Mode_IN_FLOATING);
 }
 
 void spi_read(uint8_t sck_pin, uint8_t mosi_pin, uint8_t miso_pin, uint8_t mode, uint8_t write_value, uint32_t delay, uint8_t* buffer, uint32_t len) {

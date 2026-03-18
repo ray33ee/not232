@@ -7,21 +7,17 @@
 #include "ch32v20x.h"
 #include "debug.h"
 
+#define PIN_COUNT (20)
+
 //Change A0-A7, D0-D7, F0-F3 to floating input
 void gpio_init_default();
 
-//Setup pins A0-A7 and D0-7 (pin numbers 0-15, CH32 numbers PA0-PA15)
-void gpio_init_ad_pins(uint8_t pin, GPIOMode_TypeDef mode);
+void gpio_init_pin(uint8_t pin, GPIOMode_TypeDef mode);
 
-//Setup pins F0-F3 (pin numbers 16-19, CH32 numbers PB0, PB1, PB14 and PB15)
-void gpio_init_f_pins(uint8_t pin, GPIOMode_TypeDef mode);
+uint32_t gpio_read_pin(uint8_t pin);
 
-void gpio_init_adf_pins(uint8_t pin, GPIOMode_TypeDef mode);
+void gpio_set_pin(uint8_t pin);
 
-uint32_t gpio_read_adf_pin(uint8_t pin);
-
-void gpio_set_adf_pin(uint8_t pin);
-
-void gpio_clear_adf_pin(uint8_t pin);
+void gpio_clear_pin(uint8_t pin);
 
 #endif

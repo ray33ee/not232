@@ -126,7 +126,7 @@ uint16_t pulseio_in_tim4_stop(void)
 void pulseio_in_resume(uint8_t pin, uint32_t trigger_duration) {
     if (trigger_duration != 0) {
 
-        gpio_init_ad_pins(pin, GPIO_Mode_Out_OD);
+        gpio_init_pin(pin, GPIO_Mode_Out_OD);
 
         GPIOA->BCR = 1 << pin;
 
@@ -136,7 +136,7 @@ void pulseio_in_resume(uint8_t pin, uint32_t trigger_duration) {
     }
 
 
-    gpio_init_ad_pins(pin, GPIO_Mode_IN_FLOATING);
+    gpio_init_pin(pin, GPIO_Mode_IN_FLOATING);
 
     //Setup the EXTI on the pin
     EXTI_INIT(pin);

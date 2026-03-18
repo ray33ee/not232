@@ -38,7 +38,7 @@ void get_packet() {
                 
             uint8_t pin_number = comms_recv_u8();
 
-            gpio_init_adf_pins(pin_number, GPIO_Mode_Out_PP);
+            gpio_init_pin(pin_number, GPIO_Mode_Out_PP);
 
             break;}
         case RECV_OUT_OD:
@@ -46,7 +46,7 @@ void get_packet() {
                 
             uint8_t pin_number = comms_recv_u8();
 
-            gpio_init_adf_pins(pin_number, GPIO_Mode_Out_OD);
+            gpio_init_pin(pin_number, GPIO_Mode_Out_OD);
 
             break;}
         case RECV_IN_FLOATING:
@@ -54,7 +54,7 @@ void get_packet() {
             
             uint8_t pin_number = comms_recv_u8();
 
-            gpio_init_adf_pins(pin_number, GPIO_Mode_IN_FLOATING);
+            gpio_init_pin(pin_number, GPIO_Mode_IN_FLOATING);
 
             break;}
         case RECV_IN_PU:
@@ -62,7 +62,7 @@ void get_packet() {
                 
             uint8_t pin_number = comms_recv_u8();
 
-            gpio_init_adf_pins(pin_number, GPIO_Mode_IPU);
+            gpio_init_pin(pin_number, GPIO_Mode_IPU);
 
             break;}
         case RECV_IN_PD:
@@ -70,7 +70,7 @@ void get_packet() {
                 
             uint8_t pin_number = comms_recv_u8();
 
-            gpio_init_adf_pins(pin_number, GPIO_Mode_IPD);
+            gpio_init_pin(pin_number, GPIO_Mode_IPD);
 
             break;}
         case RECV_SET_PIN:
@@ -78,7 +78,7 @@ void get_packet() {
                 
             uint8_t pin_number = comms_recv_u8();
 
-            gpio_set_adf_pin(pin_number);
+            gpio_set_pin(pin_number);
 
             break;}
         case RECV_CLEAR_PIN:
@@ -86,14 +86,14 @@ void get_packet() {
                 
             uint8_t pin_number = comms_recv_u8();
 
-            gpio_clear_adf_pin(pin_number);
+            gpio_clear_pin(pin_number);
 
             break;}
         case RECV_READ_PIN:
             {
             uint8_t pin_number = comms_recv_u8();
 
-            uint32_t bit = gpio_read_adf_pin(pin_number);
+            uint32_t bit = gpio_read_pin(pin_number);
 
             comms_send_buffer((uint8_t*)&bit, 1);
             break;}
@@ -182,7 +182,7 @@ void get_packet() {
             {
             uint8_t pin_number = comms_recv_u8();
 
-            gpio_init_adf_pins(pin_number, GPIO_Mode_AF_PP);
+            gpio_init_pin(pin_number, GPIO_Mode_AF_PP);
             
             break;}
         case RECV_PWM_DUTY:
@@ -199,7 +199,7 @@ void get_packet() {
             {
                 uint8_t pin_number = comms_recv_u8();
 
-                gpio_init_adf_pins(pin_number, GPIO_Mode_AIN);
+                gpio_init_pin(pin_number, GPIO_Mode_AIN);
  
             
             break;}
@@ -227,8 +227,8 @@ void get_packet() {
             
             uint8_t scl_pin_number = comms_recv_u8();
 
-            gpio_init_ad_pins(sda_pin_number, GPIO_Mode_Out_OD);
-            gpio_init_ad_pins(scl_pin_number, GPIO_Mode_Out_OD);
+            gpio_init_pin(sda_pin_number, GPIO_Mode_Out_OD);
+            gpio_init_pin(scl_pin_number, GPIO_Mode_Out_OD);
             
             break;}
         case RECV_I2C_SCAN:

@@ -78,7 +78,7 @@ void run(uint8_t* opcodes, uint8_t* registers, uint32_t len, uint8_t* pile_t, ui
                     Sets up pin X as a GPIO_Mode_IN_FLOATING
                 */
                 {uint8_t pin_number = opcodes[pc+2];
-                gpio_init_ad_pins(pin_number, GPIO_Mode_IN_FLOATING);
+                gpio_init_pin(pin_number, GPIO_Mode_IN_FLOATING);
                 pc+=BYTES_PER_INSTRUCTION;
                 break;}
             case INPUT_PULL_DOWN:
@@ -88,7 +88,7 @@ void run(uint8_t* opcodes, uint8_t* registers, uint32_t len, uint8_t* pile_t, ui
                     Sets up pin X as a GPIO_Mode_IPD
                 */
                 {uint8_t pin_number = opcodes[pc+2];
-                gpio_init_ad_pins(pin_number, GPIO_Mode_IPD);
+                gpio_init_pin(pin_number, GPIO_Mode_IPD);
                 pc+=BYTES_PER_INSTRUCTION;
                 break;}
             case INPUT_PULL_UP:
@@ -98,7 +98,7 @@ void run(uint8_t* opcodes, uint8_t* registers, uint32_t len, uint8_t* pile_t, ui
                     Sets up pin X as a GPIO_Mode_IPU
                 */
                 {uint8_t pin_number = opcodes[pc+2];
-                gpio_init_ad_pins(pin_number, GPIO_Mode_IPU);
+                gpio_init_pin(pin_number, GPIO_Mode_IPU);
                 pc+=BYTES_PER_INSTRUCTION;
                 break;}
             case OUTPUT_PP:
@@ -108,7 +108,7 @@ void run(uint8_t* opcodes, uint8_t* registers, uint32_t len, uint8_t* pile_t, ui
                     Sets up pin X as a GPIO_Mode_Out_PP
                 */
                 {uint8_t pin_number = opcodes[pc+2];
-                gpio_init_ad_pins(pin_number, GPIO_Mode_Out_PP);
+                gpio_init_pin(pin_number, GPIO_Mode_Out_PP);
                 pc+=BYTES_PER_INSTRUCTION;
                 break;}
             case OUTPUT_OD:
@@ -118,7 +118,7 @@ void run(uint8_t* opcodes, uint8_t* registers, uint32_t len, uint8_t* pile_t, ui
                     Sets up pin X as a GPIO_Mode_Out_OD
                 */
                 {uint8_t pin_number = opcodes[pc+2];
-                gpio_init_ad_pins(pin_number, GPIO_Mode_Out_OD);
+                gpio_init_pin(pin_number, GPIO_Mode_Out_OD);
                 pc+=BYTES_PER_INSTRUCTION;
                 break;}
             /* Set/Clear */

@@ -1,31 +1,16 @@
 #include "Features/inc/gpio.h"
 
 
-void gpio_init_default() {
-    
-    GPIO_InitTypeDef all;
+/*
 
-    all.GPIO_Mode = GPIO_Mode_IN_FLOATING;
-    all.GPIO_Speed = GPIO_Speed_50MHz;
+This following mappings send the Not232 pin numbers (0-19) to the CH32 GPIO_TypeDef* port and uint16_t pin number
 
-    //All pins PA0-PA15 
-    all.GPIO_Pin = 0xFFFF;
+*/
+GPIO_TypeDef* pin_port_mapping[PIN_COUNT] = { GPIOA, GPIOA, GPIOA, GPIOA, GPIOA, GPIOA, GPIOA, GPIOA, GPIOA, GPIOA, GPIOA, GPIOA, GPIOA, GPIOA, GPIOA, GPIOA, GPIOB, GPIOB, GPIOB, GPIOB };
+uint8_t pin_number_mapping[PIN_COUNT] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0, 1, 14, 15 };
 
-    GPIO_Init(GPIOA, &all);
-    
-    //Pins PB0, PB1, Pb14 and PB15 
-    all.GPIO_Pin = 0xC003;
 
-    GPIO_Init(GPIOB, &all);
-
-    //PB3 WS2812B
-    all.GPIO_Mode = GPIO_Mode_Out_PP;
-    all.GPIO_Pin = 1 << 3;
-    GPIO_Init(GPIOB, &all);
-
-}
-
-void gpio_init_port(GPIO_TypeDef* gpio, uint8_t pin, GPIOMode_TypeDef mode) {
+void gpio_base_init_pins(GPIO_TypeDef* gpio, uint8_t pin, GPIOMode_TypeDef mode) {
     uint16_t mask = 1 << pin;
     uint32_t currentmode = 0x00, pos = 0x00;
     uint32_t tmpreg = 0x00, pinmask = 0x00;
@@ -56,62 +41,31 @@ void gpio_init_port(GPIO_TypeDef* gpio, uint8_t pin, GPIOMode_TypeDef mode) {
     }
 }
 
-void gpio_init_ad_pins(uint8_t pin, GPIOMode_TypeDef mode)
-{
-    gpio_init_port(GPIOA, pin, mode);
+void gpio_init_pin(uint8_t pin, GPIOMode_TypeDef mode) {
+    gpio_base_init_pins(pin_port_mapping[pin], pin_number_mapping[pin], mode);
 }
 
-void gpio_init_f_pins(uint8_t pin, GPIOMode_TypeDef mode)
-{
-    // Remap pins 16, 17, 18, 19 to 0, 1, 14, 15
-    if (pin < 16) {
-        return;
-    } else if (pin < 18) {
-        pin -= 16;
-    } else if (pin < 20) {
-        pin -= 4;
-    } else {
-        return;
+void gpio_init_default() {
+    //Set all pins 0-19 as floating inputs. 
+    //This is probably not needed but anyway
+    for (int i = 0; i < PIN_COUNT; i++) {
+        gpio_base_init_pins(pin_port_mapping[i], pin_number_mapping[i], GPIO_Mode_IN_FLOATING);
     }
 
-    gpio_init_port(GPIOB, pin, mode);
+    //Setup PB3 as out pp for the on board WS2812B
+    gpio_base_init_pins(GPIOB, 3, GPIO_Mode_Out_PP);
+
 }
 
-void gpio_init_adf_pins(uint8_t pin, GPIOMode_TypeDef mode) {
-    if (pin < 16) {
-        gpio_init_ad_pins(pin, mode);
-    } else {
-        gpio_init_f_pins(pin, mode);
-    }
+
+uint32_t gpio_read_pin(uint8_t pin) {
+    return (pin_port_mapping[pin]->INDR & (1 << pin_number_mapping[pin])) != (uint32_t)Bit_RESET;
 }
 
-uint32_t gpio_read_adf_pin(uint8_t pin) {
-    if (pin < 16) {
-        return (GPIOA->INDR & (1 << pin)) != (uint32_t)Bit_RESET;
-    } else if (pin < 18) {
-        return (GPIOB->INDR & (1 << (pin - 16))) != (uint32_t)Bit_RESET;
-    } else if (pin < 20) {
-        return (GPIOB->INDR & (1 << (pin - 4))) != (uint32_t)Bit_RESET;
-    }
-    return 0;
+void gpio_set_pin(uint8_t pin) {
+    pin_port_mapping[pin]->BSHR = 1 << pin_number_mapping[pin];
 }
 
-void gpio_set_adf_pin(uint8_t pin) {
-    if (pin < 16) {
-        GPIOA->BSHR = 1 << pin;
-    } else if (pin < 18) {
-        GPIOB->BSHR = 1 << (pin - 16);
-    } else if (pin < 20) {
-        GPIOB->BSHR = 1 << (pin - 4);
-    }
-}
-
-void gpio_clear_adf_pin(uint8_t pin) {
-    if (pin < 16) {
-        GPIOA->BCR = 1 << pin;
-    } else if (pin < 18) {
-        GPIOB->BCR = 1 << (pin - 16);
-    } else if (pin < 20) {
-        GPIOB->BCR = 1 << (pin - 4);
-    }
+void gpio_clear_pin(uint8_t pin) {
+    pin_port_mapping[pin]->BCR = 1 << pin_number_mapping[pin];
 }

@@ -77,21 +77,21 @@ Deleted label in block 6.
 (debug_insn 15 14 16 4 (debug_marker) "../User/comms/src/protocol.c":9 -1
      (nil))
 (call_insn 16 15 17 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("USBFS_RCC_Init") [flags 0x41] <function_decl 06623528 USBFS_RCC_Init>) [0 USBFS_RCC_Init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("USBFS_RCC_Init") [flags 0x41] <function_decl 06693528 USBFS_RCC_Init>) [0 USBFS_RCC_Init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":9 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("USBFS_RCC_Init") [flags 0x41] <function_decl 06623528 USBFS_RCC_Init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("USBFS_RCC_Init") [flags 0x41] <function_decl 06693528 USBFS_RCC_Init>)
         (nil))
     (nil))
 (debug_insn 17 16 18 4 (debug_marker) "../User/comms/src/protocol.c":10 -1
      (nil))
 (call_insn 18 17 19 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_begin") [flags 0x41] <function_decl 062fd4b0 usbSerial_begin>) [0 usbSerial_begin S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_begin") [flags 0x41] <function_decl 0636d4b0 usbSerial_begin>) [0 usbSerial_begin S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":10 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_begin") [flags 0x41] <function_decl 062fd4b0 usbSerial_begin>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_begin") [flags 0x41] <function_decl 0636d4b0 usbSerial_begin>)
         (nil))
     (nil))
 (debug_insn 19 18 25 4 (debug_marker) "../User/comms/src/protocol.c":12 -1
@@ -102,11 +102,11 @@ Deleted label in block 6.
      (nil))
 (call_insn 22 21 23 5 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("usbSerial_connected") [flags 0x41] <function_decl 062fd528 usbSerial_connected>) [0 usbSerial_connected S4 A32])
+                (call (mem:SI (symbol_ref:SI ("usbSerial_connected") [flags 0x41] <function_decl 0636d528 usbSerial_connected>) [0 usbSerial_connected S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":12 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_connected") [flags 0x41] <function_decl 062fd528 usbSerial_connected>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_connected") [flags 0x41] <function_decl 0636d528 usbSerial_connected>)
         (nil))
     (nil))
 (insn 23 22 24 5 (set (reg:SI 78)
@@ -149,11 +149,11 @@ Deleted label in block 6.
         (reg/v:SI 74 [ i2c_address ])) "../User/comms/src/protocol.c":14 -1
      (nil))
 (call_insn 39 38 42 8 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_device_init") [flags 0x41] <function_decl 06623708 i2c_device_init>) [0 i2c_device_init S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_device_init") [flags 0x41] <function_decl 06693708 i2c_device_init>) [0 i2c_device_init S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":14 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_init") [flags 0x41] <function_decl 06623708 i2c_device_init>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_init") [flags 0x41] <function_decl 06693708 i2c_device_init>)
         (nil))
     (expr_list:QI (use (reg:SI 10 a0))
         (nil)))
@@ -238,11 +238,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 74 [ buffer ])) "../User/comms/src/protocol.c":20 -1
      (nil))
 (call_insn 18 17 19 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 062fd870 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0636d870 usbSerial_blocking_writeP>) [0 usbSerial_blocking_writeP S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":20 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 062fd870 usbSerial_blocking_writeP>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_writeP") [flags 0x41] <function_decl 0636d870 usbSerial_blocking_writeP>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:HI (use (reg:SI 11 a1))
@@ -276,11 +276,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 74 [ buffer ])) "../User/comms/src/protocol.c":22 -1
      (nil))
 (call_insn 30 29 33 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_device_write") [flags 0x41] <function_decl 066237f8 i2c_device_write>) [0 i2c_device_write S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_device_write") [flags 0x41] <function_decl 066937f8 i2c_device_write>) [0 i2c_device_write S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":22 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_write") [flags 0x41] <function_decl 066237f8 i2c_device_write>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_write") [flags 0x41] <function_decl 066937f8 i2c_device_write>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -337,11 +337,11 @@ try_optimize_cfg iteration 2
         (reg:SI 74)) "../User/comms/src/protocol.c":27 -1
      (nil))
 (call_insn 12 11 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("comms_send_buffer") [flags 0x3] <function_decl 066238e8 comms_send_buffer>) [0 comms_send_buffer S4 A32])
+            (call (mem:SI (symbol_ref:SI ("comms_send_buffer") [flags 0x3] <function_decl 066938e8 comms_send_buffer>) [0 comms_send_buffer S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":27 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_send_buffer") [flags 0x3] <function_decl 066238e8 comms_send_buffer>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_send_buffer") [flags 0x3] <function_decl 066938e8 comms_send_buffer>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -391,11 +391,11 @@ try_optimize_cfg iteration 2
         (reg:SI 72)) "../User/comms/src/protocol.c":31 -1
      (nil))
 (call_insn 10 9 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("comms_send_buffer") [flags 0x3] <function_decl 066238e8 comms_send_buffer>) [0 comms_send_buffer S4 A32])
+            (call (mem:SI (symbol_ref:SI ("comms_send_buffer") [flags 0x3] <function_decl 066938e8 comms_send_buffer>) [0 comms_send_buffer S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":31 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_send_buffer") [flags 0x3] <function_decl 066238e8 comms_send_buffer>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_send_buffer") [flags 0x3] <function_decl 066938e8 comms_send_buffer>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -440,11 +440,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 73 [ size ])) "../User/comms/src/protocol.c":35 -1
      (nil))
 (call_insn 9 8 10 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("comms_send_u32") [flags 0x3] <function_decl 066239d8 comms_send_u32>) [0 comms_send_u32 S4 A32])
+            (call (mem:SI (symbol_ref:SI ("comms_send_u32") [flags 0x3] <function_decl 066939d8 comms_send_u32>) [0 comms_send_u32 S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":35 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_send_u32") [flags 0x3] <function_decl 066239d8 comms_send_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_send_u32") [flags 0x3] <function_decl 066939d8 comms_send_u32>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -458,11 +458,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 72 [ array ])) "../User/comms/src/protocol.c":36 -1
      (nil))
 (call_insn 13 12 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("comms_send_buffer") [flags 0x3] <function_decl 066238e8 comms_send_buffer>) [0 comms_send_buffer S4 A32])
+            (call (mem:SI (symbol_ref:SI ("comms_send_buffer") [flags 0x3] <function_decl 066938e8 comms_send_buffer>) [0 comms_send_buffer S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":36 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_send_buffer") [flags 0x3] <function_decl 066238e8 comms_send_buffer>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_send_buffer") [flags 0x3] <function_decl 066938e8 comms_send_buffer>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -505,11 +505,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn/i 8 7 9 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("strlen") [flags 0x41] <function_decl 062bec30 strlen>) [0 __builtin_strlen S4 A32])
+                (call (mem:SI (symbol_ref:SI ("strlen") [flags 0x41] <function_decl 0632ec30 strlen>) [0 __builtin_strlen S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":40 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("strlen") [flags 0x41] <function_decl 062bec30 strlen>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("strlen") [flags 0x41] <function_decl 0632ec30 strlen>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -531,11 +531,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 73 [ str ])) "../User/comms/src/protocol.c":42 -1
      (nil))
 (call_insn 15 14 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("comms_send_array") [flags 0x3] <function_decl 06623a50 comms_send_array>) [0 comms_send_array S4 A32])
+            (call (mem:SI (symbol_ref:SI ("comms_send_array") [flags 0x3] <function_decl 06693a50 comms_send_array>) [0 comms_send_array S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":42 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_send_array") [flags 0x3] <function_decl 06623a50 comms_send_array>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_send_array") [flags 0x3] <function_decl 06693a50 comms_send_array>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -617,11 +617,11 @@ try_optimize_cfg iteration 2
         (reg/v:SI 74 [ size ])) "../User/comms/src/protocol.c":47 -1
      (nil))
 (call_insn 17 16 18 4 (parallel [
-            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_bytes") [flags 0x41] <function_decl 062fd708 usbSerial_blocking_read_bytes>) [0 usbSerial_blocking_read_bytes S4 A32])
+            (call (mem:SI (symbol_ref:SI ("usbSerial_blocking_read_bytes") [flags 0x41] <function_decl 0636d708 usbSerial_blocking_read_bytes>) [0 usbSerial_blocking_read_bytes S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":47 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_bytes") [flags 0x41] <function_decl 062fd708 usbSerial_blocking_read_bytes>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("usbSerial_blocking_read_bytes") [flags 0x41] <function_decl 0636d708 usbSerial_blocking_read_bytes>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -655,11 +655,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 73 [ buffer ])) "../User/comms/src/protocol.c":49 -1
      (nil))
 (call_insn 29 28 32 6 (parallel [
-            (call (mem:SI (symbol_ref:SI ("i2c_device_read") [flags 0x41] <function_decl 06623780 i2c_device_read>) [0 i2c_device_read S4 A32])
+            (call (mem:SI (symbol_ref:SI ("i2c_device_read") [flags 0x41] <function_decl 06693780 i2c_device_read>) [0 i2c_device_read S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":49 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read") [flags 0x41] <function_decl 06623780 i2c_device_read>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("i2c_device_read") [flags 0x41] <function_decl 06693780 i2c_device_read>)
         (nil))
     (expr_list:SI (use (reg:SI 10 a0))
         (expr_list:SI (use (reg:SI 11 a1))
@@ -711,11 +711,11 @@ try_optimize_cfg iteration 2
         (reg:SI 73)) "../User/comms/src/protocol.c":55 -1
      (nil))
 (call_insn 10 9 11 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("comms_recv_buffer") [flags 0x3] <function_decl 06623b40 comms_recv_buffer>) [0 comms_recv_buffer S4 A32])
+            (call (mem:SI (symbol_ref:SI ("comms_recv_buffer") [flags 0x3] <function_decl 06693b40 comms_recv_buffer>) [0 comms_recv_buffer S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":55 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_recv_buffer") [flags 0x3] <function_decl 06623b40 comms_recv_buffer>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_recv_buffer") [flags 0x3] <function_decl 06693b40 comms_recv_buffer>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -780,11 +780,11 @@ try_optimize_cfg iteration 2
         (reg:SI 73)) "../User/comms/src/protocol.c":61 -1
      (nil))
 (call_insn 10 9 11 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("comms_recv_buffer") [flags 0x3] <function_decl 06623b40 comms_recv_buffer>) [0 comms_recv_buffer S4 A32])
+            (call (mem:SI (symbol_ref:SI ("comms_recv_buffer") [flags 0x3] <function_decl 06693b40 comms_recv_buffer>) [0 comms_recv_buffer S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":61 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_recv_buffer") [flags 0x3] <function_decl 06623b40 comms_recv_buffer>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_recv_buffer") [flags 0x3] <function_decl 06693b40 comms_recv_buffer>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -838,11 +838,11 @@ try_optimize_cfg iteration 2
      (nil))
 (call_insn 8 7 9 2 (parallel [
             (set (reg:SI 10 a0)
-                (call (mem:SI (symbol_ref:SI ("comms_recv_u32") [flags 0x3] <function_decl 06623c30 comms_recv_u32>) [0 comms_recv_u32 S4 A32])
+                (call (mem:SI (symbol_ref:SI ("comms_recv_u32") [flags 0x3] <function_decl 06693c30 comms_recv_u32>) [0 comms_recv_u32 S4 A32])
                     (const_int 0 [0])))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":66 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_recv_u32") [flags 0x3] <function_decl 06623c30 comms_recv_u32>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_recv_u32") [flags 0x3] <function_decl 06693c30 comms_recv_u32>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -861,11 +861,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 73 [ array ])) "../User/comms/src/protocol.c":67 -1
      (nil))
 (call_insn 14 13 0 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("comms_recv_buffer") [flags 0x3] <function_decl 06623b40 comms_recv_buffer>) [0 comms_recv_buffer S4 A32])
+            (call (mem:SI (symbol_ref:SI ("comms_recv_buffer") [flags 0x3] <function_decl 06693b40 comms_recv_buffer>) [0 comms_recv_buffer S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":67 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_recv_buffer") [flags 0x3] <function_decl 06623b40 comms_recv_buffer>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_recv_buffer") [flags 0x3] <function_decl 06693b40 comms_recv_buffer>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))
@@ -918,11 +918,11 @@ try_optimize_cfg iteration 2
         (reg/v/f:SI 74 [ str ])) "../User/comms/src/protocol.c":72 -1
      (nil))
 (call_insn 11 10 12 2 (parallel [
-            (call (mem:SI (symbol_ref:SI ("comms_recv_array") [flags 0x3] <function_decl 06623ca8 comms_recv_array>) [0 comms_recv_array S4 A32])
+            (call (mem:SI (symbol_ref:SI ("comms_recv_array") [flags 0x3] <function_decl 06693ca8 comms_recv_array>) [0 comms_recv_array S4 A32])
                 (const_int 0 [0]))
             (clobber (reg:SI 1 ra))
         ]) "../User/comms/src/protocol.c":72 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_recv_array") [flags 0x3] <function_decl 06623ca8 comms_recv_array>)
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("comms_recv_array") [flags 0x3] <function_decl 06693ca8 comms_recv_array>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:SI (use (reg:SI 10 a0))

@@ -1,0 +1,67 @@
+
+;; Function rng_init (rng_init, funcdef_no=29, decl_uid=4692, cgraph_uid=29, symbol_order=29)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 0 2 (debug_marker) "../User/Features/src/rng.c":5 -1
+     (nil))
+
+;; Function rng_read (rng_read, funcdef_no=30, decl_uid=4693, cgraph_uid=30, symbol_order=30)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 8 2 (debug_marker) "../User/Features/src/rng.c":9 -1
+     (nil))
+(insn 8 5 9 2 (clobber (reg/i:SI 10 a0)) "../User/Features/src/rng.c":9 -1
+     (nil))
+(insn 9 8 7 2 (clobber (reg:SI 72 [ <retval> ])) "../User/Features/src/rng.c":9 -1
+     (nil))
+(insn 7 9 10 2 (set (reg/i:SI 10 a0)
+        (reg:SI 72 [ <retval> ])) "../User/Features/src/rng.c":9 -1
+     (nil))
+(insn 10 7 0 2 (use (reg/i:SI 10 a0)) "../User/Features/src/rng.c":9 -1
+     (nil))

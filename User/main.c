@@ -311,8 +311,8 @@ int main(void)
     // Setup ADC 
     adc_init();
     
-    // Setup pin 16, B0 as UART TX and use for printf 
-    gpio_init_f_pins(16, GPIO_Mode_AF_PP);
+    // Setup pin 16 (B0) as UART TX for printf 
+    gpio_init_pin(16, GPIO_Mode_AF_PP);
 
 
     printf("Initialising...\r\n");

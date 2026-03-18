@@ -27,6 +27,8 @@
 #define BYTES_PER_INSTRUCTION       (4)
 
 
+#define MEGA_BUFFER_SIZE            (5 * 1024)
+
 #define ESIG_REGISTER_BASE          ((uint8_t*)0x1FFFF7E8)
 
 #define RECV_PING                   ((uint8_t)0)
@@ -96,8 +98,6 @@
 #define SEND_ADC_READ               (5)
 #define SEND_FAILURE                (0xFFFFFFFF)
 
-
-#define MEGA_BUFFER_SIZE            (5 * 1024)
 
 void get_packet();
 
